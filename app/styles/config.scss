@@ -1,0 +1,19 @@
+$primary-color: #090707;
+$secondary-color: #097fd9;
+$text-color: #fff;
+
+$font-sizes: (
+  name: clamp(38px, 1.5vw, 55px),
+  h1: clamp(80px, 2.5vw, 142px),
+  h2: clamp(40px, 2.5vw, 56px),
+  h3: clamp(30px, 2.5vw, 40px),
+  p: clamp(12px, 1.5vw, 18px),
+  small: clamp(10px, 1.5vw, 14px),
+  link: clamp(14px, 1.5vw, 18px),
+  button: clamp(14px, 1.5vw, 18px)
+);
+
+$icon-sizes: (
+  mobile: 30px,
+  screen: 16px
+);
