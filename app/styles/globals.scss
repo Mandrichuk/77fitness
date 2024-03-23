@@ -9,6 +9,8 @@
 html {
   @include Flex(column, center, center);
   width: 100%;
+  @include Flex(column, center, center);
+  width: 100%;
   scroll-behavior: smooth;
 }
 

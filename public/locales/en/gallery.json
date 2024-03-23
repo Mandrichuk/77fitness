@@ -1,0 +1,21 @@
+{
+  "gallery": [
+    { "src": "srgaaydxtpolcmmfexq0", "alt": "gallery1" },
+    { "src": "terpaeldoub8drzovinl", "alt": "gallery2" },
+    { "src": "ybfz2chx6vjull05kyos", "alt": "gallery3" }
+  ],
+  "title": "Мы первые в Словакии с <span style={'color: #8DC53F'}>Prime Fitness</span> и <span style={'color: #8E8E8E'}>HOIST FITNESS</span> оборудованием.",
+  "points": [
+    "Высокое качество оборудования",
+    "Множество различных гантелей и весов",
+    "Постоянное обновление ассортимента"
+  ],
+  "button": {
+    "text": "Смотреть больше изображений",
+    "link": "/gallery"
+  },
+  "link": {
+    "text": "Свяжитесь с нами",
+    "link": "/contact"
+  }
+}

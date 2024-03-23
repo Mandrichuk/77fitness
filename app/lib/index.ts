@@ -1,7 +1,7 @@
 import type { StaticImageData } from "next/image";
 
 export interface Language {
-  lang: "en" | "ru" | "sk" | "de";
+  lang: "en" | "ru" | "sk";
 }
 
 export interface Button {
@@ -69,7 +69,7 @@ interface TrainersText {
   trainers: Trainer[];
 }
 
-export interface TrainersProps {
+export interface TeamProps {
   en: TrainersText;
   ru: TrainersText;
   sk: TrainersText;
@@ -89,6 +89,19 @@ export interface GalleryProps {
   ru: GalleryText;
   sk: GalleryText;
 }
+
+
+interface SocialMediaLanguage {
+  text: string;
+  name: string;
+  links: Link[];
+}
+
+export type SocialMediaProps = {
+  en: SocialMediaLanguage;
+  ru: SocialMediaLanguage;
+  sk: SocialMediaLanguage;
+};
 
 interface Package {
   title: string;
@@ -154,17 +167,17 @@ interface FooterSection {
 }
 
 interface FooterLocation {
-  icon: StaticImageData; 
+  icon: StaticImageData;
   text: string;
 }
 
 interface FooterSocial {
   title: string;
-  links: { icon: string; link: string; }[];
+  links: { icon: string; link: string }[];
 }
 
 interface FooterText {
-  logo: StaticImageData; 
+  logo: StaticImageData;
   name: string;
   location: FooterLocation;
   sitemap: {
@@ -179,4 +192,9 @@ export interface FooterProps {
   en: FooterText;
   ru: FooterText;
   sk: FooterText;
+}
+
+export interface ImageProps {
+  image: string;
+  alt: string;
 }

@@ -1,0 +1,12 @@
+{
+  "logo": { "src": "ncdhkltskvpjmdprvynk", "alt": "логотип" },
+  "introductionImg": { "src": "tgkflw9u7aggj4vy5emq", "alt": "introductionImg" },
+  "name": "77 NEXT LEVEL FITNESS",
+  "description": "Ваш новый фитнес-центр в центре Братиславы по адресу Байкальская 2и. Оставьте нам контактные данные, и мы сообщим вам о новостях. <span style={'color: #097fd9'}>Мы открыты и с нетерпением ждем вашего визита.</span>",
+  "button": { "text": "Подробнее", "link": "/more" },
+  "watchVideo": {
+    "icon": { "src": "y2cqzcgrslyrvl5vlqnq", "alt": "play" },
+    "text": "Посмотреть промо-видео",
+    "link": "/video"
+  }
+}

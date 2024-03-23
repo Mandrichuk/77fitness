@@ -1,0 +1,46 @@
+{
+  "bgText": "Trainers",
+  "title": "Our Trainers",
+  "trainers": [
+    {
+      "image": { "src": "enymsgoeuilqao0lyngg", "alt": "trainer1" },
+      "qr": { "src": "byngykusqgnbs9uhg9a9", "alt": "qr" },
+      "name": "Trainer Name",
+      "number": "+421 00 00 0000",
+      "email": "example@email.com",
+      "languages": ["sk", "ru"]
+    },
+    {
+      "image": { "src": "a1r05sgl2qdddjtbfl4a", "alt": "trainer2" },
+      "qr": { "src": "byngykusqgnbs9uhg9a9", "alt": "qr" },
+      "name": "Trainer Name",
+      "number": "+421 00 00 0000",
+      "email": "example@email.com",
+      "languages": ["sk"]
+    },
+    {
+      "image": { "src": "pwasyqbu6rns713ucjmb", "alt": "trainer3" },
+      "qr": { "src": "byngykusqgnbs9uhg9a9", "alt": "qr" },
+      "name": "Trainer Name",
+      "number": "+421 00 00 0000",
+      "email": "example@email.com",
+      "languages": ["sk", "ru", "en"]
+    },
+    {
+      "image": { "src": "aa4ueb78mutxetea15ek", "alt": "trainer4" },
+      "qr": { "src": "byngykusqgnbs9uhg9a9", "alt": "qr" },
+      "name": "Trainer Name",
+      "number": "+421 00 00 0000",
+      "email": "example@email.com",
+      "languages": ["sk", "en"]
+    },
+    {
+      "image": { "src": "rscphr7l3vfvwhsgpmw", "alt": "trainer5" },
+      "qr": { "src": "byngykusqgnbs9uhg9a9", "alt": "qr" },
+      "name": "Trainer Name",
+      "number": "+421 00 00 0000",
+      "email": "example@email.com",
+      "languages": ["sk"]
+    }
+  ]
+}

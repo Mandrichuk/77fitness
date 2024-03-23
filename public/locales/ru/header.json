@@ -1,0 +1,20 @@
+{
+  "links": [
+    {
+      "text": "Главная",
+      "link": "/"
+    },
+    {
+      "text": "Цены",
+      "link": "/pricing"
+    },
+    {
+      "text": "О нас",
+      "link": "/about"
+    },
+    {
+      "text": "Свяжитесь с нами",
+      "link": "/contact"
+    }
+  ]
+}
