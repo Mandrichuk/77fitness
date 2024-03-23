@@ -1,0 +1,70 @@
+{
+  "text": "Prices",
+  "title": "Our Gym Membership Packages",
+  "packages": [
+    {
+      "title": "one time entry",
+      "price": 10,
+      "description": "per entry, billed annually",
+      "included": [
+        "One Time Access",
+        "Sauna & Showers",
+        "DJ & Live Music",
+        "Personal Trainer (Optional)"
+      ],
+      "button": {
+        "text": "Contact us",
+        "link": "+421 00 00 0000"
+      }
+    },
+    {
+      "title": "month membership",
+      "price": 69,
+      "description": "per month, billed annually",
+      "included": [
+        "Unlimited Gym Access",
+        "Sauna & Showers",
+        "DJ & Live Music",
+        "Personal Trainer (Optional)"
+      ],
+      "button": {
+        "text": "Contact us",
+        "link": "+421 00 00 0000"
+      }
+    },
+    {
+      "standOut": true,
+      "advertisement": "+1 month free",
+      "title": "when purchasing a 6-month membership",
+      "price": 48,
+      "description": "one-time payment, billed annually",
+      "included": [
+        "Save more than €100!",
+        "Unlimited Gym Access",
+        "Sauna & Showers",
+        "DJ & Live Music",
+        "Personal Trainer (Optional)"
+      ],
+      "button": {
+        "text": "Contact us",
+        "link": "+421 00 00 0000"
+      }
+    },
+    {
+      "title": "1 year membership",
+      "price": 650,
+      "description": "one-time payment, billed annually",
+      "included": [
+        "Best Price",
+        "Unlimited Gym Access",
+        "Sauna & Showers",
+        "DJ & Live Music",
+        "Personal Trainer (Optional)"
+      ],
+      "button": {
+        "text": "Contact us",
+        "link": "+421 00 00 0000"
+      }
+    }
+  ]
+}

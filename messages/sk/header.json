@@ -1,0 +1,20 @@
+{
+  "links": [
+    {
+      "text": "Domov",
+      "link": "/"
+    },
+    {
+      "text": "Ceny",
+      "link": "/pricing"
+    },
+    {
+      "text": "O nás",
+      "link": "/about"
+    },
+    {
+      "text": "Kontaktujte nás",
+      "link": "/contact"
+    }
+  ]
+}

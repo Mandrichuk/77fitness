@@ -1,0 +1,21 @@
+{
+  "gallery": [
+    { "src": "srgaaydxtpolcmmfexq0", "alt": "gallery1" },
+    { "src": "terpaeldoub8drzovinl", "alt": "gallery2" },
+    { "src": "ybfz2chx6vjull05kyos", "alt": "gallery3" }
+  ],
+  "title": "We are the first in Slovakia with <span style={'color: #8DC53F'}>Prime Fitness</span> and <span style={'color: #8E8E8E'}>HOIST FITNESS</span> equipment.",
+  "points": [
+    "High quality equipment",
+    "Many different dumbbells and weights",
+    "Constant assortment update"
+  ],
+  "button": {
+    "text": "See more images",
+    "link": "/gallery"
+  },
+  "link": {
+    "text": "Contact us",
+    "link": "/contact"
+  }
+}

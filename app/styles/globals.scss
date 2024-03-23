@@ -1,6 +1,5 @@
 @import "config";
 
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,11 +7,40 @@
 }
 
 html {
+  @include Flex(column, center, center);
+  width: 100%;
   scroll-behavior: smooth;
-  font-weight: 100;
 }
 
 body {
-  background-color: $primary-color;
-  color: $text-color;
+  @include Flex(column, center, center);
+  @include pText();
+  width: 100%;
+  max-width: $max-width;
+  color: color(text-color);
+  background-color: color(primary-color);
+}
+
+main {
+  width: 100%;
+  display: grid;
+  gap: $gap;
+
+
+}
+
+p, div {
+  @include pText();  
+}
+
+button {
+  @include button();
+}
+
+h1 {
+  @include nameText();
+}
+
+h2 {
+  @include titleText();
 }

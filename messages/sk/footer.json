@@ -1,0 +1,32 @@
+{
+  "logo": { "src": "ncdhkltskvpjmdprvynk", "alt": "logo" },
+  "name": "77 NEXT LEVEL FITNESS",
+  "location": {
+    "text": "Bratislava, Bajkalská 2i, 831 04"
+  },
+  "sitemap": {
+    "title": "Mapa stránky",
+    "links": [
+      { "text": "Domov", "link": "/" },
+      { "text": "Rozvrh", "link": "/rozvrh" },
+      { "text": "Galéria", "link": "/galeria" },
+      { "text": "Kontakt", "link": "/kontakt" }
+    ],
+    "support": {
+      "title": "Podpora",
+      "links": [
+        { "text": "Chyba na webovej stránke", "link": "+421 00 00 0000" },
+        { "text": "Kontaktujte nás", "link": "+421 00 00 0000" }
+      ]
+    },
+    "socials": {
+      "title": "Sociálne siete",
+      "links": [
+        {
+          "icon": { "src": "rortzj3bihcpfhmxlmi7", "alt": "instagram" },
+          "link": "https://www.instagram.com"
+        }
+      ]
+    }
+  }
+}
