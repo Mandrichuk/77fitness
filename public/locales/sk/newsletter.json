@@ -1,0 +1,13 @@
+{
+  "title": "NEWSLETTER",
+  "description": "Prihláste sa k odberu nášho newslettera a buďte v obraze",
+  "input": {
+    "type": "text",
+    "placeholder": "Zadajte svoju emailovú adresu",
+    "field": "newsletterInput",
+    "button": {
+      "type": "submit",
+      "text": "Prihlásiť sa"
+    }
+  }
+}

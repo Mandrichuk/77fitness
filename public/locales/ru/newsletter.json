@@ -1,0 +1,13 @@
+{
+  "title": "РАССЫЛКА",
+  "description": "Подпишитесь на нашу рассылку и оставайтесь в курсе событий",
+  "input": {
+    "type": "text",
+    "placeholder": "Введите ваш адрес электронной почты",
+    "field": "newsletterInput",
+    "button": {
+      "type": "submit",
+      "text": "Подписаться"
+    }
+  }
+}

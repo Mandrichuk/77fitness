@@ -1,13 +1,45 @@
-$primary-color: #090707;
-$secondary-color: #097fd9;
-$text-color: #fff;
+$max-width: 1440px;
+$transition: all 0.3s ease-in-out;
+$fast-transition: all 0.15s ease-in-out;
+$animation-time: 5s;
+
+$colors: (
+  primary-color: #090707,
+  secondary-color: #097fd9,
+  text-color: #fff,
+  custom-green: #8dc53f,
+  custom-gray: #8e8e8e
+);
+$section-gaps:(
+  mobile: 50px,
+  screen: 60px
+);
+
+$main-width: (
+  mobile: 90%,
+  screen: 95%
+);
+
+$border-radius: (
+  mobile: 10px,
+  screen: 12px
+);
+
+$font-weights: (
+  thin: 300,
+  regular: 400,
+  medium: 500,
+  semibold: 600,
+  bold: 700,
+  extrabold: 800
+);
 
 $font-sizes: (
   name: clamp(38px, 1.5vw, 55px),
   h1: clamp(80px, 2.5vw, 142px),
   h2: clamp(40px, 2.5vw, 56px),
   h3: clamp(30px, 2.5vw, 40px),
-  p: clamp(12px, 1.5vw, 18px),
+  p: clamp(14px, 1.5vw, 18px),
   small: clamp(10px, 1.5vw, 14px),
   link: clamp(14px, 1.5vw, 18px),
   button: clamp(14px, 1.5vw, 18px)
@@ -17,3 +49,63 @@ $icon-sizes: (
   mobile: 30px,
   screen: 16px
 );
+
+@mixin Flex($direction, $align, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin button {
+  width: 100%;
+  padding: 16px;
+  font-size: map-get($font-sizes, button);
+  font-weight: map-get($font-weights, semibold);
+  color: color(text-color);
+  opacity: 0.2;
+}
+
+@mixin bgText {
+  font-size: map-get($font-sizes, h1);
+  font-weight: map-get($font-weights, extrabold);
+  color: color(text-color);
+}
+
+@mixin titleText {
+  font-size: map-get($font-sizes, h3);
+  font-weight: map-get($font-weights, bold);
+  color: color(text-color);
+}
+
+@mixin nameText {
+  font-size: map-get($font-sizes, name);
+  font-weight: map-get($font-weights, thin);
+  color: color(text-color);
+}
+
+@mixin pText {
+  font-size: map-get($font-sizes, p);
+  font-weight: map-get($font-weights, medium);
+  line-height: 1.5;
+}
+
+@function sectionGap($gap-name) {
+  @return map-get($section-gaps, $gap-name);
+}
+
+@function mainWidth($width-name) {
+  @return map-get($main-width, $width-name);
+}
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+@function fontSize($font-size-name) {
+  @return map-get($font-sizes, $font-size-name);
+}
+
+@function borderRadius($border-name) {
+  @return map-get($border-radius, $border-name);
+}
