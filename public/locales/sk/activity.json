@@ -1,9 +1,0 @@
-{
-  "bgText": "IN THE HOUSE",
-  "title": "DJ Party",
-  "scrollImages": [
-    { "src": "l0f3l14gwympysbjzu2j", "alt": "aktivita1" },
-    { "src": "l0f3l14gwympysbjzu2j", "alt": "aktivita2" }
-  ],
-  "link": { "text": "Zobraziť harmonogram", "link": "/schedule" }
-}

@@ -1,0 +1,70 @@
+@include media-small {
+}
+
+@include media-medium {
+  .Introduction {
+    @include sectionPreset;
+    .wrapper {
+      width: wrapperWidth(mobile);
+      @include Flex(row, center, space-between);
+
+      .textSection {
+        @include Flex(column, center, center);
+        width: 100%;
+
+        .logoImg {
+          @include Flex(row, center, center);
+          width: 80%;
+          margin-bottom: 30px;
+        }
+
+        .name {
+          margin-bottom: 15px;
+        }
+
+        .description {
+          margin-bottom: 25px;
+        }
+
+        .buttons {
+          @include Flex(row, center, space-between);
+          width: 100%;
+          margin-bottom: $gap;
+
+          .buttonMore {
+            flex: 0.6;
+            margin-right: 20px;
+          }
+
+          .buttonVideo {
+            @include Flex(row, center, left);
+            flex: 1.4;
+
+            .text {
+              font-weight: fontWeight(regular);
+            }
+
+            svg {
+              height: iconSize(mobile) * 1.4;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+
+      .imgSection {
+        @include Flex(row, center, center);
+        width: 100%;
+        .img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@include media-large {
+}
+
+@include media-extralarge {
+}

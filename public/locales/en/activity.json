@@ -1,9 +1,0 @@
-{
-  "bgText": "IN THE HOUSE",
-  "title": "DJ Party",
-  "scrollImages": [
-    { "src": "l0f3l14gwympysbjzu2j", "alt": "activity1" },
-    { "src": "l0f3l14gwympysbjzu2j", "alt": "activity2" }
-  ],
-  "link": { "text": "See the schedule", "link": "/schedule" }
-}

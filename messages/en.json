@@ -1,0 +1,235 @@
+{
+  "Header": {
+    "links": {
+      "home": {
+        "text": "Home",
+        "link": "/"
+      },
+      "pricing": {
+        "text": "Pricing",
+        "link": "/pricing"
+      },
+      "about": {
+        "text": "About",
+        "link": "/about"
+      },
+      "contact": {
+        "text": "Contact Us",
+        "link": "/contact"
+      }
+    }
+  },
+  "Introduction": {
+    "logo": { "src": "ncdhkltskvpjmdprvynk", "alt": "logo" },
+    "introductionImg": {
+      "src": "tgkflw9u7aggj4vy5emq",
+      "alt": "introductionImg"
+    },
+    "name": "77 NEXT LEVEL FITNESS",
+    "description": "Your new fitness center in the center of Bratislava at Bajkalská 2i. Leave us a contact and we will inform you about the news.",
+    "promotion": "We are open and look forward to your visit.",
+    "button": { "text": "More", "link": "/more" },
+    "watchVideo": {
+      "text": "Watch Promo Video",
+      "link": "/video"
+    }
+  },
+  "Gallery": {
+    "gallery": {
+      "gallery1": { "src": "srgaaydxtpolcmmfexq0", "alt": "gallery1" },
+      "gallery2": { "src": "terpaeldoub8drzovinl", "alt": "gallery2" },
+      "gallery3": { "src": "ybfz2chx6vjull05kyos", "alt": "gallery3" }
+    },
+    "title": "We are the first in Slovakia with equipment from <span style={'color: #8DC53F'}>Prime Fitness</span> and <span style={'color: #8E8E8E'}>HOIST FITNESS</span>.",
+    "points": {
+      "point1": "High quality equipment",
+      "point2": "Variety of dumbbells and weights",
+      "point3": "Regular updates to the assortment"
+    },
+    "button": {
+      "text": "View more pictures",
+      "link": "/gallery"
+    },
+    "link": {
+      "text": "Contact us",
+      "link": "/contact"
+    }
+  },
+  "Activity": {
+    "bgText": "IN THE HOUSE",
+    "title": "DJ Party",
+    "scrollImages": {
+      "scrollImage1": { "src": "l0f3l14gwympysbjzu2j", "alt": "activity1" },
+      "scrollImage2": { "src": "l0f3l14gwympysbjzu2j", "alt": "activity2" }
+    },
+    "link": { "text": "See the schedule", "link": "/schedule" }
+  },
+  "Prices": {
+    "text": "Prices",
+    "title": "Our Gym Membership Packages",
+    "packages": {
+      "package1": {
+        "title": "one time entry",
+        "price": 10,
+        "description": "per entry, billed annually",
+        "included": {
+          "included1": "One Time Access",
+          "included2": "Sauna & Showers",
+          "included3": "DJ & Live Music",
+          "included4": "Personal Trainer (Optional)"
+        },
+        "button": {
+          "text": "Contact us",
+          "link": "+421 00 00 0000"
+        }
+      },
+      "package2 ": {
+        "title": "month membership",
+        "price": 69,
+        "description": "per month, billed annually",
+        "included": {
+          "included1": "Unlimited Gym Access",
+          "included2": "Sauna & Showers",
+          "included3": "DJ & Live Music",
+          "included4": "Personal Trainer (Optional)"
+        },
+        "button": {
+          "text": "Contact us",
+          "link": "+421 00 00 0000"
+        }
+      },
+      "package3": {
+        "standOut": true,
+        "advertisement": "+1 month free",
+        "title": "when purchasing a 6-month membership",
+        "price": 48,
+        "description": "one-time payment, billed annually",
+        "included": {
+          "included1": "Save more than €100!",
+          "included2": "Unlimited Gym Access",
+          "included3": "Sauna & Showers",
+          "included4": "DJ & Live Music",
+          "included5": "Personal Trainer (Optional)"
+        },
+        "button": {
+          "text": "Contact us",
+          "link": "+421 00 00 0000"
+        }
+      },
+      "package4": {
+        "title": "1 year membership",
+        "price": 650,
+        "description": "one-time payment, billed annually",
+        "included": {
+          "included1": "Best Price",
+          "included2": "Unlimited Gym Access",
+          "included3": "Sauna & Showers",
+          "included4": "DJ & Live Music",
+          "included5": "Personal Trainer (Optional)"
+        },
+        "button": {
+          "text": "Contact us",
+          "link": "+421 00 00 0000"
+        }
+      }
+    }
+  },
+  "Team": {
+    "bgText": "Trainers",
+    "title": "Our Trainers",
+    "trainers": {
+      "trainer1": {
+        "image": { "src": "enymsgoeuilqao0lyngg", "alt": "trainer1" },
+        "qr": { "src": "byngykusqgnbs9uhg9a9", "alt": "qr" },
+        "name": "Trainer Name",
+        "number": "+421 00 00 0000",
+        "email": "example@email.com",
+        "languages": { "laguageSk": "sk", "laguageRu": "ru" }
+      },
+      "trainer2": {
+        "image": { "src": "a1r05sgl2qdddjtbfl4a", "alt": "trainer2" },
+        "qr": { "src": "byngykusqgnbs9uhg9a9", "alt": "qr" },
+        "name": "Trainer Name",
+        "number": "+421 00 00 0000",
+        "email": "example@email.com",
+        "languages": { "laguageSk": "sk", "laguageRu": "ru" }
+      },
+      "trainer3": {
+        "image": { "src": "pwasyqbu6rns713ucjmb", "alt": "trainer3" },
+        "qr": { "src": "byngykusqgnbs9uhg9a9", "alt": "qr" },
+        "name": "Trainer Name",
+        "number": "+421 00 00 0000",
+        "email": "example@email.com",
+        "languages": { "laguageSk": "sk", "laguageRu": "ru" }
+      },
+      "trainer4": {
+        "image": { "src": "aa4ueb78mutxetea15ek", "alt": "trainer4" },
+        "qr": { "src": "byngykusqgnbs9uhg9a9", "alt": "qr" },
+        "name": "Trainer Name",
+        "number": "+421 00 00 0000",
+        "email": "example@email.com",
+        "languages": { "laguageSk": "sk", "laguageRu": "ru" }
+      },
+      "trainer5": {
+        "image": { "src": "rscphr7l3vfvwhsgpmw", "alt": "trainer5" },
+        "qr": { "src": "byngykusqgnbs9uhg9a9", "alt": "qr" },
+        "name": "Trainer Name",
+        "number": "+421 00 00 0000",
+        "email": "example@email.com",
+        "languages": { "laguageSk": "sk", "laguageRu": "ru" }
+      }
+    }
+  },
+  "SocialMedia": {
+    "text": "Find us on Instagram",
+    "name": "77.fitness.sk",
+    "links": {
+      "link1": { "text": "instagram", "link": "https://www.instagram.com" }
+    }
+  },
+  "Newsletter": {
+    "title": "NEWSLETTER",
+    "description": "Subscribe to our newsletter and stay up to date",
+    "input": {
+      "type": "text",
+      "placeholder": "Enter your email address",
+      "field": "newsletterInput",
+      "button": {
+        "type": "submit",
+        "text": "Subscribe"
+      }
+    }
+  },
+  "Footer": {
+    "logo": { "src": "ncdhkltskvpjmdprvynk", "alt": "logo" },
+    "name": "77 NEXT LEVEL FITNESS",
+    "location": {
+      "text": "Bratislava, Bajkalská 2i, 831 04"
+    },
+    "sitemap": {
+      "title": "Sitemap",
+      "links": {
+        "link1": { "text": "Home", "link": "/" },
+        "link2": { "text": "Schedule", "link": "/schedule" },
+        "link3": { "text": "Gallery", "link": "/gallery" },
+        "link4": { "text": "Contact", "link": "/contact" }
+      },
+      "support": {
+        "title": "Support",
+        "links": {
+          "link1": { "text": "Website Error", "link": "+421 00 00 0000" },
+          "link2": { "text": "Contact Us", "link": "+421 00 00 0000" }
+        }
+      },
+      "socials": {
+        "title": "Social Media",
+        "links": {
+          "link1": {
+            "icon": { "src": "rortzj3bihcpfhmxlmi7", "alt": "instagram" },
+            "link": "https://www.instagram.com"
+          }
+        }
+      }
+    }
+  }
+}

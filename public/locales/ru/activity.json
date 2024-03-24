@@ -1,9 +1,0 @@
-{
-  "bgText": "IN THE HOUSE ",
-  "title": "DJ Вечеринка",
-  "scrollImages": [
-    { "src": "l0f3l14gwympysbjzu2j", "alt": "активность1" },
-    { "src": "l0f3l14gwympysbjzu2j", "alt": "активность2" }
-  ],
-  "link": { "text": "Смотреть расписание", "link": "/schedule" }
-}

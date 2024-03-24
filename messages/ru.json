@@ -1,0 +1,235 @@
+{
+  "Header": {
+    "links": {
+      "home": {
+        "text": "Главная",
+        "link": "/"
+      },
+      "pricing": {
+        "text": "Цены",
+        "link": "/цены"
+      },
+      "about": {
+        "text": "О нас",
+        "link": "/о-нас"
+      },
+      "contact": {
+        "text": "Свяжитесь с нами",
+        "link": "/контакт"
+      }
+    }
+  },
+  "Introduction": {
+    "logo": { "src": "ncdhkltskvpjmdprvynk", "alt": "логотип" },
+    "introductionImg": {
+      "src": "tgkflw9u7aggj4vy5emq",
+      "alt": "introductionImg"
+    },
+    "name": "77 NEXT LEVEL FITNESS",
+    "description": "Ваш новый фитнес-центр в центре Братиславы по адресу Байкальская 2и. Оставьте нам контактные данные, и мы сообщим вам о новостях. <span style={'color: #097fd9'}>Мы открыты и ждем вашего визита.</span>",
+    "button": { "text": "Подробнее", "link": "/больше" },
+    "watchVideo": {
+      "icon": { "src": "y2cqzcgrslyrvl5vlqnq", "alt": "воспроизвести" },
+      "text": "Смотреть промо-видео",
+      "link": "/видео"
+    }
+  },
+  "Gallery": {
+    "gallery": {
+      "gallery1": { "src": "srgaaydxtpolcmmfexq0", "alt": "gallery1" },
+      "gallery2": { "src": "terpaeldoub8drzovinl", "alt": "gallery2" },
+      "gallery3": { "src": "ybfz2chx6vjull05kyos", "alt": "gallery3" }
+    },
+    "title": "Первые в Словакии с оборудованием от <span style={'color: #8DC53F'}>Prime Fitness</span> и <span style={'color: #8E8E8E'}>HOIST FITNESS</span>.",
+    "points": {
+      "point1": "Высококачественное оборудование",
+      "point2": "Разнообразие гантелей и грузов",
+      "point3": "Регулярное обновление ассортимента"
+    },
+    "button": {
+      "text": "Посмотреть больше фотографий",
+      "link": "/галерея"
+    },
+    "link": {
+      "text": "Свяжитесь с нами",
+      "link": "/контакт"
+    }
+  },
+  "Activity": {
+    "bgText": "В ДОМЕ",
+    "title": "DJ Вечеринка",
+    "scrollImages": {
+      "scrollImage1": { "src": "l0f3l14gwympysbjzu2j", "alt": "activity1" },
+      "scrollImage2": { "src": "l0f3l14gwympysbjzu2j", "alt": "activity2" }
+    },
+    "link": { "text": "Посмотреть расписание", "link": "/расписание" }
+  },
+  "Prices": {
+    "text": "Цены",
+    "title": "Наши пакеты членства в спортзале",
+    "packages": {
+      "package1": {
+        "title": "одноразовый вход",
+        "price": 10,
+        "description": "за вход, выставленный ежегодно",
+        "included": {
+          "included1": "Одноразовый доступ",
+          "included2": "Сауна и душ",
+          "included3": "DJ и живая музыка",
+          "included4": "Персональный тренер (по желанию)"
+        },
+        "button": {
+          "text": "Свяжитесь с нами",
+          "link": "+421 00 00 0000"
+        }
+      },
+      "package2 ": {
+        "title": "месячное членство",
+        "price": 69,
+        "description": "в месяц, выставленное ежегодно",
+        "included": {
+          "included1": "Неограниченный доступ в спортзал",
+          "included2": "Сауна и душ",
+          "included3": "DJ и живая музыка",
+          "included4": "Персональный тренер (по желанию)"
+        },
+        "button": {
+          "text": "Свяжитесь с нами",
+          "link": "+421 00 00 0000"
+        }
+      },
+      "package3": {
+        "standOut": true,
+        "advertisement": "+1 месяц бесплатно",
+        "title": "при покупке 6-месячного членства",
+        "price": 48,
+        "description": "одноразовая оплата, выставленная ежегодно",
+        "included": {
+          "included1": "Сэкономьте более €100!",
+          "included2": "Неограниченный доступ в спортзал",
+          "included3": "Сауна и душ",
+          "included4": "DJ и живая музыка",
+          "included5": "Персональный тренер (по желанию)"
+        },
+        "button": {
+          "text": "Свяжитесь с нами",
+          "link": "+421 00 00 0000"
+        }
+      },
+      "package4": {
+        "title": "годовое членство",
+        "price": 650,
+        "description": "одноразовая оплата, выставленная ежегодно",
+        "included": {
+          "included1": "Лучшая цена",
+          "included2": "Неограниченный доступ в спортзал",
+          "included3": "Сауна и душ",
+          "included4": "DJ и живая музыка",
+          "included5": "Персональный тренер (по желанию)"
+        },
+        "button": {
+          "text": "Свяжитесь с нами",
+          "link": "+421 00 00 0000"
+        }
+      }
+    }
+  },
+  "Team": {
+    "bgText": "Тренеры",
+    "title": "Наши тренеры",
+    "trainers": {
+      "trainer1": {
+        "image": { "src": "enymsgoeuilqao0lyngg", "alt": "trainer1" },
+        "qr": { "src": "byngykusqgnbs9uhg9a9", "alt": "qr" },
+        "name": "Имя тренера",
+        "number": "+421 00 00 0000",
+        "email": "example@email.com",
+        "languages": { "laguageSk": "sk", "laguageRu": "ru" }
+      },
+      "trainer2": {
+        "image": { "src": "a1r05sgl2qdddjtbfl4a", "alt": "trainer2" },
+        "qr": { "src": "byngykusqgnbs9uhg9a9", "alt": "qr" },
+        "name": "Имя тренера",
+        "number": "+421 00 00 0000",
+        "email": "example@email.com",
+        "languages": { "laguageSk": "sk", "laguageRu": "ru" }
+      },
+      "trainer3": {
+        "image": { "src": "pwasyqbu6rns713ucjmb", "alt": "trainer3" },
+        "qr": { "src": "byngykusqgnbs9uhg9a9", "alt": "qr" },
+        "name": "Имя тренера",
+        "number": "+421 00 00 0000",
+        "email": "example@email.com",
+        "languages": { "laguageSk": "sk", "laguageRu": "ru" }
+      },
+      "trainer4": {
+        "image": { "src": "aa4ueb78mutxetea15ek", "alt": "trainer4" },
+        "qr": { "src": "byngykusqgnbs9uhg9a9", "alt": "qr" },
+        "name": "Имя тренера",
+        "number": "+421 00 00 0000",
+        "email": "example@email.com",
+        "languages": { "laguageSk": "sk", "laguageRu": "ru" }
+      },
+      "trainer5": {
+        "image": { "src": "rscphr7l3vfvwhsgpmw", "alt": "trainer5" },
+        "qr": { "src": "byngykusqgnbs9uhg9a9", "alt": "qr" },
+        "name": "Имя тренера",
+        "number": "+421 00 00 0000",
+        "email": "example@email.com",
+        "languages": { "laguageSk": "sk", "laguageRu": "ru" }
+      }
+    }
+  },
+  "SocialMedia": {
+    "text": "Найдите нас в Instagram",
+    "name": "77.fitness.sk",
+    "links": {
+      "link1": { "text": "instagram", "link": "https://www.instagram.com" }
+    }
+  },
+  "Newsletter": {
+    "title": "РАССЫЛКА",
+    "description": "Подпишитесь на нашу рассылку и оставайтесь в курсе событий",
+    "input": {
+      "type": "text",
+      "placeholder": "Введите ваш email",
+      "field": "newsletterInput",
+      "button": {
+        "type": "submit",
+        "text": "Подписаться"
+      }
+    }
+  },
+  "Footer": {
+    "logo": { "src": "ncdhkltskvpjmdprvynk", "alt": "логотип" },
+    "name": "77 NEXT LEVEL FITNESS",
+    "location": {
+      "text": "Братислава, Байкальская 2и, 831 04"
+    },
+    "sitemap": {
+      "title": "Карта сайта",
+      "links": {
+        "link1": { "text": "Главная", "link": "/" },
+        "link2": { "text": "Расписание", "link": "/расписание" },
+        "link3": { "text": "Галерея", "link": "/галерея" },
+        "link4": { "text": "Контакт", "link": "/контакт" }
+      },
+      "support": {
+        "title": "Поддержка",
+        "links": {
+          "link1": { "text": "Ошибка на сайте", "link": "+421 00 00 0000" },
+          "link2": { "text": "Свяжитесь с нами", "link": "+421 00 00 0000" }
+        }
+      },
+      "socials": {
+        "title": "Социальные сети",
+        "links": {
+          "link1": {
+            "icon": { "src": "rortzj3bihcpfhmxlmi7", "alt": "instagram" },
+            "link": "https://www.instagram.com"
+          }
+        }
+      }
+    }
+  }
+}

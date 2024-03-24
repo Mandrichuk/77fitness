@@ -1,0 +1,149 @@
+$max-width: 1440px;
+$transition: all 0.3s ease-in-out;
+$animation-time: 5s;
+$gap: 50px;
+
+$colors: (
+  primary-color: #090707,
+  secondary-color: #097fd9,
+  text-color: #fff,
+  custom-green: #8dc53f,
+  custom-gray: #8e8e8e
+);
+
+$font-weights: (
+  thin: 100,
+  extralight: 200,
+  light: 300,
+  regular: 400,
+  medium: 500,
+  semibold: 600,
+  bold: 700,
+  extrabold: 800,
+  black: 900
+);
+
+$font-sizes: (
+  name: clamp(32px, 3vw, 55px),
+  h1: clamp(80px, 2.5vw, 142px),
+  h2: clamp(40px, 2.5vw, 56px),
+  h3: clamp(30px, 2.5vw, 40px),
+  p: clamp(15px, 1.5vw, 18px),
+  small: clamp(10px, 1.5vw, 14px),
+  link: clamp(14px, 1.5vw, 18px),
+  button: clamp(14px, 1.5vw, 18px)
+);
+
+$wrapper-widths: (
+  mobile: 90%,
+  screen: 70%
+);
+
+$border-radius: (
+  mobile: 8px,
+  screen: 10px
+);
+
+$icon-sizes: (
+  mobile: 30px,
+  screen: 16px
+);
+
+@function wrapperWidth($key) {
+  @return map-get($wrapper-widths, $key);
+}
+
+@function color($key) {
+  @return map-get($colors, $key);
+}
+
+@function fontWeight($key) {
+  @return map-get($font-weights, $key);
+}
+
+@function borderRadius($key) {
+  @return map-get($border-radius, $key);
+}
+
+@function fontSize($key) {
+  @return map-get($font-sizes, $key);
+}
+
+@function iconSize($key) {
+  @return map-get($icon-sizes, $key);
+}
+
+@mixin Flex($direction, $align, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin button {
+  @include Flex(row, center, center);
+  width: 100%;
+  cursor: pointer;
+  border-radius: borderRadius(mobile);
+  background-color: color(secondary-color);
+  color: color(text-color);
+  font-size: fontSize(button);
+  font-weight: fontWeight(semibold);
+  padding: 10px 15px;
+}
+
+@mixin titleText {
+  font-size: fontSize(h3);
+  font-weight: fontWeight(bold);
+  color: color(text-color);
+}
+
+@mixin nameText {
+  font-size: fontSize(name);
+  font-weight: fontWeight(thin);
+  color: color(text-color);
+}
+
+@mixin bgText {
+  font-size: fontSize($font-sizes, h1);
+  font-weight: fontWeight(black);
+  color: color(text-color);
+  opacity: 0.1;
+}
+
+@mixin pText {
+  font-size: fontSize(p);
+  font-weight: fontWeight(medium);
+  color: color(text-color);
+  line-height: 1.5;
+}
+
+@mixin sectionPreset {
+  @include Flex(column, center, center);
+  width: 100%;
+}
+
+@mixin media-small {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin media-medium {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-large {
+  @media (min-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin media-extralarge {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+

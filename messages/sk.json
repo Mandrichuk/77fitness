@@ -1,0 +1,238 @@
+{
+  "Header": {
+    "links": {
+      "home": {
+        "text": "Domov",
+        "link": "/"
+      },
+      "pricing": {
+        "text": "Ceny",
+        "link": "/ceny"
+      },
+      "about": {
+        "text": "O nás",
+        "link": "/o-nas"
+      },
+      "contact": {
+        "text": "Kontaktujte nás",
+        "link": "/kontakt"
+      }
+    }
+  },
+  "Introduction": {
+    "logo": { "src": "ncdhkltskvpjmdprvynk", "alt": "logo" },
+    "introductionImg": {
+      "src": "tgkflw9u7aggj4vy5emq",
+      "alt": "introductionImg"
+    },
+    "name": "77 NEXT LEVEL FITNESS",
+    "description": "Váš nový fitness center v centre Bratislavy na adrese Bajkalská 2i. Zanechajte nám kontakt a budeme vás informovať o novinkách. <span style={'color: #097fd9'}>Sme otvorení a tešíme sa na vašu návštevu.</span>",
+    "button": { "text": "Viac", "link": "/viac" },
+    "watchVideo": {
+      "icon": { "src": "y2cqzcgrslyrvl5vlqnq", "alt": "play" },
+      "text": "Sledujte promo video",
+      "link": "/video"
+    }
+  },
+  "Gallery": {
+    "gallery": {
+      "gallery1": { "src": "srgaaydxtpolcmmfexq0", "alt": "gallery1" },
+      "gallery2": { "src": "terpaeldoub8drzovinl", "alt": "gallery2" },
+      "gallery3": { "src": "ybfz2chx6vjull05kyos", "alt": "gallery3" }
+    },
+    "title": "Prví na Slovensku s vybavením od <span style={'color: #8DC53F'}>Prime Fitness</span> a <span style={'color: #8E8E8E'}>HOIST FITNESS</span>.",
+    "points": {
+      "point1": "Vysoká kvalita vybavenia",
+      "point2": "Rozmanitosť činiek a závaží",
+      "point3": "Pravidelné aktualizácie sortimentu"
+    },
+    "button": {
+      "text": "Zobraziť viac obrázkov",
+      "link": "/galeria"
+    },
+    "link": {
+      "text": "Kontaktujte nás",
+      "link": "/kontakt"
+    }
+  },
+  "Activity": {
+    "bgText": "DOMA",
+    "title": "DJ Party",
+    "scrollImages": {
+      "scrollImage1": { "src": "l0f3l14gwympysbjzu2j", "alt": "activity1" },
+      "scrollImage2": { "src": "l0f3l14gwympysbjzu2j", "alt": "activity2" }
+    },
+    "link": { "text": "Pozrite si harmonogram", "link": "/harmonogram" }
+  },
+  "Prices": {
+    "text": "Ceny",
+    "title": "Naše balíky členstva v posilňovni",
+    "packages": {
+      "package1": {
+        "title": "jednorazový vstup",
+        "price": 10,
+        "description": "za vstup, fakturované ročne",
+        "included": {
+          "included1": "Jednorazový prístup",
+          "included2": "Sauna a sprchy",
+          "included3": "DJ a živá hudba",
+          "included4": "Osobný tréner (voliteľné)"
+        },
+        "button": {
+          "text": "Kontaktujte nás",
+          "link": "+421 00 00 0000"
+        }
+      },
+      "package2 ": {
+        "title": "členské členstvo na mesiac",
+        "price": 69,
+        "description": "za mesiac, fakturované ročne",
+        "included": {
+          "included1": "Neobmedzený prístup do posilňovne",
+          "included2": "Sauna a sprchy",
+          "included3": "DJ a živá hudba",
+          "included4": "Osobný tréner (voliteľné)"
+        },
+        "button": {
+          "text": "Kontaktujte nás",
+          "link": "+421 00 00 0000"
+        }
+      },
+      "package3": {
+        "standOut": true,
+        "advertisement": "+1 mesiac zadarmo",
+        "title": "pri kúpe 6-mesačného členstva",
+        "price": 48,
+        "description": "jednorazová platba, fakturovaná ročne",
+        "included": {
+          "included1": "Ušetrite viac ako €100!",
+          "included2": "Neobmedzený prístup do posilňovne",
+          "included3": "Sauna a sprchy",
+          "included4": "DJ a živá hudba",
+          "included5": "Osobný tréner (voliteľné)"
+        },
+        "button": {
+          "text": "Kontaktujte nás",
+          "link": "+421 00 00 0000"
+        }
+      },
+      "package4": {
+        "title": "členské členstvo na 1 rok",
+        "price": 650,
+        "description": "jednorazová platba, fakturovaná ročne",
+        "included": {
+          "included1": "Najlepšia cena",
+          "included2": "Neobmedzený prístup do posilňovne",
+          "included3": "Sauna a sprchy",
+          "included4": "DJ a živá hudba",
+          "included5": "Osobný tréner (voliteľné)"
+        },
+        "button": {
+          "text": "Kontaktujte nás",
+          "link": "+421 00 00 0000"
+        }
+      }
+    }
+  },
+  "Team": {
+    "bgText": "Tréneri",
+    "title": "Naši tréneri",
+    "trainers": {
+      "trainer1": {
+        "image": { "src": "enymsgoeuilqao0lyngg", "alt": "trainer1" },
+        "qr": { "src": "byngykusqgnbs9uhg9a9", "alt": "qr" },
+        "name": "Meno trénera",
+        "number": "+421 00 00 0000",
+        "email": "example@email.com",
+        "languages": { "laguageSk": "sk", "laguageRu": "ru" }
+      },
+      "trainer2": {
+        "image": { "src": "a1r05sgl2qdddjtbfl4a", "alt": "trainer2" },
+        "qr": { "src": "byngykusqgnbs9uhg9a9", "alt": "qr" },
+        "name": "Meno trénera",
+        "number": "+421 00 00 0000",
+        "email": "example@email.com",
+        "languages": { "laguageSk": "sk", "laguageRu": "ru" }
+      },
+      "trainer3": {
+        "image": { "src": "pwasyqbu6rns713ucjmb", "alt": "trainer3" },
+        "qr": { "src": "byngykusqgnbs9uhg9a9", "alt": "qr" },
+        "name": "Meno trénera",
+        "number": "+421 00 00 0000",
+        "email": "example@email.com",
+        "languages": { "laguageSk": "sk", "laguageRu": "ru" }
+      },
+      "trainer4": {
+        "image": { "src": "aa4ueb78mutxetea15ek", "alt": "trainer4" },
+        "qr": { "src": "byngykusqgnbs9uhg9a9", "alt": "qr" },
+        "name": "Meno trénera",
+        "number": "+421 00 00 0000",
+        "email": "example@email.com",
+        "languages": { "laguageSk": "sk", "laguageRu": "ru" }
+      },
+      "trainer5": {
+        "image": { "src": "rscphr7l3vfvwhsgpmw", "alt": "trainer5" },
+        "qr": { "src": "byngykusqgnbs9uhg9a9", "alt": "qr" },
+        "name": "Meno trénera",
+        "number": "+421 00 00 0000",
+        "email": "example@email.com",
+        "languages": { "laguageSk": "sk", "laguageRu": "ru" }
+      }
+    }
+  },
+  "SocialMedia": {
+    "text": "Nájdite nás na Instagrame",
+    "name": "77.fitness.sk",
+    "links": {
+      "link1": { "text": "instagram", "link": "https://www.instagram.com" }
+    }
+  },
+  "Newsletter": {
+    "title": "NEWSLETTER",
+    "description": "Prihláste sa k odberu našich noviniek a zostávajte v obraze",
+    "input": {
+      "type": "text",
+      "placeholder": "Zadajte váš email",
+      "field": "newsletterInput",
+      "button": {
+        "type": "submit",
+        "text": "Prihlásiť sa"
+      }
+    }
+  },
+  "Footer": {
+    "logo": { "src": "ncdhkltskvpjmdprvynk", "alt": "logo" },
+    "name": "77 NEXT LEVEL FITNESS",
+    "location": {
+      "text": "Bratislava, Bajkalská 2i, 831 04"
+    },
+    "sitemap": {
+      "title": "Mapa stránky",
+      "links": {
+        "link1": { "text": "Domov", "link": "/" },
+        "link2": { "text": "Harmonogram", "link": "/harmonogram" },
+        "link3": { "text": "Galéria", "link": "/galeria" },
+        "link4": { "text": "Kontakt", "link": "/kontakt" }
+      },
+      "support": {
+        "title": "Podpora",
+        "links": {
+          "link1": {
+            "text": "Chyba na webovej stránke",
+            "link": "+421 00 00 0000"
+          },
+          "link2": { "text": "Kontaktujte nás", "link": "+421 00 00 0000" }
+        }
+      },
+      "socials": {
+        "title": "Sociálne siete",
+        "links": {
+          "link1": {
+            "icon": { "src": "rortzj3bihcpfhmxlmi7", "alt": "instagram" },
+            "link": "https://www.instagram.com"
+          }
+        }
+      }
+    }
+  }
+}

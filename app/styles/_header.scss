@@ -1,0 +1,49 @@
+header {
+  @include Flex(row, center, space-between);
+  width: 100%;
+  padding: 30px 30px 0 30px;
+
+  .mobile {
+    height: 40px;
+    @include Flex(row, center, space-between);
+    .burgerMenu,
+    .close {
+      stroke: white;
+      fill: white;
+    }
+    .burgerMenu {
+      height: iconSize(mobile) * 1.2;
+      width: iconSize(mobile) * 1.2;
+      cursor: pointer;
+    }
+
+    .close {
+      cursor: pointer;
+      position: fixed;
+      height: iconSize(mobile) * 0.85;
+      width: iconSize(mobile) * 0.85;
+      right: 40px;
+      z-index: 10;
+    }
+  }
+
+  .screenNav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: calc($gap / 10);
+  }
+
+  .mobileNav {
+    @include Flex(column, center, center);
+    background-color: color(primary-color);
+    opacity: 0.97;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+
+    a {
+      margin-bottom: 25px;
+      font-size: fontSize(h3);
+    }
+  }
+}
