@@ -41,3 +41,26 @@ export interface LocaleProps {
     locale: "en" | "sk" | "ru";
   };
 }
+
+export interface TextLayersProps {
+  bgText: string;
+  title: string;
+}
+
+interface TeamMember {
+  image: {
+    src: string;
+    alt: string;
+  };
+  qr: {
+    src: string;
+    alt: string;
+  };
+  name: string;
+  number: string;
+  email: string;
+}
+
+export interface TeamSliderProps {
+  children: TeamMember[];
+}

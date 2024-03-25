@@ -2,6 +2,9 @@
 @import "header";
 @import "introduction";
 @import "responsive";
+@import "team";
+@import "textLayers";
+@import "teamSlider";
 
 * {
   box-sizing: border-box;
@@ -12,52 +15,49 @@
 html {
   @include Flex(column, center, center);
   width: 100%;
-  width: 100%;
   scroll-behavior: smooth;
-  // -ms-overflow-style: none;  
-  // scrollbar-width: none;
 
-  // &::-webkit-scrollbar {
-  //   display: none;
-  // }
-}
+  overflow-x: hidden;
 
+  body {
+    @include Flex(column, center, center);
+    @include pText();
+    width: 100%;
+    max-width: $max-width;
+    color: color(text-color);
+    background-color: color(primary-color);
+    main {
+      width: 100%;
+      display: grid;
+      gap: $gap;
 
-body {
-  @include Flex(column, center, center);
-  @include pText();
-  width: 100%;
-  max-width: $max-width;
-  color: color(text-color);
-  background-color: color(primary-color);
-}
+      p,
+      a,
+      span {
+        @include pText();
+      }
 
-main {
-  width: 100%;
-  display: grid;
-  gap: $gap;
-}
+      a {
+        text-decoration: none;
+        font-size: calc(fontSize(p) - 1px);
+      }
 
-p,
-a,
-span {
-  @include pText();
-}
+      button,
+      .button {
+        @include button();
+      }
 
-a {
-  text-decoration: none;
-  font-size: calc(fontSize(p) - 1px);
-}
+      h1 {
+        @include nameText();
+      }
 
-button,
-.button {
-  @include button();
-}
+      h2 {
+        @include bgText();
+      }
 
-h1 {
-  @include nameText();
-}
-
-h2 {
-  @include titleText();
+      h3 {
+        @include titleText();
+      }
+    }
+  }
 }

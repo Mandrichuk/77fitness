@@ -1,0 +1,56 @@
+.TeamSlider {
+  width: 100%;
+  .teamMember {
+    height: 230px;
+
+    .wrapper {
+      @include Flex(row, end, space-between);
+      position: relative;
+      height: 96%;
+      width: 96%;
+      background-color: color(custom-black);
+      border-radius: borderRadius(mobile);
+
+      .textSection {
+        @include Flex(column, start, flex-end);
+
+        height: 100%;
+        flex: 1.1;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        .name {
+          @include pText();
+          font-size: calc(fontSize(p) + 6px);
+          font-weight: fontWeight(bold);
+          color: color(secondary-color);
+          margin-bottom: 10px;
+        }
+
+        .number,
+        .email {
+          @include pText();
+          font-weight: fontWeight(regular);
+        }
+      }
+
+      .imagesSection {
+        @include Flex(column, center, flex-end);
+        height: 100%;
+
+        flex: 0.9;
+        position: relative;
+
+        .trainerImg {
+          height: 90%;
+        }
+
+        .qrImg {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 70px;
+        }
+      }
+    }
+  }
+}

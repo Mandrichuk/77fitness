@@ -8,7 +8,8 @@ $colors: (
   secondary-color: #097fd9,
   text-color: #fff,
   custom-green: #8dc53f,
-  custom-gray: #8e8e8e
+  custom-gray: #8e8e8e,
+  custom-black: #0D0D0D
 );
 
 $font-weights: (
@@ -105,8 +106,8 @@ $icon-sizes: (
 }
 
 @mixin bgText {
-  font-size: fontSize($font-sizes, h1);
-  font-weight: fontWeight(black);
+  font-size: fontSize(h1);
+  font-weight: fontWeight(bold);
   color: color(text-color);
   opacity: 0.1;
 }

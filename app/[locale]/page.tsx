@@ -18,10 +18,10 @@ function Home({ params: { locale } }: LocaleProps) {
     <main>
       <Header locale={locale} />
       <Introduction />
+      <Team />
       <Gallery />
       <Activity />
       <Prices />
-      <Team />
       <SocialMedia />
       <Newsletter />
       <Footer />

@@ -21,7 +21,7 @@ function Introduction() {
   const t = useTranslations("Introduction");
 
   return (
-    <div className="Introduction">
+    <section className="Introduction">
       <div className="wrapper">
         <div className="textSection">
           <div className="logoImg">
@@ -62,7 +62,7 @@ function Introduction() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
