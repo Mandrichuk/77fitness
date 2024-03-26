@@ -24,19 +24,16 @@ function TeamSlider({ children }: TeamSliderProps) {
   };
 
   useEffect(() => {
-    console.log("hello")
     if (windowWidth < 700) {
       setSlidesToShow(1.08);
     }
     if (windowWidth > 700) {
       setSlidesToShow(2.08);
     }
-    if (windowWidth > 1150) {
+    if (windowWidth > 1250) {
       setSlidesToShow(3.08);
     }
   }, [windowWidth]);
-
-  console.log(children);
 
   return (
     <div className="TeamSlider">
@@ -51,16 +48,10 @@ function TeamSlider({ children }: TeamSliderProps) {
               </div>
               <div className="imagesSection">
                 <div className="trainerImg">
-                  <Image
-                    image={`${CLOUDINARY_FOLDER}${m.image.src}`}
-                    alt={m.image.alt}
-                  />
+                  <Image image={m.image.src} alt={m.image.alt} />
                 </div>
                 <div className="qrImg">
-                  <Image
-                    image={`${CLOUDINARY_FOLDER}${m.qr.src}`}
-                    alt={m.qr.alt}
-                  />
+                  <Image image={m.qr.src} alt={m.qr.alt} />
                 </div>
               </div>
             </div>

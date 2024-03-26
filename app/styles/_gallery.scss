@@ -1,0 +1,303 @@
+.Gallery {
+  width: 100%;
+  @include Flex(column, center, center);
+  .cover {
+    @include Flex(column, center, center);
+    width: wrapperWidth(mobile);
+    .wrapper {
+      @include Flex(row, center, center);
+      width: wrapperWidth(mobile);
+      .imgSection {
+        @include Flex(row, center, center);
+        width: wrapperWidth(mobile);
+        height: 500px;
+
+        .repel {
+          @include Flex(row, center, center);
+          aspect-ratio: 1 / 1;
+          height: 40%;
+          .img {
+            @include Flex(row, center, center);
+            position: absolute;
+            aspect-ratio: 1 / 1.4;
+            background-color: color(secondary-color);
+            border-radius: borderRadius(mobile);
+            width: 50%;
+            max-width: 300px;
+
+            img {
+              border-radius: borderRadius(mobile);
+              transform: scale(0.97);
+            }
+          }
+
+          .img1 {
+            z-index: 2;
+
+            margin-left: 10px;
+            margin-bottom: 200px;
+          }
+          .img2 {
+            z-index: 3;
+            margin-top: 130px;
+            margin-left: -140px;
+          }
+          .img3 {
+            z-index: 4;
+            margin-top: 40px;
+            margin-left: 150px;
+          }
+        }
+      }
+    }
+
+    .textSectionMobile {
+      @include Flex(column, center, center);
+      margin-bottom: 30px;
+      width: 100%;
+      .wrapper {
+        @include Flex(column, start, center);
+        max-width: wrapperWidth(mobile);
+        font-size: 50px;
+
+        .title,
+        .text {
+          width: 100%;
+          font-size: fontSize(h2);
+          font-weight: fontWeight(bold);
+        }
+      }
+    }
+
+    .textSection {
+      @include Flex(column, center, center);
+      width: 100%;
+      .wrapper {
+        @include Flex(column, center, center);
+        width: wrapperWidth(mobile);
+
+        .title {
+          display: none;
+        }
+
+        .title,
+        .text {
+          width: 100%;
+          font-size: fontSize(h2);
+          font-weight: fontWeight(bold);
+        }
+
+        .points {
+          width: 100%;
+          margin-bottom: 20px;
+          .point {
+            width: 100%;
+            @include Flex(row, center, start);
+            margin-bottom: 10px;
+
+            .icon {
+              margin-right: 20px;
+              svg {
+                width: calc(iconSize(mobile) * 0.85);
+              }
+            }
+          }
+        }
+      }
+
+      .buttons {
+        @include Flex(row, center, start);
+        width: 100%;
+
+        .dark {
+          margin-left: 20px;
+          background-color: color(primary-color);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 500px) {
+  .Gallery {
+    @include Flex(column, center, center);
+    width: 100%;
+    .cover {
+      .wrapper {
+        margin-bottom: 40px;
+        @include Flex(row, center, center);
+        width: wrapperWidth(mobile);
+        .imgSection {
+          @include Flex(row, center, center);
+          width: wrapperWidth(mobile);
+          height: 550px;
+
+          .repel {
+            @include Flex(row, center, center);
+            aspect-ratio: 1 / 1;
+            height: 40%;
+            .img {
+              @include Flex(row, center, center);
+              position: absolute;
+              aspect-ratio: 1 / 1.4;
+              background-color: color(secondary-color);
+              border-radius: borderRadius(mobile);
+              width: 45%;
+              max-width: 300px;
+
+              img {
+                border-radius: borderRadius(mobile);
+                transform: scale(0.97);
+              }
+            }
+
+            .img1 {
+              z-index: 2;
+
+              margin-left: -30px;
+              margin-bottom: 200px;
+            }
+            .img2 {
+              z-index: 3;
+              margin-top: 250px;
+              margin-left: -200px;
+            }
+            .img3 {
+              z-index: 4;
+              margin-top: 150px;
+              margin-left: 200px;
+            }
+          }
+        }
+      }
+
+      .textSectionMobile {
+        @include Flex(column, center, center);
+        margin-bottom: 0;
+        width: 100%;
+        .wrapper {
+          @include Flex(column, start, center);
+          max-width: wrapperWidth(mobile);
+          font-size: 50px;
+
+          .title,
+          .text {
+            width: 100%;
+            font-size: fontSize(h2);
+            font-weight: fontWeight(bold);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 550px) {
+  .Gallery {
+    @include Flex(column, center, center);
+    width: 100%;
+    .cover {
+      .wrapper {
+        @include Flex(row, center, center);
+        width: wrapperWidth(mobile);
+        .imgSection {
+          @include Flex(row, center, center);
+          width: wrapperWidth(mobile);
+          height: 650px;
+
+          .repel {
+            @include Flex(row, center, center);
+            aspect-ratio: 1 / 1;
+            height: 40%;
+            .img {
+              @include Flex(row, center, center);
+              position: absolute;
+              aspect-ratio: 1 / 1.4;
+              background-color: color(secondary-color);
+              border-radius: borderRadius(mobile);
+              width: 45%;
+              max-width: 300px;
+
+              img {
+                border-radius: borderRadius(mobile);
+                transform: scale(0.97);
+              }
+            }
+
+            .img1 {
+              z-index: 2;
+
+              margin-left: -30px;
+              margin-bottom: 200px;
+            }
+            .img2 {
+              z-index: 3;
+              margin-top: 250px;
+              margin-left: -200px;
+            }
+            .img3 {
+              z-index: 4;
+              margin-top: 150px;
+              margin-left: 200px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 620px) {
+  .Gallery {
+    @include Flex(column, center, center);
+    width: 100%;
+    .cover {
+      .wrapper {
+        @include Flex(row, center, center);
+        width: wrapperWidth(mobile);
+        .imgSection {
+          @include Flex(row, center, center);
+          width: wrapperWidth(mobile);
+          height: 600px;
+
+          .repel {
+            @include Flex(row, center, center);
+            aspect-ratio: 1 / 1;
+            height: 40%;
+            .img {
+              @include Flex(row, center, center);
+              position: absolute;
+              aspect-ratio: 1 / 1.4;
+              background-color: color(secondary-color);
+              border-radius: borderRadius(mobile);
+              width: 40%;
+              max-width: 300px;
+
+              img {
+                border-radius: borderRadius(mobile);
+                transform: scale(0.97);
+              }
+            }
+
+            .img1 {
+              z-index: 2;
+
+              margin-left: -80px;
+              margin-bottom: 200px;
+            }
+            .img2 {
+              z-index: 3;
+              margin-top: 250px;
+              margin-left: -220px;
+            }
+            .img3 {
+              z-index: 4;
+              margin-top: 150px;
+              margin-left: 220px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

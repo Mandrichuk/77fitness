@@ -2,8 +2,6 @@ import React from "react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 
-import { CLOUDINARY_FOLDER } from "../constants/index";
-
 import { SVGs } from "../constants/index";
 
 import Image from "../components/Image";
@@ -26,7 +24,7 @@ function Introduction() {
         <div className="textSection">
           <div className="logoImg">
             <Image
-              image={`${CLOUDINARY_FOLDER}${t("logo.src")}`}
+              image={t("logo.src")}
               alt={t("logo.alt")}
               imgQuality={100}
               imgPriority={true}
@@ -56,7 +54,7 @@ function Introduction() {
         <div className="imgSection">
           <div className="img">
             <Image
-              image={`${CLOUDINARY_FOLDER}${t("introductionImg.src")}`}
+              image={t("introductionImg.src")}
               alt={t("introductionImg.alt")}
             />
           </div>

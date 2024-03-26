@@ -2,6 +2,7 @@
   width: 100%;
   .teamMember {
     height: 230px;
+    width: 100%;
 
     .wrapper {
       @include Flex(row, end, space-between);
@@ -17,7 +18,7 @@
         height: 100%;
         flex: 1.1;
         margin-bottom: 20px;
-        margin-left: 20px;
+        margin-left: 10px;
         .name {
           @include pText();
           font-size: calc(fontSize(p) + 6px);
@@ -41,7 +42,7 @@
         position: relative;
 
         .trainerImg {
-          height: 90%;
+          height: 96%;
         }
 
         .qrImg {

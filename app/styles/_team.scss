@@ -1,6 +1,8 @@
 .Team {
   width: 100%;
   max-width: 1440px;
+  margin-bottom: 50px;
+
   .sliderSection {
     @include Flex(column, center, center);
     max-width: 1440px;

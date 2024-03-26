@@ -20,9 +20,9 @@ function Home({ params: { locale } }: LocaleProps) {
       <Introduction />
       <Team />
       <Gallery />
+      <SocialMedia />
       <Activity />
       <Prices />
-      <SocialMedia />
       <Newsletter />
       <Footer />
     </main>

@@ -40,7 +40,14 @@
       "gallery2": { "src": "terpaeldoub8drzovinl", "alt": "gallery2" },
       "gallery3": { "src": "ybfz2chx6vjull05kyos", "alt": "gallery3" }
     },
-    "title": "We are the first in Slovakia with equipment from <span style={'color: #8DC53F'}>Prime Fitness</span> and <span style={'color: #8E8E8E'}>HOIST FITNESS</span>.",
+    "title": {
+      "main": "We're the first in Slovakia with",
+      "brand1": "Prime Fitness",
+      "brand2": "HOIST FITNESS",
+      "text1": "and",
+      "text2": "gear."
+    },
+
     "points": {
       "point1": "High quality equipment",
       "point2": "Variety of dumbbells and weights",
@@ -139,39 +146,142 @@
     "title": "Our Trainers",
     "trainers": {
       "trainer1": {
-        "image": { "src": "enymsgoeuilqao0lyngg", "alt": "trainer1" },
-        "qr": { "src": "byngykusqgnbs9uhg9a9", "alt": "qr" },
-        "name": "Trainer Name",
-        "number": "+421 00 00 0000",
-        "email": "example@email.com"
+        "image": { "src": "team/gh6w8tmkbhvjj0kgwhvb", "alt": "trainer" },
+        "qr": { "src": "null", "alt": "qr" },
+        "name": "Vladimir Kerul",
+        "number": "+421 911 434 040",
+        "email": "ibffslovalia@email.com"
       },
       "trainer2": {
-        "image": { "src": "a1r05sgl2qdddjtbfl4a", "alt": "trainer2" },
-        "qr": { "src": "byngykusqgnbs9uhg9a9", "alt": "qr" },
-        "name": "Trainer Name",
-        "number": "+421 00 00 0000",
-        "email": "example@email.com"
+        "image": { "src": "team/aintp3zkttqwloakr761", "alt": "trainer" },
+        "qr": { "src": "null", "alt": "qr" },
+        "name": "Vladimir Gostik",
+        "number": "+421 944 160 283",
+        "email": "gostikvladko9@email.com"
       },
       "trainer3": {
-        "image": { "src": "pwasyqbu6rns713ucjmb", "alt": "trainer3" },
-        "qr": { "src": "byngykusqgnbs9uhg9a9", "alt": "qr" },
-        "name": "Trainer Name",
-        "number": "+421 00 00 0000",
-        "email": "example@email.com"
+        "image": { "src": "team/wxje9mt4ff0c1yljz3gs", "alt": "trainer" },
+        "qr": { "src": "null", "alt": "qr" },
+        "name": "Tomas",
+        "number": "null",
+        "email": "null"
       },
       "trainer4": {
-        "image": { "src": "aa4ueb78mutxetea15ek", "alt": "trainer4" },
-        "qr": { "src": "byngykusqgnbs9uhg9a9", "alt": "qr" },
-        "name": "Trainer Name",
-        "number": "+421 00 00 0000",
-        "email": "example@email.com"
+        "image": { "src": "team/uxhnhzfmqktuyt163zda", "alt": "trainer" },
+        "qr": { "src": "null", "alt": "qr" },
+        "name": "Tomas Kristin",
+        "number": "+421 903 322 155",
+        "email": "tom.personalcoach@email.com"
       },
       "trainer5": {
-        "image": { "src": "aa4ueb78mutxetea15ek", "alt": "trainer5" },
-        "qr": { "src": "byngykusqgnbs9uhg9a9", "alt": "qr" },
-        "name": "Trainer Name",
-        "number": "+421 00 00 0000",
-        "email": "example@email.com"
+        "image": {
+          "src": "team/as1wxxew4v9val1act2d",
+          "alt": "trainer"
+        },
+        "qr": { "src": "null", "alt": "qr" },
+        "name": "Vladimir Svonco",
+        "number": "+421 903 246 426",
+        "email": "vsvoncinar@yahoo.com"
+      },
+      "trainer6": {
+        "image": {
+          "src": "team/lmoqvppxnv8ol4tkj8it",
+          "alt": "trainer"
+        },
+        "qr": { "src": "null", "alt": "qr" },
+        "name": "Tamara Iglarova",
+        "number": "+421 905 824 005",
+        "email": "iglarovaa@email.com"
+      },
+      "trainer7": {
+        "image": {
+          "src": "team/nk8uf0piyyetnbw30tl3",
+          "alt": "trainer"
+        },
+        "qr": { "src": "null", "alt": "qr" },
+        "name": "Steve Sterk",
+        "number": "+421 902 207 208",
+        "email": "stefan.sterk@email.com"
+      },
+      "trainer8": {
+        "image": {
+          "src": "team/qtrqv8nmqooyux47yjon",
+          "alt": "trainer"
+        },
+        "qr": { "src": "null", "alt": "qr" },
+        "name": "Stanka",
+        "number": "null",
+        "email": "null"
+      },
+ "trainer9": {
+        "image": {
+          "src": "team/k8mgwucduwycgjbkm21l",
+          "alt": "trainer"
+        },
+        "qr": { "src": "null", "alt": "qr" },
+        "name": "Chistian",
+        "number": "null",
+        "email": "null"
+      },
+      "trainer10": {
+        "image": {
+          "src": "team/s4ecsmbozyrxydbfmb3t",
+          "alt": "trainer"
+        },
+        "qr": { "src": "null", "alt": "qr" },
+        "name": "Sevo",
+        "number": "null",
+        "email": "null"
+      },
+      "trainer11": {
+        "image": {
+          "src": "team/qqiuuwgkhqyteauj9s9w",
+          "alt": "trainer"
+        },
+        "qr": { "src": "null", "alt": "qr" },
+        "name": "Natalia Zeljenkova",
+        "number": "+421 911 872 371",
+        "email": "natali.zeljenkova@email.com"
+      },
+      "trainer12": {
+        "image": {
+          "src": "team/zrxuppwubl0244qckrxe",
+          "alt": "trainer"
+        },
+        "qr": { "src": "null", "alt": "qr" },
+        "name": "Laura Miskufova",
+        "number": "+421 917 418 245",
+        "email": "laura.miskufova@email.com"
+      },
+      "trainer13": {
+        "image": {
+          "src": "team/cnwlgwwqp7kluhr4e1xf",
+          "alt": "trainer"
+        },
+        "qr": { "src": "null", "alt": "qr" },
+        "name": "Matej Franta",
+        "number": "+421 910 513 123",
+        "email": "matofranta10@email.com"
+      },
+      "trainer14": {
+        "image": {
+          "src": "team/lzooavtqecq66qeshhub",
+          "alt": "trainer"
+        },
+        "qr": { "src": "null", "alt": "qr" },
+        "name": "Kateryna",
+        "number": "null",
+        "email": "null"
+      },
+      "trainer15": {
+        "image": {
+          "src": "team/sg2rphtlklnioiyjxa1z",
+          "alt": "trainer"
+        },
+        "qr": { "src": "null", "alt": "qr" },
+        "name": "Jan Ostraczky",
+        "number": "+421 907 767 090",
+        "email": "ostraczky@email.com"
       }
     }
   },

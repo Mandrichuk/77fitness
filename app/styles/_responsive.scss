@@ -1,131 +1,324 @@
 @include media-small {
-  .Team {
-    width: 100%;
-    max-width: 1440px;
-    .sliderSection {
-      margin-top: 30px;
-      @include Flex(column, center, center);
-      width: 80vw;
-      .wrapper {
-        width: 80vw;
+  body {
+    main {
+      .Team {
+        margin-bottom: 90px;
+
+        width: 100%;
+        max-width: 1440px;
+        .sliderSection {
+          @include Flex(column, center, center);
+          max-width: 1440px;
+          margin-top: 30px;
+          width: 100vw;
+          .wrapper {
+            width: wrapperWidth(mobile);
+          }
+        }
+      }
+
+      .TeamSlider {
+        width: 100%;
+        .teamMember {
+          height: 260px;
+          width: 100%;
+
+          .wrapper {
+            @include Flex(row, end, space-between);
+            position: relative;
+            height: 96%;
+            width: 96%;
+            background-color: color(custom-black);
+            border-radius: borderRadius(mobile);
+
+            .textSection {
+              @include Flex(column, start, flex-end);
+
+              height: 100%;
+              flex: 1.1;
+              margin-bottom: 20px;
+              margin-left: 10px;
+              .name {
+                @include pText();
+                font-size: calc(fontSize(p) + 6px);
+                font-weight: fontWeight(bold);
+                color: color(secondary-color);
+                margin-bottom: 10px;
+              }
+
+              .number,
+              .email {
+                @include pText();
+                font-weight: fontWeight(regular);
+              }
+            }
+
+            .imagesSection {
+              @include Flex(column, center, flex-end);
+              height: 100%;
+
+              flex: 0.9;
+              position: relative;
+
+              .trainerImg {
+                height: 96%;
+              }
+
+              .qrImg {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 70px;
+              }
+            }
+          }
+        }
       }
     }
   }
 }
 
 @include media-medium {
-  .Introduction {
-    @include sectionPreset;
-    .wrapper {
-      width: wrapperWidth(mobile);
-      @include Flex(row, center, space-between);
-
-      .textSection {
-        @include Flex(column, center, center);
-        width: 100%;
-
-        .logoImg {
-          @include Flex(row, center, center);
-          width: 80%;
-          margin-bottom: 30px;
-        }
-
-        .name {
-          margin-bottom: 15px;
-        }
-
-        .description {
-          margin-bottom: 25px;
-        }
-
-        .buttons {
+  body {
+    main {
+      .Introduction {
+        @include sectionPreset;
+        .wrapper {
+          width: wrapperWidth(mobile);
           @include Flex(row, center, space-between);
-          width: 100%;
-          margin-bottom: $gap;
 
-          .buttonMore {
-            flex: 0.6;
-            margin-right: 20px;
-          }
+          .textSection {
+            @include Flex(column, center, center);
+            width: 100%;
 
-          .buttonVideo {
-            @include Flex(row, center, left);
-            flex: 1.4;
-
-            .text {
-              font-weight: fontWeight(regular);
+            .logoImg {
+              @include Flex(row, center, center);
+              width: 80%;
+              margin-bottom: 30px;
             }
 
-            svg {
-              height: iconSize(mobile) * 1.4;
-              margin-right: 10px;
+            .name {
+              margin-bottom: 15px;
+            }
+
+            .description {
+              margin-bottom: 25px;
+            }
+
+            .buttons {
+              @include Flex(row, center, space-between);
+              width: 100%;
+              margin-bottom: 0;
+
+              .buttonMore {
+                flex: 0.6;
+                margin-right: 20px;
+              }
+
+              .buttonVideo {
+                @include Flex(row, center, left);
+                flex: 1.4;
+
+                .text {
+                  font-weight: fontWeight(regular);
+                }
+
+                svg {
+                  height: iconSize(mobile) * 1.4;
+                  margin-right: 10px;
+                }
+              }
+            }
+          }
+
+          .imgSection {
+            @include Flex(row, center, center);
+            width: 80%;
+            .img {
+              width: 100%;
             }
           }
         }
       }
 
-      .imgSection {
+      .TeamSlider {
+        width: 100%;
+        .teamMember {
+          height: 100%;
+          height: 270px;
+
+          .wrapper {
+            @include Flex(row, end, space-between);
+            position: relative;
+            height: 96%;
+            width: 96%;
+            background-color: color(custom-black);
+            border-radius: borderRadius(mobile);
+
+            .textSection {
+              @include Flex(column, start, flex-end);
+
+              height: 100%;
+              flex: 1.1;
+              margin-bottom: 20px;
+              margin-left: 20px;
+              .name {
+                @include pText();
+                font-size: calc(fontSize(p) + 6px);
+                font-weight: fontWeight(bold);
+                color: color(secondary-color);
+                margin-bottom: 10px;
+              }
+
+              .number,
+              .email {
+                @include pText();
+                font-weight: fontWeight(regular);
+              }
+            }
+
+            .imagesSection {
+              @include Flex(column, center, flex-end);
+              height: 100%;
+
+              flex: 0.9;
+              position: relative;
+
+              .trainerImg {
+                height: 90%;
+              }
+
+              .qrImg {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 70px;
+              }
+            }
+          }
+        }
+      }
+
+      .Gallery {
         @include Flex(row, center, center);
         width: 100%;
-        .img {
-          width: 100%;
-        }
-      }
-    }
-  }
+        .cover {
+          @include Flex(row, center, center);
+          .wrapper {
+            flex: 1.2;
+            @include Flex(row, center, center);
+            margin-right: 20px;
+            margin-bottom: 0;
+            width: wrapperWidth(mobile);
+            .imgSection {
+              @include Flex(row, center, center);
+              width: wrapperWidth(mobile);
+              height: 500px;
 
-  .TeamSlider {
-    width: 100%;
-    height: 300px;
-    .teamMember {
-      height: 100%;
+              .repel {
+                @include Flex(row, center, center);
+                aspect-ratio: 1 / 1;
+                height: 40%;
+                .img {
+                  @include Flex(row, center, center);
+                  position: absolute;
+                  aspect-ratio: 1 / 1.4;
+                  background-color: color(secondary-color);
+                  border-radius: borderRadius(mobile);
+                  width: 40%;
+                  max-width: 240px;
 
-      .wrapper {
-        @include Flex(row, end, space-between);
-        position: relative;
-        height: 96%;
-        width: 96%;
-        background-color: color(custom-black);
-        border-radius: borderRadius(mobile);
+                  img {
+                    border-radius: borderRadius(mobile);
+                    transform: scale(0.97);
+                  }
+                }
 
-        .textSection {
-          @include Flex(column, start, flex-end);
+                .img1 {
+                  z-index: 2;
 
-          height: 100%;
-          flex: 1.1;
-          margin-bottom: 20px;
-          margin-left: 20px;
-          .name {
-            @include pText();
-            font-size: calc(fontSize(p) + 6px);
-            font-weight: fontWeight(bold);
-            color: color(secondary-color);
-            margin-bottom: 10px;
+                  margin-left: 10px;
+                  margin-bottom: 210px;
+                }
+                .img2 {
+                  z-index: 3;
+                  margin-top: 160px;
+                  margin-left: -160px;
+                }
+                .img3 {
+                  z-index: 4;
+                  margin-top: 70px;
+                  margin-left: 160px;
+                }
+              }
+            }
           }
 
-          .number,
-          .email {
-            @include pText();
-            font-weight: fontWeight(regular);
+          .textSectionMobile {
+            display: none;
+            margin-bottom: 30px;
+            width: 100%;
+            .wrapper {
+              @include Flex(column, start, center);
+              max-width: wrapperWidth(mobile);
+              font-size: 50px;
+
+              .title,
+              .text {
+                width: 100%;
+                font-size: fontSize(h2);
+                font-weight: fontWeight(bold);
+              }
+            }
           }
-        }
 
-        .imagesSection {
-          @include Flex(column, center, flex-end);
-          height: 100%;
+          .textSection {
+            flex: 0.8;
+            @include Flex(column, center, center);
+            width: 100%;
+            .wrapper {
+              @include Flex(column, start, center);
+              margin: 0;
+              width: wrapperWidth(mobile);
+              .title {
+                display: inline;
+                margin-bottom: 30px;
+              }
 
-          flex: 0.9;
-          position: relative;
+              .title,
+              .text {
+                width: 100%;
+                font-size: fontSize(h2);
+                font-weight: fontWeight(bold);
+              }
 
-          .trainerImg {
-            height: 90%;
-          }
+              .points {
+                width: 100%;
+                margin-bottom: 20px;
+                .point {
+                  width: 100%;
+                  @include Flex(row, center, start);
+                  margin-bottom: 10px;
 
-          .qrImg {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 70px;
+                  .icon {
+                    margin-right: 20px;
+                    svg {
+                      width: calc(iconSize(mobile) * 0.85);
+                    }
+                  }
+                }
+              }
+            }
+
+            .buttons {
+              @include Flex(row, center, start);
+              width: 100%;
+
+              .dark {
+                margin-left: 20px;
+                background-color: color(primary-color);
+              }
+            }
           }
         }
       }
@@ -134,7 +327,196 @@
 }
 
 @include media-large {
+  body {
+    main {
+      .TeamSlider {
+        width: 100%;
+        .teamMember {
+          height: 100%;
+          height: 320px;
+
+          .wrapper {
+            @include Flex(row, end, space-between);
+            position: relative;
+            height: 96%;
+            width: 96%;
+            background-color: color(custom-black);
+            border-radius: borderRadius(mobile);
+
+            .textSection {
+              @include Flex(column, start, flex-end);
+
+              height: 100%;
+              flex: 1.1;
+              margin-bottom: 20px;
+              margin-left: 20px;
+              .name {
+                @include pText();
+                font-size: calc(fontSize(p) + 6px);
+                font-weight: fontWeight(bold);
+                color: color(secondary-color);
+                margin-bottom: 10px;
+              }
+
+              .number,
+              .email {
+                @include pText();
+                font-weight: fontWeight(regular);
+              }
+            }
+
+            .imagesSection {
+              @include Flex(column, center, flex-end);
+              height: 100%;
+
+              flex: 0.9;
+              position: relative;
+
+              .trainerImg {
+                height: 90%;
+              }
+
+              .qrImg {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 70px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @include media-extralarge {
+  body {
+    main {
+      .Gallery {
+        @include Flex(row, center, center);
+        height: 600px;
+        width: 100%;
+        .cover {
+          @include Flex(row, center, center);
+          .wrapper {
+            flex: 1;
+            @include Flex(row, center, center);
+            margin-right: 20px;
+            margin-bottom: 0;
+            width: wrapperWidth(mobile);
+            .imgSection {
+              @include Flex(row, center, center);
+              width: wrapperWidth(mobile);
+              height: 500px;
+
+              .repel {
+                @include Flex(row, center, center);
+                aspect-ratio: 1 / 1;
+                height: 40%;
+                .img {
+                  @include Flex(row, center, center);
+                  position: absolute;
+                  aspect-ratio: 1 / 1.4;
+                  background-color: color(secondary-color);
+                  border-radius: borderRadius(mobile);
+                  width: 40%;
+                  max-width: 285px;
+
+                  img {
+                    border-radius: borderRadius(mobile);
+                    transform: scale(0.97);
+                  }
+                }
+
+                .img1 {
+                  z-index: 2;
+
+                  margin-left: -40px;
+                  margin-bottom: 240px;
+                }
+                .img2 {
+                  z-index: 3;
+                  margin-top: 160px;
+                  margin-left: -200px;
+                }
+                .img3 {
+                  z-index: 4;
+                  margin-top: 70px;
+                  margin-left: 200px;
+                }
+              }
+            }
+          }
+
+          .textSectionMobile {
+            display: none;
+            margin-bottom: 30px;
+            width: 100%;
+            .wrapper {
+              @include Flex(column, start, center);
+              max-width: wrapperWidth(mobile);
+              font-size: 50px;
+
+              .title,
+              .text {
+                width: 100%;
+                font-size: fontSize(h2);
+                font-weight: fontWeight(bold);
+              }
+            }
+          }
+
+          .textSection {
+            flex: 1;
+            @include Flex(column, center, center);
+            width: 100%;
+            .wrapper {
+              @include Flex(column, start, center);
+              margin: 0;
+              width: wrapperWidth(mobile);
+              .title {
+                display: inline;
+                margin-bottom: 30px;
+              }
+
+              .title,
+              .text {
+                width: 100%;
+                font-size: fontSize(h2);
+                font-weight: fontWeight(bold);
+              }
+
+              .points {
+                width: 100%;
+                margin-bottom: 20px;
+                .point {
+                  width: 100%;
+                  @include Flex(row, center, start);
+                  margin-bottom: 10px;
+
+                  .icon {
+                    margin-right: 20px;
+                    svg {
+                      width: calc(iconSize(mobile) * 0.85);
+                    }
+                  }
+                }
+              }
+            }
+
+            .buttons {
+              @include Flex(row, center, start);
+              width: 100%;
+
+              .dark {
+                margin-left: 20px;
+                background-color: color(primary-color);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -7,7 +7,7 @@ import TeamSlider from "./TeamSlider";
 
 function Team() {
   const t = useTranslations("Team");
- 
+
   const teamMembers = [
     {
       image: {
@@ -73,6 +73,136 @@ function Team() {
       name: t("trainers.trainer5.name"),
       number: t("trainers.trainer5.number"),
       email: t("trainers.trainer5.email"),
+    },
+    {
+      image: {
+        src: t("trainers.trainer6.image.src"),
+        alt: t("trainers.trainer6.image.alt"),
+      },
+      qr: {
+        src: t("trainers.trainer6.qr.src"),
+        alt: t("trainers.trainer6.qr.alt"),
+      },
+      name: t("trainers.trainer6.name"),
+      number: t("trainers.trainer6.number"),
+      email: t("trainers.trainer6.email"),
+    },
+    {
+      image: {
+        src: t("trainers.trainer7.image.src"),
+        alt: t("trainers.trainer7.image.alt"),
+      },
+      qr: {
+        src: t("trainers.trainer7.qr.src"),
+        alt: t("trainers.trainer7.qr.alt"),
+      },
+      name: t("trainers.trainer7.name"),
+      number: t("trainers.trainer7.number"),
+      email: t("trainers.trainer7.email"),
+    },
+    {
+      image: {
+        src: t("trainers.trainer8.image.src"),
+        alt: t("trainers.trainer8.image.alt"),
+      },
+      qr: {
+        src: t("trainers.trainer8.qr.src"),
+        alt: t("trainers.trainer8.qr.alt"),
+      },
+      name: t("trainers.trainer8.name"),
+      number: t("trainers.trainer8.number"),
+      email: t("trainers.trainer8.email"),
+    },
+    {
+      image: {
+        src: t("trainers.trainer9.image.src"),
+        alt: t("trainers.trainer9.image.alt"),
+      },
+      qr: {
+        src: t("trainers.trainer9.qr.src"),
+        alt: t("trainers.trainer9.qr.alt"),
+      },
+      name: t("trainers.trainer9.name"),
+      number: t("trainers.trainer9.number"),
+      email: t("trainers.trainer9.email"),
+    },
+    {
+      image: {
+        src: t("trainers.trainer10.image.src"),
+        alt: t("trainers.trainer10.image.alt"),
+      },
+      qr: {
+        src: t("trainers.trainer10.qr.src"),
+        alt: t("trainers.trainer10.qr.alt"),
+      },
+      name: t("trainers.trainer10.name"),
+      number: t("trainers.trainer10.number"),
+      email: t("trainers.trainer10.email"),
+    },
+    {
+      image: {
+        src: t("trainers.trainer11.image.src"),
+        alt: t("trainers.trainer11.image.alt"),
+      },
+      qr: {
+        src: t("trainers.trainer11.qr.src"),
+        alt: t("trainers.trainer11.qr.alt"),
+      },
+      name: t("trainers.trainer11.name"),
+      number: t("trainers.trainer11.number"),
+      email: t("trainers.trainer11.email"),
+    },
+    {
+      image: {
+        src: t("trainers.trainer12.image.src"),
+        alt: t("trainers.trainer12.image.alt"),
+      },
+      qr: {
+        src: t("trainers.trainer12.qr.src"),
+        alt: t("trainers.trainer12.qr.alt"),
+      },
+      name: t("trainers.trainer12.name"),
+      number: t("trainers.trainer12.number"),
+      email: t("trainers.trainer12.email"),
+    },
+    {
+      image: {
+        src: t("trainers.trainer13.image.src"),
+        alt: t("trainers.trainer13.image.alt"),
+      },
+      qr: {
+        src: t("trainers.trainer13.qr.src"),
+        alt: t("trainers.trainer13.qr.alt"),
+      },
+      name: t("trainers.trainer13.name"),
+      number: t("trainers.trainer13.number"),
+      email: t("trainers.trainer13.email"),
+    },
+    {
+      image: {
+        src: t("trainers.trainer14.image.src"),
+        alt: t("trainers.trainer14.image.alt"),
+      },
+      qr: {
+        src: t("trainers.trainer14.qr.src"),
+        alt: t("trainers.trainer14.qr.alt"),
+      },
+      name: t("trainers.trainer14.name"),
+      number: t("trainers.trainer14.number"),
+      email: t("trainers.trainer14.email"),
+    },
+    {
+      image: {
+        src: t("trainers.trainer15.image.src"),
+        alt: t("trainers.trainer15.image.alt"),
+      },
+      qr: {
+        src: t("trainers.trainer15.qr.src"),
+        alt: t("trainers.trainer15.qr.alt"),
+      },
+      name: t("trainers.trainer15.name"),
+      number: t("trainers.trainer15.number"),
+      email: t("trainers.trainer15.email"),
     },
   ];
 

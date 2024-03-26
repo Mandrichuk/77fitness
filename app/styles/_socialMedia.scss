@@ -1,0 +1,10 @@
+.SosialMedia {
+  background-color: red;
+  @include Flex(row, center, center);
+  width: 100%;
+  .wrapper {
+    @include Flex(row, center, space-between);
+    background-color: color(custom-black);
+    width: wrapperWidth(mobile);
+  }
+}

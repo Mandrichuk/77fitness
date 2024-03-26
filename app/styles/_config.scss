@@ -125,7 +125,7 @@ $icon-sizes: (
 }
 
 @mixin media-small {
-  @media (min-width: 600px) {
+  @media (min-width: 500px) {
     @content;
   }
 }
