@@ -1,10 +1,31 @@
-.SosialMedia {
-  background-color: red;
-  @include Flex(row, center, center);
+.SocialMedia {
+  @include Flex(column, center, center);
+  margin-top: 40px;
   width: 100%;
   .wrapper {
-    @include Flex(row, center, space-between);
+    @include Flex(column, start, space-between);
+    padding: 20px;
     background-color: color(custom-black);
     width: wrapperWidth(mobile);
+    border-radius: borderRadius(mobile);
+
+    .textSection {
+      @include Flex(column, start, space-between);
+      margin-bottom: 20px;
+      font-size: calc(fontSize(p) + 10px);
+
+      .name {
+        @include Flex(column, center, center);
+        .dot {
+          font-size: 40px;
+          font-weight: 900;
+          color: color(secondary-color);
+        }
+      }
+    }
+
+    .link {
+      width: 100%;
+    }
   }
 }

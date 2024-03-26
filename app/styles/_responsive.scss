@@ -322,6 +322,37 @@
           }
         }
       }
+
+      .SocialMedia {
+        @include Flex(column, center, center);
+        width: 100%;
+        .wrapper {
+          @include Flex(row, center, space-between);
+          padding: 15px 25px;
+          background-color: color(custom-black);
+          width: wrapperWidth(mobile);
+          border-radius: borderRadius(mobile);
+
+          .textSection {
+            @include Flex(column, start, space-between);
+            margin-bottom: 0;
+            font-size: calc(fontSize(p) + 10px);
+
+            .name {
+              @include Flex(column, center, center);
+              .dot {
+                font-size: 40px;
+                font-weight: 900;
+                color: color(secondary-color);
+              }
+            }
+          }
+
+          .link {
+            width: auto;
+          }
+        }
+      }
     }
   }
 }
