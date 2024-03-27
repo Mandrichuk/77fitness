@@ -306,7 +306,7 @@
     "description": "Subscribe to our newsletter and stay up to date",
     "input": {
       "type": "text",
-      "placeholder": "Enter your email address",
+      "placeholder": "Enter email address",
       "field": "newsletterInput",
       "button": {
         "type": "submit",

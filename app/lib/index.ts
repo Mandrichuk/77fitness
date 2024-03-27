@@ -97,3 +97,8 @@ interface ScrollImage {
 export interface ScrollImagesProps {
   images: ScrollImage[];
 }
+
+export interface InputNewsletterProps {
+  placeholderText: string;
+  buttonText: string;
+}

@@ -18,9 +18,9 @@ function ActivityImages({ images }: ScrollImagesProps) {
   return (
     <div id="ActivityImage" className="ActivityImages">
       {images.map((image, index) => (
-        <div className="cover">
+        <div key={index} className="cover">
           {imageToReveal === index && (
-            <div key={index} className="imageContainer">
+            <div  className="imageContainer">
               <Image
                 image={image.src}
                 alt={image.alt}

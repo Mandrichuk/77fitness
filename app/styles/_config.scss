@@ -32,7 +32,7 @@ $font-sizes: (
   p: clamp(15px, 1.5vw, 18px),
   small: clamp(12px, 1.5vw, 16px),
   link: clamp(14px, 1.5vw, 18px),
-  button: clamp(14px, 1.5vw, 18px)
+  button: clamp(14px, 1.5vw, 16px)
 );
 
 $wrapper-widths: (
@@ -81,6 +81,18 @@ $icon-sizes: (
   justify-content: $justify;
 }
 
+@mixin input {
+  width: 100%;
+  border: none;
+  font-size: fontSize(p);
+  font-weight: fontWeight(medium);
+  border-radius: borderRadius(mobile);
+  padding: 15px 20px;
+  &:focus {
+    outline: none;
+  }
+}
+
 @mixin button {
   @include Flex(row, center, center);
   width: 100%;
@@ -91,6 +103,7 @@ $icon-sizes: (
   font-size: fontSize(button);
   font-weight: fontWeight(semibold);
   padding: 10px 20px;
+  border: none;
 }
 
 @mixin titleText {
@@ -147,4 +160,3 @@ $icon-sizes: (
     @content;
   }
 }
-

@@ -1,0 +1,18 @@
+.Newsletter {
+  width: 100%;
+  margin-top: 40px;
+  @include Flex(column, center, center);
+  .wrapper {
+    @include Flex(column, center, center);
+    width: wrapperWidth(mobile);
+    background-color: color(secondary-color);
+    padding: 30px 20px;
+    border-radius: borderRadius(mobile);
+
+    .description {
+      opacity: 0.8;
+      font-size: calc(fontSize(p) - 2px);
+      margin-bottom: 50px;
+    }
+  }
+}

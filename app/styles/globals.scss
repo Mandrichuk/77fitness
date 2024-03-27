@@ -11,6 +11,8 @@
 @import "membership";
 @import "activity.scss";
 @import "activityImages";
+@import "newsletter";
+@import "inputNewsletter";
 
 * {
   box-sizing: border-box;
@@ -63,6 +65,10 @@ html {
 
       h3 {
         @include titleText();
+      }
+
+      input {
+        @include input();
       }
     }
   }

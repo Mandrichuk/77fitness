@@ -56,6 +56,7 @@ function Introduction() {
             <Image
               image={t("introductionImg.src")}
               alt={t("introductionImg.alt")}
+              imgPriority={true}
             />
           </div>
         </div>
