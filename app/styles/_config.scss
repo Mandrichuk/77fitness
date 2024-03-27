@@ -9,7 +9,7 @@ $colors: (
   text-color: #fff,
   custom-green: #8dc53f,
   custom-gray: #8e8e8e,
-  custom-black: #0D0D0D
+  custom-black: rgb(14, 14, 14)
 );
 
 $font-weights: (
@@ -30,7 +30,7 @@ $font-sizes: (
   h2: clamp(40px, 2.5vw, 56px),
   h3: clamp(30px, 2.5vw, 40px),
   p: clamp(15px, 1.5vw, 18px),
-  small: clamp(10px, 1.5vw, 14px),
+  small: clamp(12px, 1.5vw, 16px),
   link: clamp(14px, 1.5vw, 18px),
   button: clamp(14px, 1.5vw, 18px)
 );
@@ -46,8 +46,8 @@ $border-radius: (
 );
 
 $icon-sizes: (
-  mobile: 30px,
-  screen: 16px
+  mobile: 16px,
+  screen: 30px
 );
 
 @function wrapperWidth($key) {

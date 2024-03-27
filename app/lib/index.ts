@@ -64,3 +64,20 @@ interface TeamMember {
 export interface TeamSliderProps {
   children: TeamMember[];
 }
+
+interface Package {
+  standOut?: boolean;
+  title: string;
+  price: string;
+  description: string;
+  included: string[];
+  button: {
+    text: string;
+    link: string;
+  };
+}
+
+export interface MembershipProps {
+  membership: Package;
+  key: string;
+}

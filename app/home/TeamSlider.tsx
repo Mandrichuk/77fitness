@@ -21,6 +21,7 @@ function TeamSlider({ children }: TeamSliderProps) {
     draggable: true,
     arrows: false,
     autoplay: true,
+    pauseOnHover: true,
   };
 
   useEffect(() => {

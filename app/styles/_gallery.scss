@@ -95,10 +95,13 @@
             @include Flex(row, center, start);
             margin-bottom: 10px;
 
+    
+
             .icon {
-              margin-right: 20px;
+              margin-right: 13px;
               svg {
-                width: calc(iconSize(mobile) * 0.85);
+                fill: color(secondary-color);
+                width: iconSize(mobile);
               }
             }
           }

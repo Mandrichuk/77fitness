@@ -7,7 +7,7 @@
     padding: 20px;
     background-color: color(custom-black);
     width: wrapperWidth(mobile);
-    border-radius: borderRadius(mobile);
+    border-radius: calc(borderRadius(mobile) * 1.5);
 
     .textSection {
       @include Flex(column, start, space-between);

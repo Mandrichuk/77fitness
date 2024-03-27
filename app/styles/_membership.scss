@@ -1,0 +1,264 @@
+.Membership {
+  width: 330px;
+  height: 550px;
+  background-color: color(custom-black);
+  padding: 40px 30px;
+  border-radius: borderRadius(mobile);
+
+  &.standOut {
+    height: 550px;
+    background-color: color(secondary-color);
+
+    .details {
+      .title {
+        color: color(text-color);
+      }
+
+      .description {
+        color: color(text-color);
+      }
+
+      .includedList {
+        .included {
+          .icon {
+            svg {
+              fill: color(text-color);
+            }
+          }
+        }
+      }
+
+      .contactButton {
+        width: 100%;
+        margin-top: 50px;
+
+        .button {
+          background-color: color(custom-black);
+        }
+      }
+    }
+  }
+  .details {
+    .title {
+      color: color(secondary-color);
+      font-weight: fontWeight(semibold);
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-weight: fontWeight(semibold);
+      font-size: calc(fontSize(h3) + 10px);
+    }
+
+    .description {
+      color: color(custom-gray);
+      margin-bottom: 25px;
+    }
+
+    .includedList {
+      .included {
+        @include Flex(row, center, start);
+        margin-bottom: 17px;
+
+        .text {
+          color: color(text-color);
+          font-weight: fontWeight(medium);
+          font-size: 15px;
+        }
+        .icon {
+          width: iconSize(mobile);
+          margin-right: 13px;
+
+          svg {
+            fill: color(secondary-color);
+          }
+        }
+      }
+    }
+
+    .contactButton {
+      width: 100%;
+      margin-top: 50px;
+    }
+  }
+}
+
+@media (min-width: 620px) {
+  .Membership {
+    width: 280px;
+    height: 550px;
+    background-color: color(custom-black);
+    padding: 40px 30px;
+    border-radius: borderRadius(mobile);
+
+    &.standOut {
+      height: 550px;
+      background-color: color(secondary-color);
+
+      .details {
+        .title {
+          color: color(text-color);
+        }
+
+        .description {
+          color: color(text-color);
+        }
+
+        .includedList {
+          .included {
+            .icon {
+              svg {
+                fill: color(text-color);
+              }
+            }
+          }
+        }
+
+        .contactButton {
+          width: 100%;
+          margin-top: 50px;
+
+          .button {
+            background-color: color(custom-black);
+          }
+        }
+      }
+    }
+    .details {
+      .title {
+        color: color(secondary-color);
+        font-weight: fontWeight(semibold);
+        margin-bottom: 10px;
+      }
+
+      .price {
+        font-weight: fontWeight(semibold);
+        font-size: calc(fontSize(h3) + 10px);
+      }
+
+      .description {
+        color: color(custom-gray);
+        margin-bottom: 25px;
+      }
+
+      .includedList {
+        .included {
+          @include Flex(row, center, start);
+          margin-bottom: 17px;
+
+          .text {
+            color: color(text-color);
+            font-weight: fontWeight(medium);
+            font-size: 15px;
+          }
+          .icon {
+            width: iconSize(mobile);
+            margin-right: 13px;
+
+            svg {
+              fill: color(secondary-color);
+            }
+          }
+        }
+      }
+
+      .contactButton {
+        width: 100%;
+        margin-top: 50px;
+
+        .button {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1250px) {
+  .Membership {
+    width: 280px;
+    height: 570px;
+    background-color: color(custom-black);
+    padding: 40px 30px;
+    border-radius: borderRadius(mobile);
+    margin-top: 40px;
+    &.standOut {
+      margin-top: 0;
+      @include Flex(column, center, center);
+      height: 650px;
+      background-color: color(secondary-color);
+
+      .details {
+        .title {
+          color: color(text-color);
+        }
+
+        .description {
+          color: color(text-color);
+        }
+
+        .includedList {
+          .included {
+            .icon {
+              svg {
+                fill: color(text-color);
+              }
+            }
+          }
+        }
+
+        .contactButton {
+          width: 100%;
+          margin-top: 50px;
+
+          .button {
+            background-color: color(custom-black);
+          }
+        }
+      }
+    }
+    .details {
+      .title {
+        color: color(secondary-color);
+        font-weight: fontWeight(semibold);
+        margin-bottom: 10px;
+      }
+
+      .price {
+        font-weight: fontWeight(semibold);
+        font-size: calc(fontSize(h3) + 10px);
+      }
+
+      .description {
+        color: color(custom-gray);
+        margin-bottom: 25px;
+      }
+
+      .includedList {
+        .included {
+          @include Flex(row, center, start);
+          margin-bottom: 17px;
+
+          .text {
+            color: color(text-color);
+            font-weight: fontWeight(medium);
+            font-size: 15px;
+          }
+          .icon {
+            width: iconSize(mobile);
+            margin-right: 13px;
+
+            svg {
+              fill: color(secondary-color);
+            }
+          }
+        }
+      }
+
+      .contactButton {
+        width: 100%;
+        margin-top: 50px;
+      }
+    }
+  }
+}

@@ -21,8 +21,8 @@ function Home({ params: { locale } }: LocaleProps) {
       <Team />
       <Gallery />
       <SocialMedia />
-      <Activity />
       <Prices />
+      <Activity />
       <Newsletter />
       <Footer />
     </main>

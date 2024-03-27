@@ -12,7 +12,7 @@ function SocialMedia() {
           <h4 className="title">{t("text")}</h4>
           <div className="name">
             <h4>
-              <span className="dot">•&nbsp;&nbsp;</span>
+              <span className="dot">•&nbsp;</span>
               {t("name")}
             </h4>
           </div>

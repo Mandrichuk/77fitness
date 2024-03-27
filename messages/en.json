@@ -73,11 +73,11 @@
   },
   "Prices": {
     "text": "Prices",
-    "title": "Our Gym Membership Packages",
+    "title": "Our Memberships",
     "packages": {
       "package1": {
         "title": "one time entry",
-        "price": 10,
+        "price": "10",
         "description": "per entry, billed annually",
         "included": {
           "included1": "One Time Access",
@@ -90,9 +90,9 @@
           "link": "+421 00 00 0000"
         }
       },
-      "package2 ": {
+      "package2": {
         "title": "month membership",
-        "price": 69,
+        "price": "69",
         "description": "per month, billed annually",
         "included": {
           "included1": "Unlimited Gym Access",
@@ -106,10 +106,9 @@
         }
       },
       "package3": {
-        "standOut": true,
-        "advertisement": "+1 month free",
-        "title": "when purchasing a 6-month membership",
-        "price": 48,
+        "standOut": "+1 month free",
+        "title": "Promotion",
+        "price": "48",
         "description": "one-time payment, billed annually",
         "included": {
           "included1": "Save more than €100!",
@@ -125,7 +124,7 @@
       },
       "package4": {
         "title": "1 year membership",
-        "price": 650,
+        "price": "650",
         "description": "one-time payment, billed annually",
         "included": {
           "included1": "Best Price",
@@ -213,7 +212,7 @@
         "number": "null",
         "email": "null"
       },
- "trainer9": {
+      "trainer9": {
         "image": {
           "src": "team/k8mgwucduwycgjbkm21l",
           "alt": "trainer"
