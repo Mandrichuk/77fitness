@@ -1,0 +1,22 @@
+.Activity {
+  @include Flex(column, center, center);
+  width: 100%;
+  .wrapper {
+    @include Flex(column, start, center);
+    width: wrapperWidth(mobile);
+
+    .linkContainer {
+      display: none;
+    }
+
+    .imgContainer {
+      width: 100%;
+      margin-top: 30px;
+    }
+
+    .linkContainer,
+    .linkContainerMobile {
+      margin-top: 20px;
+    }
+  }
+}

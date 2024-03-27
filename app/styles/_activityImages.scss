@@ -1,0 +1,25 @@
+.ActivityImages {
+  margin-right: 10px;
+  position: relative;
+  .cover {
+    .imageContainer {
+      aspect-ratio: 16/ 9;
+      width: 100%;
+
+      img {
+        border-radius: borderRadius(mobile);
+      }
+    }
+  }
+  .icon {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    transform: translateY(-50%);
+
+    svg {
+      width: calc(iconSize(mobile) * 2);
+    }
+  }
+}

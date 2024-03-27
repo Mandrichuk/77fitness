@@ -81,3 +81,19 @@ export interface MembershipProps {
   membership: Package;
   key: string;
 }
+
+
+
+export interface ActivityImageProps extends ImageProps {
+  key: string;
+  index: number;
+}
+
+interface ScrollImage {
+  src: string;
+  alt: string;
+}
+
+export interface ScrollImagesProps {
+  images: ScrollImage[];
+}

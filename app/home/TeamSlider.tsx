@@ -26,13 +26,13 @@ function TeamSlider({ children }: TeamSliderProps) {
 
   useEffect(() => {
     if (windowWidth < 700) {
-      setSlidesToShow(1.08);
+      setSlidesToShow(1);
     }
     if (windowWidth > 700) {
-      setSlidesToShow(2.08);
+      setSlidesToShow(2);
     }
     if (windowWidth > 1250) {
-      setSlidesToShow(3.08);
+      setSlidesToShow(3);
     }
   }, [windowWidth]);
 

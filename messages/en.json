@@ -63,11 +63,21 @@
     }
   },
   "Activity": {
-    "bgText": "IN THE HOUSE",
+    "bgText": "PARTY",
     "title": "DJ Party",
     "scrollImages": {
-      "scrollImage1": { "src": "l0f3l14gwympysbjzu2j", "alt": "activity1" },
-      "scrollImage2": { "src": "l0f3l14gwympysbjzu2j", "alt": "activity2" }
+      "scrollImage1": {
+        "src": "activities/m7swczkpzabhx0saj2mt",
+        "alt": "activity1"
+      },
+      "scrollImage2": {
+        "src": "activities/sdeqh92cvcexzsvfyiiu",
+        "alt": "activity2"
+      },
+      "scrollImage3": {
+        "src": "activities/z84x18cwqzqgiubgqei2",
+        "alt": "activity3"
+      }
     },
     "link": { "text": "See the schedule", "link": "/schedule" }
   },
