@@ -1,3 +1,5 @@
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { HeaderTextProps } from "../lib/index";
 
 export const CLOUDINARY_FOLDER = "77fitness/";
@@ -43,11 +45,7 @@ export const SVGs = {
     </svg>
   ),
   rightScroll: (
-    <svg
-      viewBox="0 0 36 36"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+    <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect width="36" height="36" rx="18" fill="white" />
       <path
         d="M20.7814 17.3334L12.6667 17.3334L12.6667 18.6667L20.7814 18.6667L17.2054 22.2427L18.148 23.1854L23.3334 18L18.148 12.8147L17.2054 13.7574L20.7814 17.3334Z"
@@ -55,6 +53,48 @@ export const SVGs = {
       />
     </svg>
   ),
+};
+
+export const notifyNewsletterSuccess = () => {
+  if (!toast.isActive("success")) {
+    toast.success("Thank you for newsletter subscribing!", {
+      theme: "light",
+      toastId: "success",
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+    });
+  }
+};
+
+export const notifyNewsletterError = () => {
+  if (!toast.isActive("error")) {
+    toast.error("The entered email is not valid", {
+      theme: "light",
+      toastId: "error",
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+    });
+  }
+};
+
+export const notifyExistsNewsletterError = () => {
+  if (!toast.isActive("error")) {
+    toast.error("This email is already subscribed to the newsletter", {
+      theme: "light",
+      toastId: "error",
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+    });
+  }
 };
 
 export const headerText: HeaderTextProps = {

@@ -1,7 +1,7 @@
 .InputNewsletter {
   max-width: 600px;
   width: 100%;
-  // position: relative;
+
 
   .buttonContainer {
     .button {
@@ -9,10 +9,6 @@
       &.dark {
         padding: 15px 30px;
         background-color: color(custom-black);
-        // position: absolute;
-        // top: 50%;
-        // right: 10px;
-        // transform: translateY(-50%);
       }
     }
   }

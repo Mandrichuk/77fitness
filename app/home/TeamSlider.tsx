@@ -51,9 +51,6 @@ function TeamSlider({ children }: TeamSliderProps) {
                 <div className="trainerImg">
                   <Image image={m.image.src} alt={m.image.alt} />
                 </div>
-                <div className="qrImg">
-                  <Image image={m.qr.src} alt={m.qr.alt} />
-                </div>
               </div>
             </div>
           </div>

@@ -7,7 +7,7 @@
     width: wrapperWidth(mobile);
     background-color: color(secondary-color);
     padding: 30px 20px;
-    border-radius: borderRadius(mobile);
+    border-radius: calc(borderRadius(mobile) * 2);
 
     .description {
       opacity: 0.8;
