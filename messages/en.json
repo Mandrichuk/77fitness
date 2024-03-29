@@ -101,7 +101,7 @@
         }
       },
       "package2": {
-        "title": "month membership",
+        "title": "one month membership",
         "price": "69",
         "description": "per month, billed annually",
         "included": {
@@ -117,7 +117,7 @@
       },
       "package3": {
         "standOut": "+1 month free",
-        "title": "Promotion",
+        "title": "Best deal",
         "price": "48",
         "description": "one-time payment, billed annually",
         "included": {

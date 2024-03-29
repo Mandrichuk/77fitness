@@ -35,6 +35,7 @@
     "typescript": "5.4.3"
   },
   "devDependencies": {
-    "@types/react-slick": "^0.23.13"
+    "@types/react-slick": "^0.23.13",
+    "daisyui": "^4.9.0"
   }
 }
