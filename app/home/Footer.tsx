@@ -57,7 +57,7 @@ function Footer() {
   };
 
   return (
-    <footer className="Footer">
+    <footer className="Footer" id="footer">
       <div className="wrapper">
         <div className="mainSection">
           <div className="brandContainer">

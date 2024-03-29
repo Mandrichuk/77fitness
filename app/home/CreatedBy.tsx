@@ -8,7 +8,7 @@ function CreatedBy() {
   const t = useTranslations("CreatedBy");
 
   return (
-    <section className="CreatedBy">
+    <section className="CreatedBy" id="createdBy">
       <div className="wrapper">
         <div className="date">
           <div className="icon">{SVGs.cSign}</div>

@@ -17,7 +17,7 @@ function Header({ locale }: HeaderProps) {
   };
 
   return (
-    <header>
+    <header className="header">
       <div />
 
       {windowWidth > 768 ? (

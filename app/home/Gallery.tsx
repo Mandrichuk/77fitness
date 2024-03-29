@@ -19,7 +19,7 @@ function Gallery() {
   const points = [t("points.point1"), t("points.point2"), t("points.point3")];
 
   return (
-    <section className="Gallery">
+    <section className="Gallery" id="gallery">
       <div className="cover">
         <div className="textSectionMobile">
           <div className="wrapper">
@@ -34,7 +34,7 @@ function Gallery() {
                 {t("title.brand2")}
               </span>
               &nbsp;
-              <span style={{ display: "inline-block" }} className="text">
+              <span style={{ display: "block" }} className="text">
                 {t("title.text2")}
               </span>
             </h3>

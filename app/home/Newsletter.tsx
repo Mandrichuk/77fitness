@@ -7,7 +7,7 @@ function Newsletter() {
   const t = useTranslations("Newsletter");
 
   return (
-    <section className="Newsletter">
+    <section className="Newsletter" id="newsletter">
       <div className="wrapper">
         <h3 className="title">{t("title")}</h3>
         <p className="description">{t("description")}</p>

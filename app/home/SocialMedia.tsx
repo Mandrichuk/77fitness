@@ -6,7 +6,7 @@ function SocialMedia() {
   const t = useTranslations("SocialMedia");
 
   return (
-    <section className="SocialMedia">
+    <section className="SocialMedia" id="socialMedia">
       <div className="wrapper">
         <div className="textSection">
           <h4 className="title">{t("text")}</h4>

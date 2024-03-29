@@ -6,7 +6,7 @@ import { SVGs } from "../constants";
 
 function Membership({ key, membership }: MembershipProps) {
   return (
-    <div className={`Membership ${membership?.standOut && "standOut"}`}>
+    <div className={`Membership ${membership?.standOut && "standOut"}`} id="membership">
       <div className="details">
         <p className="title">{membership.title}</p>
         <p className="price">€{membership.price}</p>

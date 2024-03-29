@@ -74,7 +74,7 @@ function Prices() {
   console.log(memberships[0]);
 
   return (
-    <section className="Prices">
+    <section className="Prices" id="prices">
       <div className="wrapper">
         <h6 className="text">{t("text")}</h6>
         <h3 className="title">{t("title")}</h3>

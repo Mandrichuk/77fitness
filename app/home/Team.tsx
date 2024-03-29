@@ -207,7 +207,7 @@ function Team() {
   ];
 
   return (
-    <section className="Team">
+    <section className="Team" id="team">
       <TextLayers title={t("title")} bgText={t("bgText")} />
       <div className="sliderSection">
         <div className="wrapper">

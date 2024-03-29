@@ -26,7 +26,7 @@ function Activity() {
   ];
 
   return (
-    <section className="Activity">
+    <section className="Activity" id="activity">
       <TextLayers bgText={t("bgText")} title={t("title")} />
       <div className="wrapper">
         <div className="linkContainer">
