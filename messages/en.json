@@ -316,9 +316,10 @@
   },
   "Footer": {
     "logo": { "src": "ncdhkltskvpjmdprvynk", "alt": "logo" },
-    "name": "77 NEXT LEVEL FITNESS",
+    "name": "NEXT LEVEL FITNESS",
     "location": {
-      "text": "Bratislava, Bajkalská 2i, 831 04"
+      "text": "Bratislava, Bajkalská 2i, 831 04",
+      "link": "https://www.google.ru/maps/place/77nextlevelfitness/@48.1639961,17.1368065,18z/data=!4m6!3m5!1s0x476c8f76fe48d03b:0x3e34a79f87ee6c7!8m2!3d48.1639642!4d17.1380704!16s%2Fg%2F11kq3fll84?entry=ttu"
     },
     "sitemap": {
       "title": "Sitemap",
@@ -327,21 +328,22 @@
         "link2": { "text": "Schedule", "link": "/schedule" },
         "link3": { "text": "Gallery", "link": "/gallery" },
         "link4": { "text": "Contact", "link": "/contact" }
-      },
-      "support": {
-        "title": "Support",
-        "links": {
-          "link1": { "text": "Website Error", "link": "+421 00 00 0000" },
-          "link2": { "text": "Contact Us", "link": "+421 00 00 0000" }
-        }
-      },
-      "socials": {
-        "title": "Social Media",
-        "links": {
-          "link1": {
-            "icon": { "src": "rortzj3bihcpfhmxlmi7", "alt": "instagram" },
-            "link": "https://www.instagram.com"
-          }
+      }
+    },
+    "languages": {
+      "title": "Languages",
+      "links": {
+        "link1": { "text": "English", "link": "en" },
+        "link2": { "text": "Slovak", "link": "sk" },
+        "link3": { "text": "Russian", "link": "ru" }
+      }
+    },
+    "socials": {
+      "title": "Social Media",
+      "links": {
+        "link1": {
+          "icon": { "src": "rortzj3bihcpfhmxlmi7", "alt": "instagram" },
+          "link": "https://www.instagram.com"
         }
       }
     }

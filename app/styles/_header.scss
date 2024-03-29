@@ -12,16 +12,16 @@ header {
       fill: white;
     }
     .burgerMenu {
-      height: iconSize(mobile) * 1.2;
-      width: iconSize(mobile) * 1.2;
+      height: iconSize(mobile) * 2.5;
+      width: iconSize(mobile) * 2.5;
       cursor: pointer;
     }
 
     .close {
       cursor: pointer;
       position: fixed;
-      height: iconSize(mobile) * 0.85;
-      width: iconSize(mobile) * 0.85;
+      height: iconSize(mobile) * 1.8;
+      width: iconSize(mobile) * 1.8;
       right: 40px;
       z-index: 10;
     }
@@ -40,6 +40,7 @@ header {
     position: fixed;
     inset: 0;
     width: 100%;
+    z-index: 9;
 
     a {
       margin-bottom: 25px;

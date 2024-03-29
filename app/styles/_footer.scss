@@ -1,0 +1,61 @@
+.Footer {
+  @include Flex(column, center, center);
+  margin: 30px 0 70px 0;
+  width: 100%;
+  .wrapper {
+    @include Flex(column, center, center);
+    width: wrapperWidth(mobile);
+
+    .mainSection {
+      width: 100%;
+      .brandContainer {
+        @include Flex(row, center, start);
+
+        .logo {
+          width: 25px;
+          margin-right: 10px;
+        }
+
+        .name {
+          font-weight: fontWeight(bold);
+        }
+      }
+      .location {
+        font-size: calc(fontSize(p) - 2px);
+      }
+
+      margin-bottom: 50px;
+    }
+
+    .details {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+
+      .detail {
+        .title {
+          font-size: calc(fontSize(p) + 3px);
+          font-weight: fontWeight(bold);
+          margin-bottom: 15px;
+        }
+
+        ul {
+          display: grid;
+          gap: 10px;
+
+          .linkContainer {
+            a {
+              font-size: calc(fontSize(p) + 1px);
+
+              svg {
+                fill: white;
+                width: calc(iconSize(mobile) + 2px);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
