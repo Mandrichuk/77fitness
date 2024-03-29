@@ -6,7 +6,7 @@
   border-radius: borderRadius(mobile);
 
   &.standOut {
-    height: 550px;
+    height: 600px;
     background-color: color(secondary-color);
 
     .details {
@@ -116,7 +116,7 @@
 
         .contactButton {
           width: 100%;
-          margin-top: 50px;
+          margin-top: 5px;
 
           .button {
             background-color: color(custom-black);
@@ -209,7 +209,7 @@
 
         .contactButton {
           width: 100%;
-          margin-top: 50px;
+          margin-top: 40px;
 
           .button {
             background-color: color(custom-black);

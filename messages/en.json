@@ -1,24 +1,4 @@
 {
-  "Header": {
-    "links": {
-      "home": {
-        "text": "Home",
-        "link": "/"
-      },
-      "pricing": {
-        "text": "Pricing",
-        "link": "/pricing"
-      },
-      "about": {
-        "text": "About",
-        "link": "/about"
-      },
-      "contact": {
-        "text": "Contact Us",
-        "link": "/contact"
-      }
-    }
-  },
   "Introduction": {
     "logo": { "src": "ncdhkltskvpjmdprvynk", "alt": "logo" },
     "introductionImg": {
@@ -54,7 +34,7 @@
       "point3": "Regular updates to the assortment"
     },
     "button": {
-      "text": "View more pictures",
+      "text": "Gallery",
       "link": "/gallery"
     },
     "link": {
@@ -137,11 +117,10 @@
         "price": "650",
         "description": "one-time payment, billed annually",
         "included": {
-          "included1": "Best Price",
-          "included2": "Unlimited Gym Access",
-          "included3": "Sauna & Showers",
-          "included4": "DJ & Live Music",
-          "included5": "Personal Trainer (Optional)"
+          "included1": "Unlimited Gym Access",
+          "included2": "Sauna & Showers",
+          "included3": "DJ & Live Music",
+          "included4": "Personal Trainer (Optional)"
         },
         "button": {
           "text": "Contact us",

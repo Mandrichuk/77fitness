@@ -28,9 +28,9 @@ header {
   }
 
   .screenNav {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: calc($gap / 10);
+    a {
+      margin: 0 20px 0 20px;
+    }
   }
 
   .mobileNav {

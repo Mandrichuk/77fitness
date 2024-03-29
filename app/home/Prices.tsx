@@ -63,7 +63,6 @@ function Prices() {
         t("packages.package4.included.included2"),
         t("packages.package4.included.included3"),
         t("packages.package4.included.included4"),
-        t("packages.package4.included.included5"),
       ],
       button: {
         text: t("packages.package4.button.text"),

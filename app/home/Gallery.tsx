@@ -34,7 +34,9 @@ function Gallery() {
                 {t("title.brand2")}
               </span>
               &nbsp;
-              {t("title.text2")}
+              <span style={{ display: "inline-block" }} className="text">
+                {t("title.text2")}
+              </span>
             </h3>
           </div>
         </div>

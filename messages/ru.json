@@ -1,24 +1,4 @@
 {
-  "Header": {
-    "links": {
-      "home": {
-        "text": "Главная",
-        "link": "/"
-      },
-      "pricing": {
-        "text": "Цены",
-        "link": "/цены"
-      },
-      "about": {
-        "text": "О нас",
-        "link": "/о-нас"
-      },
-      "contact": {
-        "text": "Свяжитесь с нами",
-        "link": "/контакт"
-      }
-    }
-  },
   "Introduction": {
     "logo": { "src": "ncdhkltskvpjmdprvynk", "alt": "логотип" },
     "introductionImg": {
@@ -26,12 +6,12 @@
       "alt": "introductionImg"
     },
     "name": "77 NEXT LEVEL FITNESS",
-    "description": "Ваш новый фитнес-центр в центре Братиславы по адресу Байкальская 2и. Оставьте нам контактные данные, и мы сообщим вам о новостях. <span style={'color: #097fd9'}>Мы открыты и ждем вашего визита.</span>",
-    "button": { "text": "Подробнее", "link": "/больше" },
+    "description": "Ваш новый фитнес-центр в центре Братиславы на улице Байкальская 2и. Оставьте нам контакт, и мы сообщим вам о новостях.",
+    "promotion": "Мы открыты и ждем вашего визита.",
+    "button": { "text": "Подробнее", "link": "/more" },
     "watchVideo": {
-      "icon": { "src": "y2cqzcgrslyrvl5vlqnq", "alt": "воспроизвести" },
-      "text": "Смотреть промо-видео",
-      "link": "/видео"
+      "text": "Посмотреть промо-видео",
+      "link": "/video"
     }
   },
   "Gallery": {
@@ -40,41 +20,57 @@
       "gallery2": { "src": "terpaeldoub8drzovinl", "alt": "gallery2" },
       "gallery3": { "src": "ybfz2chx6vjull05kyos", "alt": "gallery3" }
     },
-    "title": "Первые в Словакии с оборудованием от <span style={'color: #8DC53F'}>Prime Fitness</span> и <span style={'color: #8E8E8E'}>HOIST FITNESS</span>.",
+    "title": {
+      "main": "Мы первые в Словакии с",
+      "brand1": "Prime Fitness",
+      "brand2": "HOIST FITNESS",
+      "text1": "и",
+      "text2": "оборудованием."
+    },
     "points": {
       "point1": "Высококачественное оборудование",
-      "point2": "Разнообразие гантелей и грузов",
+      "point2": "Разнообразие гантелей и гирь",
       "point3": "Регулярное обновление ассортимента"
     },
     "button": {
-      "text": "Посмотреть больше фотографий",
-      "link": "/галерея"
+      "text": "Галерея",
+      "link": "/gallery"
     },
     "link": {
       "text": "Свяжитесь с нами",
-      "link": "/контакт"
+      "link": "/contact"
     }
   },
   "Activity": {
-    "bgText": "В ДОМЕ",
+    "bgText": "Вечеринка",
     "title": "DJ Вечеринка",
     "scrollImages": {
-      "scrollImage1": { "src": "l0f3l14gwympysbjzu2j", "alt": "activity1" },
-      "scrollImage2": { "src": "l0f3l14gwympysbjzu2j", "alt": "activity2" }
+      "scrollImage1": {
+        "src": "activities/m7swczkpzabhx0saj2mt",
+        "alt": "activity1"
+      },
+      "scrollImage2": {
+        "src": "activities/sdeqh92cvcexzsvfyiiu",
+        "alt": "activity2"
+      },
+      "scrollImage3": {
+        "src": "activities/z84x18cwqzqgiubgqei2",
+        "alt": "activity3"
+      }
     },
-    "link": { "text": "Посмотреть расписание", "link": "/расписание" }
+    "link": { "text": "Посмотреть расписание", "link": "/schedule" }
   },
   "Prices": {
     "text": "Цены",
-    "title": "Наши пакеты членства в спортзале",
+    "title": "Наши абонементы",
     "packages": {
       "package1": {
         "title": "одноразовый вход",
-        "price": 10,
-        "description": "за вход, выставленный ежегодно",
+        "price": "10",
+        "description": "за посещение, оплата ежегодно",
         "included": {
           "included1": "Одноразовый доступ",
-          "included2": "Сауна и душ",
+          "included2": "Сауна и души",
           "included3": "DJ и живая музыка",
           "included4": "Персональный тренер (по желанию)"
         },
@@ -83,13 +79,13 @@
           "link": "+421 00 00 0000"
         }
       },
-      "package2 ": {
-        "title": "месячное членство",
-        "price": 69,
-        "description": "в месяц, выставленное ежегодно",
+      "package2": {
+        "title": "абонемент на один месяц",
+        "price": "69",
+        "description": "в месяц, оплата ежегодно",
         "included": {
-          "included1": "Неограниченный доступ в спортзал",
-          "included2": "Сауна и душ",
+          "included1": "Неограниченный доступ в зал",
+          "included2": "Сауна и души",
           "included3": "DJ и живая музыка",
           "included4": "Персональный тренер (по желанию)"
         },
@@ -99,15 +95,14 @@
         }
       },
       "package3": {
-        "standOut": true,
-        "advertisement": "+1 месяц бесплатно",
-        "title": "при покупке 6-месячного членства",
-        "price": 48,
-        "description": "одноразовая оплата, выставленная ежегодно",
+        "standOut": "+1 месяц бесплатно",
+        "title": "Лучшее предложение",
+        "price": "48",
+        "description": "одноразовый платеж, оплата ежегодно",
         "included": {
-          "included1": "Сэкономьте более €100!",
-          "included2": "Неограниченный доступ в спортзал",
-          "included3": "Сауна и душ",
+          "included1": "Экономия более €100!",
+          "included2": "Неограниченный доступ в зал",
+          "included3": "Сауна и души",
           "included4": "DJ и живая музыка",
           "included5": "Персональный тренер (по желанию)"
         },
@@ -117,15 +112,14 @@
         }
       },
       "package4": {
-        "title": "годовое членство",
-        "price": 650,
-        "description": "одноразовая оплата, выставленная ежегодно",
+        "title": "абонемент на 1 год",
+        "price": "650",
+        "description": "одноразовый платеж, оплата ежегодно",
         "included": {
-          "included1": "Лучшая цена",
-          "included2": "Неограниченный доступ в спортзал",
-          "included3": "Сауна и душ",
-          "included4": "DJ и живая музыка",
-          "included5": "Персональный тренер (по желанию)"
+          "included1": "Неограниченный доступ в зал",
+          "included2": "Сауна и души",
+          "included3": "DJ и живая музыка",
+          "included4": "Персональный тренер (по желанию)"
         },
         "button": {
           "text": "Свяжитесь с нами",
@@ -139,44 +133,142 @@
     "title": "Наши тренеры",
     "trainers": {
       "trainer1": {
-        "image": { "src": "enymsgoeuilqao0lyngg", "alt": "trainer1" },
-        "qr": { "src": "byngykusqgnbs9uhg9a9", "alt": "qr" },
-        "name": "Имя тренера",
-        "number": "+421 00 00 0000",
-        "email": "example@email.com",
-        "languages": { "laguageSk": "sk", "laguageRu": "ru" }
+        "image": { "src": "team/gh6w8tmkbhvjj0kgwhvb", "alt": "тренер" },
+        "qr": { "src": "null", "alt": "qr" },
+        "name": "Владимир Керул",
+        "number": "+421 911 434 040",
+        "email": "ibffslovalia@email.com"
       },
       "trainer2": {
-        "image": { "src": "a1r05sgl2qdddjtbfl4a", "alt": "trainer2" },
-        "qr": { "src": "byngykusqgnbs9uhg9a9", "alt": "qr" },
-        "name": "Имя тренера",
-        "number": "+421 00 00 0000",
-        "email": "example@email.com",
-        "languages": { "laguageSk": "sk", "laguageRu": "ru" }
+        "image": { "src": "team/aintp3zkttqwloakr761", "alt": "тренер" },
+        "qr": { "src": "null", "alt": "qr" },
+        "name": "Владимир Гостик",
+        "number": "+421 944 160 283",
+        "email": "gostikvladko9@email.com"
       },
       "trainer3": {
-        "image": { "src": "pwasyqbu6rns713ucjmb", "alt": "trainer3" },
-        "qr": { "src": "byngykusqgnbs9uhg9a9", "alt": "qr" },
-        "name": "Имя тренера",
-        "number": "+421 00 00 0000",
-        "email": "example@email.com",
-        "languages": { "laguageSk": "sk", "laguageRu": "ru" }
+        "image": { "src": "team/wxje9mt4ff0c1yljz3gs", "alt": "тренер" },
+        "qr": { "src": "null", "alt": "qr" },
+        "name": "Томас",
+        "number": "null",
+        "email": "null"
       },
       "trainer4": {
-        "image": { "src": "aa4ueb78mutxetea15ek", "alt": "trainer4" },
-        "qr": { "src": "byngykusqgnbs9uhg9a9", "alt": "qr" },
-        "name": "Имя тренера",
-        "number": "+421 00 00 0000",
-        "email": "example@email.com",
-        "languages": { "laguageSk": "sk", "laguageRu": "ru" }
+        "image": { "src": "team/uxhnhzfmqktuyt163zda", "alt": "тренер" },
+        "qr": { "src": "null", "alt": "qr" },
+        "name": "Томас Кристин",
+        "number": "+421 903 322 155",
+        "email": "tom.personalcoach@email.com"
       },
       "trainer5": {
-        "image": { "src": "rscphr7l3vfvwhsgpmw", "alt": "trainer5" },
-        "qr": { "src": "byngykusqgnbs9uhg9a9", "alt": "qr" },
-        "name": "Имя тренера",
-        "number": "+421 00 00 0000",
-        "email": "example@email.com",
-        "languages": { "laguageSk": "sk", "laguageRu": "ru" }
+        "image": {
+          "src": "team/as1wxxew4v9val1act2d",
+          "alt": "тренер"
+        },
+        "qr": { "src": "null", "alt": "qr" },
+        "name": "Владимир Свонко",
+        "number": "+421 903 246 426",
+        "email": "vsvoncinar@yahoo.com"
+      },
+      "trainer6": {
+        "image": {
+          "src": "team/lmoqvppxnv8ol4tkj8it",
+          "alt": "тренер"
+        },
+        "qr": { "src": "null", "alt": "qr" },
+        "name": "Тамара Игларова",
+        "number": "+421 905 824 005",
+        "email": "iglarovaa@email.com"
+      },
+      "trainer7": {
+        "image": {
+          "src": "team/nk8uf0piyyetnbw30tl3",
+          "alt": "тренер"
+        },
+        "qr": { "src": "null", "alt": "qr" },
+        "name": "Стив Стерк",
+        "number": "+421 902 207 208",
+        "email": "stefan.sterk@email.com"
+      },
+      "trainer8": {
+        "image": {
+          "src": "team/qtrqv8nmqooyux47yjon",
+          "alt": "тренер"
+        },
+        "qr": { "src": "null", "alt": "qr" },
+        "name": "Станка",
+        "number": "null",
+        "email": "null"
+      },
+      "trainer9": {
+        "image": {
+          "src": "team/k8mgwucduwycgjbkm21l",
+          "alt": "тренер"
+        },
+        "qr": { "src": "null", "alt": "qr" },
+        "name": "Христиан",
+        "number": "null",
+        "email": "null"
+      },
+      "trainer10": {
+        "image": {
+          "src": "team/s4ecsmbozyrxydbfmb3t",
+          "alt": "тренер"
+        },
+        "qr": { "src": "null", "alt": "qr" },
+        "name": "Сево",
+        "number": "null",
+        "email": "null"
+      },
+      "trainer11": {
+        "image": {
+          "src": "team/qqiuuwgkhqyteauj9s9w",
+          "alt": "тренер"
+        },
+        "qr": { "src": "null", "alt": "qr" },
+        "name": "Наталия Зельенкова",
+        "number": "+421 911 872 371",
+        "email": "natali.zeljenkova@email.com"
+      },
+      "trainer12": {
+        "image": {
+          "src": "team/zrxuppwubl0244qckrxe",
+          "alt": "тренер"
+        },
+        "qr": { "src": "null", "alt": "qr" },
+        "name": "Лаура Мискуфова",
+        "number": "+421 917 418 245",
+        "email": "laura.miskufova@email.com"
+      },
+      "trainer13": {
+        "image": {
+          "src": "team/cnwlgwwqp7kluhr4e1xf",
+          "alt": "тренер"
+        },
+        "qr": { "src": "null", "alt": "qr" },
+        "name": "Матей Франта",
+        "number": "+421 910 513 123",
+        "email": "matofranta10@email.com"
+      },
+      "trainer14": {
+        "image": {
+          "src": "team/lzooavtqecq66qeshhub",
+          "alt": "тренер"
+        },
+        "qr": { "src": "null", "alt": "qr" },
+        "name": "Катерина",
+        "number": "null",
+        "email": "null"
+      },
+      "trainer15": {
+        "image": {
+          "src": "team/sg2rphtlklnioiyjxa1z",
+          "alt": "тренер"
+        },
+        "qr": { "src": "null", "alt": "qr" },
+        "name": "Ян Острачки",
+        "number": "+421 907 767 090",
+        "email": "ostraczky@email.com"
       }
     }
   },
@@ -184,15 +276,15 @@
     "text": "Найдите нас в Instagram",
     "name": "77.fitness.sk",
     "links": {
-      "link1": { "text": "instagram", "link": "https://www.instagram.com" }
+      "link1": { "text": "Instagram", "link": "https://www.instagram.com" }
     }
   },
   "Newsletter": {
-    "title": "РАССЫЛКА",
-    "description": "Подпишитесь на нашу рассылку и оставайтесь в курсе событий",
+    "title": "ПОДПИСКА НА РАССЫЛКУ",
+    "description": "Подпишитесь на нашу рассылку и оставайтесь в курсе",
     "input": {
       "type": "text",
-      "placeholder": "Введите ваш email",
+      "placeholder": "Введите адрес электронной почты",
       "field": "newsletterInput",
       "button": {
         "type": "submit",
@@ -202,34 +294,42 @@
   },
   "Footer": {
     "logo": { "src": "ncdhkltskvpjmdprvynk", "alt": "логотип" },
-    "name": "77 NEXT LEVEL FITNESS",
+    "name": "NEXT LEVEL FITNESS",
     "location": {
-      "text": "Братислава, Байкальская 2и, 831 04"
+      "text": "Братислава, Байкальская 2и, 831 04",
+      "link": "https://www.google.ru/maps/place/77nextlevelfitness/@48.1639961,17.1368065,18z/data=!4m6!3m5!1s0x476c8f76fe48d03b:0x3e34a79f87ee6c7!8m2!3d48.1639642!4d17.1380704!16s%2Fg%2F11kq3fll84?entry=ttu"
     },
     "sitemap": {
       "title": "Карта сайта",
       "links": {
         "link1": { "text": "Главная", "link": "/" },
-        "link2": { "text": "Расписание", "link": "/расписание" },
-        "link3": { "text": "Галерея", "link": "/галерея" },
-        "link4": { "text": "Контакт", "link": "/контакт" }
-      },
-      "support": {
-        "title": "Поддержка",
-        "links": {
-          "link1": { "text": "Ошибка на сайте", "link": "+421 00 00 0000" },
-          "link2": { "text": "Свяжитесь с нами", "link": "+421 00 00 0000" }
-        }
-      },
-      "socials": {
-        "title": "Социальные сети",
-        "links": {
-          "link1": {
-            "icon": { "src": "rortzj3bihcpfhmxlmi7", "alt": "instagram" },
-            "link": "https://www.instagram.com"
-          }
+        "link2": { "text": "Расписание", "link": "/schedule" },
+        "link3": { "text": "Галерея", "link": "/gallery" },
+        "link4": { "text": "Контакты", "link": "/contact" }
+      }
+    },
+    "languages": {
+      "title": "Языки",
+      "links": {
+        "link1": { "text": "Английский", "link": "en" },
+        "link2": { "text": "Словацкий", "link": "sk" },
+        "link3": { "text": "Русский", "link": "ru" }
+      }
+    },
+    "socials": {
+      "title": "Социальные сети",
+      "links": {
+        "link1": {
+          "icon": { "src": "rortzj3bihcpfhmxlmi7", "alt": "instagram" },
+          "link": "https://www.instagram.com"
         }
       }
     }
+  },
+  "CreatedBy": {
+    "year": "2024",
+    "text": "Создано",
+    "creator": "Агентство Now&Here",
+    "link": "https://nowandhere.agency/"
   }
 }

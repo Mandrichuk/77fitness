@@ -18,7 +18,7 @@ function SocialMedia() {
           </div>
         </div>
         <div className="link">
-          <Link className="button" href={t("links.link1.link")}>
+          <Link className="button" target="_blank" href={t("links.link1.link")}>
             {t("links.link1.text")}
           </Link>
         </div>
