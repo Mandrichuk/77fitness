@@ -76,7 +76,7 @@
       }
       .Footer {
         @include Flex(column, center, center);
-        margin: 40px 0 70px 0;
+        margin: 40px 0 50px 0;
         width: 100%;
         .wrapper {
           @include Flex(column, center, center);
@@ -503,7 +503,7 @@
 
       .Footer {
         @include Flex(column, center, center);
-        margin: 50px 0 70px 0;
+        margin: 50px 0 50px 0;
         width: 100%;
         .wrapper {
           @include Flex(row, start, space-between);

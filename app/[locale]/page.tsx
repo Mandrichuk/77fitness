@@ -10,6 +10,7 @@ import Newsletter from "../home/Newsletter";
 import Prices from "../home/Prices";
 import SocialMedia from "../home/SocialMedia";
 import Team from "../home/Team";
+import CreatedBy from "../home/CreatedBy";
 
 import { LocaleProps } from "../lib/index";
 
@@ -25,6 +26,7 @@ function Home({ params: { locale } }: LocaleProps) {
       <Activity />
       <Newsletter />
       <Footer />
+      <CreatedBy />
     </main>
   );
 }

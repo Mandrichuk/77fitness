@@ -1,0 +1,21 @@
+.CreatedBy {
+  @include Flex(row, center, center);
+  border-top: 1px solid color(text-color);
+  opacity: 0.7;
+  width: 100%;
+  .wrapper {
+    padding: 20px;
+    @include Flex(row, center, space-between);
+    width: wrapperWidth(mobile);
+  
+    .date {
+      @include Flex(row, center, center);
+
+      svg {
+        height: iconSize(mobile);
+        margin: 5px 5px 0 0;
+        fill: white;
+      }
+    }
+  }
+}
