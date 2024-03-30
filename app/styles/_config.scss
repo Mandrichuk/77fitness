@@ -1,5 +1,5 @@
 $max-width: 1440px;
-$transition: all 0.3s ease-in-out;
+$transition: all 0.1s ease-in-out;
 $animation-time: 5s;
 $gap: 50px;
 
@@ -104,6 +104,11 @@ $icon-sizes: (
   font-weight: fontWeight(semibold);
   padding: 10px 20px;
   border: none;
+  transition: $transition;
+
+  &:active {
+    transform: scale(0.99);
+  }
 }
 
 @mixin titleText {

@@ -20,6 +20,7 @@ function Gallery() {
 
   return (
     <section className="Gallery" id="gallery">
+
       <div className="cover">
         <div className="textSectionMobile">
           <div className="wrapper">
@@ -34,9 +35,7 @@ function Gallery() {
                 {t("title.brand2")}
               </span>
               &nbsp;
-              <span style={{ display: "block" }} className="text">
-                {t("title.text2")}
-              </span>
+              <span className="text">{t("title.text2")}</span>
             </h3>
           </div>
         </div>
@@ -77,14 +76,19 @@ function Gallery() {
                 {t("title.brand2")}
               </span>
               &nbsp;
-              {t("title.text2")}
+              <span
+                className="text"
+                style={{ display: "block"}}
+              >
+                {t("title.text2")}
+              </span>
             </h3>
 
             <div className="points">
               {points.map((p, index) => (
-                <div className="point">
+                <div className="point" key={`point-${index}`}>
                   <div className="icon">{SVGs.included}</div>
-                  <p key={`point-${index}`}>{p}</p>
+                  <p>{p}</p>
                 </div>
               ))}
             </div>

@@ -67,7 +67,7 @@
       "package1": {
         "title": "jednorázový vstup",
         "price": "10",
-        "description": "za vstup, fakturované ročne",
+        "description": "za vstup",
         "included": {
           "included1": "Jednorazový prístup",
           "included2": "Sauna a sprchy",
@@ -82,7 +82,7 @@
       "package2": {
         "title": "členstvo na jeden mesiac",
         "price": "69",
-        "description": "za mesiac, fakturované ročne",
+        "description": "za mesiac",
         "included": {
           "included1": "Neobmedzený prístup do posilňovne",
           "included2": "Sauna a sprchy",
@@ -98,7 +98,7 @@
         "standOut": "+1 mesiac zadarmo",
         "title": "Najlepšia ponuka",
         "price": "48",
-        "description": "jednorazová platba, fakturované ročne",
+        "description": "jednorazová platba",
         "included": {
           "included1": "Ušetríte viac ako €100!",
           "included2": "Neobmedzený prístup do posilňovne",
@@ -114,7 +114,7 @@
       "package4": {
         "title": "členstvo na 1 rok",
         "price": "650",
-        "description": "jednorazová platba, fakturované ročne",
+        "description": "jednorazová platba",
         "included": {
           "included1": "Neobmedzený prístup do posilňovne",
           "included2": "Sauna a sprchy",

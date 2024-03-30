@@ -65,7 +65,7 @@ function InputNewsletter({
 
       setEmailInput("");
     } catch (error) {
-      console.error("Error submitting email:", error.message);
+      console.error("Error submitting email");
     } finally {
       setIsLoading(false);
     }

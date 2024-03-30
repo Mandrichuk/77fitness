@@ -9,7 +9,7 @@ import { HeaderProps } from "../lib/index";
 
 function Header({ locale }: HeaderProps) {
   const windowWidth = useWindowWidth();
-  const t = headerText[locale] || headerText["en"];
+  const t = headerText["en"];
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const openToggle = () => {

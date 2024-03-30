@@ -68,7 +68,7 @@
       "package1": {
         "title": "one time entry",
         "price": "10",
-        "description": "per entry, billed annually",
+        "description": "per entry",
         "included": {
           "included1": "One Time Access",
           "included2": "Sauna & Showers",
@@ -83,7 +83,7 @@
       "package2": {
         "title": "one month membership",
         "price": "69",
-        "description": "per month, billed annually",
+        "description": "per month",
         "included": {
           "included1": "Unlimited Gym Access",
           "included2": "Sauna & Showers",
@@ -99,7 +99,7 @@
         "standOut": "+1 month free",
         "title": "Best deal",
         "price": "48",
-        "description": "one-time payment, billed annually",
+        "description": "one-time payment",
         "included": {
           "included1": "Save more than €100!",
           "included2": "Unlimited Gym Access",
@@ -115,7 +115,7 @@
       "package4": {
         "title": "1 year membership",
         "price": "650",
-        "description": "one-time payment, billed annually",
+        "description": "one-time payment",
         "included": {
           "included1": "Unlimited Gym Access",
           "included2": "Sauna & Showers",

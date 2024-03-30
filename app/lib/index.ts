@@ -36,6 +36,7 @@ export interface HeaderTextProps {
 export interface HeaderProps {
   locale: string;
 }
+
 export interface LocaleProps {
   params: {
     locale: "en" | "sk" | "ru";
@@ -81,8 +82,6 @@ export interface MembershipProps {
   membership: Package;
   key: string;
 }
-
-
 
 export interface ActivityImageProps extends ImageProps {
   key: string;

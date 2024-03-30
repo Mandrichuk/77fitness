@@ -11,7 +11,7 @@ function Newsletter() {
       <div className="wrapper">
         <h3 className="title">{t("title")}</h3>
         <p className="description">{t("description")}</p>
-        <InputNewsletter  placeholderText={t("input.placeholder")} buttonText={t("input.button.text")} buttonType={t("input.button.type")} inputType={t("input.type")} />
+        <InputNewsletter  placeholderText={t("input.placeholder")} buttonText={t("input.button.text")} />
       </div>
     </section>
   );
