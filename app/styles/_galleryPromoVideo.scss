@@ -1,0 +1,20 @@
+.Gallery_PromoVideo {
+  @include Flex(column, center, center);
+  width: 100%;
+
+  .wrapper {
+    @include Flex(column, center, center);
+    width: wrapperWidth(mobile);
+    margin-top: 40px;
+
+    .video {
+      @include Flex(column, center, center);
+      width: 100%;
+      max-width: 900px;
+      aspect-ratio: 16/9;
+      background-color: color(secondary-color);
+      border-radius: borderRadius(mobile);
+      overflow: hidden;
+    }
+  }
+}

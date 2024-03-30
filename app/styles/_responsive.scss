@@ -443,6 +443,24 @@
           }
         }
       }
+
+      .Gallery_PromoVideo {
+        @include Flex(column, center, center);
+        width: 100%;
+
+        .wrapper {
+          @include Flex(column, center, center);
+          width: wrapperWidth(mobile);
+          margin-top: 70px;
+
+          .video {
+            width: 100%;
+            max-width: 900px;
+            aspect-ratio: 16/9;
+            background-color: color(secondary-color);
+          }
+        }
+      }
     }
   }
 }
