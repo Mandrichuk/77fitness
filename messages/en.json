@@ -275,6 +275,41 @@
       }
     }
   },
+  "GalleryPage": {
+    "Introduction": {
+      "name": " 77 NEXT LEVEL FITNESS",
+      "title": "GALLERY"
+    },
+    "Promo": {
+      "bgText": "Promo",
+      "title": "Promo Video",
+      "video": { "src": "null", "alt": "video" }
+    },
+    "Equipment": {
+      "bgText": "Equipment",
+      "title": "Gym Equipment",
+      "description": "We have all the equipment you need to get the most out of your workout. We have everything you need to stay on top of your fitness goals.",
+      "images": {
+        "image1": { "src": "null", "alt": "image1" },
+        "image2": { "src": "null", "alt": "image1" },
+        "image3": { "src": "null", "alt": "image1" },
+        "image4": { "src": "null", "alt": "image1" }
+      }
+    },
+    "Training": {
+      "bgText": "Training",
+      "title": "Exercise with Us!",
+      "images": {
+        "image1": { "src": "null", "alt": "image1" },
+        "image2": { "src": "null", "alt": "image1" },
+        "image3": { "src": "null", "alt": "image1" },
+        "image4": { "src": "null", "alt": "image1" },
+        "image5": { "src": "null", "alt": "image1" },
+        "image6": { "src": "null", "alt": "image1" }
+      },
+      "button": { "text": "View more", "link": "" }
+    }
+  },
   "Mutual": {
     "SocialMedia": {
       "text": "Find us on Instagram",
