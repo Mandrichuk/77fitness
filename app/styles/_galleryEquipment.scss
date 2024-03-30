@@ -1,0 +1,27 @@
+.Gallery_Equipment {
+  @include Flex(column, center, center);
+  width: 100%;
+  .wrapper {
+    @include Flex(column, center, center);
+    width: wrapperWidth(mobile);
+    margin-top: 40px;
+
+    .imagesContainer {
+      @include Flex(column, center, space-between);
+      width: 100%;
+      .imageContainer {
+        width: 100%;
+        aspect-ratio: 1 / 0.65;
+        background-color: color(secondary-color);
+        margin-bottom: 30px;
+        border-radius: borderRadius(mobile);
+      }
+    }
+
+    .description {
+      opacity: 0.8;
+      margin: 10px 0 40px 0;
+      text-align: center;
+    }
+  }
+}
