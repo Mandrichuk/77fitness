@@ -8,7 +8,7 @@ import ActivityImages from "./ActivityImages";
 import { SVGs } from "../constants";
 
 function Activity() {
-  const t = useTranslations("Activity");
+  const t = useTranslations("HomePage.Activity");
 
   const scrollImages = [
     {

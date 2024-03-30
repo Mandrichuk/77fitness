@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import InputNewsletter from "./InputNewsletter";
 
 function Newsletter() {
-  const t = useTranslations("Newsletter");
+  const t = useTranslations("Mutual.Newsletter");
 
   return (
     <section className="Newsletter" id="newsletter">

@@ -14,7 +14,7 @@ const brand2Styles = {
 };
 
 function Gallery() {
-  const t = useTranslations("Gallery");
+  const t = useTranslations("HomePage.Gallery");
 
   const points = [t("points.point1"), t("points.point2"), t("points.point3")];
 

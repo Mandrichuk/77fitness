@@ -6,7 +6,7 @@ import TextLayers from "../components/TextLayers";
 import TeamSlider from "./TeamSlider";
 
 function Team() {
-  const t = useTranslations("Team");
+  const t = useTranslations("HomePage.Team");
 
   const teamMembers = [
     {

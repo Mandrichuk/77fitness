@@ -1,7 +1,5 @@
-import type { StaticImageData } from "next/image";
-
 export interface Language {
-  lang: "en" | "ru" | "sk";
+  locale: "en" | "ru" | "sk";
 }
 
 export interface Button {
@@ -33,8 +31,7 @@ export interface HeaderTextProps {
   };
 }
 
-export interface HeaderProps {
-  locale: string;
+export interface HeaderProps extends Language {
 }
 
 export interface LocaleProps {

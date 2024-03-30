@@ -16,7 +16,7 @@ const descriptionStyles = {
 };
 
 function Introduction() {
-  const t = useTranslations("Introduction");
+  const t = useTranslations("HomePage.Introduction");
 
   return (
     <section className="Introduction" id="introduction">

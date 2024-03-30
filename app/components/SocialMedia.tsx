@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 function SocialMedia() {
-  const t = useTranslations("SocialMedia");
+  const t = useTranslations("Mutual.SocialMedia");
 
   return (
     <section className="SocialMedia" id="socialMedia">

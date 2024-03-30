@@ -5,7 +5,7 @@ import Link from "next/link";
 import { SVGs } from "../constants";
 
 function CreatedBy() {
-  const t = useTranslations("CreatedBy");
+  const t = useTranslations("Mutual.CreatedBy");
 
   return (
     <section className="CreatedBy" id="createdBy">

@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import Membership from "./Membership";
 
 function Prices() {
-  const t = useTranslations("Prices");
+  const t = useTranslations("HomePage.Prices");
 
   const memberships = [
     {

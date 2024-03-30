@@ -2,12 +2,12 @@ import React from "react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
-import Image from "../components/Image";
+import Image from "./Image";
 
 import { SVGs } from "../constants";
 
 function Footer() {
-  const t = useTranslations("Footer");
+  const t = useTranslations("Mutual.Footer");
 
   const details = {
     sitemap: {

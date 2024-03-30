@@ -15,9 +15,7 @@ export const metadata: Metadata = {
     url: "https://create-next-app.com",
     siteName: "Create Next App",
   },
-  robots: {
-    
-  }
+  robots: {},
 };
 
 interface LayoutProps {
