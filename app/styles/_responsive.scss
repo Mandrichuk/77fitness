@@ -468,6 +468,44 @@
 @include media-large {
   body {
     main {
+      .Pricing_Payment {
+        @include Flex(column, center, center);
+        width: 100%;
+
+        .wrapper {
+          @include Flex(row, center, center);
+          width: wrapperWidth(mobile);
+
+          .imageContainer {
+            display: block;
+            flex: 1;
+          }
+
+          .imageContainerMobile {
+            display: none;
+            margin-top: 40px;
+            width: 100%;
+            max-width: 700px;
+          }
+
+          .points {
+            flex: 1;
+            @include Flex(column, start, center);
+            width: 100%;
+            margin-top: 40px;
+            .point {
+              @include Flex(row, center, center);
+              margin-bottom: 15px;
+              svg {
+                height: iconSize(mobile);
+                fill: color(secondary-color);
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+
       .Gallery_ImagesTraining {
         @include Flex(column, center, center);
         margin-top: 50px;
