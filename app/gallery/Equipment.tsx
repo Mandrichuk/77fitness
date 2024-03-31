@@ -1,8 +1,10 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 
-import TextLayers from "../components/TextLayers";
+
 import { splitArrayIntoTwo } from "../utils/splitArrayIntoTwo";
+import TextLayers from "../components/TextLayers";
+
 import Image from "../components/Image";
 
 function Equipment() {

@@ -1,0 +1,8 @@
+.Gallery_Training {
+  @include Flex(column, center, center);
+  width: 100%;
+  .wrapper {
+    @include Flex(column, center, center);
+    width: wrapperWidth(mobile);  
+  }
+}

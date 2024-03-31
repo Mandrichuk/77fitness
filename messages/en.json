@@ -290,22 +290,52 @@
       "title": "Gym Equipment",
       "description": "We have all the equipment you need to get the most out of your workout. We have everything you need to stay on top of your fitness goals.",
       "images": {
-        "image1": { "src": "null", "alt": "image1" },
-        "image2": { "src": "null", "alt": "image1" },
-        "image3": { "src": "null", "alt": "image1" },
-        "image4": { "src": "null", "alt": "image1" }
+        "image1": {
+          "src": "gallery/equipment/mabn1v6fmbmxhojfg8tl",
+          "alt": "image1"
+        },
+        "image2": {
+          "src": "gallery/equipment/xbjres8udu7p0rqv6ewx",
+          "alt": "image1"
+        },
+        "image3": {
+          "src": "gallery/equipment/tgybsidjrdapv7ymafuv",
+          "alt": "image1"
+        },
+        "image4": {
+          "src": "gallery/equipment/tfg72fk5hxrmvmux6pqu",
+          "alt": "image1"
+        }
       }
     },
     "Training": {
       "bgText": "Training",
       "title": "Exercise with Us!",
       "images": {
-        "image1": { "src": "null", "alt": "image1" },
-        "image2": { "src": "null", "alt": "image1" },
-        "image3": { "src": "null", "alt": "image1" },
-        "image4": { "src": "null", "alt": "image1" },
-        "image5": { "src": "null", "alt": "image1" },
-        "image6": { "src": "null", "alt": "image1" }
+        "image1": {
+          "src": "gallery/training/c3egj0fzz80usru2hn1a",
+          "alt": "image1"
+        },
+        "image2": {
+          "src": "gallery/training/bj6x98sxuhb6agqtugex",
+          "alt": "image1"
+        },
+        "image3": {
+          "src": "gallery/training/njhang9ajlgh9aqksy8y",
+          "alt": "image1"
+        },
+        "image4": {
+          "src": "gallery/training/m7vodmdzihlmmg7dephq",
+          "alt": "image1"
+        },
+        "image5": {
+          "src": "gallery/training/cwy5oj5m0cd9ynes8fkl",
+          "alt": "image1"
+        },
+        "image6": {
+          "src": "gallery/training/r8rzvagfnmwydbee6ej2",
+          "alt": "image1"
+        }
       },
       "button": { "text": "View more", "link": "" }
     }

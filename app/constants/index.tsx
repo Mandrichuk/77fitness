@@ -1,6 +1,14 @@
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
 import { HeaderTextProps } from "../lib/index";
+import logo from "@/public/assets/logo.png";
+
+const images = {
+  logo,
+}
+
+export default images;
 
 export const CLOUDINARY_FOLDER = "77fitness/";
 
@@ -131,8 +139,8 @@ export const headerText: HeaderTextProps = {
         link: "/pricing",
       },
       {
-        text: "About",
-        link: "/about",
+        text: "Gallery",
+        link: "/gallery",
       },
       {
         text: "Contact Us",

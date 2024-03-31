@@ -7,14 +7,16 @@
     width: wrapperWidth(mobile);
     margin-top: 40px;
 
-    .video {
+    .videoContainer {
       @include Flex(column, center, center);
-      width: 100%;
+      width: 90%;
       max-width: 900px;
       aspect-ratio: 16/9;
       background-color: color(secondary-color);
       border-radius: borderRadius(mobile);
       overflow: hidden;
+      
+      object-fit: cover;
     }
   }
 }

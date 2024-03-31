@@ -98,3 +98,9 @@ export interface InputNewsletterProps {
   placeholderText: string;
   buttonText: string;
 }
+
+
+export interface ImagesTrainingProps {
+  images: ImageProps[],
+  buttonText: string;
+}
