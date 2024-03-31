@@ -468,7 +468,6 @@
 @include media-large {
   body {
     main {
-
       .Gallery_ImagesTraining {
         @include Flex(column, center, center);
         margin-top: 50px;

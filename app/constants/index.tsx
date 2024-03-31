@@ -159,8 +159,8 @@ export const headerText: HeaderTextProps = {
         link: "/pricing",
       },
       {
-        text: "O nás",
-        link: "/about",
+        text: "Galéria",
+        link: "/gallery",
       },
       {
         text: "Kontakt",
@@ -179,8 +179,8 @@ export const headerText: HeaderTextProps = {
         link: "/pricing",
       },
       {
-        text: "О нас",
-        link: "/about",
+        text: "Галерея",
+        link: "/gallery",
       },
       {
         text: "Контакты",

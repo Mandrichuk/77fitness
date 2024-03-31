@@ -1,0 +1,246 @@
+.Application {
+  @include Flex(column, center, center);
+  width: 100%;
+  margin-top: 20px;
+  .textSection {
+    @include Flex(column, center, center);
+    margin-bottom: 30px;
+    .text {
+      font-size: fontSize(p);
+      font-weight: fontWeight(bold);
+      color: color(secondary-color);
+      margin-bottom: 10px;
+    }
+
+    .descriptionContainer {
+      margin-top: 5px;
+      width: 100%;
+      .description {
+        color: rgb(210, 210, 210);
+
+        a {
+          color: color(text-color);
+          opacity: 1;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .wrapper {
+    @include Flex(row, center, center);
+    width: wrapperWidth(mobile);
+
+    .textSection {
+      display: none;
+    }
+
+    .imagesContainer {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      gap: 10px;
+      max-width: 600px;
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 420px) {
+  .Application {
+    @include Flex(column, center, center);
+    width: 100%;
+    margin-top: 20px;
+    .textSection {
+      @include Flex(column, center, center);
+      margin-bottom: 30px;
+      .text {
+        font-size: fontSize(p);
+        font-weight: fontWeight(bold);
+        color: color(secondary-color);
+        margin-bottom: 10px;
+      }
+
+      .descriptionContainer {
+        margin-top: 5px;
+        width: 100%;
+        .description {
+          color: rgb(210, 210, 210);
+
+          a {
+            color: color(text-color);
+            opacity: 1;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .wrapper {
+      @include Flex(row, center, center);
+      width: wrapperWidth(mobile);
+
+      .imagesContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 20px;
+        max-width: 600px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 500px) {
+  .Application {
+    @include Flex(column, center, center);
+    width: 100%;
+    margin-top: 20px;
+    .textSection {
+      @include Flex(column, center, center);
+      margin-bottom: 30px;
+      .text {
+        font-size: fontSize(p);
+        font-weight: fontWeight(bold);
+        color: color(secondary-color);
+        margin-bottom: 10px;
+      }
+
+      .descriptionContainer {
+        margin-top: 5px;
+        width: 100%;
+        .description {
+          color: rgb(210, 210, 210);
+
+          a {
+            color: color(text-color);
+            opacity: 1;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .wrapper {
+      @include Flex(row, center, center);
+      width: wrapperWidth(mobile);
+
+      .textSection {
+        display: none;
+      }
+
+      .imagesContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 5%;
+        max-width: 600px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .Application {
+    @include Flex(column, center, center);
+    width: 100%;
+    margin-top: 20px;
+    .textSection {
+      @include Flex(column, center, center);
+      margin-bottom: 30px;
+      .text {
+        font-size: fontSize(p);
+        font-weight: fontWeight(bold);
+        color: color(secondary-color);
+        margin-bottom: 10px;
+      }
+
+      .descriptionContainer {
+        margin-top: 5px;
+        width: 100%;
+        .description {
+          color: rgb(210, 210, 210);
+
+          a {
+            color: color(text-color);
+            opacity: 1;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .wrapper {
+      @include Flex(row, center, center);
+      width: wrapperWidth(mobile);
+
+      .textSection {
+        display: none;
+      }
+
+      .imagesContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10%;
+        max-width: 600px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 930px) {
+  .Application {
+    @include Flex(column, center, center);
+    width: 100%;
+    margin-top: 50px;
+    .textSection {
+      @include Flex(column, center, center);
+      display: none;
+      margin-bottom: 30px;
+
+        .text {
+          font-size: fontSize(p);
+          font-weight: fontWeight(bold);
+          color: color(secondary-color);
+          margin-bottom: 10px;
+        }
+
+        .descriptionContainer {
+          margin-top: 5px;
+          width: 100%;
+          .description {
+            color: rgb(210, 210, 210);
+
+            a {
+              color: color(text-color);
+              opacity: 1;
+              text-decoration: underline;
+            }
+          }
+      }
+    }
+    .wrapper {
+      @include Flex(row, center, center);
+      width: wrapperWidth(mobile);
+
+      .textSection {
+        display: block;
+        flex: 1;
+      }
+
+      .imagesContainer {
+        flex: 1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10%;
+        max-width: 600px;
+        width: 100%;
+
+        .imageContainer {
+          max-width: 300px;
+        }
+      }
+    }
+  }
+}

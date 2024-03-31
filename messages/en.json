@@ -1,5 +1,48 @@
 {
+  "PricingPage": {
+    "Payment": {
+      "bgText": "Payment",
+      "title": "What we take?",
+      "image": {
+        "src": "vvl0sbdwrhgkn9yqgyue",
+        "alt": "Cards"
+      },
+      "points": {
+        "point1": "Cash",
+        "point2": "Credit Card, Mastercard, Visa Card",
+        "point3": "MultiSport cards and Upbalansea without extra charge",
+        "point4": "No additional fees"
+      }
+    },
+    "Warning": {
+      "text": "All the payments are processed in person at the gym lobby, offline."
+    }
+  },
   "HomePage": {
+    "Application": {
+      "text": "Application",
+      "title": "Download Our App!",
+      "details": {
+        "description": "Available on the",
+        "and": "and",
+        "IOS": {
+          "text": "App Store",
+          "link": "https://apps.apple.com/us/app/77-next-level-fitness/id6468893019",
+          "ImageQR": {
+            "src": "nvuuybpufzto5rbc83na",
+            "alt": "ImageQR"
+          }
+        },
+        "Android": {
+          "text": "Google Play",
+          "link": "https://play.google.com/store/apps/details?id=sk.iclub.fitness77",
+          "ImageQR": {
+            "src": "xamhpvgw5vak5rjsvzix",
+            "alt": "ImageQR"
+          }
+        }
+      }
+    },
     "Introduction": {
       "logo": { "src": "ncdhkltskvpjmdprvynk", "alt": "logo" },
       "introductionImg": {

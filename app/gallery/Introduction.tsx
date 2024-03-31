@@ -1,6 +1,8 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 
+import images from "../constants/index";
+
 function Introduction() {
   const t = useTranslations("GalleryPage.Introduction");
 

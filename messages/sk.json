@@ -1,335 +1,425 @@
 {
-  "Introduction": {
-    "logo": { "src": "ncdhkltskvpjmdprvynk", "alt": "logo" },
-    "introductionImg": {
-      "src": "tgkflw9u7aggj4vy5emq",
-      "alt": "introductionImg"
-    },
-    "name": "77 NEXT LEVEL FITNESS",
-    "description": "Váš nový fitness centrum v centre Bratislavy na adrese Bajkalská 2i. Zanechajte nám kontakt a budeme vás informovať o novinkách.",
-    "promotion": "Sme otvorení a tešíme sa na vašu návštevu.",
-    "button": { "text": "Viac", "link": "/more" },
-    "watchVideo": {
-      "text": "Sledovať promo video",
-      "link": "/video"
-    }
-  },
-  "Gallery": {
-    "gallery": {
-      "gallery1": { "src": "srgaaydxtpolcmmfexq0", "alt": "galéria1" },
-      "gallery2": { "src": "terpaeldoub8drzovinl", "alt": "galéria2" },
-      "gallery3": { "src": "ybfz2chx6vjull05kyos", "alt": "galéria3" }
-    },
-    "title": {
-      "main": "Prví na Slovensku s",
-      "brand1": "Prime Fitness",
-      "brand2": "HOIST FITNESS",
-      "text1": "a",
-      "text2": "vybavením."
-    },
-    "points": {
-      "point1": "Vysoká kvalita vybavenia",
-      "point2": "Rozmanitosť činiek a závaží",
-      "point3": "Pravidelné aktualizácie sortimentu"
-    },
-    "button": {
-      "text": "Galéria",
-      "link": "/gallery"
-    },
-    "link": {
-      "text": "Kontaktujte nás",
-      "link": "/contact"
-    }
-  },
-  "Activity": {
-    "bgText": "PÁRTY",
-    "title": "DJ Párty",
-    "scrollImages": {
-      "scrollImage1": {
-        "src": "activities/m7swczkpzabhx0saj2mt",
-        "alt": "aktivita1"
-      },
-      "scrollImage2": {
-        "src": "activities/sdeqh92cvcexzsvfyiiu",
-        "alt": "aktivita2"
-      },
-      "scrollImage3": {
-        "src": "activities/z84x18cwqzqgiubgqei2",
-        "alt": "aktivita3"
-      }
-    },
-    "link": { "text": "Zobraziť harmonogram", "link": "/schedule" }
-  },
-  "Prices": {
-    "text": "Ceny",
-    "title": "Naše členstvá",
-    "packages": {
-      "package1": {
-        "title": "jednorázový vstup",
-        "price": "10",
-        "description": "za vstup",
-        "included": {
-          "included1": "Jednorazový prístup",
-          "included2": "Sauna a sprchy",
-          "included3": "DJ a živá hudba",
-          "included4": "Osobný tréner (voliteľné)"
+  "HomePage": {
+    "Application": {
+      "text": "Aplikácia",
+      "title": "Stiahnite si našu aplikáciu!",
+      "details": {
+        "description": "Dostupné na",
+        "and": "a",
+        "IOS": {
+          "text": "App Store",
+          "link": "https://apps.apple.com/us/app/77-next-level-fitness/id6468893019",
+          "ImageQR": {
+            "src": "nvuuybpufzto5rbc83na",
+            "alt": "QR kód obrázku"
+          }
         },
-        "button": {
-          "text": "Kontaktujte nás",
-          "link": "+421 00 00 0000"
-        }
-      },
-      "package2": {
-        "title": "členstvo na jeden mesiac",
-        "price": "69",
-        "description": "za mesiac",
-        "included": {
-          "included1": "Neobmedzený prístup do posilňovne",
-          "included2": "Sauna a sprchy",
-          "included3": "DJ a živá hudba",
-          "included4": "Osobný tréner (voliteľné)"
-        },
-        "button": {
-          "text": "Kontaktujte nás",
-          "link": "+421 00 00 0000"
-        }
-      },
-      "package3": {
-        "standOut": "+1 mesiac zadarmo",
-        "title": "Najlepšia ponuka",
-        "price": "48",
-        "description": "jednorazová platba",
-        "included": {
-          "included1": "Ušetríte viac ako €100!",
-          "included2": "Neobmedzený prístup do posilňovne",
-          "included3": "Sauna a sprchy",
-          "included4": "DJ a živá hudba",
-          "included5": "Osobný tréner (voliteľné)"
-        },
-        "button": {
-          "text": "Kontaktujte nás",
-          "link": "+421 00 00 0000"
-        }
-      },
-      "package4": {
-        "title": "členstvo na 1 rok",
-        "price": "650",
-        "description": "jednorazová platba",
-        "included": {
-          "included1": "Neobmedzený prístup do posilňovne",
-          "included2": "Sauna a sprchy",
-          "included3": "DJ a živá hudba",
-          "included4": "Osobný tréner (voliteľné)"
-        },
-        "button": {
-          "text": "Kontaktujte nás",
-          "link": "+421 00 00 0000"
+        "Android": {
+          "text": "Google Play",
+          "link": "https://play.google.com/store/apps/details?id=sk.iclub.fitness77",
+          "ImageQR": {
+            "src": "xamhpvgw5vak5rjsvzix",
+            "alt": "QR kód obrázku"
+          }
         }
       }
-    }
-  },
-  "Team": {
-    "bgText": "Tréneri",
-    "title": "Naši tréneri",
-    "trainers": {
-      "trainer1": {
-        "image": { "src": "team/gh6w8tmkbhvjj0kgwhvb", "alt": "tréner" },
-        "qr": { "src": "null", "alt": "qr" },
-        "name": "Vladimír Kerul",
-        "number": "+421 911 434 040",
-        "email": "ibffslovalia@email.com"
+    },
+    "Introduction": {
+      "logo": { "src": "ncdhkltskvpjmdprvynk", "alt": "logo" },
+      "introductionImg": {
+        "src": "tgkflw9u7aggj4vy5emq",
+        "alt": "Úvodný obrázok"
       },
-      "trainer2": {
-        "image": { "src": "team/aintp3zkttqwloakr761", "alt": "tréner" },
-        "qr": { "src": "null", "alt": "qr" },
-        "name": "Vladimír Gostik",
-        "number": "+421 944 160 283",
-        "email": "gostikvladko9@email.com"
-      },
-      "trainer3": {
-        "image": { "src": "team/wxje9mt4ff0c1yljz3gs", "alt": "tréner" },
-        "qr": { "src": "null", "alt": "qr" },
-        "name": "Tomáš",
-        "number": "null",
-        "email": "null"
-      },
-      "trainer4": {
-        "image": { "src": "team/uxhnhzfmqktuyt163zda", "alt": "tréner" },
-        "qr": { "src": "null", "alt": "qr" },
-        "name": "Tomáš Kristin",
-        "number": "+421 903 322 155",
-        "email": "tom.personalcoach@email.com"
-      },
-      "trainer5": {
-        "image": {
-          "src": "team/as1wxxew4v9val1act2d",
-          "alt": "tréner"
-        },
-        "qr": { "src": "null", "alt": "qr" },
-        "name": "Vladimír Svonco",
-        "number": "+421 903 246 426",
-        "email": "vsvoncinar@yahoo.com"
-      },
-      "trainer6": {
-        "image": {
-          "src": "team/lmoqvppxnv8ol4tkj8it",
-          "alt": "tréner"
-        },
-        "qr": { "src": "null", "alt": "qr" },
-        "name": "Tamara Iglarová",
-        "number": "+421 905 824 005",
-        "email": "iglarovaa@email.com"
-      },
-      "trainer7": {
-        "image": {
-          "src": "team/nk8uf0piyyetnbw30tl3",
-          "alt": "tréner"
-        },
-        "qr": { "src": "null", "alt": "qr" },
-        "name": "Steve Sterk",
-        "number": "+421 902 207 208",
-        "email": "stefan.sterk@email.com"
-      },
-      "trainer8": {
-        "image": {
-          "src": "team/qtrqv8nmqooyux47yjon",
-          "alt": "tréner"
-        },
-        "qr": { "src": "null", "alt": "qr" },
-        "name": "Stanka",
-        "number": "null",
-        "email": "null"
-      },
-      "trainer9": {
-        "image": {
-          "src": "team/k8mgwucduwycgjbkm21l",
-          "alt": "tréner"
-        },
-        "qr": { "src": "null", "alt": "qr" },
-        "name": "Christian",
-        "number": "null",
-        "email": "null"
-      },
-      "trainer10": {
-        "image": {
-          "src": "team/s4ecsmbozyrxydbfmb3t",
-          "alt": "tréner"
-        },
-        "qr": { "src": "null", "alt": "qr" },
-        "name": "Sevo",
-        "number": "null",
-        "email": "null"
-      },
-      "trainer11": {
-        "image": {
-          "src": "team/qqiuuwgkhqyteauj9s9w",
-          "alt": "tréner"
-        },
-        "qr": { "src": "null", "alt": "qr" },
-        "name": "Natália Zeljenková",
-        "number": "+421 911 872 371",
-        "email": "natali.zeljenkova@email.com"
-      },
-      "trainer12": {
-        "image": {
-          "src": "team/zrxuppwubl0244qckrxe",
-          "alt": "tréner"
-        },
-        "qr": { "src": "null", "alt": "qr" },
-        "name": "Laura Miskufová",
-        "number": "+421 917 418 245",
-        "email": "laura.miskufova@email.com"
-      },
-      "trainer13": {
-        "image": {
-          "src": "team/cnwlgwwqp7kluhr4e1xf",
-          "alt": "tréner"
-        },
-        "qr": { "src": "null", "alt": "qr" },
-        "name": "Matej Franta",
-        "number": "+421 910 513 123",
-        "email": "matofranta10@email.com"
-      },
-      "trainer14": {
-        "image": {
-          "src": "team/lzooavtqecq66qeshhub",
-          "alt": "tréner"
-        },
-        "qr": { "src": "null", "alt": "qr" },
-        "name": "Kateryna",
-        "number": "null",
-        "email": "null"
-      },
-      "trainer15": {
-        "image": {
-          "src": "team/sg2rphtlklnioiyjxa1z",
-          "alt": "tréner"
-        },
-        "qr": { "src": "null", "alt": "qr" },
-        "name": "Jan Ostraczky",
-        "number": "+421 907 767 090",
-        "email": "ostraczky@email.com"
+      "name": "77 NEXT LEVEL FITNESS",
+      "description": "Váš nový fitness centrum v centre Bratislavy na adrese Bajkalská 2i. Zanechajte nám kontakt a my vás budeme informovať o novinkách.",
+      "promotion": "Sme otvorení a tešíme sa na vašu návštevu.",
+      "button": { "text": "Viac", "link": "/viac" },
+      "watchVideo": {
+        "text": "Sledovať promo video",
+        "link": "/video"
       }
-    }
-  },
-  "SocialMedia": {
-    "text": "Nájdite nás na Instagrame",
-    "name": "77.fitness.sk",
-    "links": {
-      "link1": { "text": "Instagram", "link": "https://www.instagram.com" }
-    }
-  },
-  "Newsletter": {
-    "title": "NEWSLETTER",
-    "description": "Prihláste sa k odberu nášho newslettera a buďte v obraze",
-    "input": {
-      "type": "text",
-      "placeholder": "Zadajte e-mailovú adresu",
-      "field": "newsletterInput",
+    },
+    "Gallery": {
+      "gallery": {
+        "gallery1": { "src": "srgaaydxtpolcmmfexq0", "alt": "galeria1" },
+        "gallery2": { "src": "terpaeldoub8drzovinl", "alt": "galeria2" },
+        "gallery3": { "src": "ybfz2chx6vjull05kyos", "alt": "galeria3" }
+      },
+      "title": {
+        "main": "Sme prví na Slovensku s",
+        "brand1": "Prime Fitness",
+        "brand2": "HOIST FITNESS",
+        "text1": "a",
+        "text2": "vybavením."
+      },
+      "points": {
+        "point1": "Vysokokvalitné vybavenie",
+        "point2": "Rôznorodosť činiek a závaží",
+        "point3": "Pravidelné aktualizácie sortimentu"
+      },
       "button": {
-        "type": "submit",
-        "text": "Prihlásiť sa"
-      }
-    }
-  },
-  "Footer": {
-    "logo": { "src": "ncdhkltskvpjmdprvynk", "alt": "logo" },
-    "name": "NEXT LEVEL FITNESS",
-    "location": {
-      "text": "Bratislava, Bajkalská 2i, 831 04",
-      "link": "https://www.google.ru/maps/place/77nextlevelfitness/@48.1639961,17.1368065,18z/data=!4m6!3m5!1s0x476c8f76fe48d03b:0x3e34a79f87ee6c7!8m2!3d48.1639642!4d17.1380704!16s%2Fg%2F11kq3fll84?entry=ttu"
-    },
-    "sitemap": {
-      "title": "Mapa stránok",
-      "links": {
-        "link1": { "text": "Domov", "link": "/" },
-        "link2": { "text": "Rozvrh", "link": "/schedule" },
-        "link3": { "text": "Galéria", "link": "/gallery" },
-        "link4": { "text": "Kontakt", "link": "/contact" }
+        "text": "Galéria",
+        "link": "/galeria"
+      },
+      "link": {
+        "text": "Kontaktujte nás",
+        "link": "/kontakt"
       }
     },
-    "languages": {
-      "title": "Jazyky",
-      "links": {
-        "link1": { "text": "Angličtina", "link": "en" },
-        "link2": { "text": "Slovenčina", "link": "sk" },
-        "link3": { "text": "Ruština", "link": "ru" }
+    "Activity": {
+      "bgText": "PARTY",
+      "title": "DJ Party",
+      "scrollImages": {
+        "scrollImage1": {
+          "src": "activities/m7swczkpzabhx0saj2mt",
+          "alt": "aktivita1"
+        },
+        "scrollImage2": {
+          "src": "activities/sdeqh92cvcexzsvfyiiu",
+          "alt": "aktivita2"
+        },
+        "scrollImage3": {
+          "src": "activities/z84x18cwqzqgiubgqei2",
+          "alt": "aktivita3"
+        }
+      },
+      "link": { "text": "Pozrite si harmonogram", "link": "/harmonogram" }
+    },
+    "Prices": {
+      "text": "Ceny",
+      "title": "Naše členstvá",
+      "packages": {
+        "package1": {
+          "title": "jednorazový vstup",
+          "price": "10",
+          "description": "za vstup",
+          "included": {
+            "included1": "Jednorazový prístup",
+            "included2": "Sauna a sprchy",
+            "included3": "DJ a živá hudba",
+            "included4": "Osobný tréner (voliteľné)"
+          },
+          "button": {
+            "text": "Kontaktujte nás",
+            "link": "+421 00 00 0000"
+          }
+        },
+        "package2": {
+          "title": "členstvo na jeden mesiac",
+          "price": "69",
+          "description": "za mesiac",
+          "included": {
+            "included1": "Neobmedzený prístup do posilňovne",
+            "included2": "Sauna a sprchy",
+            "included3": "DJ a živá hudba",
+            "included4": "Osobný tréner (voliteľné)"
+          },
+          "button": {
+            "text": "Kontaktujte nás",
+            "link": "+421 00 00 0000"
+          }
+        },
+        "package3": {
+          "standOut": "+1 mesiac zadarmo",
+          "title": "Najlepšia ponuka",
+          "price": "48",
+          "description": "jednorazová platba",
+          "included": {
+            "included1": "Ušetrite viac ako €100!",
+            "included2": "Neobmedzený prístup do posilňovne",
+            "included3": "Sauna a sprchy",
+            "included4": "DJ a živá hudba",
+            "included5": "Osobný tréner (voliteľné)"
+          },
+          "button": {
+            "text": "Kontaktujte nás",
+            "link": "+421 00 00 0000"
+          }
+        },
+        "package4": {
+          "title": "členstvo na 1 rok",
+          "price": "650",
+          "description": "jednorazová platba",
+          "included": {
+            "included1": "Neobmedzený prístup do posilňovne",
+            "included2": "Sauna a sprchy",
+            "included3": "DJ a živá hudba",
+            "included4": "Osobný tréner (voliteľné)"
+          },
+          "button": {
+            "text": "Kontaktujte nás",
+            "link": "+421 00 00 0000"
+          }
+        }
       }
     },
-    "socials": {
-      "title": "Sociálne siete",
-      "links": {
-        "link1": {
-          "icon": { "src": "rortzj3bihcpfhmxlmi7", "alt": "instagram" },
-          "link": "https://www.instagram.com"
+    "Team": {
+      "bgText": "Tréneri",
+      "title": "Naši tréneri",
+      "trainers": {
+        "trainer1": {
+          "image": { "src": "team/gh6w8tmkbhvjj0kgwhvb", "alt": "tréner" },
+          "qr": { "src": "null", "alt": "qr" },
+          "name": "Vladimír Kerul",
+          "number": "+421 911 434 040",
+          "email": "ibffslovalia@email.com"
+        },
+        "trainer2": {
+          "image": { "src": "team/aintp3zkttqwloakr761", "alt": "tréner" },
+          "qr": { "src": "null", "alt": "qr" },
+          "name": "Vladimír Gostík",
+          "number": "+421 944 160 283",
+          "email": "gostikvladko9@email.com"
+        },
+        "trainer3": {
+          "image": { "src": "team/wxje9mt4ff0c1yljz3gs", "alt": "tréner" },
+          "qr": { "src": "null", "alt": "qr" },
+          "name": "Tomáš",
+          "number": "null",
+          "email": "null"
+        },
+        "trainer4": {
+          "image": { "src": "team/uxhnhzfmqktuyt163zda", "alt": "tréner" },
+          "qr": { "src": "null", "alt": "qr" },
+          "name": "Tomáš Kristín",
+          "number": "+421 903 322 155",
+          "email": "tom.personalcoach@email.com"
+        },
+        "trainer5": {
+          "image": {
+            "src": "team/as1wxxew4v9val1act2d",
+            "alt": "tréner"
+          },
+          "qr": { "src": "null", "alt": "qr" },
+          "name": "Vladimír Svonco",
+          "number": "+421 903 246 426",
+          "email": "vsvoncinar@yahoo.com"
+        },
+        "trainer6": {
+          "image": {
+            "src": "team/lmoqvppxnv8ol4tkj8it",
+            "alt": "tréner"
+          },
+          "qr": { "src": "null", "alt": "qr" },
+          "name": "Tamara Iglárová",
+          "number": "+421 905 824 005",
+          "email": "iglarovaa@email.com"
+        },
+        "trainer7": {
+          "image": {
+            "src": "team/nk8uf0piyyetnbw30tl3",
+            "alt": "tréner"
+          },
+          "qr": { "src": "null", "alt": "qr" },
+          "name": "Steve Sterk",
+          "number": "+421 902 207 208",
+          "email": "stefan.sterk@email.com"
+        },
+        "trainer8": {
+          "image": {
+            "src": "team/qtrqv8nmqooyux47yjon",
+            "alt": "tréner"
+          },
+          "qr": { "src": "null", "alt": "qr" },
+          "name": "Stanka",
+          "number": "null",
+          "email": "null"
+        },
+        "trainer9": {
+          "image": {
+            "src": "team/k8mgwucduwycgjbkm21l",
+            "alt": "tréner"
+          },
+          "qr": { "src": "null", "alt": "qr" },
+          "name": "Christian",
+          "number": "null",
+          "email": "null"
+        },
+        "trainer10": {
+          "image": {
+            "src": "team/s4ecsmbozyrxydbfmb3t",
+            "alt": "tréner"
+          },
+          "qr": { "src": "null", "alt": "qr" },
+          "name": "Sevo",
+          "number": "null",
+          "email": "null"
+        },
+        "trainer11": {
+          "image": {
+            "src": "team/qqiuuwgkhqyteauj9s9w",
+            "alt": "tréner"
+          },
+          "qr": { "src": "null", "alt": "qr" },
+          "name": "Natália Zeljenková",
+          "number": "+421 911 872 371",
+          "email": "natali.zeljenkova@email.com"
+        },
+        "trainer12": {
+          "image": {
+            "src": "team/zrxuppwubl0244qckrxe",
+            "alt": "tréner"
+          },
+          "qr": { "src": "null", "alt": "qr" },
+          "name": "Laura Miskufová",
+          "number": "+421 917 418 245",
+          "email": "laura.miskufova@email.com"
+        },
+        "trainer13": {
+          "image": {
+            "src": "team/cnwlgwwqp7kluhr4e1xf",
+            "alt": "tréner"
+          },
+          "qr": { "src": "null", "alt": "qr" },
+          "name": "Matej Franta",
+          "number": "+421 910 513 123",
+          "email": "matofranta10@email.com"
+        },
+        "trainer14": {
+          "image": {
+            "src": "team/lzooavtqecq66qeshhub",
+            "alt": "tréner"
+          },
+          "qr": { "src": "null", "alt": "qr" },
+          "name": "Kateryna",
+          "number": "null",
+          "email": "null"
+        },
+        "trainer15": {
+          "image": {
+            "src": "team/sg2rphtlklnioiyjxa1z",
+            "alt": "tréner"
+          },
+          "qr": { "src": "null", "alt": "qr" },
+          "name": "Ján Ostraczky",
+          "number": "+421 907 767 090",
+          "email": "ostraczky@email.com"
         }
       }
     }
   },
-  "CreatedBy": {
-    "year": "2024",
-    "text": "Vytvoril",
-    "creator": "Agentúra Now&Here",
-    "link": "https://nowandhere.agency/"
+  "GalleryPage": {
+    "Introduction": {
+      "name": " 77 NEXT LEVEL FITNESS",
+      "title": "GALÉRIA"
+    },
+    "Promo": {
+      "bgText": "Promo",
+      "title": "Promo video",
+      "video": { "src": "null", "alt": "video" }
+    },
+    "Equipment": {
+      "bgText": "Vybavenie",
+      "title": "Posilňovacie vybavenie",
+      "description": "Máme všetko vybavenie, ktoré potrebujete na dosiahnutie najlepších výsledkov vo vašom cvičení. Máme všetko, čo potrebujete na dosiahnutie vašich fitness cieľov.",
+      "images": {
+        "image1": {
+          "src": "gallery/equipment/mabn1v6fmbmxhojfg8tl",
+          "alt": "obrázok1"
+        },
+        "image2": {
+          "src": "gallery/equipment/xbjres8udu7p0rqv6ewx",
+          "alt": "obrázok1"
+        },
+        "image3": {
+          "src": "gallery/equipment/tgybsidjrdapv7ymafuv",
+          "alt": "obrázok1"
+        },
+        "image4": {
+          "src": "gallery/equipment/tfg72fk5hxrmvmux6pqu",
+          "alt": "obrázok1"
+        }
+      }
+    },
+    "Training": {
+      "bgText": "Tréning",
+      "title": "Cvičte s nami!",
+      "images": {
+        "image1": {
+          "src": "gallery/training/c3egj0fzz80usru2hn1a",
+          "alt": "obrázok1"
+        },
+        "image2": {
+          "src": "gallery/training/bj6x98sxuhb6agqtugex",
+          "alt": "obrázok1"
+        },
+        "image3": {
+          "src": "gallery/training/njhang9ajlgh9aqksy8y",
+          "alt": "obrázok1"
+        },
+        "image4": {
+          "src": "gallery/training/m7vodmdzihlmmg7dephq",
+          "alt": "obrázok1"
+        },
+        "image5": {
+          "src": "gallery/training/cwy5oj5m0cd9ynes8fkl",
+          "alt": "obrázok1"
+        },
+        "image6": {
+          "src": "gallery/training/r8rzvagfnmwydbee6ej2",
+          "alt": "obrázok1"
+        }
+      },
+      "button": { "text": "Zobraziť viac", "link": "" }
+    }
+  },
+  "Mutual": {
+    "SocialMedia": {
+      "text": "Nájdete nás na Instagrame",
+      "name": "77.fitness.sk",
+      "links": {
+        "link1": { "text": "Instagram", "link": "https://www.instagram.com" }
+      }
+    },
+    "Newsletter": {
+      "title": "NEWSLETTER",
+      "description": "Prihláste sa k odberu nášho newslettera a buďte v obraze",
+      "input": {
+        "type": "text",
+        "placeholder": "Zadajte e-mailovú adresu",
+        "field": "newsletterInput",
+        "button": {
+          "type": "submit",
+          "text": "Prihlásiť sa"
+        }
+      }
+    },
+    "Footer": {
+      "logo": { "src": "ncdhkltskvpjmdprvynk", "alt": "logo" },
+      "name": "NEXT LEVEL FITNESS",
+      "location": {
+        "text": "Bratislava, Bajkalská 2i, 831 04",
+        "link": "https://www.google.ru/maps/place/77nextlevelfitness/@48.1639961,17.1368065,18z/data=!4m6!3m5!1s0x476c8f76fe48d03b:0x3e34a79f87ee6c7!8m2!3d48.1639642!4d17.1380704!16s%2Fg%2F11kq3fll84?entry=ttu"
+      },
+      "sitemap": {
+        "title": "Mapa stránok",
+        "links": {
+          "link1": { "text": "Domov", "link": "/" },
+          "link2": { "text": "Harmonogram", "link": "/harmonogram" },
+          "link3": { "text": "Galéria", "link": "/galeria" },
+          "link4": { "text": "Kontakt", "link": "/kontakt" }
+        }
+      },
+      "languages": {
+        "title": "Jazyky",
+        "links": {
+          "link1": { "text": "Angličtina", "link": "en" },
+          "link2": { "text": "Slovenčina", "link": "sk" }
+        }
+      },
+      "socialMedia": {
+        "title": "Sociálne siete",
+        "links": {
+          "link1": { "text": "Facebook", "link": "https://www.facebook.com" },
+          "link2": { "text": "Instagram", "link": "https://www.instagram.com" },
+          "link3": { "text": "Twitter", "link": "https://twitter.com" }
+        }
+      },
+      "contact": {
+        "title": "Kontakt",
+        "phone": "+421 00 00 0000",
+        "email": "info@77nextlevelfitness.com"
+      }
+    }
   }
 }
