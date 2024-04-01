@@ -42,13 +42,14 @@ html {
   overflow-x: hidden;
 
   body {
+    overflow-x: hidden;
     @include Flex(column, center, center);
     @include pText();
     width: 100%;
     color: color(text-color);
     background-color: color(primary-color);
     main {
-    max-width: $max-width;
+      max-width: $max-width;
       width: 100%;
       display: grid;
       gap: $gap;

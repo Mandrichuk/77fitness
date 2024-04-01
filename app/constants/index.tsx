@@ -252,7 +252,7 @@ export const footerText: FooterTextProps = {
       title: "Sitemap",
       links: [
         { text: "Home", link: "/" },
-        { text: "Schedule", link: "/schedule" },
+        { text: "Pricing", link: "/pricing" },
         { text: "Gallery", link: "/gallery" },
         { text: "Contact", link: "tel:+421 908 706 351" },
       ],
@@ -286,8 +286,8 @@ export const footerText: FooterTextProps = {
       title: "Mapa stránok",
       links: [
         { text: "Domov", link: "/" },
-        { text: "Rozvrh", link: "/rozvrh" },
-        { text: "Galéria", link: "/galéria" },
+        { text: "Ceny", link: "/pricing" },
+        { text: "Galéria", link: "/gallery" },
         { text: "Kontakt", link: "tel:+421 908 706 351" },
       ],
     },
@@ -320,8 +320,8 @@ export const footerText: FooterTextProps = {
       title: "Карта сайта",
       links: [
         { text: "Главная", link: "/" },
-        { text: "Расписание", link: "/расписание" },
-        { text: "Галерея", link: "/галерея" },
+        { text: "Цены", link: "/pricing" },
+        { text: "Галерея", link: "/gallery" },
         { text: "Контакт", link: "tel:+421 908 706 351" },
       ],
     },
