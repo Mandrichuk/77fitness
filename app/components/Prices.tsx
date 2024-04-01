@@ -71,7 +71,6 @@ function Prices() {
     },
   ];
 
-  console.log(memberships[0]);
 
   return (
     <section className="Prices" id="prices">

@@ -10,14 +10,13 @@ import Prices from "@/app/components/Prices";
 import { LocaleProps } from "../../lib/index";
 
 function Home({ params: { locale } }: LocaleProps) {
-
   return (
     <main>
       <Header locale={locale} />
       <Payment />
       <Prices />
       <Newsletter />
-      <Footer />
+      <Footer locale={locale} />
       <CreatedBy />
     </main>
   );

@@ -7,7 +7,7 @@ import ImagesTraining from "./ImagesTraining";
 
 function Training() {
   const t = useTranslations("GalleryPage.Training");
-
+ 
   const images = [
     { image: t("images.image1.src"), alt: t("images.image1.alt") },
     { image: t("images.image2.src"), alt: t("images.image2.alt") },

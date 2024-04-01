@@ -34,7 +34,12 @@ function Gallery() {
                 {t("title.brand2")}
               </span>
               &nbsp;
-              <span className="text">{t("title.text2")}</span>
+              {/* <span
+                className="text"
+                style={{ display: "block" }}
+              >
+                {t("title.text2")}
+              </span> */}
             </h3>
           </div>
         </div>

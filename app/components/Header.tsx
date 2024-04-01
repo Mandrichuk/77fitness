@@ -2,8 +2,9 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "./Image";
 
-import { SVGs, headerText, homepagePaths, languages } from "../constants";
+import { SVGs, headerText, homepagePaths } from "../constants";
 import pathIntoSegments from "../utils/pathIntoSegments";
 import { useWindowWidth } from "../utils/useWindowWidth";
 import { HeaderProps } from "../lib/index";
@@ -26,7 +27,15 @@ function Header({ locale }: HeaderProps) {
     } else {
       setIsHomePage(false);
     }
-  });
+  }, [pathname, setIsHomePage]);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [isOpen]);
 
   const openLangToggle = () => {
     setIsLangOpen(!isLangOpen);
@@ -40,7 +49,7 @@ function Header({ locale }: HeaderProps) {
     <header className="header">
       <div className={`logoContainer ${isOpen && "open"}`}>
         <Link href={t.logo.link}>
-          <img src={t.logo.image} alt={t.logo.alt} />
+          <Image image={t.logo.image} alt={t.logo.alt} />
         </Link>
       </div>
       {windowWidth > 768 ? (
@@ -94,6 +103,20 @@ function Header({ locale }: HeaderProps) {
                     {l.text}
                   </Link>
                 ))}
+                <div data-anchor="currentLangContainer" className="options">
+                  {t.languages.links.map((l, index) => (
+                    <Link
+                      href={`/${l.link}${withoutLang}`}
+                      key={`${l.text}-${index}`}
+                      className="option"
+                      onClick={() => {
+                        openToggle();
+                      }}
+                    >
+                      {toUpperCase(l.link)}
+                    </Link>
+                  ))}
+                </div>
               </nav>
             </>
           ) : (

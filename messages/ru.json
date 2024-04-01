@@ -2,7 +2,7 @@
   "PricingPage": {
     "Payment": {
       "bgText": "Оплата",
-      "title": "Что мы принимаем?",
+      "title": "Что принимаем?",
       "image": {
         "src": "vvl0sbdwrhgkn9yqgyue",
         "alt": "Карты"
@@ -327,7 +327,7 @@
       "video": { "src": "null", "alt": "video" }
     },
     "Equipment": {
-      "bgText": "Тренажеры",
+      "bgText": "Наш зал",
       "title": "Тренажеры",
       "description": "У нас есть все, что вам нужно для эффективных тренировок. У нас есть все необходимое, чтобы достичь ваших фитнес-целей.",
       "images": {
@@ -350,8 +350,8 @@
       }
     },
     "Training": {
-      "bgText": "Тренировка",
-      "title": "Тренируйтесь с нами!",
+      "bgText": "Занятия",
+      "title": "Давай с нами!",
       "images": {
         "image1": {
           "src": "gallery/training/c3egj0fzz80usru2hn1a",
@@ -378,7 +378,7 @@
           "alt": "image1"
         }
       },
-      "button": { "text": "Посмотреть больше", "link": "" }
+      "button": { "text": "Больше", "link": "" }
     }
   },
   "Mutual": {

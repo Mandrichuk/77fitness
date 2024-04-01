@@ -1,14 +1,14 @@
- .textLayers {
-    position: relative;
-    width: 100%;
-    height: 100px;
-    .bgText {
-      position: absolute;
-    }
-    .title {
-      @include titleText();
-      position: absolute;
-      top: 60%;
-      left: 100px;
-    }
+.textLayers {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  .bgText {
+    position: absolute;
   }
+  .title {
+    @include titleText();
+    position: absolute;
+    top: 50%;
+    left: 100px;
+  }
+}

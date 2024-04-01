@@ -6,7 +6,6 @@ import Footer from "@/app/components/Footer";
 import Newsletter from "@/app/components/Newsletter";
 import CreatedBy from "@/app/components/CreatedBy";
 import Equipment from "@/app/gallery/Equipment";
-import Introduction from "@/app/gallery/Introduction";
 import Training from "@/app/gallery/Training";
 import PromoVideo from "@/app/gallery/PromoVideo";
 import SocialMedia from "@/app/components/SocialMedia";
@@ -23,7 +22,7 @@ function Home({ params: { locale } }: LocaleProps) {
       <SocialMedia />
       <Training />
       <Newsletter />
-      <Footer />
+      <Footer locale={locale} />
       <CreatedBy />
     </main>
   );

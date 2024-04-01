@@ -33,6 +33,13 @@ header {
   .mobile {
     height: 40px;
     @include Flex(row, center, space-between);
+
+    .options {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
     .burgerMenu,
     .close {
       stroke: white;
