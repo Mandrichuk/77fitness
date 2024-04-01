@@ -1,4 +1,5 @@
 import React from "react";
+import { Metadata } from "next";
 
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
@@ -8,6 +9,10 @@ import Payment from "@/app/pricing/Payment";
 import Prices from "@/app/components/Prices";
 
 import { LocaleProps } from "../../lib/index";
+
+export const metadata: Metadata = {
+  title: "Pricing",
+}
 
 function Home({ params: { locale } }: LocaleProps) {
   return (

@@ -138,12 +138,10 @@ export const notifyExistsNewsletterError = () => {
 
 export const homepagePaths = ["/", "/en", "/sk", "/ru"];
 
-// export const languages = ["en", "sk", "ru"];
-
 export const headerText: HeaderTextProps = {
   en: {
     logo: {
-      image: "/assets/logo.png",
+      image: "ncdhkltskvpjmdprvynk",
       link: "/",
       alt: "Logo",
     },
@@ -176,7 +174,7 @@ export const headerText: HeaderTextProps = {
   },
   ru: {
     logo: {
-      image: "/assets/logo.png",
+      image: "ncdhkltskvpjmdprvynk",
       link: "/",
       alt: "Логотип",
     },
@@ -209,7 +207,7 @@ export const headerText: HeaderTextProps = {
   },
   sk: {
     logo: {
-      image: "/assets/logo.png",
+      image: "ncdhkltskvpjmdprvynk",
       link: "/",
       alt: "Logo",
     },

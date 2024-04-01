@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslations } from "next-intl";
+import { Metadata } from "next";
 
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
@@ -11,6 +12,10 @@ import PromoVideo from "@/app/gallery/PromoVideo";
 import SocialMedia from "@/app/components/SocialMedia";
 
 import { LocaleProps } from "@/app/lib/index";
+
+export const metadata: Metadata = {
+  title: "Gallery",
+}
 
 function Home({ params: { locale } }: LocaleProps) {
   return (
