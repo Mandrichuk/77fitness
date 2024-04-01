@@ -52,10 +52,6 @@ function InputNewsletter({
         body: JSON.stringify({ email: emailInput }),
       });
 
-      if (response.status === 400) {
-        notifyExistsNewsletterError();
-      }
-
       if (!response.ok) {
         const data = await response.json();
         throw new Error(data.error);
@@ -63,6 +59,9 @@ function InputNewsletter({
         notifyNewsletterSuccess();
       }
 
+      if (response.status === 400) {
+        notifyExistsNewsletterError();
+      }
       setEmailInput("");
     } catch (error) {
       console.error("Error submitting email");

@@ -17,7 +17,7 @@ function Home({ params: { locale } }: LocaleProps) {
   return (
     <main>
       <Header locale={locale} />
-      <Introduction />
+      {/* <Introduction /> */}
       <PromoVideo />
       <Equipment />
       <SocialMedia />

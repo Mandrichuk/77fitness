@@ -9,10 +9,11 @@ function Payment() {
   const t = useTranslations("PricingPage.Payment");
 
   const points = [
-    "Cash",
-    "Credit Card, Mastercard, Visa Card",
-    "MultiSport cards and Upbalansea without extra charge",
-    "No additional fees",
+    t("points.point1"),
+    t("points.point2"),
+    t("points.point3"),
+    t("points.point5"),
+    t("points.point4"),
   ];
 
   return (

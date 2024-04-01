@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export interface Language {
   locale: "en" | "ru" | "sk";
 }
@@ -19,20 +21,44 @@ export interface ImageProps {
   imgPriority?: boolean;
 }
 
+export interface HeaderLanguages {
+  title: string;
+  links: Link[];
+}
+
 export interface HeaderTextProps {
   en: {
+    logo: {
+      image: string;
+      alt: string;
+      link: string;
+    };
     links: Link[];
+    languages: HeaderLanguages;
   };
   sk: {
+    logo: {
+      image: string;
+      alt: string;
+      link: string;
+    };
     links: Link[];
+    languages: HeaderLanguages;
   };
   ru: {
+    logo: {
+      image: string;
+      alt: string;
+      link: string;
+    };
     links: Link[];
+    languages: HeaderLanguages;
   };
 }
 
-export interface HeaderProps extends Language {
-}
+export interface HeaderProps extends Language {}
+
+export interface FooterProps extends Language {}
 
 export interface LocaleProps {
   params: {
@@ -99,8 +125,47 @@ export interface InputNewsletterProps {
   buttonText: string;
 }
 
-
 export interface ImagesTrainingProps {
-  images: ImageProps[],
+  images: ImageProps[];
   buttonText: string;
+}
+
+interface FooterLocation {
+  text: string;
+  link: string;
+}
+
+interface FooterSocial {
+  icon: {
+    src: any;
+    alt: string;
+  };
+  link: string;
+}
+
+interface FooterText {
+  logo: {
+    src: string;
+    alt: string;
+  };
+  name: string;
+  location: FooterLocation;
+  sitemap: {
+    title: string;
+    links: Link[];
+  };
+  languages: {
+    title: string;
+    links: Link[];
+  };
+  socials: {
+    title: string;
+    links: FooterSocial[];
+  };
+}
+
+export interface FooterTextProps {
+  en: FooterText;
+  sk: FooterText;
+  ru: FooterText;
 }

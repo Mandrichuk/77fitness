@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import "config";
 @import "header";
 @import "introduction";
@@ -15,7 +19,6 @@
 @import "inputNewsletter";
 @import "footer";
 @import "createdBy";
-@import "galleryIntroduction";
 @import "galleryPromoVideo";
 @import "galleryEquipment";
 @import "galleryTraining";
@@ -23,6 +26,7 @@
 @import "videoPlayer";
 @import "application.scss";
 @import "pricingPayment";
+@import "image";
 
 * {
   box-sizing: border-box;
@@ -41,10 +45,10 @@ html {
     @include Flex(column, center, center);
     @include pText();
     width: 100%;
-    max-width: $max-width;
     color: color(text-color);
     background-color: color(primary-color);
     main {
+    max-width: $max-width;
       width: 100%;
       display: grid;
       gap: $gap;

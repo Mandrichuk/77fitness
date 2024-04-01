@@ -13,7 +13,12 @@ function PromoVideo() {
       <TextLayers bgText={t("bgText")} title={t("title")} />
       <div className="wrapper">
         <div className="videoContainer">
-          {/* <VideoPlayer /> */}
+          <iframe
+            className="video"
+            src="https://www.youtube.com/embed/KSodnbXJwXQ?si=MD8xFuz7warkLHYP"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          ></iframe>
         </div>
       </div>
     </section>

@@ -11,11 +11,9 @@
         "point1": "Cash",
         "point2": "Credit Card, Mastercard, Visa Card",
         "point3": "MultiSport cards and Upbalansea without extra charge",
-        "point4": "No additional fees"
+        "point4": "No additional fees",
+        "point5": "All the payments are processed in person at the gym lobby, offline."
       }
-    },
-    "Warning": {
-      "text": "All the payments are processed in person at the gym lobby, offline."
     }
   },
   "HomePage": {
@@ -49,13 +47,13 @@
         "src": "tgkflw9u7aggj4vy5emq",
         "alt": "introductionImg"
       },
-      "name": "77 NEXT LEVEL FITNESS",
+      "name": "NEXT LEVEL FITNESS",
       "description": "Your new fitness center in the center of Bratislava at Bajkalská 2i. Leave us a contact and we will inform you about the news.",
       "promotion": "We are open and look forward to your visit.",
-      "button": { "text": "More", "link": "/more" },
+      "button": { "text": "Subscribe", "link": "/#newsletter" },
       "watchVideo": {
         "text": "Watch Promo Video",
-        "link": "/video"
+        "link": "/gallery/#promo"
       }
     },
     "Gallery": {
@@ -83,7 +81,7 @@
       },
       "link": {
         "text": "Contact us",
-        "link": "/contact"
+        "link": "+421 908 706 351"
       }
     },
     "Activity": {
@@ -103,7 +101,7 @@
           "alt": "activity3"
         }
       },
-      "link": { "text": "See the schedule", "link": "/schedule" }
+      "link": { "text": "See more images", "link": "/gallery" }
     },
     "Prices": {
       "text": "Prices",
@@ -121,7 +119,7 @@
           },
           "button": {
             "text": "Contact us",
-            "link": "+421 00 00 0000"
+            "link": "+421 908 706 351"
           }
         },
         "package2": {
@@ -136,7 +134,7 @@
           },
           "button": {
             "text": "Contact us",
-            "link": "+421 00 00 0000"
+            "link": "+421 908 706 351"
           }
         },
         "package3": {
@@ -153,7 +151,7 @@
           },
           "button": {
             "text": "Contact us",
-            "link": "+421 00 00 0000"
+            "link": "+421 908 706 351"
           }
         },
         "package4": {
@@ -168,7 +166,7 @@
           },
           "button": {
             "text": "Contact us",
-            "link": "+421 00 00 0000"
+            "link": "+421 908 706 351"
           }
         }
       }
@@ -401,40 +399,6 @@
         "button": {
           "type": "submit",
           "text": "Subscribe"
-        }
-      }
-    },
-    "Footer": {
-      "logo": { "src": "ncdhkltskvpjmdprvynk", "alt": "logo" },
-      "name": "NEXT LEVEL FITNESS",
-      "location": {
-        "text": "Bratislava, Bajkalská 2i, 831 04",
-        "link": "https://www.google.ru/maps/place/77nextlevelfitness/@48.1639961,17.1368065,18z/data=!4m6!3m5!1s0x476c8f76fe48d03b:0x3e34a79f87ee6c7!8m2!3d48.1639642!4d17.1380704!16s%2Fg%2F11kq3fll84?entry=ttu"
-      },
-      "sitemap": {
-        "title": "Sitemap",
-        "links": {
-          "link1": { "text": "Home", "link": "/" },
-          "link2": { "text": "Schedule", "link": "/schedule" },
-          "link3": { "text": "Gallery", "link": "/gallery" },
-          "link4": { "text": "Contact", "link": "/contact" }
-        }
-      },
-      "languages": {
-        "title": "Languages",
-        "links": {
-          "link1": { "text": "English", "link": "en" },
-          "link2": { "text": "Slovak", "link": "sk" },
-          "link3": { "text": "Russian", "link": "ru" }
-        }
-      },
-      "socials": {
-        "title": "Social Media",
-        "links": {
-          "link1": {
-            "icon": { "src": "rortzj3bihcpfhmxlmi7", "alt": "instagram" },
-            "link": "https://www.instagram.com"
-          }
         }
       }
     },

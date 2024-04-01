@@ -20,9 +20,9 @@ function Membership({ key, membership }: MembershipProps) {
           ))}
         </ul>
         <div className="contactButton">
-          <Link className="button" href={membership.button.link}>
+          <a className="button" href={`tel:${membership.button.link}`}>
             {membership.button.text}
-          </Link>
+          </a>
         </div>
       </div>
       {membership?.standOut && (

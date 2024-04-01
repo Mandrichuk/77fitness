@@ -3,6 +3,33 @@ header {
   width: 100%;
   padding: 30px 30px 0 30px;
 
+  .emptyLogo {
+    width: 45px;
+    height: 40px;
+  }
+
+  .logoContainer {
+    @include Flex(row, center, center);
+    margin-left: 20px;
+    transition: $transition;
+
+    &:active {
+      transform: scale(0.98);
+    }
+    a {
+      img {
+        height: 40px;
+      }
+    }
+  }
+
+  .logoContainer.open {
+    position: fixed;
+    z-index: 10;
+
+    animation: appear 100ms ease-in-out;
+  }
+
   .mobile {
     height: 40px;
     @include Flex(row, center, space-between);
@@ -10,6 +37,11 @@ header {
     .close {
       stroke: white;
       fill: white;
+      transition: $transition;
+
+      &:hover {
+        transform: scale(0.99);
+      }
     }
     .burgerMenu {
       height: iconSize(mobile) * 2.5;
@@ -28,8 +60,15 @@ header {
   }
 
   .screenNav {
+    @include Flex(row, center, center);
     a {
       margin: 0 20px 0 20px;
+      font-size: calc(fontSize(p) + 3px);
+      transition: $transition;
+
+      &:hover {
+        transform: scale(0.98);
+      }
     }
   }
 
@@ -45,6 +84,62 @@ header {
     a {
       margin-bottom: 25px;
       font-size: fontSize(h3);
+
+      transition: $transition;
+
+      &:active {
+        transform: scale(0.98);
+      }
     }
+  }
+
+  .languages {
+    margin: 0 30px;
+    .current {
+      @include Flex(row, center, center);
+      cursor: pointer;
+      .currentLang {
+        margin-right: 5px;
+        font-size: calc(fontSize(p) + 3px);
+      }
+
+      .icon {
+        transition: $transition;
+        svg {
+          fill: color(text-color);
+          height: iconSize(mobile) * 1.2;
+          width: iconSize(mobile) * 1.2;
+        }
+      }
+      .icon.open {
+        transform: rotate(180deg);
+      }
+    }
+
+    .options {
+      @include Flex(column, start, center);
+      margin-top: 10px;
+      position: absolute;
+      z-index: 10;
+      background-color: color(custom-black);
+      padding: 10px;
+      border-radius: borderRadius(mobile);
+
+      .option {
+        font-size: calc(fontSize(p) + 3px);
+        padding: 5px;
+        margin-left: 2px;
+        @include Flex(column, start, center);
+      }
+    }
+  }
+}
+
+@keyframes appear {
+  from {
+    transform: scale(0.4);
+  }
+  to {
+    transform: scale(1);
   }
 }

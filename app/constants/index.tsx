@@ -1,12 +1,12 @@
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-import { HeaderTextProps } from "../lib/index";
+import { HeaderTextProps, FooterTextProps } from "../lib/index";
 import logo from "@/public/assets/logo.png";
 
 const images = {
   logo,
-}
+};
 
 export default images;
 
@@ -83,6 +83,15 @@ export const SVGs = {
       </g>
     </svg>
   ),
+  arrowDown: (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path
+        // fillRule="evenodd"
+        // clipRule="evenodd"
+        d="M20.0303 7.71967C20.3232 8.01256 20.3232 8.48744 20.0303 8.78033L12.5303 16.2803C12.2374 16.5732 11.7626 16.5732 11.4697 16.2803L3.96967 8.78033C3.67678 8.48744 3.67678 8.01256 3.96967 7.71967C4.26256 7.42678 4.73744 7.42678 5.03033 7.71967L12 14.6893L18.9697 7.71967C19.2626 7.42678 19.7374 7.42678 20.0303 7.71967Z"
+      />
+    </svg>
+  ),
 };
 
 export const notifyNewsletterSuccess = () => {
@@ -127,8 +136,17 @@ export const notifyExistsNewsletterError = () => {
   }
 };
 
+export const homepagePaths = ["/", "/en", "/sk", "/ru"];
+
+// export const languages = ["en", "sk", "ru"];
+
 export const headerText: HeaderTextProps = {
   en: {
+    logo: {
+      image: "/assets/logo.png",
+      link: "/",
+      alt: "Logo",
+    },
     links: [
       {
         text: "Home",
@@ -144,31 +162,24 @@ export const headerText: HeaderTextProps = {
       },
       {
         text: "Contact Us",
-        link: "/contact",
+        link: "tel:+421 908 706 351",
       },
     ],
-  },
-  sk: {
-    links: [
-      {
-        text: "Domov",
-        link: "/#",
-      },
-      {
-        text: "Cenové kódy",
-        link: "/pricing",
-      },
-      {
-        text: "Galéria",
-        link: "/gallery",
-      },
-      {
-        text: "Kontakt",
-        link: "/contact",
-      },
-    ],
+    languages: {
+      title: "Languages",
+      links: [
+        { text: "English", link: "en" },
+        { text: "Slovak", link: "sk" },
+        { text: "Russian", link: "ru" },
+      ],
+    },
   },
   ru: {
+    logo: {
+      image: "/assets/logo.png",
+      link: "/",
+      alt: "Логотип",
+    },
     links: [
       {
         text: "Главная",
@@ -183,9 +194,155 @@ export const headerText: HeaderTextProps = {
         link: "/gallery",
       },
       {
-        text: "Контакты",
-        link: "/contact",
+        text: "Свяжитесь с нами",
+        link: "tel:+421 908 706 351",
       },
     ],
+    languages: {
+      title: "Языки",
+      links: [
+        { text: "Английский", link: "en" },
+        { text: "Словацкий", link: "sk" },
+        { text: "Русский", link: "ru" },
+      ],
+    },
+  },
+  sk: {
+    logo: {
+      image: "/assets/logo.png",
+      link: "/",
+      alt: "Logo",
+    },
+    links: [
+      {
+        text: "Domov",
+        link: "/#",
+      },
+      {
+        text: "Ceny",
+        link: "/pricing",
+      },
+      {
+        text: "Galéria",
+        link: "/gallery",
+      },
+      {
+        text: "Kontaktujte nás",
+        link: "tel:+421 908 706 351",
+      },
+    ],
+    languages: {
+      title: "Jazyky",
+      links: [
+        { text: "Angličtina", link: "en" },
+        { text: "Slovenčina", link: "sk" },
+        { text: "Ruština", link: "ru" },
+      ],
+    },
+  },
+};
+
+export const footerText: FooterTextProps = {
+  en: {
+    logo: { src: "ncdhkltskvpjmdprvynk", alt: "logo" },
+    name: "NEXT LEVEL FITNESS",
+    location: {
+      text: "Bratislava, Bajkalská 2i, 831 04",
+      link: "https://www.google.ru/maps/place/77nextlevelfitness/@48.1639961,17.1368065,18z/data=!4m6!3m5!1s0x476c8f76fe48d03b:0x3e34a79f87ee6c7!8m2!3d48.1639642!4d17.1380704!16s%2Fg%2F11kq3fll84?entry=ttu",
+    },
+    sitemap: {
+      title: "Sitemap",
+      links: [
+        { text: "Home", link: "/" },
+        { text: "Schedule", link: "/schedule" },
+        { text: "Gallery", link: "/gallery" },
+        { text: "Contact", link: "tel:+421 908 706 351" },
+      ],
+    },
+    languages: {
+      title: "Languages",
+      links: [
+        { text: "English", link: "en" },
+        { text: "Slovak", link: "sk" },
+        { text: "Russian", link: "ru" },
+      ],
+    },
+    socials: {
+      title: "Social Media",
+      links: [
+        {
+          icon: { src: SVGs.instagram, alt: "instagram" },
+          link: "https://www.instagram.com",
+        },
+      ],
+    },
+  },
+  sk: {
+    logo: { src: "ncdhkltskvpjmdprvynk", alt: "logo" },
+    name: "NEXT LEVEL FITNESS",
+    location: {
+      text: "Bratislava, Bajkalská 2i, 831 04",
+      link: "https://www.google.sk/maps/place/77nextlevelfitness/@48.1639961,17.1368065,18z/data=!4m6!3m5!1s0x476c8f76fe48d03b:0x3e34a79f87ee6c7!8m2!3d48.1639642!4d17.1380704",
+    },
+    sitemap: {
+      title: "Mapa stránok",
+      links: [
+        { text: "Domov", link: "/" },
+        { text: "Rozvrh", link: "/rozvrh" },
+        { text: "Galéria", link: "/galéria" },
+        { text: "Kontakt", link: "tel:+421 908 706 351" },
+      ],
+    },
+    languages: {
+      title: "Jazyky",
+      links: [
+        { text: "Angličtina", link: "en" },
+        { text: "Slovenčina", link: "sk" },
+        { text: "Ruština", link: "ru" },
+      ],
+    },
+    socials: {
+      title: "Sociálne siete",
+      links: [
+        {
+          icon: { src: SVGs.instagram, alt: "instagram" },
+          link: "https://www.instagram.com",
+        },
+      ],
+    },
+  },
+  ru: {
+    logo: { src: "ncdhkltskvpjmdprvynk", alt: "логотип" },
+    name: "NEXT LEVEL FITNESS",
+    location: {
+      text: "Братислава, Bajkalská 2i, 831 04",
+      link: "https://www.google.ru/maps/place/77nextlevelfitness/@48.1639961,17.1368065,18z/data=!4m6!3m5!1s0x476c8f76fe48d03b:0x3e34a79f87ee6c7!8m2!3d48.1639642!4d17.1380704",
+    },
+    sitemap: {
+      title: "Карта сайта",
+      links: [
+        { text: "Главная", link: "/" },
+        { text: "Расписание", link: "/расписание" },
+        { text: "Галерея", link: "/галерея" },
+        { text: "Контакт", link: "tel:+421 908 706 351" },
+      ],
+    },
+    languages: {
+      title: "Языки",
+      links: [
+        { text: "Английский", link: "en" },
+        { text: "Словацкий", link: "sk" },
+        { text: "Русский", link: "ru" },
+      ],
+    },
+    socials: {
+      title: "Социальные сети",
+      links: [
+        {
+          icon: { src: SVGs.instagram, alt: "instagram" },
+          link: "https://www.instagram.com",
+        },
+      ],
+    },
   },
 };

@@ -14,11 +14,16 @@
       margin-bottom: 20px;
       font-size: calc(fontSize(p) + 10px);
 
+      .title {
+        font-weight: fontWeight(semibold);
+      }
+
       .name {
         @include Flex(column, center, center);
+        font-weight: fontWeight(semibold);
         .dot {
           font-size: 40px;
-          font-weight: 900;
+          font-weight: fontWeight(extrabold);
           color: color(secondary-color);
         }
       }
@@ -26,6 +31,10 @@
 
     .link {
       width: 100%;
+      text-decoration: none;
+      a {
+        text-decoration: none;
+      }
     }
   }
 }

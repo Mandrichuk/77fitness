@@ -44,8 +44,10 @@ function TeamSlider({ children }: TeamSliderProps) {
             <div className="wrapper">
               <div className="textSection">
                 <p className="name">{m.name}</p>
-                <p className="number">{m.number}</p>
-                <p className="email">{m.email}</p>
+                <a href={`tel:${m.number}`} className="number">
+                  {m.number}
+                </a>
+                <a href={`mailto:${m.email}`} className="email">{m.email}</a>
               </div>
               <div className="imagesSection">
                 <div className="trainerImg">

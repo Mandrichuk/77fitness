@@ -20,7 +20,6 @@ function Gallery() {
 
   return (
     <section className="Gallery" id="gallery">
-
       <div className="cover">
         <div className="textSectionMobile">
           <div className="wrapper">
@@ -66,7 +65,7 @@ function Gallery() {
         <div className="textSection">
           <div className="wrapper">
             <h3 className="title">
-              {t("title.main")} &nbsp;
+              {t("title.main")}&nbsp;
               <span className="text" style={brand1Styles}>
                 {t("title.brand1")}
               </span>
@@ -76,10 +75,7 @@ function Gallery() {
                 {t("title.brand2")}
               </span>
               &nbsp;
-              <span
-                className="text"
-                style={{ display: "block"}}
-              >
+              <span className="text" style={{ display: "block" }}>
                 {t("title.text2")}
               </span>
             </h3>
@@ -99,9 +95,9 @@ function Gallery() {
                 </Link>
               </div>
               <div>
-                <Link className="button dark" href={t("link.text")}>
+                <a className="button dark" href={`tel:${t("link.text")}`}>
                   {t("link.text")}
-                </Link>
+                </a>
               </div>
             </div>
           </div>

@@ -27,7 +27,7 @@ function Home({ params: { locale } }: LocaleProps) {
       <Application />
       <Activity />
       <Newsletter />
-      <Footer />
+      <Footer locale={locale} />
       <CreatedBy />
     </main>
   );

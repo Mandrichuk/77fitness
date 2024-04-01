@@ -37,15 +37,15 @@ function Application() {
           <div className="descriptionContainer">
             <p className="description">
               {t("details.description")}
-              <Link href={t("details.IOS.link")}>
+              <a target="_blank" href={t("details.IOS.link")}>
                 &nbsp;
                 {t("details.IOS.text")}
-              </Link>
+              </a>
               &nbsp;
               {t("details.and")}&nbsp;
-              <Link href={t("details.Android.link")}>
+              <a target="_blank" href={t("details.Android.link")}>
                 {t("details.Android.text")}
-              </Link>
+              </a>
             </p>
           </div>
         </div>
