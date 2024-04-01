@@ -103,6 +103,10 @@
     .textSection {
       @include Flex(column, center, center);
       margin-bottom: 30px;
+      .title {
+        text-align: start;
+      }
+
       .text {
         font-size: fontSize(p);
         font-weight: fontWeight(bold);
@@ -114,6 +118,8 @@
         margin-top: 5px;
         width: 100%;
         .description {
+          text-align: start;
+
           color: rgb(210, 210, 210);
 
           a {
@@ -203,25 +209,25 @@
       display: none;
       margin-bottom: 30px;
 
-        .text {
-          font-size: fontSize(p);
-          font-weight: fontWeight(bold);
-          color: color(secondary-color);
-          margin-bottom: 10px;
-        }
+      .text {
+        font-size: fontSize(p);
+        font-weight: fontWeight(bold);
+        color: color(secondary-color);
+        margin-bottom: 10px;
+      }
 
-        .descriptionContainer {
-          margin-top: 5px;
-          width: 100%;
-          .description {
-            color: rgb(210, 210, 210);
+      .descriptionContainer {
+        margin-top: 5px;
+        width: 100%;
+        .description {
+          color: rgb(210, 210, 210);
 
-            a {
-              color: color(text-color);
-              opacity: 1;
-              text-decoration: underline;
-            }
+          a {
+            color: color(text-color);
+            opacity: 1;
+            text-decoration: underline;
           }
+        }
       }
     }
     .wrapper {

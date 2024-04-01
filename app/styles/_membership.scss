@@ -23,6 +23,8 @@
           .icon {
             svg {
               fill: color(text-color);
+              width: iconSize(mobile);
+              height: iconSize(mobile);
             }
           }
         }
@@ -71,6 +73,8 @@
 
           svg {
             fill: color(secondary-color);
+            width: iconSize(mobile);
+            height: iconSize(mobile);
           }
         }
       }
