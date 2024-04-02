@@ -18,7 +18,7 @@ function Training() {
   ];
 
   return (
-    <section className="Gallery_Training">
+    <section className="Gallery_Training" id="training">
       <TextLayers bgText={t("bgText")} title={t("title")} />
 
       <div className="wrapper">

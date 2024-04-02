@@ -9,7 +9,7 @@ function PromoVideo() {
   const t = useTranslations("GalleryPage.Promo");
 
   return (
-    <section className="Gallery_PromoVideo">
+    <section className="Gallery_PromoVideo" id="promoVideo">
       <TextLayers bgText={t("bgText")} title={t("title")} />
       <div className="wrapper">
         <div className="videoContainer">

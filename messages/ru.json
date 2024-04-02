@@ -53,7 +53,7 @@
       "button": { "text": "Подписаться", "link": "/#newsletter" },
       "watchVideo": {
         "text": "Смотреть промо-видео",
-        "link": "/gallery/#promo"
+        "link": "/gallery/#promoVideo"
       }
     },
     "Gallery": {
@@ -77,7 +77,7 @@
       },
       "button": {
         "text": "Галерея",
-        "link": "/gallery"
+        "link": "/gallery/#equipment"
       },
       "link": {
         "text": "Свяжитесь с нами",

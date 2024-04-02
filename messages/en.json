@@ -53,7 +53,7 @@
       "button": { "text": "Subscribe", "link": "/#newsletter" },
       "watchVideo": {
         "text": "Watch Promo Video",
-        "link": "/gallery/#promo"
+        "link": "/gallery/#promoVideo"
       }
     },
     "Gallery": {
@@ -77,7 +77,7 @@
       },
       "button": {
         "text": "Gallery",
-        "link": "/gallery"
+        "link": "/gallery/#equipment"
       },
       "link": {
         "text": "Contact us",
