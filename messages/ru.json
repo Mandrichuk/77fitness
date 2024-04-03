@@ -11,8 +11,8 @@
         "point1": "Наличные",
         "point2": "Кредитная карта, Mastercard, Visa Card",
         "point3": "Мульти-спортивные карты и Upbalansea без дополнительной платы",
-        "point4": "Нет дополнительных комиссий",
-        "point5": "Все платежи обрабатываются лично в фойе спортзала, оффлайн"
+        "point4": "Без дополнительных комиссий",
+        "point5": "Все платежи обрабатываются лично на рецепции спортзала, оффлайн"
       }
     }
   },
@@ -21,7 +21,7 @@
       "text": "Приложение",
       "title": "Загрузите наше приложение!",
       "details": {
-        "description": "Доступно на",
+        "description": "Доступно в",
         "and": "и",
         "IOS": {
           "text": "App Store",
@@ -52,7 +52,7 @@
       "promotion": "Мы открыты и ждем вашего визита.",
       "button": { "text": "Подписаться", "link": "/#newsletter" },
       "watchVideo": {
-        "text": "Смотреть промо-видео",
+        "text": "Смотреть промо видео",
         "link": "/gallery/#promoVideo"
       }
     },
@@ -81,7 +81,7 @@
       },
       "link": {
         "text": "Свяжитесь с нами",
-        "link": "+421 908 706 351"
+        "link": "+421 940 735 735"
       }
     },
     "Activity": {
@@ -101,7 +101,7 @@
           "alt": "activity3"
         }
       },
-      "link": { "text": "Увидеть больше изображений", "link": "/gallery" }
+      "link": { "text": "Больше изображений", "link": "/gallery" }
     },
     "Prices": {
       "text": "Цены",
@@ -119,7 +119,7 @@
           },
           "button": {
             "text": "Свяжитесь с нами",
-            "link": "+421 908 706 351"
+            "link": "+421 940 735 735"
           }
         },
         "package2": {
@@ -134,12 +134,12 @@
           },
           "button": {
             "text": "Свяжитесь с нами",
-            "link": "+421 908 706 351"
+            "link": "+421 940 735 735"
           }
         },
         "package3": {
           "standOut": "+1 месяц бесплатно",
-          "title": "Лучшее предложение",
+          "title": "лучшее предложение",
           "price": "48",
           "description": "одноразовый платеж",
           "included": {
@@ -151,7 +151,7 @@
           },
           "button": {
             "text": "Свяжитесь с нами",
-            "link": "+421 908 706 351"
+            "link": "+421 940 735 735"
           }
         },
         "package4": {
@@ -166,152 +166,152 @@
           },
           "button": {
             "text": "Свяжитесь с нами",
-            "link": "+421 908 706 351"
+            "link": "+421 940 735 735"
           }
         }
       }
     },
     "Team": {
-      "bgText": "Тренеры",
-      "title": "Наши тренеры",
+      "bgText": "Тренера",
+      "title": "Наши тренера",
       "trainers": {
         "trainer1": {
-          "image": { "src": "team/gh6w8tmkbhvjj0kgwhvb", "alt": "тренер" },
+          "image": { "src": "team/gh6w8tmkbhvjj0kgwhvb", "alt": "trainer" },
           "qr": { "src": "null", "alt": "qr" },
-          "name": "Владимир Керул",
+          "name": "Vladimir Kerul",
           "number": "+421 911 434 040",
-          "email": "ibffslovalia@email.com"
+          "email": "ibffslovalia@gmail.com"
         },
         "trainer2": {
-          "image": { "src": "team/aintp3zkttqwloakr761", "alt": "тренер" },
+          "image": { "src": "team/aintp3zkttqwloakr761", "alt": "trainer" },
           "qr": { "src": "null", "alt": "qr" },
-          "name": "Владимир Гостик",
+          "name": "Vladimir Gostík",
           "number": "+421 944 160 283",
-          "email": "gostikvladko9@email.com"
+          "email": "gostikvladko9@gmail.com"
         },
         "trainer3": {
-          "image": { "src": "team/wxje9mt4ff0c1yljz3gs", "alt": "тренер" },
+          "image": { "src": "team/wxje9mt4ff0c1yljz3gs", "alt": "trainer" },
           "qr": { "src": "null", "alt": "qr" },
-          "name": "Томас",
-          "number": "null",
-          "email": "null"
+          "name": "Tomaš Harničár",
+          "number": "+421 910 220 593",
+          "email": "tomasharnicar@gmail.com"
         },
         "trainer4": {
-          "image": { "src": "team/uxhnhzfmqktuyt163zda", "alt": "тренер" },
+          "image": { "src": "team/uxhnhzfmqktuyt163zda", "alt": "trainer" },
           "qr": { "src": "null", "alt": "qr" },
-          "name": "Томас Кристин",
+          "name": "Tomaš Krištín",
           "number": "+421 903 322 155",
-          "email": "tom.personalcoach@email.com"
+          "email": "tom.personalcoach@gmail.com"
         },
         "trainer5": {
           "image": {
             "src": "team/as1wxxew4v9val1act2d",
-            "alt": "тренер"
+            "alt": "trainer"
           },
           "qr": { "src": "null", "alt": "qr" },
-          "name": "Владимир Свонцо",
+          "name": "Vladimir Svonco",
           "number": "+421 903 246 426",
           "email": "vsvoncinar@yahoo.com"
         },
         "trainer6": {
           "image": {
             "src": "team/lmoqvppxnv8ol4tkj8it",
-            "alt": "тренер"
+            "alt": "trainer"
           },
           "qr": { "src": "null", "alt": "qr" },
-          "name": "Тамара Игларова",
+          "name": "Tamara Iglárová",
           "number": "+421 905 824 005",
-          "email": "iglarovaa@email.com"
+          "email": "iglarovaa@gmail.com"
         },
         "trainer7": {
           "image": {
             "src": "team/nk8uf0piyyetnbw30tl3",
-            "alt": "тренер"
+            "alt": "trainer"
           },
           "qr": { "src": "null", "alt": "qr" },
-          "name": "Стив Стерк",
+          "name": "Steve Šterk",
           "number": "+421 902 207 208",
-          "email": "stefan.sterk@email.com"
+          "email": "stefan.sterk@gmail.com"
         },
         "trainer8": {
           "image": {
             "src": "team/qtrqv8nmqooyux47yjon",
-            "alt": "тренер"
+            "alt": "trainer"
           },
           "qr": { "src": "null", "alt": "qr" },
-          "name": "Станка",
-          "number": "null",
-          "email": "null"
+          "name": "Stanka Kajlová",
+          "number": "+421 903 118 287",
+          "email": "kajlovastanka@gmail.com"
         },
         "trainer9": {
           "image": {
             "src": "team/k8mgwucduwycgjbkm21l",
-            "alt": "тренер"
+            "alt": "trainer"
           },
           "qr": { "src": "null", "alt": "qr" },
-          "name": "Христиан",
-          "number": "null",
-          "email": "null"
+          "name": "Chistian Andre",
+          "number": "+421 907 045 381",
+          "email": "trainer.chis.andre@gmail.com"
         },
         "trainer10": {
           "image": {
             "src": "team/s4ecsmbozyrxydbfmb3t",
-            "alt": "тренер"
+            "alt": "trainer"
           },
           "qr": { "src": "null", "alt": "qr" },
-          "name": "Сево",
-          "number": "null",
-          "email": "null"
+          "name": "Vsevolod Piddenezhnyy",
+          "number": "+421 948 445 196",
+          "email": "vsevolod.piddenezhnyy@gmail.com"
         },
         "trainer11": {
           "image": {
             "src": "team/qqiuuwgkhqyteauj9s9w",
-            "alt": "тренер"
+            "alt": "trainer"
           },
           "qr": { "src": "null", "alt": "qr" },
-          "name": "Наталья Зельенкова",
+          "name": "Natalia Zeljenkova",
           "number": "+421 911 872 371",
-          "email": "natali.zeljenkova@email.com"
+          "email": "natali.zeljenkova@gmail.com"
         },
         "trainer12": {
           "image": {
             "src": "team/zrxuppwubl0244qckrxe",
-            "alt": "тренер"
+            "alt": "trainer"
           },
           "qr": { "src": "null", "alt": "qr" },
-          "name": "Лаура Мискуфова",
+          "name": "Laura Miškufová",
           "number": "+421 917 418 245",
-          "email": "laura.miskufova@email.com"
+          "email": "laura.miskufova@gmail.com"
         },
         "trainer13": {
           "image": {
             "src": "team/cnwlgwwqp7kluhr4e1xf",
-            "alt": "тренер"
+            "alt": "trainer"
           },
           "qr": { "src": "null", "alt": "qr" },
-          "name": "Матей Франта",
+          "name": "Matej Franta",
           "number": "+421 910 513 123",
-          "email": "matofranta10@email.com"
+          "email": "matofranta10@gmail.com"
         },
         "trainer14": {
           "image": {
             "src": "team/lzooavtqecq66qeshhub",
-            "alt": "тренер"
+            "alt": "trainer"
           },
           "qr": { "src": "null", "alt": "qr" },
-          "name": "Катерина",
-          "number": "null",
-          "email": "null"
+          "name": "Kateryna Okunieva",
+          "number": "+421 1907 596 214",
+          "email": "greatekaterinaokuneva@gmail.com"
         },
         "trainer15": {
           "image": {
             "src": "team/sg2rphtlklnioiyjxa1z",
-            "alt": "тренер"
+            "alt": "trainer"
           },
           "qr": { "src": "null", "alt": "qr" },
-          "name": "Ян Острачки",
+          "name": "Ján Ostraczky",
           "number": "+421 907 767 090",
-          "email": "ostraczky@email.com"
+          "email": "ostraczky@gmail.com"
         }
       }
     }
@@ -323,7 +323,7 @@
     },
     "Promo": {
       "bgText": "Промо",
-      "title": "Промо-видео",
+      "title": "Промо видео",
       "video": { "src": "null", "alt": "video" }
     },
     "Equipment": {
