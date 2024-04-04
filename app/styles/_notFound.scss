@@ -1,0 +1,150 @@
+.NotFound {
+  min-height: 100vh;
+  width: 100%;
+
+  .cover {
+    @include Flex(column, center, center);
+    height: 100%;
+    width: 100%;
+    margin-top: 150px;
+    .wrapper {
+      width: wrapperWidth(mobile);
+
+      .details {
+        @include Flex(column, center, center);
+        position: relative;
+
+        .imageContainer {
+          opacity: 0.2;
+          width: 100%;
+          max-width: 600px;
+        }
+
+        .textContainer {
+          @include Flex(column, center, center);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+
+          .text {
+            text-align: center;
+            font-size: clamp(20px, 5vw, 30px);
+            width: 100%;
+            margin-bottom: 20px;
+          }
+
+          .homeContainer {
+            width: 200px;
+            .homeButton {
+              @include button();
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 420px) {
+  .NotFound {
+    min-height: 100vh;
+    width: 100%;
+
+    .cover {
+      @include Flex(column, center, center);
+      height: 100%;
+      width: 100%;
+      margin-top: 250px;
+      .wrapper {
+        width: wrapperWidth(mobile);
+
+        .details {
+          @include Flex(column, center, center);
+          position: relative;
+
+          .imageContainer {
+            opacity: 0.2;
+            width: 100%;
+            max-width: 600px;
+          }
+
+          .textContainer {
+            @include Flex(column, center, center);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+
+            .text {
+              text-align: center;
+              font-size: clamp(20px, 5vw, 30px);
+              width: 100%;
+              margin-bottom: 20px;
+            }
+
+            .homeContainer {
+              width: 200px;
+              .homeButton {
+                @include button();
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 500px) {
+  .NotFound {
+    min-height: 100vh;
+    width: 100%;
+
+    .cover {
+      @include Flex(column, center, center);
+      height: 100%;
+      width: 100%;
+      margin-top: 220px;
+      .wrapper {
+        width: wrapperWidth(mobile);
+
+        .details {
+          @include Flex(column, center, center);
+          position: relative;
+
+          .imageContainer {
+            opacity: 0.2;
+            width: 100%;
+            max-width: 600px;
+          }
+
+          .textContainer {
+            @include Flex(column, center, center);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+
+            .text {
+              text-align: center;
+              font-size: clamp(20px, 5vw, 30px);
+              width: 100%;
+              margin-bottom: 20px;
+            }
+
+            .homeContainer {
+              width: 200px;
+              .homeButton {
+                @include button();
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

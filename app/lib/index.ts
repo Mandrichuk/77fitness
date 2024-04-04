@@ -169,3 +169,21 @@ export interface FooterTextProps {
   sk: FooterText;
   ru: FooterText;
 }
+
+export interface NotFoundTextProps {
+  en: {
+    backgroundImage: ImageProps;
+    title: string;
+    button: Button;
+  };
+  sk: {
+    backgroundImage: ImageProps;
+    title: string;
+    button: Button;
+  };
+  ru: {
+    backgroundImage: ImageProps;
+    title: string;
+    button: Button;
+  };
+}
