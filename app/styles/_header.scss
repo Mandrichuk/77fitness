@@ -72,9 +72,6 @@ header {
       font-size: calc(fontSize(p) + 3px);
       transition: $transition;
 
-      &:hover {
-        transform: scale(0.98);
-      }
     }
   }
 
@@ -100,7 +97,7 @@ header {
   }
 
   .languages {
-    margin: 0 30px;
+    margin-right: 20px;
     .current {
       @include Flex(row, center, center);
       cursor: pointer;

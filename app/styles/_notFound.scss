@@ -6,8 +6,8 @@
     @include Flex(column, center, center);
     height: 100%;
     width: 100%;
-    margin-top: 150px;
     .wrapper {
+      margin-top: 150px;
       width: wrapperWidth(mobile);
 
       .details {
@@ -56,8 +56,8 @@
       @include Flex(column, center, center);
       height: 100%;
       width: 100%;
-      margin-top: 250px;
       .wrapper {
+        margin-top: 250px;
         width: wrapperWidth(mobile);
 
         .details {
@@ -107,8 +107,8 @@
       @include Flex(column, center, center);
       height: 100%;
       width: 100%;
-      margin-top: 220px;
       .wrapper {
+        margin-top: 220px;
         width: wrapperWidth(mobile);
 
         .details {
