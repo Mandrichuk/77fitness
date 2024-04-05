@@ -58,9 +58,18 @@
     },
     "Gallery": {
       "gallery": {
-        "gallery1": { "src": "srgaaydxtpolcmmfexq0", "alt": "gallery1" },
-        "gallery2": { "src": "terpaeldoub8drzovinl", "alt": "gallery2" },
-        "gallery3": { "src": "ybfz2chx6vjull05kyos", "alt": "gallery3" }
+        "gallery1": {
+          "src": "equipment/o6tnxriatl7pinarqjyv",
+          "alt": "gallery1"
+        },
+        "gallery2": {
+          "src": "equipment/gknfgodmkksqdcffud1k",
+          "alt": "gallery2"
+        },
+        "gallery3": {
+          "src": "equipment/a2vm2en8vb6s9r9jaz1m",
+          "alt": "gallery3"
+        }
       },
       "title": {
         "main": "Sme prví na Slovensku s",
@@ -332,19 +341,19 @@
       "description": "Máme všetko vybavenie, ktoré potrebujete na to, aby ste dosiahli maximum zo svojho tréningu. Máme všetko, čo potrebujete na dosiahnutie svojich fitness cieľov.",
       "images": {
         "image1": {
-          "src": "gallery/equipment/mabn1v6fmbmxhojfg8tl",
+          "src": "equipment/sfnqucp14zylt3zeclwy",
           "alt": "obrázok1"
         },
         "image2": {
-          "src": "gallery/equipment/xbjres8udu7p0rqv6ewx",
+          "src": "equipment/o6tnxriatl7pinarqjyv",
           "alt": "obrázok2"
         },
         "image3": {
-          "src": "gallery/equipment/tgybsidjrdapv7ymafuv",
+          "src": "equipment/gknfgodmkksqdcffud1k",
           "alt": "obrázok3"
         },
         "image4": {
-          "src": "gallery/equipment/tfg72fk5hxrmvmux6pqu",
+          "src": "equipment/gyq6vv1avvu9qyflyvm9",
           "alt": "obrázok4"
         }
       }

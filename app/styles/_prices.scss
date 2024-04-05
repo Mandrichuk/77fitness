@@ -103,7 +103,9 @@
       }
 
       .details {
+        @include Flex(column, start, center);
         .memberships {
+          @include Flex(column, center, center);
           margin-top: 50px;
           width: 100%;
           display: grid;

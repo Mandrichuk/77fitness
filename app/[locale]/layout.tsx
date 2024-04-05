@@ -44,7 +44,7 @@ export default function RootLayout({ children, params }: LayoutProps) {
   }
   return (
     <html lang={locale}>
-      <body className={urbanist.className}>{children}</body>
+      <body className={`${urbanist.className} mt-[80px]`}>{children}</body>
     </html>
   );
 }

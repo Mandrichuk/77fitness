@@ -58,9 +58,18 @@
     },
     "Gallery": {
       "gallery": {
-        "gallery1": { "src": "srgaaydxtpolcmmfexq0", "alt": "gallery1" },
-        "gallery2": { "src": "terpaeldoub8drzovinl", "alt": "gallery2" },
-        "gallery3": { "src": "ybfz2chx6vjull05kyos", "alt": "gallery3" }
+        "gallery1": {
+          "src": "equipment/o6tnxriatl7pinarqjyv",
+          "alt": "gallery1"
+        },
+        "gallery2": {
+          "src": "equipment/gknfgodmkksqdcffud1k",
+          "alt": "gallery2"
+        },
+        "gallery3": {
+          "src": "equipment/a2vm2en8vb6s9r9jaz1m",
+          "alt": "gallery3"
+        }
       },
       "title": {
         "main": "Мы первые в Словакии с",
@@ -332,22 +341,23 @@
       "description": "У нас есть все, что вам нужно для эффективных тренировок. У нас есть все необходимое, чтобы достичь ваших фитнес-целей.",
       "images": {
         "image1": {
-          "src": "gallery/equipment/mabn1v6fmbmxhojfg8tl",
+          "src": "equipment/sfnqucp14zylt3zeclwy",
           "alt": "image1"
         },
         "image2": {
-          "src": "gallery/equipment/xbjres8udu7p0rqv6ewx",
-          "alt": "image1"
+          "src": "equipment/o6tnxriatl7pinarqjyv",
+          "alt": "image2"
         },
         "image3": {
-          "src": "gallery/equipment/tgybsidjrdapv7ymafuv",
-          "alt": "image1"
+          "src": "equipment/gknfgodmkksqdcffud1k",
+          "alt": "image3"
         },
         "image4": {
-          "src": "gallery/equipment/tfg72fk5hxrmvmux6pqu",
-          "alt": "image1"
+          "src": "equipment/gyq6vv1avvu9qyflyvm9",
+          "alt": "image4"
         }
-      }
+      },
+      "button": { "text": "Больше", "link": "" }
     },
     "Training": {
       "bgText": "Занятия",

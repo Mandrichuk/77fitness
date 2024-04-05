@@ -36,5 +36,5 @@ interface LayoutProps {
 }
 
 export default function RootLayout({ children, params }: LayoutProps) {
-  return <body className={urbanist.className}>{children}</body>;
+  return <body className={`${urbanist.className} mt-[80px]`}>{children}</body>;
 }

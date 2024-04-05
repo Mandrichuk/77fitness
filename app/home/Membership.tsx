@@ -15,7 +15,7 @@ function Membership({ key, membership }: MembershipProps) {
           {membership.included.map((i) => (
             <div className="included" key={i}>
               <div className="icon">{SVGs.included}</div>
-              <p className="text">{i}</p>
+              <p className="includedText">{i}</p>
             </div>
           ))}
         </ul>
