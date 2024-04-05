@@ -1,7 +1,6 @@
 import "./styles/globals.scss";
 import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
-// import { useLocale } from "next-intl";
 
 const urbanist = Urbanist({ subsets: ["latin"] });
 
@@ -24,7 +23,7 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/logo.ico",
+    icon: "/favicon.ico",
   },
 };
 
@@ -36,5 +35,5 @@ interface LayoutProps {
 }
 
 export default function RootLayout({ children, params }: LayoutProps) {
-  return <body className={`${urbanist.className} mt-[80px]`}>{children}</body>;
+  return <body className={urbanist.className}>{children}</body>;
 }

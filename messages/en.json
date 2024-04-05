@@ -110,7 +110,7 @@
           "alt": "activity3"
         }
       },
-      "link": { "text": "More images", "link": "/gallery" }
+      "link": { "text": "More images", "link": "/gallery/#training" }
     },
     "Prices": {
       "text": "Prices",
@@ -356,6 +356,19 @@
           "src": "equipment/gyq6vv1avvu9qyflyvm9",
           "alt": "image4"
         }
+      },
+      "additionalImages": {
+        "image1": {
+          "src": "equipment/z7d2meskl49kc4zxsgp7",
+          "alt": "image1"
+        },
+        "image2": {
+          "src": "equipment/dvfdrtp0w3ftu2d7nth5",
+          "alt": "image2"
+        }
+      },
+      "button": {
+        "text": "Veiw more"
       }
     },
     "Training": {
@@ -387,7 +400,10 @@
           "alt": "image1"
         }
       },
-      "button": { "text": "View more", "link": "" }
+      "button": {
+        "text": "Veiw more",
+        "link": ""
+      }
     }
   },
   "Mutual": {

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { MembershipProps } from "../lib/index";
 import { SVGs } from "../constants";
 
-function Membership({ key, membership }: MembershipProps) {
+function Membership({ membership }: MembershipProps) {
   return (
     <div className={`Membership ${membership?.standOut && "standOut"}`} id="membership">
       <div className="details">

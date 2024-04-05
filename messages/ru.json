@@ -110,7 +110,7 @@
           "alt": "activity3"
         }
       },
-      "link": { "text": "Больше изображений", "link": "/gallery" }
+      "link": { "text": "Больше изображений", "link": "/gallery/#training" }
     },
     "Prices": {
       "text": "Цены",
@@ -355,6 +355,16 @@
         "image4": {
           "src": "equipment/gyq6vv1avvu9qyflyvm9",
           "alt": "image4"
+        }
+      },
+      "additionalImages": {
+        "image1": {
+          "src": "equipment/z7d2meskl49kc4zxsgp7",
+          "alt": "image1"
+        },
+        "image2": {
+          "src": "equipment/dvfdrtp0w3ftu2d7nth5",
+          "alt": "image2"
         }
       },
       "button": { "text": "Больше", "link": "" }

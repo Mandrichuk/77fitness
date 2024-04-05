@@ -1,10 +1,10 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 
-
 import { splitArrayIntoTwo } from "../utils/splitArrayIntoTwo";
 import TextLayers from "../components/TextLayers";
 
+import ImagesEquipment from "./ImagesEquipment";
 import Image from "../components/Image";
 
 function Equipment() {
@@ -15,6 +15,17 @@ function Equipment() {
     { src: t("images.image2.src"), alt: t("images.image2.alt") },
     { src: t("images.image3.src"), alt: t("images.image3.alt") },
     { src: t("images.image4.src"), alt: t("images.image4.alt") },
+  ];
+
+  const additionalImages = [
+    {
+      image: t("additionalImages.image1.src"),
+      alt: t("additionalImages.image1.alt"),
+    },
+    {
+      image: t("additionalImages.image2.src"),
+      alt: t("additionalImages.image2.alt"),
+    },
   ];
 
   const [ImagesFirstHalf, ImagesSecondHalf] = splitArrayIntoTwo(images);
@@ -35,9 +46,7 @@ function Equipment() {
             </div>
           ))}
         </div>
-        <p className="description">
-          {t("description")}
-        </p>
+        <p className="description">{t("description")}</p>
         <div className="imagesContainer">
           {ImagesSecondHalf.map((image) => (
             <div key={image.src} className="imageContainer">
@@ -50,6 +59,11 @@ function Equipment() {
             </div>
           ))}
         </div>
+
+        <ImagesEquipment
+          additionalImages={additionalImages}
+          buttonText={t("button.text")}
+        />
       </div>
     </section>
   );

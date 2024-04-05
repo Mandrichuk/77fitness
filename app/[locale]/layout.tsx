@@ -8,7 +8,7 @@ const urbanist = Urbanist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "77 Next Level Fitness",
+    default: "Home",
     template: "%s | 77 Next Level Fitness",
   },
   description: "77 Next Level Fitness is your new gym in Bratislava, Slovakia",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/logo.ico",
+    icon: "/favicon.ico",
   },
 };
 
@@ -44,7 +44,7 @@ export default function RootLayout({ children, params }: LayoutProps) {
   }
   return (
     <html lang={locale}>
-      <body className={`${urbanist.className} mt-[80px]`}>{children}</body>
+      <body className={urbanist.className}>{children}</body>
     </html>
   );
 }

@@ -1,0 +1,21 @@
+.ImagesEquipment {
+  @include Flex(column, center, center);
+  width: 100%;
+
+  .buttonMore {
+    width: 150px;
+    margin-top: 10px;
+  }
+
+  .imagesContainer {
+    @include Flex(column, center, space-between);
+    width: 90%;
+    .imageContainer {
+      width: 100%;
+      aspect-ratio: 1 / 0.65;
+      margin-bottom: 30px;
+      border-radius: borderRadius(mobile);
+      overflow: hidden;
+    }
+  }
+}

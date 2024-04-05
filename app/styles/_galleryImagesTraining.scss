@@ -19,12 +19,40 @@
   }
 
   .buttonContainer {
-    margin-top: 100px;
+    margin-top: 40px;
     width: 150px;
   }
 }
 
 @media (min-width: 700px) {
+  .Gallery_ImagesTraining {
+    @include Flex(column, center, center);
+    margin-top: 30px;
+    width: 100%;
+
+    .allImages {
+      width: 90%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      row-gap: 50px;
+
+      .imageContainer {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        border-radius: borderRadius(mobile);
+        overflow: hidden;
+      }
+    }
+
+    .buttonContainer {
+      margin-top: 60px;
+      width: 150px;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
   .Gallery_ImagesTraining {
     @include Flex(column, center, center);
     margin-top: 30px;

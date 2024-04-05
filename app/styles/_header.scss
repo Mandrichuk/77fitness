@@ -1,9 +1,9 @@
 header {
 background-color: color(primary-color);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // right: 0;
   z-index: 100;
   @include Flex(row, center, space-between);
   width: 100%;
@@ -24,7 +24,6 @@ background-color: color(primary-color);
     }
     a {
       height: 40px;
-      width: 40px;
     }
   }
 
