@@ -335,9 +335,27 @@
       "title": "Promo video",
       "video": { "src": "null", "alt": "video" }
     },
+    "Waredrobe": {
+      "bgText": "Waredrobe",
+      "title": "Gym waredrobe",
+      "images": {
+        "image1": {
+          "src": "wardrobe/wa22kod9bitlzop0kufp",
+          "alt": "image1"
+        },
+        "image2": {
+          "src": "wardrobe/g3tnhcskt1wx929fwqjm",
+          "alt": "image2"
+        },
+        "image3": {
+          "src": "wardrobe/rjif6eg8i6uypdleop8g",
+          "alt": "image3"
+        }
+      }
+    },
     "Equipment": {
       "bgText": "Equipment",
-      "title": "Gym Equipment",
+      "title": "Gym equipment",
       "description": "We have all the equipment you need to get the most out of your workout. We have everything you need to stay on top of your fitness goals.",
       "images": {
         "image1": {

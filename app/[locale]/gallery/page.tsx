@@ -10,20 +10,21 @@ import Equipment from "@/app/gallery/Equipment";
 import Training from "@/app/gallery/Training";
 import PromoVideo from "@/app/gallery/PromoVideo";
 import SocialMedia from "@/app/components/SocialMedia";
+import Waredrobe from "@/app/gallery/Waredrobe";
 
 import { LocaleProps } from "@/app/lib/index";
 
 export const metadata: Metadata = {
   title: "Gallery",
-}
+};
 
 function Home({ params: { locale } }: LocaleProps) {
   return (
     <main>
       <Header locale={locale} />
-      {/* <Introduction /> */}
       <PromoVideo />
       <Equipment />
+      {/* <Waredrobe /> */}
       <SocialMedia />
       <Training />
       <Newsletter />
