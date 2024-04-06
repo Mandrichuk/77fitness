@@ -12,7 +12,7 @@ import { LocaleProps } from "../../lib/index";
 
 export const metadata: Metadata = {
   title: "Pricing",
-}
+};
 
 function Home({ params: { locale } }: LocaleProps) {
   return (

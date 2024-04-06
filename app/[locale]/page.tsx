@@ -12,6 +12,7 @@ import SocialMedia from "../components/SocialMedia";
 import Team from "../home/Team";
 import CreatedBy from "../components/CreatedBy";
 import Application from "../home/Application";
+import Details from "../components/Details";
 
 import { LocaleProps } from "../lib/index";
 
@@ -23,6 +24,7 @@ function Home({ params: { locale } }: LocaleProps) {
       <Team />
       <Gallery />
       <SocialMedia />
+      <Details />
       <Prices />
       <Application />
       <Activity />

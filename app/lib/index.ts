@@ -187,3 +187,24 @@ export interface NotFoundTextProps {
     button: Button;
   };
 }
+
+export interface LocationTextProps {
+  en: {
+    title: string;
+    alert: string;
+    location: string;
+    mapsLink: string;
+  };
+  sk: {
+    title: string;
+    alert: string;
+    location: string;
+    mapsLink: string;
+  };
+  ru: {
+    title: string;
+    alert: string;
+    location: string;
+    mapsLink: string;
+  };
+}
