@@ -325,7 +325,7 @@ export const footerText: FooterTextProps = {
     logo: { src: "ncdhkltskvpjmdprvynk", alt: "логотип" },
     name: "NEXT LEVEL FITNESS",
     location: {
-      text: "Братислава, Bajkalská 2i, 831 04",
+      text: "Bratislava, Bajkalská 2i, 831 04",
       link: "https://www.google.ru/maps/place/77nextlevelfitness/@48.1639961,17.1368065,18z/data=!4m6!3m5!1s0x476c8f76fe48d03b:0x3e34a79f87ee6c7!8m2!3d48.1639642!4d17.1380704",
     },
     sitemap: {

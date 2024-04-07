@@ -42,7 +42,7 @@
     .imagesContainer {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-
+      aspect-ratio: 5 / 2.7;
       gap: 10px;
       max-width: 600px;
       width: 100%;

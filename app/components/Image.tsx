@@ -6,9 +6,9 @@ import { CLOUDINARY_FOLDER } from "../constants";
 import { type ImageProps } from "../lib/index";
 
 function Image({ image, alt, imgQuality, imgPriority }: ImageProps) {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
   const checkedImgQuality = imgQuality || 90;
-  const checkedImgPriority = imgPriority || false;
+  const checkedImgPriority = imgPriority;
   const imageConverted = `${CLOUDINARY_FOLDER}${image}`;
 
   const handleLoad = () => {
@@ -32,7 +32,7 @@ function Image({ image, alt, imgQuality, imgPriority }: ImageProps) {
           objectFit: "cover",
           width: "100%",
           height: "100%",
-          opacity: isLoading ? 0.3 : 1,
+          opacity: isLoading && !checkedImgPriority ? 0.3 : 1,
         }}
         width={500}
         height={500}
@@ -41,7 +41,7 @@ function Image({ image, alt, imgQuality, imgPriority }: ImageProps) {
         onLoad={handleLoad}
         onError={handleError}
       />
-      {isLoading && (
+      {isLoading && !checkedImgPriority && (
         <span className="spinner loading loading-spinner loading-md" />
       )}
     </div>

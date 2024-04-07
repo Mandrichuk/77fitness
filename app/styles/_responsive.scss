@@ -50,7 +50,7 @@
               .email {
                 @include pText();
                 font-weight: fontWeight(regular);
-                max-width: 250px;
+                max-width: 170px;
               }
             }
 
@@ -236,6 +236,7 @@
               .email {
                 @include pText();
                 font-weight: fontWeight(regular);
+                max-width: 250px;
               }
             }
 
@@ -479,6 +480,7 @@
           .imageContainer {
             display: block;
             flex: 1;
+            aspect-ratio: 1/ 0.6;
           }
 
           .imageContainerMobile {

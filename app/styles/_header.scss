@@ -1,9 +1,5 @@
 header {
-background-color: color(primary-color);
-  // position: fixed;
-  // top: 0;
-  // left: 0;
-  // right: 0;
+  background-color: color(primary-color);
   z-index: 100;
   @include Flex(row, center, space-between);
   width: 100%;
@@ -18,6 +14,7 @@ background-color: color(primary-color);
     @include Flex(row, center, center);
     margin-left: 20px;
     transition: $transition;
+    aspect-ratio: 1 / 0.9;
 
     &:active {
       transform: scale(0.98);

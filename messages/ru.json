@@ -46,18 +46,18 @@
         "text": "Расписание",
         "weekdays": {
           "days": "Пн - Пт",
-          "time": "5:00 - 22:00"
+          "time": "8:00 - 22:00"
         },
         "weekend": {
           "days": "Сб - Вс",
-          "time": "8:00 - 22:00"
+          "time": "5:00 - 22:00"
         }
       },
       "membership": {
         "description": "3+ месяца абонимент",
         "text": "Каждая тренировка включает",
         "included": {
-          "included1": "ИОНТ напиток",
+          "included1": "IONT Напиток",
           "included2": "Полотенце",
           "included3": "Сауна"
         }

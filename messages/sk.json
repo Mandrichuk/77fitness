@@ -46,18 +46,18 @@
         "text": "Harmonogram",
         "weekdays": {
           "days": "Po - Pia",
-          "time": "5:00 - 22:00"
+          "time": "8:00 - 22:00"
         },
         "weekend": {
           "days": "So - Ne",
-          "time": "8:00 - 22:00"
+          "time": "5:00 - 22:00"
         }
       },
       "membership": {
         "description": "+3 mesiace členstva",
         "text": "Každý tréning zahŕňa",
         "included": {
-          "included1": "IONT nápoj",
+          "included1": "IONT Nápoj",
           "included2": "Uterák",
           "included3": "Sauna"
         }

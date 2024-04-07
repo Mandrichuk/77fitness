@@ -46,11 +46,11 @@
         "text": "Schedule",
         "weekdays": {
           "days": "Mo - Fri",
-          "time": "5:00 - 22:00"
+          "time": "8:00 - 22:00"
         },
         "weekend": {
           "days": "Su - Sun",
-          "time": "8:00 - 22:00"
+          "time": "5:00 - 22:00"
         }
       },
       "membership": {

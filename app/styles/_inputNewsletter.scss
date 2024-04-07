@@ -17,7 +17,7 @@
         background-color: color(custom-black);
 
         &:active {
-          transform: scale(0.99) translateY(-50%);
+          transform: scale(0.99);
         }
       }
     }
@@ -39,8 +39,9 @@
     .buttonContainer {
       .button {
         width: auto;
+        font-size: 14px;
         &.dark {
-          padding: 15px 30px;
+          padding: 14px 30px;
           background-color: color(custom-black);
           position: absolute;
           top: 35%;
