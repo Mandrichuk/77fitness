@@ -31,10 +31,11 @@
           font-size: calc(fontSize(h3) - 2px);
           font-weight: fontWeight(bold);
           margin-bottom: 15px;
+          max-width: 250px;
         }
 
         .timedaysContainer {
-          @include Flex(row, center, start);
+          @include Flex(row, start, start);
 
           .daysContainer {
             margin-right: 15px;
@@ -48,6 +49,7 @@
             .time {
               font-size: calc(fontSize(p) + 3px);
               font-weight: fontWeight(semibold);
+              max-width: 130px;
             }
           }
         }
@@ -76,7 +78,7 @@
 
         .mapContainer {
           width: 100%;
-          aspect-ratio: 16 / 9;
+          aspect-ratio: 1 / 0.8;
           border-radius: borderRadius(mobile);
           overflow: hidden;
 
@@ -107,6 +109,7 @@
             font-size: calc(fontSize(h3) - 2px);
             font-weight: fontWeight(bold);
             margin-bottom: 15px;
+            max-width: 250px;
           }
 
           .includedContainer {
@@ -118,6 +121,137 @@
                 font-size: 30px;
                 font-weight: fontWeight(extrabold);
                 color: color(secondary-color);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .Homepage_Details {
+    @include Flex(column, center, center);
+    width: 100%;
+
+    .wrapper {
+      @include Flex(column, center, center);
+      width: wrapperWidth(mobile);
+
+      .text {
+        font-size: fontSize(p);
+        font-weight: fontWeight(bold);
+        color: color(secondary-color);
+        margin-bottom: 10px;
+      }
+
+      .detailsContainer {
+        @include Flex(column, start, center);
+        margin-top: 30px;
+        width: 100%;
+
+        .locationContainer {
+          max-width: 700px;
+          margin-left: 50px;
+          display: none;
+        }
+
+        .entryTimeContainer {
+          width: 100%;
+          margin-bottom: 40px;
+          .biggerText {
+            font-size: calc(fontSize(h3) - 2px);
+            font-weight: fontWeight(bold);
+            margin-bottom: 15px;
+          }
+
+          .timedaysContainer {
+            @include Flex(row, start, start);
+
+            .daysContainer {
+              margin-right: 15px;
+            }
+
+            .daysContainer,
+            .timeContainer {
+              @include Flex(column, start, center);
+
+              .days,
+              .time {
+                font-size: calc(fontSize(p) + 3px);
+                font-weight: fontWeight(semibold);
+              }
+            }
+          }
+        }
+
+        .locationContainerMobile,
+        .locationContainer {
+          width: 100%;
+          margin-bottom: 40px;
+          .locationTextContainer {
+            width: 100%;
+            @include Flex(row, center, start);
+            margin-bottom: 10px;
+
+            .icon {
+              margin-right: 10px;
+              width: iconSize(mobile) * 1.5;
+              height: iconSize(mobile) * 1.5;
+              fill: color(secondary-color);
+            }
+
+            .locationText {
+              font-weight: fontWeight(bold);
+            }
+          }
+
+          .mapContainer {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border-radius: borderRadius(mobile);
+            overflow: hidden;
+
+            iframe {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+
+        .detailsTextContainer {
+          .entryTimeContainer {
+            display: none;
+          }
+
+          .membershipContainer {
+            width: 100%;
+            @include Flex(column, start, center);
+
+            .description {
+              width: 100%;
+              font-size: fontSize(p);
+              font-weight: fontWeight(bold);
+              color: color(secondary-color);
+            }
+
+            .biggerText {
+              font-size: calc(fontSize(h3) - 2px);
+              font-weight: fontWeight(bold);
+              margin-bottom: 15px;
+            }
+
+            .includedContainer {
+              .includedText {
+                @include Flex(row, center, start);
+                font-size: calc(fontSize(p) + 3px);
+                font-weight: fontWeight(semibold);
+                .dot {
+                  font-size: 30px;
+                  font-weight: fontWeight(extrabold);
+                  color: color(secondary-color);
+                }
               }
             }
           }
@@ -158,10 +292,11 @@
             font-size: calc(fontSize(h3) - 4px);
             font-weight: fontWeight(bold);
             margin-bottom: 15px;
+            max-width: 350px;
           }
 
           .timedaysContainer {
-            @include Flex(row, center, start);
+            @include Flex(row, start, start);
 
             .daysContainer {
               margin-right: 15px;
@@ -241,6 +376,7 @@
               font-size: calc(fontSize(h3) - 4px);
               font-weight: fontWeight(bold);
               margin-bottom: 15px;
+              max-width: 300px;
             }
 
             .includedContainer {

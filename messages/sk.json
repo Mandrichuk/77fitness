@@ -43,28 +43,27 @@
     },
     "Details": {
       "entry": {
-        "text": "Harmonogram",
+        "text": "Otváracie hodiny:",
         "weekdays": {
           "days": "Po - Pia",
           "time": "8:00 - 22:00"
         },
         "weekend": {
-          "days": "So - Ne",
-          "time": "5:00 - 22:00"
+          "days": "So - Ne, Sviatky",
+          "time": "5:30 - 22:00"
         }
       },
       "membership": {
-        "description": "+3 mesiace členstva",
-        "text": "Každý tréning zahŕňa",
+        "description": "3 a viac mesačná permanentka",
+        "text": "Zahŕňa navyše:",
         "included": {
           "included1": "IONT Nápoj",
-          "included2": "Uterák",
-          "included3": "Sauna"
+          "included2": "Uterák"
         }
       },
       "location": {
         "text": "Naša adresa: Bratislava, Bajkalská 2i, 831 04",
-        "link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.213609715061!2d17.138070399999997!3d48.16396420000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8f76fe48d03b%3A0x3e34a79f87ee6c7!2s77nextlevelfitness!5e0!3m2!1sru!2ssk!4v1712421254387!5m2!1sru!2ssk"
+        "link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.213609715061!2d17.138070399999997!3d48.16396420000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8f76fe48d03b%3A0x3e34a79f87ee6c7!2s77nextlevelfitness!5e0!3m2!1ssk!2ssk!4v1712421254387!5m2!1ssk!2ssk"
       }
     },
     "Introduction": {
@@ -175,7 +174,7 @@
         "package3": {
           "standOut": "+1 mesiac zadarmo",
           "title": "6 + 1 mesiac zadarmo",
-          "price": "48",
+          "price": "340",
           "description": "jednorazová platba",
           "included": {
             "included1": "Ušetrite viac ako €100!",
@@ -207,8 +206,8 @@
       }
     },
     "Team": {
-      "bgText": "Trainers",
-      "title": "Our Trainers",
+      "bgText": "Tréneri",
+      "title": "Naši tréneri",
       "trainers": {
         "trainer1": {
           "image": { "src": "team/gh6w8tmkbhvjj0kgwhvb", "alt": "trainer" },

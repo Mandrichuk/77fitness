@@ -9,7 +9,6 @@ function Details() {
   const included = [
     t("membership.included.included1"),
     t("membership.included.included2"),
-    t("membership.included.included3"),
   ];
 
   return (

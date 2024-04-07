@@ -23,7 +23,7 @@ function Footer({ locale }: FooterProps) {
         <div className="mainSection">
           <div className="brandContainer">
             <div className="logo">
-              <Image image={t.logo.src} alt={t.logo.alt} />
+              <Image image={t.logo.src} alt={t.logo.alt} imgPriority={true} />
             </div>
             <p className="name">{t.name}</p>
           </div>

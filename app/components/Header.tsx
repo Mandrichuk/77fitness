@@ -49,7 +49,7 @@ function Header({ locale }: HeaderProps) {
     <header className="header">
       <div className={`logoContainer ${isOpen && "open"}`}>
         <Link href={t.logo.link}>
-          <Image image={t.logo.image} alt={t.logo.alt} />
+          <Image image={t.logo.image} alt={t.logo.alt} imgPriority={true} />
         </Link>
       </div>
       {windowWidth > 768 ? (
