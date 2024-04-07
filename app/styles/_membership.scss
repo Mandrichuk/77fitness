@@ -1,5 +1,7 @@
 .Membership {
   @include Flex(column, start, center);
+  position: relative;
+  overflow: hidden;
   width: 300px;
   height: 470px;
   background-color: color(custom-black);
@@ -13,6 +15,7 @@
     .details {
       .title {
         color: color(text-color);
+        max-width: 100px;
       }
 
       .description {
@@ -53,6 +56,10 @@
     .price {
       font-weight: fontWeight(semibold);
       font-size: calc(fontSize(h3) + 10px);
+
+      .per {
+        font-size: calc(fontSize(p) - 3px);
+      }
     }
 
     .description {
@@ -86,6 +93,24 @@
     .contactButton {
       width: 100%;
       margin-top: 50px;
+    }
+  }
+
+  .standOutContainer {
+    @include Flex(row, center, center);
+    padding: 6px;
+    position: absolute;
+    background-color: color(text-color);
+    transform: rotate(45deg);
+    width: 100%;
+    top: 50px;
+    right: -80px;
+
+    .standOutText {
+      margin: 0;
+      color: color(custom-black);
+      font-size: 18px;
+      font-weight: fontWeight(semibold);
     }
   }
 }
@@ -181,6 +206,24 @@
         margin-top: 50px;
       }
     }
+
+    .standOutContainer {
+      @include Flex(row, center, center);
+      padding: 6px;
+      position: absolute;
+      background-color: color(text-color);
+      transform: rotate(45deg);
+      width: 100%;
+      top: 55px;
+      right: -100px;
+
+      .standOutText {
+        margin: 0;
+        color: color(custom-black);
+        font-size: 18px;
+        font-weight: fontWeight(semibold);
+      }
+    }
   }
 }
 
@@ -193,12 +236,13 @@
     border-radius: borderRadius(mobile);
 
     &.standOut {
-      height: 500px;
+      height: 540px;
       background-color: color(secondary-color);
 
       .details {
         .title {
           color: color(text-color);
+          max-width: 100px;
         }
 
         .description {
@@ -272,6 +316,24 @@
         }
       }
     }
+
+    .standOutContainer {
+      @include Flex(row, center, center);
+      padding: 6px;
+      position: absolute;
+      background-color: color(text-color);
+      transform: rotate(45deg);
+      width: 100%;
+      top: 40px;
+      right: -80px;
+
+      .standOutText {
+        margin: 0;
+        color: color(custom-black);
+        font-size: 16px;
+        font-weight: fontWeight(semibold);
+      }
+    }
   }
 }
 
@@ -285,12 +347,11 @@
     &.standOut {
       margin-top: 0;
       @include Flex(column, center, center);
-      height: 520px;
+      height: 560px;
       background-color: color(secondary-color);
 
       .details {
         .title {
-          font-size: 16px;
           color: color(text-color);
         }
 
@@ -320,6 +381,7 @@
     }
     .details {
       .title {
+        font-size: 16px;
         color: color(secondary-color);
         font-weight: fontWeight(semibold);
         margin-bottom: 10px;
@@ -360,6 +422,24 @@
       .contactButton {
         width: 100%;
         margin-top: 50px;
+      }
+    }
+
+    .standOutContainer {
+      @include Flex(row, center, center);
+      padding: 6px;
+      position: absolute;
+      background-color: color(text-color);
+      transform: rotate(45deg);
+      width: 100%;
+      top: 35px;
+      right: -80px;
+
+      .standOutText {
+        margin: 0;
+        color: color(custom-black);
+        font-size: 14px;
+        font-weight: fontWeight(semibold);
       }
     }
   }

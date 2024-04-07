@@ -91,6 +91,8 @@ export interface TeamSliderProps {
 
 interface Package {
   standOut?: boolean;
+  standOutText?: string;
+  per?: string;
   title: string;
   price: string;
   description: string;

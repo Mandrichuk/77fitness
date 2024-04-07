@@ -39,9 +39,11 @@ function Prices() {
     },
     {
       standOut: true,
+      standOutText: t("packages.package3.standOut"),
       title: t("packages.package3.title"),
       price: t("packages.package3.price"),
       description: t("packages.package3.description"),
+      per: t("packages.package3.per"),
       included: [
         t("packages.package3.included.included1"),
         t("packages.package3.included.included2"),
@@ -69,8 +71,22 @@ function Prices() {
         link: t("packages.package4.button.link"),
       },
     },
+    {
+      title: t("packages.package5.title"),
+      price: t("packages.package5.price"),
+      description: t("packages.package5.description"),
+      included: [
+        t("packages.package5.included.included1"),
+        t("packages.package5.included.included2"),
+        t("packages.package5.included.included3"),
+        t("packages.package5.included.included4"),
+      ],
+      button: {
+        text: t("packages.package5.button.text"),
+        link: t("packages.package5.button.link"),
+      },
+    },
   ];
-
 
   return (
     <section className="Prices" id="prices">

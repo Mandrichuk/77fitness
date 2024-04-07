@@ -172,9 +172,10 @@
           }
         },
         "package3": {
-          "standOut": "+1 mesiac zadarmo",
+          "standOut": "najlepšia ponuka",
           "title": "6 + 1 mesiac zadarmo",
-          "price": "340",
+          "price": "48",
+          "per": "/za mesiac",
           "description": "jednorazová platba",
           "included": {
             "included1": "Ušetrite viac ako €100!",
@@ -189,7 +190,22 @@
           }
         },
         "package4": {
-          "title": "1-ročné členstvo",
+          "title": "3 mesiačne členstvo",
+          "price": "180",
+          "description": "jednorazová platba",
+          "included": {
+            "included1": "Neobmedzený prístup do posilňovne",
+            "included2": "Sauna a sprchy",
+            "included3": "DJ a živá hudba",
+            "included4": "Osobný tréner (voliteľné)"
+          },
+          "button": {
+            "text": "Kontaktujte nás",
+            "link": "+421 940 735 735"
+          }
+        },
+        "package5": {
+          "title": "1 ročné členstvo",
           "price": "650",
           "description": "jednorazová platba",
           "included": {

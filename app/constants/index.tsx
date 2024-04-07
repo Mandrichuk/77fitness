@@ -172,7 +172,7 @@ export const headerText: HeaderTextProps = {
       },
       {
         text: "Contact Us",
-        link: "tel:+421 908 706 351",
+        link: "tel:+421 940 735 735",
       },
     ],
     languages: {
@@ -205,7 +205,7 @@ export const headerText: HeaderTextProps = {
       },
       {
         text: "Свяжитесь с нами",
-        link: "tel:+421 908 706 351",
+        link: "tel:+421 940 735 735",
       },
     ],
     languages: {
@@ -238,7 +238,7 @@ export const headerText: HeaderTextProps = {
       },
       {
         text: "Kontaktujte nás",
-        link: "tel:+421 908 706 351",
+        link: "tel:+421 940 735 735",
       },
     ],
     languages: {
@@ -266,7 +266,7 @@ export const footerText: FooterTextProps = {
         { text: "Home", link: "/" },
         { text: "Pricing", link: "/pricing" },
         { text: "Gallery", link: "/gallery" },
-        { text: "Contact", link: "tel:+421 908 706 351" },
+        { text: "Contact", link: "tel:+421 940 735 735" },
       ],
     },
     languages: {
@@ -300,7 +300,7 @@ export const footerText: FooterTextProps = {
         { text: "Domov", link: "/" },
         { text: "Ceny", link: "/pricing" },
         { text: "Galéria", link: "/gallery" },
-        { text: "Kontakt", link: "tel:+421 908 706 351" },
+        { text: "Kontakt", link: "tel:+421 940 735 735" },
       ],
     },
     languages: {
@@ -334,7 +334,7 @@ export const footerText: FooterTextProps = {
         { text: "Главная", link: "/" },
         { text: "Цены", link: "/pricing" },
         { text: "Галерея", link: "/gallery" },
-        { text: "Контакт", link: "tel:+421 908 706 351" },
+        { text: "Контакт", link: "tel:+421 940 735 735" },
       ],
     },
     languages: {

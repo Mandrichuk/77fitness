@@ -117,3 +117,35 @@
     }
   }
 }
+
+@media (min-width: 1600px) {
+  .Prices {
+    width: 100%;
+    margin-top: 30px;
+    @include Flex(column, center, center);
+    .wrapper {
+      @include Flex(column, center, center);
+      width: wrapperWidth(mobile);
+
+      .text {
+        font-size: fontSize(p);
+        font-weight: fontWeight(bold);
+        color: color(secondary-color);
+        margin-bottom: 10px;
+      }
+
+      .details {
+        @include Flex(column, start, center);
+        .memberships {
+          @include Flex(column, center, center);
+          margin-top: 50px;
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(5, 2fr);
+          gap: 15px;
+          row-gap: 15px;
+        }
+      }
+    }
+  }
+}
