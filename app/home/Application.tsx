@@ -56,7 +56,7 @@ function Application() {
               image={t("details.Android.ImageQR.src")}
               alt={t("details.Android.ImageQR.alt")}
               imgQuality={100}
-              imgPriority={false}
+              imgPriority={true}
             />
           </div>
 
@@ -65,7 +65,7 @@ function Application() {
               image={t("details.IOS.ImageQR.src")}
               alt={t("details.IOS.ImageQR.alt")}
               imgQuality={100}
-              imgPriority={false}
+              imgPriority={true}
             />
           </div>
         </div>

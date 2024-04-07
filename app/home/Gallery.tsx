@@ -34,12 +34,6 @@ function Gallery() {
                 {t("title.brand2")}
               </span>
               &nbsp;
-              {/* <span
-                className="text"
-                style={{ display: "block" }}
-              >
-                {t("title.text2")}
-              </span> */}
             </h3>
           </div>
         </div>
@@ -50,18 +44,21 @@ function Gallery() {
                 <Image
                   image={t("gallery.gallery1.src")}
                   alt={t("gallery.gallery1.alt")}
+                  imgPriority={true}
                 />
               </div>
               <div data-anchor="repel" className="img2 img">
                 <Image
                   image={t("gallery.gallery2.src")}
                   alt={t("gallery.gallery2.alt")}
+                  imgPriority={true}
                 />
               </div>
               <div data-anchor="repel" className="img3 img">
                 <Image
                   image={t("gallery.gallery3.src")}
                   alt={t("gallery.gallery3.alt")}
+                  imgPriority={true}
                 />
               </div>
             </div>
