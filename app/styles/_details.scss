@@ -38,7 +38,8 @@
           @include Flex(row, start, start);
 
           .daysContainer {
-            margin-right: 15px;
+            margin-right: 50px;
+            
           }
 
           .daysContainer,
@@ -79,6 +80,7 @@
         .mapContainer {
           width: 100%;
           aspect-ratio: 1 / 0.8;
+          aspect-ratio: 1 / 0.8;
           border-radius: borderRadius(mobile);
           overflow: hidden;
 
@@ -113,8 +115,10 @@
           }
 
           .includedContainer {
+              // @include Flex(row, center, start);
             .includedText {
               @include Flex(row, center, start);
+              // margin-right: 50px;
               font-size: calc(fontSize(p) + 3px);
               font-weight: fontWeight(semibold);
               .dot {
@@ -170,7 +174,7 @@
             @include Flex(row, start, start);
 
             .daysContainer {
-              margin-right: 15px;
+              margin-right: 50px;
             }
 
             .daysContainer,
@@ -299,7 +303,7 @@
             @include Flex(row, start, start);
 
             .daysContainer {
-              margin-right: 15px;
+              margin-right: 50px;
             }
 
             .daysContainer,
