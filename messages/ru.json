@@ -73,8 +73,9 @@
         "alt": "introductionImg"
       },
       "name": "NEXT LEVEL FITNESS",
-      "description": "Ваш новый фитнес-центр в центре Братиславы на улице Bajkalskej 2i. Скоро наш фитнес-центр увеличится почти до 400м².",
-      "promotion": "И вы можете рассчитывать на множество новых тренажеров, которые мы постепенно добавляем!",
+      "description": "Ваш новый фитнес-центр в центре Братиславы на улице Bajkalskej 2i.",
+      "promotion": "Вскоре наш фитнес-центр расширится еще почти на 400м²",
+      "details": ", где у вас будет больше места для полноценной функциональной зоны, а также множество других биомеханически исключительных тренажеров, к которым вы здесь привыкли!",
       "button": { "text": "Абонементы", "link": "/#prices" },
       "watchVideo": {
         "text": "Смотреть промо видео",
@@ -228,14 +229,14 @@
         "trainer1": {
           "image": { "src": "team/gh6w8tmkbhvjj0kgwhvb", "alt": "trainer" },
           "qr": { "src": "null", "alt": "qr" },
-          "name": "Vladimir Kerul",
+          "name": "Vladimír Kerul",
           "number": "+421 911 434 040",
           "email": "ibffslovalia@gmail.com"
         },
         "trainer2": {
           "image": { "src": "team/aintp3zkttqwloakr761", "alt": "trainer" },
           "qr": { "src": "null", "alt": "qr" },
-          "name": "Vladimir Gostík",
+          "name": "Vladimír Gostík",
           "number": "+421 944 160 283",
           "email": "gostikvladko9@gmail.com"
         },
@@ -249,7 +250,7 @@
         "trainer4": {
           "image": { "src": "team/uxhnhzfmqktuyt163zda", "alt": "trainer" },
           "qr": { "src": "null", "alt": "qr" },
-          "name": "Tomaš Krištín",
+          "name": "Tomáš Krištín",
           "number": "+421 903 322 155",
           "email": "tom.personalcoach@gmail.com"
         },
@@ -259,7 +260,7 @@
             "alt": "trainer"
           },
           "qr": { "src": "null", "alt": "qr" },
-          "name": "Vladimir Svonco",
+          "name": "Vladimír Svonco",
           "number": "+421 903 246 426",
           "email": "vsvoncinar@yahoo.com"
         },
@@ -299,7 +300,7 @@
             "alt": "trainer"
           },
           "qr": { "src": "null", "alt": "qr" },
-          "name": "Chistian Andre",
+          "name": "Christian Andre",
           "number": "+421 907 045 381",
           "email": "trainer.chis.andre@gmail.com"
         },
@@ -319,7 +320,7 @@
             "alt": "trainer"
           },
           "qr": { "src": "null", "alt": "qr" },
-          "name": "Natalia Zeljenkova",
+          "name": "Natália Zeljenkova",
           "number": "+421 911 872 371",
           "email": "natali.zeljenkova@gmail.com"
         },
@@ -359,7 +360,7 @@
             "alt": "trainer"
           },
           "qr": { "src": "null", "alt": "qr" },
-          "name": "Ján Ostraczky",
+          "name": "Ján Ostraczký",
           "number": "+421 907 767 090",
           "email": "ostraczky@gmail.com"
         }

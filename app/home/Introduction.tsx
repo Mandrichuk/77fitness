@@ -37,6 +37,9 @@ function Introduction() {
             <span className="promotion" style={promotionStyles}>
               {t("promotion")}
             </span>
+            <span className="details" style={descriptionStyles}>
+              {t("details")}
+            </span>
           </p>
 
           <div className="buttons">

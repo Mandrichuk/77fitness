@@ -50,7 +50,7 @@
               .email {
                 @include pText();
                 font-weight: fontWeight(regular);
-                max-width: 170px;
+                max-width: 240px;
               }
             }
 
@@ -236,7 +236,7 @@
               .email {
                 @include pText();
                 font-weight: fontWeight(regular);
-                max-width: 250px;
+                max-width: 200px;
               }
             }
 
