@@ -3,12 +3,10 @@
   position: relative;
   .cover {
     .imageContainer {
-      aspect-ratio: 16/ 9;
       width: 100%;
-
-      img {
-        border-radius: borderRadius(mobile);
-      }
+      overflow: hidden;
+      border-radius: borderRadius(mobile);
+      aspect-ratio: 16/ 10;
     }
   }
   .icon {
@@ -22,7 +20,6 @@
     &:active {
       transform: scale(0.98) translateY(-50%);
     }
-
 
     svg {
       width: calc(iconSize(mobile) * 2);

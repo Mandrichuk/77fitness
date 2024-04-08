@@ -22,12 +22,12 @@ function Header({ locale }: HeaderProps) {
   const withoutLang = pathSegments.slice(1, pathSegments.length);
 
   useEffect(() => {
-    if (homepagePaths.includes(pathname)) {
-      setIsHomePage(true);
+    if (isOpen) {
+      document.documentElement.style.overflow = "hidden";
     } else {
-      setIsHomePage(false);
+      document.documentElement.style.overflow = "unset";
     }
-  }, [pathname, setIsHomePage]);
+  }, [isOpen]);
 
   useEffect(() => {
     if (isOpen) {
@@ -93,7 +93,7 @@ function Header({ locale }: HeaderProps) {
       ) : (
         <div className="mobile">
           {isOpen ? (
-            <>
+            <div className="mobileNavContainer">
               <div onClick={() => openToggle()} className="close">
                 {SVGs.close}
               </div>
@@ -118,7 +118,7 @@ function Header({ locale }: HeaderProps) {
                   ))}
                 </div>
               </nav>
-            </>
+            </div>
           ) : (
             <div onClick={() => openToggle()} className="burgerMenu">
               {SVGs.burgerMenu}

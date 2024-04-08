@@ -75,6 +75,7 @@
       "name": "NEXT LEVEL FITNESS",
       "description": "Vaše nové fitness centrum v centre Bratislavy na Bajkalskej 2i. Nechajte nám kontakt a my vás budeme informovať o novinkách.",
       "promotion": "Sme otvorení a tešíme sa na vašu návštevu.",
+      "commingSoon": "Skoro naša telocvičňa bude väčšia ako 400m²",
       "button": { "text": "Prihlásiť sa", "link": "/#newsletter" },
       "watchVideo": {
         "text": "Sledujte promo video",

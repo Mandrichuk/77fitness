@@ -75,6 +75,7 @@
       "name": "NEXT LEVEL FITNESS",
       "description": "Your new fitness center in the center of Bratislava at Bajkalská 2i. Leave us a contact and we will inform you about the news.",
       "promotion": "We are open and look forward to your visit.",
+      "commingSoon": "*Soon our gym will be bigger than 400m²",
       "button": { "text": "Subscribe", "link": "/#newsletter" },
       "watchVideo": {
         "text": "Watch Promo Video",

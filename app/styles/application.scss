@@ -42,7 +42,7 @@
     .imagesContainer {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      aspect-ratio: 5 / 2.7;
+      aspect-ratio: 5 / 2.9;
       gap: 10px;
       max-width: 600px;
       width: 100%;
@@ -141,6 +141,62 @@
       .imagesContainer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        aspect-ratio: 5 / 2.5;
+
+        gap: 5%;
+        max-width: 600px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .Application {
+    @include Flex(column, center, center);
+    width: 100%;
+    margin-top: 20px;
+    .textSection {
+      @include Flex(column, center, center);
+      margin-bottom: 30px;
+      .title {
+        text-align: start;
+      }
+
+      .text {
+        font-size: fontSize(p);
+        font-weight: fontWeight(bold);
+        color: color(secondary-color);
+        margin-bottom: 10px;
+      }
+
+      .descriptionContainer {
+        margin-top: 5px;
+        width: 100%;
+        .description {
+          text-align: center;
+          color: rgb(210, 210, 210);
+
+          a {
+            color: color(text-color);
+            opacity: 1;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .wrapper {
+      @include Flex(row, center, center);
+      width: wrapperWidth(mobile);
+
+      .textSection {
+        display: none;
+      }
+
+      .imagesContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        aspect-ratio: 5 / 2.65;
 
         gap: 5%;
         max-width: 600px;
