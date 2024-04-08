@@ -75,7 +75,7 @@
       "name": "NEXT LEVEL FITNESS",
       "description": "Ваш новый фитнес-центр в центре Братиславы на улице Bajkalskej 2i. Скоро наш фитнес-центр увеличится почти до 400м².",
       "promotion": "И вы можете рассчитывать на множество новых тренажеров, которые мы постепенно добавляем!",
-      "button": { "text": "Подписаться", "link": "/#newsletter" },
+      "button": { "text": "Абонементы", "link": "/#prices" },
       "watchVideo": {
         "text": "Смотреть промо видео",
         "link": "/gallery/#promoVideo"
