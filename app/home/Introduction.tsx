@@ -39,8 +39,6 @@ function Introduction() {
             </span>
           </p>
 
-          <p className="commingSoon">{t("commingSoon")}</p>
-
           <div className="buttons">
             <div className="buttonMore">
               <Link className="button" href={t("button.link")}>
