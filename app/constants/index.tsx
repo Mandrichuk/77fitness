@@ -6,6 +6,7 @@ import {
   FooterTextProps,
   NotFoundTextProps,
   LocationTextProps,
+  BluredCircleColorsProps,
 } from "../lib/index";
 import logo from "@/public/assets/logo.png";
 
@@ -16,6 +17,11 @@ const images = {
 export default images;
 
 export const CLOUDINARY_FOLDER = "77fitness/";
+
+export const BluredCircleColors: BluredCircleColorsProps = {
+  pink: "#D909C4",
+  blue: "#097FD9",
+};
 
 export const SVGs = {
   location: (

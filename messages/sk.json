@@ -74,7 +74,7 @@
       },
       "name": "NEXT LEVEL FITNESS",
       "description": "Vaše nové fitness centrum v centre Bratislavy na Bajkalskej 2i.",
-      "promotion": "Čoskoro sa naše fitnesscentrum rozrastie o ďalších skoro 400m²",
+      "promotion": "Čoskoro sa naše fitness centrum rozrastie o ďalších skoro 400m²",
       "details": ", kde Vám pribudne priestor aj na poriadnu funkčnú zónu plus kopec ďalších biomechanicky výnimočných strojov na ktoré ste u nás zvyknutý!",
       "button": { "text": "Členstvá", "link": "/#prices" },
       "watchVideo": {
@@ -191,7 +191,7 @@
           }
         },
         "package4": {
-          "title": "3 mesiačne členstvo",
+          "title": "3 mesačne členstvo",
           "price": "180",
           "description": "jednorazová platba",
           "included": {
@@ -351,7 +351,7 @@
           },
           "qr": { "src": "null", "alt": "qr" },
           "name": "Kateryna Okunieva",
-          "number": "+421 1907 596 214",
+          "number": "+421 907 596 214",
           "email": "greatekaterinaokuneva@gmail.com"
         },
         "trainer15": {

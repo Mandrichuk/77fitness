@@ -98,7 +98,7 @@
 
   .standOutContainer {
     @include Flex(row, center, center);
-    padding: 6px;
+    padding: 8px;
     position: absolute;
     background-color: color(text-color);
     transform: rotate(45deg);
@@ -209,7 +209,7 @@
 
     .standOutContainer {
       @include Flex(row, center, center);
-      padding: 6px;
+      padding: 8px;
       position: absolute;
       background-color: color(text-color);
       transform: rotate(45deg);
@@ -319,7 +319,7 @@
 
     .standOutContainer {
       @include Flex(row, center, center);
-      padding: 6px;
+      padding: 8px;
       position: absolute;
       background-color: color(text-color);
       transform: rotate(45deg);
@@ -427,7 +427,7 @@
 
     .standOutContainer {
       @include Flex(row, center, center);
-      padding: 6px;
+      padding: 8px;
       position: absolute;
       background-color: color(text-color);
       transform: rotate(45deg);

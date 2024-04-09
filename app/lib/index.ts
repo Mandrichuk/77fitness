@@ -210,3 +210,13 @@ export interface LocationTextProps {
     mapsLink: string;
   };
 }
+
+export interface BluredCircleProps {
+  color: string;
+  blurRange: string;
+}
+
+export interface BluredCircleColorsProps {
+  pink: string;
+  blue: string;
+}
