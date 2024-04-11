@@ -10,7 +10,7 @@
       "points": {
         "point1": "Cash",
         "point2": "Credit Card, Mastercard, Visa Card",
-        "point3": "MultiSport cards and Upbalansea with extra charge! (Sauna €3, Towel €1, Lonic Drink €1)",
+        "point3": "MultiSport cards and Upbalansea with extra charge! (Sauna €3, Towel €1, Ionic Drink €1)",
         "point4": "No additional fees",
         "point5": "All the payments are processed in person at the gym reception, offline."
       }
@@ -57,7 +57,7 @@
         "description": "3 or more month membership",
         "text": "Includes extra:",
         "included": {
-          "included1": "IONT Drink",
+          "included1": "Ionic Drink",
           "included2": "Towel"
         }
       },
@@ -461,7 +461,7 @@
         }
       },
       "button": {
-        "text": "Veiw more",
+        "text": "View more",
         "link": ""
       }
     }
