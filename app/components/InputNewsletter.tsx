@@ -23,9 +23,11 @@ function InputNewsletter({
   }
 
   function isValidEmail(emailInput: string) {
-    const re =
-      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    const reValidation = re.test(String(emailInput).toLowerCase());
+    // const re =
+    //   /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    // const reValidation = re.test(String(emailInput).toLowerCase());
+
+    const reValidation = true;
 
     notifyNewsletterError();
     if (emailInput === "" && !reValidation) {
@@ -59,9 +61,9 @@ function InputNewsletter({
         notifyNewsletterSuccess();
       }
 
-      if (response.status === 400) {
-        notifyExistsNewsletterError();
-      }
+      // if (response.status === 400) {
+      //   // notifyExistsNewsletterError();
+      // }
       setEmailInput("");
     } catch (error) {
       console.error("Error submitting email");

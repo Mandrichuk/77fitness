@@ -47,6 +47,10 @@
           top: 35%;
           right: 10px;
           transform: translateY(-50%);
+
+          &:active {
+            transform: scale(0.99) translateY(-50%);
+          }
         }
       }
     }

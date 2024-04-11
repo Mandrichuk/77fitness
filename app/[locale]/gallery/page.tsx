@@ -24,7 +24,7 @@ function Home({ params: { locale } }: LocaleProps) {
       <Header locale={locale} />
       <PromoVideo />
       <Equipment />
-      {/* <Waredrobe /> */}
+      <Waredrobe />
       <SocialMedia />
       <Training />
       <Newsletter />
