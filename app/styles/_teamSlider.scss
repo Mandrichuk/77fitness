@@ -23,7 +23,7 @@
           @include pText();
           font-size: calc(fontSize(p) + 6px);
           font-weight: fontWeight(bold);
-          color: color(secondary-color);
+          color: color(text-color);
           margin-bottom: 10px;
         }
 

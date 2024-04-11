@@ -54,7 +54,7 @@
         }
       },
       "membership": {
-        "description": "33 or more month membership",
+        "description": "3 or more month membership",
         "text": "Includes extra:",
         "included": {
           "included1": "IONT Drink",

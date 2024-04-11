@@ -46,7 +46,7 @@ function Header({ locale }: HeaderProps) {
   };
 
   return (
-    <header className="header">
+    <header className={`header ${isOpen && "open"}`}>
       <div className={`logoContainer ${isOpen && "open"}`}>
         <Link href={t.logo.link}>
           <Image image={t.logo.image} alt={t.logo.alt} imgPriority={true} />

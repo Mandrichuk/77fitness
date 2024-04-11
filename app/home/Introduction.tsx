@@ -2,8 +2,9 @@ import React from "react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 
-import { SVGs } from "../constants/index";
+import { SVGs, BluredCircleColors } from "../constants/index";
 
+import BluredCirlce from "../components/BluredCirlce";
 import Image from "../components/Image";
 
 const promotionStyles = {
@@ -22,13 +23,19 @@ function Introduction() {
     <section className="Introduction" id="introduction">
       <div className="wrapper">
         <div className="textSection">
-          <div className="logoImg">
+          <div id="Introduction_logoImg" className="logoImg">
             <Image
               image={t("logo.src")}
               alt={t("logo.alt")}
               imgQuality={100}
               imgPriority={true}
             />
+          </div>
+          <div data-anchor="Introduction_logoImg" className="pinkCircle">
+            <BluredCirlce color={BluredCircleColors.pink} blurRange={"100"} />
+          </div>
+          <div data-anchor="Introduction_logoImg" className="blueCircle">
+            <BluredCirlce color={BluredCircleColors.blue} blurRange={"100"} />
           </div>
           <h1 className="name">{t("name")}</h1>
           <p className="description" style={descriptionStyles}>

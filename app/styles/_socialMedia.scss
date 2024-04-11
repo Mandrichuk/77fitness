@@ -1,5 +1,7 @@
 .SocialMedia {
+  position: relative;
   @include Flex(column, center, center);
+  // overflow: hidden;
   margin-top: 40px;
   width: 100%;
   .wrapper {
@@ -35,6 +37,109 @@
       a {
         text-decoration: none;
       }
+    }
+  }
+  .pinkCircle {
+    position: absolute;
+    margin-bottom: 100px;
+    margin-right: -450px;
+    width: 30%;
+    min-width: 170px;
+    max-width: 260px;
+    z-index: -1;
+  }
+
+  .blueCircle {
+    position: absolute;
+    margin-bottom: -150px;
+    margin-right: 450px;
+    width: 30%;
+    min-width: 170px;
+    max-width: 260px;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 700px) {
+  .SocialMedia {
+    .wrapper {
+      @include Flex(column, start, space-between);
+      padding: 28px;
+    }
+    .pinkCircle {
+      position: absolute;
+      margin-bottom: 100px;
+      margin-right: -650px;
+      width: 25%;
+      min-width: 170px;
+      max-width: 230px;
+      z-index: -1;
+    }
+
+    .blueCircle {
+      position: absolute;
+      margin-bottom: -150px;
+      margin-right: 650px;
+      width: 25%;
+      min-width: 170px;
+      max-width: 230px;
+      z-index: -1;
+    }
+  }
+}
+
+@media (min-width: 850px) {
+  .SocialMedia {
+    .wrapper {
+      @include Flex(column, start, space-between);
+      padding: 28px;
+    }
+    .pinkCircle {
+      position: absolute;
+      margin-bottom: 100px;
+      margin-right: -800px;
+      width: 25%;
+      min-width: 170px;
+      max-width: 230px;
+      z-index: -1;
+    }
+
+    .blueCircle {
+      position: absolute;
+      margin-bottom: -150px;
+      margin-right: 800px;
+      width: 25%;
+      min-width: 170px;
+      max-width: 230px;
+      z-index: -1;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .SocialMedia {
+    .wrapper {
+      @include Flex(column, start, space-between);
+      padding: 28px;
+    }
+    .pinkCircle {
+      position: absolute;
+      margin-bottom: 50px;
+      margin-right: -900px;
+      width: 25%;
+      min-width: 170px;
+      max-width: 230px;
+      z-index: -1;
+    }
+
+    .blueCircle {
+      position: absolute;
+      margin-bottom: -50px;
+      margin-right: 900px;
+      width: 25%;
+      min-width: 170px;
+      max-width: 230px;
+      z-index: -1;
     }
   }
 }

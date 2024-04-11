@@ -4,12 +4,104 @@
   margin-bottom: 50px;
 
   .sliderSection {
+    position: relative;
     @include Flex(column, center, center);
     max-width: 1440px;
     margin-top: 30px;
     width: 100vw;
     .wrapper {
       width: wrapperWidth(mobile);
+    }
+  }
+  .pinkCircle {
+    position: absolute;
+    margin-bottom: 50px;
+    margin-right: 400px;
+    width: 30%;
+    min-width: 200px;
+    max-width: 350px;
+    z-index: -1;
+  }
+
+  .blueCircle {
+    position: absolute;
+    margin-bottom: -150px;
+    margin-right: -400px;
+    width: 30%;
+    min-width: 200px;
+    max-width: 350px;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 500px) {
+  .Team {
+    .pinkCircle {
+      position: absolute;
+      margin-bottom: 50px;
+      margin-right: 400px;
+      width: 30%;
+      min-width: 200px;
+      max-width: 300px;
+      z-index: -1;
+    }
+
+    .blueCircle {
+      position: absolute;
+      margin-bottom: -150px;
+      margin-right: -400px;
+      width: 30%;
+      min-width: 200px;
+      max-width: 300px;
+      z-index: -1;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .Team {
+    .pinkCircle {
+      position: absolute;
+      margin-bottom: 50px;
+      margin-right: 500px;
+      width: 30%;
+      min-width: 220px;
+      max-width: 300px;
+      z-index: -1;
+    }
+
+    .blueCircle {
+      position: absolute;
+      margin-bottom: -150px;
+      margin-right: -500px;
+      width: 30%;
+      min-width: 220px;
+      max-width: 300px;
+      z-index: -1;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .Team {
+    .pinkCircle {
+      position: absolute;
+      margin-bottom: 50px;
+      margin-right: 600px;
+      width: 30%;
+      min-width: 220px;
+      max-width: 300px;
+      z-index: -1;
+    }
+
+    .blueCircle {
+      position: absolute;
+      margin-bottom: -150px;
+      margin-right: -600px;
+      width: 30%;
+      min-width: 220px;
+      max-width: 300px;
+      z-index: -1;
     }
   }
 }

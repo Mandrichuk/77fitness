@@ -15,7 +15,7 @@ function TeamSlider({ children }: TeamSliderProps) {
   const [slidesToShow, setSlidesToShow] = useState(2.1);
   const settings = {
     infinite: true,
-    speed: 400,
+    speed: 800,
     slidesToShow: slidesToShow,
     swipeToSlide: true,
     draggable: true,

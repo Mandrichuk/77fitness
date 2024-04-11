@@ -1,4 +1,6 @@
 .Pricing_Payment {
+  position: relative;
+  z-index: 15;
   @include Flex(column, center, center);
   width: 100%;
 
@@ -10,8 +12,8 @@
       display: none;
     }
 
-    
     .imageContainerMobile {
+      position: relative;
       overflow: hidden;
       margin-top: 40px;
       aspect-ratio: 1 / 0.6;
@@ -32,6 +34,169 @@
           margin-right: 10px;
         }
       }
+    }
+  }
+  .pinkCircle {
+    position: absolute;
+    top: 200px;
+    left: -70px;
+
+    width: 30%;
+    min-width: 200px;
+    max-width: 250px;
+    z-index: -1;
+  }
+  .blueCircle {
+    position: absolute;
+    bottom: 350px;
+    right: -70px;
+    width: 30%;
+    min-width: 200px;
+    max-width: 350px;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 550px) {
+  .Pricing_Payment {
+    .pinkCircle {
+      position: absolute;
+      top: 300px;
+      left: -70px;
+
+      width: 30%;
+      min-width: 200px;
+      max-width: 250px;
+      z-index: -1;
+    }
+    .blueCircle {
+      position: absolute;
+      bottom: 430px;
+      right: -70px;
+      width: 30%;
+      min-width: 200px;
+      max-width: 350px;
+      z-index: -1;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .Pricing_Payment {
+    .pinkCircle {
+      position: absolute;
+      top: 200px;
+      left: 500px;
+
+      width: 30%;
+      min-width: 150px;
+      max-width: 200px;
+      z-index: -1;
+    }
+    .blueCircle {
+      position: absolute;
+      bottom: 120px;
+      left: 780px;
+      width: 30%;
+      min-width: 150px;
+      max-width: 200px;
+      z-index: -1;
+    }
+  }
+}
+
+@media (min-width: 1100px) {
+  .Pricing_Payment {
+    .pinkCircle {
+      position: absolute;
+      top: 200px;
+      left: 600px;
+
+      width: 30%;
+      min-width: 150px;
+      max-width: 250px;
+      z-index: -1;
+    }
+    .blueCircle {
+      position: absolute;
+      bottom: 140px;
+      left: 850px;
+      width: 30%;
+      min-width: 150px;
+      max-width: 250px;
+      z-index: -1;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .Pricing_Payment {
+    .pinkCircle {
+      position: absolute;
+      top: 200px;
+      left: 600px;
+
+      width: 30%;
+      min-width: 150px;
+      max-width: 250px;
+      z-index: -1;
+    }
+    .blueCircle {
+      position: absolute;
+      bottom: 140px;
+      left: 960px;
+      width: 30%;
+      min-width: 150px;
+      max-width: 250px;
+      z-index: -1;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .Pricing_Payment {
+    .pinkCircle {
+      position: absolute;
+      top: 200px;
+      left: 650px;
+
+      width: 30%;
+      min-width: 150px;
+      max-width: 250px;
+      z-index: -1;
+    }
+    .blueCircle {
+      position: absolute;
+      bottom: 140px;
+      left: 1050px;
+      width: 30%;
+      min-width: 150px;
+      max-width: 250px;
+      z-index: -1;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .Pricing_Payment {
+    .pinkCircle {
+      position: absolute;
+      top: 300px;
+      left: 800px;
+
+      width: 30%;
+      min-width: 150px;
+      max-width: 250px;
+      z-index: -1;
+    }
+    .blueCircle {
+      position: absolute;
+      bottom: 200px;
+      left: 1050px;
+      width: 30%;
+      min-width: 150px;
+      max-width: 250px;
+      z-index: -1;
     }
   }
 }

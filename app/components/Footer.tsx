@@ -5,9 +5,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import Image from "./Image";
+import BluredCirlce from "./BluredCirlce";
+
 import pathIntoSegments from "../utils/pathIntoSegments";
 
-import { SVGs, footerText } from "../constants";
+import { SVGs, footerText, BluredCircleColors } from "../constants";
 import { FooterProps } from "../lib/index";
 
 function Footer({ locale }: FooterProps) {
@@ -67,6 +69,12 @@ function Footer({ locale }: FooterProps) {
             </ul>
           </div>
         </div>
+      </div>
+      <div data-anchor="footer" className="pinkCircle">
+        <BluredCirlce color={BluredCircleColors.pink} blurRange={"70"} />
+      </div>
+      <div data-anchor="footer" className="blueCircle">
+        <BluredCirlce color={BluredCircleColors.blue} blurRange={"70"} />
       </div>
     </footer>
   );

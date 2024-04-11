@@ -4,6 +4,9 @@ import { useTranslations } from "next-intl";
 
 import TextLayers from "../components/TextLayers";
 import TeamSlider from "./TeamSlider";
+import BluredCirlce from "../components/BluredCirlce";
+
+import { BluredCircleColors } from "../constants";
 
 function Team() {
   const t = useTranslations("HomePage.Team");
@@ -209,9 +212,16 @@ function Team() {
   return (
     <section className="Team" id="team">
       <TextLayers title={t("title")} bgText={t("bgText")} />
-      <div className="sliderSection">
+      <div id="sliderSection" className="sliderSection">
         <div className="wrapper">
           <TeamSlider>{teamMembers}</TeamSlider>
+        </div>
+
+        <div data-anchor="sliderSection" className="pinkCircle">
+          <BluredCirlce color={BluredCircleColors.pink} blurRange={"85"} />
+        </div>
+        <div data-anchor="sliderSection" className="blueCircle">
+          <BluredCirlce color={BluredCircleColors.blue} blurRange={"85"} />
         </div>
       </div>
     </section>

@@ -2,6 +2,10 @@ import React from "react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
+import BluredCirlce from "./BluredCirlce";
+
+import { BluredCircleColors } from "../constants";
+
 function SocialMedia() {
   const t = useTranslations("Mutual.SocialMedia");
 
@@ -22,6 +26,12 @@ function SocialMedia() {
             {t("links.link1.text")}
           </Link>
         </div>
+      </div>
+      <div data-anchor="Introduction_logoImg" className="pinkCircle">
+        <BluredCirlce color={BluredCircleColors.pink} blurRange={"70"} />
+      </div>
+      <div data-anchor="Introduction_logoImg" className="blueCircle">
+        <BluredCirlce color={BluredCircleColors.blue} blurRange={"70"} />
       </div>
     </section>
   );

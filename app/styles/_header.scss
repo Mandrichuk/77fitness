@@ -1,9 +1,12 @@
 header {
   background-color: color(primary-color);
-  z-index: 100;
   @include Flex(row, center, space-between);
   width: 100%;
   padding: 20px 30px 20px 30px;
+
+  &.open {
+    z-index: 100;
+  }
 
   .emptyLogo {
     width: 45px;
@@ -15,6 +18,7 @@ header {
     margin-left: 20px;
     transition: $transition;
     aspect-ratio: 1 / 0.9;
+    z-index: 20;
 
     &:active {
       transform: scale(0.98);
@@ -27,7 +31,7 @@ header {
 
   .logoContainer.open {
     position: fixed;
-    z-index: 10;
+    // z-index: 10;
 
     animation: appear 100ms ease-in-out;
   }
@@ -70,6 +74,7 @@ header {
 
   .screenNav {
     @include Flex(row, center, center);
+    z-index: 20;
     a {
       margin: 0 20px 0 20px;
       font-size: calc(fontSize(p) + 3px);
@@ -99,6 +104,7 @@ header {
   }
 
   .languages {
+    z-index: 20;
     margin-right: 20px;
     .current {
       @include Flex(row, center, center);
@@ -122,6 +128,7 @@ header {
     }
 
     .options {
+      z-index: 20;
       @include Flex(column, start, center);
       margin-top: 10px;
       position: absolute;

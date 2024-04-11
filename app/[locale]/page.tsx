@@ -15,23 +15,24 @@ import Application from "../home/Application";
 import Details from "../components/Details";
 import BluredCirlce from "../components/BluredCirlce";
 
+import { BluredCircleColors } from "../constants";
 import { LocaleProps } from "../lib/index";
 
 function Home({ params: { locale } }: LocaleProps) {
   return (
     <main>
       <Header locale={locale} />
-      <Introduction />
-      <Team />
-      <Gallery />
-      <SocialMedia />
-      <Details />
-      <Prices />
-      <Application />
-      <Activity />
-      <Newsletter />
-      <Footer locale={locale} />
-      <CreatedBy />
+        <Introduction />
+        <Team />
+        <Gallery />
+        <Details />
+        <SocialMedia />
+        <Prices />
+        <Application />
+        <Activity />
+        <Newsletter />
+        <Footer locale={locale} />
+        <CreatedBy />
     </main>
   );
 }

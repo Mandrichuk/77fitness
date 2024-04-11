@@ -4,6 +4,10 @@ import Link from "next/link";
 
 import Image from "../components/Image";
 
+import { BluredCircleColors } from "../constants/index";
+
+import BluredCirlce from "../components/BluredCirlce";
+
 function Application() {
   const t = useTranslations("HomePage.Application");
 
@@ -50,7 +54,7 @@ function Application() {
           </div>
         </div>
 
-        <div className="imagesContainer">
+        <div id="rightqrCodeContainer" className="imagesContainer">
           <div className="imageContainer">
             <Image
               image={t("details.Android.ImageQR.src")}
@@ -60,13 +64,19 @@ function Application() {
             />
           </div>
 
-          <div className="imageContainer">
+          <div id="leftQrCodeContainer" className="imageContainer">
             <Image
               image={t("details.IOS.ImageQR.src")}
               alt={t("details.IOS.ImageQR.alt")}
               imgQuality={100}
               imgPriority={true}
             />
+            <div data-anchor="rightqrCodeContainer" className="pinkCircle">
+              <BluredCirlce color={BluredCircleColors.pink} blurRange={"85"} />
+            </div>
+            <div data-anchor="leftQrCodeContainer" className="blueCircle">
+              <BluredCirlce color={BluredCircleColors.blue} blurRange={"85"} />
+            </div>
           </div>
         </div>
       </div>
