@@ -110,6 +110,194 @@ export const SVGs = {
       <path d="M20.0303 7.71967C20.3232 8.01256 20.3232 8.48744 20.0303 8.78033L12.5303 16.2803C12.2374 16.5732 11.7626 16.5732 11.4697 16.2803L3.96967 8.78033C3.67678 8.48744 3.67678 8.01256 3.96967 7.71967C4.26256 7.42678 4.73744 7.42678 5.03033 7.71967L12 14.6893L18.9697 7.71967C19.2626 7.42678 19.7374 7.42678 20.0303 7.71967Z" />
     </svg>
   ),
+  blueArrow: (
+    <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="36" height="36" rx="18" fill="#097FD9" />
+      <path
+        d="M20.7814 18.6666L12.6667 18.6666L12.6667 17.3333L20.7814 17.3333L17.2054 13.7573L18.148 12.8146L23.3334 18L18.148 23.1853L17.2054 22.2426L20.7814 18.6666Z"
+        fill="white"
+      />
+    </svg>
+  ),
+  tranparentArrow: (
+    <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect
+        x="35.5"
+        y="35.5"
+        width="35"
+        height="35"
+        rx="17.5"
+        transform="rotate(-180 35.5 35.5)"
+        stroke="white"
+      />
+      <path
+        d="M15.2186 17.3334L23.3333 17.3334L23.3333 18.6667L15.2186 18.6667L18.7946 22.2427L17.852 23.1854L12.6666 18L17.852 12.8147L18.7946 13.7574L15.2186 17.3334Z"
+        fill="white"
+      />
+    </svg>
+  ),
+};
+
+export const overviewText = {
+  en: {
+    text: "Our gym overview",
+    images: [
+      {
+        src: "overview/t71qmkhqaqej6mt5ip09",
+        alt: "image5",
+      },
+      {
+        src: "overview/cqxtl0sffirwbyocx1jt",
+        alt: "image2",
+      },
+      {
+        src: "overview/wbndqskiqiaa0xgcmkpi",
+        alt: "image5",
+      },
+      {
+        src: "overview/xgcauv5kdrjdkhnjf830",
+        alt: "image1",
+      },
+      {
+        src: "overview/qtdfnpvcg1olbzpbqwbo",
+        alt: "image3",
+      },
+      {
+        src: "overview/vaxrhjlrs5p2yhbgpw6n",
+        alt: "image4",
+      },
+      {
+        src: "overview/ttep9w3cbvtdrd4hatxa",
+        alt: "image5",
+      },
+      {
+        src: "overview/mm9bogcyd3malmht9uul",
+        alt: "image5",
+      },
+      {
+        src: "overview/mfa3pfyrqmn1x9udyqzh",
+        alt: "image5",
+      },
+      {
+        src: "overview/spm4lidlicptd1exwiy0",
+        alt: "image5",
+      },
+      {
+        src: "overview/pmurfer7kvjpvqinc2jf",
+        alt: "image5",
+      },
+      {
+        src: "overview/cr5mujcbqq214grek2ze",
+        alt: "image5",
+      },
+    ],
+  },
+  sk: {
+    text: "Prehľad našej telocvične",
+    images: [
+      {
+        src: "overview/t71qmkhqaqej6mt5ip09",
+        alt: "image5",
+      },
+      {
+        src: "overview/cqxtl0sffirwbyocx1jt",
+        alt: "image2",
+      },
+      {
+        src: "overview/wbndqskiqiaa0xgcmkpi",
+        alt: "image5",
+      },
+      {
+        src: "overview/xgcauv5kdrjdkhnjf830",
+        alt: "image1",
+      },
+      {
+        src: "overview/qtdfnpvcg1olbzpbqwbo",
+        alt: "image3",
+      },
+      {
+        src: "overview/vaxrhjlrs5p2yhbgpw6n",
+        alt: "image4",
+      },
+      {
+        src: "overview/ttep9w3cbvtdrd4hatxa",
+        alt: "image5",
+      },
+      {
+        src: "overview/mm9bogcyd3malmht9uul",
+        alt: "image5",
+      },
+      {
+        src: "overview/mfa3pfyrqmn1x9udyqzh",
+        alt: "image5",
+      },
+      {
+        src: "overview/spm4lidlicptd1exwiy0",
+        alt: "image5",
+      },
+      {
+        src: "overview/pmurfer7kvjpvqinc2jf",
+        alt: "image5",
+      },
+      {
+        src: "overview/cr5mujcbqq214grek2ze",
+        alt: "image5",
+      },
+    ],
+  },
+  ru: {
+    text: "Обзор нашего зала",
+    images: [
+      {
+        src: "overview/t71qmkhqaqej6mt5ip09",
+        alt: "image5",
+      },
+      {
+        src: "overview/cqxtl0sffirwbyocx1jt",
+        alt: "image2",
+      },
+      {
+        src: "overview/wbndqskiqiaa0xgcmkpi",
+        alt: "image5",
+      },
+      {
+        src: "overview/xgcauv5kdrjdkhnjf830",
+        alt: "image1",
+      },
+      {
+        src: "overview/qtdfnpvcg1olbzpbqwbo",
+        alt: "image3",
+      },
+      {
+        src: "overview/vaxrhjlrs5p2yhbgpw6n",
+        alt: "image4",
+      },
+      {
+        src: "overview/ttep9w3cbvtdrd4hatxa",
+        alt: "image5",
+      },
+      {
+        src: "overview/mm9bogcyd3malmht9uul",
+        alt: "image5",
+      },
+      {
+        src: "overview/mfa3pfyrqmn1x9udyqzh",
+        alt: "image5",
+      },
+      {
+        src: "overview/spm4lidlicptd1exwiy0",
+        alt: "image5",
+      },
+      {
+        src: "overview/pmurfer7kvjpvqinc2jf",
+        alt: "image5",
+      },
+      {
+        src: "overview/cr5mujcbqq214grek2ze",
+        alt: "image5",
+      },
+    ],
+  },
 };
 
 export const notifyNewsletterSuccess = () => {

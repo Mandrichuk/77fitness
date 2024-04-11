@@ -10,7 +10,7 @@
       "points": {
         "point1": "Hotovosť",
         "point2": "Kreditná karta, Mastercard, Visa karta",
-        "point3": "MultiSport karty a Upbalansea bez doplatku",
+        "point3": "MultiSport karty a Upbalansea s príplatkom! (Sauna 3€, Uterák 1€, Lontový Nápoj 1€)",
         "point4": "Žiadne dodatočné poplatky",
         "point5": "Všetky platby sa vykonávajú osobne na recepcií posilňovne, offline."
       }
@@ -320,7 +320,7 @@
             "alt": "trainer"
           },
           "qr": { "src": "null", "alt": "qr" },
-          "name": "Natália Zeljenkova",
+          "name": "Natália Syneková",
           "number": "+421 911 872 371",
           "email": "natali.zeljenkova@gmail.com"
         },

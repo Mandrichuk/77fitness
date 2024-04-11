@@ -10,7 +10,7 @@
       "points": {
         "point1": "Cash",
         "point2": "Credit Card, Mastercard, Visa Card",
-        "point3": "MultiSport cards and Upbalansea without extra charge",
+        "point3": "MultiSport cards and Upbalansea with extra charge! (Sauna €3, Towel €1, Lonic Drink €1)",
         "point4": "No additional fees",
         "point5": "All the payments are processed in person at the gym reception, offline."
       }
@@ -320,7 +320,7 @@
             "alt": "trainer"
           },
           "qr": { "src": "null", "alt": "qr" },
-          "name": "Natália Zeljenkova",
+          "name": "Natália Syneková",
           "number": "+421 911 872 371",
           "email": "natali.zeljenkova@gmail.com"
         },
@@ -428,7 +428,7 @@
         }
       },
       "button": {
-        "text": "Veiw more"
+        "text": "View more"
       }
     },
     "Training": {

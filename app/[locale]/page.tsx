@@ -14,6 +14,7 @@ import CreatedBy from "../components/CreatedBy";
 import Application from "../home/Application";
 import Details from "../components/Details";
 import BluredCirlce from "../components/BluredCirlce";
+import Overview from "../components/Overview";
 
 import { BluredCircleColors } from "../constants";
 import { LocaleProps } from "../lib/index";
@@ -23,6 +24,7 @@ function Home({ params: { locale } }: LocaleProps) {
     <main>
       <Header locale={locale} />
         <Introduction />
+        <Overview locale={locale} />
         <Team />
         <Gallery />
         <Details />

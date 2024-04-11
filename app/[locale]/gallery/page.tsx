@@ -24,7 +24,6 @@ function Home({ params: { locale } }: LocaleProps) {
       <Header locale={locale} />
       <PromoVideo />
       <Equipment />
-      <Waredrobe />
       <SocialMedia />
       <Training />
       <Newsletter />
