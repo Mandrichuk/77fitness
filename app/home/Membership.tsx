@@ -5,7 +5,6 @@ import { MembershipProps } from "../lib/index";
 import { SVGs } from "../constants";
 
 function Membership({ membership }: MembershipProps) {
-  console.log(membership.standOut);
 
   return (
     <div
