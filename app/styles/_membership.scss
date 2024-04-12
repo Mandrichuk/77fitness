@@ -69,7 +69,7 @@
 
     .includedList {
       .included {
-        @include Flex(row, center, start);
+        @include Flex(row, start, start);
         margin-bottom: 17px;
 
         .includedText {
@@ -78,6 +78,7 @@
           font-size: 15px;
         }
         .icon {
+          margin-top: 3px;
           width: iconSize(mobile);
           margin-right: 13px;
 
@@ -180,7 +181,7 @@
 
       .includedList {
         .included {
-          @include Flex(row, center, start);
+          @include Flex(row, start, start);
           margin-bottom: 17px;
 
           .includedText {
@@ -191,6 +192,7 @@
           .icon {
             width: iconSize(mobile);
             margin-right: 13px;
+            margin-top: 3px;
 
             svg {
               fill: color(secondary-color);
@@ -288,7 +290,7 @@
 
       .includedList {
         .included {
-          @include Flex(row, center, start);
+          @include Flex(row, start, start);
           margin-bottom: 17px;
 
           .includedText {
@@ -299,6 +301,7 @@
           .icon {
             width: iconSize(mobile);
             margin-right: 13px;
+            margin-top: 3px;
 
             svg {
               fill: color(secondary-color);
@@ -400,7 +403,7 @@
 
       .includedList {
         .included {
-          @include Flex(row, center, start);
+          @include Flex(row, start, start);
           margin-bottom: 17px;
 
           .includedText {
@@ -411,6 +414,7 @@
           .icon {
             width: iconSize(mobile);
             margin-right: 13px;
+            margin-top: 3px;
 
             svg {
               fill: color(text-color);
