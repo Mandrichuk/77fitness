@@ -140,7 +140,7 @@ export const SVGs = {
 
 export const overviewText = {
   en: {
-    text: "Our gym overview",
+    text: "Our gym images",
     images: [
       {
         src: "overview/t71qmkhqaqej6mt5ip09",
@@ -193,7 +193,7 @@ export const overviewText = {
     ],
   },
   sk: {
-    text: "Prehľad našej telocvične",
+    text: "Fotky nášho fitka",
     images: [
       {
         src: "overview/t71qmkhqaqej6mt5ip09",
@@ -246,7 +246,7 @@ export const overviewText = {
     ],
   },
   ru: {
-    text: "Обзор нашего зала",
+    text: "Фотографии нашего зала",
     images: [
       {
         src: "overview/t71qmkhqaqej6mt5ip09",
