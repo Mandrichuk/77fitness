@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     default: "Home",
     template: "%s | 77 Next Level Fitness",
   },
-  description: "77 Next Level Fitness is your new gym in Bratislava, Slovakia",
+  description: "77 NEXT LEVEL FITNESS -Vaše nové fitness centrum v centre Bratislavy na Bajkalskej 2i",
   keywords: ["Gym", "77 Next Level Fitness", "Fitness", "Bratislava"],
   robots: {
     index: true,
