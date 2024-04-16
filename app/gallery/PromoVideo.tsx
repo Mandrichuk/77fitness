@@ -17,7 +17,7 @@ function PromoVideo() {
         <div id="promoVideo" className="videoContainer">
           <iframe
             className="video"
-            src="https://www.youtube.com/embed/KSodnbXJwXQ?si=9SjucOPDDi3R7xTG"
+            src="https://www.youtube.com/embed/zQ9sLRUoQ7M?si=F5AjJYd7FlHAHyCL"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           ></iframe>
