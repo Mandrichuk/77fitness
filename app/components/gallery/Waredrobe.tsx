@@ -1,8 +1,8 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 
-import Image from "../components/Image";
-import TextLayers from "../components/TextLayers";
+import Image from "../../components/Image";
+import TextLayers from "../../components/TextLayers";
 
 function Waredrobe() {
   const t = useTranslations("GalleryPage.Waredrobe");

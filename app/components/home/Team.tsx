@@ -2,11 +2,11 @@ import React from "react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 
-import TextLayers from "../components/TextLayers";
+import TextLayers from "../../components/TextLayers";
 import TeamSlider from "./TeamSlider";
-import BluredCirlce from "../components/BluredCirlce";
+import BluredCirlce from "../../components/BluredCirlce";
 
-import { BluredCircleColors } from "../constants";
+import { BluredCircleColors } from "../../constants";
 
 function Team() {
   const t = useTranslations("HomePage.Team");

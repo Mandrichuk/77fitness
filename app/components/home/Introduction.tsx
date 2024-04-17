@@ -2,10 +2,10 @@ import React from "react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 
-import { SVGs, BluredCircleColors } from "../constants/index";
+import { SVGs, BluredCircleColors } from "../../constants/index";
 
-import BluredCirlce from "../components/BluredCirlce";
-import Image from "../components/Image";
+import BluredCirlce from "../../components/BluredCirlce";
+import Image from "../../components/Image";
 
 const promotionStyles = {
   color: "#097fd9",

@@ -1,11 +1,11 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 
-import TextLayers from "../components/TextLayers";
+import TextLayers from "../../components/TextLayers";
 
-import VideoPlayer from "../components/VideoPlayer";
-import { BluredCircleColors } from "../constants/index";
-import BluredCirlce from "../components/BluredCirlce";
+import VideoPlayer from "../../components/VideoPlayer";
+import { BluredCircleColors } from "../../constants/index";
+import BluredCirlce from "../../components/BluredCirlce";
 
 function PromoVideo() {
   const t = useTranslations("GalleryPage.Promo");

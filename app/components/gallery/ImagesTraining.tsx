@@ -1,10 +1,10 @@
 "use client";
 import React, { useEffect, useState } from "react";
 
-import Image from "../components/Image";
+import Image from "../../components/Image";
 
-import { useWindowWidth } from "../utils/useWindowWidth";
-import { ImagesTrainingProps } from "../lib";
+import { useWindowWidth } from "../../utils/useWindowWidth";
+import { ImagesTrainingProps } from "../../lib";
 
 function ImagesTraining({ images, buttonText }: ImagesTrainingProps) {
   const windowWidth = useWindowWidth();

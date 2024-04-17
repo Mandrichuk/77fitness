@@ -1,9 +1,9 @@
 "use client";
 import React, { useState, useEffect } from "react";
 
-import Image from "../components/Image";
+import Image from "../../components/Image";
 
-import { ImageProps } from "../lib";
+import { ImageProps } from "../../lib";
 
 function ImagesEquipment({
   additionalImages,

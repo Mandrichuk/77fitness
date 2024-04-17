@@ -1,8 +1,8 @@
 import React from "react";
 import Link from "next/link";
 
-import { MembershipProps } from "../lib/index";
-import { SVGs } from "../constants";
+import { MembershipProps } from "../../lib/index";
+import { SVGs } from "../../constants";
 
 function Membership({ membership }: MembershipProps) {
 

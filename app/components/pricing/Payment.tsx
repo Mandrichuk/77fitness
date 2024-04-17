@@ -1,11 +1,11 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 
-import TextLayers from "../components/TextLayers";
-import { SVGs } from "../constants";
-import Image from "../components/Image";
-import { BluredCircleColors } from "../constants/index";
-import BluredCirlce from "../components/BluredCirlce";
+import TextLayers from "../../components/TextLayers";
+import { SVGs } from "../../constants";
+import Image from "../../components/Image";
+import { BluredCircleColors } from "../../constants/index";
+import BluredCirlce from "../../components/BluredCirlce";
 
 function Payment() {
   const t = useTranslations("PricingPage.Payment");
@@ -23,7 +23,7 @@ function Payment() {
       <TextLayers bgText={t("bgText")} title={t("title")} />
 
       <div className="wrapper">
-        <div  className="imageContainerMobile">
+        <div className="imageContainerMobile">
           <Image
             image={t("image.src")}
             alt={t("image.alt")}

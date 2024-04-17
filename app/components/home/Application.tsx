@@ -2,11 +2,11 @@ import React from "react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
-import Image from "../components/Image";
+import Image from "../../components/Image";
 
-import { BluredCircleColors } from "../constants/index";
+import { BluredCircleColors } from "../../constants/index";
 
-import BluredCirlce from "../components/BluredCirlce";
+import BluredCirlce from "../../components/BluredCirlce";
 
 function Application() {
   const t = useTranslations("HomePage.Application");

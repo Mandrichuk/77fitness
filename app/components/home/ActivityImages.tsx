@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from "react";
 
-import { ScrollImagesProps } from "../lib/index";
-import Image from "../components/Image";
-import { SVGs } from "../constants";
+import { ScrollImagesProps } from "../../lib/index";
+import Image from "../../components/Image";
+import { SVGs } from "../../constants";
 
 function ActivityImages({ images }: ScrollImagesProps) {
   const [imageToReveal, setImageToReveal] = useState(0);

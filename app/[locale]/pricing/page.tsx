@@ -5,7 +5,7 @@ import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
 import Newsletter from "@/app/components/Newsletter";
 import CreatedBy from "@/app/components/CreatedBy";
-import Payment from "@/app/pricing/Payment";
+import Payment from "@/app/components/pricing/Payment";
 import Prices from "@/app/components/Prices";
 
 import { LocaleProps } from "../../lib/index";
