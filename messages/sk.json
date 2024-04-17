@@ -379,7 +379,7 @@
     },
     "Equipment": {
       "bgText": "Vybavenie",
-      "title": "Posilňovacie zariadenia",
+      "title": "Zariadenia",
       "description": "Máme všetko vybavenie, ktoré potrebujete na to, aby ste dosiahli maximum zo svojho tréningu. Máme všetko, čo potrebujete na dosiahnutie svojich fitness cieľov.",
       "images": {
         "image1": {
@@ -466,8 +466,8 @@
     },
     "CreatedBy": {
       "year": "2024",
-      "text": "Vytvorila",
-      "creator": "Agentúra Now&Here",
+      "text": "Vytvorené s pomocou",
+      "creator": "Now&Here",
       "link": "https://nowandhere.agency/"
     }
   }

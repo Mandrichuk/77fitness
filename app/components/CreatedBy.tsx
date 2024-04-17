@@ -16,8 +16,8 @@ function CreatedBy() {
         </div>
         <div className="creator">
           {t("text")}
+          &nbsp;
           <Link className="link" href={t("link")} target="_blank">
-            {" "}
             {t("creator")}
           </Link>
         </div>

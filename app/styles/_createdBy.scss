@@ -7,7 +7,7 @@
     padding: 20px;
     @include Flex(row, center, space-between);
     width: wrapperWidth(mobile);
-  
+
     .date {
       @include Flex(row, center, center);
 

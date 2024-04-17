@@ -57,6 +57,22 @@
             }
           }
         }
+
+        .sosialsUl {
+          @include Flex(row, center, start);
+          gap: 10px;
+          .linkContainer {
+            a {
+              font-size: calc(fontSize(p) + 1px);
+              background-color: red;
+
+              svg {
+                fill: white;
+                width: calc(iconSize(mobile) + 2px);
+              }
+            }
+          }
+        }
       }
     }
   }

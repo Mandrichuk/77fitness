@@ -56,7 +56,7 @@ function Footer({ locale }: FooterProps) {
           </div>
           <div className="detail">
             <p className="title">{t.socials.title}</p>
-            <ul>
+            <ul className="sosialsUl">
               {t.socials.links.map((i) => (
                 <div key={i.link} className="linkContainer">
                   {i.icon && (
