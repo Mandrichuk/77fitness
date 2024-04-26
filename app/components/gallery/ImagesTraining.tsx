@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 
-import Image from "../../components/Image";
+import Image from "../common/Image";
 
 import { useWindowWidth } from "../../utils/useWindowWidth";
 import { ImagesTrainingProps } from "../../lib";

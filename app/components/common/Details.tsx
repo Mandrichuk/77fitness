@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 
-import { SVGs } from "../constants";
+import { SVGs } from "../../constants";
 
 function Details() {
   const t = useTranslations("HomePage.Details");

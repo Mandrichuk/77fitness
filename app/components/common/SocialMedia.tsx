@@ -4,7 +4,7 @@ import Link from "next/link";
 
 import BluredCirlce from "./BluredCirlce";
 
-import { BluredCircleColors } from "../constants";
+import { BluredCircleColors } from "../../constants";
 
 function SocialMedia() {
   const t = useTranslations("Mutual.SocialMedia");

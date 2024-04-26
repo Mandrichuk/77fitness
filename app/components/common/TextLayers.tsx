@@ -1,6 +1,6 @@
 import React from "react";
 
-import { TextLayersProps } from "../lib/index";
+import { TextLayersProps } from "../../lib/index";
 
 function TextLayers({ bgText, title }: TextLayersProps) {
   return (

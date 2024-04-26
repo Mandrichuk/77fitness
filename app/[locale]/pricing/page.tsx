@@ -1,12 +1,12 @@
 import React from "react";
 import { Metadata } from "next";
 
-import Header from "@/app/components/Header";
-import Footer from "@/app/components/Footer";
-import Newsletter from "@/app/components/Newsletter";
-import CreatedBy from "@/app/components/CreatedBy";
+import Header from "@/app/components/common/Header";
+import Footer from "@/app/components/common/Footer";
+import Newsletter from "@/app/components/common/Newsletter";
+import CreatedBy from "@/app/components/common/CreatedBy";
 import Payment from "@/app/components/pricing/Payment";
-import Prices from "@/app/components/Prices";
+import Prices from "@/app/components/common/Prices";
 
 import { LocaleProps } from "../../lib/index";
 

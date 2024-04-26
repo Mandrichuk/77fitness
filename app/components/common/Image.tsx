@@ -2,8 +2,8 @@
 import React, { useState } from "react";
 import { CldImage } from "next-cloudinary";
 
-import { CLOUDINARY_FOLDER } from "../constants";
-import { type ImageProps } from "../lib/index";
+import { CLOUDINARY_FOLDER } from "../../constants";
+import { type ImageProps } from "../../lib/index";
 
 function Image({ image, alt, imgQuality, imgPriority }: ImageProps) {
   const [isLoading, setIsLoading] = useState<boolean>(true);

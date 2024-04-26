@@ -3,8 +3,8 @@ import React from "react";
 import Link from "next/link";
 import "./styles/globals.scss";
 
-import Image from "./components/Image";
-import Header from "./components/Header";
+import Image from "./components/common/Image";
+import Header from "./components/common/Header";
 
 import { LocaleProps } from "./lib/index";
 import { notFoundText } from "./constants";

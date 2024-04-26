@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
-import TextLayers from "../../components/TextLayers";
+import TextLayers from "../common/TextLayers";
 import ActivityImages from "./ActivityImages";
 
 import { SVGs } from "../../constants";

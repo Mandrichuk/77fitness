@@ -2,9 +2,9 @@ import React from "react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 
-import TextLayers from "../../components/TextLayers";
+import TextLayers from "../common/TextLayers";
 import TeamSlider from "./TeamSlider";
-import BluredCirlce from "../../components/BluredCirlce";
+import BluredCirlce from "../common/BluredCirlce";
 
 import { BluredCircleColors } from "../../constants";
 

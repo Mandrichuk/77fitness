@@ -7,10 +7,10 @@ import { usePathname } from "next/navigation";
 import Image from "./Image";
 import BluredCirlce from "./BluredCirlce";
 
-import pathIntoSegments from "../utils/pathIntoSegments";
+import pathIntoSegments from "../../utils/pathIntoSegments";
 
-import { SVGs, footerText, BluredCircleColors } from "../constants";
-import { FooterProps } from "../lib/index";
+import { SVGs, footerText, BluredCircleColors } from "../../constants";
+import { FooterProps } from "../../lib/index";
 
 function Footer({ locale }: FooterProps) {
   const pathname = usePathname();

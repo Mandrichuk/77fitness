@@ -7,8 +7,8 @@ import {
   notifyNewsletterSuccess,
   notifyNewsletterError,
   notifyExistsNewsletterError,
-} from "../constants";
-import { InputNewsletterProps } from "../lib/index";
+} from "../../constants";
+import { InputNewsletterProps } from "../../lib/index";
 
 function InputNewsletter({
   placeholderText,

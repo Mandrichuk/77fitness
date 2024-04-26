@@ -4,8 +4,8 @@ import { useTranslations } from "next-intl";
 
 import { SVGs, BluredCircleColors } from "../../constants/index";
 
-import BluredCirlce from "../../components/BluredCirlce";
-import Image from "../../components/Image";
+import BluredCirlce from "../common/BluredCirlce";
+import Image from "../common/Image";
 
 const promotionStyles = {
   color: "#097fd9",

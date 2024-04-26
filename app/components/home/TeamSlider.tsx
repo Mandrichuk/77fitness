@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-import Image from "../../components/Image";
+import Image from "../common/Image";
 
 import { TeamSliderProps } from "../../lib/index";
 import { CLOUDINARY_FOLDER } from "../../constants/index";

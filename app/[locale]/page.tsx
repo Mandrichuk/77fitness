@@ -2,18 +2,18 @@ import React from "react";
 import { useTranslations } from "next-intl";
 
 import Activity from "../components/home/Activity";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../components/common/Header";
+import Footer from "../components/common/Footer";
 import Introduction from "../components/home/Introduction";
 import Gallery from "../components/home/Gallery";
-import Newsletter from "../components/Newsletter";
-import Prices from "../components/Prices";
-import SocialMedia from "../components/SocialMedia";
+import Newsletter from "../components/common/Newsletter";
+import Prices from "../components/common/Prices";
+import SocialMedia from "../components/common/SocialMedia";
 import Team from "../components/home/Team";
-import CreatedBy from "../components/CreatedBy";
+import CreatedBy from "../components/common/CreatedBy";
 import Application from "../components/home/Application";
-import Details from "../components/Details";
-import Overview from "../components/Overview";
+import Details from "../components/common/Details";
+import Overview from "../components/common/Overview";
 
 import { BluredCircleColors } from "../constants";
 import { LocaleProps } from "../lib/index";

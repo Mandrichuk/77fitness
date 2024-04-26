@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 
-import Membership from "../components/home/Membership";
+import Membership from "../home/Membership";
 
 function Prices() {
   const t = useTranslations("HomePage.Prices");

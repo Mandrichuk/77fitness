@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
-import { SVGs } from "../constants";
+import { SVGs } from "../../constants";
 
 function CreatedBy() {
   const t = useTranslations("Mutual.CreatedBy");

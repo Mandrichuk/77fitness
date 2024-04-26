@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 
-import { SVGs, overviewText } from "../constants";
+import { SVGs, overviewText } from "../../constants";
 import Image from "./Image";
 
 function Overview({ locale }: { locale: "en" | "ru" | "sk" }) {

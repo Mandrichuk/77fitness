@@ -2,10 +2,10 @@ import React from "react";
 import { useTranslations } from "next-intl";
 
 import { splitArrayIntoTwo } from "../../utils/splitArrayIntoTwo";
-import TextLayers from "../../components/TextLayers";
+import TextLayers from "../common/TextLayers";
 
 import ImagesEquipment from "./ImagesEquipment";
-import Image from "../../components/Image";
+import Image from "../common/Image";
 
 function Equipment() {
   const t = useTranslations("GalleryPage.Equipment");

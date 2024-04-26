@@ -1,6 +1,6 @@
 import React from "react";
 
-import { BluredCircleProps } from "../lib/index";
+import { BluredCircleProps } from "../../lib/index";
 
 function BluredCirlce({ color, blurRange }: BluredCircleProps) {
   return (

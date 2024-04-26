@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
-import Image from "../../components/Image";
+import Image from "../common/Image";
 import { SVGs } from "../../constants";
 
 const brand1Styles = {

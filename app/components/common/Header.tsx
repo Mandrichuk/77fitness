@@ -4,11 +4,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "./Image";
 
-import { SVGs, headerText, homepagePaths } from "../constants";
-import pathIntoSegments from "../utils/pathIntoSegments";
-import { useWindowWidth } from "../utils/useWindowWidth";
-import { HeaderProps } from "../lib/index";
-import { toUpperCase } from "../utils/toUpperCase";
+import { SVGs, headerText, homepagePaths } from "../../constants";
+import pathIntoSegments from "../../utils/pathIntoSegments";
+import { useWindowWidth } from "../../utils/useWindowWidth";
+import { HeaderProps } from "../../lib/index";
+import { toUpperCase } from "../../utils/toUpperCase";
 
 function Header({ locale }: HeaderProps) {
   const pathname = usePathname();

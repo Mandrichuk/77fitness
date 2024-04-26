@@ -1,11 +1,11 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 
-import TextLayers from "../../components/TextLayers";
+import TextLayers from "../common/TextLayers";
 import { SVGs } from "../../constants";
-import Image from "../../components/Image";
+import Image from "../common/Image";
 import { BluredCircleColors } from "../../constants/index";
-import BluredCirlce from "../../components/BluredCirlce";
+import BluredCirlce from "../common/BluredCirlce";
 
 function Payment() {
   const t = useTranslations("PricingPage.Payment");
