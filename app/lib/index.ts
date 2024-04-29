@@ -62,6 +62,8 @@ export interface FooterProps extends Language {}
 
 export interface HeadProps extends Language {}
 
+export interface ProductsSectionsProps extends Language {}
+
 export interface LocaleProps {
   params: {
     locale: "en" | "sk" | "ru";

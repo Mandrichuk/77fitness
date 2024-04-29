@@ -89,6 +89,7 @@
       text-align: center;
       background-color: color(secondary-color);
       border-radius: 12px;
+      max-width: 1256px;
       padding: 10px;
       margin-bottom: 25px;
 
@@ -112,7 +113,7 @@
 
       .arrowLeft,
       .arrowRight {
-        height: 40px;
+        height: 60px;
         aspect-ratio: 1 / 1;
         cursor: pointer;
         position: absolute;
@@ -129,7 +130,7 @@
         left: 0;
       }
       .arrowRight {
-        right: -40px;
+        right: -60px;
       }
     }
   }
