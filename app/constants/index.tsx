@@ -6,6 +6,7 @@ import {
   FooterTextProps,
   NotFoundTextProps,
   LocationTextProps,
+  ShopHeadTextProps,
   BluredCircleColorsProps,
 } from "../lib/index";
 import logo from "@/public/assets/logo.png";
@@ -130,6 +131,16 @@ export const SVGs = {
   arrowDown: (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
       <path d="M20.0303 7.71967C20.3232 8.01256 20.3232 8.48744 20.0303 8.78033L12.5303 16.2803C12.2374 16.5732 11.7626 16.5732 11.4697 16.2803L3.96967 8.78033C3.67678 8.48744 3.67678 8.01256 3.96967 7.71967C4.26256 7.42678 4.73744 7.42678 5.03033 7.71967L12 14.6893L18.9697 7.71967C19.2626 7.42678 19.7374 7.42678 20.0303 7.71967Z" />
+    </svg>
+  ),
+  blueRotatedArrow: (
+    <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="36" height="36" rx="18" fill="#097FD9" />
+      <path
+        d="M20.7814 18.6666L12.6667 18.6666L12.6667 17.3333L20.7814 17.3333L17.2054 13.7573L18.148 12.8146L23.3334 18L18.148 23.1853L17.2054 22.2426L20.7814 18.6666Z"
+        fill="white"
+        transform="rotate(180 18 18)"
+      />
     </svg>
   ),
   blueArrow: (
@@ -629,6 +640,36 @@ export const notFoundText: NotFoundTextProps = {
     button: {
       text: "Вернуться",
       link: "/",
+    },
+  },
+};
+
+export const ShopHeadText: ShopHeadTextProps = {
+  en: {
+    title: "Explore Our Premium Product Range",
+    announcement:
+      "Sign up for our loyalty program Collect points and shop at 77 Fitness for up to 20% off",
+    bannerImage: {
+      image: "shop/SK_rotator_2024_apr_1120x502_1-15_1_qeokvd",
+      alt: "banner",
+    },
+  },
+  sk: {
+    title: "Preskúmajte náš sortiment prémiových produktov",
+    announcement:
+      "Zaregistrujte sa do nášho vernostného programu, zbierajte body a nakupujte v 77 Fitness so zľavou až do 20 %",
+    bannerImage: {
+      image: "shop/SK_rotator_2024_apr_1120x502_1-15_1_qeokvd",
+      alt: "banner",
+    },
+  },
+  ru: {
+    title: "Исследуйте наш ассортимент премиум-продукции",
+    announcement:
+      "Подпишитесь на нашу программу лояльности, собирайте баллы и покупайте в 77 Fitness со скидкой до 20 %",
+    bannerImage: {
+      image: "shop/SK_rotator_2024_apr_1120x502_1-15_1_qeokvd",
+      alt: "баннер",
     },
   },
 };

@@ -60,6 +60,8 @@ export interface HeaderProps extends Language {}
 
 export interface FooterProps extends Language {}
 
+export interface HeadProps extends Language {}
+
 export interface LocaleProps {
   params: {
     locale: "en" | "sk" | "ru";
@@ -219,4 +221,22 @@ export interface BluredCircleProps {
 export interface BluredCircleColorsProps {
   pink: string;
   blue: string;
+}
+
+export interface ShopHeadTextProps {
+  en: {
+    title: string;
+    announcement: string;
+    bannerImage: ImageProps;
+  };
+  sk: {
+    title: string;
+    announcement: string;
+    bannerImage: ImageProps;
+  };
+  ru: {
+    title: string;
+    announcement: string;
+    bannerImage: ImageProps;
+  };
 }

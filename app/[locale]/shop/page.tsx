@@ -3,11 +3,9 @@ import { Metadata } from "next";
 
 import Header from "@/app/components/common/Header";
 import Footer from "@/app/components/common/Footer";
-import Newsletter from "@/app/components/common/Newsletter";
 import CreatedBy from "@/app/components/common/CreatedBy";
-import Payment from "@/app/components/pricing/Payment";
-import Prices from "@/app/components/common/Prices";
-
+import Newsletter from "@/app/components/common/Newsletter";
+import Head from "@/app/components/shop/Head";
 import { LocaleProps } from "../../lib/index";
 
 export const metadata: Metadata = {
@@ -18,6 +16,8 @@ function Home({ params: { locale } }: LocaleProps) {
   return (
     <main>
       <Header locale={locale} />
+      <Head  locale={locale} />
+      <Newsletter />
       <Footer locale={locale} />
       <CreatedBy />
     </main>

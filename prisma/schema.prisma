@@ -18,3 +18,51 @@ model Email {
   email String   @unique
   date  DateTime @default(now())
 }
+
+model Product {
+  id            Int                @id @default(autoincrement())
+  sku           String             @unique
+  name          String
+  categoryId    Int
+  description   ProductDescription @relation(fields: [descriptionId], references: [id])
+  images        ProductImage[]
+  newPrice      Float
+  oldPrice      Float
+  createdAt     DateTime           @default(now())
+  toDisplay     Boolean            @default(true)
+  leftInStock   Int
+  descriptionId Int
+}
+
+model ProductDescription {
+  id      Int       @id @default(autoincrement())
+  en      String
+  ru      String
+  sk      String
+  product Product[]
+}
+
+model ProductImage {
+  id        Int     @id @default(autoincrement())
+  url       String
+  productId Int
+  product   Product @relation(fields: [productId], references: [id])
+}
+
+model Category {
+  id                    Int                 @id @default(autoincrement())
+  sku                   String              @unique
+  name                  String
+  description           CategoryDescription @relation(fields: [categoryDescriptionId], references: [id])
+  recomended            Boolean
+  categoryDescriptionId Int
+  toDisplay             Boolean             @default(true)
+}
+
+model CategoryDescription {
+  id       Int        @id @default(autoincrement())
+  en       String
+  ru       String
+  sk       String
+  category Category[]
+}
