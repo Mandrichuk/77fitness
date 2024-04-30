@@ -12,6 +12,7 @@ export async function GET(request: NextRequest) {
   return NextResponse.json({
     categories: categories,
   });
+
 }
 
 export async function POST(request: NextRequest) {
@@ -40,11 +41,18 @@ export async function POST(request: NextRequest) {
     data: {
       sku: body.sku,
       name: body.name,
-      description: {
+      bgText: {
         create: {
-          en: body.description.en,
-          ru: body.description.ru,
-          sk: body.description.sk,
+          en: body.bgText.en,
+          ru: body.bgText.ru,
+          sk: body.bgText.sk,
+        },
+      },
+      title: {
+        create: {
+          en: body.title.en,
+          ru: body.title.ru,
+          sk: body.title.sk,
         },
       },
       recomended: body.recomended,

@@ -3,24 +3,29 @@ import prisma from "@/prisma/client";
 
 export async function GET(request: NextRequest) {
   try {
+    const categories = await prisma.category.findMany({
+      include: {
+        bgText: true,
+        title: true,
+      },
+    });
+
     const data = await Promise.all(
-      (
-        await prisma.categoryDescription.findMany()
-      ).map(async (description) => {
+      categories.map(async (category) => {
         const products = await prisma.product.findMany({
           where: {
-            categoryId: description.id,
+            categoryId: category.id,
           },
           include: {
             description: true,
             images: true,
           },
         });
-        return { description, products };
+        return { category, products };
       })
     );
 
-    return NextResponse.json( data);
+    return NextResponse.json(data);
   } catch (error) {
     console.error("Error:", error);
     return NextResponse.json(

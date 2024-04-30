@@ -3,8 +3,10 @@ import React, { useState, useEffect } from "react";
 import Image from "../common/Image";
 import TextLayers from "../common/TextLayers";
 import { ProductsSectionsProps } from "../../lib";
+import { ProductsSectionsText } from "../../constants";
 
 function ProductsSections({ locale }: ProductsSectionsProps) {
+  const t = ProductsSectionsText[locale] || ProductsSectionsText["en"];
   const [data, setData] = useState<any>(null);
 
   useEffect(() => {
@@ -21,7 +23,9 @@ function ProductsSections({ locale }: ProductsSectionsProps) {
     fetchData();
   }, []);
 
-  console.log(data);
+  if (data) {
+    console.log(data[0].products[0].images[0].url);
+  }
 
   if (!data) {
     return (
@@ -33,29 +37,68 @@ function ProductsSections({ locale }: ProductsSectionsProps) {
 
   return (
     <section className="ProductsSectionsSection">
-      <div className="wrapper">
-        <div className="content">
-          {data.map((item: any, index: number) => (
-            <div className="section">
+      <div className="content">
+        {data.map((item: any, index: number) => (
+          <div className="section" key={`section-${index}`}>
+            <div className="textLayer">
               <TextLayers
                 bgText={
-                  item.description ? item.description[locale] : "Not Found"
+                  item.category.bgText
+                    ? item.category.bgText[locale]
+                    : "Not Found"
                 }
-                title={"product"}
+                title={
+                  item.category.title
+                    ? item.category.title[locale]
+                    : "Not Found"
+                }
               />
-              {/* <h3 className="title">{item.title}</h3>
-              <p className="description">{item.description}</p>
-              <div className="imageContainer">
-                <Image
-                  image={item.image.image}
-                  alt={item.image.alt}
-                  imgQuality={100}
-                  imgPriority={false}
-                />
-              </div> */}
             </div>
-          ))}
-        </div>
+            <div className="wrapper">
+              <div className="productsGrid">
+                {item.products.map((product: any, index: number) => (
+                  <div className={`product`} key={`product-${index}`}>
+                    {product.images.map((image: any, index: number) => (
+                      <div className="imageBox" key={`image-${index}`}>
+                        <div className="imageContainer">
+                          <Image
+                            image={`/shop/${image.url}`}
+                            alt={"image"}
+                            imgQuality={100}
+                          />
+                        </div>
+                      </div>
+                    ))}
+                    <div className="details">
+                      <p className="title">
+                        {item.category.title
+                          ? item.category.title[locale]
+                          : "Not Found"}
+                      </p>
+                      <p className="name">{product.name}</p>
+                      <p className="description">
+                        {product.description
+                          ? product.description[locale]
+                          : "Not Found"}
+                      </p>
+                      <div className="cart">
+                        <div className="prices">
+                          <p className="newPrice">{product.newPrice}€</p>
+                          {product.oldPrice && (
+                            <p className="oldPrice">{product.oldPrice}€</p>
+                          )}
+                        </div>
+                        <div className="buttonContainer">
+                          <button className="button">{t.button.text}</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );

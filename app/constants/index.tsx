@@ -673,3 +673,14 @@ export const ShopHeadText: ShopHeadTextProps = {
     },
   },
 };
+
+export const ProductsSectionsText = {
+  en: {
+    button: {
+      text: "Add",
+      link: "/shop",
+    },
+  },
+  sk: { button: { text: "Pridat", link: "/shop" } },
+  ru: { button: { text: "Добавить", link: "/shop" } },
+};

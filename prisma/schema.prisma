@@ -50,16 +50,26 @@ model ProductImage {
 }
 
 model Category {
-  id                    Int                 @id @default(autoincrement())
-  sku                   String              @unique
-  name                  String
-  description           CategoryDescription @relation(fields: [categoryDescriptionId], references: [id])
-  recomended            Boolean
-  categoryDescriptionId Int
-  toDisplay             Boolean             @default(true)
+  id               Int            @id @default(autoincrement())
+  sku              String         @unique
+  name             String
+  bgText           CategoryBgText @relation(fields: [categoryBgTextId], references: [id])
+  title            CategoryTitle  @relation(fields: [categoryTitleId], references: [id])
+  recomended       Boolean
+  toDisplay        Boolean        @default(true)
+  categoryBgTextId Int
+  categoryTitleId  Int
 }
 
-model CategoryDescription {
+model CategoryBgText {
+  id       Int        @id @default(autoincrement())
+  en       String
+  ru       String
+  sk       String
+  category Category[]
+}
+
+model CategoryTitle {
   id       Int        @id @default(autoincrement())
   en       String
   ru       String
