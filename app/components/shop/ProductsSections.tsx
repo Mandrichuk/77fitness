@@ -34,6 +34,14 @@ function ProductsSections({ locale, sku }: ProductSectionProps) {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    if (data && data.error) {
+      if (typeof window !== "undefined") {
+        window.location.href = "/shop";
+      }
+    }
+  }, [data]);
+
   if (!data) {
     return (
       <div className="flex flex-row items-center justify-center">
