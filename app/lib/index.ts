@@ -280,11 +280,14 @@ export interface CategoriesTextProps {
 export interface ProductsSectionsTextProps {
   en: {
     button: Link;
+    notify: string;
   };
   sk: {
     button: Link;
+    notify: string;
   };
   ru: {
     button: Link;
+    notify: string;
   };
 }

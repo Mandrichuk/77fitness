@@ -7,6 +7,8 @@ import { ProductsSectionsText } from "../../constants";
 import { ProductSectionProps } from "../../lib/index";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "@/app/store/store";
+import { toast, ToastContainer } from "react-toastify";
+
 import {
   addOneToCart,
   removeOneFromCart,
@@ -19,7 +21,6 @@ function ProductsSections({ locale, sku }: ProductSectionProps) {
   const [data, setData] = useState<any>(null);
   const cart = useSelector((state: RootState) => state.cart.value);
   const dispatch = useDispatch();
-
 
   function addOneProduct(sku: string) {
     dispatch(addOneToCart(sku));
@@ -37,7 +38,16 @@ function ProductsSections({ locale, sku }: ProductSectionProps) {
     dispatch(emptyCart());
   }
 
-  console.log(cart);
+  const notifyAddedToCart = () => {
+    toast.success(t.notify, {
+      position: "top-right",
+      autoClose: 1300,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      theme: "dark"
+    });
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -135,7 +145,15 @@ function ProductsSections({ locale, sku }: ProductSectionProps) {
                             )}
                           </div>
                           <div className="buttonContainer">
-                            <button className="button">{t.button.text}</button>
+                            <button
+                              onClick={() => {
+                                addOneProduct(product.sku);
+                                notifyAddedToCart();
+                              }}
+                              className="button"
+                            >
+                              {t.button.text}
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -146,6 +164,7 @@ function ProductsSections({ locale, sku }: ProductSectionProps) {
             </div>
           ))}
       </div>
+      <ToastContainer />
     </section>
   );
 }

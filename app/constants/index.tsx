@@ -704,12 +704,20 @@ export const ProductsSectionsText: ProductsSectionsTextProps = {
       text: "Add",
       link: "/shop",
     },
+    notify: "Product added to your cart",
   },
   sk: {
-    button: { text: "Pridat", link: "/shop" },
+    button: {
+      text: "Pridať",
+      link: "/obchod",
+    },
+    notify: "Produkt pridán do vašeho kosíka",
   },
-
   ru: {
-    button: { text: "Добавить", link: "/shop" },
+    button: {
+      text: "Добавить",
+      link: "/магазин",
+    },
+    notify: "Товар добавлен в вашу корзину",
   },
 };
