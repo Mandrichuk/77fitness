@@ -64,10 +64,24 @@ export interface HeadProps extends Language {}
 
 export interface ProductsSectionsProps extends Language {}
 
-export interface CategoriesProps extends Language {}
+export interface CategoriesProps extends Language {
+  sku: string | null;
+}
+
+export interface ProductSectionProps extends Language {
+  sku: string | null;
+}
+
 
 export interface LocaleProps {
   params: {
+    locale: "en" | "sk" | "ru";
+  };
+}
+
+export interface ShopSkuProps {
+  params: {
+    sku?: string | null ;
     locale: "en" | "sk" | "ru";
   };
 }

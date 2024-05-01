@@ -5,10 +5,9 @@ import Link from "next/link";
 import { CategoriesText } from "../../constants/index";
 import { CategoriesProps } from "../../lib/index";
 
-function Categories({ locale }: CategoriesProps) {
+function Categories({ locale, sku }: CategoriesProps) {
   const [data, setData] = useState<any>(null);
   const t = CategoriesText[locale] || CategoriesText["en"];
-
 
   useEffect(() => {
     const fetchData = async () => {
@@ -36,18 +35,18 @@ function Categories({ locale }: CategoriesProps) {
     <section className="ShopCategories">
       <div className="wrapper">
         <div className="categoriesContainer">
-          <Link href={t.mainSection.text} className="categoryContainer">
+          <Link href={"/shop"} className="categoryContainer">
             <p className="text">{toUpperCase(t.mainSection.text)}</p>
-            <div className="underline" />
+            {!sku && <div className="underline" />}
           </Link>
           {data.map((item: any, index: number) => (
             <Link
-              href={`/shop/${item.sku}`}
+              href={`/shop/category/${item.sku}`}
               className="categoryContainer"
               key={index}
             >
               <p className="text">{toUpperCase(item.name)}</p>
-              {/* <div className="underline" /> */}
+              {sku === item.sku && <div className="underline" />}
             </Link>
           ))}
         </div>
