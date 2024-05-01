@@ -8,7 +8,10 @@ import {
   LocationTextProps,
   ShopHeadTextProps,
   BluredCircleColorsProps,
+  CategoriesTextProps,
+  ProductsSectionsTextProps,
 } from "../lib/index";
+
 import logo from "@/public/assets/logo.png";
 
 const images = {
@@ -674,13 +677,39 @@ export const ShopHeadText: ShopHeadTextProps = {
   },
 };
 
-export const ProductsSectionsText = {
+export const CategoriesText: CategoriesTextProps = {
+  en: {
+    mainSection: {
+      text: "The Most Popular",
+      link: "/shop",
+    },
+  },
+  sk: {
+    mainSection: {
+      text: "Najpopulačné",
+      link: "/shop",
+    },
+  },
+  ru: {
+    mainSection: {
+      text: "Самое популярное",
+      link: "/shop",
+    },
+  },
+};
+
+export const ProductsSectionsText: ProductsSectionsTextProps = {
   en: {
     button: {
       text: "Add",
       link: "/shop",
     },
   },
-  sk: { button: { text: "Pridat", link: "/shop" } },
-  ru: { button: { text: "Добавить", link: "/shop" } },
+  sk: {
+    button: { text: "Pridat", link: "/shop" },
+  },
+
+  ru: {
+    button: { text: "Добавить", link: "/shop" },
+  },
 };

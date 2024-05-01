@@ -2,9 +2,13 @@
 import React, { useEffect, useState } from "react";
 import { toUpperCase } from "@/app/utils/toUpperCase";
 import Link from "next/link";
+import { CategoriesText } from "../../constants/index";
+import { CategoriesProps } from "../../lib/index";
 
-function Categories() {
+function Categories({ locale }: CategoriesProps) {
   const [data, setData] = useState<any>(null);
+  const t = CategoriesText[locale] || CategoriesText["en"];
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -32,6 +36,10 @@ function Categories() {
     <section className="ShopCategories">
       <div className="wrapper">
         <div className="categoriesContainer">
+          <Link href={t.mainSection.text} className="categoryContainer">
+            <p className="text">{toUpperCase(t.mainSection.text)}</p>
+            <div className="underline" />
+          </Link>
           {data.map((item: any, index: number) => (
             <Link
               href={`/shop/${item.sku}`}
@@ -39,7 +47,7 @@ function Categories() {
               key={index}
             >
               <p className="text">{toUpperCase(item.name)}</p>
-              <div className="underline" />
+              {/* <div className="underline" /> */}
             </Link>
           ))}
         </div>

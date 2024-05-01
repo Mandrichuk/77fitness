@@ -36,7 +36,7 @@
     .imageContainer {
       width: 94%;
       background-color: lightblue;
-      aspect-ratio: 1 / 0.45;
+      aspect-ratio: 191/252;
       border-radius: 8px;
       position: relative;
     }
@@ -61,6 +61,75 @@
     }
     .arrowRight {
       right: -40px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .shopHead {
+    @include Flex(column, center, center);
+    width: 100%;
+    margin-top: 30px;
+
+    .wrapperTitle {
+      @include Flex(column, center, center);
+      width: wrapperWidth(mobile);
+
+      .title {
+        font-size: calc(fontSize(h2) - 10px);
+        font-weight: fontWeight(semibold);
+        margin-bottom: 40px;
+        text-align: center;
+      }
+    }
+
+    .announcementContainer {
+      @include Flex(column, center, center);
+      width: 100%;
+      text-align: center;
+      background-color: color(secondary-color);
+      padding: 10px;
+      margin-bottom: 25px;
+
+      .text {
+        font-size: calc(fontSize(p) + 3px);
+        font-weight: fontWeight(semibold);
+      }
+    }
+
+    .wrapperImage {
+      @include Flex(column, center, center);
+      width: wrapperWidth(mobile);
+
+      .imageContainer {
+        width: 94%;
+        background-color: lightblue;
+        aspect-ratio: 1 / 0.45;
+        border-radius: 8px;
+        position: relative;
+      }
+
+      .arrowLeft,
+      .arrowRight {
+        height: 40px;
+        aspect-ratio: 1 / 1;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transition: $transition;
+        transform: translate(-50%, -50%);
+
+        &:active {
+          transform: scale(0.98) translate(-50%, -50%);
+        }
+      }
+
+      .arrowLeft {
+        left: 0;
+      }
+      .arrowRight {
+        right: -40px;
+      }
     }
   }
 }

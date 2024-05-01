@@ -23,7 +23,7 @@ function Image({ image, alt, imgQuality, imgPriority }: ImageProps) {
   return (
     <div
       className="Image"
-      style={{ position: "relative", width: "100%", objectFit: "cover" }}
+      style={{ position: "relative", width: "100%", objectFit: "cover" }} 
     >
       <CldImage
         src={imageConverted}

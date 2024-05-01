@@ -64,6 +64,8 @@ export interface HeadProps extends Language {}
 
 export interface ProductsSectionsProps extends Language {}
 
+export interface CategoriesProps extends Language {}
+
 export interface LocaleProps {
   params: {
     locale: "en" | "sk" | "ru";
@@ -240,5 +242,27 @@ export interface ShopHeadTextProps {
     title: string;
     announcement: string;
     bannerImage: ImageProps;
+  };
+}
+
+interface MainSection {
+  text: string;
+  link: string;
+}
+
+export interface CategoriesTextProps {
+  en: { mainSection: MainSection };
+  sk: { mainSection: MainSection };
+  ru: { mainSection: MainSection };
+}
+export interface ProductsSectionsTextProps {
+  en: {
+    button: Link;
+  };
+  sk: {
+    button: Link;
+  };
+  ru: {
+    button: Link;
   };
 }

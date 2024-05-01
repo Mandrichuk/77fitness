@@ -7,14 +7,21 @@
     width: wrapperWidth(mobile);
 
     .categoriesContainer {
-      @include Flex(row, center, start);
+      @include Flex(row, start, center);
+      flex-wrap: wrap;
+      margin-bottom: 10px;
       gap: 20px;
+      row-gap: 10px;
 
       .categoryContainer {
-        @include Flex(column, center, center);
+        max-width: 180px;
+        text-align: center;
+        text-decoration: none;
+        color: inherit;
+
         cursor: pointer;
         .text {
-          font-size: calc(fontSize(p) - 2px);
+          font-size: calc(fontSize(p));
           font-weight: fontWeight(extrabold);
         }
 

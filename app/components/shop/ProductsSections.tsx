@@ -5,6 +5,7 @@ import TextLayers from "../common/TextLayers";
 import { ProductsSectionsProps } from "../../lib";
 import { ProductsSectionsText } from "../../constants";
 
+
 function ProductsSections({ locale }: ProductsSectionsProps) {
   const t = ProductsSectionsText[locale] || ProductsSectionsText["en"];
   const [data, setData] = useState<any>(null);
@@ -22,10 +23,6 @@ function ProductsSections({ locale }: ProductsSectionsProps) {
 
     fetchData();
   }, []);
-
-  if (data) {
-    console.log(data[0].products[0].images[0].url);
-  }
 
   if (!data) {
     return (
