@@ -5,10 +5,39 @@ import TextLayers from "../common/TextLayers";
 import { ProductsSectionsProps } from "../../lib";
 import { ProductsSectionsText } from "../../constants";
 import { ProductSectionProps } from "../../lib/index";
+import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "@/app/store/store";
+import {
+  addOneToCart,
+  removeOneFromCart,
+  removeProduct,
+  emptyCart,
+} from "@/app/features/clientCart";
 
 function ProductsSections({ locale, sku }: ProductSectionProps) {
   const t = ProductsSectionsText[locale] || ProductsSectionsText["en"];
   const [data, setData] = useState<any>(null);
+  const cart = useSelector((state: RootState) => state.cart.value);
+  const dispatch = useDispatch();
+
+
+  function addOneProduct(sku: string) {
+    dispatch(addOneToCart(sku));
+  }
+
+  function removeOneProduct(sku: string) {
+    dispatch(removeOneFromCart(sku));
+  }
+
+  function deleteProduct(sku: string) {
+    dispatch(removeProduct(sku));
+  }
+
+  function makeEmptyCart() {
+    dispatch(emptyCart());
+  }
+
+  console.log(cart);
 
   useEffect(() => {
     const fetchData = async () => {

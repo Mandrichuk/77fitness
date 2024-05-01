@@ -64,6 +64,15 @@ export interface HeadProps extends Language {}
 
 export interface ProductsSectionsProps extends Language {}
 
+export interface CartProductProps {
+  sku: string;
+  quantity: number;
+}
+
+export interface CartStateProps {
+  value: CartProductProps[];
+}
+
 export interface CategoriesProps extends Language {
   sku: string | null;
 }
@@ -71,7 +80,6 @@ export interface CategoriesProps extends Language {
 export interface ProductSectionProps extends Language {
   sku: string | null;
 }
-
 
 export interface LocaleProps {
   params: {
@@ -81,7 +89,7 @@ export interface LocaleProps {
 
 export interface ShopSkuProps {
   params: {
-    sku?: string | null ;
+    sku?: string | null;
     locale: "en" | "sk" | "ru";
   };
 }

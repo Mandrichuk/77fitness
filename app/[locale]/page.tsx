@@ -1,5 +1,7 @@
 import React from "react";
-import { useTranslations } from "next-intl";
+import { useDispatch, useSelector } from "react-redux";
+import { decrement, increment } from "../features/slice";
+import type { RootState } from "../store/store";
 
 import Activity from "../components/home/Activity";
 import Header from "../components/common/Header";

@@ -1,6 +1,7 @@
 import "./styles/globals.scss";
 import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
+import { StoreProvider } from "./store/StoreProvider";
 
 const urbanist = Urbanist({ subsets: ["latin"] });
 
@@ -35,5 +36,9 @@ interface LayoutProps {
 }
 
 export default function RootLayout({ children, params }: LayoutProps) {
-  return <body className={urbanist.className}>{children}</body>;
+  return (
+    <StoreProvider>
+      <body className={urbanist.className}>{children}</body>
+    </StoreProvider>
+  );
 }
