@@ -1,0 +1,59 @@
+.PriceDetailsShop {
+  @include Flex(column, center, center);
+  width: 100%;
+
+  .wrapper {
+    @include Flex(column, end, end);
+    width: wrapperWidth(mobile);
+
+    .priceContainer {
+      width: 100%;
+      margin-bottom: 20px;
+      @include Flex(row, center, space-between);
+      font-size: calc(fontSize(p) + 5px);
+
+      .text {
+        font-weight: fontWeight(bold);
+      }
+
+      .value {
+        font-weight: fontWeight(regular);
+      }
+    }
+
+    .buttonContainer {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .PriceDetailsShop {
+    @include Flex(column, center, center);
+    width: 100%;
+
+    .wrapper {
+      @include Flex(column, end, end);
+      width: wrapperWidth(mobile);
+
+      .priceContainer {
+        width: 100%;
+        margin-bottom: 20px;
+        @include Flex(row, center, space-between);
+        font-size: calc(fontSize(p) + 5px);
+
+        .text {
+          font-weight: fontWeight(bold);
+        }
+
+        .value {
+          font-weight: fontWeight(regular);
+        }
+      }
+
+      .buttonContainer {
+        width: 220px;
+      }
+    }
+  }
+}

@@ -292,17 +292,10 @@ export interface ProductsSectionsTextProps {
   };
 }
 
-interface PromoInput {
-  placeholder: string;
-  field: string;
-  button: Button;
-}
-
 export interface ProductCartTextProps {
   en: {
     bgText: string;
     title: string;
-    promoInput: PromoInput;
     totalPriceText: string;
     useBonusPoints: string;
     buttonCheckout: Button;
@@ -310,7 +303,6 @@ export interface ProductCartTextProps {
   sk: {
     bgText: string;
     title: string;
-    promoInput: PromoInput;
     totalPriceText: string;
     useBonusPoints: string;
     buttonCheckout: Button;
@@ -318,7 +310,6 @@ export interface ProductCartTextProps {
   ru: {
     bgText: string;
     title: string;
-    promoInput: PromoInput;
     totalPriceText: string;
     useBonusPoints: string;
     buttonCheckout: Button;

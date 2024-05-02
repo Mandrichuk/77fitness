@@ -40,8 +40,14 @@ function CartProducts({ locale }: CartProductsProps) {
       }
     };
 
-    fetchData();
+    if (cart.length !== 0) {
+      fetchData();
+    }
   }, [cart]);
+
+  if (cart.length === 0) {
+    return <div></div>;
+  }
 
   if (!data) {
     return (

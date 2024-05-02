@@ -737,14 +737,6 @@ export const ProductCartText: ProductCartTextProps = {
   en: {
     bgText: "Order",
     title: "Your сart",
-    promoInput: {
-      placeholder: "Enter promo code",
-      field: "promoInput",
-      button: {
-        text: "Apply",
-        link: "",
-      },
-    },
     totalPriceText: "Total",
     useBonusPoints: "Use bonus points",
     buttonCheckout: {
@@ -753,34 +745,18 @@ export const ProductCartText: ProductCartTextProps = {
     },
   },
   sk: {
-    bgText: "Заказ",
-    title: "Ваша корзина",
-    promoInput: {
-      placeholder: "Введите промокод",
-      field: "promoInput",
-      button: {
-        text: "Применить",
-        link: "",
-      },
-    },
-    totalPriceText: "Итого",
-    useBonusPoints: "Использовать бонусные баллы",
+    bgText: "Objednať",
+    title: "Váš košík",
+    totalPriceText: "Celková cena",
+    useBonusPoints: "Použiť bonusové body",
     buttonCheckout: {
-      text: "Оформить заказ",
-      link: "/checkout",
+      text: "Pokladňa",
+      link: "/pokladňa",
     },
   },
   ru: {
     bgText: "Заказ",
     title: "Ваша корзина",
-    promoInput: {
-      placeholder: "Введите промокод",
-      field: "promoInput",
-      button: {
-        text: "Применить",
-        link: "",
-      },
-    },
     totalPriceText: "Итого",
     useBonusPoints: "Использовать бонусные баллы",
     buttonCheckout: {

@@ -4,6 +4,7 @@ import prisma from "@/prisma/client";
 export async function POST(request: NextRequest) {
   const body = await request.json();
   const cartProducts = [];
+  let totalPrice = 0;
 
   for (const product of body) {
     const productData = await prisma.product.findUnique({
@@ -13,15 +14,20 @@ export async function POST(request: NextRequest) {
       include: {
         description: true,
         images: true,
-      }
+      },
     });
-    cartProducts.push({
-      ...product,
-      product: productData,
-    });
+
+    if (productData) {
+      totalPrice += productData.newPrice * product.quantity;
+      cartProducts.push({
+        ...product,
+        product: productData,
+      });
+    }
   }
 
   return NextResponse.json({
     cartProducts: cartProducts,
+    totalPrice: totalPrice.toFixed(2),
   });
 }
