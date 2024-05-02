@@ -10,9 +10,11 @@ import {
   BluredCircleColorsProps,
   CategoriesTextProps,
   ProductsSectionsTextProps,
+  ProductCartTextProps,
 } from "../lib/index";
 
 import logo from "@/public/assets/logo.png";
+import { link } from "fs";
 
 const images = {
   logo,
@@ -28,6 +30,15 @@ export const BluredCircleColors: BluredCircleColorsProps = {
 };
 
 export const SVGs = {
+  trash: (
+    <svg id="Glyph" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+      <g>
+        <rect height="7.44" rx="2" width="43.18" x="10.41" y="9.35" />
+        <path d="m39.88 7.35a3.04794 3.04794 0 0 0 -3-3.35h-9.5a3.0425 3.0425 0 0 0 -3 3.35z" />
+        <path d="m13.3 18.79 1.36 35.44a5.98513 5.98513 0 0 0 6 5.77h22.69a5.9901 5.9901 0 0 0 6-5.76l1.42-35.45z" />
+      </g>
+    </svg>
+  ),
   youtube: (
     <svg
       enableBackground="new 0 0 100 100"
@@ -719,5 +730,62 @@ export const ProductsSectionsText: ProductsSectionsTextProps = {
       link: "/магазин",
     },
     notify: "Товар добавлен в вашу корзину",
+  },
+};
+
+export const ProductCartText: ProductCartTextProps = {
+  en: {
+    bgText: "Order",
+    title: "Your сart",
+    promoInput: {
+      placeholder: "Enter promo code",
+      field: "promoInput",
+      button: {
+        text: "Apply",
+        link: "",
+      },
+    },
+    totalPriceText: "Total",
+    useBonusPoints: "Use bonus points",
+    buttonCheckout: {
+      text: "Checkout",
+      link: "/checkout",
+    },
+  },
+  sk: {
+    bgText: "Заказ",
+    title: "Ваша корзина",
+    promoInput: {
+      placeholder: "Введите промокод",
+      field: "promoInput",
+      button: {
+        text: "Применить",
+        link: "",
+      },
+    },
+    totalPriceText: "Итого",
+    useBonusPoints: "Использовать бонусные баллы",
+    buttonCheckout: {
+      text: "Оформить заказ",
+      link: "/checkout",
+    },
+  },
+  ru: {
+    bgText: "Заказ",
+    title: "Ваша корзина",
+    promoInput: {
+      placeholder: "Введите промокод",
+      field: "promoInput",
+      button: {
+        text: "Применить",
+        link: "",
+      },
+    },
+    totalPriceText: "Итого",
+    useBonusPoints: "Использовать бонусные баллы",
+    buttonCheckout: {
+      text: "Оформить заказ",
+      link: "/checkout",
+    },
   },
 };

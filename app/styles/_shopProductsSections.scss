@@ -33,7 +33,7 @@
           .imageBox {
             @include Flex(row, center, center);
             width: 100%;
-            padding: 40px;
+            padding: 60px;
 
             .imageContainer {
               width: 100%;
@@ -44,7 +44,7 @@
             @include Flex(column, start, center);
             width: 100%;
             flex: 1;
-            padding: 20px;
+            padding: 30px;
 
             .title {
               font-size: calc(fontSize(p) + 1px);
