@@ -112,6 +112,24 @@ $icon-sizes: (
   }
 }
 
+@mixin borderButton {
+  @include Flex(row, center, center);
+  width: 100%;
+  cursor: pointer;
+  border-radius: borderRadius(mobile);
+  background: none;
+  border: 2px solid color(secondary-color);
+  color: color(text-color);
+  font-size: fontSize(button);
+  font-weight: fontWeight(semibold);
+  padding: 10px 20px;
+  transition: $transition;
+
+  &:active {
+    transform: scale(0.99);
+  }
+}
+
 @mixin titleText {
   font-size: fontSize(h3);
   font-weight: fontWeight(bold);

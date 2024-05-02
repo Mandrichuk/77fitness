@@ -9,9 +9,14 @@ import Head from "@/app/components/shop/Head";
 import { LocaleProps } from "../../lib/index";
 import Categories from "@/app/components/shop/Categories";
 import ProductSection from "@/app/components/shop/ProductsSections";
+import Input from "@/app/components/common/Input";
 
 export const metadata: Metadata = {
   title: "Pricing",
+};
+
+const getValue = (value: string) => {
+  console.log(value);
 };
 
 function Home({ params: { locale } }: LocaleProps) {

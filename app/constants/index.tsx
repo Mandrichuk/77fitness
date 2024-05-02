@@ -12,6 +12,7 @@ import {
   ProductsSectionsTextProps,
   ProductCartTextProps,
   SuccessTextProps,
+  RegistrationTextProps,
 } from "../lib/index";
 
 import logo from "@/public/assets/logo.png";
@@ -763,6 +764,54 @@ export const ProductCartText: ProductCartTextProps = {
     buttonCheckout: {
       text: "Оформить заказ",
       link: "/checkout",
+    },
+  },
+};
+
+export const RegistrationText: RegistrationTextProps = {
+  en: {
+    title: "Register your account",
+    loginLink: "Login",
+    registrationLink: "Registration",
+    inputs: {
+      name: { placeholder: "Name" },
+      email: { placeholder: "Email" },
+      password: { placeholder: "Password" },
+      repeatPassword: { placeholder: "Repeat password" },
+    },
+    registrationButton: {
+      text: "Register",
+      link: "/login",
+    },
+  },
+  sk: {
+    title: "Registrovať svoj účet",
+    loginLink: "Prihlásenie",
+    registrationLink: "Registrácia",
+    inputs: {
+      name: { placeholder: "Meno" },
+      email: { placeholder: "E-mail" },
+      password: { placeholder: "Heslo" },
+      repeatPassword: { placeholder: "Zopakujte heslo" },
+    },
+    registrationButton: {
+      text: "Registrovať",
+      link: "/login",
+    },
+  },
+  ru: {
+    title: "Зарегистрируйте свой аккаунт",
+    loginLink: "Вход",
+    registrationLink: "Регистрация",
+    inputs: {
+      name: { placeholder: "Имя" },
+      email: { placeholder: "Электронная почта" },
+      password: { placeholder: "Пароль" },
+      repeatPassword: { placeholder: "Повторите пароль" },
+    },
+    registrationButton: {
+      text: "Зарегистрироваться",
+      link: "/login",
     },
   },
 };
