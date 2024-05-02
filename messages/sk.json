@@ -470,5 +470,31 @@
       "creator": "Now&Here",
       "link": "https://nowandhere.agency/"
     }
+  },
+  "Shop": {
+    "Success": {
+      "image": {
+        "src": "/shop/ixkbbjthiaxt8oxualqz",
+        "alt": "image"
+      },
+      "title": "Platba bola úspešná",
+      "text": "Ďakujeme za vašu objednávku!",
+      "button": {
+        "text": "Objednávky",
+        "link": "/orders"
+      }
+    },
+    "Error": {
+      "image": {
+        "src": "/shop/byozkzpphjgjrbnopfhi",
+        "alt": "obrázok"
+      },
+      "title": "Platba zlyhala",
+      "text": "Skúste to znova neskôr alebo nás kontaktujte",
+      "button": {
+        "text": "Obchod",
+        "link": "/shop"
+      }
+    }
   }
 }

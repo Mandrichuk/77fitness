@@ -1,0 +1,126 @@
+.ShopError {
+  position: relative;
+  @include Flex(column, center, center);
+  width: 100%;
+  height: 650px;
+
+  .wrapper {
+    @include Flex(column, center, center);
+    width: wrapperWidth(mobile);
+    max-width: 900px;
+    border-radius: 16px;
+    background-color: color(custom-black);
+    padding: 30px 20px;
+
+    .imageContainer {
+      width: 75%;
+      max-width: 280px;
+      flex: 0.8;
+      margin-bottom: 20px;
+    }
+
+    .textContainer {
+      @include Flex(column, center, center);
+      flex: 1.2;
+
+      .title {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      .text {
+        text-align: center;
+        margin-bottom: 25px;
+      }
+
+      .buttonContainer {
+        width: 160px;
+      }
+    }
+  }
+
+  .pinkCircle {
+    position: absolute;
+    margin-bottom: 400px;
+    margin-right: -400px;
+    width: 30%;
+    min-width: 170px;
+    max-width: 260px;
+    z-index: -1;
+  }
+
+  .blueCircle {
+    position: absolute;
+    margin-bottom: -150px;
+    margin-right: 350px;
+    width: 30%;
+    min-width: 170px;
+    max-width: 260px;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 700px) {
+  .ShopError {
+    position: relative;
+    @include Flex(column, center, center);
+    width: 100%;
+    height: 650px;
+
+    .wrapper {
+      @include Flex(row, center, center);
+      width: wrapperWidth(mobile);
+      max-width: 800px;
+      border-radius: 16px;
+      background-color: color(custom-black);
+      padding: 20px 20px 0 20px;
+
+      .imageContainer {
+        width: 80%;
+        max-width: 270px;
+        flex: 0.8;
+        margin-bottom: 0;
+        margin-right: 6%;
+      }
+
+      .textContainer {
+        @include Flex(column, start, center);
+        flex: 1.2;
+
+        .title {
+          text-align: start;
+          margin-bottom: 10px;
+        }
+
+        .text {
+          text-align: start;
+          margin-bottom: 25px;
+        }
+
+        .buttonContainer {
+          width: 160px;
+        }
+      }
+    }
+
+    .pinkCircle {
+      position: absolute;
+      margin-bottom: 200px;
+      margin-right: -600px;
+      width: 30%;
+      min-width: 170px;
+      max-width: 260px;
+      z-index: -1;
+    }
+
+    .blueCircle {
+      position: absolute;
+      margin-bottom: -150px;
+      margin-right: 570px;
+      width: 30%;
+      min-width: 170px;
+      max-width: 260px;
+      z-index: -1;
+    }
+  }
+}

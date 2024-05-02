@@ -319,3 +319,15 @@ export interface ProductCartTextProps {
 export interface PriceDetailsProps extends Language {}
 
 export interface CartProductsProps extends Language {}
+
+interface SuccessTextLocale {
+  title: string;
+  text: string;
+  button: Button;
+}
+
+export interface SuccessTextProps {
+  en: SuccessTextLocale;
+  sk: SuccessTextLocale;
+  ru: SuccessTextLocale;
+}

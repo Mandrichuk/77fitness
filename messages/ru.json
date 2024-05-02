@@ -470,5 +470,31 @@
       "creator": "Now&Here",
       "link": "https://nowandhere.agency/"
     }
+  },
+  "Shop": {
+    "Success": {
+      "image": {
+        "src": "/shop/ixkbbjthiaxt8oxualqz",
+        "alt": "image"
+      },
+      "title": "Оплата прошла успешно",
+      "text": "Спасибо за ваш заказ!",
+      "button": {
+        "text": "Заказы",
+        "link": "/orders"
+      }
+    },
+    "Error": {
+      "image": {
+        "src": "/shop/byozkzpphjgjrbnopfhi",
+        "alt": "изображение"
+      },
+      "title": "Оплата не удалась",
+      "text": "Попробуйте еще раз позже или свяжитесь с нами",
+      "button": {
+        "text": "Магазин",
+        "link": "/shop"
+      }
+    }
   }
 }

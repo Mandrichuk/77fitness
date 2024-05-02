@@ -11,6 +11,7 @@ import {
   CategoriesTextProps,
   ProductsSectionsTextProps,
   ProductCartTextProps,
+  SuccessTextProps,
 } from "../lib/index";
 
 import logo from "@/public/assets/logo.png";

@@ -495,5 +495,29 @@
     }
   },
   "Shop": {
+    "Success": {
+      "image": {
+        "src": "/shop/ixkbbjthiaxt8oxualqz",
+        "alt": "image"
+      },
+      "title": "Payment was successful",
+      "text": "Thank you for your order!",
+      "button": {
+        "text": "Orders",
+        "link": "/orders"
+      }
+    },
+    "Error": {
+      "image": {
+        "src": "/shop/byozkzpphjgjrbnopfhi",
+        "alt": "image"
+      },
+      "title": "Payment was failed",
+      "text": "Try again later or contact us",
+      "button": {
+        "text": "Shop",
+        "link": "/shop"
+      }
+    }
   }
 }
