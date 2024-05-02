@@ -11,7 +11,7 @@ import {
   CategoriesTextProps,
   ProductsSectionsTextProps,
   ProductCartTextProps,
-  SuccessTextProps,
+ LoginTextProps,
   RegistrationTextProps,
 } from "../lib/index";
 
@@ -811,6 +811,48 @@ export const RegistrationText: RegistrationTextProps = {
     },
     registrationButton: {
       text: "Зарегистрироваться",
+      link: "/login",
+    },
+  },
+};
+
+export const LoginText: LoginTextProps = {
+  en: {
+    title: "Login your account",
+    loginLink: { text: "Login", link: "/login" },
+    registrationLink: { text: "Registration", link: "/registration" },
+    inputs: {
+      email: { placeholder: "Email" },
+      password: { placeholder: "Password" },
+    },
+    registrationButton: {
+      text: "Login",
+      link: "/login",
+    },
+  },
+  sk: {
+    title: "Prihláste sa do svojho účtu",
+    loginLink: { text: "Prihlásiť sa", link: "/login" },
+    registrationLink: { text: "Registrácia", link: "/registration" },
+    inputs: {
+      email: { placeholder: "E-mail" },
+      password: { placeholder: "Heslo" },
+    },
+    registrationButton: {
+      text: "Prihlásiť sa",
+      link: "/login",
+    },
+  },
+  ru: {
+    title: "Войдите в свой аккаунт",
+    loginLink: { text: "Войти", link: "/login" },
+    registrationLink: { text: "Регистрация", link: "/registration" },
+    inputs: {
+      email: { placeholder: "Электронная почта" },
+      password: { placeholder: "Пароль" },
+    },
+    registrationButton: {
+      text: "Войти",
       link: "/login",
     },
   },

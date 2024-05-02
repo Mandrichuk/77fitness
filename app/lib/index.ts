@@ -66,6 +66,8 @@ export interface ProductsSectionsProps extends Language {}
 
 export interface RegistrationProps extends Language {}
 
+export interface LoginProps extends Language {}
+
 export interface CartProductProps {
   sku: string;
   quantity: number;
@@ -359,4 +361,24 @@ export interface RegistrationTextProps {
   en: RegistrationDetailsProps;
   sk: RegistrationDetailsProps;
   ru: RegistrationDetailsProps;
+}
+
+export interface LoginTextDetailsProps {
+  title: string;
+  loginLink: { text: string; link: string };
+  registrationLink: { text: string; link: string };
+  inputs: {
+    email: { placeholder: string };
+    password: { placeholder: string };
+  };
+  registrationButton: {
+    text: string;
+    link: string;
+  };
+}
+
+export interface LoginTextProps {
+  en: LoginTextDetailsProps;
+  sk: LoginTextDetailsProps;
+  ru: LoginTextDetailsProps;
 }
