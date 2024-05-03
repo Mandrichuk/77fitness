@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 };
 
 function Home({ params: { locale } }: LocaleProps) {
+
   return (
     <main>
       <Header locale={locale} />

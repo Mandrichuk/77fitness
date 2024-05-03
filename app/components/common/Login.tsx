@@ -1,5 +1,6 @@
+"use client"
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 import Input from "./Input";
 
@@ -8,6 +9,16 @@ import { LoginText } from "@/app/constants";
 
 function Login({ locale }: LoginProps) {
   const t = LoginText[locale] || LoginText["en"];
+  const [inputs, setInputs] = useState({
+    email: "",
+    password: "",
+  });
+
+  function getValue(value: any, field: string) {
+    setInputs({ ...inputs, [field]: value });
+  }
+
+  console.log(inputs)
 
   return (
     <section className="LoginSection">
@@ -22,8 +33,16 @@ function Login({ locale }: LoginProps) {
           </Link>
         </div>
         <div className="inputs">
-          <Input placeholderText={t.inputs.email.placeholder} />
-          <Input placeholderText={t.inputs.password.placeholder} />
+          <Input
+            placeholderText={t.inputs.email.placeholder}
+            getValue={(e, field) => getValue(e, field)}
+            field={t.inputs.email.field}
+          />
+          <Input
+            placeholderText={t.inputs.password.placeholder}
+            getValue={(e, field) => getValue(e, field)}
+            field={t.inputs.password.field}
+          />
         </div>
         <div className="loginButton">
           <button className="button">{t.registrationButton.text}</button>

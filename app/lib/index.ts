@@ -336,9 +336,15 @@ export interface SuccessTextProps {
   ru: SuccessTextLocale;
 }
 
+export interface RegistrationProps {
+  locale: "en" | "sk" | "ru";
+  // getValue: (e: any) => void;
+}
+
 export interface InputProps {
   placeholderText: string;
-  // getValue: (value: string) => void;
+  getValue: (e: React.ChangeEvent<HTMLInputElement>, field: string) => void;
+  field: string;
 }
 
 interface RegistrationDetailsProps {
@@ -346,10 +352,10 @@ interface RegistrationDetailsProps {
   loginLink: string;
   registrationLink: string;
   inputs: {
-    name: { placeholder: string };
-    email: { placeholder: string };
-    password: { placeholder: string };
-    repeatPassword: { placeholder: string };
+    name: { placeholder: string; field: string };
+    email: { placeholder: string; field: string };
+    password: { placeholder: string; field: string };
+    repeatPassword: { placeholder: string; field: string };
   };
   registrationButton: {
     text: string;
@@ -368,8 +374,8 @@ export interface LoginTextDetailsProps {
   loginLink: { text: string; link: string };
   registrationLink: { text: string; link: string };
   inputs: {
-    email: { placeholder: string };
-    password: { placeholder: string };
+    email: { placeholder: string; field: string };
+    password: { placeholder: string; field: string };
   };
   registrationButton: {
     text: string;

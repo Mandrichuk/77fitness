@@ -11,7 +11,7 @@ import {
   CategoriesTextProps,
   ProductsSectionsTextProps,
   ProductCartTextProps,
- LoginTextProps,
+  LoginTextProps,
   RegistrationTextProps,
 } from "../lib/index";
 
@@ -774,10 +774,13 @@ export const RegistrationText: RegistrationTextProps = {
     loginLink: "Login",
     registrationLink: "Registration",
     inputs: {
-      name: { placeholder: "Name" },
-      email: { placeholder: "Email" },
-      password: { placeholder: "Password" },
-      repeatPassword: { placeholder: "Repeat password" },
+      name: { placeholder: "Name", field: "name" },
+      email: { placeholder: "Email", field: "email" },
+      password: { placeholder: "Password", field: "password" },
+      repeatPassword: {
+        placeholder: "Repeat password",
+        field: "repeatPassword",
+      },
     },
     registrationButton: {
       text: "Register",
@@ -789,10 +792,13 @@ export const RegistrationText: RegistrationTextProps = {
     loginLink: "Prihlásenie",
     registrationLink: "Registrácia",
     inputs: {
-      name: { placeholder: "Meno" },
-      email: { placeholder: "E-mail" },
-      password: { placeholder: "Heslo" },
-      repeatPassword: { placeholder: "Zopakujte heslo" },
+      name: { placeholder: "Meno", field: "name" },
+      email: { placeholder: "E-mail", field: "email" },
+      password: { placeholder: "Heslo", field: "password" },
+      repeatPassword: {
+        placeholder: "Zopakujte heslo",
+        field: "repeatPassword",
+      },
     },
     registrationButton: {
       text: "Registrovať",
@@ -804,10 +810,13 @@ export const RegistrationText: RegistrationTextProps = {
     loginLink: "Вход",
     registrationLink: "Регистрация",
     inputs: {
-      name: { placeholder: "Имя" },
-      email: { placeholder: "Электронная почта" },
-      password: { placeholder: "Пароль" },
-      repeatPassword: { placeholder: "Повторите пароль" },
+      name: { placeholder: "Имя", field: "name" },
+      email: { placeholder: "Электронная почта", field: "email" },
+      password: { placeholder: "Пароль", field: "password" },
+      repeatPassword: {
+        placeholder: "Повторите пароль",
+        field: "repeatPassword",
+      },
     },
     registrationButton: {
       text: "Зарегистрироваться",
@@ -822,8 +831,8 @@ export const LoginText: LoginTextProps = {
     loginLink: { text: "Login", link: "/login" },
     registrationLink: { text: "Registration", link: "/registration" },
     inputs: {
-      email: { placeholder: "Email" },
-      password: { placeholder: "Password" },
+      email: { placeholder: "Email", field: "email" },
+      password: { placeholder: "Password", field: "password" },
     },
     registrationButton: {
       text: "Login",
@@ -835,8 +844,8 @@ export const LoginText: LoginTextProps = {
     loginLink: { text: "Prihlásiť sa", link: "/login" },
     registrationLink: { text: "Registrácia", link: "/registration" },
     inputs: {
-      email: { placeholder: "E-mail" },
-      password: { placeholder: "Heslo" },
+      email: { placeholder: "E-mail", field: "email" },
+      password: { placeholder: "Heslo", field: "password" },
     },
     registrationButton: {
       text: "Prihlásiť sa",
@@ -848,8 +857,8 @@ export const LoginText: LoginTextProps = {
     loginLink: { text: "Войти", link: "/login" },
     registrationLink: { text: "Регистрация", link: "/registration" },
     inputs: {
-      email: { placeholder: "Электронная почта" },
-      password: { placeholder: "Пароль" },
+      email: { placeholder: "Электронная почта", field: "email" },
+      password: { placeholder: "Пароль", field: "password" },
     },
     registrationButton: {
       text: "Войти",
