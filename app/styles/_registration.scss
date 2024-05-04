@@ -25,6 +25,17 @@
       @include Flex(column, center, center);
       width: 100%;
       gap: 15px;
+
+      .error {
+        width: 100%;
+        color: rgba(color(text-color), 0.7);
+        font-size: calc(fontSize(p) - 2px);
+
+        .loginRedirect {
+          text-decoration: underline;
+        }
+      }
+
     }
 
     .registrationButton {

@@ -68,6 +68,8 @@ export interface RegistrationProps extends Language {}
 
 export interface LoginProps extends Language {}
 
+export interface OrderProps extends Language {}
+
 export interface CartProductProps {
   sku: string;
   quantity: number;
@@ -345,6 +347,15 @@ export interface InputProps {
   placeholderText: string;
   getValue: (e: React.ChangeEvent<HTMLInputElement>, field: string) => void;
   field: string;
+  maxSymbols?: number;
+}
+
+interface InputErrors {
+  fulfillFields: string;
+  invalidEmail: string;
+  emailAlreadyRegistered: string;
+  passwordsNotMatch: string;
+  passwordLength: string;
 }
 
 interface RegistrationDetailsProps {
@@ -357,10 +368,12 @@ interface RegistrationDetailsProps {
     password: { placeholder: string; field: string };
     repeatPassword: { placeholder: string; field: string };
   };
+  inputErrors: InputErrors;
   registrationButton: {
     text: string;
     link: string;
   };
+  registerRedirect: string;
 }
 
 export interface RegistrationTextProps {

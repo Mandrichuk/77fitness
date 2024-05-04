@@ -32,6 +32,7 @@ model Product {
   toDisplay     Boolean            @default(true)
   leftInStock   Int
   descriptionId Int
+  OrderProducts OrderProducts[]
 }
 
 model ProductDescription {
@@ -75,4 +76,35 @@ model CategoryTitle {
   ru       String
   sk       String
   category Category[]
+}
+
+model Client {
+  id               Int      @id @default(autoincrement())
+  sku              String   @unique
+  username         String
+  email            String   @unique
+  password         String
+  registrationDate DateTime @default(now())
+  lastLoginDate    DateTime @default(now())
+  orders           Order[]
+}
+
+model Order {
+  id            Int             @id @default(autoincrement())
+  sku           String          @unique
+  clientSku     String
+  products      OrderProducts[]
+  orderedDate   DateTime        @default(now())
+  completedDate DateTime?
+  isDone        Boolean
+  Client        Client          @relation(fields: [clientId], references: [id])
+  clientId      Int
+}
+
+model OrderProducts {
+  id        Int     @id @default(autoincrement())
+  order     Order   @relation(fields: [orderId], references: [id])
+  product   Product @relation(fields: [productId], references: [id])
+  orderId   Int
+  productId Int
 }

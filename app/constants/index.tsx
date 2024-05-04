@@ -774,7 +774,7 @@ export const RegistrationText: RegistrationTextProps = {
     loginLink: "Login",
     registrationLink: "Registration",
     inputs: {
-      name: { placeholder: "Name", field: "name" },
+      name: { placeholder: "Name", field: "username" },
       email: { placeholder: "Email", field: "email" },
       password: { placeholder: "Password", field: "password" },
       repeatPassword: {
@@ -782,17 +782,25 @@ export const RegistrationText: RegistrationTextProps = {
         field: "repeatPassword",
       },
     },
+    inputErrors: {
+      fulfillFields: "Field is required",
+      invalidEmail: "Email is invalid",
+      emailAlreadyRegistered: "Email is already registered",
+      passwordsNotMatch: "Passwords do not match",
+      passwordLength: "Password must be at least 8 characters",
+    },
     registrationButton: {
       text: "Register",
       link: "/login",
     },
+    registerRedirect: "Already have an account?",
   },
   sk: {
     title: "Registrovať svoj účet",
     loginLink: "Prihlásenie",
     registrationLink: "Registrácia",
     inputs: {
-      name: { placeholder: "Meno", field: "name" },
+      name: { placeholder: "Meno", field: "username" },
       email: { placeholder: "E-mail", field: "email" },
       password: { placeholder: "Heslo", field: "password" },
       repeatPassword: {
@@ -800,17 +808,25 @@ export const RegistrationText: RegistrationTextProps = {
         field: "repeatPassword",
       },
     },
+    inputErrors: {
+      fulfillFields: "Pole je povinné",
+      invalidEmail: "Neplatný formát emailu",
+      emailAlreadyRegistered: "Email je už zaregistrovaný",
+      passwordsNotMatch: "Heslá sa nezhodujú",
+      passwordLength: "Heslo musí mať aspoň 8 znakov",
+    },
     registrationButton: {
       text: "Registrovať",
       link: "/login",
     },
+    registerRedirect: "Už máte účet?",
   },
   ru: {
     title: "Зарегистрируйте свой аккаунт",
     loginLink: "Вход",
     registrationLink: "Регистрация",
     inputs: {
-      name: { placeholder: "Имя", field: "name" },
+      name: { placeholder: "Имя", field: "username" },
       email: { placeholder: "Электронная почта", field: "email" },
       password: { placeholder: "Пароль", field: "password" },
       repeatPassword: {
@@ -818,10 +834,18 @@ export const RegistrationText: RegistrationTextProps = {
         field: "repeatPassword",
       },
     },
+    inputErrors: {
+      fulfillFields: "Поле обязательно для заполнения",
+      invalidEmail: "Неверный формат email",
+      emailAlreadyRegistered: "Email уже зарегистрирован",
+      passwordsNotMatch: "Пароли не совпадают",
+      passwordLength: "Пароль должен содержать не менее 8 символов",
+    },
     registrationButton: {
       text: "Зарегистрироваться",
       link: "/login",
     },
+    registerRedirect: "Уже есть аккаунт?",
   },
 };
 
