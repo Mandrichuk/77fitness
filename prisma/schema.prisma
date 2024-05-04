@@ -86,7 +86,6 @@ model Client {
   password         String
   registrationDate DateTime @default(now())
   lastLoginDate    DateTime @default(now())
-  orders           Order[]
 }
 
 model Order {
@@ -97,7 +96,6 @@ model Order {
   orderedDate   DateTime        @default(now())
   completedDate DateTime?
   isDone        Boolean
-  Client        Client          @relation(fields: [clientId], references: [id])
   clientId      Int
 }
 

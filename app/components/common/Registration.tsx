@@ -2,18 +2,21 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { toast, ToastContainer } from "react-toastify";
+import { useSelector } from "react-redux";
+import { RootState } from "@/app/store/store";
 
 import Input from "./Input";
+import getHash from "@/app/utils/getHash";
 
 import { RegistrationProps } from "../../lib";
 import { RegistrationText } from "@/app/constants";
 import { error } from "console";
 
-import getHash from "@/app/utils/getHash";
-
 function Registration({ locale }: RegistrationProps) {
   const t = RegistrationText[locale] || RegistrationText["en"];
   const [emailAlredyRegistered, setEmailAlredyRegistered] = useState(false);
+  const isLogined = useSelector((state: RootState) => state.clientLogin.value);
+
   const [errors, setErrors] = useState({
     fieldsFilled: false,
     emailValid: false,
@@ -27,6 +30,12 @@ function Registration({ locale }: RegistrationProps) {
     password: "",
     repeatPassword: "",
   });
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && isLogined !== null) {
+      window.location.href = "/shop";
+    }
+  }, []);
 
   function getValue(value: any, field: string) {
     setInputs({ ...inputs, [field]: value });
@@ -47,8 +56,8 @@ function Registration({ locale }: RegistrationProps) {
     return Object.values(errors).every((value) => value);
   }
 
-  const notifyAddedToCart = () => {
-    toast.success("registered!!", {
+  const notifyClientRegistered = () => {
+    toast.success(t.notify, {
       position: "top-right",
       autoClose: 1300,
       hideProgressBar: true,
@@ -68,7 +77,7 @@ function Registration({ locale }: RegistrationProps) {
       };
 
       try {
-        const response = await fetch("/api/client", {
+        const response = await fetch("/api/register", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -78,7 +87,7 @@ function Registration({ locale }: RegistrationProps) {
 
         if (response.ok) {
           console.log("Registration successful");
-          notifyAddedToCart();
+          notifyClientRegistered();
 
           if (typeof window !== "undefined") {
             window.location.href = "/login";
@@ -143,7 +152,7 @@ function Registration({ locale }: RegistrationProps) {
           )}
           {emailAlredyRegistered && (
             <p className="error fieldsNotFilled">
-              *{t.inputErrors.emailAlreadyRegistered}&#160;
+              *{t.inputErrors.emailAlreadyRegistered}.&#160;
               <Link className="loginRedirect" href={"/login"}>
                 {t.registerRedirect}
               </Link>

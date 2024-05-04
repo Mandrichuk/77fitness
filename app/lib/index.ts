@@ -79,6 +79,16 @@ export interface CartStateProps {
   value: CartProductProps[];
 }
 
+export interface ClientDetailsProps {
+  sku: string;
+  username: string;
+  email: string;
+}
+
+export interface ClientStateProps {
+  value: ClientDetailsProps | null;
+}
+
 export interface CategoriesProps extends Language {
   sku?: string | null;
 }
@@ -373,6 +383,7 @@ interface RegistrationDetailsProps {
     text: string;
     link: string;
   };
+  notify: string;
   registerRedirect: string;
 }
 
@@ -390,10 +401,17 @@ export interface LoginTextDetailsProps {
     email: { placeholder: string; field: string };
     password: { placeholder: string; field: string };
   };
+  inputErrors: InputLoginErrors;
   registrationButton: {
     text: string;
     link: string;
   };
+  loginRedirect: string;
+}
+
+interface InputLoginErrors {
+  fulfillFields: string;
+  unaccurateData: string;
 }
 
 export interface LoginTextProps {

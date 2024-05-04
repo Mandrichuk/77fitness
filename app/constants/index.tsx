@@ -794,6 +794,7 @@ export const RegistrationText: RegistrationTextProps = {
       link: "/login",
     },
     registerRedirect: "Already have an account?",
+    notify: "You have successfully registered!",
   },
   sk: {
     title: "Registrovať svoj účet",
@@ -820,6 +821,7 @@ export const RegistrationText: RegistrationTextProps = {
       link: "/login",
     },
     registerRedirect: "Už máte účet?",
+    notify: "Registrácia prebehla úspešne!",
   },
   ru: {
     title: "Зарегистрируйте свой аккаунт",
@@ -846,6 +848,7 @@ export const RegistrationText: RegistrationTextProps = {
       link: "/login",
     },
     registerRedirect: "Уже есть аккаунт?",
+    notify: "Регистрация прошла успешно!",
   },
 };
 
@@ -858,10 +861,15 @@ export const LoginText: LoginTextProps = {
       email: { placeholder: "Email", field: "email" },
       password: { placeholder: "Password", field: "password" },
     },
+    inputErrors: {
+      fulfillFields: "Field is required",
+      unaccurateData: "Incorrect email or password",
+    },
     registrationButton: {
       text: "Login",
       link: "/login",
     },
+    loginRedirect: "Don't have an account?",
   },
   sk: {
     title: "Prihláste sa do svojho účtu",
@@ -871,10 +879,15 @@ export const LoginText: LoginTextProps = {
       email: { placeholder: "E-mail", field: "email" },
       password: { placeholder: "Heslo", field: "password" },
     },
+    inputErrors: {
+      fulfillFields: "Pole je povinné",
+      unaccurateData: "Nesprávny e-mail alebo heslo",
+    },
     registrationButton: {
       text: "Prihlásiť sa",
       link: "/login",
     },
+    loginRedirect: "Nemáte ešte účet?",
   },
   ru: {
     title: "Войдите в свой аккаунт",
@@ -884,9 +897,14 @@ export const LoginText: LoginTextProps = {
       email: { placeholder: "Электронная почта", field: "email" },
       password: { placeholder: "Пароль", field: "password" },
     },
+    inputErrors: {
+      fulfillFields: "Поле обязательно для заполнения",
+      unaccurateData: "Неверный email или пароль",
+    },
     registrationButton: {
       text: "Войти",
       link: "/login",
     },
+    loginRedirect: "Нет аккаунта?",
   },
 };

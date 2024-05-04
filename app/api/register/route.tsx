@@ -29,6 +29,7 @@ export async function POST(request: NextRequest) {
       { status: 400 }
     );
   }
+  
   const client = await prisma.client.create({
     data: {
       sku: body.sku,
