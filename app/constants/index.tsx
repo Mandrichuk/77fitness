@@ -923,18 +923,27 @@ export const OrderShopText: OrderShopTextProps = {
     done: "Done",
     statusText: "Status",
     totalText: "Total",
+    moveToDoneButton: { text: "Move to done orders", link: "" },
+    removeToUndoneButton: { text: "Remove to undone orders", link: "" },
   },
   sk: {
-    inProgress: "V priebehu",
-    done: "Dokončené",
+    inProgress: "V procese",
+    done: "Hotovo",
     statusText: "Stav",
-    totalText: "Celkovo",
+    totalText: "Celkom",
+    moveToDoneButton: { text: "Presunúť na hotové objednávky", link: "" },
+    removeToUndoneButton: {
+      text: "Odstrániť do nedokončených objednávok",
+      link: "",
+    },
   },
   ru: {
     inProgress: "В процессе",
-    done: "Завершено",
+    done: "Готово",
     statusText: "Статус",
-    totalText: "Всего",
+    totalText: "Итого",
+    moveToDoneButton: { text: "Переместить в готовые заказы", link: "" },
+    removeToUndoneButton: { text: "Убрать в невыполненные заказы", link: "" },
   },
 };
 
@@ -942,13 +951,58 @@ export const OrdersText: OrdersTextProps = {
   en: {
     title: "Your all orders",
     bgText: "Orders",
+    tableData: {
+      numberText: "Number",
+      dateText: "Date",
+      priceText: "Price",
+    },
   },
   sk: {
     title: "Vaše všetky objednávky",
     bgText: "Objednávky",
+    tableData: {
+      numberText: "Číslo",
+      dateText: "Dátum",
+      priceText: "Cena",
+    },
   },
   ru: {
     title: "Ваши все заказы",
     bgText: "Заказы",
+    tableData: {
+      numberText: "Номер",
+      dateText: "Дата",
+      priceText: "Цена",
+    },
+  },
+};
+
+export const AdminText = {
+  en: {
+    title: "Admin",
+    bgText: "Orders",
+    tableData: {
+      numberText: "Number",
+      dateText: "Date",
+      priceText: "Price",
+    },
+  },
+  sk: {
+    title: "Admin",
+    bgText: "Objednávky",
+    tableData: {
+      numberText: "Číslo",
+      dateText: "Dátum",
+      priceText: "Cena",
+    },
+  },
+  ru: {
+    title: "Админ панель",
+    bgText: "Заказы",
+    tableData: {
+      numberText: "Номер",
+      dateText: "Дата",
+      priceText: "Цена",
+    },
   },
 };

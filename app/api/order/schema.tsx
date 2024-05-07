@@ -9,9 +9,9 @@ const OrderProductSchema = z.object({
 
 const OrderSchema = z.object({
   id: z.number().int().optional(),
-  sku: z.string().min(1),
-  clientSku: z.string(),
-  products: z.array(OrderProductSchema),
+  sku: z.string().min(1).optional(),
+  clientSku: z.string().optional(),
+  products: z.array(OrderProductSchema).optional(),
   orderedDate: z.string().optional(),
   completedDate: z.string().optional(),
   isDone: z.boolean().optional(),

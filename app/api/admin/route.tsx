@@ -1,5 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/prisma/client";
+import productSchema from "@/app/api/products/schema";
+
+interface Props {
+  params: { product_sku: number };
+}
 
 export async function GET(request: NextRequest) {
   const orders = await prisma.order.findMany({

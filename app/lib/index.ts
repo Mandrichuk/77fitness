@@ -72,10 +72,23 @@ export interface LoginProps extends Language {}
 export interface OrderProductsProps extends Language {
   product: any;
 }
+export interface AdminProductsProps extends Language {
+  product: any;
+}
 
 export interface OrderProps extends Language {
+  locale: "en" | "sk" | "ru";
   orderData: any;
 }
+
+export interface OrderAdminProps extends Language {
+  locale: "en" | "sk" | "ru";
+  orderData: any;
+}
+
+export interface OrdersProps extends Language {}
+
+export interface AdminProps extends Language {}
 
 export interface CartProductProps {
   sku: string;
@@ -432,23 +445,23 @@ export interface LoginTextProps {
 }
 
 export interface OrderShopTextProps {
-  en: {
-    inProgress: string;
-    done: string;
-    statusText: string;
-    totalText: string;
+  en: OrderShopTextItem;
+  sk: OrderShopTextItem;
+  ru: OrderShopTextItem;
+}
+
+interface OrderShopTextItem {
+  inProgress: string;
+  done: string;
+  statusText: string;
+  totalText: string;
+  moveToDoneButton: {
+    text: string;
+    link: string;
   };
-  sk: {
-    inProgress: string;
-    done: string;
-    statusText: string;
-    totalText: string;
-  };
-  ru: {
-    inProgress: string;
-    done: string;
-    statusText: string;
-    totalText: string;
+  removeToUndoneButton: {
+    text: string;
+    link: string;
   };
 }
 
@@ -456,13 +469,28 @@ export interface OrdersTextProps {
   en: {
     title: string;
     bgText: string;
+    tableData: {
+      numberText: string;
+      dateText: string;
+      priceText: string;
+    };
   };
   sk: {
     title: string;
     bgText: string;
+    tableData: {
+      numberText: string;
+      dateText: string;
+      priceText: string;
+    };
   };
   ru: {
     title: string;
     bgText: string;
+    tableData: {
+      numberText: string;
+      dateText: string;
+      priceText: string;
+    };
   };
 }

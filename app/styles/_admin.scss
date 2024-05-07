@@ -1,37 +1,47 @@
-.OrdersShop {
+.AdminShop {
   @include Flex(column, center, center);
   width: 100%;
   margin-bottom: 40px;
 
   .wrapper {
+    width: 100%;
     @include Flex(column, center, center);
     width: wrapperWidth(mobile);
-    .separator {
-      margin-top: 10px;
-      width: 100%;
-      height: 2px;
-      background-color: color(text-color);
-    }
 
-    .tableData {
+    .searchContainer {
       width: 100%;
       margin-top: 30px;
-      @include Flex(row, center, space-between);
+    }
+    .inProccessOrders,
+    .doneOrders {
+      margin-top: 30px;
+      width: 100%;
+      .tableData {
+        width: 100%;
+        @include Flex(row, center, space-between);
 
-      .numberData {
-        width: 120px;
-        color: color(custom-gray);
-        font-weight: fontWeight(semibold);
+        .numberData {
+          width: 120px;
+          color: color(custom-gray);
+          font-weight: fontWeight(semibold);
+        }
+        .dateData {
+          width: 75px;
+          color: color(custom-gray);
+          font-weight: fontWeight(semibold);
+        }
+        .priceData {
+          width: 50px;
+          color: color(custom-gray);
+          font-weight: fontWeight(semibold);
+        }
       }
-      .dateData {
-        width: 80px;
-        color: color(custom-gray);
-        font-weight: fontWeight(semibold);
-      }
-      .priceData {
-        width: 80px;
-        color: color(custom-gray);
-        font-weight: fontWeight(semibold);
+
+      .separator {
+        margin-top: 10px;
+        width: 100%;
+        height: 2px;
+        background-color: color(text-color);
       }
     }
 
@@ -47,6 +57,18 @@
         border-bottom: 2px solid color(text-color);
         width: 100%;
         transition: $transition;
+
+        .sku {
+          width: 120px;
+        }
+        .date {
+          width: 75px;
+        }
+
+        .price {
+          width: 50px;
+        }
+
         .arrowDown {
           width: 30px;
           transition: $transition;
@@ -204,6 +226,7 @@
         }
 
         .statusContainer {
+          margin-bottom: 20px;
           width: 100%;
           @include Flex(row, center, space-between);
 
@@ -212,25 +235,34 @@
             font-size: calc(fontSize(p) + 5px);
           }
 
-          .status {
-            border-radius: 10px;
-            padding: 5px 10px;
-            border: 2px solid color(text-color);
-            font-weight: fontWeight(regular);
-            font-size: calc(fontSize(p) + 2px);
+          .statuses {
+            @include Flex(row, center, center);
+            gap: 10px;
+            .status {
+              border-radius: 10px;
+              padding: 5px 10px;
+              border: 2px solid color(text-color);
+              font-weight: fontWeight(regular);
+              font-size: calc(fontSize(p) + 2px);
+              transition: $transition;
 
-            &.inProgress {
-              border: 2px solid #fbbc05;
-            }
+              &.inProgress {
+                border: 2px solid #fbbc05;
+              }
 
-            &.canceled {
-              border: 2px solid #e30036;
-            }
+              &.canceled {
+                border: 2px solid #e30036;
+              }
 
-            &.done {
-              border: 2px solid #34a853;
+              &.done {
+                border: 2px solid #34a853;
+              }
             }
           }
+        }
+        .buttonContainer {
+          width: 100%;
+          @include Flex(row, center, center);
         }
       }
     }
@@ -238,7 +270,7 @@
 }
 
 @media (min-width: 380px) {
-  .OrdersShop {
+  .AdminShop {
     @include Flex(column, center, center);
     width: 100%;
     margin-bottom: 100px;
@@ -248,7 +280,7 @@
       width: wrapperWidth(mobile);
 
       .separator {
-        margin-top: 10px;
+        // margin-top: 30px;
         width: 100%;
         height: 2px;
         background-color: color(text-color);
@@ -261,18 +293,12 @@
 
         .numberData {
           width: 120px;
-          color: color(custom-gray);
-          font-weight: fontWeight(semibold);
         }
         .dateData {
-          width: 80px;
-          color: color(custom-gray);
-          font-weight: fontWeight(semibold);
+          width: 75px;
         }
         .priceData {
-          width: 80px;
-          color: color(custom-gray);
-          font-weight: fontWeight(semibold);
+          width: 70px;
         }
       }
 
@@ -286,6 +312,18 @@
           // border-top: 2px solid color(text-color);
           border-bottom: 2px solid color(text-color);
           width: 100%;
+
+          .sku {
+            width: 120px;
+          }
+          .date {
+            width: 75px;
+          }
+
+          .price {
+            width: 50px;
+          }
+
           .arrowDown {
             width: 30px;
 
@@ -460,8 +498,8 @@
   }
 }
 
-@media (min-width: 600px) {
-  .OrdersShop {
+@media (min-width: 700px) {
+  .AdminShop {
     @include Flex(column, center, center);
     width: 100%;
     margin-bottom: 100px;
@@ -484,18 +522,12 @@
 
         .numberData {
           width: 120px;
-          color: color(custom-gray);
-          font-weight: fontWeight(semibold);
         }
         .dateData {
-          width: 80px;
-          color: color(custom-gray);
-          font-weight: fontWeight(semibold);
+          width: 75px;
         }
         .priceData {
-          width: 80px;
-          color: color(custom-gray);
-          font-weight: fontWeight(semibold);
+          width: 70px;
         }
       }
 
@@ -675,6 +707,15 @@
               &.done {
                 border: 2px solid #34a853;
               }
+            }
+          }
+
+          .buttonContainer {
+            width: 100%;
+            @include Flex(row, center, end);
+
+            button {
+              max-width: 300px;
             }
           }
         }

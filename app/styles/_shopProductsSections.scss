@@ -42,7 +42,7 @@
               @include Flex(row, center, center);
               aspect-ratio: 1 / 1;
               height: 100%;
-              width: 100%;
+              width: 94%;
               overflow: hidden;
             }
           }
@@ -148,7 +148,7 @@
 
             .imageBox {
               @include Flex(row, center, center);
-              width: 100%;
+              width: 96%;
               padding: 0;
               padding: 30px;
 
@@ -247,12 +247,12 @@
 
             .imageBox {
               @include Flex(row, center, center);
-              width: 100%;
+              width: 94%;
               padding: 0;
               padding: 30px;
 
               .imageContainer {
-                width: 100%;
+              width: 100%;
               }
             }
 
@@ -345,12 +345,12 @@
             @include Flex(column, center, center);
             .imageBox {
               @include Flex(row, center, center);
-              width: 100%;
+              width: 85%;
               padding: 0;
               padding: 30px;
 
               .imageContainer {
-                width: 100%;
+              width: 100%;
               }
             }
 

@@ -6,13 +6,13 @@ import { RootState } from "@/app/store/store";
 import { OrdersText } from "@/app/constants";
 import Image from "../common/Image";
 import { OrderShopText } from "@/app/constants";
-import { OrderProps, OrderProductsProps } from "@/app/lib";
+import { OrderProps, OrdersProps, OrderProductsProps } from "@/app/lib";
 import { SVGs } from "@/app/constants";
 import formatDate from "@/app/utils/formatDate";
 
 import TextLayers from "../common/TextLayers";
 
-function Orders({ locale }: OrderProps) {
+function Orders({ locale }: OrdersProps) {
   const t = OrdersText[locale] || OrdersText["en"];
   const clientData = useSelector((state: RootState) => state.clientLogin.value);
   const [data, setData] = useState<any>(null);
@@ -60,6 +60,12 @@ function Orders({ locale }: OrderProps) {
     <section className="OrdersShop">
       <TextLayers bgText={t.bgText} title={t.title} />
       <div className="wrapper">
+        <div className="tableData">
+          <div className="numberData">{t.tableData.numberText}</div>
+          <div className="dateData">{t.tableData.dateText}</div>
+          <div className="priceData">{t.tableData.priceText}</div>
+          <div />
+        </div>
         <div className="separator" />
         {data.map((order: any) => (
           <Order locale={locale} orderData={order} key={`order-${order.id}`} />
