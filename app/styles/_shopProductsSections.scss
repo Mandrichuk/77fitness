@@ -33,10 +33,16 @@
           .imageBox {
             @include Flex(row, center, center);
             width: 100%;
-            padding: 60px;
+            aspect-ratio: 1 / 1;
+            padding: 30px;
+            max-height: 280px;
 
             .imageContainer {
+              @include Flex(row, center, center);
+              aspect-ratio: 1 / 1;
+              height: 100%;
               width: 100%;
+              overflow: hidden;
             }
           }
 

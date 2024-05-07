@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "@/app/store/store";
 
+import getId from "@/app/utils/getId";
 import Image from "../common/Image";
 import TextLayers from "../common/TextLayers";
 
@@ -140,6 +141,7 @@ function CartProduct({ locale, product, quantity }: CartProduct) {
           <Image
             image={`shop/${product.product.images[0].url}`}
             alt={"cartProduct"}
+            isShopProduct={true}
           />
         </div>
         <div className="details">

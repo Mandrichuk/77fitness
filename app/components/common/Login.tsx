@@ -26,7 +26,7 @@ function Login({ locale }: LoginProps) {
     password: "",
   });
   const notifyClientLogined = () => {
-    toast.success("t.notify", {
+    toast.success(t.notify, {
       position: "top-right",
       autoClose: 1300,
       hideProgressBar: true,

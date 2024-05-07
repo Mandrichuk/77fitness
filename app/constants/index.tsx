@@ -13,6 +13,8 @@ import {
   ProductCartTextProps,
   LoginTextProps,
   RegistrationTextProps,
+  OrderShopTextProps,
+  OrdersTextProps,
 } from "../lib/index";
 
 import logo from "@/public/assets/logo.png";
@@ -745,6 +747,7 @@ export const ProductCartText: ProductCartTextProps = {
       text: "Checkout",
       link: "/checkout",
     },
+    notify: "Order successful! Please wait for confirmation.",
   },
   sk: {
     bgText: "Objednať",
@@ -755,6 +758,7 @@ export const ProductCartText: ProductCartTextProps = {
       text: "Pokladňa",
       link: "/pokladňa",
     },
+    notify: "Objednávka úspešná! Prosím, počkajte na potvrdenie.",
   },
   ru: {
     bgText: "Заказ",
@@ -765,6 +769,7 @@ export const ProductCartText: ProductCartTextProps = {
       text: "Оформить заказ",
       link: "/checkout",
     },
+    notify: "Заказ успешно оформлен! Пожалуйста, подождите подтверждения.",
   },
 };
 
@@ -869,6 +874,7 @@ export const LoginText: LoginTextProps = {
       text: "Login",
       link: "/login",
     },
+    notify: "You have successfully logged in!",
     loginRedirect: "Don't have an account?",
   },
   sk: {
@@ -888,6 +894,7 @@ export const LoginText: LoginTextProps = {
       link: "/login",
     },
     loginRedirect: "Nemáte ešte účet?",
+    notify: "Úspešne ste sa prihlásili!",
   },
   ru: {
     title: "Войдите в свой аккаунт",
@@ -906,5 +913,42 @@ export const LoginText: LoginTextProps = {
       link: "/login",
     },
     loginRedirect: "Нет аккаунта?",
+    notify: "Вы успешно вошли в систему!",
+  },
+};
+
+export const OrderShopText: OrderShopTextProps = {
+  en: {
+    inProgress: "In progress",
+    done: "Done",
+    statusText: "Status",
+    totalText: "Total",
+  },
+  sk: {
+    inProgress: "V priebehu",
+    done: "Dokončené",
+    statusText: "Stav",
+    totalText: "Celkovo",
+  },
+  ru: {
+    inProgress: "В процессе",
+    done: "Завершено",
+    statusText: "Статус",
+    totalText: "Всего",
+  },
+};
+
+export const OrdersText: OrdersTextProps = {
+  en: {
+    title: "Your all orders",
+    bgText: "Orders",
+  },
+  sk: {
+    title: "Vaše všetky objednávky",
+    bgText: "Objednávky",
+  },
+  ru: {
+    title: "Ваши все заказы",
+    bgText: "Заказы",
   },
 };

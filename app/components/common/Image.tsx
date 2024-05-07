@@ -1,11 +1,17 @@
 "use client";
 import React, { useState } from "react";
-import { CldImage } from "next-cloudinary";
+import { CldImage } from "next-cloudinary"; // Import ObjectFit type
 
 import { CLOUDINARY_FOLDER } from "../../constants";
 import { type ImageProps } from "../../lib/index";
 
-function Image({ image, alt, imgQuality, imgPriority }: ImageProps) {
+function Image({
+  image,
+  alt,
+  imgQuality,
+  imgPriority,
+  isShopProduct,
+}: ImageProps) {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const checkedImgQuality = imgQuality || 90;
   const checkedImgPriority = imgPriority;
@@ -20,6 +26,13 @@ function Image({ image, alt, imgQuality, imgPriority }: ImageProps) {
     setIsLoading(false);
   };
 
+  const imageStyles: React.CSSProperties = {
+    objectFit: "contain",
+    width: "100%",
+    ...(isShopProduct && { height: "100%" }),
+    opacity: isLoading && !checkedImgPriority ? 0.3 : 1,
+  };
+
   return (
     <div
       className="Image"
@@ -28,11 +41,7 @@ function Image({ image, alt, imgQuality, imgPriority }: ImageProps) {
       <CldImage
         src={imageConverted}
         alt={alt}
-        style={{
-          objectFit: "cover",
-          width: "100%",
-          opacity: isLoading && !checkedImgPriority ? 0.3 : 1,
-        }}
+        style={imageStyles}
         width={500}
         height={500}
         quality={checkedImgQuality}

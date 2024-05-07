@@ -19,6 +19,7 @@ export interface ImageProps {
   alt: string;
   imgQuality?: number;
   imgPriority?: boolean;
+  isShopProduct?: boolean;
 }
 
 export interface HeaderLanguages {
@@ -68,7 +69,13 @@ export interface RegistrationProps extends Language {}
 
 export interface LoginProps extends Language {}
 
-export interface OrderProps extends Language {}
+export interface OrderProductsProps extends Language {
+  product: any;
+}
+
+export interface OrderProps extends Language {
+  orderData: any;
+}
 
 export interface CartProductProps {
   sku: string;
@@ -315,6 +322,7 @@ export interface ProductCartTextProps {
     totalPriceText: string;
     useBonusPoints: string;
     buttonCheckout: Button;
+    notify: string;
   };
   sk: {
     bgText: string;
@@ -322,6 +330,7 @@ export interface ProductCartTextProps {
     totalPriceText: string;
     useBonusPoints: string;
     buttonCheckout: Button;
+    notify: string;
   };
   ru: {
     bgText: string;
@@ -329,6 +338,7 @@ export interface ProductCartTextProps {
     totalPriceText: string;
     useBonusPoints: string;
     buttonCheckout: Button;
+    notify: string;
   };
 }
 
@@ -407,6 +417,7 @@ export interface LoginTextDetailsProps {
     link: string;
   };
   loginRedirect: string;
+  notify: string;
 }
 
 interface InputLoginErrors {
@@ -418,4 +429,40 @@ export interface LoginTextProps {
   en: LoginTextDetailsProps;
   sk: LoginTextDetailsProps;
   ru: LoginTextDetailsProps;
+}
+
+export interface OrderShopTextProps {
+  en: {
+    inProgress: string;
+    done: string;
+    statusText: string;
+    totalText: string;
+  };
+  sk: {
+    inProgress: string;
+    done: string;
+    statusText: string;
+    totalText: string;
+  };
+  ru: {
+    inProgress: string;
+    done: string;
+    statusText: string;
+    totalText: string;
+  };
+}
+
+export interface OrdersTextProps {
+  en: {
+    title: string;
+    bgText: string;
+  };
+  sk: {
+    title: string;
+    bgText: string;
+  };
+  ru: {
+    title: string;
+    bgText: string;
+  };
 }

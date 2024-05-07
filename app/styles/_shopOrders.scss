@@ -1,11 +1,11 @@
 .OrdersShop {
   @include Flex(column, center, center);
   width: 100%;
+  margin-bottom: 40px;
 
   .wrapper {
     @include Flex(column, center, center);
     width: wrapperWidth(mobile);
-
     .separator {
       margin-top: 30px;
       width: 100%;
@@ -18,23 +18,41 @@
       width: 100%;
 
       .wrapper {
+        cursor: pointer;
+
         @include Flex(row, center, space-between);
         padding: 15px 3px;
-        // border-top: 2px solid color(text-color);
         border-bottom: 2px solid color(text-color);
         width: 100%;
+        transition: $transition;
         .arrowDown {
           width: 30px;
+          transition: $transition;
 
           svg {
             fill: color(text-color);
           }
+        }
+
+        &:hover {
+          background-color: color(custom-black);
+        }
+
+        .sku {
+          color: color(text-color);
+          font-weight: fontWeight(bold);
+        }
+
+        .date,
+        price {
+          font-weight: fontWeight(regular);
         }
       }
     }
 
     .orderDetails {
       width: 100%;
+      height: 100%;
       // width: 94%;
 
       .orderProducts {
@@ -54,12 +72,12 @@
 
             .imageContainer {
               @include Flex(row, center, center);
-              width: 90px;
+              height: 85px;
               aspect-ratio: 1/1;
               object-fit: cover;
               margin-right: 25px;
 
-              background-color: lightgrey;
+              // background-color: lightgrey;
             }
 
             .details {
@@ -201,6 +219,7 @@
   .OrdersShop {
     @include Flex(column, center, center);
     width: 100%;
+    margin-bottom: 100px;
 
     .wrapper {
       @include Flex(column, center, center);
@@ -258,7 +277,7 @@
                 object-fit: cover;
                 margin-right: 25px;
 
-                background-color: lightgrey;
+                // background-color: lightgrey;
               }
 
               .details {

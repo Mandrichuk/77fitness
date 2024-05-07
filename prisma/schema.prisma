@@ -32,7 +32,7 @@ model Product {
   toDisplay     Boolean            @default(true)
   leftInStock   Int
   descriptionId Int
-  OrderProducts OrderProducts[]
+  OrderProduct  OrderProduct[]
 }
 
 model ProductDescription {
@@ -89,20 +89,22 @@ model Client {
 }
 
 model Order {
-  id            Int             @id @default(autoincrement())
-  sku           String          @unique
+  id            Int            @id @default(autoincrement())
+  sku           String         @unique
   clientSku     String
-  products      OrderProducts[]
-  orderedDate   DateTime        @default(now())
+  products      OrderProduct[]
+  orderedDate   DateTime       @default(now())
   completedDate DateTime?
-  isDone        Boolean
-  clientId      Int
+  isDone        Boolean        @default(false)
 }
 
-model OrderProducts {
-  id        Int     @id @default(autoincrement())
-  order     Order   @relation(fields: [orderId], references: [id])
-  product   Product @relation(fields: [productId], references: [id])
-  orderId   Int
-  productId Int
+model OrderProduct {
+  id         Int     @id @default(autoincrement())
+  order      Order   @relation(fields: [orderId], references: [id])
+  orderId    Int
+  product    Product @relation(fields: [productSku], references: [sku])
+  productSku String
+  quantity   Int
+
+  @@unique([orderId, productSku])
 }

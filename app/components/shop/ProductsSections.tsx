@@ -121,6 +121,7 @@ function ProductsSections({ locale, sku }: ProductSectionProps) {
                               image={`/shop/${image.url}`}
                               alt={"image"}
                               imgQuality={100}
+                              isShopProduct={true}
                             />
                           </div>
                         </div>
