@@ -1,22 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import categorySchema from "./schema";
+import categorySchema from "../../../category/schema";
 import prisma from "@/prisma/client";
-
-export async function GET(request: NextRequest) {
-  const categories = await prisma.category.findMany({
-    where: {
-      toDisplay: true,
-    },
-    include: {
-      bgText: true,
-      title: true,
-    },
-  });
-
-  return NextResponse.json({
-    categories: categories,
-  });
-}
 
 export async function POST(request: NextRequest) {
   const body = await request.json();
@@ -35,7 +19,7 @@ export async function POST(request: NextRequest) {
 
   if (isUnique) {
     return NextResponse.json(
-      { error: "Category already exists" },
+      { error: "category already exists" },
       { status: 400 }
     );
   }

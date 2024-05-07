@@ -34,15 +34,16 @@
     width: wrapperWidth(mobile);
 
     .imageContainer {
-      width: 94%;
+      width: 100%;
       background-color: lightblue;
-      aspect-ratio: 191/252;
-      border-radius: 8px;
+      aspect-ratio: 191/272;
+      border-radius: 3px;
       position: relative;
     }
 
     .arrowLeft,
     .arrowRight {
+      display: none;
       height: 40px;
       aspect-ratio: 1 / 1;
       cursor: pointer;

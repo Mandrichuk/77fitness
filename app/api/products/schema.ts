@@ -12,7 +12,7 @@ const schema = z.object({
   }),
   imageUrls: z.array(z.string()),
   newPrice: z.number().min(0.01).max(9999.99),
-  oldPrice: z.number().min(0.01).max(9999.99),
+  oldPrice: z.number().min(0.01).max(9999.99).optional(),
   createdAt: z.optional(z.string()),
   toDisplay: z.boolean(),
   leftInStock: z.number(),

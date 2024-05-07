@@ -45,7 +45,7 @@ function ProductsSections({ locale, sku }: ProductSectionProps) {
       hideProgressBar: true,
       closeOnClick: true,
       pauseOnHover: true,
-      theme: "dark"
+      theme: "dark",
     });
   };
 
@@ -114,18 +114,16 @@ function ProductsSections({ locale, sku }: ProductSectionProps) {
                 <div className="productsGrid">
                   {item.products.map((product: any, index: number) => (
                     <div className={`product`} key={`product-${index}`}>
-                      {product.images.map((image: any, index: number) => (
-                        <div className="imageBox" key={`image-${index}`}>
-                          <div className="imageContainer">
-                            <Image
-                              image={`/shop/${image.url}`}
-                              alt={"image"}
-                              imgQuality={100}
-                              isShopProduct={true}
-                            />
-                          </div>
+                      <div className="imageBox" key={`image-${index}`}>
+                        <div className="imageContainer">
+                          <Image
+                            image={`/shop/${product.images[0].url}`}
+                            alt={"image"}
+                            imgQuality={100}
+                            isShopProduct={true}
+                          />
                         </div>
-                      ))}
+                      </div>
                       <div className="details">
                         <p className="title">
                           {item.category.title
@@ -141,7 +139,7 @@ function ProductsSections({ locale, sku }: ProductSectionProps) {
                         <div className="cart">
                           <div className="prices">
                             <p className="newPrice">{product.newPrice}€</p>
-                            {product.oldPrice && (
+                            {product.oldPrice && product.oldPrice > 0.01 && (
                               <p className="oldPrice">{product.oldPrice}€</p>
                             )}
                           </div>

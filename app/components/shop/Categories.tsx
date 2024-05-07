@@ -9,6 +9,8 @@ function Categories({ locale, sku }: CategoriesProps) {
   const [data, setData] = useState<any>(null);
   const t = CategoriesText[locale] || CategoriesText["en"];
 
+  console.log(locale, data)
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -45,7 +47,7 @@ function Categories({ locale, sku }: CategoriesProps) {
               className="categoryContainer"
               key={index}
             >
-              <p className="text">{toUpperCase(item.name)}</p>
+              <p className="text">{toUpperCase(item.title[locale])}</p>
               {sku === item.sku && <div className="underline" />}
             </Link>
           ))}

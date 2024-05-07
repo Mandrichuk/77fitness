@@ -27,7 +27,7 @@ model Product {
   description   ProductDescription @relation(fields: [descriptionId], references: [id])
   images        ProductImage[]
   newPrice      Float
-  oldPrice      Float
+  oldPrice      Float 
   createdAt     DateTime           @default(now())
   toDisplay     Boolean            @default(true)
   leftInStock   Int
