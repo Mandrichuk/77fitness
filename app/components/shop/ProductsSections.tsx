@@ -89,79 +89,89 @@ function ProductsSections({ locale, sku }: ProductSectionProps) {
     );
   }
 
+  if (data) {
+    console.log(data[0].category.toDisplay);
+  }
+
   return (
     <section className="ProductsSectionsSection">
       <div className="content">
         {data &&
           Array.isArray(data) &&
-          data.map((item: any, index: number) => (
-            <div className="section" key={`section-${index}`}>
-              <div className="textLayer">
-                <TextLayers
-                  bgText={
-                    item.category.bgText
-                      ? item.category.bgText[locale]
-                      : "Not Found"
-                  }
-                  title={
-                    item.category.title
-                      ? item.category.title[locale]
-                      : "Not Found"
-                  }
-                />
-              </div>
-              <div className="wrapper">
-                <div className="productsGrid">
-                  {item.products.map((product: any, index: number) => (
-                    <div className={`product`} key={`product-${index}`}>
-                      <div className="imageBox" key={`image-${index}`}>
-                        <div className="imageContainer">
-                          <Image
-                            image={`/shop/${product.images[0].url}`}
-                            alt={"image"}
-                            imgQuality={100}
-                            isShopProduct={true}
-                          />
-                        </div>
-                      </div>
-                      <div className="details">
-                        <p className="title">
-                          {item.category.title
-                            ? item.category.title[locale]
-                            : "Not Found"}
-                        </p>
-                        <p className="name">{product.name}</p>
-                        <p className="description">
-                          {product.description
-                            ? product.description[locale]
-                            : "Not Found"}
-                        </p>
-                        <div className="cart">
-                          <div className="prices">
-                            <p className="newPrice">{product.newPrice}€</p>
-                            {product.oldPrice && product.oldPrice > 0.01 && (
-                              <p className="oldPrice">{product.oldPrice}€</p>
-                            )}
+          data.map(
+            (item: any, index: number) =>
+              item.category.toDisplay && (
+                <div className="section" key={`section-${index}`}>
+                  <div className="textLayer">
+                    <TextLayers
+                      bgText={
+                        item.category.bgText
+                          ? item.category.bgText[locale]
+                          : "Not Found"
+                      }
+                      title={
+                        item.category.title
+                          ? item.category.title[locale]
+                          : "Not Found"
+                      }
+                    />
+                  </div>
+                  <div className="wrapper">
+                    <div className="productsGrid">
+                      {item.products.map((product: any, index: number) => (
+                        <div className={`product`} key={`product-${index}`}>
+                          <div className="imageBox" key={`image-${index}`}>
+                            <div className="imageContainer">
+                              <Image
+                                image={`/shop/${product.images[0].url}`}
+                                alt={"image"}
+                                imgQuality={100}
+                                isShopProduct={true}
+                              />
+                            </div>
                           </div>
-                          <div className="buttonContainer">
-                            <button
-                              onClick={() => {
-                                addOneProduct(product.sku);
-                                notifyAddedToCart();
-                              }}
-                              className="button"
-                            >
-                              {t.button.text}
-                            </button>
+                          <div className="details">
+                            <p className="title">
+                              {item.category.title
+                                ? item.category.title[locale]
+                                : "Not Found"}
+                            </p>
+                            <p className="name">{product.name}</p>
+                            <p className="description">
+                              {product.description
+                                ? product.description[locale]
+                                : "Not Found"}
+                            </p>
+                            <div className="cart">
+                              <div className="prices">
+                                <p className="newPrice">{product.newPrice}€</p>
+                                {product.oldPrice &&
+                                  product.oldPrice > 0.01 && (
+                                    <p className="oldPrice">
+                                      {product.oldPrice}€
+                                    </p>
+                                  )}
+                              </div>
+                              <div className="buttonContainer">
+                                <button
+                                  onClick={() => {
+                                    addOneProduct(product.sku);
+                                    notifyAddedToCart();
+                                  }}
+                                  className="button"
+                                >
+                                  {t.button.text}
+                                </button>
+                              </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
+                      ))}
                     </div>
-                  ))}
+                  </div>
                 </div>
-              </div>
-            </div>
-          ))}
+              )
+          )}
       </div>
       <ToastContainer />
     </section>

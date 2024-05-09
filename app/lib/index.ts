@@ -69,9 +69,12 @@ export interface RegistrationProps extends Language {}
 
 export interface LoginProps extends Language {}
 
+export interface CategoriesEditProps extends Language {}
+
 export interface OrderProductsProps extends Language {
   product: any;
 }
+
 export interface AdminProductsProps extends Language {
   product: any;
 }
@@ -502,5 +505,23 @@ export interface OrdersTextProps {
       dateText: string;
       priceText: string;
     };
+  };
+}
+
+export interface CategoriesEditAdminTextProps {
+  en: {
+    title: string;
+    invisible: string;
+    visible: string;
+  };
+  sk: {
+    title: string;
+    invisible: string;
+    visible: string;
+  };
+  ru: {
+    title: string;
+    invisible: string;
+    visible: string;
   };
 }
