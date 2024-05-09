@@ -13,9 +13,16 @@ import TextLayers from "../common/TextLayers";
 
 function Orders({ locale }: AdminProps) {
   const t = AdminText[locale] || AdminText["en"];
-  const clientData = useSelector((state: RootState) => state.clientLogin.value);
+  const adminData = useSelector((state: RootState) => state.adminLogin.value);
   const [data, setData] = useState<any>(null);
   const [searchQuery, setSearchQuery] = useState("");
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && !adminData) {
+      window.location.href = "/admin/login";
+      return;
+    }
+  }, []);
 
   useEffect(() => {
     async function fetchData() {
@@ -54,8 +61,10 @@ function Orders({ locale }: AdminProps) {
     );
   }
 
-  const filteredData = data.filter((order: any) =>
-    order.sku.toLowerCase().includes(searchQuery.toLowerCase())
+  const filteredData = data.filter(
+    (order: any) =>
+      order.sku.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      order.clientSku.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   return (
@@ -74,6 +83,9 @@ function Orders({ locale }: AdminProps) {
           <TextLayers bgText={"In process"} title={"In process orders"} />
           <div className="tableData">
             <div className="numberData">{t.tableData.numberText}</div>
+            <div className="clientNumberData">
+              {t.tableData.clientNumberText}
+            </div>
             <div className="dateData">{t.tableData.dateText}</div>
             <div className="priceData">{t.tableData.priceText}</div>
             <div />
@@ -93,6 +105,9 @@ function Orders({ locale }: AdminProps) {
           <TextLayers bgText={"Done"} title={"Done orders"} />
           <div className="tableData">
             <div className="numberData">{t.tableData.numberText}</div>
+            <div className="clientNumberData">
+              {t.tableData.clientNumberText}
+            </div>
             <div className="dateData">{t.tableData.dateText}</div>
             <div className="priceData">{t.tableData.priceText}</div>
             <div />
@@ -190,6 +205,11 @@ function InProccessOrder({
         <div className="sku">
           №&nbsp;
           {highlightSearchQuery(orderData.sku, searchQuery)}
+        </div>
+
+        <div className="sku">
+          №&nbsp;
+          {highlightSearchQuery(orderData.clientSku, searchQuery)}
         </div>
 
         <div className="date">{formatDate(orderData.orderedDate)}</div>
@@ -323,6 +343,11 @@ function DoneOrder({
         <div className="sku">
           №&nbsp;
           {highlightSearchQuery(orderData.sku, searchQuery)}
+        </div>
+
+        <div className="sku">
+          №&nbsp;
+          {highlightSearchQuery(orderData.clientSku, searchQuery)}
         </div>
 
         <div className="date">{formatDate(orderData.orderedDate)}</div>

@@ -5,9 +5,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "@/app/store/store";
 import { toast, ToastContainer } from "react-toastify";
 
-import { login as clientLogin } from "@/app/features/clientLogin";
+import { login as adminLogin } from "@/app/features/adminLogin";
 import getHash from "@/app/utils/getHash";
-import Input from "./Input";
+import Input from "../../components/common/Input";
 
 import { LoginProps } from "../../lib";
 import { LoginText } from "@/app/constants";
@@ -17,12 +17,12 @@ function Login({ locale }: LoginProps) {
   const t = LoginText[locale] || LoginText["en"];
   const [revealErrors, setRevealErrors] = useState(false);
   const [incorrectData, setIncorrectData] = useState(false);
-  const isLogined = useSelector((state: RootState) => state.clientLogin.value);
+  const isLogined = useSelector((state: RootState) => state.adminLogin.value);
   const [errors, setErrors] = useState({
     fieldsFilled: false,
   });
   const [inputs, setInputs] = useState({
-    email: "",
+    username: "",
     password: "",
   });
   const notifyClientLogined = () => {
@@ -35,6 +35,8 @@ function Login({ locale }: LoginProps) {
       theme: "dark",
     });
   };
+
+  console.log(inputs);
 
   useEffect(() => {
     if (typeof window !== "undefined" && isLogined !== null) {
@@ -49,7 +51,7 @@ function Login({ locale }: LoginProps) {
 
   function isValid() {
     setErrors({
-      fieldsFilled: inputs.email !== "" && inputs.password !== "",
+      fieldsFilled: inputs.username !== "" && inputs.password !== "",
     });
 
     return Object.values(errors).every((value) => value);
@@ -57,18 +59,18 @@ function Login({ locale }: LoginProps) {
 
   async function handleLogin() {
     if (isValid()) {
-      const clientData = {
-        email: inputs.email,
+      const adminData = {
+        username: inputs.username,
         password: inputs.password,
       };
 
       try {
-        const response = await fetch("/api/login", {
+        const response = await fetch("/api/admin/login", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(clientData),
+          body: JSON.stringify(adminData),
         });
 
         if (response.ok) {
@@ -77,16 +79,16 @@ function Login({ locale }: LoginProps) {
           const responseData = await response.json();
 
           dispatch(
-            clientLogin({
-              sku: responseData.user.sku,
-              email: responseData.user.email,
-              username: responseData.user.username,
+            adminLogin({
+              sku: responseData.admin.sku,
+              email: responseData.admin.email,
+              username: responseData.admin.username,
             })
           );
 
           notifyClientLogined();
           if (typeof window !== "undefined") {
-            window.location.href = "/shop";
+            window.location.href = "/admin";
           }
         } else {
           const text = await response.text();
@@ -106,25 +108,19 @@ function Login({ locale }: LoginProps) {
     <section className="LoginSection">
       <div className="wrapper">
         <h3 className="title">{t.title}</h3>
-        <div className="chooseOption">
-          <Link href={t.registrationLink.link} className="borderButton">
-            {t.registrationLink.text}
-          </Link>
-          <Link href={""} className="button">
-            {t.loginLink.text}
-          </Link>
-        </div>
         <form className="inputs">
           <Input
             placeholderText={t.inputs.email.placeholder}
             getValue={(e, field) => getValue(e, field)}
-            field={t.inputs.email.field}
+            field={"username"}
           />
-          {revealErrors && !errors.fieldsFilled && inputs.email.length < 1 && (
-            <p className="error fieldsNotFilled">
-              *{t.inputErrors.fulfillFields}
-            </p>
-          )}
+          {revealErrors &&
+            !errors.fieldsFilled &&
+            inputs.username.length < 1 && (
+              <p className="error fieldsNotFilled">
+                *{t.inputErrors.fulfillFields}
+              </p>
+            )}
           <Input
             placeholderText={t.inputs.password.placeholder}
             getValue={(e, field) => getValue(e, field)}
@@ -140,7 +136,7 @@ function Login({ locale }: LoginProps) {
         </form>
         {revealErrors &&
           incorrectData &&
-          inputs.email.length > 1 &&
+          inputs.username.length > 1 &&
           inputs.password.length > 1 && (
             <div className="loginRedirect">
               <p className="error fieldsNotFilled">

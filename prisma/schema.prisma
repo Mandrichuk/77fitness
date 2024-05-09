@@ -27,7 +27,7 @@ model Product {
   description   ProductDescription @relation(fields: [descriptionId], references: [id])
   images        ProductImage[]
   newPrice      Float
-  oldPrice      Float 
+  oldPrice      Float
   createdAt     DateTime           @default(now())
   toDisplay     Boolean            @default(true)
   leftInStock   Int
@@ -107,4 +107,14 @@ model OrderProduct {
   quantity   Int
 
   @@unique([orderId, productSku])
+}
+
+model Admin {
+  id               Int      @id @default(autoincrement())
+  sku              String   @unique
+  username         String
+  password         String
+  registrationDate DateTime @default(now())
+  lastLoginDate    DateTime @default(now())
+  fullAccess       Boolean  @default(false)
 }

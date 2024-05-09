@@ -109,6 +109,16 @@ export interface ClientStateProps {
   value: ClientDetailsProps | null;
 }
 
+export interface AdminDetailsProps {
+  sku: string;
+  username: string;
+  email: string;
+}
+
+export interface AdminStateProps {
+  value: AdminDetailsProps | null;
+}
+
 export interface CategoriesProps extends Language {
   sku?: string | null;
 }

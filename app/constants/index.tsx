@@ -983,6 +983,7 @@ export const AdminText = {
     bgText: "Orders",
     tableData: {
       numberText: "Number",
+      clientNumberText: "Client number",
       dateText: "Date",
       priceText: "Price",
     },
@@ -992,6 +993,7 @@ export const AdminText = {
     bgText: "Objednávky",
     tableData: {
       numberText: "Číslo",
+      clientNumberText: "Číslo klienta",
       dateText: "Dátum",
       priceText: "Cena",
     },
@@ -1001,6 +1003,7 @@ export const AdminText = {
     bgText: "Заказы",
     tableData: {
       numberText: "Номер",
+      clientNumberText: "Номер клиента",
       dateText: "Дата",
       priceText: "Цена",
     },

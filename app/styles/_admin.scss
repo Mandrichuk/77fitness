@@ -25,6 +25,12 @@
           color: color(custom-gray);
           font-weight: fontWeight(semibold);
         }
+        .clientNumberData {
+          // display: none;
+          width: 120px;
+          color: color(custom-gray);
+          font-weight: fontWeight(semibold);
+        }
         .dateData {
           width: 75px;
           color: color(custom-gray);
@@ -290,6 +296,8 @@
         width: 100%;
         margin-top: 30px;
         @include Flex(row, center, space-between);
+
+
 
         .numberData {
           width: 120px;

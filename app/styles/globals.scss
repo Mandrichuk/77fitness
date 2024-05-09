@@ -111,3 +111,8 @@ html {
     }
   }
 }
+
+::selection {
+  background-color: #494949; 
+  color: #ffffff;
+}
