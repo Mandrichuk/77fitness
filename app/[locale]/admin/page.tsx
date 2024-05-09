@@ -4,7 +4,7 @@ import { Metadata } from "next";
 import Header from "@/app/components/common/Header";
 import Footer from "@/app/components/common/Footer";
 import CreatedBy from "@/app/components/common/CreatedBy";
-import Orders from "@/app/components/admin/Orders";
+import Orders from "@/app/components/admin/Admin";
 
 import { LocaleProps } from "../../lib/index";
 

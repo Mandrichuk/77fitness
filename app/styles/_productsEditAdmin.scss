@@ -1,0 +1,397 @@
+.ProductsEditAdminSection {
+  @include Flex(column, center, center);
+  width: 100%;
+  // min-width: 300px;
+
+  .wrapper {
+    @include Flex(column, center, center);
+    width: wrapperWidth(mobile);
+    min-height: 300px;
+
+    .title {
+      margin-bottom: 50px;
+      font-size: fontSize(h3);
+      font-weight: fontWeight(semibold);
+    }
+
+    .subtitle {
+      width: 100%;
+      margin-top: 50px;
+      font-size: fontSize(p);
+      font-weight: fontWeight(semibold);
+    }
+
+    .productsGrid {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      grid-auto-rows: minmax(440px, auto);
+      row-gap: 20px;
+
+      .product {
+        @include Flex(column, center, center);
+        width: 100%;
+        transition: transform 0.2s ease;
+        background-color: color(custom-black);
+
+        .imageBox {
+          @include Flex(row, center, center);
+          width: 80%;
+          aspect-ratio: 1 / 1;
+          padding: 30px;
+          max-height: 240px;
+
+          .imageContainer {
+            @include Flex(row, center, center);
+            aspect-ratio: 1 / 1;
+            height: 100%;
+            width: 94%;
+            overflow: hidden;
+          }
+        }
+
+        .details {
+          @include Flex(column, start, center);
+          position: relative;
+          width: 100%;
+          flex: 1;
+          padding: 0 30px 30px 30px;
+
+          .title {
+            font-size: calc(fontSize(p) + 1px);
+            font-weight: fontWeight(bold);
+            color: rgba(color(text-color), 0.6);
+            margin-bottom: 10px;
+          }
+
+          .name {
+            font-size: calc(fontSize(p) + 6px);
+            font-weight: fontWeight(extrabold);
+            color: color(text-color);
+          }
+
+          .description {
+            font-size: calc(fontSize(p));
+            font-weight: fontWeight(bold);
+            color: rgba(color(text-color), 0.6);
+            margin-bottom: 20px;
+            height: 40px;
+          }
+
+          .cart {
+            @include Flex(row, center, space-between);
+            width: 100%;
+
+            .prices {
+              height: 60px;
+              @include Flex(column, start, start);
+              margin: 0;
+              .newPrice {
+                font-size: calc(fontSize(p) + 7px);
+                font-weight: fontWeight(black);
+                color: #e30036;
+              }
+
+              .oldPrice {
+                font-size: calc(fontSize(p) + 2px);
+                font-weight: fontWeight(bold);
+                color: rgba(color(text-color), 0.6);
+                text-decoration: line-through;
+              }
+            }
+          }
+
+          .buttonsContainer {
+            position: absolute;
+            @include Flex(row, center, center);
+            flex: 1;
+            gap: 20px;
+            bottom: 10px;
+            right: 10px;
+            height: 50px;
+
+            .edit,
+            .notVisible {
+              width: 35px;
+              height: 35px;
+              transition: $transition;
+              cursor: pointer;
+              &:active {
+                transform: scale(0.98);
+              }
+              svg {
+                fill: white;
+                width: 90%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 500px) {
+  .ProductsEditAdminSection {
+    @include Flex(column, center, center);
+    width: 100%;
+    // min-width: 300px;
+
+    .wrapper {
+      @include Flex(column, center, center);
+      width: wrapperWidth(mobile);
+      min-height: 300px;
+      .productsGrid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        grid-auto-rows: minmax(350px, auto);
+        gap: 10px;
+        row-gap: 40px;
+
+        .product {
+          @include Flex(column, center, center);
+          // border-left: 1.5px solid rgba(#d9d9d9, 0.5);
+          // border-right: 1.5px solid rgba(#d9d9d9, 0.5);
+
+          .imageBox {
+            @include Flex(row, center, center);
+            width: 96%;
+            padding: 0;
+            padding: 30px;
+
+            .imageContainer {
+              width: 100%;
+            }
+          }
+
+          .details {
+            padding: 20px;
+
+            @include Flex(column, start, center);
+            width: 100%;
+            flex: 1;
+
+            .title {
+              font-size: calc(fontSize(p));
+              font-weight: fontWeight(bold);
+              color: rgba(color(text-color), 0.6);
+              margin-bottom: 10px;
+            }
+
+            .name {
+              font-size: calc(fontSize(p) + 2px);
+              font-weight: fontWeight(extrabold);
+              color: color(text-color);
+            }
+
+            .description {
+              font-size: calc(fontSize(p) - 3px);
+              font-weight: fontWeight(bold);
+              color: rgba(color(text-color), 0.6);
+              margin-bottom: 20px;
+            }
+
+            .cart {
+              @include Flex(column, end, space-between);
+              width: 100%;
+
+              .prices {
+                @include Flex(column, start, start);
+                margin: 0;
+                margin-bottom: 15px;
+                .newPrice {
+                  font-size: calc(fontSize(p) + 3px);
+                  font-weight: fontWeight(black);
+                  color: #e30036;
+                }
+
+                .oldPrice {
+                  font-size: calc(fontSize(p));
+                  font-weight: fontWeight(bold);
+                  color: rgba(color(text-color), 0.6);
+                  text-decoration: line-through;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .ProductsEditAdminSection {
+    @include Flex(column, center, center);
+    width: 100%;
+    // min-width: 300px;
+
+    .wrapper {
+      @include Flex(column, center, center);
+      width: wrapperWidth(mobile);
+      min-height: 300px;
+      .productsGrid {
+        width: wrapperWidth(mobile);
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        grid-auto-rows: minmax(350px, auto);
+        gap: 10px;
+        row-gap: 40px;
+
+        .product {
+          @include Flex(column, center, center);
+
+          .imageBox {
+            @include Flex(row, center, center);
+            width: 94%;
+            padding: 0;
+            padding: 30px;
+
+            .imageContainer {
+              width: 100%;
+            }
+          }
+
+          .details {
+            padding: 20px;
+
+            @include Flex(column, start, center);
+            width: 100%;
+            flex: 1;
+
+            .title {
+              font-size: calc(fontSize(p) - 1px);
+              font-weight: fontWeight(bold);
+              color: rgba(color(text-color), 0.6);
+              margin-bottom: 10px;
+            }
+
+            .name {
+              font-size: calc(fontSize(p) + 3px);
+              font-weight: fontWeight(extrabold);
+              color: color(text-color);
+            }
+
+            .description {
+              font-size: calc(fontSize(p) - 3px);
+              font-weight: fontWeight(bold);
+              color: rgba(color(text-color), 0.6);
+              margin-bottom: 20px;
+            }
+
+            .cart {
+              @include Flex(column, end, space-between);
+              width: 100%;
+
+              .prices {
+                @include Flex(column, start, start);
+                margin: 0;
+                margin-bottom: 15px;
+                .newPrice {
+                  font-size: calc(fontSize(p) + 3px);
+                  font-weight: fontWeight(black);
+                  color: #e30036;
+                }
+
+                .oldPrice {
+                  font-size: calc(fontSize(p));
+                  font-weight: fontWeight(bold);
+                  color: rgba(color(text-color), 0.6);
+                  text-decoration: line-through;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .ProductsEditAdminSection {
+    @include Flex(column, center, center);
+    width: 100%;
+    // min-width: 300px;
+
+    .wrapper {
+      @include Flex(column, center, center);
+      width: wrapperWidth(mobile);
+      min-height: 300px;
+      .productsGrid {
+        width: wrapperWidth(mobile);
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        grid-auto-rows: minmax(350px, auto);
+        gap: 10px;
+        row-gap: 40px;
+
+        .product {
+          @include Flex(column, center, center);
+          .imageBox {
+            @include Flex(row, center, center);
+            width: 85%;
+            padding: 0;
+            padding: 30px;
+
+            .imageContainer {
+              width: 100%;
+            }
+          }
+
+          .details {
+            padding: 20px;
+
+            @include Flex(column, start, center);
+            width: 100%;
+            flex: 1;
+
+            .title {
+              font-size: calc(fontSize(p) - 2px);
+              font-weight: fontWeight(bold);
+              color: rgba(color(text-color), 0.6);
+              margin-bottom: 10px;
+            }
+
+            .name {
+              font-size: calc(fontSize(p) + 2px);
+              font-weight: fontWeight(extrabold);
+              color: color(text-color);
+            }
+
+            .description {
+              font-size: calc(fontSize(p) - 4px);
+              font-weight: fontWeight(bold);
+              color: rgba(color(text-color), 0.6);
+              margin-bottom: 20px;
+            }
+
+            .cart {
+              @include Flex(column, end, space-between);
+              width: 100%;
+
+              .prices {
+                @include Flex(column, start, start);
+                margin: 0;
+                margin-bottom: 15px;
+                .newPrice {
+                  font-size: calc(fontSize(p) + 3px);
+                  font-weight: fontWeight(black);
+                  color: #e30036;
+                }
+
+                .oldPrice {
+                  font-size: calc(fontSize(p));
+                  font-weight: fontWeight(bold);
+                  color: rgba(color(text-color), 0.6);
+                  text-decoration: line-through;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -35,7 +35,7 @@
 @import "overview";
 @import "shopHead";
 @import "shopCategories";
-@import "shopProductsSections";
+@import "shopProducts";
 @import "cartCartProducts";
 @import "cartPriceDetails";
 @import "shopSuccess";
@@ -45,8 +45,8 @@
 @import "login";
 @import "shopOrders";
 @import "admin";
-@import "categoriesEditAdminSection";
-
+@import "categoriesEditAdmin";
+@import "productsEditAdmin";
 
 * {
   box-sizing: border-box;
@@ -115,6 +115,6 @@ html {
 }
 
 ::selection {
-  background-color: #494949; 
+  background-color: #494949;
   color: #ffffff;
 }

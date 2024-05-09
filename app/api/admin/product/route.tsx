@@ -13,5 +13,5 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ error: "Products not found" }, { status: 404 });
   }
 
-  return NextResponse.json(products, { status: 201 });
+  return NextResponse.json({ products: products }, { status: 201 });
 }
