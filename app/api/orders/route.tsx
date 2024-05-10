@@ -12,7 +12,7 @@ export async function POST(request: NextRequest) {
   });
 
   if (!orders || orders.length === 0) {
-    return NextResponse.json({ error: "Orders not found" }, { status: 404 });
+    return NextResponse.json([], { status: 201 });
   }
 
   for (const order of orders) {

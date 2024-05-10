@@ -1,0 +1,42 @@
+.CartButtonShop {
+  @include Flex(row, center, center);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  background-color: color(secondary-color);
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 20;
+
+  .wrapper {
+    transition: $transition;
+    position: relative;
+    @include Flex(row, center, center);
+    width: 90%;
+
+    .icon {
+      width: 100%;
+      svg {
+        fill: color(text-color);
+      }
+    }
+
+    .count {
+      transition: $transition;
+      font-size: calc(fontSize(p) - 2px);
+      @include Flex(row, center, center);
+      position: absolute;
+      margin-top: 10px;
+    }
+
+    &.scaling {
+      transform: scale(1.05);
+
+      .count {
+        font-weight: fontWeight(bold);
+      }
+    }
+  }
+}

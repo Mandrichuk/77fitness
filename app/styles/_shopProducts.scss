@@ -18,6 +18,14 @@
     .wrapper {
       @include Flex(column, center, center);
       width: 100%;
+
+      .commingSoon {
+        @include Flex(column, center, center);
+        width: wrapperWidth(mobile);
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
       .productsGrid {
         width: wrapperWidth(mobile);
         display: grid;

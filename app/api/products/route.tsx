@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import productSchema from "./schema";
 import prisma from "@/prisma/client";
+import toFixedNumber from "@/app/utils/toFixedNumber";
 
 export async function GET(request: NextRequest) {
   const products = await prisma.product.findMany({
@@ -56,8 +57,8 @@ export async function POST(request: NextRequest) {
       images: {
         create: body.imageUrls.map((url: string) => ({ url })),
       },
-      newPrice: body.newPrice,
-      oldPrice: body.oldPrice,
+      newPrice: Number(toFixedNumber(body.newPrice)),
+      oldPrice: Number(toFixedNumber(body.oldPrice)),
       leftInStock: body.leftInStock,
     },
   });

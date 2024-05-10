@@ -108,13 +108,7 @@ function PriceDetails({ locale }: PriceDetailsProps) {
   }
 
   if (!data) {
-    return (
-      <div>
-        <div className="flex flex-row items-center justify-center">
-          <div className="loading" />
-        </div>
-      </div>
-    );
+    return null;
   }
 
   return (

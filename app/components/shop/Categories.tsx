@@ -27,7 +27,7 @@ function Categories({ locale, sku }: CategoriesProps) {
 
   if (!data) {
     return (
-      <div className="flex flex-row items-center justify-center  ">
+      <div className="flex flex-row items-center justify-center h-[250px] ">
         <div className="loading" />
       </div>
     );

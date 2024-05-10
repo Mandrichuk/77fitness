@@ -4,16 +4,21 @@ import { useSelector } from "react-redux";
 import { RootState } from "@/app/store/store";
 
 import { OrdersText } from "@/app/constants";
+import { shopRedirectFromOrders } from "@/app/constants";
 import Image from "../common/Image";
 import { OrderShopText } from "@/app/constants";
 import { OrderProps, OrdersProps, OrderProductsProps } from "@/app/lib";
 import { SVGs } from "@/app/constants";
 import formatDate from "@/app/utils/formatDate";
+import toFixedNumber from "@/app/utils/toFixedNumber";
 
 import TextLayers from "../common/TextLayers";
+import Link from "next/link";
 
 function Orders({ locale }: OrdersProps) {
   const t = OrdersText[locale] || OrdersText["en"];
+  const redirectT =
+    shopRedirectFromOrders[locale] || shopRedirectFromOrders["en"];
   const clientData = useSelector((state: RootState) => state.clientLogin.value);
   const [data, setData] = useState<any>(null);
 
@@ -45,17 +50,53 @@ function Orders({ locale }: OrdersProps) {
     fetchData();
   }, []);
 
+
+
+  if (!clientData) {
+    return (
+      <div className="shopRedirect">
+        <div className="wrapper">
+          <p className="title">{redirectT.isNotLoggined.title}</p>
+          <p className="description">{redirectT.isNotLoggined.description}</p>
+          <div className="buttonContainer">
+            <Link className="button" href={redirectT.isNotLoggined.button.link}>
+              {redirectT.isNotLoggined.button.text}
+            </Link>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   if (!data) {
     return (
       <div>
         <TextLayers bgText={t.bgText} title={t.title} />
 
-        <div className="flex flex-row items-center justify-center">
+        <div className=" h-[260px] flex flex-row items-center justify-center">
           <div className="loading" />
         </div>
       </div>
     );
   }
+
+  if (data && data.length === 0 && clientData) {
+    console.log('hello')
+    return (
+      <div className="shopRedirect">
+        <div className="wrapper">
+          <p className="title">{redirectT.noOrders.title}</p>
+          <p className="description">{redirectT.noOrders.description}</p>
+          <div className="buttonContainer">
+            <Link className="button" href={redirectT.noOrders.button.link}>
+              {redirectT.noOrders.button.text}
+            </Link>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <section className="OrdersShop">
       <TextLayers bgText={t.bgText} title={t.title} />
@@ -85,15 +126,12 @@ function Order({ locale, orderData }: OrderProps) {
     orderData.products.forEach((product: any) => {
       total += product.newPrice * product.quantity;
     });
-    setTotalPrice(total);
+    setTotalPrice(Number(toFixedNumber(total)));
   }
-  console.log(totalPrice);
 
   useEffect(() => {
     calculateTotalPrice();
   }, []);
-
-  console.log(orderData);
 
   function toggleProducts() {
     setProductsOpen(!productsOpen);
@@ -126,7 +164,7 @@ function Order({ locale, orderData }: OrderProps) {
           <div className="total">
             <div className="priceContainer">
               <p className="text">{t.totalText}</p>
-              <p className="price">€{totalPrice}</p>
+              <p className="price">€{toFixedNumber(totalPrice)}</p>
             </div>
             <div className="statusContainer">
               <p className="text">{t.statusText}</p>
@@ -167,7 +205,7 @@ function OrderProducts({ locale, product }: OrderProductsProps) {
           <div className="text">{product.quantity}</div>
         </div>
         <div className="cartPrices">
-          <p className="newPrice">€{product.newPrice}</p>
+          <p className="newPrice">€{toFixedNumber(product.newPrice)}</p>
         </div>
       </div>
     </div>

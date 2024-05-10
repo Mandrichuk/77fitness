@@ -330,14 +330,17 @@ export interface ProductsSectionsTextProps {
   en: {
     button: Link;
     notify: string;
+    commingSoon: string;
   };
   sk: {
     button: Link;
     notify: string;
+    commingSoon: string;
   };
   ru: {
     button: Link;
     notify: string;
+    commingSoon: string;
   };
 }
 
@@ -524,4 +527,69 @@ export interface CategoriesEditAdminTextProps {
     invisible: string;
     visible: string;
   };
+}
+
+export interface ProductsEditAdminTextProps {
+  en: {
+    title: string;
+    invisible: string;
+    visible: string;
+  };
+  sk: {
+    title: string;
+    invisible: string;
+    visible: string;
+  };
+  ru: {
+    title: string;
+    invisible: string;
+    visible: string;
+  };
+}
+
+export interface ShopRedirectFromCartProps {
+  en: {
+    title: string;
+    description: string;
+    button: {
+      text: string;
+      link: string;
+    };
+  };
+  ru: {
+    title: string;
+    description: string;
+    button: {
+      text: string;
+      link: string;
+    };
+  };
+  sk: {
+    title: string;
+    description: string;
+    button: {
+      text: string;
+      link: string;
+    };
+  };
+}
+
+interface ShopFromOrdersProps {
+  title: string;
+  description: string;
+  button: {
+    text: string;
+    link: string;
+  };
+}
+
+interface ShopRedirectFromOrders {
+  isNotLoggined: ShopFromOrdersProps;
+  noOrders: ShopFromOrdersProps;
+}
+
+export interface ShopRedirectFromOrdersProps {
+  en: ShopRedirectFromOrders;
+  sk: ShopRedirectFromOrders;
+  ru: ShopRedirectFromOrders;
 }

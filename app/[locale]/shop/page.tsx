@@ -9,7 +9,7 @@ import Head from "@/app/components/shop/Head";
 import { LocaleProps } from "../../lib/index";
 import Categories from "@/app/components/shop/Categories";
 import ProductSection from "@/app/components/shop/ProductsSections";
-import Input from "@/app/components/common/Input";
+import CartButton from "@/app/components/shop/CartButton";
 
 export const metadata: Metadata = {
   title: "Pricing",
@@ -26,6 +26,7 @@ function Home({ params: { locale } }: LocaleProps) {
       <Head locale={locale} />
       <Categories locale={locale} />
       <ProductSection locale={locale} />
+      <CartButton />
       <Newsletter />
       <Footer locale={locale} />
       <CreatedBy />

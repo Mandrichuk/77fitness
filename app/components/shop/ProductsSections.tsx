@@ -8,6 +8,7 @@ import { ProductSectionProps } from "../../lib/index";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "@/app/store/store";
 import { toast, ToastContainer } from "react-toastify";
+import toFixedNumber from "@/app/utils/toFixedNumber";
 
 import {
   addOneToCart,
@@ -82,16 +83,9 @@ function ProductsSections({ locale, sku }: ProductSectionProps) {
   }, [data]);
 
   if (!data) {
-    return (
-      <div className="flex flex-row items-center justify-center">
-        <div className="loading" />
-      </div>
-    );
+    return null;
   }
 
-  if (data) {
-    console.log(data[0].category.toDisplay);
-  }
 
   return (
     <section className="ProductsSectionsSection">
@@ -117,57 +111,74 @@ function ProductsSections({ locale, sku }: ProductSectionProps) {
                     />
                   </div>
                   <div className="wrapper">
-                    <div className="productsGrid">
-                      {item.products.map((product: any, index: number) => (
-                        <div className={`product`} key={`product-${index}`}>
-                          <div className="imageBox" key={`image-${index}`}>
-                            <div className="imageContainer">
-                              <Image
-                                image={`/shop/${product.images[0].url}`}
-                                alt={"image"}
-                                imgQuality={100}
-                                isShopProduct={true}
-                              />
-                            </div>
-                          </div>
-                          <div className="details">
-                            <p className="title">
-                              {item.category.title
-                                ? item.category.title[locale]
-                                : "Not Found"}
-                            </p>
-                            <p className="name">{product.name}</p>
-                            <p className="description">
-                              {product.description
-                                ? product.description[locale]
-                                : "Not Found"}
-                            </p>
-                            <div className="cart">
-                              <div className="prices">
-                                <p className="newPrice">{product.newPrice}€</p>
-                                {product.oldPrice &&
-                                  product.oldPrice > 0.01 && (
-                                    <p className="oldPrice">
-                                      {product.oldPrice}€
-                                    </p>
-                                  )}
-                              </div>
-                              <div className="buttonContainer">
-                                <button
-                                  onClick={() => {
-                                    addOneProduct(product.sku);
-                                    notifyAddedToCart();
-                                  }}
-                                  className="button"
+                    {item.products.filter((product: any) => product.toDisplay)
+                      .length === 0 ? (
+                      <p className="commingSoon">{t.commingSoon}</p>
+                    ) : (
+                      <div className="productsGrid">
+                        {item.products.map(
+                          (product: any, index: number) =>
+                            product.toDisplay && (
+                              <div
+                                className={`product`}
+                                key={`product-${index}`}
+                              >
+                                <div
+                                  className="imageBox"
+                                  key={`image-${index}`}
                                 >
-                                  {t.button.text}
-                                </button>
+                                  <div className="imageContainer">
+                                    <Image
+                                      image={`/shop/${product.images[0].url}`}
+                                      alt={"image"}
+                                      imgQuality={100}
+                                      isShopProduct={true}
+                                    />
+                                  </div>
+                                </div>
+                                <div className="details">
+                                  <p className="title">
+                                    {item.category.title
+                                      ? item.category.title[locale]
+                                      : "Not Found"}
+                                  </p>
+                                  <p className="name">{product.name}</p>
+                                  <p className="description">
+                                    {product.description
+                                      ? product.description[locale]
+                                      : "Not Found"}
+                                  </p>
+                                  <div className="cart">
+                                    <div className="prices">
+                                      <p className="newPrice">
+                                        €{toFixedNumber(product.newPrice)}
+                                      </p>
+                                      {product.oldPrice &&
+                                        product.oldPrice > 0.01 &&
+                                        product.oldPrice > product.newPrice && (
+                                          <p className="oldPrice">
+                                            €{toFixedNumber(product.oldPrice)}
+                                          </p>
+                                        )}
+                                    </div>
+                                    <div className="buttonContainer">
+                                      <button
+                                        onClick={() => {
+                                          addOneProduct(product.sku);
+                                          notifyAddedToCart();
+                                        }}
+                                        className="button"
+                                      >
+                                        {t.button.text}
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
-                            </div>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
+                            )
+                        )}
+                      </div>
+                    )}
                   </div>
                 </div>
               )

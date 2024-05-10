@@ -6,6 +6,7 @@ import { RootState } from "@/app/store/store";
 import getId from "@/app/utils/getId";
 import Image from "../common/Image";
 import TextLayers from "../common/TextLayers";
+import { shopRedirectFromCart } from "../../constants";
 
 import { SVGs } from "../../constants";
 
@@ -18,13 +19,17 @@ import {
   removeProduct,
   emptyCart,
 } from "@/app/features/clientCart";
+import Link from "next/link";
+import toFixedNumber from "@/app/utils/toFixedNumber";
 
 function CartProducts({ locale }: CartProductsProps) {
   const t = ProductCartText[locale] || ProductCartText["en"];
+  const redirectT = shopRedirectFromCart[locale] || shopRedirectFromCart["en"];
   const cart = useSelector((state: RootState) => state.cart.value);
   const [data, setData] = useState<any>(null);
 
   useEffect(() => {
+    console.log("hello");
     const fetchData = async () => {
       try {
         const response = await fetch("/api/cart", {
@@ -46,22 +51,35 @@ function CartProducts({ locale }: CartProductsProps) {
     }
   }, [cart]);
 
-  if (cart.length === 0) {
-    return <div></div>;
-  }
-
   if (!data) {
     return (
       <div>
         <TextLayers bgText={t.bgText} title={t.title} />
-
-        <div className="flex flex-row items-center justify-center">
+        <div className="h-[250px] flex flex-row items-center justify-center">
           <div className="loading" />
         </div>
       </div>
     );
   }
 
+  if (cart.length === 0) {
+    return (
+      <div className="shopRedirect">
+        <TextLayers bgText={t.bgText} title={t.title} />
+
+        <div className="wrapper">
+          <p className="title">{redirectT.title}</p>
+          <p className="description">{redirectT.description}</p>
+          <div className="buttonContainer">
+            <Link className="button" href={"/shop"}>
+              {redirectT.button.text}
+            </Link>
+          </div>
+        </div>
+      </div>
+    );
+  }
+  
   return (
     <section className="CartProductsCart">
       <TextLayers bgText={t.bgText} title={t.title} />
@@ -172,10 +190,15 @@ function CartProduct({ locale, product, quantity }: CartProduct) {
             </div>
           </div>
           <div className="cartPrices">
-            <p className="newPrice">€{product.product.newPrice}</p>
-            {product.product.oldPrice && (
-              <p className="oldPrice">€{product.product.oldPrice}</p>
-            )}
+            <p className="newPrice">
+              €{toFixedNumber(product.product.newPrice)}
+            </p>
+            {product.product.oldPrice &&
+              product.product.oldPrice > product.product.newPrice && (
+                <p className="oldPrice">
+                  €{toFixedNumber(product.product.oldPrice)}
+                </p>
+              )}
           </div>
         </div>
         <div

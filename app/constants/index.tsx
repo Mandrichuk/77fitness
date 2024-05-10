@@ -16,6 +16,9 @@ import {
   OrderShopTextProps,
   OrdersTextProps,
   CategoriesEditAdminTextProps,
+  ProductsEditAdminTextProps,
+  ShopRedirectFromCartProps,
+  ShopRedirectFromOrdersProps,
 } from "../lib/index";
 
 import logo from "@/public/assets/logo.png";
@@ -34,6 +37,18 @@ export const BluredCircleColors: BluredCircleColorsProps = {
 };
 
 export const SVGs = {
+  shoppingBag: (
+    <svg
+      id="Layer_1"
+      enable-background="new 0 0 100 100"
+      viewBox="0 0 100 100"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g>
+        <path d="m32.28 82h35.44c6.22 0 11.28-5.06 11.28-11.28v-33.72c0-1.1-.9-2-2-2h-12v-3c0-8.27-6.73-15-15-15s-15 6.73-15 15v3h-12c-1.1 0-2 .9-2 2v33.72c0 6.22 5.06 11.28 11.28 11.28zm6.72-50c0-6.07 4.93-11 11-11s11 4.93 11 11v3h-22zm-14 7h10v5c0 1.1.9 2 2 2s2-.9 2-2v-5h22v5c0 1.1.9 2 2 2s2-.9 2-2v-5h10v31.72c0 4.01-3.27 7.28-7.28 7.28h-35.44c-4.01 0-7.28-3.27-7.28-7.28z" />
+      </g>
+    </svg>
+  ),
   edit: (
     <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
       <g id="Layer_2" data-name="Layer 2">
@@ -773,6 +788,8 @@ export const ProductsSectionsText: ProductsSectionsTextProps = {
       link: "/shop",
     },
     notify: "Product added to your cart",
+    commingSoon:
+      "The category is currently empty. Stay tuned for exciting new products coming soon!",
   },
   sk: {
     button: {
@@ -780,6 +797,8 @@ export const ProductsSectionsText: ProductsSectionsTextProps = {
       link: "/obchod",
     },
     notify: "Produkt pridán do vašeho kosíka",
+    commingSoon:
+      "Kategória momentálne neobsahuje žiadne produkty. Ďalšie nové produkty prídu čoskoro!",
   },
   ru: {
     button: {
@@ -787,6 +806,8 @@ export const ProductsSectionsText: ProductsSectionsTextProps = {
       link: "/магазин",
     },
     notify: "Товар добавлен в вашу корзину",
+    commingSoon:
+      "Категория в настоящее время не содержит продуктов. Скоро появятся новые увлекательные продукты!",
   },
 };
 
@@ -1079,5 +1100,111 @@ export const CategoriesEditAdminText: CategoriesEditAdminTextProps = {
     title: "Категории",
     invisible: "Невидимые",
     visible: "Видимые",
+  },
+};
+
+export const ProductsEditAdminText: ProductsEditAdminTextProps = {
+  en: {
+    title: "Products",
+    invisible: "Invisible",
+    visible: "Visible",
+  },
+
+  sk: {
+    title: "Produkti",
+    invisible: "Neviditeľné",
+    visible: "Viditeľné",
+  },
+  ru: {
+    title: "Продукты",
+    invisible: "Невидимые",
+    visible: "Видимые",
+  },
+};
+
+export const shopRedirectFromCart: ShopRedirectFromCartProps = {
+  en: {
+    title: "Your cart is empty",
+    description: "Please add products to your cart",
+    button: {
+      text: "Go to shop",
+      link: "/shop",
+    },
+  },
+  ru: {
+    title: "Ваша корзина пуста",
+    description: "Пожалуйста, добавьте товары в корзину",
+    button: {
+      text: "Перейти в магазин",
+      link: "/shop",
+    },
+  },
+  sk: {
+    title: "Váš košík je prázdny",
+    description: "Prosím, pridajte produkty do vášho košíka",
+    button: {
+      text: "Prejsť do obchodu",
+      link: "/shop",
+    },
+  },
+};
+
+export const shopRedirectFromOrders: ShopRedirectFromOrdersProps = {
+  en: {
+    isNotLoggined: {
+      title: "You are unlogged in",
+      description:
+        "To be able to see your orders, login into your account first.",
+      button: {
+        text: "Login",
+        link: "/login",
+      },
+    },
+    noOrders: {
+      title: "Your cart is empty",
+      description: "Please add products to your cart",
+      button: {
+        text: "Go to shop",
+        link: "/shop",
+      },
+    },
+  },
+  sk: {
+    isNotLoggined: {
+      title: "Nie ste prihlásený",
+      description:
+        "Pre zobrazenie vašich objednávok sa najskôr prihláste do vášho účtu.",
+      button: {
+        text: "Prihlásiť sa",
+        link: "/login",
+      },
+    },
+    noOrders: {
+      title: "Váš košík je prázdny",
+      description: "Prosím, pridajte produkty do vášho košíka",
+      button: {
+        text: "Prejsť do obchodu",
+        link: "/shop",
+      },
+    },
+  },
+  ru: {
+    isNotLoggined: {
+      title: "Вы не вошли в систему",
+      description:
+        "Чтобы просмотреть ваши заказы, сначала войдите в свою учетную запись.",
+      button: {
+        text: "Войти",
+        link: "/login",
+      },
+    },
+    noOrders: {
+      title: "Ваша корзина пуста",
+      description: "Пожалуйста, добавьте товары в вашу корзину",
+      button: {
+        text: "Перейти в магазин",
+        link: "/shop",
+      },
+    },
   },
 };

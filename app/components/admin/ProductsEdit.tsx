@@ -6,14 +6,14 @@ import { toast, ToastContainer } from "react-toastify";
 import TextLayers from "../common/TextLayers";
 import { CategoriesEditProps } from "../../lib";
 import { toUpperCase } from "@/app/utils/toUpperCase";
-import { CategoriesEditAdminText } from "@/app/constants";
+import { ProductsEditAdminText } from "@/app/constants";
 
 import Image from "../common/Image";
 import { SVGs } from "@/app/constants";
 
 function ProductsEdit({ locale }: CategoriesEditProps) {
   const [data, setData] = useState<any>(null);
-  const t = CategoriesEditAdminText[locale] || CategoriesEditAdminText["en"];
+  const t = ProductsEditAdminText[locale] || ProductsEditAdminText["en"];
 
   const notifyAddedToCart = () => {
     toast.success("t.notify", {
