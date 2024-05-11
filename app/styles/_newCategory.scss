@@ -11,58 +11,171 @@
       margin-bottom: 30px;
     }
 
-    .inputsContainer {
+    .content {
       @include Flex(column, center, center);
       width: 100%;
-      gap: 10px;
-
-      .booleanInputs {
-        margin: 20px 0;
+      .inputsContainer {
         @include Flex(column, center, center);
         width: 100%;
+        gap: 10px;
 
-        .booleanInput {
-          font-size: calc(fontSize(p) + 5px);
-          @include Flex(row, center, start);
+        .booleanInputs {
+          margin: 20px 0;
+          @include Flex(column, center, center);
           width: 100%;
+          margin-bottom: 50px;
 
-          label {
-            width: 200px;
-          }
-        }
-      }
-    }
+          .booleanInput {
+            font-size: calc(fontSize(p) + 5px);
+            @include Flex(row, center, start);
+            width: 100%;
 
-    .preview {
-      margin-bottom: 30px;
-      @include Flex(column, center, start);
-      width: 100%;
+            label {
+              width: 200px;
+            }
 
-      .languages {
-        width: 100%;
-        @include Flex(row, center, center);
-
-        .language {
-          margin-right: 10px;
-          font-size: calc(fontSize(p) + 5px);
-          cursor: pointer;
-
-          
-          &.selected {
-            background-color: color(secondary-color);
-            padding: 5px;
-            border-radius: 5px;
+            input {
+              width: 50px;
+            }
           }
         }
       }
 
-      .previewContainer {
+      .details {
         width: 100%;
+        .preview {
+          @include Flex(column, center, start);
+          margin-bottom: 30px;
+          width: 100%;
+          .textAndLanguages {
+            @include Flex(row, center, start);
+            margin-bottom: 30px;
+            width: 100%;
+            h3 {
+              font-size: calc(fontSize(p) + 5px);
+              font-weight: fontWeight(medium);
+            }
+
+            .languages {
+              width: 100%;
+              @include Flex(row, center, center);
+
+              .language {
+                margin-right: 10px;
+                font-size: calc(fontSize(p) + 5px);
+                cursor: pointer;
+
+                &.selected {
+                  background-color: color(secondary-color);
+                  padding: 5px;
+                  border-radius: 5px;
+                }
+              }
+            }
+          }
+
+          .previewContainer {
+            border: 1px solid color(text-color);
+            border-radius: 4px;
+            width: 100%;
+            padding: 10px;
+          }
+        }
+
+        .buttonsContainer {
+          margin-bottom: 50px;
+        }
       }
     }
+  }
+}
 
-    .buttonsContainer {
-      margin-bottom: 50px;
+@media (min-width: 1000px) {
+  .NewCategorySection {
+    width: 100%;
+    @include Flex(column, center, center);
+
+    .wrapper {
+      @include Flex(column, center, center);
+      width: wrapperWidth(mobile);
+      max-width: none;
+
+      .title {
+        margin-bottom: 30px;
+      }
+
+      .content {
+        @include Flex(row, start, space-between);
+        width: 100%;
+        .inputsContainer {
+          @include Flex(column, center, space-between);
+          width: 100%;
+          flex: 0.75;
+          min-width: 400px;
+          gap: 10px;
+
+          .booleanInputs {
+            margin: 20px 0;
+            @include Flex(column, center, center);
+            width: 100%;
+
+            .booleanInput {
+              font-size: calc(fontSize(p) + 5px);
+              @include Flex(row, center, start);
+              width: 100%;
+
+              label {
+                width: 200px;
+              }
+
+              input {
+                width: 50px;
+              }
+            }
+          }
+        }
+
+        .details {
+          margin-left: 50px;
+          flex: 1.25;
+          max-width: 600px;
+
+          .buttonsContainer {
+            max-width: 250px;
+          }
+
+          .preview {
+            margin-bottom: 30px;
+            @include Flex(column, center, start);
+            width: 100%;
+
+            .textAndLanguages {
+              .languages {
+                @include Flex(row, center, center);
+
+                .language {
+                  margin-right: 10px;
+                  font-size: calc(fontSize(p) + 5px);
+                  cursor: pointer;
+
+                  &.selected {
+                    background-color: color(secondary-color);
+                    padding: 5px;
+                    border-radius: 5px;
+                  }
+                }
+              }
+            }
+            .previewContainer {
+              width: 100%;
+            }
+          }
+
+          .buttonsContainer {
+            margin-bottom: 50px;
+          }
+        }
+      }
     }
   }
 }

@@ -87,8 +87,9 @@ function NewCategory({ locale }: NewCategoryProps) {
             }
           })
           .then((data) => {
-            console.log(data); // Log the resolved JSON data
+            console.log(data);
             console.log("Category created successfully");
+            window.location.reload();
           })
           .catch((error) => {
             console.error("Error:", error);
@@ -112,143 +113,151 @@ function NewCategory({ locale }: NewCategoryProps) {
         <div className="title">
           <h3>{t.title}</h3>
         </div>
-        <div className="inputsContainer">
-          <Input
-            placeholderText={t.inputs.name.placeholder}
-            getValue={(value) =>
-              handleSetNewCategory(value, t.inputs.name.field)
-            }
-            field={t.inputs.name.field}
-            maxSymbols={20}
-          />
-          <Input
-            placeholderText={t.inputs.bgText_en.placeholder}
-            getValue={(value) =>
-              handleSetNewCategory(value, t.inputs.bgText_en.field)
-            }
-            field={t.inputs.bgText_en.field}
-            maxSymbols={12}
-          />
-          <Input
-            placeholderText={t.inputs.bgText_ru.placeholder}
-            getValue={(value) =>
-              handleSetNewCategory(value, t.inputs.bgText_ru.field)
-            }
-            field={t.inputs.bgText_ru.field}
-            maxSymbols={12}
-          />
-          <Input
-            placeholderText={t.inputs.bgText_sk.placeholder}
-            getValue={(value) =>
-              handleSetNewCategory(value, t.inputs.bgText_sk.field)
-            }
-            field={t.inputs.bgText_sk.field}
-            maxSymbols={12}
-          />
-          <Input
-            placeholderText={t.inputs.title_en.placeholder}
-            getValue={(value) =>
-              handleSetNewCategory(value, t.inputs.title_en.field)
-            }
-            field={t.inputs.title_en.field}
-            maxSymbols={15}
-          />
-          <Input
-            placeholderText={t.inputs.title_ru.placeholder}
-            getValue={(value) =>
-              handleSetNewCategory(value, t.inputs.title_ru.field)
-            }
-            field={t.inputs.title_ru.field}
-            maxSymbols={15}
-          />
-          <Input
-            placeholderText={t.inputs.title_sk.placeholder}
-            getValue={(value) =>
-              handleSetNewCategory(value, t.inputs.title_sk.field)
-            }
-            field={t.inputs.title_sk.field}
-            maxSymbols={15}
-          />
-          <div className="booleanInputs">
-            <div className="booleanInput">
-              <label>{t.inputs.recomended.placeholder}</label>
-              <input
-                type="checkbox"
-                value={newCategoryData.recomended ? "true" : "false"}
-                onChange={(e) =>
-                  handleSetNewCategory(
-                    e.target.checked,
-                    t.inputs.recomended.field
-                  )
-                }
-              />
-            </div>
-            <div className="booleanInput">
-              <label>{t.inputs.toDisplay.placeholder}</label>
-              <input
-                type="checkbox"
-                value={newCategoryData.toDisplay ? "true" : "false"}
-                onChange={(e) =>
-                  handleSetNewCategory(
-                    e.target.checked,
-                    t.inputs.toDisplay.field
-                  )
-                }
-              />
-            </div>
-          </div>
-        </div>
-        <div className="preview">
-          <h3>{t.previewText}</h3>
-          <div className="languages">
-            <div
-              onClick={() => setPreviewLanguage("en")}
-              className={`en language ${
-                previewLanguage === "en" && "selected"
-              }`}
-            >
-              en
-            </div>
-            <div
-              onClick={() => setPreviewLanguage("sk")}
-              className={`sk language ${
-                previewLanguage === "sk" && "selected"
-              }`}
-            >
-              sk
-            </div>
-            <div
-              onClick={() => setPreviewLanguage("ru")}
-              className={`ru language ${
-                previewLanguage === "ru" && "selected"
-              }`}
-            >
-              ru
+        <div className="content">
+          <div className="inputsContainer">
+            <Input
+              placeholderText={t.inputs.name.placeholder}
+              getValue={(value) =>
+                handleSetNewCategory(value, t.inputs.name.field)
+              }
+              field={t.inputs.name.field}
+              maxSymbols={20}
+            />
+            <Input
+              placeholderText={t.inputs.bgText_en.placeholder}
+              getValue={(value) =>
+                handleSetNewCategory(value, t.inputs.bgText_en.field)
+              }
+              field={t.inputs.bgText_en.field}
+              maxSymbols={12}
+            />
+            <Input
+              placeholderText={t.inputs.bgText_ru.placeholder}
+              getValue={(value) =>
+                handleSetNewCategory(value, t.inputs.bgText_ru.field)
+              }
+              field={t.inputs.bgText_ru.field}
+              maxSymbols={12}
+            />
+            <Input
+              placeholderText={t.inputs.bgText_sk.placeholder}
+              getValue={(value) =>
+                handleSetNewCategory(value, t.inputs.bgText_sk.field)
+              }
+              field={t.inputs.bgText_sk.field}
+              maxSymbols={12}
+            />
+            <Input
+              placeholderText={t.inputs.title_en.placeholder}
+              getValue={(value) =>
+                handleSetNewCategory(value, t.inputs.title_en.field)
+              }
+              field={t.inputs.title_en.field}
+              maxSymbols={15}
+            />
+            <Input
+              placeholderText={t.inputs.title_ru.placeholder}
+              getValue={(value) =>
+                handleSetNewCategory(value, t.inputs.title_ru.field)
+              }
+              field={t.inputs.title_ru.field}
+              maxSymbols={15}
+            />
+            <Input
+              placeholderText={t.inputs.title_sk.placeholder}
+              getValue={(value) =>
+                handleSetNewCategory(value, t.inputs.title_sk.field)
+              }
+              field={t.inputs.title_sk.field}
+              maxSymbols={15}
+            />
+            <div className="booleanInputs">
+              <div className="booleanInput">
+                <label>{t.inputs.recomended.placeholder}</label>
+                <input
+                  type="checkbox"
+                  value={newCategoryData.recomended ? "true" : "false"}
+                  onChange={(e) =>
+                    handleSetNewCategory(
+                      e.target.checked,
+                      t.inputs.recomended.field
+                    )
+                  }
+                />
+              </div>
+              <div className="booleanInput">
+                <label>{t.inputs.toDisplay.placeholder}</label>
+                <input
+                  type="checkbox"
+                  value={newCategoryData.toDisplay ? "true" : "false"}
+                  onChange={(e) =>
+                    handleSetNewCategory(
+                      e.target.checked,
+                      t.inputs.toDisplay.field
+                    )
+                  }
+                />
+              </div>
             </div>
           </div>
-          <div className="previewContainer">
-            {previewLanguage === "en" && (
-              <TextLayers
-                bgText={newCategoryData.bgText_en}
-                title={newCategoryData.title_en}
-              />
-            )}
-            {previewLanguage === "ru" && (
-              <TextLayers
-                bgText={newCategoryData.bgText_ru}
-                title={newCategoryData.title_ru}
-              />
-            )}
-            {previewLanguage === "sk" && (
-              <TextLayers
-                bgText={newCategoryData.bgText_sk}
-                title={newCategoryData.title_sk}
-              />
-            )}
+          <div className="details">
+            <div className="preview">
+              <div className="textAndLanguages">
+                <h3>{t.previewText}:</h3>
+                <div className="languages">
+                  <div
+                    onClick={() => setPreviewLanguage("en")}
+                    className={`en language ${
+                      previewLanguage === "en" && "selected"
+                    }`}
+                  >
+                    en
+                  </div>
+                  <div
+                    onClick={() => setPreviewLanguage("sk")}
+                    className={`sk language ${
+                      previewLanguage === "sk" && "selected"
+                    }`}
+                  >
+                    sk
+                  </div>
+                  <div
+                    onClick={() => setPreviewLanguage("ru")}
+                    className={`ru language ${
+                      previewLanguage === "ru" && "selected"
+                    }`}
+                  >
+                    ru
+                  </div>
+                </div>
+              </div>
+              <div className="previewContainer">
+                {previewLanguage === "en" && (
+                  <TextLayers
+                    bgText={newCategoryData.bgText_en}
+                    title={newCategoryData.title_en}
+                  />
+                )}
+                {previewLanguage === "ru" && (
+                  <TextLayers
+                    bgText={newCategoryData.bgText_ru}
+                    title={newCategoryData.title_ru}
+                  />
+                )}
+                {previewLanguage === "sk" && (
+                  <TextLayers
+                    bgText={newCategoryData.bgText_sk}
+                    title={newCategoryData.title_sk}
+                  />
+                )}
+              </div>
+            </div>
+            <div className="buttonsContainer">
+              <button onClick={addNewCategory}>
+                {t.buttons.saveButton.text}
+              </button>
+            </div>
           </div>
-        </div>
-        <div className="buttonsContainer">
-          <button onClick={addNewCategory}>{t.buttons.saveButton.text}</button>
         </div>
       </div>
     </section>

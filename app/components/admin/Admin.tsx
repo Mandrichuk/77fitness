@@ -72,16 +72,19 @@ function Orders({ locale }: AdminProps) {
     <section className="AdminShop">
       <div className="wrapper">
         <div className="searchContainer">
-          <label>"Enter the number of the product"</label>
+          <label>{t.searchInput.label}</label>
           <input
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Search orders..."
+            placeholder={t.searchInput.placeholder}
           />
         </div>
         <div className="inProccessOrders">
-          <TextLayers bgText={"In process"} title={"In process orders"} />
+          <TextLayers
+            bgText={t.inProcessTextBg}
+            title={t.inProcessTitleTextBg}
+          />
           <div className="tableData">
             <div className="numberData">{t.tableData.numberText}</div>
             <div className="clientNumberData">
@@ -103,7 +106,7 @@ function Orders({ locale }: AdminProps) {
         </div>
 
         <div className="doneOrders">
-          <TextLayers bgText={"Done"} title={"Done orders"} />
+          <TextLayers bgText={t.doneTextBg} title={t.doneTitleTextBg} />
           <div className="tableData">
             <div className="numberData">{t.tableData.numberText}</div>
             <div className="clientNumberData">

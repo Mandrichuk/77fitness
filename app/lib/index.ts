@@ -639,3 +639,60 @@ export interface NewCategoryTextProps {
   ru: NewCategoryTextPropsDetails;
   sk: NewCategoryTextPropsDetails;
 }
+
+export interface AdminTextProps {
+  en: {
+    searchInput: {
+      label: string;
+      placeholder: string;
+    };
+    title: string;
+    bgText: string;
+    tableData: {
+      numberText: string;
+      clientNumberText: string;
+      dateText: string;
+      priceText: string;
+    };
+    inProcessTextBg: string;
+    inProcessTitleTextBg: string;
+    doneTextBg: string;
+    doneTitleTextBg: string;
+  };
+  ru: {
+    searchInput: {
+      label: string;
+      placeholder: string;
+    };
+    title: string;
+    bgText: string;
+    tableData: {
+      numberText: string;
+      clientNumberText: string;
+      dateText: string;
+      priceText: string;
+    };
+    inProcessTextBg: string;
+    inProcessTitleTextBg: string;
+    doneTextBg: string;
+    doneTitleTextBg: string;
+  };
+  sk: {
+    searchInput: {
+      label: string;
+      placeholder: string;
+    };
+    title: string;
+    bgText: string;
+    tableData: {
+      numberText: string;
+      clientNumberText: string;
+      dateText: string;
+      priceText: string;
+    };
+    inProcessTextBg: string;
+    inProcessTitleTextBg: string;
+    doneTextBg: string;
+    doneTitleTextBg: string;
+  };
+}

@@ -20,6 +20,7 @@ import {
   ShopRedirectFromCartProps,
   ShopRedirectFromOrdersProps,
   NewCategoryTextProps,
+  AdminTextProps,
 } from "../lib/index";
 
 import logo from "@/public/assets/logo.png";
@@ -1055,8 +1056,12 @@ export const OrdersText: OrdersTextProps = {
   },
 };
 
-export const AdminText = {
+export const AdminText: AdminTextProps = {
   en: {
+    searchInput: {
+      label: "Enter the number of the product",
+      placeholder: "Enter the number of the product",
+    },
     title: "Admin",
     bgText: "Orders",
     tableData: {
@@ -1065,19 +1070,17 @@ export const AdminText = {
       dateText: "Date",
       priceText: "Price",
     },
-  },
-  sk: {
-    title: "Admin",
-    bgText: "Objednávky",
-    tableData: {
-      numberText: "Číslo",
-      clientNumberText: "Číslo klienta",
-      dateText: "Dátum",
-      priceText: "Cena",
-    },
+    inProcessTextBg: "In process",
+    inProcessTitleTextBg: "In porcess orders",
+    doneTextBg: "Done",
+    doneTitleTextBg: "Done orders",
   },
   ru: {
-    title: "Админ панель",
+    searchInput: {
+      label: "Введите номер продукта",
+      placeholder: "Введите номер продукта",
+    },
+    title: "Администратор",
     bgText: "Заказы",
     tableData: {
       numberText: "Номер",
@@ -1085,6 +1088,28 @@ export const AdminText = {
       dateText: "Дата",
       priceText: "Цена",
     },
+    inProcessTextBg: "В обработке",
+    inProcessTitleTextBg: "Заказы в обработке",
+    doneTextBg: "Готово",
+    doneTitleTextBg: "Завершенные заказы",
+  },
+  sk: {
+    searchInput: {
+      label: "Zadajte číslo produktu",
+      placeholder: "Zadajte číslo produktu",
+    },
+    title: "Administrátor",
+    bgText: "Objednávky",
+    tableData: {
+      numberText: "Číslo",
+      clientNumberText: "Číslo klienta",
+      dateText: "Dátum",
+      priceText: "Cena",
+    },
+    inProcessTextBg: "Spracovanie",
+    inProcessTitleTextBg: "Objednávky v spracovaní",
+    doneTextBg: "Dokončené",
+    doneTitleTextBg: "Dokončené objednávky",
   },
 };
 
