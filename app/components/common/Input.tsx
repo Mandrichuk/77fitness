@@ -4,8 +4,21 @@ import React, { useState, useEffect } from "react";
 import { InputProps } from "../../lib";
 import { getRandomValues } from "crypto";
 
-function Input({ placeholderText, field, maxSymbols, getValue }: InputProps) {
+function Input({
+  placeholderText,
+  field,
+  maxSymbols,
+  getValue,
+  initialValue,
+}: InputProps) {
   const [value, setValue] = useState<string>("");
+
+
+  useEffect(() => {
+    if (initialValue) {
+      setValue(initialValue);
+    }
+  }, []);
 
   function updateValue(e: any) {
     if (maxSymbols && e.target.value.length > maxSymbols) {

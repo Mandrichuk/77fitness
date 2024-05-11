@@ -73,10 +73,6 @@ function CategoriesEdit({ locale }: CategoriesEditProps) {
     );
   }
 
-  // if (data) {
-  //   console.log(data);
-  // }
-
   return (
     <section className="CategoriesEditAdminSection">
       <div className="wrapper">
@@ -93,7 +89,12 @@ function CategoriesEdit({ locale }: CategoriesEditProps) {
                     title={item.title[locale]}
                   />
                   <div className="functionalityContainer">
-                    <div className="edit">{SVGs.edit}</div>
+                    <Link
+                      href={`/admin/category/edit/${item.sku}`}
+                      className="edit"
+                    >
+                      {SVGs.edit}
+                    </Link>
                     <div
                       onClick={() =>
                         toggleVisibility(item.sku, !item.toDisplay)
@@ -119,7 +120,12 @@ function CategoriesEdit({ locale }: CategoriesEditProps) {
                     title={item.title[locale]}
                   />
                   <div className="functionalityContainer">
-                    <div className="edit">{SVGs.edit}</div>
+                    <Link
+                      href={`/admin/category/edit/${item.sku}`}
+                      className="edit"
+                    >
+                      {SVGs.edit}
+                    </Link>
                     <div
                       onClick={() =>
                         toggleVisibility(item.sku, !item.toDisplay)

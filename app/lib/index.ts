@@ -57,6 +57,18 @@ export interface HeaderTextProps {
   };
 }
 
+export interface EditCategory {
+  params: {
+    locale: "en" | "sk" | "ru";
+    category_sku: string;
+  };
+}
+
+export interface EditCategoryProps {
+  locale: "en" | "sk" | "ru";
+  category_sku: string;
+}
+
 export interface HeaderProps extends Language {}
 
 export interface FooterProps extends Language {}
@@ -400,6 +412,7 @@ export interface InputProps {
   getValue: (e: React.ChangeEvent<HTMLInputElement>, field: string) => void;
   field: string;
   maxSymbols?: number;
+  initialValue?: string;
 }
 
 interface InputErrors {

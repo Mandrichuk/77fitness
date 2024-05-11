@@ -28,7 +28,6 @@ export async function GET(request: NextRequest, params: Props) {
 
 export async function PUT(request: NextRequest, params: Props) {
   const requestedSku = params.params.category_sku.toString();
-
   const body = await request.json();
   const validation = categorySchema.safeParse(body);
 
