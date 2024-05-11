@@ -13,10 +13,12 @@ import { ProductCartText } from "../../constants";
 
 function PriceDetails({ locale }: PriceDetailsProps) {
   const dispatch = useDispatch();
+  0
   const t = ProductCartText[locale] || ProductCartText["en"];
   const cart = useSelector((state: RootState) => state.cart.value);
   const [data, setData] = useState<any>(null);
   const userData = useSelector((state: RootState) => state.clientLogin.value);
+  const [processing, setProcessing] = useState(false);
 
   const notifyClientRegistered = () => {
     toast.success(t.notify, {
@@ -30,6 +32,7 @@ function PriceDetails({ locale }: PriceDetailsProps) {
   };
 
   async function getToCheckout() {
+    setProcessing(true);
     if (userData === null && typeof window !== "undefined") {
       window.location.href = "/login";
       return;
@@ -70,7 +73,7 @@ function PriceDetails({ locale }: PriceDetailsProps) {
         notifyClientRegistered();
         dispatch(emptyCart());
         if (typeof window !== "undefined") {
-          window.location.href = "/shop/orders";
+          window.location.href = "/shop/success";
         }
       } else {
         const text = await response.text();

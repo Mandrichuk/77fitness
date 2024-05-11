@@ -27,7 +27,7 @@ function Membership({ membership }: MembershipProps) {
           ))}
         </ul>
         <div className="contactButton">
-          <a className="button" href={`tel:${membership.button.link}`}>
+          <a className="button" href={membership.button.link}>
             {membership.button.text}
           </a>
         </div>

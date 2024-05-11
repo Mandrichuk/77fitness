@@ -50,7 +50,17 @@ function Orders({ locale }: OrdersProps) {
     fetchData();
   }, []);
 
+  if (!data) {
+    return (
+      <div>
+        <TextLayers bgText={t.bgText} title={t.title} />
 
+        <div className=" h-[260px] flex flex-row items-center justify-center">
+          <div className="loading" />
+        </div>
+      </div>
+    );
+  }
 
   if (!clientData) {
     return (
@@ -68,20 +78,8 @@ function Orders({ locale }: OrdersProps) {
     );
   }
 
-  if (!data) {
-    return (
-      <div>
-        <TextLayers bgText={t.bgText} title={t.title} />
-
-        <div className=" h-[260px] flex flex-row items-center justify-center">
-          <div className="loading" />
-        </div>
-      </div>
-    );
-  }
-
   if (data && data.length === 0 && clientData) {
-    console.log('hello')
+    console.log("hello");
     return (
       <div className="shopRedirect">
         <div className="wrapper">

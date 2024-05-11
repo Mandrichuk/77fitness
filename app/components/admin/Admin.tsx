@@ -10,6 +10,7 @@ import { OrderAdminProps, AdminProps, AdminProductsProps } from "@/app/lib";
 import { SVGs } from "@/app/constants";
 import formatDate from "@/app/utils/formatDate";
 import TextLayers from "../common/TextLayers";
+import toFixedNumber from "@/app/utils/toFixedNumber";
 
 function Orders({ locale }: AdminProps) {
   const t = AdminText[locale] || AdminText["en"];
@@ -214,7 +215,7 @@ function InProccessOrder({
 
         <div className="date">{formatDate(orderData.orderedDate)}</div>
 
-        <div className="price">€{totalPrice}</div>
+        <div className="price">€{toFixedNumber(totalPrice)}</div>
 
         <div className={`arrowDown ${productsOpen && "rotate-180"}`}>
           {SVGs.arrowDown}
@@ -234,7 +235,7 @@ function InProccessOrder({
           <div className="total">
             <div className="priceContainer">
               <p className="text">{t.totalText}</p>
-              <p className="price">€{totalPrice}</p>
+              <p className="price">€{toFixedNumber(totalPrice)}</p>
             </div>
             <div className="statusContainer">
               <p className="text">{t.statusText}</p>
@@ -352,7 +353,7 @@ function DoneOrder({
 
         <div className="date">{formatDate(orderData.orderedDate)}</div>
 
-        <div className="price">€{totalPrice}</div>
+        <div className="price">€{toFixedNumber(totalPrice)}</div>
 
         <div className={`arrowDown ${productsOpen && "rotate-180"}`}>
           {SVGs.arrowDown}
@@ -372,7 +373,7 @@ function DoneOrder({
           <div className="total">
             <div className="priceContainer">
               <p className="text">{t.totalText}</p>
-              <p className="price">€{totalPrice}</p>
+              <p className="price">€{toFixedNumber(totalPrice)}</p>
             </div>
             <div className="statusContainer">
               <p className="text">{t.statusText}</p>
@@ -419,7 +420,7 @@ function OrderProducts({ locale, product }: AdminProductsProps) {
           <div className="text">{product.quantity}</div>
         </div>
         <div className="cartPrices">
-          <p className="newPrice">€{product.newPrice}</p>
+          <p className="newPrice">€{toFixedNumber(product.newPrice)}</p>
         </div>
       </div>
     </div>

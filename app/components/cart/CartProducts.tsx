@@ -29,7 +29,6 @@ function CartProducts({ locale }: CartProductsProps) {
   const [data, setData] = useState<any>(null);
 
   useEffect(() => {
-    console.log("hello");
     const fetchData = async () => {
       try {
         const response = await fetch("/api/cart", {
@@ -51,22 +50,9 @@ function CartProducts({ locale }: CartProductsProps) {
     }
   }, [cart]);
 
-  if (!data) {
-    return (
-      <div>
-        <TextLayers bgText={t.bgText} title={t.title} />
-        <div className="h-[250px] flex flex-row items-center justify-center">
-          <div className="loading" />
-        </div>
-      </div>
-    );
-  }
-
   if (cart.length === 0) {
     return (
       <div className="shopRedirect">
-        <TextLayers bgText={t.bgText} title={t.title} />
-
         <div className="wrapper">
           <p className="title">{redirectT.title}</p>
           <p className="description">{redirectT.description}</p>
@@ -79,7 +65,17 @@ function CartProducts({ locale }: CartProductsProps) {
       </div>
     );
   }
-  
+
+  if (!data) {
+    return (
+      <div>
+        <TextLayers bgText={t.bgText} title={t.title} />
+        <div className="h-[250px] flex flex-row items-center justify-center">
+          <div className="loading" />
+        </div>
+      </div>
+    );
+  }
   return (
     <section className="CartProductsCart">
       <TextLayers bgText={t.bgText} title={t.title} />

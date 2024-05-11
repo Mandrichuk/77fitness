@@ -329,18 +329,21 @@ export interface CategoriesTextProps {
 export interface ProductsSectionsTextProps {
   en: {
     button: Link;
-    notify: string;
     commingSoon: string;
+    addedNotify: string;
+    limitedReachNotify: string;
   };
   sk: {
     button: Link;
-    notify: string;
     commingSoon: string;
+    addedNotify: string;
+    limitedReachNotify: string;
   };
   ru: {
     button: Link;
-    notify: string;
     commingSoon: string;
+    addedNotify: string;
+    limitedReachNotify: string;
   };
 }
 
@@ -592,4 +595,47 @@ export interface ShopRedirectFromOrdersProps {
   en: ShopRedirectFromOrders;
   sk: ShopRedirectFromOrders;
   ru: ShopRedirectFromOrders;
+}
+export interface NewCategoryProps extends Language {}
+interface NewCategoryInputProps {
+  placeholder: string;
+  field: string;
+}
+
+interface NewCategoryInputProps {
+  placeholder: string;
+  field: string;
+}
+
+interface NewCategoryButtonProps {
+  text: string;
+  link: string;
+}
+
+interface NewCategoryInputs {
+  name: NewCategoryInputProps;
+  bgText_en: NewCategoryInputProps;
+  bgText_ru: NewCategoryInputProps;
+  bgText_sk: NewCategoryInputProps;
+  title_en: NewCategoryInputProps;
+  title_ru: NewCategoryInputProps;
+  title_sk: NewCategoryInputProps;
+  recomended: NewCategoryInputProps;
+  toDisplay: NewCategoryInputProps;
+}
+
+interface NewCategoryTextPropsDetails {
+  title: string;
+  inputs: NewCategoryInputs;
+  previewText: string;
+  buttons: {
+    saveButton: NewCategoryButtonProps;
+    cancel: NewCategoryButtonProps;
+  };
+}
+
+export interface NewCategoryTextProps {
+  en: NewCategoryTextPropsDetails;
+  ru: NewCategoryTextPropsDetails;
+  sk: NewCategoryTextPropsDetails;
 }

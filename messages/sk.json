@@ -186,8 +186,8 @@
             "included5": "Osobný tréner (Rezervácia nutná, za príplatok)"
           },
           "button": {
-            "text": "Kontaktujte nás",
-            "link": "+421 940 735 735"
+            "text": "Kúpiť online",
+            "link": "/shop"
           }
         },
         "package4": {
@@ -201,8 +201,8 @@
             "included4": "Osobný tréner (Rezervácia nutná, za príplatok)"
           },
           "button": {
-            "text": "Kontaktujte nás",
-            "link": "+421 940 735 735"
+            "text": "Kúpiť online",
+            "link": "/shop"
           }
         },
         "package5": {
@@ -216,8 +216,8 @@
             "included4": "Osobný tréner (Rezervácia nutná, za príplatok)"
           },
           "button": {
-            "text": "Kontaktujte nás",
-            "link": "+421 940 735 735"
+            "text": "Kúpiť online",
+            "link": "/shop"
           }
         }
       }
@@ -448,7 +448,10 @@
       "text": "Nájdite nás na Instagrame",
       "name": "77.fitness.sk",
       "links": {
-        "link1": { "text": "Instagram", "link": "https://www.instagram.com" }
+        "link1": {
+          "text": "Instagram",
+          "link": "https://www.instagram.com/77fitness.sk/"
+        }
       }
     },
     "Newsletter": {

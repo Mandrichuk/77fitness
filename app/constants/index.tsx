@@ -19,6 +19,7 @@ import {
   ProductsEditAdminTextProps,
   ShopRedirectFromCartProps,
   ShopRedirectFromOrdersProps,
+  NewCategoryTextProps,
 } from "../lib/index";
 
 import logo from "@/public/assets/logo.png";
@@ -40,7 +41,7 @@ export const SVGs = {
   shoppingBag: (
     <svg
       id="Layer_1"
-      enable-background="new 0 0 100 100"
+      enableBackground="new 0 0 100 100"
       viewBox="0 0 100 100"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -787,27 +788,30 @@ export const ProductsSectionsText: ProductsSectionsTextProps = {
       text: "Add",
       link: "/shop",
     },
-    notify: "Product added to your cart",
+    addedNotify: "Product added to your cart",
+    limitedReachNotify: "You reach limit for this product per order!",
     commingSoon:
       "The category is currently empty. Stay tuned for exciting new products coming soon!",
   },
   sk: {
     button: {
       text: "Pridať",
-      link: "/obchod",
+      link: "/shop",
     },
-    notify: "Produkt pridán do vašeho kosíka",
+    addedNotify: "Produkt bol pridaný do vášho košíka",
+    limitedReachNotify: "Dosiahli ste limit pre tento produkt na objednávku!",
     commingSoon:
-      "Kategória momentálne neobsahuje žiadne produkty. Ďalšie nové produkty prídu čoskoro!",
+      "Kategória je momentálne prázdna. Čakajte na nové a vzrušujúce produkty, ktoré prídu čoskoro!",
   },
   ru: {
     button: {
       text: "Добавить",
-      link: "/магазин",
+      link: "/shop",
     },
-    notify: "Товар добавлен в вашу корзину",
+    addedNotify: "Товар добавлен в вашу корзину",
+    limitedReachNotify: "Вы достигли лимита на этот продукт в заказе!",
     commingSoon:
-      "Категория в настоящее время не содержит продуктов. Скоро появятся новые увлекательные продукты!",
+      "Категория в настоящее время пуста. Следите за появлением новых захватывающих продуктов в ближайшее время!",
   },
 };
 
@@ -1205,6 +1209,81 @@ export const shopRedirectFromOrders: ShopRedirectFromOrdersProps = {
         text: "Перейти в магазин",
         link: "/shop",
       },
+    },
+  },
+};
+
+export const NewCategoryText: NewCategoryTextProps = {
+  en: {
+    title: "Create new category",
+    inputs: {
+      name: { placeholder: "Name", field: "name" },
+      bgText_en: {
+        placeholder: "Background text (English)",
+        field: "bgText_en",
+      },
+      bgText_ru: {
+        placeholder: "Background text (Russian)",
+        field: "bgText_ru",
+      },
+      bgText_sk: {
+        placeholder: "Background text (Slovak)",
+        field: "bgText_sk",
+      },
+      title_en: { placeholder: "Title (English)", field: "title_en" },
+      title_ru: { placeholder: "Title (Russian)", field: "title_ru" },
+      title_sk: { placeholder: "Title (Slovak)", field: "title_sk" },
+      recomended: { placeholder: "Recomended", field: "recomended" },
+      toDisplay: { placeholder: "Display", field: "toDisplay" },
+    },
+    previewText: "Preview",
+    buttons: {
+      saveButton: { text: "Save", link: "/" },
+      cancel: { text: "Cancel", link: "/" },
+    },
+  },
+  ru: {
+    title: "Создать новую категорию",
+    inputs: {
+      name: { placeholder: "Название", field: "name" },
+      bgText_en: {
+        placeholder: "Фоновый текст (английский)",
+        field: "bgText_en",
+      },
+      bgText_ru: { placeholder: "Фоновый текст (русский)", field: "bgText_ru" },
+      bgText_sk: {
+        placeholder: "Фоновый текст (словацкий)",
+        field: "bgText_sk",
+      },
+      title_en: { placeholder: "Заголовок (английский)", field: "title_en" },
+      title_ru: { placeholder: "Заголовок (русский)", field: "title_ru" },
+      title_sk: { placeholder: "Заголовок (словацкий)", field: "title_sk" },
+      recomended: { placeholder: "Рекомендуемый", field: "recomended" },
+      toDisplay: { placeholder: "Показать", field: "toDisplay" },
+    },
+    previewText: "Предварительный просмотр",
+    buttons: {
+      saveButton: { text: "Сохранить", link: "/" },
+      cancel: { text: "Отмена", link: "/" },
+    },
+  },
+  sk: {
+    title: "Vytvoriť novú kategóriu",
+    inputs: {
+      name: { placeholder: "Meno", field: "name" },
+      bgText_en: { placeholder: "Pozadie (anglicky)", field: "bgText_en" },
+      bgText_ru: { placeholder: "Pozadie (rusky)", field: "bgText_ru" },
+      bgText_sk: { placeholder: "Pozadie (slovensky)", field: "bgText_sk" },
+      title_en: { placeholder: "Názov (anglicky)", field: "title_en" },
+      title_ru: { placeholder: "Názov (rusky)", field: "title_ru" },
+      title_sk: { placeholder: "Názov (slovensky)", field: "title_sk" },
+      recomended: { placeholder: "Odporúčané", field: "recomended" },
+      toDisplay: { placeholder: "Zobraziť", field: "toDisplay" },
+    },
+    previewText: "Náhľad",
+    buttons: {
+      saveButton: { text: "Uložiť", link: "/" },
+      cancel: { text: "Zrušiť", link: "/" },
     },
   },
 };

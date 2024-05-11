@@ -1,0 +1,10 @@
+.screenLoading {
+  @include Flex(column, center, center);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: color(primary-color);
+}

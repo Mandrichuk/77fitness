@@ -15,12 +15,14 @@ export const cartSlice = createSlice({
   reducers: {
     addOneToCart: (state, action: PayloadAction<string>) => {
       const sku = action.payload;
-      const existingProductIndex = state.value.findIndex(
-        (item) => item.sku === sku
-      );
+      const existingProduct = state.value.find((item) => item.sku === sku);
 
-      if (existingProductIndex !== -1) {
-        state.value[existingProductIndex].quantity += 1;
+      if (existingProduct && existingProduct.quantity >= 10) {
+        return;
+      }
+
+      if (existingProduct) {
+        existingProduct.quantity += 1;
       } else {
         state.value.push({ sku: sku, quantity: 1 });
       }
@@ -32,7 +34,7 @@ export const cartSlice = createSlice({
         (item) => item.sku === action.payload
       );
 
-      if (state.value[index].quantity > 1) {
+      if (index !== -1 && state.value[index].quantity > 1) {
         state.value[index].quantity -= 1;
       } else {
         state.value.splice(index, 1);

@@ -11,8 +11,8 @@ function Input({ placeholderText, field, maxSymbols, getValue }: InputProps) {
     if (maxSymbols && e.target.value.length > maxSymbols) {
       return;
     }
-      setValue(e.target.value);
-      getValue(e.target.value, field);
+    setValue(e.target.value);
+    getValue(e.target.value, field);
   }
 
   return (
@@ -23,6 +23,11 @@ function Input({ placeholderText, field, maxSymbols, getValue }: InputProps) {
         type="text"
         placeholder={placeholderText}
       />
+      {maxSymbols && (
+        <div className="maxSymbolsIndicator">
+          {value.length}/{maxSymbols}
+        </div>
+      )}
     </section>
   );
 }

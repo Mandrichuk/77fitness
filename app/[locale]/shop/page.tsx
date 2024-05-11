@@ -10,6 +10,7 @@ import { LocaleProps } from "../../lib/index";
 import Categories from "@/app/components/shop/Categories";
 import ProductSection from "@/app/components/shop/ProductsSections";
 import CartButton from "@/app/components/shop/CartButton";
+import ScreenLoading from "@/app/components/common/ScreenLoading";
 
 export const metadata: Metadata = {
   title: "Pricing",
@@ -27,6 +28,7 @@ function Home({ params: { locale } }: LocaleProps) {
       <Categories locale={locale} />
       <ProductSection locale={locale} />
       <CartButton />
+      <ScreenLoading />
       <Newsletter />
       <Footer locale={locale} />
       <CreatedBy />

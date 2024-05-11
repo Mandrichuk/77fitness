@@ -7,6 +7,7 @@ import CreatedBy from "@/app/components/common/CreatedBy";
 import Orders from "@/app/components/orders/Orders";
 
 import { LocaleProps } from "../../../lib/index";
+import ScreenLoading from "@/app/components/common/ScreenLoading";
 
 export const metadata: Metadata = {
   title: "Orders",
@@ -19,6 +20,7 @@ function Home({ params: { locale } }: LocaleProps) {
       <Orders locale={locale} />
       <Footer locale={locale} />
       <CreatedBy />
+      <ScreenLoading />
     </main>
   );
 }

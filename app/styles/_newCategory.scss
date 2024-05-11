@@ -1,0 +1,49 @@
+.NewCategorySection {
+  width: 100%;
+  @include Flex(column, center, center);
+
+  .wrapper {
+    @include Flex(column, center, center);
+    width: wrapperWidth(mobile);
+    max-width: 500px;
+
+    .title {
+      margin-bottom: 30px;
+    }
+
+    .inputsContainer {
+      @include Flex(column, center, center);
+      width: 100%;
+      gap: 10px;
+
+      .booleanInputs {
+        margin: 20px 0;
+        @include Flex(column, center, center);
+        width: 100%;
+
+        .booleanInput {
+          font-size: calc(fontSize(p) + 5px);
+          @include Flex(row, center, start);
+          width: 100%;
+
+          label {
+            width: 200px;
+          }
+        }
+      }
+    }
+
+    .preview {
+      margin-bottom: 30px;
+      @include Flex(column, center, start);
+      width: 100%;
+      .previewContainer {
+        width: 100%;
+      }
+    }
+
+    .buttonsContainer {
+      margin-bottom: 50px;
+    }
+  }
+}

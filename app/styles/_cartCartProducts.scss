@@ -66,7 +66,7 @@
             min-width: 90px;
             @include Flex(row, center, space-between);
             border-radius: calc(borderRadius(mobile) + 10px);
-            padding: 7px 14px;
+            padding: 7px 5px;
             border: 2px solid color(text-color);
 
             .separator {
@@ -77,8 +77,11 @@
             }
 
             .text {
+              @include Flex(row, center, center);
               font-weight: bold;
               font-size: calc(fontSize(p) + 2px);
+              height: 100%;
+              width: 100%;
             }
           }
         }
@@ -181,7 +184,7 @@
               min-width: 100px;
               @include Flex(row, center, space-between);
               border-radius: calc(borderRadius(mobile) + 6px);
-              padding: 7px 14px;
+              padding: 7px 5px;
               border: 2px solid color(text-color);
 
               .separator {

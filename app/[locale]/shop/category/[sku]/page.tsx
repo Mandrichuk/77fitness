@@ -10,6 +10,8 @@ import { LocaleProps } from "../../../../lib/index";
 import Categories from "@/app/components/shop/Categories";
 import ProductSection from "@/app/components/shop/ProductsSections";
 import { ShopSkuProps } from "../../../../lib/index";
+import CartButton from "@/app/components/shop/CartButton";
+import ScreenLoading from "@/app/components/common/ScreenLoading";
 
 export const metadata: Metadata = {
   title: "Shop",
@@ -25,6 +27,8 @@ function Home({ params: { locale, sku } }: ShopSkuProps) {
       <Newsletter />
       <Footer locale={locale} />
       <CreatedBy />
+      <CartButton />
+      <ScreenLoading />
     </main>
   );
 }

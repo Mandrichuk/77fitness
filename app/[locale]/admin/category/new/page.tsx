@@ -1,9 +1,21 @@
-import React from 'react'
+import React from "react";
+import Header from "@/app/components/common/Header";
+import Footer from "@/app/components/common/Footer";
 
-function page() {
+import { useSelector } from "react-redux";
+import { LocaleProps } from "@/app/lib";
+import NewCategory from "@/app/components/admin/NewCategory";
+
+
+function page({ params: { locale } }: LocaleProps) {
+
   return (
-    <div>page</div>
-  )
+    <main>
+      <Header locale={locale} />
+      <NewCategory locale={locale} />
+      <Footer locale={locale} />
+    </main>
+  );
 }
 
-export default page
+export default page;

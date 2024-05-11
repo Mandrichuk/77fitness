@@ -20,7 +20,7 @@ function Error() {
           <h3 className="title">{t("title")}</h3>
           <p className="text">{t("text")}</p>
           <div className="buttonContainer">
-            <Link href={t("button.link")} className="button">
+            <Link href="/shop" className="button">
               {t("button.text")}
             </Link>
           </div>

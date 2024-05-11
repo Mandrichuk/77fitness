@@ -24,7 +24,13 @@ function ProductsSections({ locale, sku }: ProductSectionProps) {
   const dispatch = useDispatch();
 
   function addOneProduct(sku: string) {
-    dispatch(addOneToCart(sku));
+    const cartItem = cart.find((item) => item.sku === sku);
+    if (cartItem && cartItem.quantity >= 10) {
+      notifyLimitReached(); // Notify the user that the limit has been reached
+    } else {
+      dispatch(addOneToCart(sku));
+      notifyAddedToCart();
+    }
   }
 
   function removeOneProduct(sku: string) {
@@ -40,7 +46,18 @@ function ProductsSections({ locale, sku }: ProductSectionProps) {
   }
 
   const notifyAddedToCart = () => {
-    toast.success(t.notify, {
+    toast.success(t.addedNotify, {
+      position: "top-right",
+      autoClose: 1300,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      theme: "dark",
+    });
+  };
+
+  const notifyLimitReached = () => {
+    toast.error(t.limitedReachNotify, {
       position: "top-right",
       autoClose: 1300,
       hideProgressBar: true,
@@ -86,6 +103,7 @@ function ProductsSections({ locale, sku }: ProductSectionProps) {
     return null;
   }
 
+  console.log(cart);
 
   return (
     <section className="ProductsSectionsSection">
@@ -165,7 +183,6 @@ function ProductsSections({ locale, sku }: ProductSectionProps) {
                                       <button
                                         onClick={() => {
                                           addOneProduct(product.sku);
-                                          notifyAddedToCart();
                                         }}
                                         className="button"
                                       >

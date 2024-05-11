@@ -1,11 +1,19 @@
 .InputSection {
   width: 100%;
-
+  position: relative;
   input {
     width: 100%;
     padding: 12px 20px;
     background: none;
     border: 1.5px solid color(text-color);
     border-radius: 10px;
+  }
+
+  .maxSymbolsIndicator {
+    color: rbga(rgb(103, 103, 103), 0.4);
+    position: absolute;
+    right: 10px;
+    top: 14px;
+    font-size: calc(fontSize(p) - 2px);
   }
 }
