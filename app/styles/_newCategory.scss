@@ -37,6 +37,25 @@
       margin-bottom: 30px;
       @include Flex(column, center, start);
       width: 100%;
+
+      .languages {
+        width: 100%;
+        @include Flex(row, center, center);
+
+        .language {
+          margin-right: 10px;
+          font-size: calc(fontSize(p) + 5px);
+          cursor: pointer;
+
+          
+          &.selected {
+            background-color: color(secondary-color);
+            padding: 5px;
+            border-radius: 5px;
+          }
+        }
+      }
+
       .previewContainer {
         width: 100%;
       }

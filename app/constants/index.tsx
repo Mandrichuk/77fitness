@@ -1238,7 +1238,7 @@ export const NewCategoryText: NewCategoryTextProps = {
     },
     previewText: "Preview",
     buttons: {
-      saveButton: { text: "Save", link: "/" },
+      saveButton: { text: "Add new category", link: "/" },
       cancel: { text: "Cancel", link: "/" },
     },
   },
@@ -1263,7 +1263,7 @@ export const NewCategoryText: NewCategoryTextProps = {
     },
     previewText: "Предварительный просмотр",
     buttons: {
-      saveButton: { text: "Сохранить", link: "/" },
+      saveButton: { text: "Добавить новую категорию", link: "/" },
       cancel: { text: "Отмена", link: "/" },
     },
   },
@@ -1282,7 +1282,7 @@ export const NewCategoryText: NewCategoryTextProps = {
     },
     previewText: "Náhľad",
     buttons: {
-      saveButton: { text: "Uložiť", link: "/" },
+      saveButton: { text: "Pridať novú kategóriu", link: "/" },
       cancel: { text: "Zrušiť", link: "/" },
     },
   },

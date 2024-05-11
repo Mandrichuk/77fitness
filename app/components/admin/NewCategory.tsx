@@ -22,6 +22,9 @@ interface NewCategoryInputsProps {
 
 function NewCategory({ locale }: NewCategoryProps) {
   const t = NewCategoryText[locale] || NewCategoryText["en"];
+  const [previewLanguage, setPreviewLanguage] = useState<"en" | "ru" | "sk">(
+    "en"
+  );
   const [newCategoryData, setNewCategoryData] =
     useState<NewCategoryInputsProps>({
       sku: String(getHash()),
@@ -33,7 +36,7 @@ function NewCategory({ locale }: NewCategoryProps) {
       title_ru: "",
       title_sk: "",
       recomended: false,
-      toDisplay: true,
+      toDisplay: false,
     });
 
   function isNewCategoryDataValid() {
@@ -51,7 +54,48 @@ function NewCategory({ locale }: NewCategoryProps) {
 
   function addNewCategory() {
     if (isNewCategoryDataValid()) {
-      console.log(newCategoryData);
+      const convertedCategoryData = {
+        sku: String(getHash()),
+        name: newCategoryData.name,
+        bgText: {
+          en: newCategoryData.bgText_en,
+          sk: newCategoryData.bgText_sk,
+          ru: newCategoryData.bgText_ru,
+        },
+        title: {
+          en: newCategoryData.title_en,
+          sk: newCategoryData.title_sk,
+          ru: newCategoryData.title_ru,
+        },
+        recomended: newCategoryData.recomended,
+        toDisplay: newCategoryData.toDisplay,
+      };
+
+      try {
+        fetch("/api/admin/category/new", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(convertedCategoryData),
+        })
+          .then((response) => {
+            if (response.ok) {
+              return response.json();
+            } else {
+              throw new Error("Error: " + response.statusText);
+            }
+          })
+          .then((data) => {
+            console.log(data); // Log the resolved JSON data
+            console.log("Category created successfully");
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
+      } catch (error) {
+        console.error("Error:", error);
+      }
     }
   }
 
@@ -61,8 +105,6 @@ function NewCategory({ locale }: NewCategoryProps) {
       [field]: value,
     }));
   }
-
-  console.log("Protein Bars".length);
 
   return (
     <section className="NewCategorySection">
@@ -158,11 +200,51 @@ function NewCategory({ locale }: NewCategoryProps) {
         </div>
         <div className="preview">
           <h3>{t.previewText}</h3>
+          <div className="languages">
+            <div
+              onClick={() => setPreviewLanguage("en")}
+              className={`en language ${
+                previewLanguage === "en" && "selected"
+              }`}
+            >
+              en
+            </div>
+            <div
+              onClick={() => setPreviewLanguage("sk")}
+              className={`sk language ${
+                previewLanguage === "sk" && "selected"
+              }`}
+            >
+              sk
+            </div>
+            <div
+              onClick={() => setPreviewLanguage("ru")}
+              className={`ru language ${
+                previewLanguage === "ru" && "selected"
+              }`}
+            >
+              ru
+            </div>
+          </div>
           <div className="previewContainer">
-            <TextLayers
-              bgText={newCategoryData.bgText_en}
-              title={newCategoryData.title_en}
-            />
+            {previewLanguage === "en" && (
+              <TextLayers
+                bgText={newCategoryData.bgText_en}
+                title={newCategoryData.title_en}
+              />
+            )}
+            {previewLanguage === "ru" && (
+              <TextLayers
+                bgText={newCategoryData.bgText_ru}
+                title={newCategoryData.title_ru}
+              />
+            )}
+            {previewLanguage === "sk" && (
+              <TextLayers
+                bgText={newCategoryData.bgText_sk}
+                title={newCategoryData.title_sk}
+              />
+            )}
           </div>
         </div>
         <div className="buttonsContainer">
