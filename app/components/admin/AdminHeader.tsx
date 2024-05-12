@@ -2,9 +2,9 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Image from "./Image";
+import Image from "../common/Image";
 
-import { SVGs, headerText, homepagePaths } from "../../constants";
+import { SVGs, AdminHeaderText, homepagePaths } from "../../constants";
 import pathIntoSegments from "../../utils/pathIntoSegments";
 import { useWindowWidth } from "../../utils/useWindowWidth";
 import { HeaderProps } from "../../lib/index";
@@ -16,7 +16,7 @@ function Header({ locale }: HeaderProps) {
   const [isLangOpen, setIsLangOpen] = useState<boolean>(false);
   const [isShopOpen, setIsShopOpen] = useState<boolean>(false);
   const [isHomePage, setIsHomePage] = useState<boolean>(true);
-  const t = headerText[locale] || headerText["en"];
+  const t = AdminHeaderText[locale] || AdminHeaderText["en"];
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const pathSegments = pathIntoSegments(pathname);
@@ -65,35 +65,6 @@ function Header({ locale }: HeaderProps) {
                 {l.text}
               </Link>
             ))}
-
-            <div className="shop">
-              <div
-                id="shopContainer"
-                className="current"
-                onClick={() => openShopToggle()}
-              >
-                <p className="currentShop">{t.shop.title}</p>
-                <div className={`icon ${isShopOpen && "open"}`}>
-                  {SVGs.arrowDown}
-                </div>
-              </div>
-              {isShopOpen && (
-                <div data-anchor="currentShopContainer" className="options">
-                  {t.shop.links.map((l, index) => (
-                    <Link
-                      href={l.link}
-                      key={`${l.text}-${index}`}
-                      className="option"
-                      onClick={() => {
-                        openShopToggle();
-                      }}
-                    >
-                      {l.text}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
           </nav>
           <div className="languages">
             <div
@@ -134,18 +105,6 @@ function Header({ locale }: HeaderProps) {
               <nav className="mobileNav">
                 {t.links.map((l) => (
                   <Link href={l.link} key={l.link} onClick={() => openToggle()}>
-                    {l.text}
-                  </Link>
-                ))}
-                {t.shop.links.map((l, index) => (
-                  <Link
-                    href={`${l.link}`}
-                    key={`${l.text}-${index}`}
-                    className="option"
-                    onClick={() => {
-                      openToggle();
-                    }}
-                  >
                     {l.text}
                   </Link>
                 ))}

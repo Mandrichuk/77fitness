@@ -142,7 +142,7 @@ function Order({ locale, orderData }: OrderProps) {
 
         <div className="date">{formatDate(orderData.orderedDate)}</div>
 
-        <div className="price">€{totalPrice}</div>
+        <div className="price">€{toFixedNumber(totalPrice)}</div>
 
         <div className={`arrowDown ${productsOpen && "rotate-180"}`}>
           {SVGs.arrowDown}

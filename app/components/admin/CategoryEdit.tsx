@@ -3,9 +3,10 @@ import React, { useEffect, useState } from "react";
 
 import Input from "../common/Input";
 import { EditCategoryProps } from "@/app/lib";
-import { NewCategoryText } from "@/app/constants";
+import { EditCategoryText } from "@/app/constants";
 import getHash from "@/app/utils/getHash";
 import TextLayers from "../common/TextLayers";
+
 
 interface NewCategoryInputsProps {
   sku: any;
@@ -21,7 +22,7 @@ interface NewCategoryInputsProps {
 }
 
 function NewCategory({ locale, category_sku }: EditCategoryProps) {
-  const t = NewCategoryText[locale] || NewCategoryText["en"];
+  const t = EditCategoryText[locale] || EditCategoryText["en"];
   const [previewLanguage, setPreviewLanguage] = useState<"en" | "ru" | "sk">(
     "en"
   );
@@ -282,7 +283,7 @@ function NewCategory({ locale, category_sku }: EditCategoryProps) {
                 </div>
               </div>
               <div className="previewContainer">
-                {previewLanguage === "en" && (
+                {/* {previewLanguage === "en" && (
                   <TextLayers
                     bgText={editedCategoryData.bgText_en}
                     title={editedCategoryData.title_en}
@@ -299,7 +300,7 @@ function NewCategory({ locale, category_sku }: EditCategoryProps) {
                     bgText={editedCategoryData.bgText_sk}
                     title={editedCategoryData.title_sk}
                   />
-                )}
+                )} */}
               </div>
             </div>
             <div className="buttonsContainer">

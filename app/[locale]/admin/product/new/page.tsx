@@ -1,9 +1,20 @@
-import React from 'react'
+import React from "react";
 
-function page() {
+import AdminHeader from "@/app/components/admin/AdminHeader";
+import Footer from "@/app/components/common/Footer";
+import CreatedBy from "@/app/components/common/CreatedBy";
+import NewProduct from "@/app/components/admin/NewProduct";
+import { LocaleProps } from "@/app/lib";
+
+function page({ params: { locale } }: LocaleProps) {
   return (
-    <div>page</div>
-  )
+    <main>
+      <AdminHeader locale={locale} />
+      <NewProduct locale={locale} />
+      <Footer locale={locale} />
+      <CreatedBy />
+    </main>
+  );
 }
 
-export default page
+export default page;

@@ -26,7 +26,7 @@ function ProductsSections({ locale, sku }: ProductSectionProps) {
   function addOneProduct(sku: string) {
     const cartItem = cart.find((item) => item.sku === sku);
     if (cartItem && cartItem.quantity >= 10) {
-      notifyLimitReached(); // Notify the user that the limit has been reached
+      notifyLimitReached(); 
     } else {
       dispatch(addOneToCart(sku));
       notifyAddedToCart();

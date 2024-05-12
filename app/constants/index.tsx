@@ -21,6 +21,9 @@ import {
   ShopRedirectFromOrdersProps,
   NewCategoryTextProps,
   AdminTextProps,
+  CategoryEditTextProps,
+  NewProductTextsProps,
+  AdminHeaderTextProps,
 } from "../lib/index";
 
 import logo from "@/public/assets/logo.png";
@@ -485,11 +488,15 @@ export const headerText: HeaderTextProps = {
         text: "Gallery",
         link: "/gallery",
       },
-      {
-        text: "Contact Us",
-        link: "tel:+421 940 735 735",
-      },
     ],
+    shop: {
+      title: "Shop",
+      links: [
+        { text: "Shop", link: "/shop" },
+        { text: "Cart", link: "/shop/cart" },
+        { text: "Orders", link: "/shop/orders" },
+      ],
+    },
     languages: {
       title: "Languages",
       links: [
@@ -518,11 +525,15 @@ export const headerText: HeaderTextProps = {
         text: "Галерея",
         link: "/gallery",
       },
-      {
-        text: "Свяжитесь с нами",
-        link: "tel:+421 940 735 735",
-      },
     ],
+    shop: {
+      title: "Магазин",
+      links: [
+        { text: "Магазин", link: "/shop" },
+        { text: "Корзина", link: "/shop/cart" },
+        { text: "Заказы", link: "/shop/orders" },
+      ],
+    },
     languages: {
       title: "Языки",
       links: [
@@ -551,9 +562,102 @@ export const headerText: HeaderTextProps = {
         text: "Galéria",
         link: "/gallery",
       },
+    ],
+    shop: {
+      title: "Obchod",
+      links: [
+        { text: "Obchod", link: "/shop" },
+        { text: "Košík", link: "/shop/cart" },
+        { text: "Objednávky", link: "/shop/orders" },
+      ],
+    },
+    languages: {
+      title: "Jazyky",
+      links: [
+        { text: "Angličtina", link: "en" },
+        { text: "Slovenčina", link: "sk" },
+        { text: "Ruština", link: "ru" },
+      ],
+    },
+  },
+};
+export const AdminHeaderText: AdminHeaderTextProps = {
+  en: {
+    logo: {
+      image: "ncdhkltskvpjmdprvynk",
+      link: "/",
+      alt: "Logo",
+    },
+    links: [
       {
-        text: "Kontaktujte nás",
-        link: "tel:+421 940 735 735",
+        text: "Admin Panel",
+        link: "/admin",
+      },
+      {
+        text: "Categories",
+        link: "/admin/category/edit",
+      },
+      {
+        text: "Products",
+        link: "/admin/product/edit",
+      },
+    ],
+    languages: {
+      title: "Languages",
+      links: [
+        { text: "English", link: "en" },
+        { text: "Slovak", link: "sk" },
+        { text: "Russian", link: "ru" },
+      ],
+    },
+  },
+  ru: {
+    logo: {
+      image: "ncdhkltskvpjmdprvynk",
+      link: "/",
+      alt: "Логотип",
+    },
+    links: [
+      {
+        text: "Панель администратора",
+        link: "/admin",
+      },
+      {
+        text: "Категории",
+        link: "/admin/category/edit",
+      },
+      {
+        text: "Продукты",
+        link: "/admin/product/edit",
+      },
+    ],
+    languages: {
+      title: "Языки",
+      links: [
+        { text: "Английский", link: "en" },
+        { text: "Словацкий", link: "sk" },
+        { text: "Русский", link: "ru" },
+      ],
+    },
+  },
+  sk: {
+    logo: {
+      image: "ncdhkltskvpjmdprvynk",
+      link: "/",
+      alt: "Logo",
+    },
+    links: [
+      {
+        text: "Správca",
+        link: "/admin",
+      },
+      {
+        text: "Kategórie",
+        link: "/admin/category/edit",
+      },
+      {
+        text: "Produkty",
+        link: "/admin/product/edit",
       },
     ],
     languages: {
@@ -1309,6 +1413,174 @@ export const NewCategoryText: NewCategoryTextProps = {
     buttons: {
       saveButton: { text: "Pridať novú kategóriu", link: "/" },
       cancel: { text: "Zrušiť", link: "/" },
+    },
+  },
+};
+
+export const EditCategoryText: CategoryEditTextProps = {
+  en: {
+    title: "Edit category",
+    inputs: {
+      name: { placeholder: "Name", field: "name" },
+      bgText_en: {
+        placeholder: "Background text (English)",
+        field: "bgText_en",
+      },
+      bgText_ru: {
+        placeholder: "Background text (Russian)",
+        field: "bgText_ru",
+      },
+      bgText_sk: {
+        placeholder: "Background text (Slovak)",
+        field: "bgText_sk",
+      },
+      title_en: { placeholder: "Title (English)", field: "title_en" },
+      title_ru: { placeholder: "Title (Russian)", field: "title_ru" },
+      title_sk: { placeholder: "Title (Slovak)", field: "title_sk" },
+      recomended: { placeholder: "Recomended", field: "recomended" },
+      toDisplay: { placeholder: "Display", field: "toDisplay" },
+    },
+    previewText: "Preview",
+    buttons: {
+      saveButton: { text: "Edit category", link: "/" },
+      cancel: { text: "Cancel", link: "/" },
+    },
+  },
+  sk: {
+    title: "Upraviť kategóriu",
+    inputs: {
+      name: { placeholder: "Názov", field: "name" },
+      bgText_en: { placeholder: "Pozadí (anglicky)", field: "bgText_en" },
+      bgText_ru: { placeholder: "Pozadí (rusky)", field: "bgText_ru" },
+      bgText_sk: { placeholder: "Pozadí (slovensky)", field: "bgText_sk" },
+      title_en: { placeholder: "Názov (anglicky)", field: "title_en" },
+      title_ru: { placeholder: "Názov (rusky)", field: "title_ru" },
+      title_sk: { placeholder: "Názov (slovensky)", field: "title_sk" },
+      recomended: { placeholder: "Odporúčané", field: "recomended" },
+      toDisplay: { placeholder: "Zobraziť", field: "toDisplay" },
+    },
+    previewText: "Náhľad",
+    buttons: {
+      saveButton: { text: "Upraviť kategóriu", link: "/" },
+      cancel: { text: "Zrušiť", link: "/" },
+    },
+  },
+  ru: {
+    title: "Редактировать категорию",
+    inputs: {
+      name: { placeholder: "Название", field: "name" },
+      bgText_en: {
+        placeholder: "Фоновый текст (английский)",
+        field: "bgText_en",
+      },
+      bgText_ru: { placeholder: "Фоновый текст (русский)", field: "bgText_ru" },
+      bgText_sk: {
+        placeholder: "Фоновый текст (словацкий)",
+        field: "bgText_sk",
+      },
+      title_en: { placeholder: "Заголовок (английский)", field: "title_en" },
+      title_ru: { placeholder: "Заголовок (русский)", field: "title_ru" },
+      title_sk: { placeholder: "Заголовок (словацкий)", field: "title_sk" },
+      recomended: { placeholder: "Рекомендуемые", field: "recomended" },
+      toDisplay: { placeholder: "Отображать", field: "toDisplay" },
+    },
+    previewText: "Предпросмотр",
+    buttons: {
+      saveButton: { text: "Редактировать категорию", link: "/" },
+      cancel: { text: "Отмена", link: "/" },
+    },
+  },
+};
+
+export const NewProductText: NewProductTextsProps = {
+  en: {
+    title: "Create new product",
+    chooseCategoryText: "Choose category to add new product",
+    inputs: {
+      name: { placeholder: "Name", field: "name" },
+      description_en: {
+        placeholder: "Description (English)",
+        field: "description_en",
+      },
+      description_ru: {
+        placeholder: "Description (Russian)",
+        field: "description_ru",
+      },
+      description_sk: {
+        placeholder: "Description (Slovak)",
+        field: "description_sk",
+      },
+      newPrice: { placeholder: "New Price", field: "newPrice" },
+      oldPrice: { placeholder: "Old Price", field: "oldPrice" },
+      toDisplay: { placeholder: "Display", field: "toDisplay" },
+      leftInStock: { placeholder: "Left in stock", field: "leftInStock" },
+    },
+    previewText: "Preview",
+    image: "Upload image",
+    categoryText: "Choose category",
+    buttons: {
+      saveButton: { text: "Add new product", link: "/" },
+      cancel: { text: "Cancel", link: "/" },
+    },
+  },
+  sk: {
+    title: "Vytvoriť nový produkt",
+    chooseCategoryText: "Vyberte kategóriu pre pridanie nového produktu",
+    inputs: {
+      name: { placeholder: "Meno", field: "name" },
+      description_en: {
+        placeholder: "Popis (anglicky)",
+        field: "description_en",
+      },
+      description_ru: { placeholder: "Popis (rusky)", field: "description_ru" },
+      description_sk: {
+        placeholder: "Popis (slovensky)",
+        field: "description_sk",
+      },
+      newPrice: { placeholder: "Nová cena", field: "newPrice" },
+      oldPrice: { placeholder: "Stará cena", field: "oldPrice" },
+      toDisplay: { placeholder: "Zobraziť", field: "toDisplay" },
+      leftInStock: {
+        placeholder: "Počet kusov na sklade",
+        field: "leftInStock",
+      },
+    },
+    previewText: "Náhľad",
+    image: "Nahrať obrázok",
+    categoryText: "Vyberte kategóriu",
+    buttons: {
+      saveButton: { text: "Pridať nový produkt", link: "/" },
+      cancel: { text: "Zrušiť", link: "/" },
+    },
+  },
+  ru: {
+    title: "Создать новый продукт",
+    chooseCategoryText: "Выберите категорию для добавления нового продукта",
+    inputs: {
+      name: { placeholder: "Название", field: "name" },
+      description_en: {
+        placeholder: "Описание (английский)",
+        field: "description_en",
+      },
+      description_ru: {
+        placeholder: "Описание (русский)",
+        field: "description_ru",
+      },
+      description_sk: {
+        placeholder: "Описание (словацкий)",
+        field: "description_sk",
+      },
+      newPrice: { placeholder: "Новая цена", field: "newPrice" },
+      oldPrice: { placeholder: "Старая цена", field: "oldPrice" },
+      toDisplay: { placeholder: "Показать", field: "toDisplay" },
+      leftInStock: { placeholder: "Остаток на складе", field: "leftInStock" },
+    },
+    previewText: "Предпросмотр",
+    image: "Загрузить изображение",
+    categoryText: "Выберите категорию",
+    buttons: {
+      saveButton: { text: "Добавить новый продукт", link: "/" },
+      cancel: { text: "Отмена", link: "/" },
     },
   },
 };

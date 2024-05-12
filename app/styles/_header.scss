@@ -80,6 +80,54 @@ header {
       font-size: calc(fontSize(p) + 3px);
       transition: $transition;
     }
+    .shop {
+      margin: 0 20px 0 20px;
+
+      .currentShop {
+        font-size: calc(fontSize(p) + 3px);
+      }
+      z-index: 20;
+      margin-right: 20px;
+      .current {
+        @include Flex(row, center, center);
+        font-size: calc(fontSize(p) + 3px);
+        cursor: pointer;
+        .currentLang {
+          margin-right: 5px;
+          font-size: calc(fontSize(p) + 3px);
+        }
+
+        .icon {
+          transition: $transition;
+          svg {
+            fill: color(text-color);
+            height: iconSize(mobile) * 1.2;
+            width: iconSize(mobile) * 1.2;
+          }
+        }
+        .icon.open {
+          transform: rotate(180deg);
+        }
+      }
+
+      .options {
+        z-index: 20;
+        @include Flex(column, start, center);
+        margin-top: 10px;
+        position: absolute;
+        z-index: 10;
+        background-color: color(custom-black);
+        padding: 10px;
+        border-radius: borderRadius(mobile);
+
+        .option {
+          font-size: calc(fontSize(p) + 3px);
+          padding: 5px;
+          margin-left: 2px;
+          @include Flex(column, start, center);
+        }
+      }
+    }
   }
 
   .mobileNav {

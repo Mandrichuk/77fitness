@@ -1,7 +1,7 @@
 import React from "react";
 import { Metadata } from "next";
 
-import Header from "@/app/components/common/Header";
+import AdminHeader from "@/app/components/admin/AdminHeader";
 import Footer from "@/app/components/common/Footer";
 import CreatedBy from "@/app/components/common/CreatedBy";
 import Orders from "@/app/components/admin/Admin";
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 function Home({ params: { locale } }: LocaleProps) {
   return (
     <main>
-      <Header locale={locale} />
+      <AdminHeader locale={locale} />
       <Orders locale={locale} />
       <Footer locale={locale} />
       <CreatedBy />

@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "@/app/components/common/Header";
+import AdminHeader from "@/app/components/admin/AdminHeader";
 import Footer from "@/app/components/common/Footer";
 
 import { useSelector } from "react-redux";
@@ -10,7 +10,7 @@ import ScreenLoading from "@/app/components/common/ScreenLoading";
 function page({ params: { locale } }: LocaleProps) {
   return (
     <main>
-      <Header locale={locale} />
+      <AdminHeader locale={locale} />
       <NewCategory locale={locale} />
       <Footer locale={locale} />
       <ScreenLoading />

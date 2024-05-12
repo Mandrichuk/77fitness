@@ -26,6 +26,10 @@ export interface HeaderLanguages {
   title: string;
   links: Link[];
 }
+export interface HeaderShop {
+  title: string;
+  links: Link[];
+}
 
 export interface HeaderTextProps {
   en: {
@@ -35,6 +39,7 @@ export interface HeaderTextProps {
       link: string;
     };
     links: Link[];
+    shop: HeaderShop;
     languages: HeaderLanguages;
   };
   sk: {
@@ -44,6 +49,7 @@ export interface HeaderTextProps {
       link: string;
     };
     links: Link[];
+    shop: HeaderShop;
     languages: HeaderLanguages;
   };
   ru: {
@@ -53,6 +59,7 @@ export interface HeaderTextProps {
       link: string;
     };
     links: Link[];
+    shop: HeaderShop;
     languages: HeaderLanguages;
   };
 }
@@ -610,6 +617,9 @@ export interface ShopRedirectFromOrdersProps {
   ru: ShopRedirectFromOrders;
 }
 export interface NewCategoryProps extends Language {}
+
+export interface NewProductProps extends Language {}
+
 interface NewCategoryInputProps {
   placeholder: string;
   field: string;
@@ -707,5 +717,81 @@ export interface AdminTextProps {
     inProcessTitleTextBg: string;
     doneTextBg: string;
     doneTitleTextBg: string;
+  };
+}
+
+interface CategoryEditText {
+  title: string;
+  inputs: {
+    name: { placeholder: string; field: string };
+    bgText_en: { placeholder: string; field: string };
+    bgText_ru: { placeholder: string; field: string };
+    bgText_sk: { placeholder: string; field: string };
+    title_en: { placeholder: string; field: string };
+    title_ru: { placeholder: string; field: string };
+    title_sk: { placeholder: string; field: string };
+    recomended: { placeholder: string; field: string };
+    toDisplay: { placeholder: string; field: string };
+  };
+  previewText: string;
+  buttons: {
+    saveButton: { text: string; link: string };
+    cancel: { text: string; link: string };
+  };
+}
+
+export interface CategoryEditTextProps {
+  en: CategoryEditText;
+  sk: CategoryEditText;
+  ru: CategoryEditText;
+}
+
+interface NewProductText {
+  title: string;
+  chooseCategoryText: string;
+  inputs: {
+    name: { placeholder: string; field: string };
+    description_en: { placeholder: string; field: string };
+    description_ru: { placeholder: string; field: string };
+    description_sk: { placeholder: string; field: string };
+    newPrice: { placeholder: string; field: string };
+    oldPrice: { placeholder: string; field: string };
+    leftInStock: { placeholder: string; field: string };
+    toDisplay: { placeholder: string; field: string };
+  };
+  previewText: string;
+  image: string;
+  categoryText: string;
+  buttons: {
+    saveButton: { text: string; link: string };
+    cancel: { text: string; link: string };
+  };
+}
+
+export interface NewProductTextsProps {
+  en: NewProductText;
+  sk: NewProductText;
+  ru: NewProductText;
+}
+
+interface Logo {
+  image: string;
+  link: string;
+  alt: string;
+}
+
+interface LanguageLink {
+  text: string;
+  link: "en" | "sk" | "ru";
+}
+
+export interface AdminHeaderTextProps {
+  [key: string]: {
+    logo: Logo;
+    links: Link[];
+    languages: {
+      title: string;
+      links: LanguageLink[];
+    };
   };
 }
