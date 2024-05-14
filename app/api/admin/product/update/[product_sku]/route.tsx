@@ -75,5 +75,5 @@ export async function PUT(request: NextRequest, params: Props) {
     },
   });
 
-  return NextResponse.json(updatedProduct);
+  return NextResponse.json(validation);
 }

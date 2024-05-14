@@ -71,9 +71,21 @@ export interface EditCategory {
   };
 }
 
+export interface EditProductPageProps {
+  params: {
+    locale: "en" | "sk" | "ru";
+    product_sku: string;
+  };
+}
+
 export interface EditCategoryProps {
   locale: "en" | "sk" | "ru";
   category_sku: string;
+}
+
+export interface EditProductProps {
+  locale: "en" | "sk" | "ru";
+  product_sku: string;
 }
 
 export interface HeaderProps extends Language {}

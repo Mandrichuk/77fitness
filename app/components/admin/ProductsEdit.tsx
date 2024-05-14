@@ -31,7 +31,6 @@ function ProductsEdit({ locale }: CategoriesEditProps) {
       try {
         const response = await fetch("/api/admin/product");
         const jsonData = await response.json();
-        console.log("helo");
         setData(jsonData.products);
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -116,7 +115,12 @@ function ProductsEdit({ locale }: CategoriesEditProps) {
                           )}
                         </div>
                         <div className="buttonsContainer">
-                          <div className="edit">{SVGs.edit}</div>
+                          <Link
+                            href={`/admin/product/edit/${product.sku}`}
+                            className="edit"
+                          >
+                            {SVGs.edit}
+                          </Link>
                           <div
                             onClick={() =>
                               toggleVisibility(product.sku, !product.toDisplay)

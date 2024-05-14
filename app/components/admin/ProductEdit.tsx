@@ -2,12 +2,19 @@
 import React, { useState, useEffect } from "react";
 
 import Input from "../common/Input";
-import { NewProductProps } from "@/app/lib";
+import { EditProductProps } from "@/app/lib";
 import { CLOUDINARY_FOLDER, NewProductText } from "@/app/constants";
 import getHash from "@/app/utils/getHash";
 import TextLayers from "../common/TextLayers";
 import { CldUploadWidget } from "next-cloudinary";
 import Image from "../common/Image";
+import { toast } from "react-toastify";
+
+interface ImageProductProps {
+  id: number;
+  url: string;
+  productId: number;
+}
 
 interface NewProductInputsProps {
   sku: any;
@@ -16,7 +23,7 @@ interface NewProductInputsProps {
   description_en: string;
   description_ru: string;
   description_sk: string;
-  images: string[];
+  images: ImageProductProps[];
   newPrice: number;
   oldPrice: number;
   leftInStock: number;
@@ -49,47 +56,56 @@ interface CloudinaryResultProps {
   public_id: string;
 }
 
-function NewProduct({ locale }: NewProductProps) {
+function NewProduct({ locale, product_sku }: EditProductProps) {
   const [categoriesData, setCategoriesData] = useState<ProductProps[]>([]);
   const [cloudinaryResults, setCloudinaryResults] = useState<string>("");
   const t = NewProductText[locale] || NewProductText["en"];
   const [previewLanguage, setPreviewLanguage] = useState<"en" | "ru" | "sk">(
     "en"
   );
-  const [newProductData, setNewProductData] = useState<NewProductInputsProps>({
-    sku: String(getHash()),
-    name: "",
-    categoryId: null,
-    description_en: "",
-    description_ru: "",
-    description_sk: "",
-    images: [],
-    newPrice: 0.01,
-    oldPrice: 0.01,
-    leftInStock: 0,
-    toDisplay: false,
-  });
-
-  function isNewCategoryDataValid() {
-    return (
-      newProductData.name !== "" &&
-      newProductData.description_en !== "" &&
-      newProductData.description_ru !== "" &&
-      newProductData.description_sk !== "" &&
-      newProductData.images.length > 0 &&
-      newProductData.newPrice > 0 &&
-      newProductData.oldPrice > 0 &&
-      newProductData.leftInStock > 0 &&
-      newProductData.categoryId !== 0
-    );
-  }
+  const [data, setData] = useState<any>(null);
+  const [editedProductData, setEditedProductData] =
+    useState<NewProductInputsProps>({
+      sku: String(getHash()),
+      name: "",
+      categoryId: 1,
+      description_en: "",
+      description_ru: "",
+      description_sk: "",
+      images: [],
+      newPrice: 0.01,
+      oldPrice: 0.01,
+      leftInStock: 0,
+      toDisplay: false,
+    });
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("/api/admin/category");
-        const jsonData = await response.json();
-        setCategoriesData(jsonData.categories);
+        const response = await fetch(
+          `/api/admin/product/update/${product_sku}`
+        );
+        if (response.ok) {
+          const responseData = await response.json();
+          setData(responseData);
+
+          console.log(responseData.categoryId);
+          setEditedProductData({
+            sku: responseData?.sku,
+            name: responseData?.name,
+            categoryId: responseData?.categoryId,
+            description_en: responseData?.description.en,
+            description_ru: responseData?.description.ru,
+            description_sk: responseData?.description.sk,
+            images: [responseData?.images[0]],
+            newPrice: responseData?.newPrice,
+            oldPrice: responseData?.oldPrice,
+            leftInStock: responseData?.leftInStock,
+            toDisplay: responseData?.toDisplay,
+          });
+        } else {
+          throw new Error("Failed to fetch data");
+        }
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -98,29 +114,52 @@ function NewProduct({ locale }: NewProductProps) {
     fetchData();
   }, []);
 
-  console.log(newProductData);
+  function isNewCategoryDataValid() {
+    return (
+      editedProductData.name !== "" &&
+      editedProductData.description_en !== "" &&
+      editedProductData.description_ru !== "" &&
+      editedProductData.description_sk !== "" &&
+      editedProductData.images.length > 0 &&
+      editedProductData.newPrice > 0 &&
+      editedProductData.oldPrice > 0 &&
+      editedProductData.leftInStock > 0 &&
+      editedProductData.categoryId !== 0
+    );
+  }
+
+  const notifyAddedToCart = () => {
+    toast.success("t.notify", {
+      position: "top-right",
+      autoClose: 1300,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      theme: "dark",
+    });
+  };
 
   function addNewCategory() {
     if (isNewCategoryDataValid()) {
       const convertedProductData = {
-        sku: String(getHash()),
-        name: newProductData.name,
-        categoryId: newProductData.categoryId.id,
+        sku: editedProductData.sku,
+        name: editedProductData.name,
+        categoryId: Number(editedProductData.categoryId),
         description: {
-          en: newProductData.description_en,
-          sk: newProductData.description_sk,
-          ru: newProductData.description_ru,
+          en: editedProductData.description_en,
+          sk: editedProductData.description_sk,
+          ru: editedProductData.description_ru,
         },
-        imageUrls: [newProductData.images[0]],
-        newPrice: Number(newProductData.newPrice),
-        oldPrice: Number(newProductData.oldPrice),
-        leftInStock: Number(newProductData.leftInStock),
-        toDisplay: newProductData.toDisplay,
+        imageUrls: [editedProductData.images[0].url],
+        newPrice: Number(editedProductData.newPrice),
+        oldPrice: Number(editedProductData.oldPrice),
+        leftInStock: Number(editedProductData.leftInStock),
+        toDisplay: editedProductData.toDisplay,
       };
 
       try {
-        fetch("/api/admin/product/new", {
-          method: "POST",
+        fetch(`/api/admin/product/update/${product_sku}`, {
+          method: "PUT",
           headers: {
             "Content-Type": "application/json",
           },
@@ -136,7 +175,8 @@ function NewProduct({ locale }: NewProductProps) {
           .then((data) => {
             console.log(data);
             console.log("Category created successfully");
-            // window.location.reload();
+            notifyAddedToCart();
+            window.location.href = "/admin/product/edit";
           })
           .catch((error) => {
             console.error("Error:", error);
@@ -148,7 +188,7 @@ function NewProduct({ locale }: NewProductProps) {
   }
 
   function handleSetNewCategory(value: any, field: string) {
-    setNewProductData((prevData) => ({
+    setEditedProductData((prevData) => ({
       ...prevData,
       [field]: value,
     }));
@@ -158,10 +198,20 @@ function NewProduct({ locale }: NewProductProps) {
     const parts = public_id.split("/");
     const result = parts.slice(parts.length - 1).join("/");
 
-    setNewProductData((prevData) => ({
+    setEditedProductData((prevData) => ({
       ...prevData,
-      images: [result],
+      images: [
+        { id: editedProductData.images[0].id, url: result, productId: 0 },
+      ],
     }));
+  }
+
+  if (!data) {
+    return (
+      <div className="flex flex-row items-center justify-center h-[400px]">
+        <div className="loading" />
+      </div>
+    );
   }
 
   return (
@@ -191,12 +241,12 @@ function NewProduct({ locale }: NewProductProps) {
                   <div
                     key={category.id}
                     className={`category ${
-                      newProductData.categoryId &&
-                      newProductData.categoryId.id === category.id &&
+                      editedProductData.categoryId &&
+                      editedProductData.categoryId.id === category.id &&
                       "chosen"
                     }`}
                     onClick={() =>
-                      setNewProductData((prevData) => ({
+                      setEditedProductData((prevData) => ({
                         ...prevData,
                         categoryId: { ...category },
                       }))
@@ -215,6 +265,7 @@ function NewProduct({ locale }: NewProductProps) {
               }
               field={t.inputs.name.field}
               maxSymbols={20}
+              initialValue={editedProductData.name}
             />
             <Input
               placeholderText={t.inputs.description_en.placeholder}
@@ -223,6 +274,7 @@ function NewProduct({ locale }: NewProductProps) {
               }
               field={t.inputs.description_en.field}
               maxSymbols={70}
+              initialValue={editedProductData.description_en}
             />
             <Input
               placeholderText={t.inputs.description_ru.placeholder}
@@ -231,6 +283,7 @@ function NewProduct({ locale }: NewProductProps) {
               }
               field={t.inputs.description_ru.field}
               maxSymbols={70}
+              initialValue={editedProductData.description_ru}
             />
             <Input
               placeholderText={t.inputs.description_sk.placeholder}
@@ -239,6 +292,7 @@ function NewProduct({ locale }: NewProductProps) {
               }
               field={t.inputs.description_sk.field}
               maxSymbols={70}
+              initialValue={editedProductData.description_sk}
             />
             <Input
               placeholderText={t.inputs.newPrice.placeholder}
@@ -247,6 +301,7 @@ function NewProduct({ locale }: NewProductProps) {
               }
               field={t.inputs.newPrice.field}
               maxSymbols={6}
+              initialValue={String(editedProductData.newPrice)}
             />
             <Input
               placeholderText={t.inputs.oldPrice.placeholder}
@@ -255,6 +310,7 @@ function NewProduct({ locale }: NewProductProps) {
               }
               field={t.inputs.oldPrice.field}
               maxSymbols={6}
+              initialValue={String(editedProductData.oldPrice)}
             />
             <Input
               placeholderText={t.inputs.leftInStock.placeholder}
@@ -263,13 +319,14 @@ function NewProduct({ locale }: NewProductProps) {
               }
               field={t.inputs.leftInStock.field}
               maxSymbols={6}
+              initialValue={String(editedProductData.leftInStock)}
             />
             <div className="booleanInputs">
               <div className="booleanInput">
                 <label>{t.inputs.toDisplay.placeholder}</label>
                 <input
                   type="checkbox"
-                  value={newProductData.toDisplay ? "true" : "false"}
+                  value={editedProductData.toDisplay ? "true" : "false"}
                   onChange={(e) =>
                     handleSetNewCategory(
                       e.target.checked,
@@ -316,7 +373,7 @@ function NewProduct({ locale }: NewProductProps) {
                   <div className="imageBox">
                     <div className="imageContainer">
                       <Image
-                        image={`shop/${newProductData.images[0]}`}
+                        image={`shop/${editedProductData.images[0].url}`}
                         alt={"image"}
                         imgQuality={100}
                         isShopProduct={true}
@@ -325,22 +382,26 @@ function NewProduct({ locale }: NewProductProps) {
                   </div>
                   <div className="details">
                     <p className="title">
-                      {newProductData.categoryId &&
-                        newProductData?.categoryId.title[previewLanguage]}
+                      {/* {editedProductData.categoryId &&
+                        editedProductData?.categoryId.title[previewLanguage]} */}
                     </p>
-                    <p className="name">{newProductData.name}</p>
+                    <p className="name">{editedProductData.name}</p>
                     <p className="description">
                       {previewLanguage === "en" &&
-                        newProductData.description_en}
+                        editedProductData.description_en}
                       {previewLanguage === "sk" &&
-                        newProductData.description_sk}
+                        editedProductData.description_sk}
                       {previewLanguage === "ru" &&
-                        newProductData.description_ru}
+                        editedProductData.description_ru}
                     </p>
                     <div className="cart">
                       <div className="prices">
-                        <p className="newPrice">€{newProductData.newPrice}</p>
-                        <p className="oldPrice">€{newProductData.oldPrice}</p>
+                        <p className="newPrice">
+                          €{editedProductData.newPrice}
+                        </p>
+                        <p className="oldPrice">
+                          €{editedProductData.oldPrice}
+                        </p>
                       </div>
                       <div className="buttonContainer">
                         <button
