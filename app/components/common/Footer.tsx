@@ -45,6 +45,16 @@ function Footer({ locale }: FooterProps) {
             </ul>
           </div>
           <div className="detail">
+            <p className="title">{t.shop.title}</p>
+            <ul>
+              {t.shop.links.map((i) => (
+                <div className="linkContainer" key={i.text}>
+                  <Link href={i.link}>{i.text}</Link>
+                </div>
+              ))}
+            </ul>
+          </div>
+          <div className="detail">
             <p className="title">{t.languages.title}</p>
             <ul>
               {t.languages.links.map((i) => (

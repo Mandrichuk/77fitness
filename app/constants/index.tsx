@@ -581,6 +581,7 @@ export const headerText: HeaderTextProps = {
     },
   },
 };
+
 export const AdminHeaderText: AdminHeaderTextProps = {
   en: {
     logo: {
@@ -688,6 +689,14 @@ export const footerText: FooterTextProps = {
         { text: "Contact", link: "tel:+421 940 735 735" },
       ],
     },
+    shop: {
+      title: "Shop",
+      links: [
+        { text: "Shop", link: "/shop" },
+        { text: "Cart", link: "/shop/cart" },
+        { text: "Orders", link: "/shop/orders" },
+      ],
+    },
     languages: {
       title: "Languages",
       links: [
@@ -719,10 +728,10 @@ export const footerText: FooterTextProps = {
     name: "NEXT LEVEL FITNESS",
     location: {
       text: "Bratislava, Bajkalská 2i, 831 04",
-      link: "https://www.google.sk/maps/place/77nextlevelfitness/@48.1639961,17.1368065,18z/data=!4m6!3m5!1s0x476c8f76fe48d03b:0x3e34a79f87ee6c7!8m2!3d48.1639642!4d17.1380704",
+      link: "https://www.google.ru/maps/place/77nextlevelfitness/@48.1639961,17.1368065,18z/data=!4m6!3m5!1s0x476c8f76fe48d03b:0x3e34a79f87ee6c7!8m2!3d48.1639642!4d17.1380704!16s%2Fg%2F11kq3fll84?entry=ttu",
     },
     sitemap: {
-      title: "Mapa stránok",
+      title: "Mapa stránky",
       links: [
         { text: "Domov", link: "/" },
         { text: "Ceny", link: "/pricing" },
@@ -730,16 +739,24 @@ export const footerText: FooterTextProps = {
         { text: "Kontakt", link: "tel:+421 940 735 735" },
       ],
     },
+    shop: {
+      title: "Obchod",
+      links: [
+        { text: "Obchod", link: "/shop" },
+        { text: "Košík", link: "/shop/cart" },
+        { text: "Objednávky", link: "/shop/orders" },
+      ],
+    },
     languages: {
       title: "Jazyky",
       links: [
-        { text: "Angličtina", link: "en" },
-        { text: "Slovenčina", link: "sk" },
-        { text: "Ruština", link: "ru" },
+        { text: "Anglický", link: "en" },
+        { text: "Slovenský", link: "sk" },
+        { text: "Ruský", link: "ru" },
       ],
     },
     socials: {
-      title: "Sociálne siete",
+      title: "Sociálne médiá",
       links: [
         {
           icon: { src: SVGs.instagram, alt: "instagram" },
@@ -760,8 +777,8 @@ export const footerText: FooterTextProps = {
     logo: { src: "ncdhkltskvpjmdprvynk", alt: "логотип" },
     name: "NEXT LEVEL FITNESS",
     location: {
-      text: "Bratislava, Bajkalská 2i, 831 04",
-      link: "https://www.google.ru/maps/place/77nextlevelfitness/@48.1639961,17.1368065,18z/data=!4m6!3m5!1s0x476c8f76fe48d03b:0x3e34a79f87ee6c7!8m2!3d48.1639642!4d17.1380704",
+      text: "Братислава, Bajkalská 2i, 831 04",
+      link: "https://www.google.ru/maps/place/77nextlevelfitness/@48.1639961,17.1368065,18z/data=!4m6!3m5!1s0x476c8f76fe48d03b:0x3e34a79f87ee6c7!8m2!3d48.1639642!4d17.1380704!16s%2Fg%2F11kq3fll84?entry=ttu",
     },
     sitemap: {
       title: "Карта сайта",
@@ -770,6 +787,14 @@ export const footerText: FooterTextProps = {
         { text: "Цены", link: "/pricing" },
         { text: "Галерея", link: "/gallery" },
         { text: "Контакт", link: "tel:+421 940 735 735" },
+      ],
+    },
+    shop: {
+      title: "Магазин",
+      links: [
+        { text: "Магазин", link: "/shop" },
+        { text: "Корзина", link: "/shop/cart" },
+        { text: "Заказы", link: "/shop/orders" },
       ],
     },
     languages: {
@@ -781,18 +806,18 @@ export const footerText: FooterTextProps = {
       ],
     },
     socials: {
-      title: "Социальные сети",
+      title: "Социальные медиа",
       links: [
         {
-          icon: { src: SVGs.instagram, alt: "instagram" },
+          icon: { src: SVGs.instagram, alt: "инстаграм" },
           link: "https://www.instagram.com/77fitness.sk/",
         },
         {
-          icon: { src: SVGs.facebook, alt: "facebook" },
+          icon: { src: SVGs.facebook, alt: "фейсбук" },
           link: "https://www.facebook.com/77fitness.sk/",
         },
         {
-          icon: { src: SVGs.youtube, alt: "youtube" },
+          icon: { src: SVGs.youtube, alt: "ютуб" },
           link: "https://www.youtube.com/channel/UCgumAghelhdahPVrik__liw",
         },
       ],

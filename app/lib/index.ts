@@ -252,6 +252,10 @@ interface FooterText {
     title: string;
     links: Link[];
   };
+  shop: {
+    title: string;
+    links: Link[];
+  };
   languages: {
     title: string;
     links: Link[];

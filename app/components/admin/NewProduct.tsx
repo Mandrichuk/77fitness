@@ -1,9 +1,9 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import Input from "../common/Input";
 import { NewProductProps } from "@/app/lib";
-import { NewProductText } from "@/app/constants";
+import { CLOUDINARY_FOLDER, NewProductText } from "@/app/constants";
 import getHash from "@/app/utils/getHash";
 import TextLayers from "../common/TextLayers";
 import { CldUploadWidget } from "next-cloudinary";
@@ -12,7 +12,7 @@ import Image from "../common/Image";
 interface NewProductInputsProps {
   sku: any;
   name: string;
-  categoryId: number;
+  categoryId: any;
   description_en: string;
   description_ru: string;
   description_sk: string;
@@ -23,11 +23,34 @@ interface NewProductInputsProps {
   toDisplay: boolean;
 }
 
+interface ProductProps {
+  bgText: {
+    id: number;
+    en: string;
+    ru: string;
+    sk: string;
+  };
+  categoryBgTextId: number;
+  categoryTitleId: number;
+  id: number;
+  name: string;
+  recommended: boolean;
+  sku: string;
+  title: {
+    id: number;
+    en: string;
+    ru: string;
+    sk: string;
+  };
+  toDisplay: boolean;
+}
+
 interface CloudinaryResultProps {
   public_id: string;
 }
 
 function NewProduct({ locale }: NewProductProps) {
+  const [categoriesData, setCategoriesData] = useState<ProductProps[]>([]);
   const [cloudinaryResults, setCloudinaryResults] = useState<string>("");
   const t = NewProductText[locale] || NewProductText["en"];
   const [previewLanguage, setPreviewLanguage] = useState<"en" | "ru" | "sk">(
@@ -36,7 +59,7 @@ function NewProduct({ locale }: NewProductProps) {
   const [newProductData, setNewProductData] = useState<NewProductInputsProps>({
     sku: String(getHash()),
     name: "",
-    categoryId: 0,
+    categoryId: null,
     description_en: "",
     description_ru: "",
     description_sk: "",
@@ -57,34 +80,51 @@ function NewProduct({ locale }: NewProductProps) {
       newProductData.newPrice > 0 &&
       newProductData.oldPrice > 0 &&
       newProductData.leftInStock > 0 &&
-      newProductData.toDisplay === true
+      newProductData.categoryId !== 0
     );
   }
 
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/api/admin/category");
+        const jsonData = await response.json();
+        setCategoriesData(jsonData.categories);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   function addNewCategory() {
     if (isNewCategoryDataValid()) {
-      const convertedCategoryData = {
+      const convertedProductData = {
         sku: String(getHash()),
         name: newProductData.name,
-        bgText: {
+        categoryId: newProductData.categoryId.id,
+        description: {
           en: newProductData.description_en,
           sk: newProductData.description_sk,
           ru: newProductData.description_ru,
         },
-        images: [newProductData.images[0]],
-        newPrice: newProductData.newPrice,
-        oldPrice: newProductData.oldPrice,
-        leftInStock: newProductData.leftInStock,
+        imageUrls: [newProductData.images[0]],
+        newPrice: Number(newProductData.newPrice),
+        oldPrice: Number(newProductData.oldPrice),
+        leftInStock: Number(newProductData.leftInStock),
         toDisplay: newProductData.toDisplay,
       };
 
+      console.log(convertedProductData);
+
       try {
-        fetch("/api/admin/category/new", {
+        fetch("/api/admin/product/new", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(convertedCategoryData),
+          body: JSON.stringify(convertedProductData),
         })
           .then((response) => {
             if (response.ok) {
@@ -96,7 +136,7 @@ function NewProduct({ locale }: NewProductProps) {
           .then((data) => {
             console.log(data);
             console.log("Category created successfully");
-            window.location.reload();
+            // window.location.reload();
           })
           .catch((error) => {
             console.error("Error:", error);
@@ -114,30 +154,60 @@ function NewProduct({ locale }: NewProductProps) {
     }));
   }
 
-    console.log(cloudinaryResults)
+  function setImagePublicId(public_id: string) {
+    const parts = public_id.split("/");
+    const result = parts.slice(parts.length - 1).join("/");
+    
+    setNewProductData((prevData) => ({
+      ...prevData,
+      images: [result],
+    }));
+  }
 
   return (
-    <section className="NewCategorySection">
+    <section className="NewProductSection">
       <div className="wrapper">
         <div className="title">
           <h3>{t.title}</h3>
         </div>
         <div className="content">
           <div className="inputsContainer">
+            <h4 className="imageText">{"Add image"}</h4>
             <CldUploadWidget
+              options={{ sources: ["local", "url"], maxFiles: 5 }}
               uploadPreset="woeoiuax"
-              onUploadAdded={(result, widget) => {
+              onUpload={(result, widget) => {
                 if (result.event !== "success") return;
                 const info = result.info as CloudinaryResultProps;
-                setCloudinaryResults(info.public_id);
+                setImagePublicId(info.public_id);
               }}
             >
-              {({ open }) => (
-                <button className="uploadButton" onClick={() => open()}>
-                  Upload
-                </button>
-              )}
+              {({ open }) => <button onClick={() => open()}>Upload</button>}
             </CldUploadWidget>
+            <h4 className="chooseCategoryText">{"Choose category"}</h4>
+            <div className="chooseCategory">
+              {categoriesData &&
+                categoriesData.map((category) => (
+                  <div
+                    key={category.id}
+                    className={`category ${
+                      newProductData.categoryId &&
+                      newProductData.categoryId.id === category.id &&
+                      "chosen"
+                    }`}
+                    onClick={() =>
+                      setNewProductData((prevData) => ({
+                        ...prevData,
+                        categoryId: { ...category },
+                      }))
+                    }
+                  >
+                    {locale === "en" && category.title.en}{" "}
+                    {locale === "ru" && category.title.ru}{" "}
+                    {locale === "sk" && category.title.sk}
+                  </div>
+                ))}
+            </div>
             <Input
               placeholderText={t.inputs.name.placeholder}
               getValue={(value) =>
@@ -152,7 +222,7 @@ function NewProduct({ locale }: NewProductProps) {
                 handleSetNewCategory(value, t.inputs.description_en.field)
               }
               field={t.inputs.description_en.field}
-              maxSymbols={45}
+              maxSymbols={35}
             />
             <Input
               placeholderText={t.inputs.description_ru.placeholder}
@@ -160,7 +230,7 @@ function NewProduct({ locale }: NewProductProps) {
                 handleSetNewCategory(value, t.inputs.description_ru.field)
               }
               field={t.inputs.description_ru.field}
-              maxSymbols={45}
+              maxSymbols={35}
             />
             <Input
               placeholderText={t.inputs.description_sk.placeholder}
@@ -168,7 +238,7 @@ function NewProduct({ locale }: NewProductProps) {
                 handleSetNewCategory(value, t.inputs.description_sk.field)
               }
               field={t.inputs.description_sk.field}
-              maxSymbols={45}
+              maxSymbols={35}
             />
             <Input
               placeholderText={t.inputs.newPrice.placeholder}
@@ -242,25 +312,49 @@ function NewProduct({ locale }: NewProductProps) {
                 </div>
               </div>
               <div className="previewContainer">
-               {cloudinaryResults && <Image image={cloudinaryResults} alt={"image"} />}
-                {/* {previewLanguage === "en" && (
-                  <TextLayers
-                    bgText={newProductData.bgText_en}
-                    title={newProductData.title_en}
-                  />
-                )}
-                {previewLanguage === "ru" && (
-                  <TextLayers
-                    bgText={newProductData.bgText_ru}
-                    title={newProductData.title_ru}
-                  />
-                )}
-                {previewLanguage === "sk" && (
-                  <TextLayers
-                    bgText={newProductData.bgText_sk}
-                    title={newProductData.title_sk}
-                  />
-                )} */}
+                <div className={`product`}>
+                  <div className="imageBox">
+                    <div className="imageContainer">
+                      <Image
+                        image={`shop/${newProductData.images[0]}`}
+                        alt={"image"}
+                        imgQuality={100}
+                        isShopProduct={true}
+                      />
+                    </div>
+                  </div>
+                  <div className="details">
+                    <p className="title">
+                      {newProductData.categoryId &&
+                        newProductData?.categoryId.title[previewLanguage]}
+                    </p>
+                    <p className="name">{newProductData.name}</p>
+                    <p className="description">
+                      {previewLanguage === "en" &&
+                        newProductData.description_en}
+                      {previewLanguage === "sk" &&
+                        newProductData.description_sk}
+                      {previewLanguage === "ru" &&
+                        newProductData.description_ru}
+                    </p>
+                    <div className="cart">
+                      <div className="prices">
+                        <p className="newPrice">€{newProductData.newPrice}</p>
+                        <p className="oldPrice">€{newProductData.oldPrice}</p>
+                      </div>
+                      <div className="buttonContainer">
+                        <button
+                          onClick={() => {
+                            // addOneProduct(product.sku);
+                          }}
+                          className="button"
+                        >
+                          "Add"
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="buttonsContainer">

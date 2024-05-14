@@ -1,0 +1,279 @@
+.NewProductSection {
+  width: 100%;
+  @include Flex(column, center, center);
+
+  .wrapper {
+    @include Flex(column, center, center);
+    width: wrapperWidth(mobile);
+    max-width: 500px;
+
+    .title {
+      margin-bottom: 30px;
+    }
+
+    .content {
+      @include Flex(column, center, center);
+      width: 100%;
+
+      .inputsContainer {
+        @include Flex(column, center, center);
+        width: 100%;
+        gap: 10px;
+
+        .imageText {
+          font-size: calc(fontSize(p) + 5px);
+          font-weight: fontWeight(semibold);
+          margin-top: 20px;
+        }
+        .chooseCategoryText {
+          font-size: calc(fontSize(p) + 5px);
+          font-weight: fontWeight(semibold);
+          margin-top: 40px;
+        }
+        .chooseCategory {
+          margin-bottom: 40px;
+          @include Flex(row, start, center);
+          flex-wrap: wrap;
+          gap: 20px;
+          row-gap: 10px;
+
+          .category {
+            padding: 5px;
+
+            &.chosen {
+              border: 1px solid color(secondary-color);
+              border-radius: 4px;
+            }
+          }
+        }
+        .booleanInputs {
+          margin: 20px 0;
+          @include Flex(column, center, center);
+          width: 100%;
+          margin-bottom: 50px;
+
+          .booleanInput {
+            font-size: calc(fontSize(p) + 5px);
+            @include Flex(row, center, start);
+            width: 100%;
+
+            label {
+              width: 200px;
+            }
+
+            input {
+              width: 50px;
+            }
+          }
+        }
+      }
+
+      .details {
+        width: 100%;
+        .preview {
+          @include Flex(column, center, start);
+          margin-bottom: 30px;
+          width: 100%;
+          .textAndLanguages {
+            @include Flex(row, center, start);
+            margin-bottom: 30px;
+            width: 100%;
+            h3 {
+              font-size: calc(fontSize(p) + 5px);
+              font-weight: fontWeight(medium);
+            }
+
+            .languages {
+              width: 100%;
+              @include Flex(row, center, center);
+
+              .language {
+                margin-right: 10px;
+                font-size: calc(fontSize(p) + 5px);
+                cursor: pointer;
+
+                &.selected {
+                  background-color: color(secondary-color);
+                  padding: 5px;
+                  border-radius: 5px;
+                }
+              }
+            }
+          }
+
+          .previewContainer {
+            max-width: 320px;
+            width: 100%;
+            .product {
+              @include Flex(column, center, center);
+              width: 100%;
+              transition: transform 0.2s ease;
+              background-color: color(custom-black);
+
+              .imageBox {
+                @include Flex(row, center, center);
+                width: 80%;
+                aspect-ratio: 1 / 1;
+                padding: 30px;
+                max-height: 240px;
+
+                .imageContainer {
+                  @include Flex(row, center, center);
+                  aspect-ratio: 1 / 1;
+                  height: 100%;
+                  width: 94%;
+                  overflow: hidden;
+                }
+              }
+
+              .details {
+                @include Flex(column, start, center);
+                width: 100%;
+                flex: 1;
+                padding: 0 30px 30px 30px;
+
+                .title {
+                  font-size: calc(fontSize(p) + 1px);
+                  font-weight: fontWeight(bold);
+                  color: rgba(color(text-color), 0.6);
+                  margin-bottom: 10px;
+                }
+
+                .name {
+                  font-size: calc(fontSize(p) + 6px);
+                  font-weight: fontWeight(extrabold);
+                  color: color(text-color);
+                }
+
+                .description {
+                  font-size: calc(fontSize(p));
+                  font-weight: fontWeight(bold);
+                  color: rgba(color(text-color), 0.6);
+                  margin-bottom: 20px;
+                }
+
+                .cart {
+                  @include Flex(row, center, space-between);
+                  width: 100%;
+
+                  .prices {
+                    height: 60px;
+                    @include Flex(column, start, start);
+                    margin: 0;
+                    .newPrice {
+                      font-size: calc(fontSize(p) + 7px);
+                      font-weight: fontWeight(black);
+                      color: #e30036;
+                    }
+
+                    .oldPrice {
+                      font-size: calc(fontSize(p) + 2px);
+                      font-weight: fontWeight(bold);
+                      color: rgba(color(text-color), 0.6);
+                      text-decoration: line-through;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .buttonsContainer {
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .NewProductSection {
+    width: 100%;
+    @include Flex(column, center, center);
+
+    .wrapper {
+      @include Flex(column, center, center);
+      width: wrapperWidth(mobile);
+      max-width: none;
+
+      .title {
+        margin-bottom: 30px;
+      }
+
+      .content {
+        @include Flex(row, start, space-between);
+        width: 100%;
+        .inputsContainer {
+          @include Flex(column, center, space-between);
+          width: 100%;
+          flex: 0.75;
+          min-width: 400px;
+          gap: 10px;
+
+          .booleanInputs {
+            margin: 20px 0;
+            @include Flex(column, center, center);
+            width: 100%;
+
+            .booleanInput {
+              font-size: calc(fontSize(p) + 5px);
+              @include Flex(row, center, start);
+              width: 100%;
+
+              label {
+                width: 200px;
+              }
+
+              input {
+                width: 50px;
+              }
+            }
+          }
+        }
+
+        .details {
+          flex: 1.25;
+          max-width: 600px;
+
+          .buttonsContainer {
+            max-width: 250px;
+          }
+
+          .preview {
+            margin-left: 50px;
+            margin-bottom: 30px;
+            @include Flex(column, center, start);
+            width: 100%;
+
+            .textAndLanguages {
+              .languages {
+                @include Flex(row, center, center);
+
+                .language {
+                  margin-right: 10px;
+                  font-size: calc(fontSize(p) + 5px);
+                  cursor: pointer;
+
+                  &.selected {
+                    background-color: color(secondary-color);
+                    padding: 5px;
+                    border-radius: 5px;
+                  }
+                }
+              }
+            }
+            .previewContainer {
+              width: 100%;
+            }
+          }
+
+          .buttonsContainer {
+            margin-bottom: 50px;
+            margin-left: 50px;
+          }
+        }
+      }
+    }
+  }
+}
