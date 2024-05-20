@@ -32,11 +32,13 @@
   .wrapperImage {
     @include Flex(column, center, center);
     width: wrapperWidth(mobile);
+    overflow: hidden;
 
     .imageContainer {
+      overflow: hidden;
       width: 100%;
       background-color: lightblue;
-      aspect-ratio: 191/272;
+      aspect-ratio: 191/250;
       border-radius: 3px;
       position: relative;
     }

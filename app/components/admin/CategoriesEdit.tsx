@@ -78,6 +78,12 @@ function CategoriesEdit({ locale }: CategoriesEditProps) {
       <div className="wrapper">
         <h3 className="title">{t.title}</h3>
 
+        <div className="buttonNewCategoryContainer">
+          <Link href="/admin/category/new" className="button">
+            {t.newCategoryRedirect}
+          </Link>
+        </div>
+
         <div className="subtitle">{t.visible}</div>
         <div className="categoriesContainer">
           {data.map(

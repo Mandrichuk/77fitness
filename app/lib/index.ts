@@ -337,17 +337,20 @@ export interface ShopHeadTextProps {
   en: {
     title: string;
     announcement: string;
-    bannerImage: ImageProps;
+    bannerImageFullScreen: ImageProps;
+    bannerImageMobile: ImageProps;
   };
   sk: {
     title: string;
     announcement: string;
-    bannerImage: ImageProps;
+    bannerImageFullScreen: ImageProps;
+    bannerImageMobile: ImageProps;
   };
   ru: {
     title: string;
     announcement: string;
-    bannerImage: ImageProps;
+    bannerImageFullScreen: ImageProps;
+    bannerImageMobile: ImageProps;
   };
 }
 
@@ -555,15 +558,18 @@ export interface CategoriesEditAdminTextProps {
     title: string;
     invisible: string;
     visible: string;
+    newCategoryRedirect: string;
   };
   sk: {
     title: string;
     invisible: string;
     visible: string;
+    newCategoryRedirect: string;
   };
   ru: {
     title: string;
     invisible: string;
+    newCategoryRedirect: string;
     visible: string;
   };
 }
@@ -573,16 +579,19 @@ export interface ProductsEditAdminTextProps {
     title: string;
     invisible: string;
     visible: string;
+    newProductRedirect: string;
   };
   sk: {
     title: string;
     invisible: string;
     visible: string;
+    newProductRedirect: string;
   };
   ru: {
     title: string;
     invisible: string;
     visible: string;
+    newProductRedirect: string;
   };
 }
 

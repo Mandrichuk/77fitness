@@ -865,28 +865,40 @@ export const ShopHeadText: ShopHeadTextProps = {
   en: {
     title: "Explore Our Premium Product Range",
     announcement:
-      "Sign up for our loyalty program Collect points and shop at 77 Fitness for up to 20% off",
-    bannerImage: {
-      image: "shop/SK_rotator_2024_apr_1120x502_1-15_1_qeokvd",
+      "Sign up for new updates and get your points and make purchases at 77 Fitness with lots of discounts!",
+    bannerImageFullScreen: {
+      image: "shop/q47moa1s3blevkllo3xo",
       alt: "banner",
     },
-  },
-  sk: {
-    title: "Preskúmajte náš sortiment prémiových produktov",
-    announcement:
-      "Zaregistrujte sa do nášho vernostného programu, zbierajte body a nakupujte v 77 Fitness so zľavou až do 20 %",
-    bannerImage: {
-      image: "shop/SK_rotator_2024_apr_1120x502_1-15_1_qeokvd",
+    bannerImageMobile: {
+      image: "shop/iayusuw54yigyg9izd02",
       alt: "banner",
     },
   },
   ru: {
-    title: "Исследуйте наш ассортимент премиум-продукции",
+    title: "Исследуйте наш ассортимент премиальных продуктов",
     announcement:
-      "Подпишитесь на нашу программу лояльности, собирайте баллы и покупайте в 77 Fitness со скидкой до 20 %",
-    bannerImage: {
-      image: "shop/SK_rotator_2024_apr_1120x502_1-15_1_qeokvd",
-      alt: "баннер",
+      "Подпишитесь на обновления и получите баллы для покупок со скидками в 77 Fitness!",
+    bannerImageFullScreen: {
+      image: "shop/q47moa1s3blevkllo3xo",
+      alt: "banner",
+    },
+    bannerImageMobile: {
+      image: "shop/iayusuw54yigyg9izd02",
+      alt: "banner",
+    },
+  },
+  sk: {
+    title: "Preskúmajte našu škálu kvalitných produktov",
+    announcement:
+      "Prihláste sa na nové aktualizácie a získajte body na nákup v 77 Fitness so zľavami!",
+    bannerImageFullScreen: {
+      image: "shop/q47moa1s3blevkllo3xo",
+      alt: "banner",
+    },
+    bannerImageMobile: {
+      image: "shop/iayusuw54yigyg9izd02",
+      alt: "banner",
     },
   },
 };
@@ -1246,17 +1258,23 @@ export const CategoriesEditAdminText: CategoriesEditAdminTextProps = {
   en: {
     title: "Categories",
     invisible: "Invisible",
+    newCategoryRedirect: "Add new category",
+
     visible: "Visible",
   },
 
   sk: {
     title: "Kategórie",
     invisible: "Neviditeľné",
+    newCategoryRedirect: "Pridat nový kategóriu",
+
     visible: "Viditeľné",
   },
   ru: {
     title: "Категории",
     invisible: "Невидимые",
+    newCategoryRedirect: "Добавить новую категорию",
+
     visible: "Видимые",
   },
 };
@@ -1265,17 +1283,20 @@ export const ProductsEditAdminText: ProductsEditAdminTextProps = {
   en: {
     title: "Products",
     invisible: "Invisible",
+    newProductRedirect: "Add new product",
     visible: "Visible",
   },
 
   sk: {
     title: "Produkti",
     invisible: "Neviditeľné",
+    newProductRedirect: "Pridat nový produkt",
     visible: "Viditeľné",
   },
   ru: {
     title: "Продукты",
     invisible: "Невидимые",
+    newProductRedirect: "Добавить новый продукт",
     visible: "Видимые",
   },
 };

@@ -13,7 +13,7 @@ import { ProductCartText } from "../../constants";
 
 function PriceDetails({ locale }: PriceDetailsProps) {
   const dispatch = useDispatch();
-  0
+  0;
   const t = ProductCartText[locale] || ProductCartText["en"];
   const cart = useSelector((state: RootState) => state.cart.value);
   const [data, setData] = useState<any>(null);
@@ -122,9 +122,13 @@ function PriceDetails({ locale }: PriceDetailsProps) {
           <div className="value">€{data.totalPrice}</div>
         </div>
         <div className="buttonContainer">
-          <button onClick={getToCheckout} className="button">
+          <a
+            href="https://buy.stripe.com/test_eVa9BPdlEaQT28o8ww"
+            // onClick={getToCheckout}
+            className="button"
+          >
             {t.buttonCheckout.text}
-          </button>
+          </a>
         </div>
       </div>
       <ToastContainer />

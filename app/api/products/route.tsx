@@ -64,3 +64,26 @@ export async function POST(request: NextRequest) {
   });
   return NextResponse.json(product, { status: 201 });
 }
+
+
+export async function DELETE(request: NextRequest) {
+  try {
+    // Attempt to delete all products
+    await prisma.product.deleteMany();
+
+    // Return success response
+    return NextResponse.json(
+      { message: "All products deleted successfully" },
+      { status: 200 }
+    );
+  } catch (error) {
+    // Log the error for debugging purposes
+    console.error("Failed to delete products:", error);
+
+    // Return error response
+    return NextResponse.json(
+      { error: "Failed to delete products. See server logs for details." },
+      { status: 500 }
+    );
+  }
+}

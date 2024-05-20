@@ -4,8 +4,10 @@ import Image from "../common/Image";
 import { SVGs } from "../../constants";
 import { ShopHeadText } from "../../constants";
 import { HeadProps } from "@/app/lib";
+import { useWindowWidth } from "@/app/utils/useWindowWidth";
 
 function Head({ locale }: HeadProps) {
+  const windowWidth = useWindowWidth();
   const t = ShopHeadText[locale] || ShopHeadText["en"];
   return (
     <section className="shopHead">
@@ -19,11 +21,19 @@ function Head({ locale }: HeadProps) {
 
       <div className="wrapperImage">
         <div className="imageContainer">
-          <Image
-            image={t.bannerImage.image}
-            alt={t.bannerImage.alt}
-            imgQuality={100}
-          />
+          {windowWidth < 768 ? (
+            <Image
+              image={t.bannerImageMobile.image}
+              alt={t.bannerImageMobile.alt}
+              imgQuality={100}
+            />
+          ) : (
+            <Image
+              image={t.bannerImageFullScreen.image}
+              alt={t.bannerImageFullScreen.alt}
+              imgQuality={100}
+            />
+          )}
           <div className="arrowLeft">{SVGs.blueRotatedArrow}</div>
           <div className="arrowRight">{SVGs.blueArrow}</div>
         </div>

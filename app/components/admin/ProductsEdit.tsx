@@ -83,6 +83,12 @@ function ProductsEdit({ locale }: CategoriesEditProps) {
       <div className="wrapper">
         <h3 className="title">{t.title}</h3>
 
+        <div className="buttonNewProductContainer">
+          <Link href="/admin/product/new" className="button">
+            {t.newProductRedirect}
+          </Link>
+        </div>
+
         <div className="subtitle">{t.visible}</div>
         <div className="productsGrid">
           {data.map(
