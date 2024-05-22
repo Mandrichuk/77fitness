@@ -884,7 +884,7 @@ export const ShopHeadText: ShopHeadTextProps = {
       alt: "banner",
     },
     bannerImageMobile: {
-      image: "shop/iayusuw54yigyg9izd02",
+      image: "shop/omgaj5y3iylhtdfrq43d",
       alt: "banner",
     },
   },
@@ -897,7 +897,7 @@ export const ShopHeadText: ShopHeadTextProps = {
       alt: "banner",
     },
     bannerImageMobile: {
-      image: "shop/iayusuw54yigyg9izd02",
+      image: "shop/eee5b4pspr9a5meo7x0d",
       alt: "banner",
     },
   },
