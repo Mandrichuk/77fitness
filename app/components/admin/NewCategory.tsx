@@ -1,11 +1,13 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import Input from "../common/Input";
 import { NewCategoryProps } from "@/app/lib";
 import { NewCategoryText } from "@/app/constants";
 import getHash from "@/app/utils/getHash";
 import TextLayers from "../common/TextLayers";
+import { useSelector } from "react-redux";
+import { RootState } from "@/app/store/store";
 
 interface NewCategoryInputsProps {
   sku: any;
@@ -38,6 +40,14 @@ function NewCategory({ locale }: NewCategoryProps) {
       recomended: false,
       toDisplay: false,
     });
+  const adminData = useSelector((state: RootState) => state.adminLogin.value);
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && !adminData) {
+      window.location.href = "/admin/login";
+      return;
+    }
+  }, [adminData]);
 
   function isNewCategoryDataValid() {
     return (

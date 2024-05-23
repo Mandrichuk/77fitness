@@ -14,7 +14,7 @@ export async function GET(request: NextRequest) {
   });
 
   if (!orders || orders.length === 0) {
-    return NextResponse.json({ error: "Orders not found" }, { status: 404 });
+    return NextResponse.json([], { status: 202 });
   }
 
   for (const order of orders) {

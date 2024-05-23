@@ -14,16 +14,16 @@ import toFixedNumber from "@/app/utils/toFixedNumber";
 
 function Orders({ locale }: AdminProps) {
   const t = AdminText[locale] || AdminText["en"];
-  const adminData = useSelector((state: RootState) => state.adminLogin.value);
   const [data, setData] = useState<any>(null);
   const [searchQuery, setSearchQuery] = useState("");
+  const adminData = useSelector((state: RootState) => state.adminLogin.value);
 
   useEffect(() => {
     if (typeof window !== "undefined" && !adminData) {
       window.location.href = "/admin/login";
       return;
     }
-  }, []);
+  }, [adminData]);
 
   useEffect(() => {
     async function fetchData() {

@@ -10,10 +10,26 @@ import { ProductsEditAdminText } from "@/app/constants";
 
 import Image from "../common/Image";
 import { SVGs } from "@/app/constants";
+import { useSelector } from "react-redux";
+import { RootState } from "@/app/store/store";
+
+interface AdminData {
+  username: string;
+  sku: string;
+}
 
 function ProductsEdit({ locale }: CategoriesEditProps) {
   const [data, setData] = useState<any>(null);
   const t = ProductsEditAdminText[locale] || ProductsEditAdminText["en"];
+  const adminData = useSelector((state: RootState) => state.adminLogin.value);
+
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && !adminData) {
+      window.location.href = "/admin/login";
+      return;
+    }
+  }, [adminData]);
 
   const notifyAddedToCart = () => {
     toast.success("t.notify", {

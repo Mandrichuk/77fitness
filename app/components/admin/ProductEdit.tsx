@@ -9,6 +9,8 @@ import TextLayers from "../common/TextLayers";
 import { CldUploadWidget } from "next-cloudinary";
 import Image from "../common/Image";
 import { toast } from "react-toastify";
+import { useSelector } from "react-redux";
+import { RootState } from "@/app/store/store";
 
 interface ImageProductProps {
   id: number;
@@ -78,6 +80,14 @@ function NewProduct({ locale, product_sku }: EditProductProps) {
       leftInStock: 0,
       toDisplay: false,
     });
+
+  const adminData = useSelector((state: RootState) => state.adminLogin.value);
+  useEffect(() => {
+    if (typeof window !== "undefined" && !adminData) {
+      window.location.href = "/admin/login";
+      return;
+    }
+  }, [adminData]);
 
   useEffect(() => {
     const fetchData = async () => {

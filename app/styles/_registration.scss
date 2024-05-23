@@ -8,8 +8,11 @@
     @include Flex(column, center, center);
     width: wrapperWidth(mobile);
     max-width: 500px;
-
     gap: 15px;
+
+    .title {
+      text-align: center;
+    }
 
     .chooseOption {
       @include Flex(row, center, center);

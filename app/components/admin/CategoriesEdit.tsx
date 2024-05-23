@@ -9,11 +9,22 @@ import { toUpperCase } from "@/app/utils/toUpperCase";
 import { CategoriesEditAdminText } from "@/app/constants";
 
 import { SVGs } from "@/app/constants";
+import { useSelector } from "react-redux";
+import { RootState } from "@/app/store/store";
 
 function CategoriesEdit({ locale }: CategoriesEditProps) {
   const [data, setData] = useState<any>(null);
   const t = CategoriesEditAdminText[locale] || CategoriesEditAdminText["en"];
 
+  const adminData = useSelector((state: RootState) => state.adminLogin.value);
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && !adminData) {
+      window.location.href = "/admin/login";
+      return;
+    }
+  }, [adminData]);
+  
   const notifyAddedToCart = () => {
     toast.success("t.notify", {
       position: "top-right",

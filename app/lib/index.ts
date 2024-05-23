@@ -414,6 +414,8 @@ export interface ProductCartTextProps {
 
 export interface PriceDetailsProps extends Language {}
 
+export interface SuccessProps extends Language {}
+
 export interface CartProductsProps extends Language {}
 
 interface SuccessTextLocale {
@@ -532,6 +534,15 @@ export interface OrdersTextProps {
       dateText: string;
       priceText: string;
     };
+    logoutContainer: {
+      title: string;
+      button: Button;
+    };
+    logoutConfirmation: {
+      title: string;
+      buttonLogout: Button;
+      buttonCancel: Button;
+    };
   };
   sk: {
     title: string;
@@ -541,6 +552,15 @@ export interface OrdersTextProps {
       dateText: string;
       priceText: string;
     };
+    logoutContainer: {
+      title: string;
+      button: Button;
+    };
+    logoutConfirmation: {
+      title: string;
+      buttonLogout: Button;
+      buttonCancel: Button;
+    };
   };
   ru: {
     title: string;
@@ -549,6 +569,15 @@ export interface OrdersTextProps {
       numberText: string;
       dateText: string;
       priceText: string;
+    };
+    logoutContainer: {
+      title: string;
+      button: Button;
+    };
+    logoutConfirmation: {
+      title: string;
+      buttonLogout: Button;
+      buttonCancel: Button;
     };
   };
 }

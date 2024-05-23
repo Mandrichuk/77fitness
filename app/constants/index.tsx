@@ -488,6 +488,10 @@ export const headerText: HeaderTextProps = {
         text: "Gallery",
         link: "/gallery",
       },
+      {
+        text: "Login",
+        link: "/login",
+      },
     ],
     shop: {
       title: "Shop",
@@ -525,6 +529,10 @@ export const headerText: HeaderTextProps = {
         text: "Галерея",
         link: "/gallery",
       },
+      {
+        text: "Войти",
+        link: "/login",
+      },
     ],
     shop: {
       title: "Магазин",
@@ -561,6 +569,10 @@ export const headerText: HeaderTextProps = {
       {
         text: "Galéria",
         link: "/gallery",
+      },
+      {
+        text: "Prihlásiť sa",
+        link: "/login",
       },
     ],
     shop: {
@@ -867,7 +879,7 @@ export const ShopHeadText: ShopHeadTextProps = {
     announcement:
       "Sign up for new updates and get your points and make purchases at 77 Fitness with lots of discounts!",
     bannerImageFullScreen: {
-      image: "shop/q47moa1s3blevkllo3xo",
+      image: "shop/jxdlsjktvxrzqu9sb6vz",
       alt: "banner",
     },
     bannerImageMobile: {
@@ -880,7 +892,7 @@ export const ShopHeadText: ShopHeadTextProps = {
     announcement:
       "Подпишитесь на обновления и получите баллы для покупок со скидками в 77 Fitness!",
     bannerImageFullScreen: {
-      image: "shop/q47moa1s3blevkllo3xo",
+      image: "shop/sh1vceltbh2pcy4v8bok",
       alt: "banner",
     },
     bannerImageMobile: {
@@ -893,7 +905,7 @@ export const ShopHeadText: ShopHeadTextProps = {
     announcement:
       "Prihláste sa na nové aktualizácie a získajte body na nákup v 77 Fitness so zľavami!",
     bannerImageFullScreen: {
-      image: "shop/q47moa1s3blevkllo3xo",
+      image: "shop/cw6y8fqcjoktmn5qshu6",
       alt: "banner",
     },
     bannerImageMobile: {
@@ -1176,6 +1188,15 @@ export const OrdersText: OrdersTextProps = {
       dateText: "Date",
       priceText: "Price",
     },
+    logoutContainer: {
+      title: "Logout from the account:",
+      button: { text: "Logout", link: "/login" },
+    },
+    logoutConfirmation: {
+      title: "Are you sure you want to log out?",
+      buttonLogout: { text: "Logout", link: "" },
+      buttonCancel: { text: "Cancel", link: "" },
+    },
   },
   sk: {
     title: "Vaše všetky objednávky",
@@ -1185,6 +1206,15 @@ export const OrdersText: OrdersTextProps = {
       dateText: "Dátum",
       priceText: "Cena",
     },
+    logoutContainer: {
+      title: "Odhlásiť sa zo svojho účtu:",
+      button: { text: "Odhlásiť sa", link: "/login" },
+    },
+    logoutConfirmation: {
+      title: "Ste si istí, že sa chcete odhlásiť?",
+      buttonLogout: { text: "Odhlásiť sa", link: "" },
+      buttonCancel: { text: "Zrušiť", link: "" },
+    },
   },
   ru: {
     title: "Ваши все заказы",
@@ -1193,6 +1223,15 @@ export const OrdersText: OrdersTextProps = {
       numberText: "Номер",
       dateText: "Дата",
       priceText: "Цена",
+    },
+    logoutContainer: {
+      title: "Выйти из учетной записи:",
+      button: { text: "Выйти", link: "/login" },
+    },
+    logoutConfirmation: {
+      title: "Вы уверены, что хотите выйти?",
+      buttonLogout: { text: "Выйти", link: "" },
+      buttonCancel: { text: "Отмена", link: "" },
     },
   },
 };
@@ -1627,6 +1666,45 @@ export const NewProductText: NewProductTextsProps = {
     buttons: {
       saveButton: { text: "Добавить новый продукт", link: "/" },
       cancel: { text: "Отмена", link: "/" },
+    },
+  },
+};
+
+export const successPageText = {
+  en: {
+    image: {
+      src: "/shop/ixkbbjthiaxt8oxualqz",
+      alt: "image",
+    },
+    title: "Payment was successful",
+    text: "Thank you for your order! Your order can be picked up at the 77Fitness reception by showing your order code in your personal account",
+    button: {
+      text: "Orders",
+      link: "/orders",
+    },
+  },
+  sk: {
+    image: {
+      src: "/shop/ixkbbjthiaxt8oxualqz",
+      alt: "image",
+    },
+    title: "Platba bola úspešná",
+    text: "Ďakujeme za vašu objednávku! Objednávku si môžete vyzdvihnúť na recepcii 77Fitness tak, že vo svojom osobnom účte uvediete kód objednávky",
+    button: {
+      text: "Objednávky",
+      link: "/orders",
+    },
+  },
+  ru: {
+    image: {
+      src: "/shop/ixkbbjthiaxt8oxualqz",
+      alt: "image",
+    },
+    title: "Оплата прошла успешно",
+    text: "Спасибо за ваш заказ! Ваш заказ можно забрать на 77Fitness рецепции показав ваш код заказа в личном кабинете",
+    button: {
+      text: "Заказы",
+      link: "/orders",
     },
   },
 };

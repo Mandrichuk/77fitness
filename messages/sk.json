@@ -475,18 +475,6 @@
     }
   },
   "Shop": {
-    "Success": {
-      "image": {
-        "src": "/shop/ixkbbjthiaxt8oxualqz",
-        "alt": "image"
-      },
-      "title": "Platba bola úspešná",
-      "text": "Ďakujeme za vašu objednávku!",
-      "button": {
-        "text": "Objednávky",
-        "link": "/orders"
-      }
-    },
     "Error": {
       "image": {
         "src": "/shop/byozkzpphjgjrbnopfhi",

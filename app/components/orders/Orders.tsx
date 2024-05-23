@@ -11,16 +11,27 @@ import { OrderProps, OrdersProps, OrderProductsProps } from "@/app/lib";
 import { SVGs } from "@/app/constants";
 import formatDate from "@/app/utils/formatDate";
 import toFixedNumber from "@/app/utils/toFixedNumber";
-
+import { useDispatch } from "react-redux";
+import { logout } from "@/app/features/clientLogin";
 import TextLayers from "../common/TextLayers";
 import Link from "next/link";
 
 function Orders({ locale }: OrdersProps) {
+  const dispatch = useDispatch();
+  const [logoutButtonClicked, setLogoutButtonClicked] = useState(false);
   const t = OrdersText[locale] || OrdersText["en"];
   const redirectT =
     shopRedirectFromOrders[locale] || shopRedirectFromOrders["en"];
   const clientData = useSelector((state: RootState) => state.clientLogin.value);
   const [data, setData] = useState<any>(null);
+
+  useEffect(() => {
+    if (logoutButtonClicked && clientData) {
+      document.documentElement.style.overflow = "hidden";
+    } else {
+      document.documentElement.style.overflow = "unset";
+    }
+  }, [logoutButtonClicked, clientData]);
 
   useEffect(() => {
     async function fetchData() {
@@ -50,18 +61,6 @@ function Orders({ locale }: OrdersProps) {
     fetchData();
   }, []);
 
-  if (!data) {
-    return (
-      <div>
-        <TextLayers bgText={t.bgText} title={t.title} />
-
-        <div className=" h-[260px] flex flex-row items-center justify-center">
-          <div className="loading" />
-        </div>
-      </div>
-    );
-  }
-
   if (!clientData) {
     return (
       <div className="shopRedirect">
@@ -73,6 +72,19 @@ function Orders({ locale }: OrdersProps) {
               {redirectT.isNotLoggined.button.text}
             </Link>
           </div>
+        </div>
+      </div>
+    );
+  }
+
+  
+  if (!data) {
+    return (
+      <div>
+        <TextLayers bgText={t.bgText} title={t.title} />
+
+        <div className=" h-[260px] flex flex-row items-center justify-center">
+          <div className="loading" />
         </div>
       </div>
     );
@@ -110,6 +122,40 @@ function Orders({ locale }: OrdersProps) {
           <Order locale={locale} orderData={order} key={`order-${order.id}`} />
         ))}
       </div>
+      <div className="logoutContainer">
+        <div className="details">
+          <div className="buttonContainer">
+            <p className="text">{t.logoutContainer.title}</p>
+            <button
+              onClick={() => setLogoutButtonClicked(true)}
+              className="logoutButton"
+            >
+              {t.logoutContainer.button.text}
+            </button>
+          </div>
+        </div>
+      </div>
+      {logoutButtonClicked && (
+        <div className="confirmLogout">
+          <div className="details">
+            <p className="text">{t.logoutConfirmation.title}</p>
+            <div className="buttons">
+              <button
+                onClick={() => dispatch(logout())}
+                className="confirmButton"
+              >
+                {t.logoutConfirmation.buttonLogout.text}
+              </button>
+              <button
+                onClick={() => setLogoutButtonClicked(false)}
+                className="declineButton"
+              >
+                {t.logoutConfirmation.buttonCancel.text}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
@@ -172,7 +218,6 @@ function Order({ locale, orderData }: OrderProps) {
                 {orderData.isDone ? t.done : t.inProgress}
               </div>
             </div>
-
             <div className="separator" />
           </div>
         </div>

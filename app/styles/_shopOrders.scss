@@ -1,7 +1,7 @@
 .OrdersShop {
   @include Flex(column, center, center);
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 0;
 
   .wrapper {
     @include Flex(column, center, center);
@@ -235,13 +235,69 @@
       }
     }
   }
+
+  .logoutContainer {
+    width: wrapperWidth(mobile);
+    @include Flex(row, center, end);
+    margin-top: 70px;
+
+    .details {
+      width: 240px;
+      .text {
+        margin-bottom: 5px;
+        font-weight: fontWeight(bold);
+        font-size: calc(fontSize(p) + 2px);
+      }
+      .logoutButton {
+        background-color: #e30036 !important;
+      }
+    }
+  }
+
+  .confirmLogout {
+    overflow-y: hidden;
+    @include Flex(column, center, center);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    .details {
+      @include Flex(column, center, center);
+      width: 320px;
+      padding: 30px 20px;
+      background-color: color(custom-black);
+      border-radius: 10px;
+
+      .text {
+        margin-bottom: 5px;
+        font-weight: fontWeight(bold);
+        font-size: calc(fontSize(p) + 5px);
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .buttons {
+        @include Flex(row, center, center);
+        gap: 10px;
+        width: 100%;
+
+        .confirmButton {
+          background-color: #e30036 !important;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 380px) {
   .OrdersShop {
     @include Flex(column, center, center);
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 
     .wrapper {
       @include Flex(column, center, center);
@@ -407,7 +463,7 @@
             border: none;
             height: 0;
             margin-top: 10px;
-            margin-bottom: 20px;
+            // margin-bottom: 20px;
           }
 
           .priceContainer {
@@ -464,7 +520,62 @@
   .OrdersShop {
     @include Flex(column, center, center);
     width: 100%;
-    margin-bottom: 100px;
+
+    .logoutContainer {
+      width: wrapperWidth(mobile);
+      @include Flex(row, center, end);
+      margin-top: 100px;
+
+      .details {
+        width: 240px;
+        .text {
+          margin-bottom: 5px;
+          font-weight: fontWeight(bold);
+          font-size: calc(fontSize(p) + 2px);
+        }
+        .logoutButton {
+          background-color: #e30036 !important;
+        }
+      }
+    }
+
+    .confirmLogout {
+      overflow-y: hidden;
+      @include Flex(column, center, center);
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      z-index: 9999;
+      background-color: rgba(0, 0, 0, 0.8);
+
+      .details {
+        @include Flex(column, center, center);
+        width: 380px;
+        padding: 30px 20px;
+        background-color: color(custom-black);
+        border-radius: 10px;
+
+        .text {
+          margin-bottom: 5px;
+          font-weight: fontWeight(bold);
+          font-size: calc(fontSize(p) + 10px);
+          margin-bottom: 25px;
+          text-align: center;
+        }
+
+        .buttons {
+          @include Flex(row, center, center);
+          gap: 10px;
+          width: 100%;
+
+          .confirmButton {
+            background-color: #e30036 !important;
+          }
+        }
+      }
+    }
 
     .wrapper {
       @include Flex(column, center, center);

@@ -24,8 +24,6 @@ function PriceDetails({ locale }: PriceDetailsProps) {
   const cart = useSelector((state: RootState) => state.cart.value);
   const [data, setData] = useState<any>(null);
   const [productsData, setProductsData] = useState<any>(null);
-  const userData = useSelector((state: RootState) => state.clientLogin.value);
-  const [processing, setProcessing] = useState(false);
   const [totalPrice, setTotalPrice] = useState<number | null>(null);
   const [loading, setLoading] = useState(false);
 
@@ -83,57 +81,6 @@ function PriceDetails({ locale }: PriceDetailsProps) {
     }
   }, [cart]);
 
-  async function getToCheckout() {
-    setProcessing(true);
-    if (userData === null && typeof window !== "undefined") {
-      window.location.href = "/login";
-      return;
-    }
-    const orderHash = getHash();
-    const clientSku = userData?.sku;
-    const products = cart.map((product: any) => {
-      return {
-        orderId: 1,
-        productSku: product.sku,
-        quantity: product.quantity,
-      };
-    });
-    const isDone = false;
-
-    const newOrder = {
-      sku: orderHash,
-      clientSku: clientSku,
-      products: products,
-      isDone: isDone,
-    };
-
-    try {
-      const response = await fetch("/api/order", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(newOrder),
-      });
-
-      if (response.ok) {
-        console.log("order added successfuly");
-
-        const responseData = await response.json();
-
-        notifyClientRegistered();
-        dispatch(emptyCart());
-        if (typeof window !== "undefined") {
-          window.location.href = "/shop/success";
-        }
-      } else {
-        const text = await response.text();
-        console.error("Error:", text);
-      }
-    } catch (error) {
-      console.error("Network error:", error);
-    }
-  }
 
   useEffect(() => {
     const fetchData = async () => {

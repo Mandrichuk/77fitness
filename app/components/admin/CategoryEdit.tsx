@@ -6,7 +6,8 @@ import { EditCategoryProps } from "@/app/lib";
 import { EditCategoryText } from "@/app/constants";
 import getHash from "@/app/utils/getHash";
 import TextLayers from "../common/TextLayers";
-
+import { useSelector } from "react-redux";
+import { RootState } from "@/app/store/store";
 
 interface NewCategoryInputsProps {
   sku: any;
@@ -40,6 +41,15 @@ function NewCategory({ locale, category_sku }: EditCategoryProps) {
       recomended: data?.recomended,
       toDisplay: data?.toDisplay,
     });
+
+  const adminData = useSelector((state: RootState) => state.adminLogin.value);
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && !adminData) {
+      window.location.href = "/admin/login";
+      return;
+    }
+  }, [adminData]);
 
   useEffect(() => {
     const fetchData = async () => {

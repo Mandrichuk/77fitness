@@ -9,9 +9,15 @@ import pathIntoSegments from "../../utils/pathIntoSegments";
 import { useWindowWidth } from "../../utils/useWindowWidth";
 import { HeaderProps } from "../../lib/index";
 import { toUpperCase } from "../../utils/toUpperCase";
+import clientLogin from "@/app/features/clientLogin";
+import { useSelector } from "react-redux";
+import { RootState } from "@/app/store/store";
 
 function Header({ locale }: HeaderProps) {
   const pathname = usePathname();
+  const clientLoginData = useSelector(
+    (state: RootState) => state.clientLogin.value
+  );
   const windowWidth = useWindowWidth();
   const [isLangOpen, setIsLangOpen] = useState<boolean>(false);
   const [isShopOpen, setIsShopOpen] = useState<boolean>(false);
@@ -30,13 +36,6 @@ function Header({ locale }: HeaderProps) {
     }
   }, [isOpen]);
 
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflowY = "hidden";
-    } else {
-      document.body.style.overflowY = "unset";
-    }
-  }, [isOpen]);
 
   const openLangToggle = () => {
     setIsLangOpen(!isLangOpen);
@@ -60,11 +59,20 @@ function Header({ locale }: HeaderProps) {
       {windowWidth > 768 ? (
         <>
           <nav className="screenNav">
-            {t.links.map((l) => (
-              <Link href={l.link} key={l.link}>
-                {l.text}
-              </Link>
-            ))}
+            {t.links.map((l) =>
+              l.link !== "/login" ? (
+                <Link href={l.link} key={l.link}>
+                  {l.text}
+                </Link>
+              ) : null
+            )}
+            {t.links.map((l) =>
+              l.link === "/login" && !clientLoginData ? (
+                <Link href={l.link} key={l.link}>
+                  {l.text}
+                </Link>
+              ) : null
+            )}
 
             <div className="shop">
               <div
@@ -132,11 +140,20 @@ function Header({ locale }: HeaderProps) {
                 {SVGs.close}
               </div>
               <nav className="mobileNav">
-                {t.links.map((l) => (
-                  <Link href={l.link} key={l.link} onClick={() => openToggle()}>
-                    {l.text}
-                  </Link>
-                ))}
+                {t.links.map((l) =>
+                  l.link !== "/login" ? (
+                    <Link href={l.link} key={l.link}>
+                      {l.text}
+                    </Link>
+                  ) : null
+                )}
+                {t.links.map((l) =>
+                  l.link === "/login" && !clientLoginData ? (
+                    <Link href={l.link} key={l.link}>
+                      {l.text}
+                    </Link>
+                  ) : null
+                )}
                 {t.shop.links.map((l, index) => (
                   <Link
                     href={`${l.link}`}

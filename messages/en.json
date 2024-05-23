@@ -498,18 +498,6 @@
     }
   },
   "Shop": {
-    "Success": {
-      "image": {
-        "src": "/shop/ixkbbjthiaxt8oxualqz",
-        "alt": "image"
-      },
-      "title": "Payment was successful",
-      "text": "Thank you for your order!",
-      "button": {
-        "text": "Orders",
-        "link": "/orders"
-      }
-    },
     "Error": {
       "image": {
         "src": "/shop/byozkzpphjgjrbnopfhi",
