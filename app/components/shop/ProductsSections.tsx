@@ -103,7 +103,6 @@ function ProductsSections({ locale, sku }: ProductSectionProps) {
     return null;
   }
 
-  console.log(cart);
 
   return (
     <section className="ProductsSectionsSection">

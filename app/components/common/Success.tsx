@@ -32,7 +32,7 @@ function Success({ locale }: SuccessProps) {
       theme: "dark",
     });
   };
-  console.log(referrer);
+
 
   useEffect(() => {
     async function getToCheckout() {
@@ -86,9 +86,8 @@ function Success({ locale }: SuccessProps) {
     if (cart.length > 0) {
       getToCheckout();
     }
-  }, [1]);
+  }, []);
 
-  console.log(cart);
 
   return (
     <section id="success" className="ShopSuccess">

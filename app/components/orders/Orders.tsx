@@ -77,7 +77,7 @@ function Orders({ locale }: OrdersProps) {
     );
   }
 
-  
+
   if (!data) {
     return (
       <div>
@@ -91,7 +91,6 @@ function Orders({ locale }: OrdersProps) {
   }
 
   if (data && data.length === 0 && clientData) {
-    console.log("hello");
     return (
       <div className="shopRedirect">
         <div className="wrapper">

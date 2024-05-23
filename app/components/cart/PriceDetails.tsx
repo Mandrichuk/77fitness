@@ -40,7 +40,6 @@ function PriceDetails({ locale }: PriceDetailsProps) {
       body: JSON.stringify(productsData),
     });
     const session = await response.json();
-    console.log(session);
     const result = await stripe?.redirectToCheckout({ sessionId: session.id });
     if (result?.error) {
       console.error(result.error.message);

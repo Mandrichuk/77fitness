@@ -143,9 +143,8 @@ function NewProduct({ locale }: NewProductProps) {
             }
           })
           .then((data) => {
-            console.log(data);
             console.log("Category created successfully");
-            // window.location.reload();
+            window.location.reload();
           })
           .catch((error) => {
             console.error("Error:", error);

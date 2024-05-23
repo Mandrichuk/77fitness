@@ -99,7 +99,6 @@ function NewProduct({ locale, product_sku }: EditProductProps) {
           const responseData = await response.json();
           setData(responseData);
 
-          console.log(responseData.categoryId);
           setEditedProductData({
             sku: responseData?.sku,
             name: responseData?.name,

@@ -58,7 +58,6 @@ function ProductsEdit({ locale }: CategoriesEditProps) {
 
   async function toggleVisibility(sku: number, updatedToDisplay: boolean) {
     const productData = { sku: sku, updatedToDisplay: updatedToDisplay };
-    console.log(productData);
     try {
       const response = await fetch("/api/admin/product/visibility", {
         method: "POST",
@@ -88,10 +87,6 @@ function ProductsEdit({ locale }: CategoriesEditProps) {
         <div className="loading" />
       </div>
     );
-  }
-
-  if (data) {
-    console.log(data[0]);
   }
 
   return (

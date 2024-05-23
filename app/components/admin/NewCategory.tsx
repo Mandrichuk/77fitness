@@ -97,7 +97,6 @@ function NewCategory({ locale }: NewCategoryProps) {
             }
           })
           .then((data) => {
-            console.log(data);
             console.log("Category created successfully");
             window.location.reload();
           })
