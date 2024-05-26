@@ -1,10 +1,26 @@
+"use client";
 import React from "react";
 import Link from "next/link";
+import { useDispatch, useSelector } from "react-redux";
+import { addOneToCart, emptyCart } from "@/app/features/clientCart";
 
 import { MembershipProps } from "../../lib/index";
 import { SVGs } from "../../constants";
+import { RootState } from "@/app/store/store";
 
 function Membership({ membership }: MembershipProps) {
+  const dispatch = useDispatch();
+  const cart = useSelector((state: RootState) => state.cart.value);
+
+  function addToCartMembership() {
+    if (!membership.membershipSku) {
+      return;
+    }
+
+    dispatch(emptyCart());
+    dispatch(addOneToCart(membership.membershipSku));
+    window.location.href = "/shop/cart";
+  }
 
   return (
     <div
@@ -27,15 +43,21 @@ function Membership({ membership }: MembershipProps) {
           ))}
         </ul>
         <div className="contactButton">
-          <a className="button" href={membership.button.link}>
-            {membership.button.text}
-          </a>
+          {membership.price === "10" ? (
+            <Link className="button" href={membership.button.link}>
+              Contact Us
+            </Link>
+          ) : (
+            <button onClick={addToCartMembership} className="button">
+              {membership.button.text}
+            </button>
+          )}
         </div>
       </div>
       {membership.standOut && (
         <div className="standOutContainer">
           <div className="standOutText">
-            {membership?.standOut && membership.standOutText}
+            {membership?.standOut && membership.standOut}
           </div>
         </div>
       )}

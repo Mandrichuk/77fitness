@@ -31,6 +31,7 @@ export async function GET(request: NextRequest, params: Props) {
         categoryId: category.id,
       },
       include: {
+        title: true,
         description: true,
         images: true,
       },

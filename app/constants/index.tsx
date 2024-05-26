@@ -24,6 +24,7 @@ import {
   CategoryEditTextProps,
   NewProductTextsProps,
   AdminHeaderTextProps,
+  PricesTextTypes,
 } from "../lib/index";
 
 import logo from "@/public/assets/logo.png";
@@ -1151,16 +1152,16 @@ export const LoginText: LoginTextProps = {
 
 export const OrderShopText: OrderShopTextProps = {
   en: {
-    inProgress: "In progress",
-    done: "Done",
+    inProgress: "Paid, In progress",
+    done: "Paid, Done",
     statusText: "Status",
     totalText: "Total",
     moveToDoneButton: { text: "Move to done orders", link: "" },
     removeToUndoneButton: { text: "Remove to undone orders", link: "" },
   },
   sk: {
-    inProgress: "V procese",
-    done: "Hotovo",
+    inProgress: "Zaplatené, V procese",
+    done: "Zaplatené, Hotovo",
     statusText: "Stav",
     totalText: "Celkom",
     moveToDoneButton: { text: "Presunúť na hotové objednávky", link: "" },
@@ -1170,8 +1171,8 @@ export const OrderShopText: OrderShopTextProps = {
     },
   },
   ru: {
-    inProgress: "В процессе",
-    done: "Готово",
+    inProgress: "Оплачено, В процессе",
+    done: "Оплачено, Готово",
     statusText: "Статус",
     totalText: "Итого",
     moveToDoneButton: { text: "Переместить в готовые заказы", link: "" },
@@ -1583,6 +1584,18 @@ export const NewProductText: NewProductTextsProps = {
     chooseCategoryText: "Choose category to add new product",
     inputs: {
       name: { placeholder: "Name", field: "name" },
+      title_en: {
+        placeholder: "Title (English)",
+        field: "title_en",
+      },
+      title_ru: {
+        placeholder: "Title (Russian)",
+        field: "title_ru",
+      },
+      title_sk: {
+        placeholder: "Title (Slovak)",
+        field: "title_sk",
+      },
       description_en: {
         placeholder: "Description (English)",
         field: "description_en",
@@ -1613,6 +1626,18 @@ export const NewProductText: NewProductTextsProps = {
     chooseCategoryText: "Vyberte kategóriu pre pridanie nového produktu",
     inputs: {
       name: { placeholder: "Meno", field: "name" },
+      title_en: {
+        placeholder: "Názov (anglicky)",
+        field: "title_en",
+      },
+      title_ru: {
+        placeholder: "Názov (rusky)",
+        field: "title_ru",
+      },
+      title_sk: {
+        placeholder: "Názov (slovensky)",
+        field: "title_sk",
+      },
       description_en: {
         placeholder: "Popis (anglicky)",
         field: "description_en",
@@ -1643,6 +1668,18 @@ export const NewProductText: NewProductTextsProps = {
     chooseCategoryText: "Выберите категорию для добавления нового продукта",
     inputs: {
       name: { placeholder: "Название", field: "name" },
+      title_ru: {
+        placeholder: "Название (Русский)",
+        field: "title_ru",
+      },
+      title_sk: {
+        placeholder: "Название (Slovak)",
+        field: "title_sk",
+      },
+      title_en: {
+        placeholder: "Название (Английский)",
+        field: "title_en",
+      },
       description_en: {
         placeholder: "Описание (английский)",
         field: "description_en",
@@ -1706,5 +1743,271 @@ export const successPageText = {
       text: "Заказы",
       link: "/orders",
     },
+  },
+};
+export const PricesText: PricesTextTypes = {
+  sk: {
+    text: "Ceny",
+    title: "Naše členstvá",
+    packages: [
+      {
+        title: "jednorazový vstup",
+        price: "10",
+        description: "za vstup",
+        included: [
+          "Jednorazový vstup",
+          "Sauna a sprchy",
+          "Často DJ a živá hudba",
+          "Osobný tréner (Rezervácia nutná, za príplatok)",
+        ],
+        button: {
+          text: "Kontaktujte nás",
+          link: "tel:+421 940 735 735",
+        },
+        membershipSku: "",
+      },
+      {
+        title: "jednomesačné členstvo",
+        price: "69",
+        description: "za mesiac",
+        included: [
+          "Neobmedzený prístup do posilňovne",
+          "Sauna a sprchy",
+          "Často DJ a živá hudba",
+          "Osobný tréner (Rezervácia nutná, za príplatok)",
+        ],
+        button: {
+          text: "Kúpiť online",
+          link: "/shop",
+        },
+        membershipSku: "CBDC14DB23",
+      },
+      {
+        standOut: "najlepšia ponuka",
+        title: "6 + 1 mesiac zadarmo",
+        price: "340",
+        description: "jednorazová platba",
+        included: [
+          "Ušetrite viac ako €100!",
+          "Neobmedzený prístup do posilňovne",
+          "Sauna a sprchy",
+          "Často DJ a živá hudba",
+          "Osobný tréner (Rezervácia nutná, za príplatok)",
+        ],
+        button: {
+          text: "Kúpiť online",
+          link: "/shop",
+        },
+        membershipSku: "9F83982F8C",
+      },
+      {
+        title: "3 mesačné členstvo",
+        price: "180",
+        description: "jednorazová platba",
+        included: [
+          "Neobmedzený prístup do posilňovne",
+          "Sauna a sprchy",
+          "Často DJ a živá hudba",
+          "Osobný tréner (Rezervácia nutná, za príplatok)",
+        ],
+        button: {
+          text: "Kúpiť online",
+          link: "/shop",
+        },
+        membershipSku: "4E4BDCF832",
+      },
+      {
+        title: "1 ročné členstvo",
+        price: "650",
+        description: "jednorazová platba",
+        included: [
+          "Neobmedzený prístup do posilňovne",
+          "Sauna a sprchy",
+          "Často DJ a živá hudba",
+          "Osobný tréner (Rezervácia nutná, za príplatok)",
+        ],
+        button: {
+          text: "Kúpiť online",
+          link: "/shop",
+        },
+        membershipSku: "929A07E388",
+      },
+    ],
+  },
+  ru: {
+    text: "Цены",
+    title: "Наши абонементы",
+    packages: [
+      {
+        title: "одноразовый вход",
+        price: "10",
+        description: "за вход",
+        included: [
+          "Одноразовый доступ",
+          "Сауна и душ",
+          "Часто DJ и живая музыка",
+          "Персональный тренер (Требуется бронирование, за дополнительную плату)",
+        ],
+        button: {
+          text: "Свяжитесь с нами",
+          link: "tel:+421 940 735 735",
+        },
+        membershipSku: "",
+      },
+      {
+        title: "абонемент на один месяц",
+        price: "69",
+        description: "в месяц",
+        included: [
+          "Неограниченный доступ в зал",
+          "Сауна и душ",
+          "Часто DJ и живая музыка",
+          "Персональный тренер (Требуется бронирование, за дополнительную плату)",
+        ],
+        button: {
+          text: "Купить онлайн",
+          link: "/shop",
+        },
+        membershipSku: "CBDC14DB23",
+      },
+      {
+        standOut: "лучшая цена",
+        title: "6 + 1 месяц бесплатно",
+        price: "340",
+        description: "одноразовый платеж",
+        included: [
+          "Экономьте более €100!",
+          "Неограниченный доступ в зал",
+          "Сауна и душ",
+          "Часто DJ и живая музыка",
+          "Персональный тренер (Требуется бронирование, за дополнительную плату)",
+        ],
+        button: {
+          text: "Купить онлайн",
+          link: "/shop",
+        },
+        membershipSku: "9F83982F8C",
+      },
+      {
+        title: "абонемент на 3 месяца",
+        price: "180",
+        description: "одноразовый платеж",
+        included: [
+          "Неограниченный доступ в зал",
+          "Сауна и душ",
+          "Часто DJ и живая музыка",
+          "Персональный тренер (Требуется бронирование, за дополнительную плату)",
+        ],
+        button: {
+          text: "Купить онлайн",
+          link: "/shop",
+        },
+        membershipSku: "4E4BDCF832",
+      },
+      {
+        title: "абонемент на 1 год",
+        price: "650",
+        description: "одноразовый платеж",
+        included: [
+          "Неограниченный доступ в зал",
+          "Сауна и душ",
+          "Часто DJ и живая музыка",
+          "Персональный тренер (Требуется бронирование, за дополнительную плату)",
+        ],
+        button: {
+          text: "Купить онлайн",
+          link: "/shop",
+        },
+        membershipSku: "929A07E388",
+      },
+    ],
+  },
+  en: {
+    text: "Prices",
+    title: "Our Memberships",
+    packages: [
+      {
+        title: "one time entry",
+        price: "10",
+        description: "per entry",
+        included: [
+          "One Time Access",
+          "Sauna & Showers",
+          "Often DJ & Live Music",
+          "Personal Trainer (Reservation required, for an additional fee)",
+        ],
+        button: {
+          text: "Contact us",
+          link: "tel:+421 940 735 735",
+        },
+        membershipSku: "",
+      },
+      {
+        title: "1 month membership",
+        price: "69",
+        description: "per month",
+        included: [
+          "Unlimited Gym Access",
+          "Sauna & Showers",
+          "Often DJ & Live Music",
+          "Personal Trainer (Reservation required, for an additional fee)",
+        ],
+        button: {
+          text: "Buy online",
+          link: "/shop",
+        },
+        membershipSku: "CBDC14DB23",
+      },
+      {
+        standOut: "best deal",
+        title: "6 + 1 month for free",
+        price: "340",
+        description: "one-time payment",
+        included: [
+          "Save more than €100!",
+          "Unlimited Gym Access",
+          "Sauna & Showers",
+          "Often DJ & Live Music",
+          "Personal Trainer (Reservation required, for an additional fee)",
+        ],
+        button: {
+          text: "Buy online",
+          link: "/shop",
+        },
+        membershipSku: "9F83982F8C",
+      },
+      {
+        title: "3 months membership",
+        price: "180",
+        description: "one-time payment",
+        included: [
+          "Unlimited Gym Access",
+          "Sauna & Showers",
+          "Often DJ & Live Music",
+          "Personal Trainer (Reservation required, for an additional fee)",
+        ],
+        button: {
+          text: "Buy online",
+          link: "/shop",
+        },
+        membershipSku: "4E4BDCF832",
+      },
+      {
+        title: "1 year membership",
+        price: "650",
+        description: "one-time payment",
+        included: [
+          "Unlimited Gym Access",
+          "Sauna & Showers",
+          "Often DJ & Live Music",
+          "Personal Trainer (Reservation required, for an additional fee)",
+        ],
+        button: {
+          text: "Buy online",
+          link: "/shop",
+        },
+        membershipSku: "929A07E388",
+      },
+    ],
   },
 };

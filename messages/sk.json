@@ -10,7 +10,7 @@
       "points": {
         "point1": "Hotovosť",
         "point2": "Kreditná karta, Mastercard, Visa karta",
-        "point3": "MultiSport karty a Upbalansea s príplatkom! (Sauna €3, Uterák €1, Lontový Nápoj €1)",
+        "point3": "MultiSport karty a Upbalansea bez príplatkov! (Sauna €3, Uterák €1, Lontový Nápoj €1)",
         "point4": "Žiadne dodatočné poplatky",
         "point5": "Všetky platby sa vykonávajú osobne na recepcií posilňovne, offline."
       }
@@ -115,7 +115,7 @@
         "link": "/gallery/#equipment"
       },
       "link": {
-        "text": "Kontaktujte nás",
+        "text": "Kúpiť online",
         "link": "+421 940 735 735"
       }
     },
@@ -137,90 +137,6 @@
         }
       },
       "link": { "text": "Zobraziť viac obrázkov", "link": "/gallery/#training" }
-    },
-    "Prices": {
-      "text": "Ceny",
-      "title": "Naše členstvá",
-      "packages": {
-        "package1": {
-          "title": "jednorazový vstup",
-          "price": "10",
-          "description": "za vstup",
-          "included": {
-            "included1": "Jednorazový vstup",
-            "included2": "Sauna a sprchy",
-            "included3": "Často DJ a živá hudba",
-            "included4": "Osobný tréner (Rezervácia nutná, za príplatok)"
-          },
-          "button": {
-            "text": "Kontaktujte nás",
-            "link": "+421 940 735 735"
-          }
-        },
-        "package2": {
-          "title": "jednomesačné členstvo",
-          "price": "69",
-          "description": "za mesiac",
-          "included": {
-            "included1": "Neobmedzený prístup do posilňovne",
-            "included2": "Sauna a sprchy",
-            "included3": "Často DJ a živá hudba",
-            "included4": "Osobný tréner (Rezervácia nutná, za príplatok)"
-          },
-          "button": {
-            "text": "Kontaktujte nás",
-            "link": "+421 940 735 735"
-          }
-        },
-        "package3": {
-          "standOut": "najlepšia ponuka",
-          "title": "6 + 1 mesiac zadarmo",
-          "price": "48",
-          "per": "/za mesiac",
-          "description": "jednorazová platba",
-          "included": {
-            "included1": "Ušetrite viac ako €100!",
-            "included2": "Neobmedzený prístup do posilňovne",
-            "included3": "Sauna a sprchy",
-            "included4": "Často DJ a živá hudba",
-            "included5": "Osobný tréner (Rezervácia nutná, za príplatok)"
-          },
-          "button": {
-            "text": "Kúpiť online",
-            "link": "/shop"
-          }
-        },
-        "package4": {
-          "title": "3 mesačne členstvo",
-          "price": "180",
-          "description": "jednorazová platba",
-          "included": {
-            "included1": "Neobmedzený prístup do posilňovne",
-            "included2": "Sauna a sprchy",
-            "included3": "Často DJ a živá hudba",
-            "included4": "Osobný tréner (Rezervácia nutná, za príplatok)"
-          },
-          "button": {
-            "text": "Kúpiť online",
-            "link": "/shop"
-          }
-        },
-        "package5": {
-          "title": "1 ročné členstvo",
-          "price": "650",
-          "description": "jednorazová platba",
-          "included": {
-            "included1": "Neobmedzený prístup do posilňovne",
-            "included2": "Sauna a sprchy",
-            "included3": "Často DJ a živá hudba",
-            "included4": "Osobný tréner (Rezervácia nutná, za príplatok)"
-          },
-          "button": {
-            "text": "Kúpiť online",
-            "link": "/shop"
-          }
-        }
-      }
     },
     "Team": {
       "bgText": "Tréneri",

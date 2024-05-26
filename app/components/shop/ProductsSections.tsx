@@ -26,7 +26,7 @@ function ProductsSections({ locale, sku }: ProductSectionProps) {
   function addOneProduct(sku: string) {
     const cartItem = cart.find((item) => item.sku === sku);
     if (cartItem && cartItem.quantity >= 10) {
-      notifyLimitReached(); 
+      notifyLimitReached();
     } else {
       dispatch(addOneToCart(sku));
       notifyAddedToCart();
@@ -103,7 +103,6 @@ function ProductsSections({ locale, sku }: ProductSectionProps) {
     return null;
   }
 
-
   return (
     <section className="ProductsSectionsSection">
       <div className="content">
@@ -159,7 +158,7 @@ function ProductsSections({ locale, sku }: ProductSectionProps) {
                                       ? item.category.title[locale]
                                       : "Not Found"}
                                   </p>
-                                  <p className="name">{product.name}</p>
+                                  <p className="name">{product.title[locale]}</p>
                                   <p className="description">
                                     {product.description
                                       ? product.description[locale]

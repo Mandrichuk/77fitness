@@ -61,10 +61,6 @@
               flex: 0.9;
               position: relative;
 
-              .trainerImg {
-                height: 96%;
-              }
-
               .qrImg {
                 position: absolute;
                 bottom: 0;
@@ -241,14 +237,14 @@
             }
 
             .imagesSection {
-              @include Flex(column, center, flex-end);
+              @include Flex(column, end, end);
               height: 100%;
 
               flex: 0.9;
               position: relative;
 
               .trainerImg {
-                height: 90%;
+                height: auto;
               }
 
               .qrImg {
@@ -603,10 +599,6 @@
 
               flex: 0.9;
               position: relative;
-
-              .trainerImg {
-                height: 90%;
-              }
             }
           }
         }

@@ -16,7 +16,7 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
 
   const productsLineItems = body.cartProducts.map((order: any) => ({
     price_data: {
-      currency: "usd",
+      currency: "eur",
       product_data: {
         name: order.product.name,
       },

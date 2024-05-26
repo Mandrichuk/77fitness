@@ -36,6 +36,13 @@ export async function POST(request: NextRequest) {
           sk: body.description.sk,
         },
       },
+      title: {
+        create: {
+          en: body.title.en,
+          ru: body.title.ru,
+          sk: body.title.sk,
+        },
+      },
       images: {
         create: body.imageUrls.map((url: string) => ({ url })),
       },

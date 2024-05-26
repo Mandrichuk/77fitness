@@ -10,6 +10,11 @@ const schema = z.object({
     ru: z.string().min(1),
     sk: z.string().min(1),
   }),
+  title: z.object({
+    en: z.string().min(1),
+    ru: z.string().min(1),
+    sk: z.string().min(1),
+  }),
   imageUrls: z.array(z.string()),
   newPrice: z.number().min(0.01).max(9999.99),
   oldPrice: z.number().min(0.01).max(9999.99).optional(),

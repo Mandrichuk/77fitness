@@ -6,7 +6,7 @@ import Footer from "@/app/components/common/Footer";
 import CreatedBy from "@/app/components/common/CreatedBy";
 import Success from "@/app/components/common/Success";
 
-import { LocaleProps } from "../../../lib/index";
+import { LocaleProps } from "../../lib/index";
 
 export const metadata: Metadata = {
   title: "Success",
@@ -16,7 +16,7 @@ function Home({ params: { locale } }: LocaleProps) {
   return (
     <main>
       <Header locale={locale} />
-      <Success />
+      <Success locale={locale} />
       <Footer locale={locale} />
       <CreatedBy />
     </main>

@@ -23,7 +23,7 @@
           @include pText();
           font-size: calc(fontSize(p) + 6px);
           font-weight: fontWeight(bold);
-          color: color(text-color);
+          color: color(secondary-color);
           margin-bottom: 10px;
         }
 
@@ -39,14 +39,14 @@
       }
 
       .imagesSection {
-        @include Flex(column, center, flex-end);
+        @include Flex(column, end, end);
         height: 100%;
 
         flex: 0.9;
         position: relative;
 
         .trainerImg {
-          height: 96%;
+          height: auto;
         }
       }
     }

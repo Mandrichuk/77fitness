@@ -19,7 +19,7 @@ export async function POST(request: NextRequest) {
     for (const product of order.products) {
       const productData = await prisma.product.findUnique({
         where: { sku: product.productSku },
-        include: { description: true, images: true },
+        include: { title: true, description: true, images: true },
       });
 
       if (productData) {

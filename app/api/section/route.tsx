@@ -17,6 +17,7 @@ export async function GET(request: NextRequest) {
             categoryId: category.id,
           },
           include: {
+            title: true,
             description: true,
             images: true,
           },

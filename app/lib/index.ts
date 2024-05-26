@@ -92,6 +92,8 @@ export interface HeaderProps extends Language {}
 
 export interface FooterProps extends Language {}
 
+export interface PricesProps extends Language {}
+
 export interface HeadProps extends Language {}
 
 export interface ProductsSectionsProps extends Language {}
@@ -127,6 +129,7 @@ export interface AdminProps extends Language {}
 export interface CartProductProps {
   sku: string;
   quantity: number;
+  isMembership?: boolean;
 }
 
 export interface CartStateProps {
@@ -198,7 +201,7 @@ export interface TeamSliderProps {
 }
 
 interface Package {
-  standOut?: boolean;
+  standOut?: string;
   standOutText?: string;
   per?: string;
   title: string;
@@ -209,6 +212,7 @@ interface Package {
     text: string;
     link: string;
   };
+  membershipSku: string;
 }
 
 export interface MembershipProps {
@@ -808,6 +812,9 @@ interface NewProductText {
     description_en: { placeholder: string; field: string };
     description_ru: { placeholder: string; field: string };
     description_sk: { placeholder: string; field: string };
+    title_en: { placeholder: string; field: string };
+    title_ru: { placeholder: string; field: string };
+    title_sk: { placeholder: string; field: string };
     newPrice: { placeholder: string; field: string };
     oldPrice: { placeholder: string; field: string };
     leftInStock: { placeholder: string; field: string };
@@ -848,4 +855,16 @@ export interface AdminHeaderTextProps {
       links: LanguageLink[];
     };
   };
+}
+
+interface LanguageContent {
+  text: string;
+  title: string;
+  packages: Package[];
+}
+
+export interface PricesTextTypes {
+  sk: LanguageContent;
+  ru: LanguageContent;
+  en: LanguageContent;
 }

@@ -77,7 +77,6 @@ function Orders({ locale }: OrdersProps) {
     );
   }
 
-
   if (!data) {
     return (
       <div>
@@ -238,7 +237,7 @@ function OrderProducts({ locale, product }: OrderProductsProps) {
         </div>
         <div className="details">
           {/* <p className="title">{"titlesdfs234243dfsdf"}</p> */}
-          <p className="name">{product.name}</p>
+          <p className="name">{product.title[locale]}</p>
           <p className="description">{product.description[locale]}</p>
         </div>
       </div>

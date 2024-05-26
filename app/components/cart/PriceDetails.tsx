@@ -14,7 +14,7 @@ import { ProductCartText } from "../../constants";
 import { loadStripe } from "@stripe/stripe-js";
 
 const stripePromise = loadStripe(
-  "pk_test_51PGNIqEITp6yCHq58KpwYb77HzkDeZkw8oViAd1RoF1TuqxNUm45QolPj3J8yykAyZPh1uC0sgKFTftqkn6JTiXQ00EpmINzeD"
+  "pk_live_51PGNIqEITp6yCHq5wRFshJWjpWe3VKRsUds4zHolrGE3z7c3DzO5GYb0cUcy0OyTWbpBN3LQRtfjVQXtB1g6YW2K00YGnjZ9NH"
 );
 
 function PriceDetails({ locale }: PriceDetailsProps) {
@@ -26,9 +26,13 @@ function PriceDetails({ locale }: PriceDetailsProps) {
   const [productsData, setProductsData] = useState<any>(null);
   const [totalPrice, setTotalPrice] = useState<number | null>(null);
   const [loading, setLoading] = useState(false);
-
+  const clientData = useSelector((state: RootState) => state.clientLogin.value);
 
   const handleCheckout = async () => {
+    if (typeof window !== "undefined" && !clientData) {
+      window.location.href = "/login";
+      return;
+    }
     setLoading(true);
     const stripe = await stripePromise;
 
@@ -79,7 +83,6 @@ function PriceDetails({ locale }: PriceDetailsProps) {
       fetchData();
     }
   }, [cart]);
-
 
   useEffect(() => {
     const fetchData = async () => {

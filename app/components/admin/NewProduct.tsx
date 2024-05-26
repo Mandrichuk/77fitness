@@ -18,6 +18,9 @@ interface NewProductInputsProps {
   description_en: string;
   description_ru: string;
   description_sk: string;
+  title_en: string;
+  title_ru: string;
+  title_sk: string;
   images: string[];
   newPrice: number;
   oldPrice: number;
@@ -65,6 +68,9 @@ function NewProduct({ locale }: NewProductProps) {
     description_en: "",
     description_ru: "",
     description_sk: "",
+    title_en: "",
+    title_ru: "",
+    title_sk: "",
     images: [],
     newPrice: 0.01,
     oldPrice: 0.01,
@@ -107,8 +113,6 @@ function NewProduct({ locale }: NewProductProps) {
     fetchData();
   }, []);
 
-  console.log(newProductData);
-
   function addNewCategory() {
     if (isNewCategoryDataValid()) {
       const convertedProductData = {
@@ -120,12 +124,18 @@ function NewProduct({ locale }: NewProductProps) {
           sk: newProductData.description_sk,
           ru: newProductData.description_ru,
         },
+        title: {
+          en: newProductData.title_en,
+          sk: newProductData.title_sk,
+          ru: newProductData.title_ru,
+        },
         imageUrls: [newProductData.images[0]],
         newPrice: Number(newProductData.newPrice),
         oldPrice: Number(newProductData.oldPrice),
         leftInStock: Number(newProductData.leftInStock),
         toDisplay: newProductData.toDisplay,
       };
+      console.log(convertedProductData);
 
       try {
         fetch("/api/admin/product/new", {
@@ -171,6 +181,8 @@ function NewProduct({ locale }: NewProductProps) {
       images: [result],
     }));
   }
+  console.log(isNewCategoryDataValid());
+  console.log(newProductData);
 
   return (
     <section className="NewProductSection">
@@ -222,7 +234,31 @@ function NewProduct({ locale }: NewProductProps) {
                 handleSetNewCategory(value, t.inputs.name.field)
               }
               field={t.inputs.name.field}
-              maxSymbols={20}
+              maxSymbols={30}
+            />
+            <Input
+              placeholderText={t.inputs.title_en.placeholder}
+              getValue={(value) =>
+                handleSetNewCategory(value, t.inputs.title_en.field)
+              }
+              field={t.inputs.title_en.field}
+              maxSymbols={70}
+            />
+            <Input
+              placeholderText={t.inputs.title_ru.placeholder}
+              getValue={(value) =>
+                handleSetNewCategory(value, t.inputs.title_ru.field)
+              }
+              field={t.inputs.title_ru.field}
+              maxSymbols={70}
+            />
+            <Input
+              placeholderText={t.inputs.title_sk.placeholder}
+              getValue={(value) =>
+                handleSetNewCategory(value, t.inputs.title_sk.field)
+              }
+              field={t.inputs.title_sk.field}
+              maxSymbols={70}
             />
             <Input
               placeholderText={t.inputs.description_en.placeholder}
@@ -336,7 +372,12 @@ function NewProduct({ locale }: NewProductProps) {
                       {newProductData.categoryId &&
                         newProductData?.categoryId.title[previewLanguage]}
                     </p>
-                    <p className="name">{newProductData.name}</p>
+                    <p className="name">
+                      {" "}
+                      {previewLanguage === "en" && newProductData.title_en}
+                      {previewLanguage === "sk" && newProductData.title_sk}
+                      {previewLanguage === "ru" && newProductData.title_ru}
+                    </p>
                     <p className="description">
                       {previewLanguage === "en" &&
                         newProductData.description_en}
@@ -348,7 +389,9 @@ function NewProduct({ locale }: NewProductProps) {
                     <div className="cart">
                       <div className="prices">
                         <p className="newPrice">€{newProductData.newPrice}</p>
-                        <p className="oldPrice">€{newProductData.oldPrice}</p>
+                        {newProductData.oldPrice !== 0.01 && (
+                          <p className="oldPrice">€{newProductData.oldPrice}</p>
+                        )}
                       </div>
                       <div className="buttonContainer">
                         <button

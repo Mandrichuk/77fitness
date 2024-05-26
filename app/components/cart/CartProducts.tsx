@@ -112,6 +112,11 @@ interface Product {
   sku: string;
   toDisplay: boolean;
   images: ProductImage[];
+  title: {
+    en: string;
+    ru: string;
+    sk: string;
+  };
   description: {
     en: string;
     ru: string;
@@ -148,6 +153,8 @@ function CartProduct({ locale, product, quantity }: CartProduct) {
     dispatch(emptyCart());
   }
 
+  console.log(product);
+
   return (
     <div className="cartProduct">
       <div className="productDescription">
@@ -160,7 +167,7 @@ function CartProduct({ locale, product, quantity }: CartProduct) {
         </div>
         <div className="details">
           <p className="title">{product.product.name}</p>
-          <p className="name">{product.product.name}</p>
+          <p className="name">{product.product.title[locale]}</p>
           <p className="description">{product.product.description[locale]}</p>
         </div>
       </div>

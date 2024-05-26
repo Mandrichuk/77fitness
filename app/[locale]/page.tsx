@@ -1,6 +1,5 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { decrement, increment } from "../features/slice";
 import type { RootState } from "../store/store";
 
 import Activity from "../components/home/Activity";
@@ -30,7 +29,7 @@ function Home({ params: { locale } }: LocaleProps) {
       <Gallery />
       <Details />
       <SocialMedia />
-      <Prices />
+      <Prices locale={locale} />
       <Application />
       <Activity />
       <Newsletter />

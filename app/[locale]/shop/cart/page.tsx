@@ -12,7 +12,7 @@ import ScreenLoading from "@/app/components/common/ScreenLoading";
 import { LocaleProps } from "../../../lib/index";
 
 export const metadata: Metadata = {
-  title: "Pricing",
+  title: "Cart",
 };
 
 function Home({ params: { locale } }: LocaleProps) {

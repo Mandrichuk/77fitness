@@ -24,6 +24,7 @@ model Product {
   sku           String             @unique
   name          String
   categoryId    Int
+  title         ProductTitle       @relation(fields: [titleId], references: [id])
   description   ProductDescription @relation(fields: [descriptionId], references: [id])
   images        ProductImage[]
   newPrice      Float
@@ -32,7 +33,16 @@ model Product {
   toDisplay     Boolean            @default(true)
   leftInStock   Int
   descriptionId Int
+  titleId       Int
   OrderProduct  OrderProduct[]
+}
+
+model ProductTitle {
+  id      Int       @id @default(autoincrement())
+  en      String
+  ru      String
+  sk      String
+  product Product[]
 }
 
 model ProductDescription {

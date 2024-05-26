@@ -12,6 +12,7 @@ export async function POST(request: NextRequest) {
         sku: product.sku,
       },
       include: {
+        title: true,
         description: true,
         images: true,
       },

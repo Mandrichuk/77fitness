@@ -14,7 +14,7 @@ import CartButton from "@/app/components/shop/CartButton";
 import ScreenLoading from "@/app/components/common/ScreenLoading";
 
 export const metadata: Metadata = {
-  title: "Shop",
+  title: "Category",
 };
 
 function Home({ params: { locale, sku } }: ShopSkuProps) {

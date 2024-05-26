@@ -10,7 +10,7 @@
       "points": {
         "point1": "Cash",
         "point2": "Credit Card, Mastercard, Visa Card",
-        "point3": "MultiSport cards and Upbalansea with extra charge! (Sauna €3, Towel €1, Ionic Drink €1)",
+        "point3": "MultiSport cards and Upbalansea without extra charge! (Sauna €3, Towel €1, Ionic Drink €1)",
         "point4": "No additional fees",
         "point5": "All the payments are processed in person at the gym reception, offline."
       }
@@ -115,8 +115,8 @@
         "link": "/gallery/#equipment"
       },
       "link": {
-        "text": "Contact us",
-        "link": "+421 940 735 735"
+        "text": "Buy online",
+        "link": "/shop"
       }
     },
     "Activity": {
@@ -137,90 +137,6 @@
         }
       },
       "link": { "text": "More images", "link": "/gallery/#training" }
-    },
-    "Prices": {
-      "text": "Prices",
-      "title": "Our Memberships",
-      "packages": {
-        "package1": {
-          "title": "one time entry",
-          "price": "10",
-          "description": "per entry",
-          "included": {
-            "included1": "One Time Access",
-            "included2": "Sauna & Showers",
-            "included3": "Often DJ & Live Music",
-            "included4": "Personal Trainer (Reservation required, for an additional fee)"
-          },
-          "button": {
-            "text": "Buy online",
-            "link": "/shop"
-          }
-        },
-        "package2": {
-          "title": "1 month membership",
-          "price": "69",
-          "description": "per month",
-          "included": {
-            "included1": "Unlimited Gym Access",
-            "included2": "Sauna & Showers",
-            "included3": "Often DJ & Live Music",
-            "included4": "Personal Trainer (Reservation required, for an additional fee)"
-          },
-          "button": {
-            "text": "Buy online",
-            "link": "/shop"
-          }
-        },
-        "package3": {
-          "standOut": "best deal",
-          "title": "6 + 1 month for free",
-          "price": "48",
-          "per": "/per month",
-          "description": "one-time payment",
-          "included": {
-            "included1": "Save more than €100!",
-            "included2": "Unlimited Gym Access",
-            "included3": "Sauna & Showers",
-            "included4": "Often DJ & Live Music",
-            "included5": "Personal Trainer (Reservation required, for an additional fee)"
-          },
-          "button": {
-            "text": "Buy online",
-            "link": "/shop"
-          }
-        },
-        "package4": {
-          "title": "3 months membership",
-          "price": "180",
-          "description": "one-time payment",
-          "included": {
-            "included1": "Unlimited Gym Access",
-            "included2": "Sauna & Showers",
-            "included3": "Often DJ & Live Music",
-            "included4": "Personal Trainer (Reservation required, for an additional fee)"
-          },
-          "button": {
-            "text": "Contact us",
-            "link": "+421 940 735 735"
-          }
-        },
-        "package5": {
-          "title": "1 year membership",
-          "price": "650",
-          "description": "one-time payment",
-          "included": {
-            "included1": "Unlimited Gym Access",
-            "included2": "Sauna & Showers",
-            "included3": "Often DJ & Live Music",
-            "included4": "Personal Trainer (Reservation required, for an additional fee)"
-          },
-          "button": {
-            "text": "Contact us",
-            "link": "+421 940 735 735"
-          }
-        }
-      }
     },
     "Team": {
       "bgText": "Trainers",

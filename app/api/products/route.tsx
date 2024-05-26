@@ -8,8 +8,14 @@ export async function GET(request: NextRequest) {
     where: {
       toDisplay: true,
     },
+    include: {
+      title: true,
+      description: true,
+      images: true,
+    },
   });
 
+  const titles = await prisma.productTitle.findMany();
   const descriptions = await prisma.productDescription.findMany();
   const images = await prisma.productImage.findMany();
 
@@ -54,6 +60,13 @@ export async function POST(request: NextRequest) {
           sk: body.description.sk,
         },
       },
+      title: {
+        create: {
+          en: body.title.en,
+          ru: body.title.ru,
+          sk: body.title.sk,
+        },
+      },
       images: {
         create: body.imageUrls.map((url: string) => ({ url })),
       },
@@ -64,7 +77,6 @@ export async function POST(request: NextRequest) {
   });
   return NextResponse.json(product, { status: 201 });
 }
-
 
 export async function DELETE(request: NextRequest) {
   try {

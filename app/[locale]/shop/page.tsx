@@ -11,13 +11,10 @@ import Categories from "@/app/components/shop/Categories";
 import ProductSection from "@/app/components/shop/ProductsSections";
 import CartButton from "@/app/components/shop/CartButton";
 import ScreenLoading from "@/app/components/common/ScreenLoading";
+import Prices from "@/app/components/common/Prices";
 
 export const metadata: Metadata = {
-  title: "Pricing",
-};
-
-const getValue = (value: string) => {
-  console.log(value);
+  title: "Shop",
 };
 
 function Home({ params: { locale } }: LocaleProps) {
@@ -27,11 +24,12 @@ function Home({ params: { locale } }: LocaleProps) {
       <Head locale={locale} />
       <Categories locale={locale} />
       <ProductSection locale={locale} />
-      <CartButton />
-      <ScreenLoading />
+      <Prices locale={locale} />
       <Newsletter />
       <Footer locale={locale} />
       <CreatedBy />
+      <CartButton />
+      <ScreenLoading />
     </main>
   );
 }

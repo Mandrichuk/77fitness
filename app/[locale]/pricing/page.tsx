@@ -19,7 +19,7 @@ function Home({ params: { locale } }: LocaleProps) {
     <main>
       <Header locale={locale} />
       <Payment />
-      <Prices />
+      <Prices  locale={locale} />
       <Newsletter />
       <Footer locale={locale} />
       <CreatedBy />

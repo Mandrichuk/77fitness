@@ -32,7 +32,7 @@
         grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
         grid-auto-rows: minmax(470px, auto);
         row-gap: 15px;
-
+    overflow: hidden;
         .product {
           @include Flex(column, center, center);
           width: 100%;
@@ -45,6 +45,7 @@
             aspect-ratio: 1 / 1;
             padding: 20px;
             max-height: 240px;
+            flex: 1;
 
             .imageContainer {
               @include Flex(row, center, center);
@@ -56,7 +57,7 @@
           }
 
           .details {
-            @include Flex(column, start, center);
+            @include Flex(column, start, start);
             width: 100%;
             flex: 1;
             padding: 0 30px 30px 30px;
@@ -168,7 +169,7 @@
             .details {
               padding: 20px;
 
-              @include Flex(column, start, center);
+              @include Flex(column, start, start);
               width: 100%;
               flex: 1;
 
@@ -251,7 +252,7 @@
           row-gap: 40px;
 
           .product {
-            @include Flex(column, center, center);
+            @include Flex(column, center, start);
 
             .imageBox {
               @include Flex(row, center, center);
@@ -260,14 +261,14 @@
               padding: 30px;
 
               .imageContainer {
-              width: 100%;
+                width: 100%;
               }
             }
 
             .details {
               padding: 20px;
 
-              @include Flex(column, start, center);
+              @include Flex(column, start, start);
               width: 100%;
               flex: 1;
 
@@ -348,8 +349,10 @@
           grid-auto-rows: minmax(350px, auto);
           gap: 10px;
           row-gap: 40px;
+          overflow: hidden;
 
           .product {
+            height: 100%;
             @include Flex(column, center, center);
             .imageBox {
               @include Flex(row, center, center);
@@ -358,14 +361,13 @@
               padding: 30px;
 
               .imageContainer {
-              width: 100%;
+                width: 100%;
               }
             }
 
             .details {
               padding: 20px;
-
-              @include Flex(column, start, center);
+              @include Flex(column, start, start);
               width: 100%;
               flex: 1;
 

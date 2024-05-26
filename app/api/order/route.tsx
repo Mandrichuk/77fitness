@@ -20,7 +20,7 @@ export async function POST(request: NextRequest) {
 
   if (isUnique) {
     return NextResponse.json(
-      { error: "Product already exists" },
+      { error: "Order already exists" },
       { status: 400 }
     );
   }
@@ -44,6 +44,5 @@ export async function POST(request: NextRequest) {
     },
   });
 
-  // return NextResponse.json(validation, { status: 201 });
   return NextResponse.json(order, { status: 201 });
 }
