@@ -176,7 +176,7 @@ function InProccessOrder({
 
   useEffect(() => {
     calculateTotalPrice();
-  }, []);
+  }, [calculateTotalPrice]);
 
   function toggleProducts() {
     setProductsOpen(!productsOpen);
