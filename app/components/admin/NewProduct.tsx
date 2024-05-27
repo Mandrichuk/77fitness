@@ -400,7 +400,7 @@ function NewProduct({ locale }: NewProductProps) {
                           }}
                           className="button"
                         >
-                          "Add"
+                          Add
                         </button>
                       </div>
                     </div>

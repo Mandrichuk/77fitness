@@ -133,7 +133,7 @@ function NewCategory({ locale, category_sku }: EditCategoryProps) {
             }
           })
           .then((data) => {
-l            window.location.href = "/admin/category/edit";
+            window.location.href = "/admin/category/edit";
           })
           .catch((error) => {
             console.error("Error:", error);
