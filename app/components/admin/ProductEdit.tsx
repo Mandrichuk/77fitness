@@ -419,7 +419,7 @@ function NewProduct({ locale, product_sku }: EditProductProps) {
                           }}
                           className="button"
                         >
-                          "Add"
+                          Add
                         </button>
                       </div>
                     </div>

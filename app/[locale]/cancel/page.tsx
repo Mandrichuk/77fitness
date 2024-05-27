@@ -6,7 +6,7 @@ import Footer from "@/app/components/common/Footer";
 import CreatedBy from "@/app/components/common/CreatedBy";
 import Error from "@/app/components/common/Error";
 
-import { LocaleProps } from "../../../lib/index";
+import { LocaleProps } from "../../lib";
 
 export const metadata: Metadata = {
   title: "Error",
