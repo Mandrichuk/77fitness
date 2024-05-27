@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import prisma from "@/prisma/client";
+import prisma from "@/prisma/backup";
 import OrderSchema from "./schema";
 import getId from "@/app/utils/getId";
 

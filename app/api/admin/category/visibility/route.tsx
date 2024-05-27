@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import productSchema from "../../../category/schema";
-import prisma from "@/prisma/client";
+import prisma from "@/prisma/backup";
 
 export async function POST(request: NextRequest) {
   const body = await request.json();

@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { clientSchema, orderSchema, orderProductSchema } from "./shema";
-import prisma from "@/prisma/client";
+import prisma from "@/prisma/backup";
 
 export async function GET(request: NextRequest) {
   const clients = await prisma.client.findMany();

@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import prisma from "@/prisma/client";
+import prisma from "@/prisma/backup";
 import productSchema from "@/app/api/products/schema";
 
 interface Props {

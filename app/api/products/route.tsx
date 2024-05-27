@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import productSchema from "./schema";
-import prisma from "@/prisma/client";
+import prisma from "@/prisma/backup";
 import toFixedNumber from "@/app/utils/toFixedNumber";
 
 export async function GET(request: NextRequest) {
