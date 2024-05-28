@@ -6,7 +6,18 @@
     "dev": "next dev",
     "build": "prisma generate && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prisma:init": "dotenv -e .env.local -- npx prisma init",
+    "prisma:deploy": "dotenv -e .env.local -- npx prisma migrate deploy",
+    "prisma:seed": "dotenv -e .env.local -- npx prisma db seed ",
+    "prisma:studio": "dotenv -e .env.local -- npx prisma studio",
+    "prisma:generate": "dotenv -e .env.local npx prisma generate",
+    "prisma:migrate": "dotenv -e .env.local -- npx prisma migrate dev --name init",
+    "prisma:reset": "dotenv -e .env.local -- npx prisma migrate reset --force",
+    "prisma:push": "dotenv -e .env.local -- npx prisma db push"
+  },
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
   },
   "dependencies": {
     "@prisma/client": "^5.11.0",
@@ -24,7 +35,6 @@
     "next-cloudinary": "^6.3.0",
     "next-intl": "^3.9.5",
     "postcss": "8.4.38",
-    "prisma": "^5.13.0",
     "raw-body": "^2.5.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -37,11 +47,13 @@
     "slick-carousel": "^1.8.1",
     "stripe": "^15.7.0",
     "tailwindcss": "3.4.1",
+    "ts-node": "^10.9.2",
     "typescript": "5.4.3",
     "zod": "^3.23.4"
   },
   "devDependencies": {
     "@types/react-slick": "^0.23.13",
-    "daisyui": "^4.9.0"
+    "daisyui": "^4.9.0",
+    "prisma": "^5.14.0"
   }
 }

@@ -1,8 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
 
-const stripeSecretKey =
-  "sk_test_51PGNIqEITp6yCHq5Je1QVniN5NyFCdwwPoZFrtMsxOABLysTEr5wMnWnLJ932h6r6QMuW26u2c3tLD7He4ADPv1Y001Et83w0Z";
+const stripeSecretKey = process.env.STRIPE_SECRET_KEY;
 if (!stripeSecretKey) {
   throw new Error("Stripe secret key is not defined in environment variables.");
 }
@@ -24,7 +23,6 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     },
     quantity: order.quantity,
   }));
-
   try {
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
@@ -33,7 +31,7 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
       success_url: `${new URL(request.url).origin}/success`,
       cancel_url: `${new URL(request.url).origin}/cancel`,
     });
-
+console.log(session)
     return new NextResponse(JSON.stringify({ id: session.id }), {
       status: 200,
       headers: { "Content-Type": "application/json" },

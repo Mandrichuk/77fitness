@@ -17,6 +17,8 @@ function Membership({ membership }: MembershipProps) {
       return;
     }
 
+  console.log(cart)
+
     dispatch(emptyCart());
     dispatch(addOneToCart(membership.membershipSku));
     window.location.href = "/shop/cart";
@@ -45,7 +47,7 @@ function Membership({ membership }: MembershipProps) {
         <div className="contactButton">
           {membership.price === "10" ? (
             <Link className="button" href={membership.button.link}>
-              Contact Us
+              {membership.button.text}
             </Link>
           ) : (
             <button onClick={addToCartMembership} className="button">
