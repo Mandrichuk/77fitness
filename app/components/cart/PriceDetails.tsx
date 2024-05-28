@@ -13,9 +13,7 @@ import { ProductCartText } from "../../constants";
 
 import { loadStripe } from "@stripe/stripe-js";
 
-const stripePromise = loadStripe(
-  "pk_live_51PGNIqEITp6yCHq5wRFshJWjpWe3VKRsUds4zHolrGE3z7c3DzO5GYb0cUcy0OyTWbpBN3LQRtfjVQXtB1g6YW2K00YGnjZ9NH"
-);
+const stripePromise = loadStripe(process.env.STRIPE_PUBLISHABLE_KEY!);
 
 function PriceDetails({ locale }: PriceDetailsProps) {
   const dispatch = useDispatch();
