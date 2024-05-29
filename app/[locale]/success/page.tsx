@@ -8,6 +8,7 @@ import Success from "@/app/components/common/Success";
 
 import { LocaleProps } from "../../lib/index";
 import Stripe from "stripe";
+import { redirect } from "next/navigation";
 
 export const metadata: Metadata = {
 	title: "Success",
@@ -37,9 +38,15 @@ export default async function Page({ params: { locale }, searchParams }: LocaleP
 		getSession(session_id).then((data) => {
 			if ("payment_status" in data && data.payment_status !== "paid") {
 				// тут ты можешь проверить статус платежа и если он не оплачен то перенаправить на страницу отмены
-				window.location.href = "/[locale]/cancel";
+				//window.location.href = "/cancel";
+				redirect(`/cancel`)
+					return null;
 			}
 		});
+	}else{
+		//window.location.href = "/cancel";
+		redirect(`/cancel`)
+		return null;
 	}
 	return (
 		<main>
