@@ -20,7 +20,8 @@ function Orders({ locale }: AdminProps) {
 
   useEffect(() => {
     if (typeof window !== "undefined" && !adminData) {
-      window.location.href = "/admin/login";
+      window.location.href =
+        "/c5e478d59288c841aa530db6845c4c8d962893a001ce4e11a4963873aa98134a/admin/login";
       return;
     }
   }, [adminData]);
@@ -33,6 +34,8 @@ function Orders({ locale }: AdminProps) {
           headers: {
             "Content-Type": "application/json",
           },
+          cache: "no-store",
+          next: { revalidate: 10 },
         });
 
         if (response.ok) {
