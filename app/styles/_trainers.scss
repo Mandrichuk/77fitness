@@ -1,0 +1,602 @@
+.TrainersSection {
+  @include Flex(column, center, center);
+  width: 100%;
+  margin-bottom: 100px;
+  .wrapper {
+    @include Flex(column, center, center);
+    width: wrapperWidth(mobile);
+    margin-top: 40px;
+
+    .filters {
+      @include Flex(column, center, start);
+      width: 100%;
+      .filter {
+        @include Flex(column, center, start);
+        margin-bottom: 25px;
+        width: 100%;
+
+        .title {
+          width: 100%;
+          font-weight: fontWeight(medium);
+          font-size: calc(fontSize(p) + 1px);
+          margin-bottom: 6px;
+        }
+
+        .options {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+          width: 100%;
+          gap: 10px;
+
+          .button {
+            max-width: 120px;
+          }
+
+          .whiteButton {
+            background-color: transparent;
+            border: 1px solid color(text-color);
+            color: color(text-color);
+
+            &.selected {
+              background-color: color(text-color);
+              color: color(custom-black);
+              border: none;
+            }
+          }
+
+          .blueButton {
+            background-color: transparent;
+            border: 1px solid color(secondary-color);
+            color: color(text-color);
+
+            &.selected {
+              background-color: color(secondary-color);
+              color: color(text-color);
+              border: none;
+            }
+          }
+
+          .pinkButton {
+            background-color: transparent;
+            border: 1px solid #d909c4;
+            color: color(text-color);
+
+            &.selected {
+              background-color: #d909c4;
+              color: color(text-color);
+              border: none;
+            }
+          }
+        }
+
+        .genderOptions {
+          width: 100%;
+          button {
+            flex: 1 !important;
+            max-width: none !important;
+          }
+        }
+      }
+    }
+
+    .trainers {
+      margin-top: 30px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+
+      .trainer {
+        width: 100%;
+        padding: 40px 20px 20px 20px;
+        background-color: color(custom-black);
+        border-radius: 15px;
+
+        .nameInfo {
+          @include Flex(row, center, start);
+          width: 100%;
+          margin-bottom: 15px;
+
+          .logo {
+            width: 40px;
+            aspect-ratio: 1 /1;
+            overflow: hidden;
+            background-color: white;
+            border-radius: 999px;
+            margin-right: 15px;
+
+            img {
+              transform: scale(1.7);
+              margin-top: 15px;
+            }
+
+            &.male {
+              background-color: color(secondary-color);
+            }
+            &.female {
+              background-color: #d909c4;
+            }
+          }
+
+          .title {
+            font-weight: fontWeight(semibold);
+            font-size: calc(fontSize(p) + 5px);
+          }
+        }
+
+        .postImage {
+          width: 100%;
+          aspect-ratio: 1 /1;
+          overflow: hidden;
+          margin-bottom: 20px;
+          margin-top: 20px;
+          background-color: rgb(73, 73, 73);
+
+          .Image {
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: scale-down;
+              // object-position: center;
+            }
+          }
+        }
+
+        .contactDetails {
+          @include Flex(column, center, center);
+          width: 100%;
+          margin-bottom: 15px;
+
+          .email,
+          .phone {
+            font-size: calc(fontSize(p) + 3px);
+          }
+        }
+
+        .details {
+          position: relative;
+          max-height: 240px;
+          overflow: hidden;
+
+          &.open {
+            max-height: none;
+
+            &::before {
+              display: none;
+            }
+          }
+
+          .male {
+            font-size: calc(1rem + 5px);
+            font-weight: 600;
+            color: color(secondary-color);
+          }
+
+          .female {
+            font-size: calc(1rem + 5px);
+            font-weight: 600;
+            color: #d909c4;
+          }
+
+          .text {
+            display: block;
+          }
+
+          &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 1.2em;
+            background: linear-gradient(to bottom, transparent, black);
+          }
+        }
+        .moreButton {
+          width: 100%;
+          @include Flex(row, center, end);
+          margin-top: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  .TrainersSection {
+    @include Flex(column, center, center);
+    width: 100%;
+    margin-bottom: 100px;
+    .wrapper {
+      @include Flex(column, center, center);
+      width: wrapperWidth(mobile);
+      margin-top: 40px;
+
+      .filters {
+        @include Flex(column, center, start);
+        width: 100%;
+        .filter {
+          @include Flex(column, center, start);
+          margin-bottom: 25px;
+          width: 100%;
+
+          .title {
+            width: 100%;
+            font-weight: fontWeight(medium);
+            font-size: calc(fontSize(p) + 1px);
+            margin-bottom: 6px;
+          }
+
+          .options {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 10px;
+
+            .button {
+              max-width: 120px;
+            }
+
+            .whiteButton {
+              background-color: transparent;
+              border: 1px solid color(text-color);
+              color: color(text-color);
+
+              &.selected {
+                background-color: color(text-color);
+                color: color(custom-black);
+                border: none;
+              }
+            }
+
+            .blueButton {
+              background-color: transparent;
+              border: 1px solid color(secondary-color);
+              color: color(text-color);
+
+              &.selected {
+                background-color: color(secondary-color);
+                color: color(text-color);
+                border: none;
+              }
+            }
+
+            .pinkButton {
+              background-color: transparent;
+              border: 1px solid #d909c4;
+              color: color(text-color);
+
+              &.selected {
+                background-color: #d909c4;
+                color: color(text-color);
+                border: none;
+              }
+            }
+          }
+
+          .genderOptions {
+            width: 100%;
+            button {
+              flex: 1 !important;
+              max-width: 120px !important;
+            }
+          }
+        }
+      }
+
+      .trainers {
+        margin-top: 50px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+
+        .trainer {
+          width: 100%;
+          padding: 40px 20px 20px 20px;
+          background-color: color(custom-black);
+          border-radius: 15px;
+
+          .nameInfo {
+            @include Flex(row, center, start);
+            width: 100%;
+            margin-bottom: 15px;
+
+            .logo {
+              width: 40px;
+              aspect-ratio: 1 /1;
+              overflow: hidden;
+              background-color: white;
+              border-radius: 999px;
+              margin-right: 15px;
+
+              img {
+                transform: scale(1.7);
+                margin-top: 15px;
+              }
+
+              &.male {
+                background-color: color(secondary-color);
+              }
+              &.female {
+                background-color: #d909c4;
+              }
+            }
+
+            .title {
+              font-weight: fontWeight(semibold);
+              font-size: calc(fontSize(p) + 3px);
+            }
+          }
+
+          .postImage {
+            width: 100%;
+            aspect-ratio: 1 /1;
+            overflow: hidden;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            background-color: rgb(73, 73, 73);
+          }
+
+          .contactDetails {
+            @include Flex(column, center, center);
+            width: 100%;
+            margin-bottom: 15px;
+
+            .email,
+            .phone {
+              font-size: calc(fontSize(p) + 3px);
+            }
+          }
+
+          .details {
+            position: relative;
+            max-height: 240px;
+            overflow: hidden;
+
+            &.open {
+              max-height: none;
+
+              &::before {
+                display: none;
+              }
+            }
+
+            .male {
+              font-size: calc(1rem + 5px);
+              font-weight: 600;
+              color: color(secondary-color);
+            }
+
+            .female {
+              font-size: calc(1rem + 5px);
+              font-weight: 600;
+              color: #d909c4;
+            }
+
+            .text {
+              display: block;
+            }
+
+            &::before {
+              content: "";
+              display: block;
+              position: absolute;
+              bottom: 0;
+              right: 0;
+              width: 100%;
+              height: 1.2em;
+              background: linear-gradient(to bottom, transparent, black);
+            }
+          }
+          .moreButton {
+            width: 100%;
+            @include Flex(row, center, end);
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .TrainersSection {
+    @include Flex(column, center, center);
+    width: 100%;
+    margin-bottom: 100px;
+    .wrapper {
+      @include Flex(column, center, center);
+      width: wrapperWidth(mobile);
+      margin-top: 40px;
+
+      .filters {
+        @include Flex(column, center, start);
+        width: 100%;
+        .filter {
+          @include Flex(column, center, start);
+          margin-bottom: 25px;
+          width: 100%;
+
+          .title {
+            width: 100%;
+            font-weight: fontWeight(medium);
+            font-size: calc(fontSize(p) + 1px);
+            margin-bottom: 6px;
+          }
+
+          .options {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 10px;
+
+            .button {
+              max-width: 120px;
+            }
+
+            .whiteButton {
+              background-color: transparent;
+              border: 1px solid color(text-color);
+              color: color(text-color);
+
+              &.selected {
+                background-color: color(text-color);
+                color: color(custom-black);
+                border: none;
+              }
+            }
+
+            .blueButton {
+              background-color: transparent;
+              border: 1px solid color(secondary-color);
+              color: color(text-color);
+
+              &.selected {
+                background-color: color(secondary-color);
+                color: color(text-color);
+                border: none;
+              }
+            }
+
+            .pinkButton {
+              background-color: transparent;
+              border: 1px solid #d909c4;
+              color: color(text-color);
+
+              &.selected {
+                background-color: #d909c4;
+                color: color(text-color);
+                border: none;
+              }
+            }
+          }
+
+          .genderOptions {
+            width: 100%;
+            button {
+              flex: 1 !important;
+              max-width: 120px !important;
+            }
+          }
+        }
+      }
+
+      .trainers {
+        margin-top: 50px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+
+        .trainer {
+          width: 100%;
+          padding: 40px 20px 20px 20px;
+          background-color: color(custom-black);
+          border-radius: 15px;
+
+          .nameInfo {
+            @include Flex(row, center, start);
+            width: 100%;
+            margin-bottom: 15px;
+
+            .logo {
+              width: 40px;
+              aspect-ratio: 1 /1;
+              overflow: hidden;
+              background-color: white;
+              border-radius: 999px;
+              margin-right: 15px;
+
+              img {
+                transform: scale(1.7);
+                margin-top: 15px;
+              }
+
+              &.male {
+                background-color: color(secondary-color);
+              }
+              &.female {
+                background-color: #d909c4;
+              }
+            }
+
+            .title {
+              font-weight: fontWeight(semibold);
+              font-size: calc(fontSize(p) + 3px);
+            }
+          }
+
+          .postImage {
+            width: 100%;
+            aspect-ratio: 1 /1;
+            overflow: hidden;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            background-color: rgb(73, 73, 73);
+          }
+
+          .contactDetails {
+            @include Flex(column, center, center);
+            width: 100%;
+            margin-bottom: 15px;
+            overflow: hidden;
+
+            .email,
+            .phone {
+              font-size: fontSize(p);
+            }
+          }
+
+          .details {
+            position: relative;
+            max-height: 240px;
+            overflow: hidden;
+
+            &.open {
+              max-height: none;
+
+              &::before {
+                display: none;
+              }
+            }
+
+            .male {
+              font-size: calc(1rem + 5px);
+              font-weight: 600;
+              color: color(secondary-color);
+            }
+
+            .female {
+              font-size: calc(1rem + 5px);
+              font-weight: 600;
+              color: #d909c4;
+            }
+
+            .text {
+              display: block;
+            }
+
+            &::before {
+              content: "";
+              display: block;
+              position: absolute;
+              bottom: 0;
+              right: 0;
+              width: 100%;
+              height: 1.2em;
+              background: linear-gradient(to bottom, transparent, black);
+            }
+          }
+          .moreButton {
+            width: 100%;
+            @include Flex(row, center, end);
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}

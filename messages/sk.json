@@ -141,6 +141,7 @@
     "Team": {
       "bgText": "Tréneri",
       "title": "Naši tréneri",
+      "seeMore": "Nájdite si svojho trénera",
       "trainers": {
         "trainer1": {
           "image": { "src": "team/gh6w8tmkbhvjj0kgwhvb", "alt": "trainer" },
@@ -397,7 +398,7 @@
         "alt": "obrázok"
       },
       "title": "Platba zlyhala",
-      "text": "Skúste to znova neskôr alebo nás kontaktujte",
+      "text": "Bohužiaľ, pri spracovaní vašej platby došlo k chybe. Skúste to prosím neskôr znova.",
       "button": {
         "text": "Obchod",
         "link": "/shop"

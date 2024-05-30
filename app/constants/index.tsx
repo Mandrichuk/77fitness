@@ -25,6 +25,7 @@ import {
   NewProductTextsProps,
   AdminHeaderTextProps,
   PricesTextTypes,
+  TrainersTextProps,
 } from "../lib/index";
 
 import logo from "@/public/assets/logo.png";
@@ -41,6 +42,8 @@ export const BluredCircleColors: BluredCircleColorsProps = {
   pink: "#D909C4",
   blue: "#097FD9",
 };
+export const adminHash =
+  "c5e478d59288c841aa530db6845c4c8d962893a001ce4e11a4963873aa98134a";
 
 export const SVGs = {
   shoppingBag: (
@@ -486,6 +489,10 @@ export const headerText: HeaderTextProps = {
         link: "/pricing",
       },
       {
+        text: "Trainers",
+        link: "/trainers",
+      },
+      {
         text: "Gallery",
         link: "/gallery",
       },
@@ -525,6 +532,10 @@ export const headerText: HeaderTextProps = {
       {
         text: "Цены",
         link: "/pricing",
+      },
+      {
+        text: "Тренеры",
+        link: "/trainers",
       },
       {
         text: "Галерея",
@@ -568,6 +579,10 @@ export const headerText: HeaderTextProps = {
         link: "/pricing",
       },
       {
+        text: "Tréneri",
+        link: "/trainers",
+      },
+      {
         text: "Galéria",
         link: "/gallery",
       },
@@ -605,16 +620,16 @@ export const AdminHeaderText: AdminHeaderTextProps = {
     links: [
       {
         text: "Admin Panel",
-        link: "/admin",
+        link: "/c5e478d59288c841aa530db6845c4c8d962893a001ce4e11a4963873aa98134a/admin",
       },
-      {
-        text: "Categories",
-        link: "/admin/category/edit",
-      },
-      {
-        text: "Products",
-        link: "/admin/product/edit",
-      },
+      // {
+      //   text: "Categories",
+      //   link: "/admin/category/edit",
+      // },
+      // {
+      //   text: "Products",
+      //   link: "/admin/product/edit",
+      // },
     ],
     languages: {
       title: "Languages",
@@ -634,16 +649,16 @@ export const AdminHeaderText: AdminHeaderTextProps = {
     links: [
       {
         text: "Панель администратора",
-        link: "/admin",
+        link: "/c5e478d59288c841aa530db6845c4c8d962893a001ce4e11a4963873aa98134a/admin",
       },
-      {
-        text: "Категории",
-        link: "/admin/category/edit",
-      },
-      {
-        text: "Продукты",
-        link: "/admin/product/edit",
-      },
+      // {
+      //   text: "Категории",
+      //   link: "/admin/category/edit",
+      // },
+      // {
+      //   text: "Продукты",
+      //   link: "/admin/product/edit",
+      // },
     ],
     languages: {
       title: "Языки",
@@ -663,16 +678,16 @@ export const AdminHeaderText: AdminHeaderTextProps = {
     links: [
       {
         text: "Správca",
-        link: "/admin",
+        link: "/c5e478d59288c841aa530db6845c4c8d962893a001ce4e11a4963873aa98134a/admin",
       },
-      {
-        text: "Kategórie",
-        link: "/admin/category/edit",
-      },
-      {
-        text: "Produkty",
-        link: "/admin/product/edit",
-      },
+      // {
+      //   text: "Kategórie",
+      //   link: "/admin/category/edit",
+      // },
+      // {
+      //   text: "Produkty",
+      //   link: "/admin/product/edit",
+      // },
     ],
     languages: {
       title: "Jazyky",
@@ -1934,7 +1949,7 @@ export const PricesText: PricesTextTypes = {
           "One Time Access",
           "Sauna & Showers",
           "Often DJ & Live Music",
-          "Personal Trainer (Reservation required, for an additional fee)",
+          "PersonalReservation required, for an additional fee)",
         ],
         button: {
           text: "Contact us",
@@ -2007,6 +2022,406 @@ export const PricesText: PricesTextTypes = {
           link: "/shop",
         },
         membershipSku: "929A07E388",
+      },
+    ],
+  },
+};
+
+export const trainersText: TrainersTextProps = {
+  en: {
+    bgText: "Trainers",
+    title: "Our Trainers",
+    genderText: "Trainer Gender",
+    genderFilter: {
+      all: { text: "All", value: "all" },
+      male: { text: "Male", value: "male", color: "blue" },
+      female: { text: "Female", value: "female", color: "pink" },
+    },
+    seeMoreText: "See more",
+    seeLessText: "See less",
+    languageText: "Trainer Language",
+    languageFilter: [
+      { text: "Slovak", value: "sk" },
+      { text: "English", value: "en" },
+      { text: "German", value: "de" },
+      { text: "Russian", value: "ru" },
+      { text: "Ukrainian", value: "ua" },
+      { text: "Spanish", value: "es" },
+    ],
+    trainers: [
+      {
+        image: {
+          src: "team/k8mgwucduwycgjbkm21l",
+          alt: "trainer",
+        },
+        qr: { src: "null", alt: "qr" },
+        name: "Christian Andre",
+        number: "+421 907 045 381",
+        email: "trainer.chis.andre@gmail.com",
+        instagram: {
+          name: "trainer_chris.andre",
+          link: "https://www.instagram.com/trainer_chris.andre?igsh=MXFyOW5rNDZzdmRvbA%3D%3D&utm_source=qr",
+        },
+        post: { src: "team/w0kzs1vsumycitd1hscd", alt: "post" },
+        gender: "male", // DONT TRANSLATE THIS FIELD!
+        languageFilter: [
+          { text: "English", value: "en" },
+          { text: "Spanish", value: "es" },
+        ],
+        description:
+          "I am an International Sports Science Association (ISSA) certified fitness and bodybuilding coach, a dedicated nutrition consultant and a master expert in exercise biomechanics (certified). Specializing in body recomposition, I am passionate about my work and bring over 8 years of professional experience in fitness training, nutritional support and body recomposition. My comprehensive and personalized approach has helped numerous individuals improve their health, fitness and mental well-being. I am committed to empowering clients to achieve their fitness goals through expert guidance and unwavering support.",
+      },
+
+      {
+        image: { src: "team/gh6w8tmkbhvjj0kgwhvb", alt: "trainer" },
+        qr: { src: "null", alt: "qr" },
+        name: "Vladimír Kerul",
+        number: "+421 911 434 040",
+        email: "ibffslovalia@gmail.com",
+        instagram: { name: "", link: "" },
+        post: { src: "", alt: "" },
+        gender: "male",
+        languageFilter: [{ text: "English", value: "en" }],
+        description: "",
+      },
+      {
+        image: { src: "team/aintp3zkttqwloakr761", alt: "trainer" },
+        qr: { src: "null", alt: "qr" },
+        name: "Vladimír Gostík",
+        number: "+421 944 160 283",
+        email: "gostikvladko9@gmail.com",
+        instagram: { name: "", link: "" },
+        post: { src: "", alt: "" },
+        gender: "male",
+        languageFilter: [{ text: "English", value: "en" }],
+        description: "",
+      },
+      {
+        image: { src: "team/wxje9mt4ff0c1yljz3gs", alt: "trainer" },
+        qr: { src: "null", alt: "qr" },
+        name: "Tomaš Harničár",
+        number: "+421 910 220 593",
+        email: "tomasharnicar@gmail.com",
+        instagram: { name: "", link: "" },
+        post: { src: "null", alt: "post" },
+        gender: "male",
+        languageFilter: [
+          { text: "English", value: "en" },
+          { text: "Slovak", value: "sk" },
+        ],
+        description: "",
+      },
+      {
+        image: { src: "team/uxhnhzfmqktuyt163zda", alt: "trainer" },
+        qr: { src: "null", alt: "qr" },
+        name: "Tomáš Krištín",
+        number: "+421 903 322 155",
+        email: "tom.personalcoach@gmail.com",
+        instagram: {
+          name: "tomas_mbtkcoaching",
+          link: "https://www.instagram.com/tomas_mbtkcoaching/",
+        },
+        post: { src: "team/mzwmwl0zih8rql0dvlvz", alt: "post" },
+        gender: "male",
+        languageFilter: [
+          { text: "English", value: "en" },
+          { text: "Slovak", value: "sk" },
+        ],
+        description:
+          "I am a certified fitness and bodybuilding trainer. I specialize in strength and muscle development, body shaping, fat reduction, posture correction, and overall body functionality. I strive to make every training session enjoyable, leaving clients feeling good about themselves and happier. I became a trainer because working with people fulfills me, and I live for sports, which I have been involved in since childhood. I approach each client individually to achieve the best possible results. I will teach you how to exercise correctly, progress, push your limits, and become physically and mentally stronger and more resilient. With my 8 years of experience in fitness, competing at the highest level among amateurs in international competitions, and in sports, I will help you feel better in your own body and live a healthier life.",
+      },
+      {
+        image: {
+          src: "team/as1wxxew4v9val1act2d",
+          alt: "trainer",
+        },
+        qr: { src: "null", alt: "qr" },
+        name: "Vladimír Svonco",
+        number: "+421 903 246 426",
+        email: "vsvoncinar@yahoo.com",
+        instagram: { name: "", link: "" },
+        post: { src: "", alt: "" },
+        gender: "male",
+        languageFilter: [{ text: "English", value: "en" }],
+        description: "",
+      },
+      {
+        image: {
+          src: "team/lmoqvppxnv8ol4tkj8it",
+          alt: "trainer",
+        },
+        qr: { src: "null", alt: "qr" },
+        name: "Tamara Iglárová",
+        number: "+421 905 824 005",
+        email: "iglarovaa@gmail.com",
+        instagram: {
+          name: "tamkaiglarova",
+          link: "https://www.instagram.com/tamkaiglarova",
+        },
+        post: { src: "team/qr0sx1r3olt80yzazk84", alt: "post" },
+        gender: "female",
+        languageFilter: [
+          { text: "English", value: "en" },
+          { text: "Slovak", value: "sk" },
+        ],
+        description:
+          "I am a certified personal trainer and have been involved in exercise for 6 years. I am studying regeneration and nutrition in sports at Masaryk University. Thanks to my studies, I work not only with the general population but also with athletes. I deal not only with personal training but also with body physiology, nutrition, and regeneration. I enjoy acquiring new knowledge about nutrition and exercise, which I apply when working with my clients, as a healthy and functional body is not only a reflection of training but also of proper lifestyle, regeneration, and mental well-being. I am happy to share my knowledge and help my clients achieve their goals.",
+      },
+      {
+        image: {
+          src: "team/nk8uf0piyyetnbw30tl3",
+          alt: "trainer",
+        },
+        qr: { src: "null", alt: "qr" },
+        name: "Steve Šterk",
+        number: "+421 902 207 208",
+        email: "stefan.sterk@gmail.com",
+        instagram: {
+          name: "steve_dogwear",
+          link: "https://www.instagram.com/steve_dogwear?igsh=azl3MW96cTlpM2J1&utm_source=qr ",
+        },
+        post: { src: "team/hegipyosbjukvl5hq81b", alt: "post" },
+        gender: "male",
+        languageFilter: [
+          { text: "English", value: "en" },
+          { text: "Slovak", value: "sk" },
+        ],
+        description:
+          "With 15 years of experience, I specialize in preparation and comprehensive coaching for runners, focusing on the analysis and improvement of running technique. I also work with children and young athletes to develop their speed and strength abilities. Additionally, I offer exercises designed to eliminate spine problems without the need for surgery, utilizing the SM system and dynamic stabilization techniques.\nIn terms of my sporting achievements, I am an active representative of Slovakia in individual mushing, as well as running (canicross), XC biking, and scootering with a dog. I was the Vice World Champion in 2023 (ICF), secured 3rd place at the 2022 European Championships (IFSS), and am a multiple Slovak Champion and Vice Champion in the categories of running, XC biking, scootering, and cross-country skiing with a dog.",
+      },
+      {
+        image: {
+          src: "team/qtrqv8nmqooyux47yjon",
+          alt: "trainer",
+        },
+        qr: { src: "null", alt: "qr" },
+        name: "Stanka Kajlová",
+        number: "+421 903 118 287",
+        email: "kajlovastanka@gmail.com",
+        instagram: { name: "", link: "" },
+        post: { src: "", alt: "" },
+        gender: "female",
+        languageFilter: [{ text: "English", value: "en" }],
+        description: "",
+      },
+      {
+        image: {
+          src: "team/k8mgwucduwycgjbkm21l",
+          alt: "trainer",
+        },
+        qr: { src: "null", alt: "qr" },
+        name: "Christian Andre",
+        number: "+421 907 045 381",
+        email: "trainer.chis.andre@gmail.com",
+        instagram: { name: "", link: "" },
+        post: { src: "", alt: "" },
+        gender: "male",
+        languageFilter: [{ text: "English", value: "en" }],
+        description: "",
+      },
+      {
+        image: {
+          src: "team/s4ecsmbozyrxydbfmb3t",
+          alt: "trainer",
+        },
+        qr: { src: "null", alt: "qr" },
+        name: "Vsevolod Piddenezhnyy",
+        number: "+421 948 445 196",
+        email: "vsevolod.piddenezhnyy@gmail.com",
+        instagram: {
+          name: "vsevolod.piddenezhnyy",
+          link: "https://www.instagram.com/vsevolod.piddenezhnyy/?igsh=aWczZDk5bm5pMjN2&utm_source=qr",
+        },
+        post: { src: "team/zsrnzd9h0ckxydlktets", alt: "post" },
+        gender: "male",
+        languageFilter: [
+          { text: "English", value: "en" },
+          { text: "Slovak", value: "sk" },
+          { text: "Ukrainian", value: "ua" },
+          { text: "Russian", value: "ru" },
+        ],
+        description:
+          "My name is Vsevolod (Sevo). I have been helping people achieve their desired results since I started university, over 8 years ago. Over this time, my services have evolved into comprehensive care. In addition to focusing on body composition changes, I work with almost every client on posture correction (e.g., back pain and spine issues, post-injury knee rehabilitation) through movement pattern changes, decompensation exercises, and breathing techniques. This leads to better body control both in the gym and in everyday life.\nTraining performance is greatly influenced by nutrition, mindset, and mental health. Therefore, questions like 'What did you eat?' and 'How do you feel today?' are part of every training session. Additionally, as a certified masseur, I ensure my clients receive quality recovery.",
+      },
+      {
+        image: {
+          src: "team/qqiuuwgkhqyteauj9s9w",
+          alt: "trainer",
+        },
+        qr: { src: "null", alt: "qr" },
+        name: "Natália Syneková",
+        number: "+421 911 872 371",
+        email: "natali.zeljenkova@gmail.com",
+        instagram: { name: "", link: "" },
+        post: { src: "", alt: "" },
+        gender: "female",
+        languageFilter: [{ text: "English", value: "en" }],
+        description: "",
+      },
+      {
+        image: {
+          src: "team/zrxuppwubl0244qckrxe",
+          alt: "trainer",
+        },
+        qr: { src: "null", alt: "qr" },
+        name: "Laura Miškufová",
+        number: "+421 917 418 245",
+        email: "laura.miskufova@gmail.com",
+        instagram: { name: "", link: "" },
+        post: { src: "", alt: "" },
+        gender: "female",
+        languageFilter: [{ text: "English", value: "en" }],
+        description: "",
+      },
+      {
+        image: {
+          src: "team/cnwlgwwqp7kluhr4e1xf",
+          alt: "trainer",
+        },
+        qr: { src: "null", alt: "qr" },
+        name: "Matej Franta",
+        number: "+421 910 513 123",
+        email: "matofranta10@gmail.com",
+        instagram: { name: "", link: "" },
+        post: { src: "", alt: "" },
+        gender: "male",
+        languageFilter: [{ text: "English", value: "en" }],
+        description: "",
+      },
+      {
+        image: {
+          src: "team/lzooavtqecq66qeshhub",
+          alt: "trainer",
+        },
+        qr: { src: "null", alt: "qr" },
+        name: "Kateryna Okunieva",
+        number: "+421 907 596 214",
+        email: "greatekaterinaokuneva@gmail.com",
+        instagram: {
+          name: "katyshka_fitness",
+          link: "https://www.instagram.com/katyshka_fitness/?igsh=MWczNWV1ZnozemZnYQ%3D%3D",
+        },
+        post: { src: "team/vias2vjwkvbjbl0h465g", alt: "post" },
+        gender: "female",
+        languageFilter: [
+          { text: "English", value: "en" },
+          { text: "Ukrainian", value: "ua" },
+          { text: "Russian", value: "ru" },
+        ],
+        description:
+          "My approach focuses on training for pleasure and maintaining a stable mental state. Nutrition accounts for 100% of success, but through psychology, I'll teach you to feel your body and its needs. I'll show you how to care for yourself and prove that you can look at your reflection with love and pleasure.",
+      },
+      {
+        image: {
+          src: "team/sg2rphtlklnioiyjxa1z",
+          alt: "trainer",
+        },
+        qr: { src: "null", alt: "qr" },
+        name: "Ján Ostraczký",
+        number: "+421 907 767 090",
+        email: "ostraczky@gmail.com",
+        instagram: {
+          name: "mystehx_coach",
+          link: "https://www.instagram.com/mystehx_coach?igsh=MTc1OTc4aTB3cmlubQ%3D%3D&utm_source=qr",
+        },
+        post: { src: "team/tme9stirkitgb5ts0nf3", alt: "post" },
+        gender: "male",
+        languageFilter: [
+          { text: "English", value: "en" },
+          { text: "Slovak", value: "sk" },
+        ],
+        description:
+          "As a former professional football player and certified strength and conditioning coach, I bring a wealth of experience and knowledge to my clients, accumulated over 17 years in the fitness industry. Throughout my coaching career, I have completed over 20 training courses and obtained several international certifications in coaching, physiotherapy, and nutritional counseling. I work with a diverse clientele, including the general population, youth, elite athletes, post-operative cases, pregnant women, and postpartum exercise. I always strive to help clients achieve their goals in the healthiest possible way. My approach is guided by three fundamental pillars: movement, nutrition, and recovery.",
+      },
+    ],
+  },
+  sk: {
+    bgText: "Tréneri",
+    title: "Naši Tréneri",
+    genderText: "Pohlavie Trénera",
+    genderFilter: {
+      all: { text: "Všetko", value: "all" },
+      male: { text: "Muž", value: "male", color: "blue" },
+      female: { text: "Žena", value: "female", color: "pink" },
+    },
+    seeMoreText: "Zobraziť viac",
+    seeLessText: "Zobraziť menej",
+    languageText: "Jazyk Trénera",
+    languageFilter: [
+      { text: "Slovenský", value: "sk" },
+      { text: "Anglický", value: "en" },
+      { text: "Nemecký", value: "de" },
+      { text: "Ruský", value: "ru" },
+      { text: "Ukrajinský", value: "ua" },
+      { text: "Španielsky", value: "es" },
+    ],
+    trainers: [
+      {
+        image: {
+          src: "team/k8mgwucduwycgjbkm21l",
+          alt: "tréner",
+        },
+        qr: { src: "null", alt: "qr" },
+        name: "Christian Andre",
+        number: "+421 907 045 381",
+        email: "trainer.chis.andre@gmail.com",
+        instagram: {
+          name: "trainer_chris.andre",
+          link: "https://www.instagram.com/trainer_chris.andre?igsh=MXFyOW5rNDZzdmRvbA%3D%3D&utm_source=qr",
+        },
+        post: { src: "team/nztgun99t7weansmtbf6", alt: "príspevok" },
+        gender: "male", // NEPREKLADAJTE TOTO POLE!
+        languageFilter: [
+          { text: "Anglický", value: "en" },
+          { text: "Španielsky", value: "es" },
+        ],
+        description:
+          "Som certifikovaný tréner fitness a kulturistiky Medzinárodnej asociácie športových vied (ISSA), venovaný poradca pre výživu a majster v oblasti biomechaniky cvičenia (certifikovaný). Špecializujem sa na prekompozíciu tela, som vášnivý pre svoju prácu a prinášam viac ako 8 rokov profesionálnych skúseností vo fitness tréningu, nutričnej podpore a prekompozícii tela. Môj komplexný a personalizovaný prístup pomohol mnohým jednotlivcom zlepšiť svoje zdravie, kondíciu a duševnú pohodu. Som odhodlaný posilniť klientov k dosiahnutiu ich fitness cieľov prostredníctvom odborného vedenia a neúnavnej podpory.",
+      },
+    ],
+  },
+  ru: {
+    bgText: "Тренеры",
+    title: "Наши Тренеры",
+    genderText: "Пол Тренера",
+    genderFilter: {
+      all: { text: "Все", value: "all" },
+      male: { text: "Мужчина", value: "male", color: "blue" },
+      female: { text: "Женщина", value: "female", color: "pink" },
+    },
+    seeMoreText: "Посмотреть больше",
+    seeLessText: "Посмотреть меньше",
+    languageText: "Язык Тренера",
+    languageFilter: [
+      { text: "Словацкий", value: "sk" },
+      { text: "Английский", value: "en" },
+      { text: "Немецкий", value: "de" },
+      { text: "Русский", value: "ru" },
+      { text: "Украинский", value: "ua" },
+      { text: "Испанский", value: "es" },
+    ],
+    trainers: [
+      {
+        image: {
+          src: "team/k8mgwucduwycgjbkm21l",
+          alt: "тренер",
+        },
+        qr: { src: "null", alt: "qr" },
+        name: "Кристиан Андре",
+        number: "+421 907 045 381",
+        email: "trainer.chis.andre@gmail.com",
+        instagram: {
+          name: "trainer_chris.andre",
+          link: "https://www.instagram.com/trainer_chris.andre?igsh=MXFyOW5rNDZzdmRvbA%3D%3D&utm_source=qr",
+        },
+        post: { src: "team/nztgun99t7weansmtbf6", alt: "пост" },
+        gender: "male", // НЕ ПЕРЕВОДИТЕ ЭТО ПОЛЕ!
+        languageFilter: [
+          { text: "Английский", value: "en" },
+          { text: "Испанский", value: "es" },
+        ],
+        description:
+          "Я сертифицированный тренер по фитнесу и бодибилдингу Международной ассоциации спортивных наук (ISSA), увлеченный консультант по питанию и сертифицированный эксперт по биомеханике упражнений. Специализируюсь на рекомпозиции тела, страстно люблю свою работу и имею более 8 лет профессионального опыта в фитнес-тренировках, поддержке питания и рекомпозиции тела. Мой комплексный и персонализированный подход помог многим людям улучшить их здоровье, физическую форму и психическое благополучие. Я стремлюсь помочь клиентам достичь их фитнес-целей с помощью экспертных рекомендаций и неустанной поддержки.",
       },
     ],
   },

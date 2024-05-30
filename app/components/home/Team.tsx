@@ -224,6 +224,11 @@ function Team() {
           <BluredCirlce color={BluredCircleColors.blue} blurRange={"85"} />
         </div>
       </div>
+      <div className="RedirectSeciton">
+        <Link href={"/trainers"} className="textSection">
+          {t("seeMore")}
+        </Link>
+      </div>
     </section>
   );
 }

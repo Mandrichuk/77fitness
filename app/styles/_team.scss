@@ -32,6 +32,16 @@
     max-width: 350px;
     z-index: -1;
   }
+
+  .RedirectSeciton {
+    width: wrapperWidth(mobile);
+    @include Flex(row, center, end);
+    margin-top: 15px;
+
+    a {
+      font-size: calc(fontSize(p) + 2px);
+    }
+  }
 }
 
 @media (min-width: 500px) {

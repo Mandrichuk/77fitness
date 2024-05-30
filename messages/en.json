@@ -141,6 +141,7 @@
     "Team": {
       "bgText": "Trainers",
       "title": "Our Trainers",
+      "seeMore": "Find your trainer",
       "trainers": {
         "trainer1": {
           "image": { "src": "team/gh6w8tmkbhvjj0kgwhvb", "alt": "trainer" },
@@ -420,7 +421,7 @@
         "alt": "image"
       },
       "title": "Payment was failed",
-      "text": "Try again later or contact us",
+      "text": "Unfortunately, an error occurred while processing your payment. Please try again later.",
       "button": {
         "text": "Shop",
         "link": "/shop"

@@ -1,22 +1,19 @@
 import React from "react";
 import { Metadata } from "next";
 
-import AdminHeader from "@/app/components/admin/AdminHeader";
+import Header from "@/app/components/common/Header";
 import Footer from "@/app/components/common/Footer";
 import CreatedBy from "@/app/components/common/CreatedBy";
 import Orders from "@/app/components/admin/Admin";
 
-import { LocaleProps } from "../../lib/index";
-
-export const metadata: Metadata = {
-  title: "Admin Panel",
-};
+import { LocaleProps } from "@/app/lib";
+import Login from "@/app/components/admin/Login";
 
 function Home({ params: { locale } }: LocaleProps) {
   return (
     <main>
-      <AdminHeader locale={locale} />
-      <Orders locale={locale} />
+      <Header locale={locale} />
+      <Login locale={locale} />
       <Footer locale={locale} />
       <CreatedBy />
     </main>

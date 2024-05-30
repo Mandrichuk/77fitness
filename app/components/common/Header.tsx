@@ -29,13 +29,16 @@ function Header({ locale }: HeaderProps) {
   const withoutLang = pathSegments.slice(1, pathSegments.length);
 
   useEffect(() => {
+    if (windowWidth > 900) {
+      setIsOpen(false);
+    }
+
     if (isOpen) {
       document.documentElement.style.overflow = "hidden";
     } else {
       document.documentElement.style.overflow = "unset";
     }
-  }, [isOpen]);
-
+  }, [isOpen, windowWidth]);
 
   const openLangToggle = () => {
     setIsLangOpen(!isLangOpen);
@@ -56,7 +59,7 @@ function Header({ locale }: HeaderProps) {
           <Image image={t.logo.image} alt={t.logo.alt} imgPriority={true} />
         </Link>
       </div>
-      {windowWidth > 768 ? (
+      {windowWidth > 900 ? (
         <>
           <nav className="screenNav">
             {t.links.map((l) =>
@@ -142,31 +145,35 @@ function Header({ locale }: HeaderProps) {
               <nav className="mobileNav">
                 {t.links.map((l) =>
                   l.link !== "/login" ? (
-                    <Link href={l.link} key={l.link}>
-                      {l.text}
-                    </Link>
+                    <div className="navLink" key={l.link}>
+                      <Link href={l.link}>{l.text}</Link>
+                      <div className="underline" />
+                    </div>
                   ) : null
                 )}
                 {t.links.map((l) =>
                   l.link === "/login" && !clientLoginData ? (
-                    <Link href={l.link} key={l.link}>
-                      {l.text}
-                    </Link>
+                    <div className="navLink" key={l.link}>
+                      <Link href={l.link}>{l.text}</Link>
+                      <div className="underline" />
+                    </div>
                   ) : null
                 )}
                 {t.shop.links.map((l, index) => (
-                  <Link
-                    href={`${l.link}`}
-                    key={`${l.text}-${index}`}
-                    className="option"
-                    onClick={() => {
-                      openToggle();
-                    }}
-                  >
-                    {l.text}
-                  </Link>
+                  <div className="navLink" key={`${l.text}-${index}`}>
+                    <Link
+                      href={`${l.link}`}
+                      className="option"
+                      onClick={() => {
+                        openToggle();
+                      }}
+                    >
+                      {l.text}
+                    </Link>
+                    <div className="underline" />
+                  </div>
                 ))}
-                <div data-anchor="currentLangContainer" className="options">
+                <div className="options">
                   {t.languages.links.map((l, index) => (
                     <Link
                       href={`/${l.link}${withoutLang}`}

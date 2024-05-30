@@ -9,7 +9,6 @@ function Categories({ locale, sku }: CategoriesProps) {
   const [data, setData] = useState<any>(null);
   const t = CategoriesText[locale] || CategoriesText["en"];
 
-
   useEffect(() => {
     const fetchData = async () => {
       try {
