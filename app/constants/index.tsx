@@ -1168,7 +1168,7 @@ export const LoginText: LoginTextProps = {
 export const OrderShopText: OrderShopTextProps = {
   en: {
     inProgress: "Paid, In progress",
-    done: "Paid, Done",
+    done: "Paid, Processed",
     statusText: "Status",
     totalText: "Total",
     emailText: "Email",
@@ -1177,7 +1177,7 @@ export const OrderShopText: OrderShopTextProps = {
   },
   sk: {
     inProgress: "Zaplatené, V procese",
-    done: "Zaplatené, Hotovo",
+    done: "Zaplatené, Spracované",
     statusText: "Stav",
     totalText: "Celkom",
     emailText: "Email",
@@ -1188,8 +1188,8 @@ export const OrderShopText: OrderShopTextProps = {
     },
   },
   ru: {
-    inProgress: "Оплачено, В процессе",
-    done: "Оплачено, Готово",
+    inProgress: "Оплачено, В обработке",
+    done: "Оплачено, Обработано",
     statusText: "Статус",
     totalText: "Итого",
     emailText: "Email",
