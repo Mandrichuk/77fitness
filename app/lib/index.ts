@@ -126,7 +126,9 @@ export interface OrderAdminProps extends Language {
 
 export interface OrdersProps extends Language {}
 
-export interface AdminProps extends Language {}
+export interface AdminProps extends Language {
+  orders?: any;
+}
 
 export interface CartProductProps {
   sku: string;
@@ -877,8 +879,8 @@ export interface TrainerProps {
   trainer: Trainer;
   selectedGender: string;
   selectedLanguage: string;
-	seeMoreText: string;
-	seeLessText: string;
+  seeMoreText: string;
+  seeLessText: string;
 }
 
 interface TrainerFilterItem {
@@ -904,6 +906,12 @@ interface Trainer {
   gender: string;
   languageFilter: { text: string; value: string }[];
   description: string;
+}
+
+export interface TrainerSectionProps extends Language {
+  sectionTrainers: Trainer[];
+  seeMoreText: string;
+  seeLessText: string;
 }
 
 interface TrainerText {

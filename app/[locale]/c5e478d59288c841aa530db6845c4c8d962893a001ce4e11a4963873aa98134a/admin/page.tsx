@@ -7,16 +7,19 @@ import CreatedBy from "@/app/components/common/CreatedBy";
 import Orders from "@/app/components/admin/Admin";
 
 import { LocaleProps } from "@/app/lib";
+import { getOrders } from "@/app/services/data";
 
 export const metadata: Metadata = {
   title: "Admin Panel",
 };
 
-function Home({ params: { locale } }: LocaleProps) {
+async function Home({ params: { locale } }: LocaleProps) {
+const orders = await getOrders();
+console.log(orders)
   return (
     <main>
       <AdminHeader locale={locale} />
-      <Orders locale={locale} />
+      <Orders locale={locale} orders={orders} />
       <Footer locale={locale} />
       <CreatedBy />
     </main>

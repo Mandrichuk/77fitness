@@ -41,6 +41,8 @@ function Orders({ locale }: OrdersProps) {
           headers: {
             "Content-Type": "application/json",
           },
+          cache: "no-store",
+          next: { revalidate: 10 },
           body: JSON.stringify(clientData),
         });
 

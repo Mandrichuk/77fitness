@@ -88,6 +88,7 @@
 
       .trainer {
         width: 100%;
+        position: relative;
         padding: 40px 20px 20px 20px;
         background-color: color(custom-black);
         border-radius: 15px;
@@ -119,6 +120,9 @@
           }
 
           .title {
+            max-width: 200px;
+            overflow: hidden;
+            text-overflow: ellipsis;
             font-weight: fontWeight(semibold);
             font-size: calc(fontSize(p) + 5px);
           }
@@ -150,10 +154,14 @@
           .email,
           .phone {
             font-size: calc(fontSize(p) + 3px);
+            max-width: 240px;
+            overflow: hidden;
+            text-overflow: ellipsis;
           }
         }
 
         .details {
+          margin-bottom: 30px;
           position: relative;
           max-height: 240px;
           overflow: hidden;
@@ -194,9 +202,11 @@
           }
         }
         .moreButton {
+          position: absolute;
+          bottom: 10px;
+          right: 10px;
           width: 100%;
           @include Flex(row, center, end);
-          margin-top: 20px;
           cursor: pointer;
         }
       }
@@ -554,6 +564,10 @@
             position: relative;
             max-height: 240px;
             overflow: hidden;
+
+            .text {
+              font-size: calc(fontSize(p) - 3px);
+            }
 
             &.open {
               max-height: none;

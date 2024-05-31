@@ -36,6 +36,8 @@ function CartProducts({ locale }: CartProductsProps) {
           headers: {
             "Content-Type": "application/json",
           },
+          cache: "no-store",
+          next: { revalidate: 10 },
           body: JSON.stringify(cart),
         });
         const data = await response.json();

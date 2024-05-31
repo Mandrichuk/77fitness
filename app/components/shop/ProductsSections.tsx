@@ -158,7 +158,9 @@ function ProductsSections({ locale, sku }: ProductSectionProps) {
                                       ? item.category.title[locale]
                                       : "Not Found"}
                                   </p>
-                                  <p className="name">{product.title[locale]}</p>
+                                  <p className="name">
+                                    {product.title[locale]}
+                                  </p>
                                   <p className="description">
                                     {product.description
                                       ? product.description[locale]

@@ -2078,11 +2078,19 @@ export const trainersText: TrainersTextProps = {
         name: "Vladimír Kerul",
         number: "+421 911 434 040",
         email: "ibffslovalia@gmail.com",
-        instagram: { name: "", link: "" },
-        post: { src: "", alt: "" },
+        instagram: {
+          name: "coachkerul",
+          link: "https://www.instagram.com/coachkerul/?igsh=MmlmYzZlMXFmNmI%3D&utm_source=qr",
+        },
+        post: { src: "shop/rbguk0vovn1x9hhrdmjn", alt: "post" },
         gender: "male",
-        languageFilter: [{ text: "English", value: "en" }],
-        description: "",
+        languageFilter: [
+          { text: "English", value: "en" },
+          { text: "Slovak", value: "sk" },
+          { text: "German", value: "de" },
+        ],
+        description:
+          "Certified Trainer Level 3 in Bodybuilding, Fitness, and Powerlifting. BOSU Instructor Level 1. TRX Instructor. I have been involved in training for 22 years, and for 16 of those years, I have been competitively preparing athletes (bikini fitness). I provide services in muscle mass gain, body fat reduction, and body shaping. I focus on creating nutrition and training plans for competitors as well as clients (transformers who want to lose weight or gain weight).\nAs a former American football player for the Vienna Knights and later the Bratislava Monarchs, I bring many elements of professional athlete preparation into my training sessions. From 2018 to 2023, I held the position of national team coach for women in the WABBA Slovakia association, and since 2022, after many years of cooperation with the IBFF association, I was appointed as the president for IBFF Slovakia.",
       },
       {
         image: { src: "team/aintp3zkttqwloakr761", alt: "trainer" },
@@ -2206,21 +2214,6 @@ export const trainersText: TrainersTextProps = {
       },
       {
         image: {
-          src: "team/k8mgwucduwycgjbkm21l",
-          alt: "trainer",
-        },
-        qr: { src: "null", alt: "qr" },
-        name: "Christian Andre",
-        number: "+421 907 045 381",
-        email: "trainer.chis.andre@gmail.com",
-        instagram: { name: "", link: "" },
-        post: { src: "", alt: "" },
-        gender: "male",
-        languageFilter: [{ text: "English", value: "en" }],
-        description: "",
-      },
-      {
-        image: {
           src: "team/s4ecsmbozyrxydbfmb3t",
           alt: "trainer",
         },
@@ -2267,11 +2260,18 @@ export const trainersText: TrainersTextProps = {
         name: "Laura Miškufová",
         number: "+421 917 418 245",
         email: "laura.miskufova@gmail.com",
-        instagram: { name: "", link: "" },
-        post: { src: "", alt: "" },
+        instagram: {
+          name: "lauramiskuf",
+          link: "https://www.instagram.com/lauramiskuf/?igsh=MTV5NTZ5M2p2bzNjdA%3D%3D&utm_source=qr",
+        },
+        post: { src: "shop/vfh4gfazvpixtn1w46bk", alt: "post" },
         gender: "female",
-        languageFilter: [{ text: "English", value: "en" }],
-        description: "",
+        languageFilter: [
+          { text: "English", value: "en" },
+          { text: "Slovak", value: "sk" },
+        ],
+        description:
+          "As a personal trainer, I help my clients create a sustainable lifestyle and, most importantly, habits that guarantee not just short-term changes but sustainable results. I believe that success lies in a balance between physical training, nutrition, recovery, and mental health. I inspire my clients to realize their strength and value, helping them achieve not only aesthetic but also health goals. Since the female body is unique, it requires a specific and individual approach, which is why I focus exclusively on female clients. I would love to help you too, so what do you say? Are you ready?",
       },
       {
         image: {

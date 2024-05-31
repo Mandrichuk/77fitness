@@ -12,7 +12,7 @@ import formatDate from "@/app/utils/formatDate";
 import TextLayers from "../common/TextLayers";
 import toFixedNumber from "@/app/utils/toFixedNumber";
 
-function Orders({ locale }: AdminProps) {
+function Orders({ locale, orders }: AdminProps) {
   const t = AdminText[locale] || AdminText["en"];
   const [data, setData] = useState<any>(null);
   const [searchQuery, setSearchQuery] = useState("");
@@ -26,7 +26,7 @@ function Orders({ locale }: AdminProps) {
     }
   }, [adminData]);
 
-  useEffect(() => {
+/*   useEffect(() => {
     async function fetchData() {
       try {
         const response = await fetch("/api/admin", {
@@ -35,7 +35,7 @@ function Orders({ locale }: AdminProps) {
             "Content-Type": "application/json",
           },
           cache: "no-store",
-          next: { revalidate: 10 },
+          next: { revalidate: 0 },
         });
 
         if (response.ok) {
@@ -52,7 +52,11 @@ function Orders({ locale }: AdminProps) {
     }
 
     fetchData();
-  }, []);
+  }, []); */
+
+  useEffect(() => {
+  setData(orders) 
+  }, [orders]);
 
   if (!data) {
     return (
