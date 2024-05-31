@@ -11,10 +11,11 @@ import { SVGs } from "@/app/constants";
 import formatDate from "@/app/utils/formatDate";
 import TextLayers from "../common/TextLayers";
 import toFixedNumber from "@/app/utils/toFixedNumber";
+import CopyToClipboard from "@/app/utils/CopyToClipboard";
 
 function Orders({ locale, orders }: AdminProps) {
   const t = AdminText[locale] || AdminText["en"];
-  const [data, setData] = useState<any>(null);
+  const [data, setData] = useState<any>(orders);
   const [searchQuery, setSearchQuery] = useState("");
   const adminData = useSelector((state: RootState) => state.adminLogin.value);
 
@@ -25,38 +26,6 @@ function Orders({ locale, orders }: AdminProps) {
       return;
     }
   }, [adminData]);
-
-/*   useEffect(() => {
-    async function fetchData() {
-      try {
-        const response = await fetch("/api/admin", {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          cache: "no-store",
-          next: { revalidate: 0 },
-        });
-
-        if (response.ok) {
-          console.log("Fetch successful");
-          const responseData = await response.json();
-          setData(responseData);
-        } else {
-          const text = await response.text();
-          console.error("Error:", text);
-        }
-      } catch (error) {
-        console.error("Network error:", error);
-      }
-    }
-
-    fetchData();
-  }, []); */
-
-  useEffect(() => {
-  setData(orders) 
-  }, [orders]);
 
   if (!data) {
     return (
@@ -74,6 +43,8 @@ function Orders({ locale, orders }: AdminProps) {
       order.sku.toLowerCase().includes(searchQuery.toLowerCase()) ||
       order.clientSku.toLowerCase().includes(searchQuery.toLowerCase())
   );
+
+  console.log(data);
 
   return (
     <section className="AdminShop">
@@ -233,6 +204,11 @@ function InProccessOrder({
       </div>
       {productsOpen && (
         <div className={`orderDetails`}>
+          <div className="emailContainer">
+            <p className="text">{t.emailText}</p>
+            {/* <p className="email">{orderData.clientEmail}</p> */}
+            <CopyToClipboard text={orderData.clientEmail} locale={locale} />
+          </div>
           <div className="orderProducts">
             {orderData.products.map((product: any) => (
               <OrderProducts

@@ -105,8 +105,23 @@
       height: 100%;
       // width: 94%;
 
-      .orderProducts {
+      .emailContainer {
+        width: 100%;
+        @include Flex(row, center, space-between);
         margin-top: 20px;
+
+        .text {
+          color: color(custom-gray);
+          font-weight: fontWeight(semibold);
+        }
+
+        .email {
+          font-weight: fontWeight(semibold);
+          cursor: pointer;
+        }
+      }
+
+      .orderProducts {
         width: 100%;
         @include Flex(column, center, center);
         .orderProduct {
@@ -183,9 +198,11 @@
             }
 
             .cartPrices {
+              width: 80px;
               @include Flex(row, center, start);
               margin: 0;
               .newPrice {
+
                 font-size: calc(fontSize(p) + 7px);
                 font-weight: fontWeight(black);
                 color: #e30036;
@@ -297,8 +314,6 @@
         margin-top: 30px;
         @include Flex(row, center, space-between);
 
-
-
         .numberData {
           width: 120px;
         }
@@ -346,7 +361,6 @@
         width: 92%;
 
         .orderProducts {
-          margin-top: 20px;
           width: 100%;
           @include Flex(column, center, center);
           .orderProduct {
@@ -563,7 +577,6 @@
         width: 92%;
 
         .orderProducts {
-          margin-top: 20px;
           width: 100%;
           @include Flex(column, center, center);
           .orderProduct {

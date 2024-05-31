@@ -524,6 +524,7 @@ interface OrderShopTextItem {
   done: string;
   statusText: string;
   totalText: string;
+  emailText: string;
   moveToDoneButton: {
     text: string;
     link: string;

@@ -1171,6 +1171,7 @@ export const OrderShopText: OrderShopTextProps = {
     done: "Paid, Done",
     statusText: "Status",
     totalText: "Total",
+    emailText: "Email",
     moveToDoneButton: { text: "Move to done orders", link: "" },
     removeToUndoneButton: { text: "Remove to undone orders", link: "" },
   },
@@ -1179,6 +1180,7 @@ export const OrderShopText: OrderShopTextProps = {
     done: "Zaplatené, Hotovo",
     statusText: "Stav",
     totalText: "Celkom",
+    emailText: "Email",
     moveToDoneButton: { text: "Presunúť na hotové objednávky", link: "" },
     removeToUndoneButton: {
       text: "Odstrániť do nedokončených objednávok",
@@ -1190,6 +1192,7 @@ export const OrderShopText: OrderShopTextProps = {
     done: "Оплачено, Готово",
     statusText: "Статус",
     totalText: "Итого",
+    emailText: "Email",
     moveToDoneButton: { text: "Переместить в готовые заказы", link: "" },
     removeToUndoneButton: { text: "Убрать в невыполненные заказы", link: "" },
   },
@@ -2425,4 +2428,10 @@ export const trainersText: TrainersTextProps = {
       },
     ],
   },
+};
+
+export const CopyToClipboardText = {
+  en: "Copied to clipboard successfully!",
+  sk: "Úspešne skopírované do schránky!",
+  ru: "Успешно скопировано в буфер обмена!",
 };
