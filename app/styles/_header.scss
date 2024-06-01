@@ -128,6 +128,12 @@ header {
         }
       }
     }
+
+    .login {
+      padding: 10px 30px;
+      background-color: color(secondary-color);
+      border-radius: borderRadius(mobile);
+    }
   }
 
   .mobileNav {

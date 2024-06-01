@@ -62,20 +62,11 @@ function Header({ locale }: HeaderProps) {
       {windowWidth > 900 ? (
         <>
           <nav className="screenNav">
-            {t.links.map((l) =>
-              l.link !== "/login" ? (
-                <Link href={l.link} key={l.link}>
-                  {l.text}
-                </Link>
-              ) : null
-            )}
-            {t.links.map((l) =>
-              l.link === "/login" && !clientLoginData ? (
-                <Link href={l.link} key={l.link}>
-                  {l.text}
-                </Link>
-              ) : null
-            )}
+            {t.links.map((l) => (
+              <Link href={l.link} key={l.link}>
+                {l.text}
+              </Link>
+            ))}
 
             <div className="shop">
               <div
@@ -90,21 +81,31 @@ function Header({ locale }: HeaderProps) {
               </div>
               {isShopOpen && (
                 <div data-anchor="currentShopContainer" className="options">
-                  {t.shop.links.map((l, index) => (
-                    <Link
-                      href={l.link}
-                      key={`${l.text}-${index}`}
-                      className="option"
-                      onClick={() => {
-                        openShopToggle();
-                      }}
-                    >
-                      {l.text}
-                    </Link>
-                  ))}
+                  {t.shop.links.map((l, index) => {
+                    if (l.link !== "/login") {
+                      return (
+                        <Link
+                          href={l.link}
+                          key={`${l.text}-${index}`}
+                          className="option"
+                          onClick={() => {
+                            openShopToggle();
+                          }}
+                        >
+                          {l.text}
+                        </Link>
+                      );
+                    }
+                    return null;
+                  })}
                 </div>
               )}
             </div>
+            {!clientLoginData && (
+              <Link href={t.login.link} className="option login">
+                {t.login.text}
+              </Link>
+            )}
           </nav>
           <div className="languages">
             <div
@@ -143,36 +144,44 @@ function Header({ locale }: HeaderProps) {
                 {SVGs.close}
               </div>
               <nav className="mobileNav">
-                {t.links.map((l) =>
-                  l.link !== "/login" ? (
-                    <div className="navLink" key={l.link}>
-                      <Link href={l.link}>{l.text}</Link>
-                      <div className="underline" />
-                    </div>
-                  ) : null
-                )}
-                {t.links.map((l) =>
-                  l.link === "/login" && !clientLoginData ? (
-                    <div className="navLink" key={l.link}>
-                      <Link href={l.link}>{l.text}</Link>
-                      <div className="underline" />
-                    </div>
-                  ) : null
-                )}
-                {t.shop.links.map((l, index) => (
-                  <div className="navLink" key={`${l.text}-${index}`}>
-                    <Link
-                      href={`${l.link}`}
-                      className="option"
-                      onClick={() => {
-                        openToggle();
-                      }}
-                    >
-                      {l.text}
-                    </Link>
+                {t.links.map((l) => (
+                  <div className="navLink" key={l.link}>
+                    <Link href={l.link}>{l.text}</Link>
                     <div className="underline" />
                   </div>
                 ))}
+                {t.shop.links.map((l, index) =>
+                  l.link !== "/login" ? (
+                    <div className="navLink" key={`${l.text}-${index}`}>
+                      <Link
+                        href={`${l.link}`}
+                        className="option"
+                        onClick={() => {
+                          openToggle();
+                        }}
+                      >
+                        {l.text}
+                      </Link>
+                      <div className="underline" />
+                    </div>
+                  ) : null
+                )}
+                {t.shop.links.map((l, index) =>
+                  !clientLoginData && l.link === "/login" ? (
+                    <div className="navLink" key={`${l.text}-${index}`}>
+                      <Link
+                        href={`${l.link}`}
+                        className="option"
+                        onClick={() => {
+                          openToggle();
+                        }}
+                      >
+                        {l.text}
+                      </Link>
+                      <div className="underline" />
+                    </div>
+                  ) : null
+                )}
                 <div className="options">
                   {t.languages.links.map((l, index) => (
                     <Link

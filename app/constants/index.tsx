@@ -496,10 +496,6 @@ export const headerText: HeaderTextProps = {
         text: "Gallery",
         link: "/gallery",
       },
-      {
-        text: "Login",
-        link: "/login",
-      },
     ],
     shop: {
       title: "Shop",
@@ -507,7 +503,15 @@ export const headerText: HeaderTextProps = {
         { text: "Shop", link: "/shop" },
         { text: "Cart", link: "/shop/cart" },
         { text: "Orders", link: "/shop/orders" },
+        {
+          text: "Login",
+          link: "/login",
+        },
       ],
+    },
+    login: {
+      text: "Login",
+      link: "/login",
     },
     languages: {
       title: "Languages",
@@ -546,6 +550,10 @@ export const headerText: HeaderTextProps = {
         link: "/login",
       },
     ],
+    login: {
+      text: "Войти",
+      link: "/login",
+    },
     shop: {
       title: "Магазин",
       links: [
@@ -591,6 +599,10 @@ export const headerText: HeaderTextProps = {
         link: "/login",
       },
     ],
+    login: {
+      text: "Prihlásiť sa",
+      link: "/login",
+    },
     shop: {
       title: "Obchod",
       links: [
@@ -2104,11 +2116,19 @@ export const trainersText: TrainersTextProps = {
         name: "Vladimír Gostík",
         number: "+421 944 160 283",
         email: "gostikvladko9@gmail.com",
-        instagram: { name: "", link: "" },
-        post: { src: "", alt: "" },
+        instagram: {
+          name: "vlado.gostik",
+          link: "https://www.instagram.com/vlado.gostik/",
+        },
+        post: { src: "team/kb4k91th5uh87mzvva3f", alt: "post" },
         gender: "male",
-        languageFilter: [{ text: "English", value: "en" }],
-        description: "",
+        languageFilter: [
+          { text: "English", value: "en" },
+          { text: "Slovak", value: "sk" },
+          { text: "Spanish", value: "es" },
+        ],
+        description:
+          "I am a former professional volleyball player with experience in training athletes. I specialize in muscle building, fat reFduction, and providing nutritional advice. My training philosophy is based on a holistic approach to improving physical fitness and health. I believe that success lies in the balance between training, nutrition, and recovery. Therefore, I focus on creating individualized training plans tailored to the specific goals and needs of each client. When working with clients, I emphasize proper movement patterns and posture correction, which help improve overall body stability. Each training session is complemented by consultations on nutrition and mental health, as I believe overall well-being is key to achieving optimal results. If you are looking for a trainer who will help you achieve your goals in a comprehensive and sustainable way, I am here for you.",
       },
       {
         image: { src: "team/wxje9mt4ff0c1yljz3gs", alt: "trainer" },

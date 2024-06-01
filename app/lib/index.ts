@@ -39,6 +39,7 @@ export interface HeaderTextProps {
       link: string;
     };
     links: Link[];
+    login: Link;
     shop: HeaderShop;
     languages: HeaderLanguages;
   };
@@ -49,6 +50,7 @@ export interface HeaderTextProps {
       link: string;
     };
     links: Link[];
+    login: Link;
     shop: HeaderShop;
     languages: HeaderLanguages;
   };
@@ -59,6 +61,7 @@ export interface HeaderTextProps {
       link: string;
     };
     links: Link[];
+    login: Link;
     shop: HeaderShop;
     languages: HeaderLanguages;
   };
