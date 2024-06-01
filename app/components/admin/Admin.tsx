@@ -206,7 +206,6 @@ function InProccessOrder({
         <div className={`orderDetails`}>
           <div className="emailContainer">
             <p className="text">{t.emailText}</p>
-            {/* <p className="email">{orderData.clientEmail}</p> */}
             <CopyToClipboard text={orderData.clientEmail} locale={locale} />
           </div>
           <div className="orderProducts">
@@ -347,6 +346,10 @@ function DoneOrder({
       </div>
       {productsOpen && (
         <div className={`orderDetails`}>
+          <div className="emailContainer">
+            <p className="text">{t.emailText}</p>
+            <CopyToClipboard text={orderData.clientEmail} locale={locale} />
+          </div>
           <div className="orderProducts">
             {orderData.products.map((product: any) => (
               <OrderProducts

@@ -713,6 +713,7 @@ export const footerText: FooterTextProps = {
       links: [
         { text: "Home", link: "/" },
         { text: "Pricing", link: "/pricing" },
+        { text: "Trainers", link: "/trainers" },
         { text: "Gallery", link: "/gallery" },
         { text: "Contact", link: "tel:+421 940 735 735" },
       ],
@@ -764,6 +765,7 @@ export const footerText: FooterTextProps = {
         { text: "Domov", link: "/" },
         { text: "Ceny", link: "/pricing" },
         { text: "Galéria", link: "/gallery" },
+        { text: "Tréneri", link: "/trainers" },
         { text: "Kontakt", link: "tel:+421 940 735 735" },
       ],
     },
@@ -813,6 +815,7 @@ export const footerText: FooterTextProps = {
       links: [
         { text: "Главная", link: "/" },
         { text: "Цены", link: "/pricing" },
+        { text: "Тренеры", link: "/trainers" },
         { text: "Галерея", link: "/gallery" },
         { text: "Контакт", link: "tel:+421 940 735 735" },
       ],
@@ -2113,14 +2116,18 @@ export const trainersText: TrainersTextProps = {
         name: "Tomaš Harničár",
         number: "+421 910 220 593",
         email: "tomasharnicar@gmail.com",
-        instagram: { name: "", link: "" },
-        post: { src: "null", alt: "post" },
+        instagram: {
+          name: "tomas_harnicar",
+          link: "https://www.instagram.com/tomas_harnicar/?igsh=MTdqOW54bHU2a3hl&utm_source=qr",
+        },
+        post: { src: "shop/xecjtpcqrdksgqtt22th", alt: "post" },
         gender: "male",
         languageFilter: [
           { text: "English", value: "en" },
           { text: "Slovak", value: "sk" },
         ],
-        description: "",
+        description:
+          "Certified Trainer in Fitness and Bodybuilding with 19 Years of Experience. `From youth gymnastics, I transitioned to fitness and bodybuilding during my adolescent years. As a personal trainer, I have worked in France (Monaco) and returned to Slovakia (Bratislava). I have been training clients for almost 16 years. Over the years, I have learned that often one must first help themselves mentally (psychologically) before their body can progress physically and reach its physiological peak. Therefore, it is not only about how a person looks in the short term, but how consistent they are in what they do and how they feel throughout the entire process and their life. It is about how they can handle both better and worse days with the help of movement, which heals and keeps the body and mind in balance. I like my training sessions to be tough but fun. I see my clients as friends. We strive to create a positive movement habit that will stay with them for a lifetime, without major fluctuations.",
       },
       {
         image: { src: "team/uxhnhzfmqktuyt163zda", alt: "trainer" },
@@ -2241,21 +2248,6 @@ export const trainersText: TrainersTextProps = {
       },
       {
         image: {
-          src: "team/qqiuuwgkhqyteauj9s9w",
-          alt: "trainer",
-        },
-        qr: { src: "null", alt: "qr" },
-        name: "Natália Syneková",
-        number: "+421 911 872 371",
-        email: "natali.zeljenkova@gmail.com",
-        instagram: { name: "", link: "" },
-        post: { src: "", alt: "" },
-        gender: "female",
-        languageFilter: [{ text: "English", value: "en" }],
-        description: "",
-      },
-      {
-        image: {
           src: "team/zrxuppwubl0244qckrxe",
           alt: "trainer",
         },
@@ -2275,21 +2267,6 @@ export const trainersText: TrainersTextProps = {
         ],
         description:
           "As a personal trainer, I help my clients create a sustainable lifestyle and, most importantly, habits that guarantee not just short-term changes but sustainable results. I believe that success lies in a balance between physical training, nutrition, recovery, and mental health. I inspire my clients to realize their strength and value, helping them achieve not only aesthetic but also health goals. Since the female body is unique, it requires a specific and individual approach, which is why I focus exclusively on female clients. I would love to help you too, so what do you say? Are you ready?",
-      },
-      {
-        image: {
-          src: "team/cnwlgwwqp7kluhr4e1xf",
-          alt: "trainer",
-        },
-        qr: { src: "null", alt: "qr" },
-        name: "Matej Franta",
-        number: "+421 910 513 123",
-        email: "matofranta10@gmail.com",
-        instagram: { name: "", link: "" },
-        post: { src: "", alt: "" },
-        gender: "male",
-        languageFilter: [{ text: "English", value: "en" }],
-        description: "",
       },
       {
         image: {

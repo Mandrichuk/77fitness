@@ -11,6 +11,11 @@
     .searchContainer {
       width: 100%;
       margin-top: 30px;
+
+      input {
+        background-color: white !important;
+        color: black !important;
+      }
     }
     .inProccessOrders,
     .doneOrders {
@@ -202,7 +207,6 @@
               @include Flex(row, center, start);
               margin: 0;
               .newPrice {
-
                 font-size: calc(fontSize(p) + 7px);
                 font-weight: fontWeight(black);
                 color: #e30036;
@@ -328,6 +332,22 @@
       .OrderShop {
         @include Flex(column, center, space-between);
         width: 100%;
+
+        .emailContainer {
+          width: 100%;
+          @include Flex(row, center, space-between);
+          margin-top: 20px;
+
+          .text {
+            color: color(custom-gray);
+            font-weight: fontWeight(semibold);
+          }
+
+          .email {
+            font-weight: fontWeight(semibold);
+            cursor: pointer;
+          }
+        }
 
         .wrapper {
           @include Flex(row, center, space-between);
