@@ -62,6 +62,17 @@ function Trainers({ locale }: TrainersProps) {
               ))}
             </div>
           </div>
+          <div className="filter">
+            <p className="title">{t.formText}</p>
+            <div className="options">
+              <a
+                href={t.formLink.link}
+                className={`whiteButton button customButton`}
+              >
+                {t.formLink.text}
+              </a>
+            </div>
+          </div>
         </div>
         <div className="trainers">
           {t.trainers.map((trainer, index) => (

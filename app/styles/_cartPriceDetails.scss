@@ -6,6 +6,46 @@
     @include Flex(column, end, end);
     width: wrapperWidth(mobile);
 
+    .alertContainer {
+      @include Flex(column, start, start);
+      background-color: rgb(19, 19, 19);
+      padding: 20px;
+      border-radius: borderRadius(mobile);
+      width: 100%;
+      margin-bottom: 30px;
+
+      .textContainer {
+        @include Flex(row, start, start);
+        margin-bottom: 20px;
+
+        .text {
+          font-weight: fontWeight(medium);
+          font-size: calc(fontSize(p) + 2px);
+        }
+
+        .icon {
+          width: 23px;
+          aspect-ratio: 1/1;
+          margin-right: 10px;
+
+          svg {
+            width: 23px;
+            aspect-ratio: 1/1;
+            fill: color(secondary-color);
+          }
+        }
+      }
+
+      .downloadText {
+        font-weight: fontWeight(medium);
+        font-size: calc(fontSize(p) + 1px);
+
+        .outstanding {
+          cursor: pointer;
+        }
+      }
+    }
+
     .priceContainer {
       width: 100%;
       margin-bottom: 20px;
@@ -35,6 +75,77 @@
     .wrapper {
       @include Flex(column, end, end);
       width: wrapperWidth(mobile);
+
+      .priceContainer {
+        width: 100%;
+        margin-bottom: 20px;
+        @include Flex(row, center, space-between);
+        font-size: calc(fontSize(p) + 5px);
+
+        .text {
+          font-weight: fontWeight(bold);
+        }
+
+        .value {
+          font-weight: fontWeight(regular);
+        }
+      }
+
+      .buttonContainer {
+        width: 220px;
+      }
+    }
+  }
+}
+
+@media (min-width: 770px) {
+  .PriceDetailsShop {
+    @include Flex(column, center, center);
+    width: 100%;
+
+    .wrapper {
+      @include Flex(column, end, end);
+      width: wrapperWidth(mobile);
+
+      .alertContainer {
+        @include Flex(column, start, start);
+        background-color: rgb(19, 19, 19);
+        padding: 30px;
+        border-radius: borderRadius(mobile);
+        width: 100%;
+        margin-bottom: 30px;
+
+        .textContainer {
+          @include Flex(row, start, start);
+          margin-bottom: 20px;
+
+          .text {
+            font-weight: fontWeight(medium);
+            font-size: calc(fontSize(p) + 2px);
+          }
+
+          .icon {
+            width: 23px;
+            aspect-ratio: 1/1;
+            margin-right: 10px;
+
+            svg {
+              width: 23px;
+              aspect-ratio: 1/1;
+              fill: color(secondary-color);
+            }
+          }
+        }
+
+        .downloadText {
+          font-weight: fontWeight(medium);
+          font-size: calc(fontSize(p) + 1px);
+
+          .outstanding {
+            cursor: pointer;
+          }
+        }
+      }
 
       .priceContainer {
         width: 100%;

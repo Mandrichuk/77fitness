@@ -623,6 +623,25 @@ header {
     .languages {
       z-index: 20;
       margin-right: 20px;
+
+      .options {
+        z-index: 20;
+        @include Flex(column, start, center);
+        margin-top: 10px;
+        position: absolute;
+        z-index: 10;
+        background-color: color(custom-black);
+        padding: 10px;
+        border-radius: borderRadius(mobile);
+
+        .option {
+          font-size: calc(fontSize(p) + 3px);
+          padding: 5px;
+          margin-left: 2px;
+          @include Flex(column, start, center);
+        }
+      }
+
       .current {
         @include Flex(row, center, center);
         cursor: pointer;
@@ -814,45 +833,47 @@ header {
         }
       }
 
-      .options {
+      .languages {
         z-index: 20;
-        @include Flex(row, start, center);
-        margin-top: 10px;
-        position: fixed;
-        bottom: 0;
-        padding: 10px;
-        border-radius: borderRadius(mobile);
+        margin-right: 20px;
 
-        .option {
-          font-size: calc(fontSize(p) + 7px);
-          padding: 5px;
-          margin-left: 2px;
+        .options {
+          z-index: 20;
           @include Flex(column, start, center);
-        }
-      }
-    }
+          margin-top: 10px;
+          position: fixed;
+          bottom: 0;
+          padding: 10px;
+          border-radius: borderRadius(mobile);
 
-    .languages {
-      z-index: 20;
-      margin-right: 20px;
-      .current {
-        @include Flex(row, center, center);
-        cursor: pointer;
-        .currentLang {
-          margin-right: 5px;
-          font-size: calc(fontSize(p) + 3px);
-        }
-
-        .icon {
-          transition: $transition;
-          svg {
-            fill: color(text-color);
-            height: iconSize(mobile) * 1.2;
-            width: iconSize(mobile) * 1.2;
+          .option {
+            font-size: calc(fontSize(p) + 7px);
+            padding: 5px;
+            margin-left: 2px;
+            @include Flex(column, start, center);
           }
         }
-        .icon.open {
-          transform: rotate(180deg);
+
+        .current {
+          @include Flex(row, center, center);
+          cursor: pointer;
+          .currentLang {
+            margin-right: 5px;
+            font-size: calc(fontSize(p) + 3px);
+            background-color: red;
+          }
+
+          .icon {
+            transition: $transition;
+            svg {
+              fill: color(text-color);
+              height: iconSize(mobile) * 1.2;
+              width: iconSize(mobile) * 1.2;
+            }
+          }
+          .icon.open {
+            transform: rotate(180deg);
+          }
         }
       }
     }

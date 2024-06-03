@@ -405,6 +405,10 @@ export interface ProductCartTextProps {
     useBonusPoints: string;
     buttonCheckout: Button;
     notify: string;
+    alertText: string;
+    downloadText: string; 
+    appStore: string;
+    playMarket: string;
   };
   sk: {
     bgText: string;
@@ -413,6 +417,10 @@ export interface ProductCartTextProps {
     useBonusPoints: string;
     buttonCheckout: Button;
     notify: string;
+    alertText: string;
+    downloadText: string; 
+    appStore: string;
+    playMarket: string;
   };
   ru: {
     bgText: string;
@@ -421,6 +429,10 @@ export interface ProductCartTextProps {
     useBonusPoints: string;
     buttonCheckout: Button;
     notify: string;
+    alertText: string;
+    downloadText: string; 
+    appStore: string;
+    playMarket: string;
   };
 }
 
@@ -926,6 +938,11 @@ interface TrainerText {
   languageText: string;
   seeMoreText: string;
   seeLessText: string;
+  formText: string;
+  formLink: {
+    text: string;
+    link: string;
+  };
   languageFilter: TrainerFilterItem[];
   trainers: Trainer[];
 }

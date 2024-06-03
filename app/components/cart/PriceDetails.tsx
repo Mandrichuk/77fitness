@@ -5,6 +5,7 @@ import { RootState } from "@/app/store/store";
 import Link from "next/link";
 import { toast, ToastContainer } from "react-toastify";
 import { emptyCart } from "@/app/features/clientCart";
+import { SVGs } from "../../constants";
 
 import getHash from "@/app/utils/getHash";
 
@@ -120,6 +121,30 @@ function PriceDetails({ locale }: PriceDetailsProps) {
   return (
     <section className="PriceDetailsShop">
       <div className="wrapper">
+        <div className="alertContainer">
+          <div className="textContainer">
+            <span className="icon">{SVGs.info}</span>
+            <span className="text">{t.alertText}</span>
+          </div>
+          <div className="downloadText">
+            {t.downloadText}{" "}
+            <a
+              href="https://play.google.com/store/apps/details?id=sk.iclub.fitness77"
+              target="_blank"
+              className="outstanding"
+            >
+              {t.playMarket}
+            </a>
+            &nbsp;&&nbsp;
+            <a
+              href="https://apps.apple.com/us/app/77-next-level-fitness/id6468893019"
+              target="_blank"
+              className="outstanding"
+            >
+              {t.appStore}
+            </a>
+          </div>
+        </div>
         <div className="priceContainer">
           <div className="text">{t.totalPriceText}:</div>
           <div className="value">€{totalPrice}</div>
