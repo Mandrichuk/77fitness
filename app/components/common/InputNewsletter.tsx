@@ -29,7 +29,7 @@ function InputNewsletter({
 
     const reValidation = true;
 
-    notifyNewsletterError();
+    // notifyNewsletterError();
     if (emailInput === "" && !reValidation) {
       setError(true);
     }

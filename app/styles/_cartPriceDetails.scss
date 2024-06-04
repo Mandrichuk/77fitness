@@ -41,6 +41,8 @@
         font-size: calc(fontSize(p) + 1px);
 
         .outstanding {
+        font-size: calc(fontSize(p) + 2px);
+          text-decoration: underline;
           cursor: pointer;
         }
       }

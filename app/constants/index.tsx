@@ -559,10 +559,6 @@ export const headerText: HeaderTextProps = {
         text: "Галерея",
         link: "/gallery",
       },
-      {
-        text: "Войти",
-        link: "/login",
-      },
     ],
     login: {
       text: "Войти",
@@ -607,10 +603,6 @@ export const headerText: HeaderTextProps = {
       {
         text: "Galéria",
         link: "/gallery",
-      },
-      {
-        text: "Prihlásiť sa",
-        link: "/login",
       },
     ],
     login: {
@@ -2446,7 +2438,7 @@ export const trainersText: TrainersTextProps = {
           { text: "German", value: "de" },
         ],
         description:
-          "Certifikovaný tréner 3. úrovne v kulturistike, fitness a silovom trojboji. BOSU Inštruktor 1. úrovne. TRX Inštruktor. Trénovaniu sa venujem už 22 rokov, z toho 16 rokov pripravujem súťažiacich (bikini fitness). Poskytujem služby v náraste svalovej hmoty, redukcii telesného tuku a tvarovaní postavy. Zameriavam sa na tvorbu výživových a tréningových plánov pre súťažiacich aj klientov (transformátorov, ktorí chcú schudnúť alebo pribrať). Ako bývalý hráč amerického futbalu pre Vienna Knights a neskôr Bratislava Monarchs, prinášam mnoho prvkov prípravy profesionálnych športovcov do mojich tréningových jednotiek. V rokoch 2018 až 2023 som pôsobil ako tréner národného tímu žien v asociácii WABBA Slovakia a od roku 2022, po mnohoročnej spolupráci s asociáciou IBFF, som bol menovaný za prezidenta IBFF Slovakia.",
+          "Certifikovaný tréner 3. stupňa v kulturistike, fitness a silovom trojboji. Inštruktor bosu 1. kvalifikačného stupňa. Inštruktor TRX. Trénovaniu sa venujem 22 rokov a  z toho súťažne pripravujem pretekárov (bikini fitnes 16 rokov). Poskytujem služby v oblasti naberania svalovej hmoty, redukcii telesného tuku, tvarovania postavy. Venujem sa zostaveniu výživových a tréningových plánov pre pretekárov, ale taktiež pre klientov (premenárov, ktorí chcú schudnúť alebo naopak pribrať). Ako bývaly hráč amerického footbalu  Vienna Knights a neskôr Bratislava Monarchs prinášam do svojich tréningov veľa elementov z prípravy profesionálneho športovca. Od roku 2018 až do 2023 som zastával post reprezentačneho trénera žien asociácie WABBA Slovakia a súbežne od roku 2022 som po dlhoročnej  spolupráci s asociáciou IBFF dostal post prezidenta pre IBFF Slovakia. ",
       },
       {
         image: { src: "team/aintp3zkttqwloakr761", alt: "trainer" },
@@ -2466,7 +2458,7 @@ export const trainersText: TrainersTextProps = {
           { text: "Spanish", value: "es" },
         ],
         description:
-          "Som bývalý profesionálny volejbalista s bohatými skúsenosťami v tréningu športovcov. Špecializujem sa na budovanie svalovej hmoty, redukciu tuku a poskytovanie výživových rád. Moja tréningová filozofia je založená na holistickom prístupe k zlepšeniu fyzickej kondície a zdravia. Verím, že úspech spočíva v rovnováhe medzi tréningom, výživou a regeneráciou. Preto sa zameriavam na tvorbu individuálnych tréningových plánov prispôsobených špecifickým cieľom a potrebám každého klienta. Pri práci s klientmi kladiem dôraz na správne pohybové vzorce a korekciu postury, ktoré pomáhajú zlepšiť celkovú stabilitu tela. Každé tréningové sedenie dopĺňam konzultáciami o výžive a duševnom zdraví, pretože verím, že celková pohoda je kľúčom k dosiahnutiu optimálnych výsledkov. Ak hľadáte trénera, ktorý vám pomôže dosiahnuť vaše ciele komplexným a udržateľným spôsobom, som tu pre vás.",
+          "Volám sa Vladimír Gostík a som bývalý profesionálny volejbalista so skúsenosťami v trénovaní aj športovcov. Špecializujem sa na budovanie svalov, redukciu tuku a poskytovanie výživového poradenstva. Moja tréningová filozofia je založená na komplexnom prístupe k zlepšovaniu fyzickej kondície a zdravia. Verím, že úspech spočíva v rovnováhe medzi tréningom, výživou a regeneráciou. Preto sa zameriavam na vytvorenie individuálnych tréningových plánov, ktoré sú prispôsobené špecifickým cieľom a potrebám každého klienta. Pri práci s klientmi kladiem dôraz na správne pohybové vzorce a korekciu postoja, čo pomáha zlepšovať celkovú stabilitu tela. Každý tréning je doplnený o konzultácie týkajúce sa výživy a psychického zdravia, pretože verím, že celková pohoda je kľúčom k dosiahnutiu optimálnych výsledkov. Ak hľadáš trénera, ktorý ti pomôže dosiahnuť tvoje ciele komplexne a udržateľne, som tu pre teba.",
       },
       {
         image: { src: "team/wxje9mt4ff0c1yljz3gs", alt: "trainer" },
@@ -2485,7 +2477,7 @@ export const trainersText: TrainersTextProps = {
           { text: "Slovak", value: "sk" },
         ],
         description:
-          "Certifikovaný tréner vo fitness a kulturistike s 19-ročnými skúsenosťami. Z mládežníckej gymnastiky som prešiel k fitness a kulturistike počas dospievania. Ako osobný tréner som pracoval vo Francúzsku (Monako) a vrátil som sa na Slovensko (Bratislava). Trénujem klientov už takmer 16 rokov. V priebehu rokov som sa naučil, že často je potrebné najprv pomôcť psychicky, aby telo mohlo fyzicky napredovať a dosiahnuť svoj fyziologický vrchol. Preto nejde len o to, ako človek vyzerá krátkodobo, ale ako je konzistentný v tom, čo robí a ako sa cíti počas celého procesu a svojho života. Ide o to, ako dokáže zvládať lepšie aj horšie dni s pomocou pohybu, ktorý lieči a udržuje telo a myseľ v rovnováhe. Moje tréningy sú náročné, ale zábavné. Vnímam svojich klientov ako priateľov. Snažíme sa vytvoriť pozitívny návyk pohybu, ktorý im zostane na celý život, bez väčších výkyvov.",
+          "Certifikovaný tréner vo fitness a kulturistike s 19 ročnou praxou. Od športovej gymnastiky som sa v dorasteneckom veku dostal ku fitness a kulturistike, ako osobný tréner som pôsobil vo Francúzku (Monako) a vrátil som sa na Slovensko (Bratislava). Klientov trénujem takmer 16 rokov. Za tie roky som sa naučil, že veľakrát si človek musí najskôr pomôcť psychicky(duševne), až potom je jeho telo schopné napredovať i fyzicky a dosiahnuť svoj fyziologický strop. Preto nejfde iba o to ako človek vyzerá v krátkodobom horizonte, ale aký je konzistentný v tom čo robí a ako sa cíti počas celého procesu, či života. Ako vie zvládať lepšie, ale i horšie dni aj pomocou pohybu, ktorý lieči a udržiava telo i myseľ v rovnováhe. Tréningy mám rád tvrdé, ale zábavné. Na klientov sa pozerám ako na kamarátov. Snažíme sa vytvoriť pozitívny pohybový návyk ,ktorý im ostane po celý život, bez veľkých výkyvov. ",
       },
       {
         image: { src: "team/uxhnhzfmqktuyt163zda", alt: "trainer" },
@@ -2520,7 +2512,7 @@ export const trainersText: TrainersTextProps = {
           { text: "Slovak", value: "sk" },
         ],
         description:
-          "Zamiloval som si životný štýl 'Fitness' už v roku 2004 vo veku 21 rokov. V roku 2019 som sa rozhodol začať deliť sa o svoje skúsenosti z posilňovne a kuchyne s ďalšími nadšencami zdravia. Aby som to potvrdil, absolvoval som inštruktorský kurz a získal kvalifikáciu: Inštruktor 1. úrovne so špecializáciou na fitness na Brimich Promotion Agency, jednej z najuznávanejších akadémií v tomto odbore. Špecializujem sa hlavne na silový tréning, nárast svalovej hmoty, redukciu tuku a nutričné poradenstvo. Mám tiež skúsenosti a umiestnenia na súťažiach pod BNBF (British Natural Bodybuilding Federation) vo Veľkej Británii, konkrétne v Londýne a Manchestri, v rokoch 2008-2009. Každý môj klient dostáva individuálny prístup :).",
+          "Životnému štýlu “Fintness” som podľahol už v roku 2004 ako 21 ročný. V roku 2019 som sa rozhodol ze začnem svoje skúsenosti či uz z gymu či kuchyne odovzdávať nadšencom zdravého životneho stýlu ďalej a celé som to podtrhol kuzrom instruktorov 1. kvalifikačného stupňa a tým nadobudol kvalifikáciu : Inštruktor 1. stupňa so špecializaciou Finess. Na Brimich Promotion Agency, jednou z najvychýrejšich  Akadamií v segmente. Špecializujem sa hlavne na silové tréningy, naberanie čistej svalovej hmoty a redukciu tuku a nutričné poradenstvo. Taktiež  mám skúsenosti a aj jedno umiestnenie na sútažiach pod asociáciou BNBF ( British natural bodybuilding federation) v UK a to Londýn a Manchester 2008-2009. Každý moj klient dostáva prístup šitý na mieru :)",
       },
       {
         image: { src: "team/lmoqvppxnv8ol4tkj8it", alt: "trainer" },
@@ -2577,7 +2569,7 @@ export const trainersText: TrainersTextProps = {
           { text: "Slovak", value: "sk" },
         ],
         description:
-          "Som certifikovaná osobná trénerka a mojím cieľom je pomôcť ľuďom vybudovať si udržateľný vzťah k zdravému životnému štýlu, či už prostredníctvom cvičenia alebo výživy. Zameriavam sa na tvarovanie tela podľa individuálnych cieľov klientov, od získavania svalovej hmoty a zlepšovania kondície po redukciu tuku a vytváranie tréningových alebo výživových plánov. Nie som zástancom diét, preto sa snažím vysvetliť klientom, ako vytvoriť rovnováhu v ich strave a zároveň sa zlepšovať fyzicky aj mentálne. S mojím individuálnym prístupom a pozitívnou energiou vás plne podporím v dosahovaní vašich maximálnych výkonov a budem vašou oporou na ceste k vytváraniu lepšej verzie seba samých.",
+          "Som certifikovanou osobnou trénerkou a mojím cieľom je pomáhať ľuďom pri budovaní trvalo udržateľného vzťahu k zdravému životnému štýlu či už v rámci pohybu alebo stravy. Zameriavam sa na formovanie postavy podľa individuálnych cieľov klientok od naberania svalovej hmoty, zlepšenie kondície, redukcie tuku až po tvorbu tréningových či stravovacích plánov.  Nie som zástankyňou diét, preto sa snažím klientkam vysvetliť, ako si v strave vytvoriť balanc a zároveň sa zlepšovať po fyzickej, ale aj psychickej stránke. S mojím individuálnym prístupom a pozitívnou energiou ťa plne podporím pri dosahovaní tvojich maximálnych výkonov a budem ti oporou na tvojej ceste k vytváraniu lepšej verzie samej seba.",
       },
       {
         image: {
@@ -2619,7 +2611,7 @@ export const trainersText: TrainersTextProps = {
           },
         ],
         description:
-          "Volám sa Vsevolod (Sevo). Pomáham ľuďom dosiahnuť svoje požadované výsledky od začiatku univerzity, už viac ako 8 rokov. Počas tejto doby sa moje služby vyvinuli do podoby komplexnej starostlivosti. Okrem zamerania sa na zmeny v zložení tela pracujem s takmer každým klientom na korekcii držania tela (napríklad bolesť chrbta a problémy so chrbticou, rehabilitácia kolena po zranení) prostredníctvom zmeny pohybových vzorov, dekompensačných cvičení a dýchacích techník. Toto vedie k lepšej kontrole tela nielen vo fitnescentre, ale aj v každodennom živote.\nVýkon tréningu je výrazne ovplyvnený výživou, myslením a duševným zdravím. Preto sú otázky ako 'Čo si jedli?' a 'Ako sa dnes cítite?' súčasťou každej tréningovej session. Okrem toho ako certifikovaný masér sa snažím zabezpečiť, aby moji klienti dostali kvalitnú regeneráciu.",
+          " Volám sa Vsevolod (Sevo). Pomaham ľuďom dosahovať požadované vysledky už od začiatku štúdia na vysokej škole (cez 8 rokov).  Za ten čas moje služby prerástli v komplexnú starostlivosť. Kde okrem fokusu na zmenu zloženia tela, takmer s každým klientom sa zameriavame na korekciu postoja (napr.: bolesti a problemy s chrntocou, poúrazová rehabilitácia kolien) cez zmenu pohybových vzorcov, dekompenzačne cvicenia a prácu s dýchaním. Čo vedie k zlepšeniu ovládania tela ako vo fitku, tak aj v bežnom živote.  Tréningový výkon vo veľkej miere ovplyvňuje výživa, mindset a psychické zdravie, preto otázky ako strava? a ako sa dnes cítiš? sú súčasťou každého tréningu.  Okrem toho, som certifikovaným masérom, a tak zabespečujem klientom, aj kvalitnú regeneráciu.  ",
       },
       {
         image: {
@@ -2653,7 +2645,7 @@ export const trainersText: TrainersTextProps = {
           },
         ],
         description:
-          "Ako osobný tréner pomáham svojim klientom vytvoriť udržateľný životný štýl a predovšetkým návyky, ktoré zaručujú nielen krátkodobé zmeny, ale udržateľné výsledky. Verím, že úspech spočíva v rovnováhe medzi fyzickým tréningom, výživou, regeneráciou a duševným zdravím. Inspirujem mojich klientov, aby si uvedomili svoju silu a hodnotu, pomáham im dosiahnuť nielen estetické, ale aj zdravotné ciele. Keďže ženské telo je jedinečné, vyžaduje si to špecifický a individuálny prístup, preto sa sústredím výlučne na ženských klientov. Rada by som vám pomohla aj vám, tak čo hovoríte? Ste pripravení?",
+          "Ako osobná trénerka, pomáham svojim klientkam si vytvoriť udržateľný životný štýl a predovšetkým návyky, ktoré im zaručia nie len krátkodobú zmenu ale hlavne udržateľné výsledky. Verím, že k úspechu vedie rovnováha medzi fyzickým tréningom, výživou, regeneráciu a mentálnym zdravím. Moje klientky inšpirujem k tomu, aby si uvedomili svoju silu a hodnotu, čím im pomáham dosiahnuť nielen estetické, ale aj zdravotné ciele. Keďže ženské telo je špecifické, vyžaduje si špecifický a individuálny prístup, preto sa  zameriavam výhradne na ženskú klientelu. Rada pomôžem aj Tebe, tak čo? Si pripravená?",
       },
       {
         image: {
@@ -2725,7 +2717,7 @@ export const trainersText: TrainersTextProps = {
           },
         ],
         description:
-          "Ako bývalý profesionálny futbalista a certifikovaný tréner silového a kondičného tréningu prinášam svojim klientom bohaté skúsenosti a znalosti nashromáždené počas 17 rokov v fitnes priemysle. Počas mojej trénerskej kariéry som absolvoval viac ako 20 tréningových kurzov a získal niekoľko medzinárodných certifikátov v oblasti tréningu, fyzioterapie a výživového poradenstva. Pracujem s rôznorodou klientelou, vrátane bežnej populácie, mládeže, elitných športovcov, prípadov po operáciách, tehotných žien a cvičení po pôrode. Vždy sa snažím pomôcť klientom dosiahnuť ich ciele najzdravším možným spôsobom. Môj prístup je riadený tromi základnými piliermi: pohybom, výživou a regeneráciou.",
+          "Ako bývalý profesionálny futbalista a certifikovaný silovo-kondičný tréner, prinášam svojim klientom bohaté skúsenosti a znalosti, ktoré som za 17 rokov v oblasti fitness nadobudol. Počas svojej trénerskej praxe, som absolvoval vyše 20 školení a získal viacero zahraničných certifikátov v oblasti trénerstva, fyzioterapie a výživového poradenstva. Pracujem s rôznou klientelou, či už to je bežná populácia, mládež, vrcholoví športovci, pooperačné stavy, tehotné alebo cvičenie po pôrode. Vždy sa snažím klientom splniť ich ciele tým najzdravším možným spôsobom. Riadim sa tromi základnými piliermi: pohyb, strava a regenerácia.",
       },
     ],
   },
