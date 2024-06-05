@@ -1306,7 +1306,7 @@ export const AdminText: AdminTextProps = {
       priceText: "Price",
     },
     inProcessTextBg: "In process",
-    inProcessTitleTextBg: "In porcess orders",
+    inProcessTitleTextBg: "In process orders",
     doneTextBg: "Done",
     doneTitleTextBg: "Done orders",
   },
@@ -2283,7 +2283,7 @@ export const trainersText: TrainersTextProps = {
           { text: "Slovak", value: "sk" },
         ],
         description:
-          "I am a certified personal trainer, and my goal is to help people build a sustainable relationship with a healthy lifestyle, whether through exercise or nutrition. I focus on shaping the body according to the individual goals of my clients, from gaining muscle mass and improving fitness to reducing fat and creating training or nutrition plans. I am not an advocate of diets, so I strive to explain to my clients how to create balance in their diet while improving both physically and mentally. With my individual approach and positive energy, I will fully support you in achieving your maximum performance and be your support on your journey to creating a better version of yourself.",
+          "I am a certified personal trainer whose goal is to help people build a sustainable relationship with healthy lifestyle through exercise and nutrition. I focus on shaping the body according to the individual goals of my clients from gaining musles, improvement of physical condition, reducing fat and also creating training and nutrition plans. I am not a proponent of diets, so I try to explain my clients how to find a balance in their food intake while achieving the desired results physically as well as mentally. With my individual approach and positive energy, I will fully support you in achieving your maximum performance and be your support on your journey to creating a better version of yourself.",
       },
       {
         image: {
