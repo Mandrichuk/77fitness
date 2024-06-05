@@ -1,7 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/prisma/backup";
+import { unstable_noStore as noStore } from "next/cache";
 
 export async function GET(request: NextRequest) {
+  noStore();
+
   const emails = await prisma.email.findMany();
 
   return NextResponse.json(emails);
@@ -15,9 +18,12 @@ export async function POST(request: NextRequest) {
   });
 
   if (isUnique) {
-    return NextResponse.json({ error: "Email already exists" }, { status: 400 });
+    return NextResponse.json(
+      { error: "Email already exists" },
+      { status: 400 }
+    );
   }
-  
+
   const email = await prisma.email.create({
     data: {
       email: body.email,

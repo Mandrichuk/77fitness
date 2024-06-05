@@ -1,8 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
 import { clientSchema, orderSchema, orderProductSchema } from "./shema";
 import prisma from "@/prisma/backup";
+import { unstable_noStore as noStore } from "next/cache";
 
 export async function GET(request: NextRequest) {
+  noStore();
+  
   const clients = await prisma.client.findMany();
 
   return NextResponse.json(clients);

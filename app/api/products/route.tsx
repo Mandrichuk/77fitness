@@ -2,8 +2,11 @@ import { NextRequest, NextResponse } from "next/server";
 import productSchema from "./schema";
 import prisma from "@/prisma/backup";
 import toFixedNumber from "@/app/utils/toFixedNumber";
+import { unstable_noStore as noStore } from "next/cache";
 
 export async function GET(request: NextRequest) {
+  noStore();
+  
   const products = await prisma.product.findMany({
     where: {
       toDisplay: true,

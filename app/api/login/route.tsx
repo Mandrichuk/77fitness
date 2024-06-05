@@ -1,7 +1,10 @@
 import { NextResponse, NextRequest } from "next/server";
 import prisma from "@/prisma/backup";
+import { unstable_noStore as noStore } from "next/cache";
 
 export async function POST(request: NextRequest) {
+  noStore();
+  
   const body = await request.json();
   const isUnique = await prisma.client.findUnique({
     where: { email: body.email },

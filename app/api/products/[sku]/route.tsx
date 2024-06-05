@@ -1,12 +1,15 @@
 import { NextRequest, NextResponse } from "next/server";
 import productSchema from "../schema";
 import prisma from "@/prisma/backup";
+import { unstable_noStore as noStore } from "next/cache";
 
 interface Props {
   params: { sku: number };
 }
 
 export async function GET(request: NextRequest, params: Props) {
+  noStore();
+  
   const requestedSku = params.params.sku.toString();
 
   const product = await prisma.product.findUnique({

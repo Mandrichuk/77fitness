@@ -1,8 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
 import categorySchema from "./schema";
 import prisma from "@/prisma/backup";
+import { unstable_noStore as noStore } from "next/cache";
 
 export async function GET(request: NextRequest) {
+  noStore();
+
+  
   const categories = await prisma.category.findMany({
     where: {
       toDisplay: true,

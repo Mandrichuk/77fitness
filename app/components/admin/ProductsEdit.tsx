@@ -12,6 +12,7 @@ import Image from "../common/Image";
 import { SVGs } from "@/app/constants";
 import { useSelector } from "react-redux";
 import { RootState } from "@/app/store/store";
+import toFixedNumber from "@/app/utils/toFixedNumber";
 
 interface AdminData {
   username: string;
@@ -109,7 +110,9 @@ function ProductsEdit({ locale }: CategoriesEditProps) {
                     <div className="imageBox" key={`image-${index}`}>
                       <div className="imageContainer">
                         <Image
-                          image={`/shop/${product.images[product.images.length - 1].url}`}
+                          image={`/shop/${
+                            product.images[product.images.length - 1].url
+                          }`}
                           alt={"image"}
                           imgQuality={100}
                           isShopProduct={true}
@@ -125,9 +128,13 @@ function ProductsEdit({ locale }: CategoriesEditProps) {
                       </p>
                       <div className="cart">
                         <div className="prices">
-                          <p className="newPrice">{product.newPrice}€</p>
+                          <p className="newPrice">
+                            {toFixedNumber(product.newPrice)}€
+                          </p>
                           {product.oldPrice && product.oldPrice > 0.01 && (
-                            <p className="oldPrice">{product.oldPrice}€</p>
+                            <p className="oldPrice">
+                              {toFixedNumber(product.oldPrice)}€
+                            </p>
                           )}
                         </div>
                         <div className="buttonsContainer">

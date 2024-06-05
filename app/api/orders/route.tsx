@@ -1,7 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/prisma/backup";
+import { unstable_noStore as noStore } from "next/cache";
 
 export async function POST(request: NextRequest) {
+  noStore();
+
   const body = await request.json();
 
   const orders = await prisma.order.findMany({

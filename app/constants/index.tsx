@@ -667,16 +667,16 @@ export const AdminHeaderText: AdminHeaderTextProps = {
     links: [
       {
         text: "Панель администратора",
-        link: "/c5e478d59288c841aa530db6845c4c8d962893a001ce4e11a4963873aa98134a/admin",
+        link: `/${adminHash}/admin`,
       },
-      // {
-      //   text: "Категории",
-      //   link: "/admin/category/edit",
-      // },
-      // {
-      //   text: "Продукты",
-      //   link: "/admin/product/edit",
-      // },
+      {
+        text: "Категории",
+        link: `/${adminHash}/admin/category/edit`,
+      },
+      {
+        text: "Продукты",
+        link: `/${adminHash}/admin/product/edit`,
+      },
     ],
     languages: {
       title: "Языки",
@@ -696,16 +696,16 @@ export const AdminHeaderText: AdminHeaderTextProps = {
     links: [
       {
         text: "Správca",
-        link: "/c5e478d59288c841aa530db6845c4c8d962893a001ce4e11a4963873aa98134a/admin",
+        link: `/${adminHash}/admin`,
       },
-      // {
-      //   text: "Kategórie",
-      //   link: "/admin/category/edit",
-      // },
-      // {
-      //   text: "Produkty",
-      //   link: "/admin/product/edit",
-      // },
+      {
+        text: "Kategórie",
+        link: `/${adminHash}/admin/category/edit`,
+      },
+      {
+        text: "Produkty",
+        link: `/${adminHash}/admin/product/edit`,
+      },
     ],
     languages: {
       title: "Jazyky",

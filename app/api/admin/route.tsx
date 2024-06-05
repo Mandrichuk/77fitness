@@ -1,8 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/prisma/backup";
 import productSchema from "@/app/api/products/schema";
+import { unstable_noStore as noStore } from "next/cache";
 
 export async function GET(request: NextRequest) {
+  noStore();
+
   const orders = await prisma.order.findMany({
     include: {
       products: true,
@@ -35,7 +38,7 @@ export async function GET(request: NextRequest) {
 
       return {
         ...order,
-        clientEmail: clientEmail?.email || null, 
+        clientEmail: clientEmail?.email || null,
         products,
       };
     })

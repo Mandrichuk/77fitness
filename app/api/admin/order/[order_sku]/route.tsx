@@ -1,12 +1,15 @@
 import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/prisma/backup";
 import OrderSchema from "@/app/api/order/schema";
+import { unstable_noStore as noStore } from "next/cache";
 
 interface Props {
   params: { order_sku: number };
 }
 
 export async function PUT(request: NextRequest, params: Props) {
+  noStore();
+  
   const requestedSku = params.params.order_sku.toString();
 
   const body = await request.json();

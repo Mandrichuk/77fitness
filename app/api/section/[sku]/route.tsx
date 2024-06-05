@@ -1,11 +1,13 @@
 import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/prisma/backup";
+import { unstable_noStore as noStore } from "next/cache";
 
 interface Props {
   params: { sku: number };
 }
 
 export async function GET(request: NextRequest, params: Props) {
+  noStore();
   try {
     const requestedSku = params.params.sku.toString();
 
