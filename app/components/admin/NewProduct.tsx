@@ -272,7 +272,7 @@ function NewProduct({ locale }: NewProductProps) {
                 maxSymbols={70}
               />
               <label className="inputLabel">
-                {t.inputs.title_en.placeholder}
+                {t.inputs.description_en.placeholder}
               </label>
               <Input
                 placeholderText={t.inputs.description_en.placeholder}
@@ -283,7 +283,7 @@ function NewProduct({ locale }: NewProductProps) {
                 maxSymbols={70}
               />
               <label className="inputLabel">
-                {t.inputs.title_ru.placeholder}
+                {t.inputs.description_ru.placeholder}
               </label>
               <Input
                 placeholderText={t.inputs.description_ru.placeholder}
@@ -294,7 +294,7 @@ function NewProduct({ locale }: NewProductProps) {
                 maxSymbols={70}
               />
               <label className="inputLabel">
-                {t.inputs.title_sk.placeholder}
+                {t.inputs.description_sk.placeholder}
               </label>
               <Input
                 placeholderText={t.inputs.description_sk.placeholder}

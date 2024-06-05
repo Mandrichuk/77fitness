@@ -161,7 +161,7 @@ function ProductsEdit({ locale }: CategoriesEditProps) {
           )}
         </div>
         <div className="underline" />
-        <div className="subtitle">{t.invisible} sdfsdf</div>
+        <div className="subtitle">{t.invisible}</div>
         <div className="productsGrid">
           {data.map(
             (product: any, index: number) =>
