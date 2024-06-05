@@ -232,7 +232,7 @@ function OrderProducts({ locale, product }: OrderProductsProps) {
       <div className="productDescription">
         <div className="imageContainer">
           <Image
-            image={`/shop/${product.images[0].url}`}
+            image={`/shop/${product.images[product.images.length - 1].url}`}
             alt={"cartProduct"}
             isShopProduct={true}
           />

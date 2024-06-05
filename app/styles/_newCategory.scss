@@ -15,9 +15,19 @@
       @include Flex(column, center, center);
       width: 100%;
       .inputsContainer {
-        @include Flex(column, center, center);
+        @include Flex(column, center, start);
         width: 100%;
         gap: 10px;
+
+        .inputLabel {
+          width: 100%;
+          font-size: calc(fontSize(p) + 2px);
+          font-weight: fontWeight(semibold);
+        }
+
+        .InputSection {
+          margin-bottom: 10px;
+        }
 
         .booleanInputs {
           margin: 20px 0;

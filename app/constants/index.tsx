@@ -638,16 +638,16 @@ export const AdminHeaderText: AdminHeaderTextProps = {
     links: [
       {
         text: "Admin Panel",
-        link: "/c5e478d59288c841aa530db6845c4c8d962893a001ce4e11a4963873aa98134a/admin",
+        link: `/${adminHash}/admin`,
       },
-      // {
-      //   text: "Categories",
-      //   link: "/admin/category/edit",
-      // },
-      // {
-      //   text: "Products",
-      //   link: "/admin/product/edit",
-      // },
+      {
+        text: "Categories",
+        link: `/${adminHash}/admin/category/edit`,
+      },
+      {
+        text: "Products",
+        link: `/${adminHash}/admin/product/edit`,
+      },
     ],
     languages: {
       title: "Languages",
@@ -1634,6 +1634,7 @@ export const EditCategoryText: CategoryEditTextProps = {
 
 export const NewProductText: NewProductTextsProps = {
   en: {
+    titleEdit: "Edit product",
     title: "Create new product",
     chooseCategoryText: "Choose category to add new product",
     inputs: {
@@ -1672,10 +1673,12 @@ export const NewProductText: NewProductTextsProps = {
     categoryText: "Choose category",
     buttons: {
       saveButton: { text: "Add new product", link: "/" },
+      editButton: { text: "Update product", link: "/" },
       cancel: { text: "Cancel", link: "/" },
     },
   },
   sk: {
+    titleEdit: "Upraviť produkt",
     title: "Vytvoriť nový produkt",
     chooseCategoryText: "Vyberte kategóriu pre pridanie nového produktu",
     inputs: {
@@ -1715,9 +1718,11 @@ export const NewProductText: NewProductTextsProps = {
     buttons: {
       saveButton: { text: "Pridať nový produkt", link: "/" },
       cancel: { text: "Zrušiť", link: "/" },
+      editButton: { text: "Aktualizovať produkt", link: "/" },
     },
   },
   ru: {
+    titleEdit: "Редактировать продукт",
     title: "Создать новый продукт",
     chooseCategoryText: "Выберите категорию для добавления нового продукта",
     inputs: {
@@ -1757,6 +1762,7 @@ export const NewProductText: NewProductTextsProps = {
     buttons: {
       saveButton: { text: "Добавить новый продукт", link: "/" },
       cancel: { text: "Отмена", link: "/" },
+      editButton: { text: "Обновить продукт", link: "/" },
     },
   },
 };

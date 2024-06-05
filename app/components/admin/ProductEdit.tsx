@@ -12,12 +12,13 @@ import { toast } from "react-toastify";
 import { useSelector } from "react-redux";
 import { RootState } from "@/app/store/store";
 
+import { adminHash } from "@/app/constants";
+
 interface ImageProductProps {
   id: number;
   url: string;
   productId: number;
 }
-
 interface NewProductInputsProps {
   sku: any;
   name: string;
@@ -25,7 +26,10 @@ interface NewProductInputsProps {
   description_en: string;
   description_ru: string;
   description_sk: string;
-  images: ImageProductProps[];
+  title_en: string;
+  title_ru: string;
+  title_sk: string;
+  images: string[];
   newPrice: number;
   oldPrice: number;
   leftInStock: number;
@@ -44,6 +48,7 @@ interface ProductProps {
   id: number;
   name: string;
   recommended: boolean;
+  images: string[];
   sku: string;
   title: {
     id: number;
@@ -70,7 +75,10 @@ function NewProduct({ locale, product_sku }: EditProductProps) {
     useState<NewProductInputsProps>({
       sku: String(getHash()),
       name: "",
-      categoryId: 1,
+      categoryId: {},
+      title_en: "",
+      title_ru: "",
+      title_sk: "",
       description_en: "",
       description_ru: "",
       description_sk: "",
@@ -84,10 +92,24 @@ function NewProduct({ locale, product_sku }: EditProductProps) {
   const adminData = useSelector((state: RootState) => state.adminLogin.value);
   useEffect(() => {
     if (typeof window !== "undefined" && !adminData) {
-      window.location.href = "/admin/login";
+      window.location.href = `/${adminHash}/admin/login`;
       return;
     }
   }, [adminData]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/api/admin/category");
+        const jsonData = await response.json();
+        setCategoriesData(jsonData.categories);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -97,16 +119,20 @@ function NewProduct({ locale, product_sku }: EditProductProps) {
         );
         if (response.ok) {
           const responseData = await response.json();
+
           setData(responseData);
 
           setEditedProductData({
             sku: responseData?.sku,
             name: responseData?.name,
             categoryId: responseData?.categoryId,
+            title_en: responseData?.title.en,
+            title_ru: responseData?.title.ru,
+            title_sk: responseData?.title.sk,
             description_en: responseData?.description.en,
             description_ru: responseData?.description.ru,
             description_sk: responseData?.description.sk,
-            images: [responseData?.images[0]],
+            images: [responseData?.images[responseData?.images.length - 1].url],
             newPrice: responseData?.newPrice,
             oldPrice: responseData?.oldPrice,
             leftInStock: responseData?.leftInStock,
@@ -133,12 +159,15 @@ function NewProduct({ locale, product_sku }: EditProductProps) {
       editedProductData.newPrice > 0 &&
       editedProductData.oldPrice > 0 &&
       editedProductData.leftInStock > 0 &&
-      editedProductData.categoryId !== 0
+      editedProductData.categoryId !== 0 &&
+      editedProductData.title_en !== "" &&
+      editedProductData.title_sk !== "" &&
+      editedProductData.title_ru !== ""
     );
   }
 
   const notifyAddedToCart = () => {
-    toast.success("t.notify", {
+    toast.success("Added", {
       position: "top-right",
       autoClose: 1300,
       hideProgressBar: true,
@@ -151,15 +180,20 @@ function NewProduct({ locale, product_sku }: EditProductProps) {
   function addNewCategory() {
     if (isNewCategoryDataValid()) {
       const convertedProductData = {
-        sku: editedProductData.sku,
+        sku: String(getHash()),
         name: editedProductData.name,
-        categoryId: Number(editedProductData.categoryId),
+        categoryId: editedProductData.categoryId.id,
         description: {
           en: editedProductData.description_en,
           sk: editedProductData.description_sk,
           ru: editedProductData.description_ru,
         },
-        imageUrls: [editedProductData.images[0].url],
+        title: {
+          en: editedProductData.title_en,
+          sk: editedProductData.title_sk,
+          ru: editedProductData.title_ru,
+        },
+        imageUrls: [editedProductData.images[0]],
         newPrice: Number(editedProductData.newPrice),
         oldPrice: Number(editedProductData.oldPrice),
         leftInStock: Number(editedProductData.leftInStock),
@@ -185,7 +219,7 @@ function NewProduct({ locale, product_sku }: EditProductProps) {
             console.log(data);
             console.log("Category created successfully");
             notifyAddedToCart();
-            window.location.href = "/admin/product/edit";
+            window.location.href = `/${adminHash}/admin/product/edit`;
           })
           .catch((error) => {
             console.error("Error:", error);
@@ -209,9 +243,7 @@ function NewProduct({ locale, product_sku }: EditProductProps) {
 
     setEditedProductData((prevData) => ({
       ...prevData,
-      images: [
-        { id: editedProductData.images[0].id, url: result, productId: 0 },
-      ],
+      images: [result],
     }));
   }
 
@@ -223,11 +255,13 @@ function NewProduct({ locale, product_sku }: EditProductProps) {
     );
   }
 
+  console.log(editedProductData);
+
   return (
     <section className="NewProductSection">
       <div className="wrapper">
         <div className="title">
-          <h3>{t.title}</h3>
+          <h3>{t.titleEdit}</h3>
         </div>
         <div className="content">
           <div className="inputsContainer">
@@ -267,69 +301,126 @@ function NewProduct({ locale, product_sku }: EditProductProps) {
                   </div>
                 ))}
             </div>
-            <Input
-              placeholderText={t.inputs.name.placeholder}
-              getValue={(value) =>
-                handleSetNewCategory(value, t.inputs.name.field)
-              }
-              field={t.inputs.name.field}
-              maxSymbols={20}
-              initialValue={editedProductData.name}
-            />
-            <Input
-              placeholderText={t.inputs.description_en.placeholder}
-              getValue={(value) =>
-                handleSetNewCategory(value, t.inputs.description_en.field)
-              }
-              field={t.inputs.description_en.field}
-              maxSymbols={70}
-              initialValue={editedProductData.description_en}
-            />
-            <Input
-              placeholderText={t.inputs.description_ru.placeholder}
-              getValue={(value) =>
-                handleSetNewCategory(value, t.inputs.description_ru.field)
-              }
-              field={t.inputs.description_ru.field}
-              maxSymbols={70}
-              initialValue={editedProductData.description_ru}
-            />
-            <Input
-              placeholderText={t.inputs.description_sk.placeholder}
-              getValue={(value) =>
-                handleSetNewCategory(value, t.inputs.description_sk.field)
-              }
-              field={t.inputs.description_sk.field}
-              maxSymbols={70}
-              initialValue={editedProductData.description_sk}
-            />
-            <Input
-              placeholderText={t.inputs.newPrice.placeholder}
-              getValue={(value) =>
-                handleSetNewCategory(value, t.inputs.newPrice.field)
-              }
-              field={t.inputs.newPrice.field}
-              maxSymbols={6}
-              initialValue={String(editedProductData.newPrice)}
-            />
-            <Input
-              placeholderText={t.inputs.oldPrice.placeholder}
-              getValue={(value) =>
-                handleSetNewCategory(value, t.inputs.oldPrice.field)
-              }
-              field={t.inputs.oldPrice.field}
-              maxSymbols={6}
-              initialValue={String(editedProductData.oldPrice)}
-            />
-            <Input
-              placeholderText={t.inputs.leftInStock.placeholder}
-              getValue={(value) =>
-                handleSetNewCategory(value, t.inputs.leftInStock.field)
-              }
-              field={t.inputs.leftInStock.field}
-              maxSymbols={6}
-              initialValue={String(editedProductData.leftInStock)}
-            />
+            <div className="inputsContainer">
+              <label className="inputLabel">{t.inputs.name.placeholder}</label>
+              <Input
+                placeholderText={t.inputs.name.placeholder}
+                getValue={(value) =>
+                  handleSetNewCategory(value, t.inputs.name.field)
+                }
+                initialValue={data.name}
+                field={t.inputs.name.field}
+                maxSymbols={30}
+              />
+              <label className="inputLabel">
+                {t.inputs.description_en.placeholder}
+              </label>
+              <Input
+                placeholderText={t.inputs.description_en.placeholder}
+                getValue={(value) =>
+                  handleSetNewCategory(value, t.inputs.description_en.field)
+                }
+                initialValue={data.description.en}
+                field={t.inputs.description_en.field}
+                maxSymbols={70}
+              />
+              <label className="inputLabel">
+                {t.inputs.description_ru.placeholder}
+              </label>
+              <Input
+                placeholderText={t.inputs.description_ru.placeholder}
+                getValue={(value) =>
+                  handleSetNewCategory(value, t.inputs.description_ru.field)
+                }
+                initialValue={data.description.ru}
+                field={t.inputs.description_ru.field}
+                maxSymbols={70}
+              />
+              <label className="inputLabel">
+                {t.inputs.description_sk.placeholder}
+              </label>
+              <Input
+                placeholderText={t.inputs.description_sk.placeholder}
+                getValue={(value) =>
+                  handleSetNewCategory(value, t.inputs.description_sk.field)
+                }
+                initialValue={data.description.sk}
+                field={t.inputs.description_sk.field}
+                maxSymbols={70}
+              />
+              <label className="inputLabel">
+                {t.inputs.title_en.placeholder}
+              </label>
+              <Input
+                placeholderText={t.inputs.title_en.placeholder}
+                getValue={(value) =>
+                  handleSetNewCategory(value, t.inputs.title_en.field)
+                }
+                initialValue={data.title.en}
+                field={t.inputs.title_en.field}
+                maxSymbols={70}
+              />
+              <label className="inputLabel">
+                {t.inputs.title_ru.placeholder}
+              </label>
+              <Input
+                placeholderText={t.inputs.title_ru.placeholder}
+                getValue={(value) =>
+                  handleSetNewCategory(value, t.inputs.title_ru.field)
+                }
+                initialValue={data.title.ru}
+                field={t.inputs.title_ru.field}
+                maxSymbols={70}
+              />
+              <label className="inputLabel">
+                {t.inputs.title_sk.placeholder}
+              </label>
+              <Input
+                placeholderText={t.inputs.title_sk.placeholder}
+                getValue={(value) =>
+                  handleSetNewCategory(value, t.inputs.title_sk.field)
+                }
+                initialValue={data.title.sk}
+                field={t.inputs.title_sk.field}
+                maxSymbols={70}
+              />
+              <label className="inputLabel">
+                {t.inputs.newPrice.placeholder}
+              </label>
+              <Input
+                placeholderText={t.inputs.newPrice.placeholder}
+                getValue={(value) =>
+                  handleSetNewCategory(value, t.inputs.newPrice.field)
+                }
+                initialValue={data.newPrice}
+                field={t.inputs.newPrice.field}
+                maxSymbols={6}
+              />
+              <label className="inputLabel">
+                {t.inputs.oldPrice.placeholder}
+              </label>
+              <Input
+                placeholderText={t.inputs.oldPrice.placeholder}
+                getValue={(value) =>
+                  handleSetNewCategory(value, t.inputs.oldPrice.field)
+                }
+                initialValue={data.oldPrice}
+                field={t.inputs.oldPrice.field}
+                maxSymbols={6}
+              />
+              <label className="inputLabel">
+                {t.inputs.leftInStock.placeholder}
+              </label>
+              <Input
+                placeholderText={t.inputs.leftInStock.placeholder}
+                getValue={(value) =>
+                  handleSetNewCategory(value, t.inputs.leftInStock.field)
+                }
+                initialValue={data.leftInStock}
+                field={t.inputs.leftInStock.field}
+                maxSymbols={6}
+              />
+            </div>
             <div className="booleanInputs">
               <div className="booleanInput">
                 <label>{t.inputs.toDisplay.placeholder}</label>
@@ -382,7 +473,7 @@ function NewProduct({ locale, product_sku }: EditProductProps) {
                   <div className="imageBox">
                     <div className="imageContainer">
                       <Image
-                        image={`shop/${editedProductData.images[0].url}`}
+                        image={`shop/${editedProductData.images[0]}`}
                         alt={"image"}
                         imgQuality={100}
                         isShopProduct={true}
@@ -390,11 +481,15 @@ function NewProduct({ locale, product_sku }: EditProductProps) {
                     </div>
                   </div>
                   <div className="details">
-                    <p className="title">
-                      {/* {editedProductData.categoryId &&
-                        editedProductData?.categoryId.title[previewLanguage]} */}
+                    <p className="category">
+                      {editedProductData.categoryId.title &&
+                        editedProductData?.categoryId.title[previewLanguage]}
                     </p>
-                    <p className="name">{editedProductData.name}</p>
+                    <p className="title">
+                      {previewLanguage === "en" && editedProductData.title_en}
+                      {previewLanguage === "sk" && editedProductData.title_sk}
+                      {previewLanguage === "ru" && editedProductData.title_ru}
+                    </p>
                     <p className="description">
                       {previewLanguage === "en" &&
                         editedProductData.description_en}
@@ -429,7 +524,7 @@ function NewProduct({ locale, product_sku }: EditProductProps) {
             </div>
             <div className="buttonsContainer">
               <button onClick={addNewCategory}>
-                {t.buttons.saveButton.text}
+                {t.buttons.editButton.text}
               </button>
             </div>
           </div>

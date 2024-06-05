@@ -11,7 +11,6 @@ function page({ params: { locale, category_sku } }: EditCategory) {
     <main>
       <AdminHeader locale={locale} />
       <CategoryEdit locale={locale} category_sku={category_sku} />
-      <Footer locale={locale} />
     </main>
   );
 }

@@ -14,14 +14,12 @@ export const metadata: Metadata = {
 };
 
 async function Home({ params: { locale } }: LocaleProps) {
-const orders = await getOrders();
-console.log(orders)
+  const orders = await getOrders();
+
   return (
     <main>
       <AdminHeader locale={locale} />
       <Orders locale={locale} orders={orders} />
-      <Footer locale={locale} />
-      <CreatedBy />
     </main>
   );
 }

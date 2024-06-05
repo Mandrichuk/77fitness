@@ -162,7 +162,7 @@ function CartProduct({ locale, product, quantity }: CartProduct) {
       <div className="productDescription">
         <div className="imageContainer">
           <Image
-            image={`shop/${product.product.images[0].url}`}
+            image={`shop/${product.product.images[product.product.images.length - 1].url}`}
             alt={"cartProduct"}
             isShopProduct={true}
           />

@@ -167,6 +167,7 @@ function NewCategory({ locale, category_sku }: EditCategoryProps) {
         </div>
         <div className="content">
           <div className="inputsContainer">
+            <label className="inputLabel">{t.inputs.name.placeholder}</label>
             <Input
               placeholderText={t.inputs.name.placeholder}
               getValue={(value) =>
@@ -176,6 +177,9 @@ function NewCategory({ locale, category_sku }: EditCategoryProps) {
               maxSymbols={20}
               initialValue={data.name}
             />
+            <label className="inputLabel">
+              {t.inputs.bgText_en.placeholder}
+            </label>
             <Input
               placeholderText={t.inputs.bgText_en.placeholder}
               getValue={(value) =>
@@ -185,6 +189,9 @@ function NewCategory({ locale, category_sku }: EditCategoryProps) {
               maxSymbols={12}
               initialValue={data.bgText.en}
             />
+            <label className="inputLabel">
+              {t.inputs.bgText_ru.placeholder}
+            </label>
             <Input
               placeholderText={t.inputs.bgText_ru.placeholder}
               getValue={(value) =>
@@ -194,6 +201,9 @@ function NewCategory({ locale, category_sku }: EditCategoryProps) {
               maxSymbols={12}
               initialValue={data.bgText.ru}
             />
+            <label className="inputLabel">
+              {t.inputs.bgText_sk.placeholder}
+            </label>
             <Input
               placeholderText={t.inputs.bgText_sk.placeholder}
               getValue={(value) =>
@@ -203,6 +213,9 @@ function NewCategory({ locale, category_sku }: EditCategoryProps) {
               maxSymbols={12}
               initialValue={data.bgText.sk}
             />
+            <label className="inputLabel">
+              {t.inputs.title_en.placeholder}
+            </label>
             <Input
               placeholderText={t.inputs.title_en.placeholder}
               getValue={(value) =>
@@ -212,6 +225,9 @@ function NewCategory({ locale, category_sku }: EditCategoryProps) {
               maxSymbols={15}
               initialValue={data.title.en}
             />
+            <label className="inputLabel">
+              {t.inputs.title_ru.placeholder}
+            </label>
             <Input
               placeholderText={t.inputs.title_ru.placeholder}
               getValue={(value) =>
@@ -221,6 +237,9 @@ function NewCategory({ locale, category_sku }: EditCategoryProps) {
               maxSymbols={15}
               initialValue={data.title.ru}
             />
+            <label className="inputLabel">
+              {t.inputs.title_sk.placeholder}
+            </label>
             <Input
               placeholderText={t.inputs.title_sk.placeholder}
               getValue={(value) =>
@@ -291,7 +310,7 @@ function NewCategory({ locale, category_sku }: EditCategoryProps) {
                 </div>
               </div>
               <div className="previewContainer">
-                {/* {previewLanguage === "en" && (
+                {previewLanguage === "en" && (
                   <TextLayers
                     bgText={editedCategoryData.bgText_en}
                     title={editedCategoryData.title_en}
@@ -308,7 +327,7 @@ function NewCategory({ locale, category_sku }: EditCategoryProps) {
                     bgText={editedCategoryData.bgText_sk}
                     title={editedCategoryData.title_sk}
                   />
-                )} */}
+                )}
               </div>
             </div>
             <div className="buttonsContainer">

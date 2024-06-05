@@ -12,6 +12,8 @@ import { SVGs } from "@/app/constants";
 import { useSelector } from "react-redux";
 import { RootState } from "@/app/store/store";
 
+import { adminHash } from "@/app/constants";
+
 function CategoriesEdit({ locale }: CategoriesEditProps) {
   const [data, setData] = useState<any>(null);
   const t = CategoriesEditAdminText[locale] || CategoriesEditAdminText["en"];
@@ -20,11 +22,11 @@ function CategoriesEdit({ locale }: CategoriesEditProps) {
 
   useEffect(() => {
     if (typeof window !== "undefined" && !adminData) {
-      window.location.href = "/admin/login";
+      window.location.href = `/${adminHash}/admin/login`;
       return;
     }
   }, [adminData]);
-  
+
   const notifyAddedToCart = () => {
     toast.success("t.notify", {
       position: "top-right",
@@ -90,7 +92,7 @@ function CategoriesEdit({ locale }: CategoriesEditProps) {
         <h3 className="title">{t.title}</h3>
 
         <div className="buttonNewCategoryContainer">
-          <Link href="/admin/category/new" className="button">
+          <Link href={`/${adminHash}/admin/category/new`} className="button">
             {t.newCategoryRedirect}
           </Link>
         </div>
@@ -107,7 +109,7 @@ function CategoriesEdit({ locale }: CategoriesEditProps) {
                   />
                   <div className="functionalityContainer">
                     <Link
-                      href={`/admin/category/edit/${item.sku}`}
+                      href={`/${adminHash}/admin/category/edit/${item.sku}`}
                       className="edit"
                     >
                       {SVGs.edit}
@@ -138,7 +140,7 @@ function CategoriesEdit({ locale }: CategoriesEditProps) {
                   />
                   <div className="functionalityContainer">
                     <Link
-                      href={`/admin/category/edit/${item.sku}`}
+                      href={`/${adminHash}/admin/category/edit/${item.sku}`}
                       className="edit"
                     >
                       {SVGs.edit}

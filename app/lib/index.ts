@@ -826,6 +826,7 @@ export interface CategoryEditTextProps {
 }
 
 interface NewProductText {
+  titleEdit: string;
   title: string;
   chooseCategoryText: string;
   inputs: {
@@ -847,6 +848,7 @@ interface NewProductText {
   buttons: {
     saveButton: { text: string; link: string };
     cancel: { text: string; link: string };
+    editButton: { text: string; link: string };
   };
 }
 

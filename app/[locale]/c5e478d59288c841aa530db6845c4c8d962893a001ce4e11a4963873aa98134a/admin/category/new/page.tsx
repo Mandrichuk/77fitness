@@ -12,7 +12,6 @@ function page({ params: { locale } }: LocaleProps) {
     <main>
       <AdminHeader locale={locale} />
       <NewCategory locale={locale} />
-      <Footer locale={locale} />
       <ScreenLoading />
     </main>
   );

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 
 import Input from "../common/Input";
 import { NewCategoryProps } from "@/app/lib";
-import { NewCategoryText } from "@/app/constants";
+import { adminHash, NewCategoryText } from "@/app/constants";
 import getHash from "@/app/utils/getHash";
 import TextLayers from "../common/TextLayers";
 import { useSelector } from "react-redux";
@@ -44,7 +44,7 @@ function NewCategory({ locale }: NewCategoryProps) {
 
   useEffect(() => {
     if (typeof window !== "undefined" && !adminData) {
-      window.location.href = "/admin/login";
+      window.location.href = `/${adminHash}/admin/login`;
       return;
     }
   }, [adminData]);
@@ -124,6 +124,7 @@ function NewCategory({ locale }: NewCategoryProps) {
         </div>
         <div className="content">
           <div className="inputsContainer">
+            <label className="inputLabel">{t.inputs.name.placeholder}</label>
             <Input
               placeholderText={t.inputs.name.placeholder}
               getValue={(value) =>
@@ -132,6 +133,9 @@ function NewCategory({ locale }: NewCategoryProps) {
               field={t.inputs.name.field}
               maxSymbols={20}
             />
+            <label className="inputLabel">
+              {t.inputs.bgText_en.placeholder}
+            </label>
             <Input
               placeholderText={t.inputs.bgText_en.placeholder}
               getValue={(value) =>
@@ -140,6 +144,9 @@ function NewCategory({ locale }: NewCategoryProps) {
               field={t.inputs.bgText_en.field}
               maxSymbols={12}
             />
+            <label className="inputLabel">
+              {t.inputs.bgText_ru.placeholder}
+            </label>
             <Input
               placeholderText={t.inputs.bgText_ru.placeholder}
               getValue={(value) =>
@@ -148,6 +155,9 @@ function NewCategory({ locale }: NewCategoryProps) {
               field={t.inputs.bgText_ru.field}
               maxSymbols={12}
             />
+            <label className="inputLabel">
+              {t.inputs.bgText_sk.placeholder}
+            </label>
             <Input
               placeholderText={t.inputs.bgText_sk.placeholder}
               getValue={(value) =>
@@ -156,6 +166,9 @@ function NewCategory({ locale }: NewCategoryProps) {
               field={t.inputs.bgText_sk.field}
               maxSymbols={12}
             />
+            <label className="inputLabel">
+              {t.inputs.title_en.placeholder}
+            </label>
             <Input
               placeholderText={t.inputs.title_en.placeholder}
               getValue={(value) =>
@@ -164,6 +177,9 @@ function NewCategory({ locale }: NewCategoryProps) {
               field={t.inputs.title_en.field}
               maxSymbols={15}
             />
+            <label className="inputLabel">
+              {t.inputs.title_ru.placeholder}
+            </label>
             <Input
               placeholderText={t.inputs.title_ru.placeholder}
               getValue={(value) =>
@@ -172,6 +188,9 @@ function NewCategory({ locale }: NewCategoryProps) {
               field={t.inputs.title_ru.field}
               maxSymbols={15}
             />
+            <label className="inputLabel">
+              {t.inputs.title_sk.placeholder}
+            </label>
             <Input
               placeholderText={t.inputs.title_sk.placeholder}
               getValue={(value) =>

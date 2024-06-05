@@ -6,7 +6,7 @@ import { toast, ToastContainer } from "react-toastify";
 import TextLayers from "../common/TextLayers";
 import { CategoriesEditProps } from "../../lib";
 import { toUpperCase } from "@/app/utils/toUpperCase";
-import { ProductsEditAdminText } from "@/app/constants";
+import { adminHash, ProductsEditAdminText } from "@/app/constants";
 
 import Image from "../common/Image";
 import { SVGs } from "@/app/constants";
@@ -23,10 +23,9 @@ function ProductsEdit({ locale }: CategoriesEditProps) {
   const t = ProductsEditAdminText[locale] || ProductsEditAdminText["en"];
   const adminData = useSelector((state: RootState) => state.adminLogin.value);
 
-
   useEffect(() => {
     if (typeof window !== "undefined" && !adminData) {
-      window.location.href = "/admin/login";
+      window.location.href = `/${adminHash}/admin/admin/login`;
       return;
     }
   }, [adminData]);
@@ -95,7 +94,7 @@ function ProductsEdit({ locale }: CategoriesEditProps) {
         <h3 className="title">{t.title}</h3>
 
         <div className="buttonNewProductContainer">
-          <Link href="/admin/product/new" className="button">
+          <Link href={`/${adminHash}/admin/product/new`} className="button">
             {t.newProductRedirect}
           </Link>
         </div>
@@ -110,7 +109,7 @@ function ProductsEdit({ locale }: CategoriesEditProps) {
                     <div className="imageBox" key={`image-${index}`}>
                       <div className="imageContainer">
                         <Image
-                          image={`/shop/${product.images[0].url}`}
+                          image={`/shop/${product.images[product.images.length - 1].url}`}
                           alt={"image"}
                           imgQuality={100}
                           isShopProduct={true}
@@ -133,7 +132,7 @@ function ProductsEdit({ locale }: CategoriesEditProps) {
                         </div>
                         <div className="buttonsContainer">
                           <Link
-                            href={`/admin/product/edit/${product.sku}`}
+                            href={`/${adminHash}/admin/product/edit/${product.sku}`}
                             className="edit"
                           >
                             {SVGs.edit}
@@ -155,7 +154,7 @@ function ProductsEdit({ locale }: CategoriesEditProps) {
           )}
         </div>
         <div className="underline" />
-        <div className="subtitle">{t.invisible}</div>
+        <div className="subtitle">{t.invisible} sdfsdf</div>
         <div className="productsGrid">
           {data.map(
             (product: any, index: number) =>
@@ -187,7 +186,12 @@ function ProductsEdit({ locale }: CategoriesEditProps) {
                           )}
                         </div>
                         <div className="buttonsContainer">
-                          <div className="edit">{SVGs.edit}</div>
+                          <Link
+                            href={`/${adminHash}/admin/product/edit/${product.sku}`}
+                            className="edit"
+                          >
+                            {SVGs.edit}
+                          </Link>
                           <div
                             onClick={() =>
                               toggleVisibility(product.sku, !product.toDisplay)

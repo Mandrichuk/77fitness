@@ -15,6 +15,7 @@ export async function GET(request: NextRequest, params: Props) {
     },
     include: {
       images: true,
+      title: true,
       description: true,
     },
   });
@@ -65,6 +66,13 @@ export async function PUT(request: NextRequest, params: Props) {
           sk: body.description.sk,
         },
       },
+      title: {
+        update: {
+          en: body.title.en,
+          ru: body.title.ru,
+          sk: body.title.sk,
+        },
+      },
       images: {
         create: body.imageUrls.map((url: string) => ({ url })),
       },
@@ -75,5 +83,5 @@ export async function PUT(request: NextRequest, params: Props) {
     },
   });
 
-  return NextResponse.json(validation);
+  return NextResponse.json({ updatedProduct: updatedProduct }, { status: 201 });
 }

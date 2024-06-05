@@ -11,7 +11,6 @@ function page({ params: { locale, product_sku } }: EditProductPageProps) {
     <main>
       <AdminHeader locale={locale} />
       <ProductEdit locale={locale} product_sku={product_sku} />
-      <Footer locale={locale} />
     </main>
   );
 }

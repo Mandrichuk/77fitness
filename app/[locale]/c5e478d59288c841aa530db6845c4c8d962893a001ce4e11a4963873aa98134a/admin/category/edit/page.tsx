@@ -11,7 +11,6 @@ function page({ params: { locale } }: LocaleProps) {
     <main>
       <AdminHeader locale={locale} />
       <CategoriesEdit locale={locale} />
-      <Footer locale={locale} />
     </main>
   );
 }

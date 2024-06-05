@@ -125,9 +125,7 @@
               height: 35px;
               transition: $transition;
               cursor: pointer;
-              &:active {
-                transform: scale(0.98);
-              }
+   
               svg {
                 fill: white;
                 width: 90%;

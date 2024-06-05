@@ -46,6 +46,21 @@
             }
           }
         }
+
+        .inputsContainer {
+          width: 100%;
+
+          .inputLabel {
+            width: 100%;
+            font-size: calc(fontSize(p) + 2px);
+            font-weight: fontWeight(semibold);
+          }
+
+          .InputSection {
+            margin-bottom: 10px;
+          }
+        }
+
         .booleanInputs {
           margin: 20px 0;
           @include Flex(column, center, center);
@@ -69,9 +84,11 @@
       }
 
       .details {
+        @include Flex(column, center, center);
         width: 100%;
+
         .preview {
-          @include Flex(column, center, start);
+          @include Flex(column, center, center);
           margin-bottom: 30px;
           width: 100%;
           .textAndLanguages {
@@ -102,9 +119,11 @@
           }
 
           .previewContainer {
-            max-width: 320px;
+            max-width: 300px;
             width: 100%;
+
             .product {
+              min-height: 400px;
               @include Flex(column, center, center);
               width: 100%;
               transition: transform 0.2s ease;
@@ -133,10 +152,17 @@
                 padding: 0 30px 30px 30px;
 
                 .title {
-                  font-size: calc(fontSize(p) + 1px);
+                  font-size: calc(fontSize(p) + 4px);
                   font-weight: fontWeight(bold);
+                  color: color(text-color);
+                  margin-bottom: 0px;
+                }
+
+                .category {
+                  font-size: fontSize(p);
+                  font-weight: fontWeight(semibold);
                   color: rgba(color(text-color), 0.6);
-                  margin-bottom: 10px;
+                  margin-bottom: 5px;
                 }
 
                 .name {
@@ -153,12 +179,12 @@
                 }
 
                 .cart {
-                  @include Flex(row, center, space-between);
+                  @include Flex(row, end, space-between);
                   width: 100%;
 
                   .prices {
                     height: 60px;
-                    @include Flex(column, start, start);
+                    @include Flex(column, start, end);
                     margin: 0;
                     .newPrice {
                       font-size: calc(fontSize(p) + 7px);
@@ -180,7 +206,9 @@
         }
 
         .buttonsContainer {
+          margin-top: 20px;
           margin-bottom: 50px;
+          width: 300px;
         }
       }
     }
@@ -235,10 +263,6 @@
         .details {
           flex: 1.25;
           max-width: 600px;
-
-          .buttonsContainer {
-            max-width: 250px;
-          }
 
           .preview {
             margin-left: 50px;

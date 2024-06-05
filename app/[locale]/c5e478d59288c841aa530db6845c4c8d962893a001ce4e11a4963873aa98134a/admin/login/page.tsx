@@ -14,8 +14,6 @@ function Home({ params: { locale } }: LocaleProps) {
     <main>
       <Header locale={locale} />
       <Login locale={locale} />
-      <Footer locale={locale} />
-      <CreatedBy />
     </main>
   );
 }

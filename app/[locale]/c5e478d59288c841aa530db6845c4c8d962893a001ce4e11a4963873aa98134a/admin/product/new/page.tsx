@@ -11,8 +11,6 @@ function page({ params: { locale } }: LocaleProps) {
     <main>
       <AdminHeader locale={locale} />
       <NewProduct locale={locale} />
-      <Footer locale={locale} />
-      <CreatedBy />
     </main>
   );
 }

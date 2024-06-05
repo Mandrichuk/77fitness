@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 
 import Input from "../common/Input";
 import { NewProductProps } from "@/app/lib";
-import { CLOUDINARY_FOLDER, NewProductText } from "@/app/constants";
+import { adminHash, CLOUDINARY_FOLDER, NewProductText } from "@/app/constants";
 import getHash from "@/app/utils/getHash";
 import TextLayers from "../common/TextLayers";
 import { CldUploadWidget } from "next-cloudinary";
@@ -81,7 +81,7 @@ function NewProduct({ locale }: NewProductProps) {
 
   useEffect(() => {
     if (typeof window !== "undefined" && !adminData) {
-      window.location.href = "/admin/login";
+      window.location.href = `/${adminHash}/admin/login`;
       return;
     }
   }, [adminData]);
@@ -98,6 +98,8 @@ function NewProduct({ locale }: NewProductProps) {
       newProductData.categoryId !== 0
     );
   }
+
+  console.log(newProductData);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -181,8 +183,6 @@ function NewProduct({ locale }: NewProductProps) {
       images: [result],
     }));
   }
-  console.log(isNewCategoryDataValid());
-  console.log(newProductData);
 
   return (
     <section className="NewProductSection">
@@ -228,86 +228,116 @@ function NewProduct({ locale }: NewProductProps) {
                   </div>
                 ))}
             </div>
-            <Input
-              placeholderText={t.inputs.name.placeholder}
-              getValue={(value) =>
-                handleSetNewCategory(value, t.inputs.name.field)
-              }
-              field={t.inputs.name.field}
-              maxSymbols={30}
-            />
-            <Input
-              placeholderText={t.inputs.title_en.placeholder}
-              getValue={(value) =>
-                handleSetNewCategory(value, t.inputs.title_en.field)
-              }
-              field={t.inputs.title_en.field}
-              maxSymbols={70}
-            />
-            <Input
-              placeholderText={t.inputs.title_ru.placeholder}
-              getValue={(value) =>
-                handleSetNewCategory(value, t.inputs.title_ru.field)
-              }
-              field={t.inputs.title_ru.field}
-              maxSymbols={70}
-            />
-            <Input
-              placeholderText={t.inputs.title_sk.placeholder}
-              getValue={(value) =>
-                handleSetNewCategory(value, t.inputs.title_sk.field)
-              }
-              field={t.inputs.title_sk.field}
-              maxSymbols={70}
-            />
-            <Input
-              placeholderText={t.inputs.description_en.placeholder}
-              getValue={(value) =>
-                handleSetNewCategory(value, t.inputs.description_en.field)
-              }
-              field={t.inputs.description_en.field}
-              maxSymbols={70}
-            />
-            <Input
-              placeholderText={t.inputs.description_ru.placeholder}
-              getValue={(value) =>
-                handleSetNewCategory(value, t.inputs.description_ru.field)
-              }
-              field={t.inputs.description_ru.field}
-              maxSymbols={70}
-            />
-            <Input
-              placeholderText={t.inputs.description_sk.placeholder}
-              getValue={(value) =>
-                handleSetNewCategory(value, t.inputs.description_sk.field)
-              }
-              field={t.inputs.description_sk.field}
-              maxSymbols={70}
-            />
-            <Input
-              placeholderText={t.inputs.newPrice.placeholder}
-              getValue={(value) =>
-                handleSetNewCategory(value, t.inputs.newPrice.field)
-              }
-              field={t.inputs.newPrice.field}
-              maxSymbols={6}
-            />
-            <Input
-              placeholderText={t.inputs.oldPrice.placeholder}
-              getValue={(value) =>
-                handleSetNewCategory(value, t.inputs.oldPrice.field)
-              }
-              field={t.inputs.oldPrice.field}
-              maxSymbols={6}
-            />
-            <Input
-              placeholderText={t.inputs.leftInStock.placeholder}
-              getValue={(value) =>
-                handleSetNewCategory(value, t.inputs.leftInStock.field)
-              }
-              field={t.inputs.leftInStock.field}
-              maxSymbols={6}
-            />
+            <div className="inputsContainer">
+              <label className="inputLabel">{t.inputs.name.placeholder}</label>
+              <Input
+                placeholderText={t.inputs.name.placeholder}
+                getValue={(value) =>
+                  handleSetNewCategory(value, t.inputs.name.field)
+                }
+                field={t.inputs.name.field}
+                maxSymbols={30}
+              />
+              <label className="inputLabel">
+                {t.inputs.title_en.placeholder}
+              </label>
+              <Input
+                placeholderText={t.inputs.title_en.placeholder}
+                getValue={(value) =>
+                  handleSetNewCategory(value, t.inputs.title_en.field)
+                }
+                field={t.inputs.title_en.field}
+                maxSymbols={70}
+              />
+              <label className="inputLabel">
+                {t.inputs.title_ru.placeholder}
+              </label>
+              <Input
+                placeholderText={t.inputs.title_ru.placeholder}
+                getValue={(value) =>
+                  handleSetNewCategory(value, t.inputs.title_ru.field)
+                }
+                field={t.inputs.title_ru.field}
+                maxSymbols={70}
+              />
+              <label className="inputLabel">
+                {t.inputs.title_sk.placeholder}
+              </label>
+              <Input
+                placeholderText={t.inputs.title_sk.placeholder}
+                getValue={(value) =>
+                  handleSetNewCategory(value, t.inputs.title_sk.field)
+                }
+                field={t.inputs.title_sk.field}
+                maxSymbols={70}
+              />
+              <label className="inputLabel">
+                {t.inputs.title_en.placeholder}
+              </label>
+              <Input
+                placeholderText={t.inputs.description_en.placeholder}
+                getValue={(value) =>
+                  handleSetNewCategory(value, t.inputs.description_en.field)
+                }
+                field={t.inputs.description_en.field}
+                maxSymbols={70}
+              />
+              <label className="inputLabel">
+                {t.inputs.title_ru.placeholder}
+              </label>
+              <Input
+                placeholderText={t.inputs.description_ru.placeholder}
+                getValue={(value) =>
+                  handleSetNewCategory(value, t.inputs.description_ru.field)
+                }
+                field={t.inputs.description_ru.field}
+                maxSymbols={70}
+              />
+              <label className="inputLabel">
+                {t.inputs.title_sk.placeholder}
+              </label>
+              <Input
+                placeholderText={t.inputs.description_sk.placeholder}
+                getValue={(value) =>
+                  handleSetNewCategory(value, t.inputs.description_sk.field)
+                }
+                field={t.inputs.description_sk.field}
+                maxSymbols={70}
+              />
+              <label className="inputLabel">
+                {t.inputs.newPrice.placeholder}
+              </label>
+              <Input
+                placeholderText={t.inputs.newPrice.placeholder}
+                getValue={(value) =>
+                  handleSetNewCategory(value, t.inputs.newPrice.field)
+                }
+                field={t.inputs.newPrice.field}
+                maxSymbols={6}
+              />
+              <label className="inputLabel">
+                {t.inputs.oldPrice.placeholder}
+              </label>
+              <Input
+                placeholderText={t.inputs.oldPrice.placeholder}
+                getValue={(value) =>
+                  handleSetNewCategory(value, t.inputs.oldPrice.field)
+                }
+                field={t.inputs.oldPrice.field}
+                maxSymbols={6}
+              />
+              <label className="inputLabel">
+                {t.inputs.leftInStock.placeholder}
+              </label>
+              <Input
+                placeholderText={t.inputs.leftInStock.placeholder}
+                getValue={(value) =>
+                  handleSetNewCategory(value, t.inputs.leftInStock.field)
+                }
+                field={t.inputs.leftInStock.field}
+                maxSymbols={6}
+              />
+            </div>
             <div className="booleanInputs">
               <div className="booleanInput">
                 <label>{t.inputs.toDisplay.placeholder}</label>

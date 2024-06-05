@@ -33,18 +33,6 @@ function ProductsSections({ locale, sku }: ProductSectionProps) {
     }
   }
 
-  function removeOneProduct(sku: string) {
-    dispatch(removeOneFromCart(sku));
-  }
-
-  function deleteProduct(sku: string) {
-    dispatch(removeProduct(sku));
-  }
-
-  function makeEmptyCart() {
-    dispatch(emptyCart());
-  }
-
   const notifyAddedToCart = () => {
     toast.success(t.addedNotify, {
       position: "top-right",
@@ -145,7 +133,11 @@ function ProductsSections({ locale, sku }: ProductSectionProps) {
                                 >
                                   <div className="imageContainer">
                                     <Image
-                                      image={`/shop/${product.images[0].url}`}
+                                      image={`/shop/${
+                                        product.images[
+                                          product.images.length - 1
+                                        ].url
+                                      }`}
                                       alt={"image"}
                                       imgQuality={100}
                                       isShopProduct={true}
