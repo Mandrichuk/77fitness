@@ -2347,6 +2347,10 @@ export const trainersText: TrainersTextProps = {
         post: { src: "team/vias2vjwkvbjbl0h465g", alt: "post" },
         gender: "female",
         languageFilter: [
+          {
+            text: "Slovak",
+            value: "sk",
+          },
           { text: "English", value: "en" },
           { text: "Ukrainian", value: "ua" },
           { text: "Russian", value: "ru" },
@@ -2676,6 +2680,10 @@ export const trainersText: TrainersTextProps = {
         gender: "female",
         languageFilter: [
           {
+            text: "Slovak",
+            value: "sk",
+          },
+          {
             text: "English",
             value: "en",
           },
@@ -2689,7 +2697,7 @@ export const trainersText: TrainersTextProps = {
           },
         ],
         description:
-          "Moja metóda sa zameriava na tréning pre potešenie a udržiavanie stabilného duševného stavu. Výživa predstavuje 100% úspechu, ale prostredníctvom psychológie vám ukážem, ako cítiť svoje telo a jeho potreby. Ukážem vám, ako sa o seba starať a dokážem vám, že sa na svoje odrazy môžete pozerať s láskou a potešením.",
+          "Volám sa Kati a som certifikovanou osobnou trénerkou. Trénovaniu sa venujem 6 rokov, počas ktorých som mala skúsenosť s prípravou na súťaž vo fitness modelingu a fitness bikiny. Dokážem každému klientovi, že každý z nás môže dosiahnuť všetko a ešte viac. Moja metóda sa zameriava na tréning pre potešenie a udržiavanie stabilného duševného stavu. Výživa predstavuje 100% úspechu, ale prostredníctvom psychológie vám ukážem, ako cítiť svoje telo a jeho potreby. Ukážem vám, ako sa o seba starať a dokážem vám, že sa na svoje odrazy v zrkadle môžete pozerať s láskou a potešením.",
       },
       {
         image: {
@@ -3165,6 +3173,10 @@ export const trainersText: TrainersTextProps = {
         },
         gender: "female",
         languageFilter: [
+          {
+            text: "Slovak",
+            value: "sk",
+          },
           {
             text: "English",
             value: "en",
