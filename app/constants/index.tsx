@@ -2127,7 +2127,7 @@ export const trainersText: TrainersTextProps = {
         qr: { src: "null", alt: "qr" },
         name: "Vladimír Kerul",
         number: "+421 911 434 040",
-        email: "ibffslovalia@gmail.com",
+        email: "ibffslovakia@gmail.com",
         instagram: {
           name: "coachkerul",
           link: "https://www.instagram.com/coachkerul/?igsh=MmlmYzZlMXFmNmI%3D&utm_source=qr",
@@ -2191,7 +2191,7 @@ export const trainersText: TrainersTextProps = {
           name: "tomas_mbtkcoaching",
           link: "https://www.instagram.com/tomas_mbtkcoaching/",
         },
-        post: { src: "team/mzwmwl0zih8rql0dvlvz", alt: "post" },
+        post: { src: "team/trainer1_cjjupt", alt: "post" },
         gender: "male",
         languageFilter: [
           { text: "English", value: "en" },
@@ -2356,7 +2356,7 @@ export const trainersText: TrainersTextProps = {
           { text: "Russian", value: "ru" },
         ],
         description:
-          "My approach focuses on training for pleasure and maintaining a stable mental state. Nutrition accounts for 100% of success, but through psychology, I'll teach you to feel your body and its needs. I'll show you how to care for yourself and prove that you can look at your reflection with love and pleasure.",
+          "My name is Kati, and I am a certified personal trainer. I have been involved in training for six years, during which I have gained experience preparing for fitness modeling and bikini fitness competitions. I can prove to every client that anyone can achieve anything and even more. My method focuses on training for pleasure and maintaining a stable mental state. Nutrition represents 100% of success, but through psychology, I will show you how to feel your body and its needs. I will show you how to take care of yourself and prove to you that you can look at your reflection in the mirror with love and pleasure.",
       },
       {
         image: {
@@ -2379,6 +2379,31 @@ export const trainersText: TrainersTextProps = {
         ],
         description:
           "As a former professional football player and certified strength and conditioning coach, I bring a wealth of experience and knowledge to my clients, accumulated over 17 years in the fitness industry. Throughout my coaching career, I have completed over 20 training courses and obtained several international certifications in coaching, physiotherapy, and nutritional counseling. I work with a diverse clientele, including the general population, youth, elite athletes, post-operative cases, pregnant women, and postpartum exercise. I always strive to help clients achieve their goals in the healthiest possible way. My approach is guided by three fundamental pillars: movement, nutrition, and recovery.",
+      },
+      {
+        image: {
+          src: "team/sg2rphtlklnioiyjxa1z",
+          alt: "trainer",
+        },
+        qr: { src: "null", alt: "qr" },
+        name: "Ivana Kurillova",
+        number: "+421 915 976 263",
+        email: "ivanakurillova12@icloud.com",
+        instagram: {
+          name: "ivka.ka",
+          link: "https://www.instagram.com/ivka.ka?igsh=MTYzbW10bHU1aGQw&utm_source=qr",
+        },
+        post: {
+          src: "team/434434943_711011247913131_5933163854756402316_n_bio8ae",
+          alt: "post",
+        },
+        gender: "female",
+        languageFilter: [
+          { text: "English", value: "en" },
+          { text: "Slovak", value: "sk" },
+        ],
+        description:
+          "My name is Ivana and I am a qualified personal trainer and nutrition consultant with over 10 years of experience. I specialize in strength training, body sculpting, strength building, proper posture, and physiotherapeutic exercises. I have more than 5 years of experience in natural bodybuilding and am the Slovak Champion in the Wellness category for 2024. I bring a wealth of experience to my clients, as I go through bulking, cutting, and maintenance phases annually. My goal is to offer my clients an individual approach that helps them achieve personal goals and improve their quality of life.",
       },
     ],
   },
@@ -2435,7 +2460,7 @@ export const trainersText: TrainersTextProps = {
         qr: { src: "null", alt: "qr" },
         name: "Vladimír Kerul",
         number: "+421 911 434 040",
-        email: "ibffslovalia@gmail.com",
+        email: "ibffslovakia@gmail.com",
         instagram: {
           name: "coachkerul",
           link: "https://www.instagram.com/coachkerul/?igsh=MmlmYzZlMXFmNmI%3D&utm_source=qr",
@@ -2499,7 +2524,7 @@ export const trainersText: TrainersTextProps = {
           name: "tomas_mbtkcoaching",
           link: "https://www.instagram.com/tomas_mbtkcoaching/",
         },
-        post: { src: "team/mzwmwl0zih8rql0dvlvz", alt: "post" },
+        post: { src: "team/trainer1_cjjupt", alt: "post" },
         gender: "male",
         languageFilter: [
           { text: "English", value: "en" },
@@ -2733,6 +2758,31 @@ export const trainersText: TrainersTextProps = {
         description:
           "Ako bývalý profesionálny futbalista a certifikovaný silovo-kondičný tréner, prinášam svojim klientom bohaté skúsenosti a znalosti, ktoré som za 17 rokov v oblasti fitness nadobudol. Počas svojej trénerskej praxe, som absolvoval vyše 20 školení a získal viacero zahraničných certifikátov v oblasti trénerstva, fyzioterapie a výživového poradenstva. Pracujem s rôznou klientelou, či už to je bežná populácia, mládež, vrcholoví športovci, pooperačné stavy, tehotné alebo cvičenie po pôrode. Vždy sa snažím klientom splniť ich ciele tým najzdravším možným spôsobom. Riadim sa tromi základnými piliermi: pohyb, strava a regenerácia.",
       },
+      {
+        image: {
+          src: "team/sg2rphtlklnioiyjxa1z",
+          alt: "trainer",
+        },
+        qr: { src: "null", alt: "qr" },
+        name: "Ivana Kurillova",
+        number: "+421 915 976 263",
+        email: "ivanakurillova12@icloud.com",
+        instagram: {
+          name: "ivka.ka",
+          link: "https://www.instagram.com/ivka.ka?igsh=MTYzbW10bHU1aGQw&utm_source=qr",
+        },
+        post: {
+          src: "team/434434943_711011247913131_5933163854756402316_n_bio8ae",
+          alt: "post",
+        },
+        gender: "female",
+        languageFilter: [
+          { text: "English", value: "en" },
+          { text: "Slovak", value: "sk" },
+        ],
+        description:
+          "Volám sa Ivana a som kvalifikovaná osobná trénerka a nutričná poradkyňa s viac ako 10-ročnou praxou. Špecializujem sa na silové tréningy, formovanie postavy, naberanie sily, správne držanie tela a fyzioterapeutické cvičenia. Mám viac ako 5 rokov skúseností v naturalnej kulturistike a som Majsterka Slovenska v kategórii Wellness za rok 2024. Mojím klientom prinášam bohaté skúsenosti, keďže ročne prechádzam naberacou fázou, rysovacou fázou a udržiavacou fázou. Mojím cieľom je klientom ponúknuť individuálny prístup, ktorý im pomôže dosiahnuť osobné ciele a zlepšiť kvalitu života.",
+      },
     ],
   },
   ru: {
@@ -2806,7 +2856,7 @@ export const trainersText: TrainersTextProps = {
         },
         name: "Vladimír Kerul",
         number: "+421 911 434 040",
-        email: "ibffslovalia@gmail.com",
+        email: "ibffslovakia@gmail.com",
         instagram: {
           name: "coachkerul",
           link: "https://www.instagram.com/coachkerul/?igsh=MmlmYzZlMXFmNmI%3D&utm_source=qr",
@@ -2922,7 +2972,7 @@ export const trainersText: TrainersTextProps = {
           link: "https://www.instagram.com/tomas_mbtkcoaching/",
         },
         post: {
-          src: "team/mzwmwl0zih8rql0dvlvz",
+          src: "team/trainer1_cjjupt",
           alt: "post",
         },
         gender: "male",
@@ -3191,7 +3241,7 @@ export const trainersText: TrainersTextProps = {
           },
         ],
         description:
-          "Мой подход сосредоточен на тренировках для удовольствия и поддержании устойчивого психологического состояния. Питание составляет 100% успеха, но через психологию я научу вас чувствовать свое тело и его потребности. Я покажу вам, как заботиться о себе и докажу, что вы можете с любовью и удовольствием смотреть на свое отражение.",
+          "Меня зовут Катя, и я сертифицированный личный тренер. Я занимаюсь тренировками уже шесть лет, за это время я получила опыт подготовки к соревнованиям по фитнес-моделированию и фитнес-бикини. Я могу доказать каждому клиенту, что каждый из нас может достичь всего и даже большего. Мой метод сосредоточен на тренировках для удовольствия и поддержании стабильного психического состояния. Питание составляет 100% успеха, но с помощью психологии я покажу вам, как чувствовать свое тело и его потребности. Я научу вас заботиться о себе и докажу, что вы можете смотреть на свое отражение в зеркале с любовью и удовольствием.",
       },
       {
         image: {
@@ -3226,6 +3276,31 @@ export const trainersText: TrainersTextProps = {
         ],
         description:
           "В качестве бывшего профессионального футболиста и сертифицированного тренера по укреплению и силовой подготовке я привношу огромный опыт и знания своим клиентам, накопленные за 17 лет в фитнес-индустрии. За время своей тренерской карьеры я прошел более 20 тренингов и получил несколько международных сертификатов в области тренерского дела, физиотерапии и питания. Я работаю с разнообразной клиентской базой, включая обычных людей, молодежь, профессиональных спортсменов, пациентов после операций, беременных женщин и занятия спортом после родов. Я всегда стремлюсь помочь клиентам достичь своих целей самым здоровым способом. Мой подход основан на трех фундаментальных принципах: движение, питание и восстановление.",
+      },
+      {
+        image: {
+          src: "team/sg2rphtlklnioiyjxa1z",
+          alt: "trainer",
+        },
+        qr: { src: "null", alt: "qr" },
+        name: "Ivana Kurillova",
+        number: "+421 915 976 263",
+        email: "ivanakurillova12@icloud.com",
+        instagram: {
+          name: "ivka.ka",
+          link: "https://www.instagram.com/ivka.ka?igsh=MTYzbW10bHU1aGQw&utm_source=qr",
+        },
+        post: {
+          src: "team/434434943_711011247913131_5933163854756402316_n_bio8ae",
+          alt: "post",
+        },
+        gender: "female",
+        languageFilter: [
+          { text: "English", value: "en" },
+          { text: "Slovak", value: "sk" },
+        ],
+        description:
+          "Меня зовут Ивана, я квалифицированный персональный тренер и консультант по питанию с более чем 10-летним опытом. Я специализируюсь на силовых тренировках, формировании тела, наборе силы, правильной осанке и физиотерапевтических упражнениях. У меня более 5 лет опыта в натуральном бодибилдинге, и я являюсь чемпионкой Словакии в категории Wellness за 2024 год. Я приношу своим клиентам богатый опыт, так как ежегодно прохожу через фазы набора массы, сушки и поддержания формы. Моя цель - предложить клиентам индивидуальный подход, который поможет им достичь личных целей и улучшить качество жизни.",
       },
     ],
   },
