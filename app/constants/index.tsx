@@ -2382,7 +2382,7 @@ export const trainersText: TrainersTextProps = {
       },
       {
         image: {
-          src: "team/sg2rphtlklnioiyjxa1z",
+          src: "team/434434943_711011247913131_5933163854756402316_n_bio8ae-removebg-preview_goxmjl",
           alt: "trainer",
         },
         qr: { src: "null", alt: "qr" },
@@ -2760,7 +2760,7 @@ export const trainersText: TrainersTextProps = {
       },
       {
         image: {
-          src: "team/sg2rphtlklnioiyjxa1z",
+          src: "team/434434943_711011247913131_5933163854756402316_n_bio8ae-removebg-preview_goxmjl",
           alt: "trainer",
         },
         qr: { src: "null", alt: "qr" },
@@ -3279,7 +3279,7 @@ export const trainersText: TrainersTextProps = {
       },
       {
         image: {
-          src: "team/sg2rphtlklnioiyjxa1z",
+          src: "team/434434943_711011247913131_5933163854756402316_n_bio8ae-removebg-preview_goxmjl",
           alt: "trainer",
         },
         qr: { src: "null", alt: "qr" },

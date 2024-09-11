@@ -170,19 +170,6 @@ function Team() {
     },
     {
       image: {
-        src: t("trainers.trainer13.image.src"),
-        alt: t("trainers.trainer13.image.alt"),
-      },
-      qr: {
-        src: t("trainers.trainer13.qr.src"),
-        alt: t("trainers.trainer13.qr.alt"),
-      },
-      name: t("trainers.trainer13.name"),
-      number: t("trainers.trainer13.number"),
-      email: t("trainers.trainer13.email"),
-    },
-    {
-      image: {
         src: t("trainers.trainer14.image.src"),
         alt: t("trainers.trainer14.image.alt"),
       },
