@@ -66,9 +66,46 @@ function Gallery() {
         </div>
         <div className="textSection">
           <div className="wrapper">
+            <div className="machinesLogos">
+              <div className="logoContainer">
+                <Image
+                  image="brands/PRIME_Logo_1200x1200-removebg-preview_shterm"
+                  alt="logo"
+                  imgQuality={100}
+                />
+              </div>
+              <div className="logoContainer">
+                <Image
+                  image="brands/07c-removebg-preview_knfzbh"
+                  alt="logo"
+                  imgQuality={100}
+                />
+              </div>
+              <div className="logoContainer">
+                <Image
+                  image="brands/output-onlinepngtools_2_vuhsml"
+                  alt="logo"
+                  imgQuality={100}
+                />
+              </div>
+              <div className="logoContainer">
+                <Image
+                  image="brands/output-onlinepngtools_f4lxdp"
+                  alt="logo"
+                  imgQuality={100}
+                />
+              </div>
+              <div className="logoContainer">
+                <Image
+                  image="brands/DRAX_2-1024x403_o1ihox"
+                  alt="logo"
+                  imgQuality={100}
+                />
+              </div>
+            </div>
             <h3 className="title">
               {t("title.main")}&nbsp;
-              <span className="text" style={brand1Styles}>
+              {/* <span className="text" style={brand1Styles}>
                 {t("title.brand1")}
               </span>
               &nbsp;
@@ -79,7 +116,7 @@ function Gallery() {
               &nbsp;
               <span className="text" style={{ display: "block" }}>
                 {t("title.text2")}
-              </span>
+              </span> */}
             </h3>
 
             <div className="points">

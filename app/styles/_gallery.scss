@@ -76,6 +76,20 @@
         @include Flex(column, center, center);
         width: wrapperWidth(mobile);
 
+        .machinesLogos {
+          @include Flex(row, center, center);
+          width: 100%;
+          margin-bottom: 30px;
+          // background-color: red;
+          height: auto;
+          gap: 20px;
+
+          .logoContainer {
+            @include Flex(row, center, center);
+            flex: 1;
+          }
+        }
+
         .title {
           display: none;
         }
