@@ -90,6 +90,13 @@ function Gallery() {
               </div>
               <div className="logoContainer">
                 <Image
+                  image="brands/Hoist_Fitness_Logo_Classic_k49lg9"
+                  alt="logo"
+                  imgQuality={100}
+                />
+              </div>
+              <div className="logoContainer">
+                <Image
                   image="brands/output-onlinepngtools_f4lxdp"
                   alt="logo"
                   imgQuality={100}
