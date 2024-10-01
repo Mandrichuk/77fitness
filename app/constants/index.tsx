@@ -1843,34 +1843,15 @@ export const PricesText: PricesTextTypes = {
         membershipSku: "CBDC14DB23",
       },
       {
-        standOut: "najlepšia ponuka",
-        title: "6 + 1 mesiac zadarmo",
-        price: "340",
-        description: "jednorazová platba",
-        included: [
-          "Ušetrite viac ako €100!",
-          "Neobmedzený prístup do posilňovne",
-          "Sauna a sprchy",
-          "Často DJ a živá hudba",
-          "Osobný tréner (Rezervácia nutná, za príplatok)",
-        ],
-        button: {
-          text: "Kúpiť online",
-          link: "/shop",
-        },
-        membershipSku: "9F83982F8C",
-      },
-      {
         standOut: "obmedzené!",
         title: "12 + 3 mesiace zdarma",
-        price: "600",
+        price: "650",
         description: "jednorazová platba, len pre nasledujúcich 20 členov!",
         included: [
           "Ušetrite viac ako €200!",
           "Neobmedzený prístup do fitnes centra",
           "Sauna a sprchy",
           "Často DJ a živá hudba",
-        
         ],
         button: {
           text: "Kúpiť online",
@@ -1950,27 +1931,9 @@ export const PricesText: PricesTextTypes = {
         membershipSku: "CBDC14DB23",
       },
       {
-        standOut: "лучшая цена",
-        title: "6 + 1 месяц бесплатно",
-        price: "340",
-        description: "одноразовый платеж",
-        included: [
-          "Экономьте более €100!",
-          "Неограниченный доступ в зал",
-          "Сауна и душ",
-          "Часто DJ и живая музыка",
-          "Персональный тренер (Требуется бронирование, за дополнительную плату)",
-        ],
-        button: {
-          text: "Купить онлайн",
-          link: "/shop",
-        },
-        membershipSku: "9F83982F8C",
-      },
-      {
         standOut: "ограниченно!",
         title: "12 + 3 месяца бесплатно",
-        price: "600",
+        price: "650",
         description: "однократный платеж, только для следующих 20 желающих!",
         included: [
           "Сэкономьте более €200!",
@@ -2055,27 +2018,9 @@ export const PricesText: PricesTextTypes = {
         membershipSku: "CBDC14DB23",
       },
       {
-        standOut: "best deal",
-        title: "6 + 1 month for free",
-        price: "340",
-        description: "one-time payment",
-        included: [
-          "Save more than €100!",
-          "Unlimited Gym Access",
-          "Sauna & Showers",
-          "Often DJ & Live Music",
-          "Personal Trainer (Reservation required, for an additional fee)",
-        ],
-        button: {
-          text: "Buy online",
-          link: "/shop",
-        },
-        membershipSku: "9F83982F8C",
-      },
-      {
         standOut: "limited!",
         title: "12 + 3 month for free",
-        price: "600",
+        price: "650",
         description: "one-time payment, for only next 20 members!",
         included: [
           "Save more than €200!",
@@ -2153,6 +2098,40 @@ export const trainersText: TrainersTextProps = {
       link: "https://forms.gle/e9ju8iziHy1hPzDZ8 ",
     },
     trainers: [
+      {
+        image: {
+          src: "team/photo_5467396040010360796_y-removebg-preview_jiamca",
+          alt: "trainer",
+        },
+        qr: {
+          src: "null",
+          alt: "qr",
+        },
+        name: "Nicol Celeriková",
+        number: "+421 911 243 313",
+        email: "celerikova.nicol@gmail.com",
+        instagram: {
+          name: "nicol_celerikova",
+          link: "https://www.instagram.com/nicol_celerikova/",
+        },
+        post: {
+          src: "team/photo_5467396040010360796_y_fkhmwn",
+          alt: "post",
+        },
+        gender: "female",
+        languageFilter: [
+          {
+            text: "English",
+            value: "en",
+          },
+          {
+            text: "Slovak",
+            value: "s",
+          },
+        ],
+        description:
+          "When you can't go on, add more; and when you can’t add anymore, add even more.”",
+      },
       {
         image: {
           src: "team/k8mgwucduwycgjbkm21l",
@@ -2487,6 +2466,28 @@ export const trainersText: TrainersTextProps = {
       link: "https://forms.gle/pKE2EehqnABFJyev5",
     },
     trainers: [
+      {
+        image: {
+          src: "team/photo_5467396040010360796_y-removebg-preview_jiamca",
+          alt: "trainer",
+        },
+        qr: { src: "null", alt: "qr" },
+        name: "Nicol Celeriková",
+        number: "+421 911 243 313",
+        email: "celerikova.nicol@gmail.com",
+        instagram: {
+          name: "nicol_celerikova",
+          link: "https://www.instagram.com/nicol_celerikova/",
+        },
+        post: { src: "team/photo_5467396040010360796_y_fkhmwn", alt: "post" },
+        gender: "female",
+        languageFilter: [
+          { text: "English", value: "en" },
+          { text: "Slovak", value: "s" },
+        ],
+        description:
+          "Keď nevládzeš, pridaj, a keď sa už viac nedá, tak pridaj ešte viac.” Toto motto ma sprevádzalo počas celej prípravy na Majstrovstvá a aj vďaka nemu som to dokázala a stala sa Absolutnou Majsterkou Európy a Majsterkou Sveta a taktiež som niekoľko násobnou Majsterkou Slovenska. Som kvalifikovanou trénerkou 2. stupňa a študujem na FTVŠ UK - učiteľstvo a trénerstvo TV. Fitnessu sa aktívne venujem už 13 rokov. Rada vám pomôžem získať vytúženú postavu, zostavení tréningového plánu na mieru, upravením stravovacích návikov a to všetko pod mojim aktívnym dohľadom. Mám bohaté skúsenosti a viem pomocť aj poradiť s prípravou na súťažné pódium v rôznych kategóriach. S veľkou dávkou trpezlivosti a odvahy sa spolu dotkneme hviezd. Teším sa na vás.",
+      },
       {
         image: {
           src: "team/k8mgwucduwycgjbkm21l",
@@ -2865,6 +2866,40 @@ export const trainersText: TrainersTextProps = {
       link: "https://forms.gle/e9ju8iziHy1hPzDZ8",
     },
     trainers: [
+      {
+        image: {
+          src: "team/photo_5467396040010360796_y-removebg-preview_jiamca",
+          alt: "тренер",
+        },
+        qr: {
+          src: "null",
+          alt: "qr",
+        },
+        name: "Никол Челирикова",
+        number: "+421 911 243 313",
+        email: "celerikova.nicol@gmail.com",
+        instagram: {
+          name: "nicol_celerikova",
+          link: "https://www.instagram.com/nicol_celerikova/",
+        },
+        post: {
+          src: "team/photo_5467396040010360796_y_fkhmwn",
+          alt: "пост",
+        },
+        gender: "женский",
+        languageFilter: [
+          {
+            text: "Английский",
+            value: "en",
+          },
+          {
+            text: "Словацкий",
+            value: "s",
+          },
+        ],
+        description:
+          "Когда не можешь продолжать, добавь больше; а когда уже не можешь добавить, добавь ещё больше.” Этот девиз сопровождал меня на протяжении всей подготовки к чемпионату, и благодаря ему я смогла стать Абсолютной Чемпионкой Европы и Мира, а также многократной Чемпионкой Словакии. Я квалифицированный тренер 2-го уровня и учусь на ФТВШ УК - преподавание и тренерство по физическому воспитанию. Я активно занимаюсь фитнесом уже 13 лет. Я с удовольствием помогу вам добиться желаемой фигуры, составив индивидуальный тренировочный план и скорректировав ваши пищевые привычки, все это под моим активным контролем. У меня есть обширный опыт, и я могу помочь и проконсультировать по подготовке к соревнованиям в различных категориях. С большой долей терпения и смелости мы вместе достигнем звезд. Я с нетерпением жду встречи с вами.",
+      },
       {
         image: {
           src: "team/k8mgwucduwycgjbkm21l",
