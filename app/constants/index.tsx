@@ -2134,6 +2134,34 @@ export const trainersText: TrainersTextProps = {
       },
       {
         image: {
+          src: "team/DSC03690-removebg-preview_lf1z0e",
+          alt: "trainer",
+        },
+        qr: {
+          src: "null",
+          alt: "qr",
+        },
+        name: "Bálint Szalai",
+        number: "+421 000 000 000",
+        email: "email@gmail.com",
+        instagram: {
+          name: "username",
+          link: "https://www.instagram.com/",
+        },
+        post: {
+          src: "team/DSC03705_2_steghl",
+          alt: "post",
+        },
+        gender: "male",
+        languageFilter: [
+          { text: "English", value: "en" },
+          { text: "Slovak", value: "sk" },
+        ],
+        description:
+          "I’m here to help you unlock your full potential through functional training. With a background as a former football player, dancer, and calisthenics athlete, I’ve spent years developing a deep understanding of movement and athletic performance. I hold a Diploma in Sports and Education, and I work with people of all ages and fitness levels, from athletes to those just starting their fitness journey. My philosophy is simple: 'We don’t train as we get older, we train to get older.' Let’s make each session a step toward a stronger, healthier you!",
+      },
+      {
+        image: {
           src: "team/k8mgwucduwycgjbkm21l",
           alt: "trainer",
         },
@@ -2483,10 +2511,32 @@ export const trainersText: TrainersTextProps = {
         gender: "female",
         languageFilter: [
           { text: "English", value: "en" },
-          { text: "Slovak", value: "s" },
+          { text: "Slovak", value: "sk" },
         ],
         description:
           "Keď nevládzeš, pridaj, a keď sa už viac nedá, tak pridaj ešte viac.” Toto motto ma sprevádzalo počas celej prípravy na Majstrovstvá a aj vďaka nemu som to dokázala a stala sa Absolutnou Majsterkou Európy a Majsterkou Sveta a taktiež som niekoľko násobnou Majsterkou Slovenska. Som kvalifikovanou trénerkou 2. stupňa a študujem na FTVŠ UK - učiteľstvo a trénerstvo TV. Fitnessu sa aktívne venujem už 13 rokov. Rada vám pomôžem získať vytúženú postavu, zostavení tréningového plánu na mieru, upravením stravovacích návikov a to všetko pod mojim aktívnym dohľadom. Mám bohaté skúsenosti a viem pomocť aj poradiť s prípravou na súťažné pódium v rôznych kategóriach. S veľkou dávkou trpezlivosti a odvahy sa spolu dotkneme hviezd. Teším sa na vás.",
+      },
+      {
+        image: {
+          src: "team/DSC03690-removebg-preview_lf1z0e",
+          alt: "trainer",
+        },
+        qr: { src: "null", alt: "qr" },
+        name: "Bálint Szalai",
+        number: "+421 000 000 000",
+        email: "email@gmail.com",
+        instagram: {
+          name: "username",
+          link: "https://www.instagram.com/",
+        },
+        post: { src: "team/DSC03705_2_steghl", alt: "post" },
+        gender: "male",
+        languageFilter: [
+          { text: "English", value: "en" },
+          { text: "Slovak", value: "sk" },
+        ],
+        description:
+          "Som tu, aby som vám pomohol odomknúť váš plný potenciál prostredníctvom funkčného tréningu. S pozadím bývalého futbalistu, tanečníka a atlétu v kalistenike som strávil roky rozvíjaním hlbokého porozumenia pohybu a atletickému výkonu. Mám diplom v oblasti športu a vzdelávania a pracujem s ľuďmi všetkých vekových kategórií a úrovní kondície, od športovcov až po tých, ktorí len začínajú svoju fitness cestu.Moja filozofia je jednoduchá: „Netrenujeme, ako starneme, trénujeme, aby sme zostarli. “Poďme spraviť každú reláciu krokom k silnejšiemu, zdravšiemu vám!",
       },
       {
         image: {
@@ -2899,6 +2949,34 @@ export const trainersText: TrainersTextProps = {
         ],
         description:
           "Когда не можешь продолжать, добавь больше; а когда уже не можешь добавить, добавь ещё больше.” Этот девиз сопровождал меня на протяжении всей подготовки к чемпионату, и благодаря ему я смогла стать Абсолютной Чемпионкой Европы и Мира, а также многократной Чемпионкой Словакии. Я квалифицированный тренер 2-го уровня и учусь на ФТВШ УК - преподавание и тренерство по физическому воспитанию. Я активно занимаюсь фитнесом уже 13 лет. Я с удовольствием помогу вам добиться желаемой фигуры, составив индивидуальный тренировочный план и скорректировав ваши пищевые привычки, все это под моим активным контролем. У меня есть обширный опыт, и я могу помочь и проконсультировать по подготовке к соревнованиям в различных категориях. С большой долей терпения и смелости мы вместе достигнем звезд. Я с нетерпением жду встречи с вами.",
+      },
+      {
+        image: {
+          src: "team/DSC03690-removebg-preview_lf1z0e",
+          alt: "тренер",
+        },
+        qr: {
+          src: "null",
+          alt: "qr",
+        },
+        name: "Балинт Шалаи",
+        number: "+421 000 000 000",
+        email: "email@gmail.com",
+        instagram: {
+          name: "имя пользователя",
+          link: "https://www.instagram.com/",
+        },
+        post: {
+          src: "team/DSC03705_2_steghl",
+          alt: "пост",
+        },
+        gender: "мужской",
+        languageFilter: [
+          { text: "English", value: "en" },
+          { text: "Словакский", value: "sk" },
+        ],
+        description:
+          "Я здесь, чтобы помочь вам раскрыть ваш полный потенциал через функциональные тренировки. Имея опыт бывшего футболиста, танцора и атлета в калистенике, я провел годы, развивая глубокое понимание движения и спортивной производительности. У меня есть диплом в области спорта и образования, и я работаю с людьми всех возрастов и уровней физической подготовки, от спортсменов до тех, кто только начинает свой путь к фитнесу. Моя философия проста: 'Мы не тренируемся по мере взросления, мы тренируемся, чтобы стареть.' Давайте сделаем каждую сессию шагом к более сильному и здоровому вам!",
       },
       {
         image: {
