@@ -15,6 +15,8 @@ import CreatedBy from "../components/common/CreatedBy";
 import Application from "../components/home/Application";
 import Details from "../components/common/Details";
 import Overview from "../components/common/Overview";
+import Slogan from "../components/common/Slogan";
+
 
 import { BluredCircleColors } from "../constants";
 import { LocaleProps } from "../lib/index";
@@ -24,6 +26,7 @@ function Home({ params: { locale } }: LocaleProps) {
     <main>
       <Header locale={locale} />
       <Introduction />
+      <Slogan />
       <Overview locale={locale} />
       <Team />
       <Gallery />

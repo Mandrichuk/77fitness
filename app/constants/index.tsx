@@ -2100,6 +2100,28 @@ export const trainersText: TrainersTextProps = {
     trainers: [
       {
         image: {
+          src: "team/5206412433873297843-removebg-preview_eyxwmb",
+          alt: "trainer",
+        },
+        qr: { src: "null", alt: "qr" },
+        name: "Peter Homza",
+        number: "+421 902 802 223",
+        email: "peterhomza@hotmail.sk",
+        instagram: {
+          name: "trainer_peter_coach",
+          link: "https://www.instagram.com/trainer_peter_coach/",
+        },
+        post: { src: "team/5206412433873297843_bydbwq", alt: "post" },
+        gender: "male",
+        languageFilter: [
+          { text: "English", value: "en" },
+          { text: "Slovak", value: "sk" },
+        ],
+        description:
+          "I am a certified trainer in fitness and bodybuilding with over 10 years of experience. I offer my professional qualification in functional training, training during and after pregnancy, TRX, bosu, and kettlebell exercises. I specialize mainly in training glutes, abdominal muscles, and core. During the training, I try to make it fun, but also as beneficial, progressive, and individual as possible to meet the client's needs. I measure my clients' satisfaction primarily through long-term or repeat collaborations.",
+      },
+      {
+        image: {
           src: "team/photo_5467396040010360796_y-removebg-preview_jiamca",
           alt: "trainer",
         },
@@ -2142,11 +2164,11 @@ export const trainersText: TrainersTextProps = {
           alt: "qr",
         },
         name: "Bálint Szalai",
-        number: "+421 000 000 000",
-        email: "email@gmail.com",
+        number: "+421 944 145 770",
+        email: "walntino@gmail.com",
         instagram: {
-          name: "username",
-          link: "https://www.instagram.com/",
+          name: "baliszalai",
+          link: "https://www.instagram.com/baliszalai/",
         },
         post: {
           src: "team/DSC03705_2_steghl",
@@ -2496,6 +2518,28 @@ export const trainersText: TrainersTextProps = {
     trainers: [
       {
         image: {
+          src: "team/5206412433873297843-removebg-preview_eyxwmb",
+          alt: "trainer",
+        },
+        qr: { src: "null", alt: "qr" },
+        name: "Peter Homza",
+        number: "+421 902 802 223",
+        email: "peterhomza@hotmail.sk",
+        instagram: {
+          name: "trainer_peter_coach",
+          link: "https://www.instagram.com/trainer_peter_coach/",
+        },
+        post: { src: "team/5206412433873297843_bydbwq", alt: "post" },
+        gender: "male",
+        languageFilter: [
+          { text: "English", value: "en" },
+          { text: "Slovak", value: "sk" },
+        ],
+        description:
+          "Som certifikovany trener v oblasti fitness a kulturistiky s viac ako 10-rocnymi skusenostami. Svoju odbornu kvalifikaciu ponukam pri funkcnych treningoch, treningoch pocas tehotenstva ako aj po nom, pri cviceniach TRX, bosu, kettlebell. Specializujem sa hlavne na treningy sedacieho, brusneho svalstva, ako aj coru. Pocas treningu sa snazim aby bol trening zabavou, ale co najviac prospesny, progresivny a individualny pre potreby klienta. Spokojnost mojich zverencov vnimam pri mnohych najma cez dlhodobe alebo opakovane spoluprace.",
+      },
+      {
+        image: {
           src: "team/photo_5467396040010360796_y-removebg-preview_jiamca",
           alt: "trainer",
         },
@@ -2523,11 +2567,11 @@ export const trainersText: TrainersTextProps = {
         },
         qr: { src: "null", alt: "qr" },
         name: "Bálint Szalai",
-        number: "+421 000 000 000",
-        email: "email@gmail.com",
+        number: "+421 944 145 770",
+        email: "walntino@gmail.com",
         instagram: {
-          name: "username",
-          link: "https://www.instagram.com/",
+          name: "baliszalai",
+          link: "https://www.instagram.com/baliszalai/",
         },
         post: { src: "team/DSC03705_2_steghl", alt: "post" },
         gender: "male",
@@ -2918,6 +2962,28 @@ export const trainersText: TrainersTextProps = {
     trainers: [
       {
         image: {
+          src: "team/5206412433873297843-removebg-preview_eyxwmb",
+          alt: "trainer",
+        },
+        qr: { src: "null", alt: "qr" },
+        name: "Peter Homza",
+        number: "+421 902 802 223",
+        email: "peterhomza@hotmail.sk",
+        instagram: {
+          name: "trainer_peter_coach",
+          link: "https://www.instagram.com/trainer_peter_coach/",
+        },
+        post: { src: "team/5206412433873297843_bydbwq", alt: "post" },
+        gender: "male",
+        languageFilter: [
+          { text: "English", value: "en" },
+          { text: "Slovak", value: "sk" },
+        ],
+        description:
+          "Я сертифицированный тренер в области фитнеса и бодибилдинга с более чем 10-летним опытом. Моя профессиональная квалификация охватывает функциональные тренировки, тренировки во время беременности и после нее, а также упражнения с TRX, босу, гирями. Я специализируюсь на тренировках ягодичных мышц, брюшного пресса, а также на тренировке core. Во время тренировки я стараюсь, чтобы она была веселой, но в то же время максимально полезной, прогрессивной и индивидуально адаптированной под потребности клиента. Я оцениваю удовлетворенность моих подопечных, особенно по долгосрочному или повторному сотрудничеству.",
+      },
+      {
+        image: {
           src: "team/photo_5467396040010360796_y-removebg-preview_jiamca",
           alt: "тренер",
         },
@@ -2960,11 +3026,11 @@ export const trainersText: TrainersTextProps = {
           alt: "qr",
         },
         name: "Балинт Шалаи",
-        number: "+421 000 000 000",
-        email: "email@gmail.com",
+        number: "+421 944 145 770",
+        email: "walntino@gmail.com",
         instagram: {
-          name: "имя пользователя",
-          link: "https://www.instagram.com/",
+          name: "baliszalai",
+          link: "https://www.instagram.com/baliszalai/",
         },
         post: {
           src: "team/DSC03705_2_steghl",

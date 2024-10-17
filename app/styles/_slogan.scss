@@ -1,0 +1,100 @@
+.Slogan {
+  width: 100%;
+  height: auto;
+  text-align: center; /* Optional: Center text horizontally */
+  margin: 30px 0 30px 0;
+
+  .sloganText {
+    font-size: 10vw; /* Adaptive font size */
+    width: 100%;
+    display: inline-block;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+    font-weight: 800;
+  }
+
+  .sloganTextOne {
+    background: linear-gradient(
+      to top,
+      #ffffff 0%,
+      #ffffff 40%,
+      #000000 100%
+    ); /* 70% white, gradual transition to black */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    background-color: red; /* For container, optional */
+  }
+  .sloganTextTwo {
+    background: linear-gradient(
+      to bottom,
+      #ffffff 0%,
+      #ffffff 70%,
+      #000000 100%
+    ); /* 70% white, gradual transition to black */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    background-color: red; /* For container, optional */
+  }
+}
+
+@media (min-width: 800px) {
+  .Slogan {
+    width: 100%;
+    height: auto;
+    text-align: center; /* Optional: Center text horizontally */
+
+    .sloganText {
+      font-size: 8vw; /* Adaptive font size */
+      width: 90%;
+      display: inline-block;
+      line-height: 1;
+      padding: 0;
+      margin: 0;
+      font-weight: 800;
+    }
+  }
+}
+
+
+@media (min-width: 1700px) {
+  .Slogan {
+    width: 100%;
+    height: auto;
+    text-align: center; /* Optional: Center text horizontally */
+
+    .sloganText {
+      font-size: 7vw; /* Adaptive font size */
+      width: 90%;
+      display: inline-block;
+      line-height: 1;
+      padding: 0;
+      margin: 0;
+      font-weight: 800;
+    }
+  }
+}
+
+
+@media (min-width: 2100px) {
+  .Slogan {
+    width: 100%;
+    height: auto;
+    text-align: center; /* Optional: Center text horizontally */
+  margin: 100px 0 30px 0;
+
+    .sloganText {
+      font-size: 2vw; /* Adaptive font size */
+      width: 90%;
+      display: inline-block;
+      line-height: 1;
+      padding: 0;
+      margin: 0;
+      font-weight: 800;
+    }
+  }
+}
