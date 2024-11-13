@@ -308,30 +308,38 @@
       "description": "We have all the equipment you need to get the most out of your workout. We have everything you need to stay on top of your fitness goals.",
       "images": {
         "image1": {
-          "src": "equipment/sfnqucp14zylt3zeclwy",
+          "src": "equipment/DSC02598-Enhanced-NR_oxpfta",
           "alt": "image1"
         },
         "image2": {
-          "src": "equipment/o6tnxriatl7pinarqjyv",
+          "src": "equipment/DSC02593-Enhanced-NR_t7hcf2",
           "alt": "image2"
         },
         "image3": {
-          "src": "equipment/gknfgodmkksqdcffud1k",
+          "src": "equipment/DSC02574-Enhanced-NR_jqioof",
           "alt": "image3"
         },
         "image4": {
-          "src": "equipment/gyq6vv1avvu9qyflyvm9",
+          "src": "equipment/DSC02581-Enhanced-NR_cwqwcu",
           "alt": "image4"
         }
       },
       "additionalImages": {
         "image1": {
-          "src": "equipment/z7d2meskl49kc4zxsgp7",
+          "src": "equipment/DSC02605-Enhanced-NR_lawmxz",
           "alt": "image1"
         },
         "image2": {
-          "src": "equipment/dvfdrtp0w3ftu2d7nth5",
+          "src": "equipment/DSC02580-Enhanced-NR_t8xvuv",
           "alt": "image2"
+        },
+        "image3": {
+          "src": "equipment/DSC02614-Enhanced-NR_hjzzqc",
+          "alt": "image3"
+        },
+        "image4": {
+          "src": "equipment/DSC02613-Enhanced-NR_rudjwq",
+          "alt": "image4"
         }
       },
       "button": {

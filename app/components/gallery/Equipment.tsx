@@ -26,6 +26,14 @@ function Equipment() {
       image: t("additionalImages.image2.src"),
       alt: t("additionalImages.image2.alt"),
     },
+        {
+      image: t("additionalImages.image3.src"),
+      alt: t("additionalImages.image4.alt"),
+    },
+    {
+      image: t("additionalImages.image4.src"),
+      alt: t("additionalImages.image4.alt"),
+    },
   ];
 
   const [ImagesFirstHalf, ImagesSecondHalf] = splitArrayIntoTwo(images);

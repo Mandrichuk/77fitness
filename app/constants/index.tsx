@@ -285,51 +285,43 @@ export const overviewText = {
     text: "Our gym images",
     images: [
       {
+        src: "equipment/DSC02593-Enhanced-NR_t7hcf2",
+        alt: "image5",
+      },
+      {
         src: "overview/t71qmkhqaqej6mt5ip09",
         alt: "image5",
       },
       {
-        src: "overview/cqxtl0sffirwbyocx1jt",
-        alt: "image2",
-      },
-      {
-        src: "overview/wbndqskiqiaa0xgcmkpi",
-        alt: "image5",
-      },
-      {
-        src: "overview/xgcauv5kdrjdkhnjf830",
+        src: "equipment/DSC02598-Enhanced-NR_oxpfta",
         alt: "image1",
       },
       {
-        src: "overview/qtdfnpvcg1olbzpbqwbo",
+        src: "equipment/DSC02581-Enhanced-NR_cwqwcu",
         alt: "image3",
       },
       {
-        src: "overview/vaxrhjlrs5p2yhbgpw6n",
+        src: "equipment/DSC02605-Enhanced-NR_lawmxz",
         alt: "image4",
       },
       {
-        src: "overview/ttep9w3cbvtdrd4hatxa",
+        src: "equipment/DSC02574-Enhanced-NR_jqioof",
         alt: "image5",
       },
       {
-        src: "overview/mm9bogcyd3malmht9uul",
+        src: "equipment/DSC02614-Enhanced-NR_hjzzqc",
         alt: "image5",
       },
       {
-        src: "overview/mfa3pfyrqmn1x9udyqzh",
+        src: "equipment/DSC02607-Enhanced-NR_jkwhbi",
         alt: "image5",
       },
       {
-        src: "overview/spm4lidlicptd1exwiy0",
+        src: "equipment/DSC02611-Enhanced-NR_hgwpbq",
         alt: "image5",
       },
       {
-        src: "overview/pmurfer7kvjpvqinc2jf",
-        alt: "image5",
-      },
-      {
-        src: "overview/cr5mujcbqq214grek2ze",
+        src: "equipment/DSC02613-Enhanced-NR_rudjwq",
         alt: "image5",
       },
     ],
@@ -338,51 +330,43 @@ export const overviewText = {
     text: "Fotky nášho fitka",
     images: [
       {
+        src: "equipment/DSC02593-Enhanced-NR_t7hcf2",
+        alt: "image5",
+      },
+      {
         src: "overview/t71qmkhqaqej6mt5ip09",
         alt: "image5",
       },
       {
-        src: "overview/cqxtl0sffirwbyocx1jt",
-        alt: "image2",
-      },
-      {
-        src: "overview/wbndqskiqiaa0xgcmkpi",
-        alt: "image5",
-      },
-      {
-        src: "overview/xgcauv5kdrjdkhnjf830",
+        src: "equipment/DSC02598-Enhanced-NR_oxpfta",
         alt: "image1",
       },
       {
-        src: "overview/qtdfnpvcg1olbzpbqwbo",
+        src: "equipment/DSC02581-Enhanced-NR_cwqwcu",
         alt: "image3",
       },
       {
-        src: "overview/vaxrhjlrs5p2yhbgpw6n",
+        src: "equipment/DSC02605-Enhanced-NR_lawmxz",
         alt: "image4",
       },
       {
-        src: "overview/ttep9w3cbvtdrd4hatxa",
+        src: "equipment/DSC02574-Enhanced-NR_jqioof",
         alt: "image5",
       },
       {
-        src: "overview/mm9bogcyd3malmht9uul",
+        src: "equipment/DSC02614-Enhanced-NR_hjzzqc",
         alt: "image5",
       },
       {
-        src: "overview/mfa3pfyrqmn1x9udyqzh",
+        src: "equipment/DSC02607-Enhanced-NR_jkwhbi",
         alt: "image5",
       },
       {
-        src: "overview/spm4lidlicptd1exwiy0",
+        src: "equipment/DSC02611-Enhanced-NR_hgwpbq",
         alt: "image5",
       },
       {
-        src: "overview/pmurfer7kvjpvqinc2jf",
-        alt: "image5",
-      },
-      {
-        src: "overview/cr5mujcbqq214grek2ze",
+        src: "equipment/DSC02613-Enhanced-NR_rudjwq",
         alt: "image5",
       },
     ],
@@ -391,51 +375,43 @@ export const overviewText = {
     text: "Фотографии нашего зала",
     images: [
       {
+        src: "equipment/DSC02593-Enhanced-NR_t7hcf2",
+        alt: "image5",
+      },
+      {
         src: "overview/t71qmkhqaqej6mt5ip09",
         alt: "image5",
       },
       {
-        src: "overview/cqxtl0sffirwbyocx1jt",
-        alt: "image2",
-      },
-      {
-        src: "overview/wbndqskiqiaa0xgcmkpi",
-        alt: "image5",
-      },
-      {
-        src: "overview/xgcauv5kdrjdkhnjf830",
+        src: "equipment/DSC02598-Enhanced-NR_oxpfta",
         alt: "image1",
       },
       {
-        src: "overview/qtdfnpvcg1olbzpbqwbo",
+        src: "equipment/DSC02581-Enhanced-NR_cwqwcu",
         alt: "image3",
       },
       {
-        src: "overview/vaxrhjlrs5p2yhbgpw6n",
+        src: "equipment/DSC02605-Enhanced-NR_lawmxz",
         alt: "image4",
       },
       {
-        src: "overview/ttep9w3cbvtdrd4hatxa",
+        src: "equipment/DSC02574-Enhanced-NR_jqioof",
         alt: "image5",
       },
       {
-        src: "overview/mm9bogcyd3malmht9uul",
+        src: "equipment/DSC02614-Enhanced-NR_hjzzqc",
         alt: "image5",
       },
       {
-        src: "overview/mfa3pfyrqmn1x9udyqzh",
+        src: "equipment/DSC02607-Enhanced-NR_jkwhbi",
         alt: "image5",
       },
       {
-        src: "overview/spm4lidlicptd1exwiy0",
+        src: "equipment/DSC02611-Enhanced-NR_hgwpbq",
         alt: "image5",
       },
       {
-        src: "overview/pmurfer7kvjpvqinc2jf",
-        alt: "image5",
-      },
-      {
-        src: "overview/cr5mujcbqq214grek2ze",
+        src: "equipment/DSC02613-Enhanced-NR_rudjwq",
         alt: "image5",
       },
     ],

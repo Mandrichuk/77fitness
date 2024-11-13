@@ -92,7 +92,7 @@
         @include Flex(column, end, center);
         width: 100%;
         overflow: hidden;
-        aspect-ratio: 16 / 6;
+        aspect-ratio: 16 / 9;
         // background-color: red;
         max-width: none;
         margin-top: 20px;
@@ -101,7 +101,7 @@
           overflow: hidden;
           border-radius: borderRadius(mobile);
           // aspect-ratio: 16 / 8;
-          max-width: 800px;
+    
           width: 100%;
           width: 100%;
         }
