@@ -1818,23 +1818,7 @@ export const PricesText: PricesTextTypes = {
         },
         membershipSku: "CBDC14DB23",
       },
-      {
-        standOut: "obmedzené!",
-        title: "12 + 3 mesiace zdarma",
-        price: "650",
-        description: "jednorazová platba, len pre nasledujúcich 20 členov!",
-        included: [
-          "Ušetrite viac ako €200!",
-          "Neobmedzený prístup do fitnes centra",
-          "Sauna a sprchy",
-          "Často DJ a živá hudba",
-        ],
-        button: {
-          text: "Kúpiť online",
-          link: "/shop",
-        },
-        membershipSku: "9F83982F8C",
-      },
+
 
       {
         title: "3 mesačné členstvo",
@@ -1906,23 +1890,7 @@ export const PricesText: PricesTextTypes = {
         },
         membershipSku: "CBDC14DB23",
       },
-      {
-        standOut: "ограниченно!",
-        title: "12 + 3 месяца бесплатно",
-        price: "650",
-        description: "однократный платеж, только для следующих 20 желающих!",
-        included: [
-          "Сэкономьте более €200!",
-          "Безлимитный доступ в спортзал",
-          "Сауна и душевые",
-          "Часто диджей и живая музыка",
-        ],
-        button: {
-          text: "Купить онлайн",
-          link: "/shop",
-        },
-        membershipSku: "9F83982F8C",
-      },
+    
       {
         title: "абонемент на 3 месяца",
         price: "180",
@@ -1993,24 +1961,7 @@ export const PricesText: PricesTextTypes = {
         },
         membershipSku: "CBDC14DB23",
       },
-      {
-        standOut: "limited!",
-        title: "12 + 3 month for free",
-        price: "650",
-        description: "one-time payment, for only next 20 members!",
-        included: [
-          "Save more than €200!",
-          "Unlimited Gym Access",
-          "Sauna & Showers",
-          "Often DJ & Live Music",
-          "Personal Trainer (Reservation required, for an additional fee)",
-        ],
-        button: {
-          text: "Buy online",
-          link: "/shop",
-        },
-        membershipSku: "9F83982F8C",
-      },
+    
       {
         title: "3 months membership",
         price: "180",
