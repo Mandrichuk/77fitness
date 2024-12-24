@@ -93,7 +93,7 @@
           "alt": "gallery2"
         },
         "gallery3": {
-          "src": "equipment/a2vm2en8vb6s9r9jaz1m",
+          "src": "equipment/sfnqucp14zylt3zeclwy",
           "alt": "gallery3"
         }
       },
@@ -425,5 +425,37 @@
         "link": "/shop"
       }
     }
+  },
+  "Holiday": {
+    "title": "Holidays schedule",
+    "text": "We are open during the holidays",
+    "schedule": {
+      "schedule1": {
+        "title": "Christmas Eve",
+        "day": "December 24",
+        "time": "8:00-14:00"
+      },
+      "schedule2": {
+        "title": "The first holiday of Christmas",
+        "day": "December 25",
+        "time": "8:00-22:00"
+      },
+      "schedule3": {
+        "title": "The second holiday of Christmas",
+        "day": "December 26",
+        "time": "8:00-22:00"
+      },
+      "schedule4": {
+        "title": "New Year's Eve",
+        "day": "December 31",
+        "time": "8:00-15:00"
+      },
+      "schedule5": {
+        "title": "New Year's Day",
+        "day": "January 1",
+        "time": "15:00-20:00"
+      }
+    },
+    "subtitle": "Happy and cheerful wishes from 77 fitness!"
   }
 }

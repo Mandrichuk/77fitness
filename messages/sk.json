@@ -402,5 +402,37 @@
         "link": "/shop"
       }
     }
+  },
+  "Holiday": {
+    "title": "Harmonogram počas sviatkov",
+    "text": "Sme otvorení aj cez sviatky!",
+    "schedule": {
+      "schedule1": {
+        "title": "Štedrý deň",
+        "day": "December 24",
+        "time": "8:00-14:00"
+      },
+      "schedule2": {
+        "title": "Prvý sviatok vianočný",
+        "day": "December 25",
+        "time": "8:00-22:00"
+      },
+      "schedule3": {
+        "title": "Druhý sviatok vianočný",
+        "day": "December 26",
+        "time": "8:00-22:00"
+      },
+      "schedule4": {
+        "title": "Silvester",
+        "day": "December 31",
+        "time": "8:00-15:00"
+      },
+      "schedule5": {
+        "title": "Nový rok",
+        "day": "Január 1",
+        "time": "15:00-20:00"
+      }
+    },
+    "subtitle": "Šťastné a veselé praje 77 fitness!"
   }
 }
