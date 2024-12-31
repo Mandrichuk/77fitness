@@ -1804,7 +1804,7 @@ export const PricesText: PricesTextTypes = {
       },
       {
         title: "jednomesačné členstvo",
-        price: "69",
+        price: "74",
         description: "za mesiac",
         included: [
           "Neobmedzený prístup do posilňovne",
@@ -1819,10 +1819,25 @@ export const PricesText: PricesTextTypes = {
         membershipSku: "CBDC14DB23",
       },
 
-
       {
         title: "3 mesačné členstvo",
-        price: "180",
+        price: "195",
+        description: "jednorazová platba",
+        included: [
+          "Neobmedzený prístup do posilňovne",
+          "Sauna a sprchy",
+          "Často DJ a živá hudba",
+          "Osobný tréner (Rezervácia nutná, za príplatok)",
+        ],
+        button: {
+          text: "Kúpiť online",
+          link: "/shop",
+        },
+        membershipSku: "4E4BDCF832",
+      },
+      {
+        title: "6 mesačné členstvo",
+        price: "370",
         description: "jednorazová platba",
         included: [
           "Neobmedzený prístup do posilňovne",
@@ -1838,7 +1853,7 @@ export const PricesText: PricesTextTypes = {
       },
       {
         title: "1 ročné členstvo",
-        price: "650",
+        price: "700",
         description: "jednorazová platba",
         included: [
           "Neobmedzený prístup do posilňovne",
@@ -1876,7 +1891,7 @@ export const PricesText: PricesTextTypes = {
       },
       {
         title: "абонемент на один месяц",
-        price: "69",
+        price: "74",
         description: "в месяц",
         included: [
           "Неограниченный доступ в зал",
@@ -1890,10 +1905,26 @@ export const PricesText: PricesTextTypes = {
         },
         membershipSku: "CBDC14DB23",
       },
-    
+
       {
         title: "абонемент на 3 месяца",
-        price: "180",
+        price: "195",
+        description: "одноразовый платеж",
+        included: [
+          "Неограниченный доступ в зал",
+          "Сауна и душ",
+          "Часто DJ и живая музыка",
+          "Персональный тренер (Требуется бронирование, за дополнительную плату)",
+        ],
+        button: {
+          text: "Купить онлайн",
+          link: "/shop",
+        },
+        membershipSku: "4E4BDCF832",
+      },
+      {
+        title: "абонемент на 6 месяцов",
+        price: "370",
         description: "одноразовый платеж",
         included: [
           "Неограниченный доступ в зал",
@@ -1909,7 +1940,7 @@ export const PricesText: PricesTextTypes = {
       },
       {
         title: "абонемент на 1 год",
-        price: "650",
+        price: "700",
         description: "одноразовый платеж",
         included: [
           "Неограниченный доступ в зал",
@@ -1947,7 +1978,7 @@ export const PricesText: PricesTextTypes = {
       },
       {
         title: "1 month membership",
-        price: "69",
+        price: "74",
         description: "per month",
         included: [
           "Unlimited Gym Access",
@@ -1961,10 +1992,26 @@ export const PricesText: PricesTextTypes = {
         },
         membershipSku: "CBDC14DB23",
       },
-    
+
       {
         title: "3 months membership",
-        price: "180",
+        price: "195",
+        description: "one-time payment",
+        included: [
+          "Unlimited Gym Access",
+          "Sauna & Showers",
+          "Often DJ & Live Music",
+          "Personal Trainer (Reservation required, for an additional fee)",
+        ],
+        button: {
+          text: "Buy online",
+          link: "/shop",
+        },
+        membershipSku: "4E4BDCF832",
+      },
+      {
+        title: "6 months membership",
+        price: "370",
         description: "one-time payment",
         included: [
           "Unlimited Gym Access",
@@ -1980,7 +2027,7 @@ export const PricesText: PricesTextTypes = {
       },
       {
         title: "1 year membership",
-        price: "650",
+        price: "700",
         description: "one-time payment",
         included: [
           "Unlimited Gym Access",
