@@ -1788,7 +1788,7 @@ export const PricesText: PricesTextTypes = {
     packages: [
       {
         title: "jednorazový vstup",
-        price: "10",
+        price: "12",
         description: "za vstup",
         included: [
           "Jednorazový vstup",
@@ -1860,7 +1860,7 @@ export const PricesText: PricesTextTypes = {
     packages: [
       {
         title: "одноразовый вход",
-        price: "10",
+        price: "12",
         description: "за вход",
         included: [
           "Одноразовый доступ",
@@ -1931,7 +1931,7 @@ export const PricesText: PricesTextTypes = {
     packages: [
       {
         title: "one time entry",
-        price: "10",
+        price: "12",
         description: "per entry",
         included: [
           "One Time Access",
