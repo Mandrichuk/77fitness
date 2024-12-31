@@ -39,6 +39,9 @@ function Payment() {
               <p className="text">{point}</p>
             </div>
           ))}
+           <div className="alertContainer">
+              <p className="text">{t("alert")}</p>
+            </div>
         </div>
         <div className="imageContainer">
           <Image
@@ -55,6 +58,7 @@ function Payment() {
       <div data-anchor="payment" className="blueCircle">
         <BluredCirlce color={BluredCircleColors.blue} blurRange={"85"} />
       </div>
+
     </section>
   );
 }

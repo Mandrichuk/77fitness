@@ -13,7 +13,8 @@
         "point3": "MultiSport karty a Upbalansea bez príplatkov! (Sauna €3, Uterák €1, Lontový Nápoj €1)",
         "point4": "Žiadne dodatočné poplatky",
         "point5": "Všetky platby sa vykonávajú osobne na recepcií posilňovne, offline."
-      }
+      },
+        "alert": "Po 16:00 je vstup do Multisport a UpBalansea platný na 100 minút. Za prekročenie času sa účtuje 5 €."
     }
   },
   "HomePage": {
