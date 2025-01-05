@@ -30,29 +30,33 @@ function PriceDetails({ locale }: PriceDetailsProps) {
   const clientData = useSelector((state: RootState) => state.clientLogin.value);
 
   const handleCheckout = async () => {
-    if (typeof window !== "undefined" && !clientData) {
-      window.location.href = "/login";
-      return;
-    }
-    setLoading(true);
-    const stripe = await stripePromise;
+  if (typeof window !== "undefined" && !clientData) {
+    window.location.href = "/login";
+    return;
+  }
+  setLoading(true);
 
-    const response = await fetch("/api/create-checkout-session", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      cache: "no-store",
-      next: { revalidate: 10 },
-      body: JSON.stringify(productsData),
-    });
-    const session = await response.json();
-    const result = await stripe?.redirectToCheckout({ sessionId: session.id });
-    if (result?.error) {
-      console.error(result.error.message);
-    }
-    setLoading(false);
+  // Assuming productsData is the data you need for the order
+  const orderData = {
+    products: productsData,
+    // Include any other data you need, such as user info, etc.
   };
+
+  // You can send the order data to your backend if necessary
+  // await fetch("/api/create-order", {
+  //   method: "POST",
+  //   headers: {
+  //     "Content-Type": "application/json",
+  //   },
+  //   body: JSON.stringify(orderData),
+  // });
+
+  // Redirect directly to the /order page
+  window.location.href = "/shop/order";
+
+  setLoading(false);
+};
+
 
   const notifyClientRegistered = () => {
     toast.success(t.notify, {

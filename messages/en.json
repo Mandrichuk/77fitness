@@ -14,7 +14,7 @@
         "point4": "No additional fees",
         "point5": "All the payments are processed in person at the gym reception, offline."
       },
-      "alert": "After 16:00, access to Multisport and UpBalansea is valid for 100 minutes. Extra time costs €5."
+      "alert": "On weekdays after 4:00 PM, entry to Multisport and UpBalansea is valid for 100 minutes. A fee of €5 is charged for exceeding the time limit."
     }
   },
   "HomePage": {
@@ -458,5 +458,36 @@
       }
     },
     "subtitle": "Happy and cheerful wishes from 77 fitness!"
+  },
+  "Order": {
+    "title": "Order",
+    "instructionText": "Follow the instructions:",
+    "paymentInfo1": "To complete your payment of",
+    "paymentInfo2": ", please follow these steps:",
+    "steps": {
+      "step1": {
+        "text": "Transfer the amount to the specified IBAN."
+      },
+      "step2": {
+        "text": "In the payment memo, include the same name you used to log in on our website. This ensures we can accurately match the payment to your account."
+      },
+      "step3": {
+        "text": "Once the payment is completed, click the “Confirm” button below to confirm."
+      },
+      "step4": {
+        "text": "Your order will be processed shortly after confirmation."
+      }
+    },
+    "ibanNumber": "SK 1111 1111 1111 1111 1111",
+    "helpText": "If you experience any issues or your order is not processed within 48 hours, please contact us at +421 334 3344 33 or visit the reception desk at our gym for assistance.",
+    "areMoneySentText": "Have you sent the payment to the specified IBAN?",
+    "buttonYes": {
+      "text": "Confirm",
+      "link": "/success"
+    },
+    "buttonNo": {
+      "text": "Return to cart",
+      "link": "/shop/cart"
+    }
   }
 }

@@ -569,7 +569,7 @@ export const headerText: HeaderTextProps = {
         link: "/#",
       },
       {
-        text: "Ceny",
+        text: "Cenník",
         link: "/pricing",
       },
       {
@@ -757,7 +757,7 @@ export const footerText: FooterTextProps = {
       title: "Mapa stránky",
       links: [
         { text: "Domov", link: "/" },
-        { text: "Ceny", link: "/pricing" },
+        { text: "Cenník", link: "/pricing" },
         { text: "Galéria", link: "/gallery" },
         { text: "Tréneri", link: "/trainers" },
         { text: "Kontakt", link: "tel:+421 940 735 735" },
@@ -1180,33 +1180,32 @@ export const LoginText: LoginTextProps = {
 export const OrderShopText: OrderShopTextProps = {
   en: {
     inProgress: "Paid, In progress",
-    done: "Paid, Processed",
+    done: "Customer sent money",
     statusText: "Status",
     totalText: "Total",
     emailText: "Email",
-    moveToDoneButton: { text: "Move to done orders", link: "" },
-    removeToUndoneButton: { text: "Remove to undone orders", link: "" },
+    moveToDoneButton: { text: "Move to approved orders", link: "" },
+    removeToUndoneButton: { text: "Remove to unapproved orders", link: "" },
   },
   sk: {
     inProgress: "Zaplatené, V procese",
-    done: "Zaplatené, Spracované",
+    done: "Zákazník poslal peniaze",
     statusText: "Stav",
     totalText: "Celkom",
     emailText: "Email",
-    moveToDoneButton: { text: "Presunúť na hotové objednávky", link: "" },
-    removeToUndoneButton: {
-      text: "Odstrániť do nedokončených objednávok",
-      link: "",
-    },
+   moveToDoneButton: { text: "Presunúť do schválených objednávok", link: "" },
+removeToUndoneButton: { text: "Odstrániť z neschválených objednávok", link: "" },
+
   },
   ru: {
     inProgress: "Оплачено, В обработке",
-    done: "Оплачено, Обработано",
+    done: "Клиент отправил деньги",
     statusText: "Статус",
     totalText: "Итого",
     emailText: "Email",
-    moveToDoneButton: { text: "Переместить в готовые заказы", link: "" },
-    removeToUndoneButton: { text: "Убрать в невыполненные заказы", link: "" },
+   moveToDoneButton: { text: "Переместить в подтвержденные заказы", link: "" },
+removeToUndoneButton: { text: "Удалить из неподтвержденных заказов", link: "" },
+
   },
 };
 
@@ -1281,17 +1280,17 @@ export const AdminText: AdminTextProps = {
       dateText: "Date",
       priceText: "Price",
     },
-    inProcessTextBg: "In process",
-    inProcessTitleTextBg: "In process orders",
-    doneTextBg: "Done",
-    doneTitleTextBg: "Done orders",
+    inProcessTextBg: "Unaproved",
+    inProcessTitleTextBg: "Unaproved",
+    doneTextBg: "Approved",
+    doneTitleTextBg: "Approved orders",
   },
   ru: {
     searchInput: {
-      label: "Введите номер продукта",
-      placeholder: "Введите номер продукта",
+      label: "Введите номер товара",
+      placeholder: "Введите номер товара",
     },
-    title: "Администратор",
+    title: "Админ",
     bgText: "Заказы",
     tableData: {
       numberText: "Номер",
@@ -1299,17 +1298,17 @@ export const AdminText: AdminTextProps = {
       dateText: "Дата",
       priceText: "Цена",
     },
-    inProcessTextBg: "В обработке",
-    inProcessTitleTextBg: "Заказы в обработке",
-    doneTextBg: "Готово",
-    doneTitleTextBg: "Завершенные заказы",
+    inProcessTextBg: "Не утверждено",
+    inProcessTitleTextBg: "Не утверждено",
+    doneTextBg: "Одобрено",
+    doneTitleTextBg: "Одобренные заказы",
   },
   sk: {
     searchInput: {
       label: "Zadajte číslo produktu",
       placeholder: "Zadajte číslo produktu",
     },
-    title: "Administrátor",
+    title: "Admin",
     bgText: "Objednávky",
     tableData: {
       numberText: "Číslo",
@@ -1317,10 +1316,10 @@ export const AdminText: AdminTextProps = {
       dateText: "Dátum",
       priceText: "Cena",
     },
-    inProcessTextBg: "Spracovanie",
-    inProcessTitleTextBg: "Objednávky v spracovaní",
-    doneTextBg: "Dokončené",
-    doneTitleTextBg: "Dokončené objednávky",
+    inProcessTextBg: "Neodobrené",
+    inProcessTitleTextBg: "Neodobrené",
+    doneTextBg: "Schválené",
+    doneTitleTextBg: "Schválené objednávky",
   },
 };
 
@@ -1783,7 +1782,7 @@ export const successPageText = {
 };
 export const PricesText: PricesTextTypes = {
   sk: {
-    text: "Ceny",
+    text: "Cenník",
     title: "Naše členstvá",
     packages: [
       {
@@ -1803,7 +1802,7 @@ export const PricesText: PricesTextTypes = {
         membershipSku: "",
       },
       {
-        title: "jednomesačné členstvo",
+        title: "mesačné členstvo",
         price: "74",
         description: "za mesiac",
         included: [
@@ -3517,4 +3516,16 @@ export const CopyToClipboardText = {
   en: "Copied to clipboard successfully!",
   sk: "Úspešne skopírované do schránky!",
   ru: "Успешно скопировано в буфер обмена!",
+};
+
+export const CreateOrderText = {
+  en: {
+    button: { text: "Submit", link: "/" },
+  },
+  sk: {
+    button: { text: "Potvrdi", link: "/" },
+  },
+  ru: {
+    button: { text: "Подтвердить", link: "/" },
+  },
 };

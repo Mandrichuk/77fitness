@@ -1,0 +1,182 @@
+.OrderIBAN {
+  @include Flex(column, center, center);
+  width: 100%;
+  .wholeWrapper {
+      @include Flex(column, center, center);
+    background-color: #0e0e0e;
+    padding: 40px 30px;
+    width: 100%;
+    border: 4px solid color(secondary-color);
+    border-radius: 1px;
+    .wrapper {
+      @include Flex(column, center, center);
+
+      .title {
+        color: color(text-color);
+        font-size: calc(fontSize(h3) - 2px);
+        font-weight: fontWeight(bold);
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .instructionText {
+        color: #d1d1d1;
+        font-size: calc(fontSize(p) - 2px);
+        font-weight: fontWeight(semibold);
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .paymentInfo {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+
+        span {
+          color: color(text-color);
+          font-size: calc(fontSize(p) - 2px);
+          font-weight: fontWeight(semibold);
+        }
+      }
+
+      .stepsContainer {
+        @include Flex(column, start, start);
+        width: 100%;
+
+        .stepContainer {
+          color: #d1d1d1;
+          font-weight: fontWeight(semibold);
+          font-size: calc(fontSize(p) - 2px);
+          margin-bottom: 5px;
+        }
+      }
+
+      .ibanText {
+        margin: 30px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: rgba(124, 124, 124, 0.6);
+      }
+
+      .helpText {
+        color: #d1d1d1;
+        font-size: calc(fontSize(p) - 4px);
+        font-weight: fontWeight(semibold);
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .areMoneySentText {
+        text-align: center;
+        margin-bottom: 25px;
+      }
+
+      .buttonsContainer {
+        @include Flex(row, center, center);
+        width: 100%;
+        gap: 20px;
+
+        .buttonNo {
+          @include borderButton;
+        }
+        .buttonYes {
+          @include button;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 500px) {
+  .OrderIBAN {
+    @include Flex(column, center, center);
+    width: 100%;
+
+    .wholeWrapper {
+      border: 4px solid color(secondary-color);
+      border-radius: 15px;
+      margin: 50px;
+      width: 100%;
+      .wrapper {
+        @include Flex(column, center, center);
+        width: 100%;
+        background-color: #0e0e0e;
+        padding: 80px 50px;
+        max-width: 800px;
+
+        .title {
+          color: color(text-color);
+          font-size: calc(fontSize(h3) - 2px);
+          font-weight: fontWeight(bold);
+          text-align: center;
+          margin-bottom: 50px;
+        }
+
+        .instructionText {
+          color: #d1d1d1;
+          font-size: calc(fontSize(p) - 2px);
+          font-weight: fontWeight(semibold);
+          text-align: center;
+          margin-bottom: 50px;
+        }
+
+        .paymentInfo {
+          width: 100%;
+          margin-bottom: 30px;
+          text-align: center;
+
+          span {
+            color: color(text-color);
+            font-size: calc(fontSize(p) - 2px);
+            font-weight: fontWeight(semibold);
+          }
+        }
+
+        .stepsContainer {
+          @include Flex(column, start, start);
+          width: 100%;
+
+          .stepContainer {
+            color: #d1d1d1;
+            font-weight: fontWeight(semibold);
+            font-size: calc(fontSize(p) - 2px);
+            margin-bottom: 5px;
+          }
+        }
+
+        .ibanText {
+          margin: 50px;
+          padding: 10px 20px;
+          border-radius: 5px;
+          background-color: rgba(124, 124, 124, 0.6);
+        }
+
+        .helpText {
+          color: #d1d1d1;
+          font-size: calc(fontSize(p) - 4px);
+          font-weight: fontWeight(semibold);
+          text-align: center;
+          margin-bottom: 50px;
+        }
+
+        .areMoneySentText {
+          text-align: center;
+          margin-bottom: 25px;
+        }
+
+        .buttonsContainer {
+          @include Flex(row, center, center);
+          width: 100%;
+          gap: 20px;
+
+          .buttonNo {
+            @include borderButton;
+          }
+          .buttonYes {
+            @include button;
+          }
+        }
+      }
+    }
+  }
+}

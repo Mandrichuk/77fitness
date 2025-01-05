@@ -54,6 +54,6 @@
   "devDependencies": {
     "@types/react-slick": "^0.23.13",
     "daisyui": "^4.9.0",
-    "prisma": "^5.14.0"
+    "prisma": "^5.22.0"
   }
 }

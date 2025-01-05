@@ -33,21 +33,21 @@ async function getSession(session_id: string) {
 }
 
 export default async function Page({ params: { locale }, searchParams }: LocaleProps) {
-	const session_id = new URLSearchParams(searchParams).get("session_id");
-	if (session_id) {
-		getSession(session_id).then((data) => {
-			if ("payment_status" in data && data.payment_status !== "paid") {
-				// тут ты можешь проверить статус платежа и если он не оплачен то перенаправить на страницу отмены
-				//window.location.href = "/cancel";
-				redirect(`/cancel`)
-					return null;
-			}
-		});
-	}else{
-		//window.location.href = "/cancel";
-		redirect(`/cancel`)
-		return null;
-	}
+	// const session_id = new URLSearchParams(searchParams).get("session_id");
+	// if (session_id) {
+	// 	getSession(session_id).then((data) => {
+	// 		if ("payment_status" in data && data.payment_status !== "paid") {
+	// 			// тут ты можешь проверить статус платежа и если он не оплачен то перенаправить на страницу отмены
+	// 			//window.location.href = "/cancel";
+	// 			redirect(`/cancel`)
+	// 				return null;
+	// 		}
+	// 	});
+	// }else{
+	// 	//window.location.href = "/cancel";
+	// 	redirect(`/cancel`)
+	// 	return null;
+	// }
 	return (
 		<main>
 			<Header locale={locale} />

@@ -628,6 +628,14 @@ export interface CategoriesEditAdminTextProps {
   };
 }
 
+
+export interface CreateOrderProps {
+
+    text: string;
+    link: string;
+ 
+}
+
 export interface ProductsEditAdminTextProps {
   en: {
     title: string;

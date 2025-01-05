@@ -14,7 +14,7 @@
         "point4": "Žiadne dodatočné poplatky",
         "point5": "Všetky platby sa vykonávajú osobne na recepcií posilňovne, offline."
       },
-        "alert": "Po 16:00 je vstup do Multisport a UpBalansea platný na 100 minút. Za prekročenie času sa účtuje 5 €."
+      "alert": "Počas pracovných dni po 16:00 je vstup do Multisport a UpBalansea platný na 100 minút. Za prekročenie času sa účtuje 5 €."
     }
   },
   "HomePage": {
@@ -435,5 +435,36 @@
       }
     },
     "subtitle": "Šťastné a veselé praje 77 fitness!"
+  },
+  "Order": {
+    "title": "Objednávka",
+    "instructionText": "Postupujte podľa pokynov:",
+    "paymentInfo1": "Na dokončenie platby vo výške",
+    "paymentInfo2": ", postupujte podľa týchto krokov:",
+    "steps": {
+      "step1": {
+        "text": "Preveďte sumu na uvedený IBAN."
+      },
+      "step2": {
+        "text": "Do poznámky k platbe uveďte rovnaké meno, aké ste použili na prihlásenie na našej webovej stránke. To zabezpečí správne priradenie platby k vášmu účtu."
+      },
+      "step3": {
+        "text": "Po dokončení platby kliknite na tlačidlo „Potvrdiť“ nižšie na potvrdenie."
+      },
+      "step4": {
+        "text": "Vaša objednávka bude spracovaná krátko po potvrdení."
+      }
+    },
+    "ibanNumber": "SK 1111 1111 1111 1111 1111",
+    "helpText": "Ak narazíte na problémy alebo vaša objednávka nebude spracovaná do 48 hodín, kontaktujte nás na +421 334 3344 33 alebo navštívte recepciu našej posilňovne pre pomoc.",
+    "areMoneySentText": "Poslali ste platbu na uvedený IBAN?",
+    "buttonYes": {
+      "text": "Potvrdiť",
+      "link": "/success"
+    },
+    "buttonNo": {
+      "text": "Vrátiť sa do košíka",
+      "link": "/shop/cart"
+    }
   }
 }

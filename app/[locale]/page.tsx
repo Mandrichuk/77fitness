@@ -26,7 +26,7 @@ function Home({ params: { locale } }: LocaleProps) {
     <main>
       <Header locale={locale} />
       <Introduction />
-      <Holiday />
+      {/* <Holiday /> */}
       {/* <Slogan /> */}
       <Overview locale={locale} />
       <Team />
