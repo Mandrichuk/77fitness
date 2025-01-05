@@ -4,7 +4,8 @@ import React from "react";
 import { SuccessProps } from "@/app/lib";
 import { successPageText } from "@/app/constants";
 import Image from "./Image";
-import CreateOrder from "./CreateOrder";
+import Link from "next/link";
+
 
 function Success({ locale }: SuccessProps) {
   const t = successPageText[locale || "en"];
@@ -19,8 +20,7 @@ function Success({ locale }: SuccessProps) {
           <h3 className="title">{t.title}</h3>
           <p className="text">{t.text}</p>
           <div className="buttonContainer">
-            {/* Here you call CreateOrder to trigger order creation */}
-            <CreateOrder text={t.button.text} />
+            <Link href="/shop" className="button">{t.button.text}</Link>
           </div>
         </div>
       </div>

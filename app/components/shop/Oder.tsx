@@ -49,7 +49,6 @@ function OderIBAN() {
             </Link>
             <CreateOrder
               text={t("buttonYes.text")}
-              link={t("buttonYes.link")}
             />
           </div>
         </div>
