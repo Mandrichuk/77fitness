@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import CreateOrder from "./CreateOrder";
+import OrderPrice from "./OrderPrice";
 
 function OderIBAN() {
   const t = useTranslations("Order");
@@ -30,7 +31,10 @@ function OderIBAN() {
           <div className="instructionText">{t("instructionText")}</div>
           <div className="paymentInfo">
             <span className="">{t("paymentInfo1")}</span>
-            <span className="">&nbsp;PRICE€</span>
+            <span className="">
+              &nbsp;€
+              <OrderPrice />
+            </span>
             <span className="">{t("paymentInfo2")}</span>
           </div>
           <div className="stepsContainer">
@@ -47,9 +51,7 @@ function OderIBAN() {
             <Link href={t("buttonNo.link")} className="buttonNo">
               {t("buttonNo.text")}
             </Link>
-            <CreateOrder
-              text={t("buttonYes.text")}
-            />
+            <CreateOrder text={t("buttonYes.text")} />
           </div>
         </div>
       </div>

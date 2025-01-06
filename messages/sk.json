@@ -440,7 +440,7 @@
     "title": "Objednávka",
     "instructionText": "Postupujte podľa pokynov:",
     "paymentInfo1": "Na dokončenie platby vo výške",
-    "paymentInfo2": ", postupujte podľa týchto krokov:",
+    "paymentInfo2": ". Prosím, postupujte podľa týchto krokov:",
     "steps": {
       "step1": {
         "text": "Preveďte sumu na uvedený IBAN."
@@ -456,7 +456,7 @@
       }
     },
     "ibanNumber": "SK21 1100 0000 0029 3304 4901",
-    "helpText": "Ak narazíte na problémy alebo vaša objednávka nebude spracovaná do 48 hodín, kontaktujte nás na +421 334 3344 33 alebo navštívte recepciu našej posilňovne pre pomoc.",
+    "helpText": "Ak narazíte na problémy alebo vaša objednávka nebude spracovaná do 48 hodín, kontaktujte nás na +421 908 706 351 alebo navštívte recepciu našej posilňovne pre pomoc.",
     "areMoneySentText": "Poslali ste platbu na uvedený IBAN?",
     "buttonYes": {
       "text": "Potvrdiť",

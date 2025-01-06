@@ -463,7 +463,7 @@
     "title": "Order",
     "instructionText": "Follow the instructions:",
     "paymentInfo1": "To complete your payment of",
-    "paymentInfo2": ", please follow these steps:",
+    "paymentInfo2": ". Please follow these steps:",
     "steps": {
       "step1": {
         "text": "Transfer the amount to the specified IBAN."
@@ -479,7 +479,7 @@
       }
     },
     "ibanNumber": "SK21 1100 0000 0029 3304 4901",
-    "helpText": "If you experience any issues or your order is not processed within 48 hours, please contact us at +421 334 3344 33 or visit the reception desk at our gym for assistance.",
+    "helpText": "If you experience any issues or your order is not processed within 48 hours, please contact us at +421 908 706 351 or visit the reception desk at our gym for assistance.",
     "areMoneySentText": "Have you sent the payment to the specified IBAN?",
     "buttonYes": {
       "text": "Confirm",

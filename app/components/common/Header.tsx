@@ -28,7 +28,7 @@ function Header({ locale }: HeaderProps) {
   const pathSegments = pathIntoSegments(pathname);
   const withoutLang = pathSegments.slice(1, pathSegments.length);
 
-  console.log(withoutLang)
+  console.log(withoutLang);
 
   useEffect(() => {
     if (windowWidth > 900) {
@@ -53,6 +53,8 @@ function Header({ locale }: HeaderProps) {
   const openToggle = () => {
     setIsOpen(!isOpen);
   };
+
+  console.log(locale)
 
   return (
     <header className={`header ${isOpen && "open"}`}>
@@ -84,6 +86,7 @@ function Header({ locale }: HeaderProps) {
               {isShopOpen && (
                 <div data-anchor="currentShopContainer" className="options">
                   {t.shop.links.map((l, index) => {
+                    console.log(`Processing link:`, l.link);
                     if (l.link !== "/login") {
                       return (
                         <Link
@@ -172,7 +175,7 @@ function Header({ locale }: HeaderProps) {
                   !clientLoginData && l.link === "/login" ? (
                     <div className="navLink" key={`${l.text}-${index}`}>
                       <Link
-                        href={`${l.link}`}
+                        href={`${locale}/${l.link}`}
                         className="option"
                         onClick={() => {
                           openToggle();
