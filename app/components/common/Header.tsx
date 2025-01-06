@@ -28,6 +28,8 @@ function Header({ locale }: HeaderProps) {
   const pathSegments = pathIntoSegments(pathname);
   const withoutLang = pathSegments.slice(1, pathSegments.length);
 
+  console.log(withoutLang)
+
   useEffect(() => {
     if (windowWidth > 900) {
       setIsOpen(false);
