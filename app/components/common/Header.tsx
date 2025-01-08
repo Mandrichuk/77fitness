@@ -30,6 +30,8 @@ function Header({ locale }: HeaderProps) {
   const currentLocale = pathSegments[0] || "en";
   const withoutLang = pathSegments.slice(1).join("/");
 
+  console.log(`${locale} - Locale`)
+
   // Function to create a localized link
   const createLocaleLink = (locale: string) => {
     const newPath = `/${locale}/${withoutLang}`;
