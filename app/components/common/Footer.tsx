@@ -2,7 +2,7 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 import Image from "./Image";
 import BluredCirlce from "./BluredCirlce";
@@ -14,18 +14,10 @@ import { FooterProps } from "../../lib/index";
 
 function Footer({ locale }: FooterProps) {
   const pathname = usePathname();
-  const searchParams = useSearchParams();
   const t = footerText[locale] || footerText["en"];
 
   const pathSegments = pathIntoSegments(pathname);
-  const currentLocale = pathSegments[0] || "en";
-  const withoutLang = pathSegments.slice(1).join("/");
-
-  // Function to create a localized link
-  const createLocaleLink = (locale: string) => {
-    const newPath = `/${locale}/${withoutLang}`;
-    return `${newPath}${searchParams.toString() ? `?${searchParams.toString()}` : ""}`;
-  };
+  const withoutLang = pathSegments.slice(1, pathSegments.length);
 
   return (
     <footer className="Footer" id="footer">
@@ -67,9 +59,7 @@ function Footer({ locale }: FooterProps) {
             <ul>
               {t.languages.links.map((i) => (
                 <div className="linkContainer" key={i.text}>
-                  <Link href={createLocaleLink(i.link)}>
-                    {i.text}
-                  </Link>
+                  <Link href={`/${i.link}${withoutLang}`}>{i.text}</Link>
                 </div>
               ))}
             </ul>
