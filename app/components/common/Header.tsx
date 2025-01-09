@@ -1,34 +1,45 @@
 "use client";
-import React, { useEffect, useState } from "react";
+
+import React, { useEffect, useState, useMemo } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import Image from "./Image";
 
-import { SVGs, headerText, homepagePaths } from "../../constants";
+import { SVGs, headerText } from "../../constants";
 import pathIntoSegments from "../../utils/pathIntoSegments";
 import { useWindowWidth } from "../../utils/useWindowWidth";
 import { HeaderProps } from "../../lib/index";
 import { toUpperCase } from "../../utils/toUpperCase";
-import clientLogin from "@/app/features/clientLogin";
 import { useSelector } from "react-redux";
 import { RootState } from "@/app/store/store";
 
 function Header({ locale }: HeaderProps) {
   const pathname = usePathname();
+  const searchParams = useSearchParams();
   const clientLoginData = useSelector(
     (state: RootState) => state.clientLogin.value
   );
   const windowWidth = useWindowWidth();
   const [isLangOpen, setIsLangOpen] = useState<boolean>(false);
   const [isShopOpen, setIsShopOpen] = useState<boolean>(false);
-  const [isHomePage, setIsHomePage] = useState<boolean>(true);
-  const t = headerText[locale] || headerText["en"];
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
-  const pathSegments = pathIntoSegments(pathname);
-  const withoutLang = pathSegments.slice(1, pathSegments.length);
+  const t = headerText[locale] || headerText["en"];
 
-  console.log(withoutLang);
+  // Memoize extracted path segments to prevent unnecessary recomputations
+  const { currentLocale, withoutLang } = useMemo(() => {
+    const segments = pathIntoSegments(pathname || "");
+    return {
+      currentLocale: segments[0] || "en",
+      withoutLang: segments.slice(1).join("/"),
+    };
+  }, [pathname]);
+
+  // Function to create a localized link
+  const createLocaleLink = (locale: string) => {
+    const newPath = `/${locale}/${withoutLang}`;
+    return `${newPath}${searchParams.toString() ? `?${searchParams.toString()}` : ""}`;
+  };
 
   useEffect(() => {
     if (windowWidth > 900) {
@@ -42,19 +53,9 @@ function Header({ locale }: HeaderProps) {
     }
   }, [isOpen, windowWidth]);
 
-  const openLangToggle = () => {
-    setIsLangOpen(!isLangOpen);
-  };
-
-  const openShopToggle = () => {
-    setIsShopOpen(!isShopOpen);
-  };
-
-  const openToggle = () => {
-    setIsOpen(!isOpen);
-  };
-
-  console.log(locale)
+  const openLangToggle = () => setIsLangOpen(!isLangOpen);
+  const openShopToggle = () => setIsShopOpen(!isShopOpen);
+  const openToggle = () => setIsOpen(!isOpen);
 
   return (
     <header className={`header ${isOpen && "open"}`}>
@@ -71,7 +72,6 @@ function Header({ locale }: HeaderProps) {
                 {l.text}
               </Link>
             ))}
-
             <div className="shop">
               <div
                 id="shopContainer"
@@ -85,24 +85,18 @@ function Header({ locale }: HeaderProps) {
               </div>
               {isShopOpen && (
                 <div data-anchor="currentShopContainer" className="options">
-                  {t.shop.links.map((l, index) => {
-                    console.log(`Processing link:`, l.link);
-                    if (l.link !== "/login") {
-                      return (
-                        <Link
-                          href={l.link}
-                          key={`${l.text}-${index}`}
-                          className="option"
-                          onClick={() => {
-                            openShopToggle();
-                          }}
-                        >
-                          {l.text}
-                        </Link>
-                      );
-                    }
-                    return null;
-                  })}
+                  {t.shop.links.map((l, index) =>
+                    l.link !== "/login" ? (
+                      <Link
+                        href={l.link}
+                        key={`${l.text}-${index}`}
+                        className="option"
+                        onClick={() => openShopToggle()}
+                      >
+                        {l.text}
+                      </Link>
+                    ) : null
+                  )}
                 </div>
               )}
             </div>
@@ -125,16 +119,16 @@ function Header({ locale }: HeaderProps) {
             </div>
             {isLangOpen && (
               <div data-anchor="currentLangContainer" className="options">
-                {t.languages.links.map((l, index) => (
+                {t.languages.links.map((l) => (
                   <Link
-                    href={`/${l.link}${withoutLang}`}
-                    key={`${l.text}-${index}`}
-                    className="option"
-                    onClick={() => {
-                      openLangToggle();
-                    }}
+                    href={createLocaleLink(l.link)}
+                    key={l.link}
+                    className={`option ${
+                      currentLocale === l.link ? "active" : ""
+                    }`}
+                    onClick={() => openLangToggle()}
                   >
-                    {l.text}
+                    {toUpperCase(l.link)}
                   </Link>
                 ))}
               </div>
@@ -152,55 +146,18 @@ function Header({ locale }: HeaderProps) {
                 {t.links.map((l) => (
                   <div className="navLink" key={l.link}>
                     <Link href={l.link}>{l.text}</Link>
-                    <div className="underline" />
                   </div>
                 ))}
-                {t.shop.links.map((l, index) =>
-                  l.link !== "/login" ? (
-                    <div className="navLink" key={`${l.text}-${index}`}>
-                      <Link
-                        href={`${l.link}`}
-                        className="option"
-                        onClick={() => {
-                          openToggle();
-                        }}
-                      >
-                        {l.text}
-                      </Link>
-                      <div className="underline" />
-                    </div>
-                  ) : null
-                )}
-                {t.shop.links.map((l, index) =>
-                  !clientLoginData && l.link === "/login" ? (
-                    <div className="navLink" key={`${l.text}-${index}`}>
-                      <Link
-                        href={`${locale}/${l.link}`}
-                        className="option"
-                        onClick={() => {
-                          openToggle();
-                        }}
-                      >
-                        {l.text}
-                      </Link>
-                      <div className="underline" />
-                    </div>
-                  ) : null
-                )}
-                <div className="options">
-                  {t.languages.links.map((l, index) => (
-                    <Link
-                      href={`/${l.link}${withoutLang}`}
-                      key={`${l.text}-${index}`}
-                      className="option"
-                      onClick={() => {
-                        openToggle();
-                      }}
-                    >
-                      {toUpperCase(l.link)}
-                    </Link>
-                  ))}
-                </div>
+                {t.languages.links.map((l) => (
+                  <Link
+                    href={createLocaleLink(l.link)}
+                    key={l.link}
+                    className="option"
+                    onClick={() => openToggle()}
+                  >
+                    {toUpperCase(l.link)}
+                  </Link>
+                ))}
               </nav>
             </div>
           ) : (
