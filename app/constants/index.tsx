@@ -2265,7 +2265,7 @@ export const trainersText: TrainersTextProps = {
         name: "Vladimír Svonco",
         number: "+421 903 246 426",
         email: "vsvoncinar@yahoo.com",
-        instagram: { name: "rpc60cnvbhmwrz2yptbz", link: "post" },
+        instagram: { name: "svonco", link: "https://www.instagram.com/svonco/" },
         post: { src: "team/rpc60cnvbhmwrz2yptbz", alt: "post" },
         gender: "male",
         languageFilter: [
@@ -2661,7 +2661,7 @@ export const trainersText: TrainersTextProps = {
         name: "Vladimír Svonco",
         number: "+421 903 246 426",
         email: "vsvoncinar@yahoo.com",
-        instagram: { name: "rpc60cnvbhmwrz2yptbz", link: "post" },
+        instagram: { name: "svonco", link: "https://www.instagram.com/svonco/" },
         post: { src: "team/rpc60cnvbhmwrz2yptbz", alt: "post" },
         gender: "male",
         languageFilter: [
@@ -3208,8 +3208,8 @@ export const trainersText: TrainersTextProps = {
         number: "+421 903 246 426",
         email: "vsvoncinar@yahoo.com",
         instagram: {
-          name: "rpc60cnvbhmwrz2yptbz",
-          link: "post",
+          name: "svonco",
+          link: "https://www.instagram.com/svonco/",
         },
         post: {
           src: "team/rpc60cnvbhmwrz2yptbz",
