@@ -112,7 +112,7 @@ function Header({ locale }: HeaderProps) {
               </Link>
             )}
           </nav>
-          <div className="languages">
+          {/* <div className="languages">
             <div
               id="currentLangContainer"
               className="current"
@@ -139,7 +139,7 @@ function Header({ locale }: HeaderProps) {
                 ))}
               </div>
             )}
-          </div>
+          </div> */}
         </>
       ) : (
         <div className="mobile">
@@ -187,7 +187,7 @@ function Header({ locale }: HeaderProps) {
                     </div>
                   ) : null
                 )}
-                <div className="options">
+                {/* <div className="options">
                   {t.languages.links.map((l, index) => (
                     <Link
                       href={`/${l.link}${withoutLang}`}
@@ -200,7 +200,7 @@ function Header({ locale }: HeaderProps) {
                       {toUpperCase(l.link)}
                     </Link>
                   ))}
-                </div>
+                </div> */}
               </nav>
             </div>
           ) : (

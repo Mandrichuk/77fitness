@@ -54,7 +54,7 @@ function Footer({ locale }: FooterProps) {
               ))}
             </ul>
           </div>
-          <div className="detail">
+          {/* <div className="detail">
             <p className="title">{t.languages.title}</p>
             <ul>
               {t.languages.links.map((i) => (
@@ -63,7 +63,7 @@ function Footer({ locale }: FooterProps) {
                 </div>
               ))}
             </ul>
-          </div>
+          </div> */}
           <div className="detail">
             <p className="title">{t.socials.title}</p>
             <ul className="sosialsUl">
