@@ -1827,6 +1827,7 @@ export const PricesText: PricesTextTypes = {
           "Sauna a sprchy",
           "Často DJ a živá hudba",
           "Osobný tréner (Rezervácia nutná, za príplatok)",
+          "IONT nápoj a uterák"
         ],
         button: {
           text: "Kúpiť online",
@@ -1843,6 +1844,7 @@ export const PricesText: PricesTextTypes = {
           "Sauna a sprchy",
           "Často DJ a živá hudba",
           "Osobný tréner (Rezervácia nutná, za príplatok)",
+           "IONT nápoj a uterák"
         ],
         button: {
           text: "Kúpiť online",
@@ -1859,6 +1861,7 @@ export const PricesText: PricesTextTypes = {
           "Sauna a sprchy",
           "Často DJ a živá hudba",
           "Osobný tréner (Rezervácia nutná, za príplatok)",
+           "IONT nápoj a uterák"
         ],
         button: {
           text: "Kúpiť online",

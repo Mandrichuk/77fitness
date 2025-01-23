@@ -57,7 +57,7 @@ function Footer({ locale }: FooterProps) {
           {/* <div className="detail">
             <p className="title">{t.languages.title}</p>
             <ul>
-              {t.languages.links.map((i) => (
+              {t.sk.links.map((i) => (
                 <div className="linkContainer" key={i.text}>
                   <Link href={`/${i.link}${withoutLang}`}>{i.text}</Link>
                 </div>
