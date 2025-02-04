@@ -369,6 +369,18 @@ export const overviewText = {
         src: "equipment/DSC02613-Enhanced-NR_rudjwq",
         alt: "image5",
       },
+               {
+        src: "equipment/photo_2_2025-02-04_10-58-49_cos5x2",
+        alt: "image6",
+      },
+                     {
+        src: "equipment/photo_3_2025-02-04_10-59-40_fst8f6",
+        alt: "image7",
+      },
+                           {
+        src: "equipment/photo_1_2025-02-04_10-58-49_vvzvza",
+        alt: "image8",
+      },
     ],
   },
   ru: {
