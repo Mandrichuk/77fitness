@@ -2153,7 +2153,7 @@ export const trainersText: TrainersTextProps = {
         },
         name: "Bálint Szalai",
         number: "+421 944 145 770",
-        email: "walntino@gmail.com",
+        email: "baliszalai6@gmail.com",
         instagram: {
           name: "baliszalai",
           link: "https://www.instagram.com/baliszalai/",
@@ -2168,7 +2168,7 @@ export const trainersText: TrainersTextProps = {
           { text: "Slovak", value: "sk" },
         ],
         description:
-          "I’m here to help you unlock your full potential through functional training. With a background as a former football player, dancer, and calisthenics athlete, I’ve spent years developing a deep understanding of movement and athletic performance. I hold a Diploma in Sports and Education, and I work with people of all ages and fitness levels, from athletes to those just starting their fitness journey. My philosophy is simple: 'We don’t train as we get older, we train to get older.' Let’s make each session a step toward a stronger, healthier you!",
+          "I’m Bálint Szalai, a former football player, dancer, and calisthenics (street workout) athlete with a passion for helping people reach their fitness goals and change their lifestyle. With years of experience and a Diploma in Sports and Education, I work with all age groups—whether you’re an athlete looking to improve performance or someone wanting to live a healthier, more active life. I believe aesthetics is just a side effect of doing what you love and have to do. Together, we’ll build a better, resilient and more vital you, one workout at a time.",
       },
       {
         image: {
@@ -2556,7 +2556,7 @@ export const trainersText: TrainersTextProps = {
         qr: { src: "null", alt: "qr" },
         name: "Bálint Szalai",
         number: "+421 944 145 770",
-        email: "walntino@gmail.com",
+        email: "baliszalai6@gmail.com",
         instagram: {
           name: "baliszalai",
           link: "https://www.instagram.com/baliszalai/",
@@ -2568,7 +2568,7 @@ export const trainersText: TrainersTextProps = {
           { text: "Slovak", value: "sk" },
         ],
         description:
-          "Som tu, aby som vám pomohol odomknúť váš plný potenciál prostredníctvom funkčného tréningu. S pozadím bývalého futbalistu, tanečníka a atlétu v kalistenike som strávil roky rozvíjaním hlbokého porozumenia pohybu a atletickému výkonu. Mám diplom v oblasti športu a vzdelávania a pracujem s ľuďmi všetkých vekových kategórií a úrovní kondície, od športovcov až po tých, ktorí len začínajú svoju fitness cestu.Moja filozofia je jednoduchá: „Netrenujeme, ako starneme, trénujeme, aby sme zostarli. “Poďme spraviť každú reláciu krokom k silnejšiemu, zdravšiemu vám!",
+          "I’m Bálint Szalai, a former football player, dancer, and calisthenics (street workout) athlete with a passion for helping people reach their fitness goals and change their lifestyle. With years of experience and a Diploma in Sports and Education, I work with all age groups—whether you’re an athlete looking to improve performance or someone wanting to live a healthier, more active life. I believe aesthetics is just a side effect of doing what you love and have to do. Together, we’ll build a better, resilient and more vital you, one workout at a time.",
       },
       {
         image: {
@@ -2639,7 +2639,7 @@ export const trainersText: TrainersTextProps = {
         number: "+421 910 220 593",
         email: "tomasharnicar@gmail.com",
         instagram: {
-          name: "tomas_harnicar",
+          name: "tomas_fitnesscoach",
           link: "https://www.instagram.com/tomas_harnicar/?igsh=MTdqOW54bHU2a3hl&utm_source=qr",
         },
         post: { src: "shop/xecjtpcqrdksgqtt22th", alt: "post" },
@@ -2658,7 +2658,7 @@ export const trainersText: TrainersTextProps = {
         number: "+421 903 322 155",
         email: "tom.personalcoach@gmail.com",
         instagram: {
-          name: "tomas_mbtkcoaching",
+          name: "tomas_fitnesscoach",
           link: "https://www.instagram.com/tomas_mbtkcoaching/",
         },
         post: { src: "team/trainer1_cjjupt", alt: "post" },
@@ -3015,7 +3015,7 @@ export const trainersText: TrainersTextProps = {
         },
         name: "Балинт Шалаи",
         number: "+421 944 145 770",
-        email: "walntino@gmail.com",
+        email: "baliszalai6@gmail.com",
         instagram: {
           name: "baliszalai",
           link: "https://www.instagram.com/baliszalai/",
@@ -3189,7 +3189,7 @@ export const trainersText: TrainersTextProps = {
         number: "+421 903 322 155",
         email: "tom.personalcoach@gmail.com",
         instagram: {
-          name: "tomas_mbtkcoaching",
+          name: "tomas_fitnesscoach",
           link: "https://www.instagram.com/tomas_mbtkcoaching/",
         },
         post: {
