@@ -2592,6 +2592,28 @@ export const trainersText: TrainersTextProps = {
         description:
           "Som certifikovaný tréner Medzinárodnej asociácie športových vied (ISSA) v oblasti fitness a kulturistiky, oddaný konzultant pre výživu a majster v biomechanike cvičenia (certifikovaný). Špecializujem sa na telesnú recompozíciu, som vášnivý pre svoju prácu a prinášam viac ako 8 rokov profesionálnych skúseností v oblasti fitness tréningu, nutričnej podpory a telesnej recompozície. Môj komplexný a personalizovaný prístup pomohol mnohým jednotlivcom zlepšiť svoje zdravie, kondíciu a duševnú pohodu. Som odhodlaný pomáhať klientom dosahovať ich fitness ciele prostredníctvom odborného vedenia a neochvejnej podpory.",
       },
+          {
+            image: {
+              src: "team/5206412433873297843-removebg-preview_eyxwmb",
+              alt: "trainer",
+            },
+            qr: { src: "null", alt: "qr" },
+            name: "Baris Tosun",
+            number: "+421 902 802 223",
+            email: "baristosun3434@gmail.com",
+            instagram: {
+              name: "baristosun",
+              link: "#",
+            },
+            post: { src: "team/photo_2025-02-17_23-29-16_xovarg", alt: "post" },
+            gender: "male",
+            languageFilter: [
+              { text: "English", value: "en" },
+              { text: "Slovak", value: "sk" },
+            ],
+            description:
+              "I have been actively involved in different sports for 17 years. I have supported my 7 years of experience in bodybuilding and fitness with the internationally valid ereps level 4 personal trainer certificate, and my education in sports sciences and nutrition departments at two different universities. In addition, I am a competitive bodybuilding competitor. I have developed my knowledge and vision by working with over 200 clients in the most prestigious gyms in Dubai and Istanbul. I care about the progress of my members and make the process enjoyable and sustainable while getting maximum efficiency thanks to the plans I create completely according to the person's living standards. I am here to help you include healthy nutrition and training in your lifestyle instead of a short-term experience.",
+          },
       {
         image: { src: "team/gh6w8tmkbhvjj0kgwhvb", alt: "trainer" },
         qr: { src: "null", alt: "qr" },
