@@ -6,6 +6,14 @@
     @include Flex(column, center, center);
     width: wrapperWidth(mobile);
 
+    .namesro{
+      width: 100%;
+      @include Flex(row, start, start);
+         font-size: calc( fontSize(h3) - 3px);
+      font-weight: fontWeight(bold);
+      margin-top: 30px;
+    }
+
     .text {
       font-size: fontSize(p);
       font-weight: fontWeight(bold);
@@ -15,7 +23,7 @@
 
     .detailsContainer {
       @include Flex(column, start, center);
-      margin-top: 30px;
+      margin-top: 10px;
       width: 100%;
 
       .locationContainer {
@@ -143,6 +151,14 @@
       @include Flex(column, center, center);
       width: wrapperWidth(mobile);
 
+  .namesro{
+      width: 100%;
+      @include Flex(row, center, center);
+         font-size: calc( fontSize(h3) - 3px);
+      font-weight: fontWeight(bold);
+      margin-top: 30px;
+    }
+
       .text {
         font-size: fontSize(p);
         font-weight: fontWeight(bold);
@@ -152,7 +168,7 @@
 
       .detailsContainer {
         @include Flex(column, start, center);
-        margin-top: 30px;
+        margin-top: 10px;
         width: 100%;
 
         .locationContainer {
@@ -285,7 +301,7 @@
       .detailsContainer {
         flex: 1;
         @include Flex(row, start, space-between);
-        margin-top: 50px;
+        margin-top: 10px;
         width: 100%;
 
         .entryTimeContainer {

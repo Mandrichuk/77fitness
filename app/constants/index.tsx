@@ -2594,15 +2594,15 @@ export const trainersText: TrainersTextProps = {
       },
           {
             image: {
-              src: "team/5206412433873297843-removebg-preview_eyxwmb",
+              src: "team/photo_2025-02-17_23-29-16_xovarg",
               alt: "trainer",
             },
             qr: { src: "null", alt: "qr" },
             name: "Baris Tosun",
-            number: "+421 902 802 223",
+            number: "+421 902 220 027",
             email: "baristosun3434@gmail.com",
             instagram: {
-              name: "baristosun",
+              name: "baristosunbt",
               link: "#",
             },
             post: { src: "team/photo_2025-02-17_23-29-16_xovarg", alt: "post" },

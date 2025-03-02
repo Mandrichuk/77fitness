@@ -14,6 +14,7 @@ function Details() {
   return (
     <section className="Homepage_Details">
       <div className="wrapper">
+          <div className="namesro">77 FITNESS Cityfitness s.r.o.</div>
         <div className="detailsContainer">
           <div className="entryTimeContainer">
             <h4 className="biggerText">{t("entry.text")}</h4>
