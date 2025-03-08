@@ -592,6 +592,10 @@ export const headerText: HeaderTextProps = {
         text: "Galéria",
         link: "/gallery",
       },
+      {
+        text: "Kontakt",
+        link: "/contact",
+      },
     ],
     login: {
       text: "Prihlásiť sa",
@@ -772,7 +776,7 @@ export const footerText: FooterTextProps = {
         { text: "Cenník", link: "/pricing" },
         { text: "Galéria", link: "/gallery" },
         { text: "Tréneri", link: "/trainers" },
-        { text: "Kontakt", link: "tel:+421 940 735 735" },
+        { text: "Kontakt", link: "/contact" },
       ],
     },
     shop: {

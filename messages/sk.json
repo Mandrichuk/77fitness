@@ -18,6 +18,14 @@
     }
   },
   "HomePage": {
+    "Contact": {
+      "title": "SÍDLO A PREVÁDZKOVATEĽ FITNESS KLUBU:",
+      "sro": "77 FITNESS Cityfitness s.r.o.",
+      "ico": "IČO: 54992443",
+      "dic": "DIČ: 2121861148 ",
+      "dph": "IČ DPH SK2121861148, podľa §4, registrácia od 1.2.2023 Sídlo",
+      "location": "CITYFITNESS, s.r.o.Zuzany Chalupovej 8 851 07 Bratislava - mestská časť Petržalka"
+    },
     "Application": {
       "text": "Aplikácia",
       "title": "Stiahnite si našu aplikáciu!",

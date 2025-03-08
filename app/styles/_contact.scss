@@ -1,0 +1,43 @@
+.Contact {
+  @include Flex(row, center, center);
+  width: 100%;
+  .wrapper {
+    padding: 20px;
+    @include Flex(column,start, space-between);
+    width: wrapperWidth(mobile);
+
+
+    .title {
+      font-size: fontSize(h3);
+      font-weight: fontWeight(bold);
+      margin-bottom: 20px;
+    }
+
+        .sro {
+      font-size: calc(fontSize(h3) - 6px);
+      font-weight: fontWeight(semibold);
+      margin-bottom: 10px;
+    }
+        .ico {
+      font-size: calc(fontSize(p) + 3px);
+      font-weight: fontWeight(regular);
+      margin-bottom: 10px;
+    }
+        .dic {
+      font-size: calc(fontSize(p) + 3px);
+      font-weight: fontWeight(regular);
+      margin-bottom: 10px;
+    }
+        .dph {
+      font-size: calc(fontSize(p) + 3px);
+      font-weight: fontWeight(regular);
+      margin-bottom: 10px;
+    }
+        .location {
+      font-size: calc(fontSize(p) + 3px);
+      font-weight: fontWeight(regular);
+    }
+      
+
+  }
+}
