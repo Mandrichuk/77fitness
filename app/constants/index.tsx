@@ -777,6 +777,8 @@ export const footerText: FooterTextProps = {
         { text: "Galéria", link: "/gallery" },
         { text: "Tréneri", link: "/trainers" },
         { text: "Kontakt", link: "/contact" },
+        { text: "Kontakt", link: "/contact" },
+        { text: "Dokumenty", link: "/policy" },
       ],
     },
     shop: {
@@ -2509,6 +2511,111 @@ export const trainersText: TrainersTextProps = {
     },
     trainers: [
       {
+            image: {
+              src: "team/image-removebg-preview_7_rie7cj",
+              alt: "trainer",
+            },
+            qr: { src: "null", alt: "qr" },
+            name: "Baris Tosun",
+            number: "+421 902 220 027",
+            email: "baristosun3434@gmail.com",
+            instagram: {
+              name: "baristosunbt",
+              link: "#",
+            },
+            post: { src: "team/WhatsApp_Image_2025-03-01_at_10.16.25_2eb808a0_imnkvx", alt: "post" },
+            gender: "male",
+            languageFilter: [
+              { text: "English", value: "en" },
+              { text: "Slovak", value: "sk" },
+            ],
+            description:
+              "I have been actively involved in different sports for 17 years. I have supported my 7 years of experience in bodybuilding and fitness with the internationally valid ereps level 4 personal trainer certificate, and my education in sports sciences and nutrition departments at two different universities. In addition, I am a competitive bodybuilding competitor. I have developed my knowledge and vision by working with over 200 clients in the most prestigious gyms in Dubai and Istanbul. I care about the progress of my members and make the process enjoyable and sustainable while getting maximum efficiency thanks to the plans I create completely according to the person's living standards. I am here to help you include healthy nutrition and training in your lifestyle instead of a short-term experience.",
+          },
+            {
+        image: {
+          src: "team/k8mgwucduwycgjbkm21l",
+          alt: "trainer",
+        },
+        qr: { src: "null", alt: "qr" },
+        name: "Christian Andre",
+        number: "+421 907 045 381",
+        email: "trainer.chis.andre@gmail.com",
+        instagram: {
+          name: "trainer_chris.andre",
+          link: "https://www.instagram.com/trainer_chris.andre?igsh=MXFyOW5rNDZzdmRvbA%3D%3D&utm_source=qr",
+        },
+        post: { src: "team/w0kzs1vsumycitd1hscd", alt: "post" },
+        gender: "male",
+        languageFilter: [
+          { text: "English", value: "en" },
+          { text: "Spanish", value: "es" },
+        ],
+        description:
+          "Som certifikovaný tréner Medzinárodnej asociácie športových vied (ISSA) v oblasti fitness a kulturistiky, oddaný konzultant pre výživu a majster v biomechanike cvičenia (certifikovaný). Špecializujem sa na telesnú recompozíciu, som vášnivý pre svoju prácu a prinášam viac ako 8 rokov profesionálnych skúseností v oblasti fitness tréningu, nutričnej podpory a telesnej recompozície. Môj komplexný a personalizovaný prístup pomohol mnohým jednotlivcom zlepšiť svoje zdravie, kondíciu a duševnú pohodu. Som odhodlaný pomáhať klientom dosahovať ich fitness ciele prostredníctvom odborného vedenia a neochvejnej podpory.",
+      },
+        {
+        image: { src: "team/wxje9mt4ff0c1yljz3gs", alt: "trainer" },
+        qr: { src: "null", alt: "qr" },
+        name: "Tomaš Harničár",
+        number: "+421 910 220 593",
+        email: "tomasharnicar@gmail.com",
+        instagram: {
+          name: "tomas_fitnesscoach",
+          link: "https://www.instagram.com/tomas_harnicar/?igsh=MTdqOW54bHU2a3hl&utm_source=qr",
+        },
+        post: { src: "shop/xecjtpcqrdksgqtt22th", alt: "post" },
+        gender: "male",
+        languageFilter: [
+          { text: "English", value: "en" },
+          { text: "Slovak", value: "sk" },
+        ],
+        description:
+          "Certifikovaný tréner vo fitness a kulturistike s 19 ročnou praxou. Od športovej gymnastiky som sa v dorasteneckom veku dostal ku fitness a kulturistike, ako osobný tréner som pôsobil vo Francúzku (Monako) a vrátil som sa na Slovensko (Bratislava). Klientov trénujem takmer 16 rokov. Za tie roky som sa naučil, že veľakrát si človek musí najskôr pomôcť psychicky(duševne), až potom je jeho telo schopné napredovať i fyzicky a dosiahnuť svoj fyziologický strop. Preto nejfde iba o to ako človek vyzerá v krátkodobom horizonte, ale aký je konzistentný v tom čo robí a ako sa cíti počas celého procesu, či života. Ako vie zvládať lepšie, ale i horšie dni aj pomocou pohybu, ktorý lieči a udržiava telo i myseľ v rovnováhe. Tréningy mám rád tvrdé, ale zábavné. Na klientov sa pozerám ako na kamarátov. Snažíme sa vytvoriť pozitívny pohybový návyk ,ktorý im ostane po celý život, bez veľkých výkyvov. ",
+      },
+        {
+        image: {
+          src: "team/lzooavtqecq66qeshhub",
+          alt: "trainer",
+        },
+        qr: {
+          src: "null",
+          alt: "qr",
+        },
+        name: "Kateryna Okunieva",
+        number: "+421 907 596 214",
+        email: "greatekaterinaokuneva@gmail.com",
+        instagram: {
+          name: "katyshka_fitness",
+          link: "https://www.instagram.com/katyshka_fitness/?igsh=MWczNWV1ZnozemZnYQ%3D%3D",
+        },
+        post: {
+          src: "team/vias2vjwkvbjbl0h465g",
+          alt: "post",
+        },
+        gender: "female",
+        languageFilter: [
+          {
+            text: "Slovak",
+            value: "sk",
+          },
+          {
+            text: "English",
+            value: "en",
+          },
+          {
+            text: "Ukrainian",
+            value: "ua",
+          },
+          {
+            text: "Russian",
+            value: "ru",
+          },
+        ],
+        description:
+          "Volám sa Kati a som certifikovanou osobnou trénerkou. Trénovaniu sa venujem 6 rokov, počas ktorých som mala skúsenosť s prípravou na súťaž vo fitness modelingu a fitness bikiny. Dokážem každému klientovi, že každý z nás môže dosiahnuť všetko a ešte viac. Moja metóda sa zameriava na tréning pre potešenie a udržiavanie stabilného duševného stavu. Výživa predstavuje 100% úspechu, ale prostredníctvom psychológie vám ukážem, ako cítiť svoje telo a jeho potreby. Ukážem vám, ako sa o seba starať a dokážem vám, že sa na svoje odrazy v zrkadle môžete pozerať s láskou a potešením.",
+      },
+      {
         image: {
           src: "team/5206412433873297843-removebg-preview_eyxwmb",
           alt: "trainer",
@@ -2552,6 +2659,7 @@ export const trainersText: TrainersTextProps = {
         description:
           "Keď nevládzeš, pridaj, a keď sa už viac nedá, tak pridaj ešte viac.” Toto motto ma sprevádzalo počas celej prípravy na Majstrovstvá a aj vďaka nemu som to dokázala a stala sa Absolutnou Majsterkou Európy a Majsterkou Sveta a taktiež som niekoľko násobnou Majsterkou Slovenska. Som kvalifikovanou trénerkou 2. stupňa a študujem na FTVŠ UK - učiteľstvo a trénerstvo TV. Fitnessu sa aktívne venujem už 13 rokov. Rada vám pomôžem získať vytúženú postavu, zostavení tréningového plánu na mieru, upravením stravovacích návikov a to všetko pod mojim aktívnym dohľadom. Mám bohaté skúsenosti a viem pomocť aj poradiť s prípravou na súťažné pódium v rôznych kategóriach. S veľkou dávkou trpezlivosti a odvahy sa spolu dotkneme hviezd. Teším sa na vás.",
       },
+      
       {
         image: {
           src: "team/DSC03690-removebg-preview_lf1z0e",
@@ -2575,50 +2683,6 @@ export const trainersText: TrainersTextProps = {
           "I’m Bálint Szalai, a former football player, dancer, and calisthenics (street workout) athlete with a passion for helping people reach their fitness goals and change their lifestyle. With years of experience and a Diploma in Sports and Education, I work with all age groups—whether you’re an athlete looking to improve performance or someone wanting to live a healthier, more active life. I believe aesthetics is just a side effect of doing what you love and have to do. Together, we’ll build a better, resilient and more vital you, one workout at a time.",
       },
       {
-        image: {
-          src: "team/k8mgwucduwycgjbkm21l",
-          alt: "trainer",
-        },
-        qr: { src: "null", alt: "qr" },
-        name: "Christian Andre",
-        number: "+421 907 045 381",
-        email: "trainer.chis.andre@gmail.com",
-        instagram: {
-          name: "trainer_chris.andre",
-          link: "https://www.instagram.com/trainer_chris.andre?igsh=MXFyOW5rNDZzdmRvbA%3D%3D&utm_source=qr",
-        },
-        post: { src: "team/w0kzs1vsumycitd1hscd", alt: "post" },
-        gender: "male",
-        languageFilter: [
-          { text: "English", value: "en" },
-          { text: "Spanish", value: "es" },
-        ],
-        description:
-          "Som certifikovaný tréner Medzinárodnej asociácie športových vied (ISSA) v oblasti fitness a kulturistiky, oddaný konzultant pre výživu a majster v biomechanike cvičenia (certifikovaný). Špecializujem sa na telesnú recompozíciu, som vášnivý pre svoju prácu a prinášam viac ako 8 rokov profesionálnych skúseností v oblasti fitness tréningu, nutričnej podpory a telesnej recompozície. Môj komplexný a personalizovaný prístup pomohol mnohým jednotlivcom zlepšiť svoje zdravie, kondíciu a duševnú pohodu. Som odhodlaný pomáhať klientom dosahovať ich fitness ciele prostredníctvom odborného vedenia a neochvejnej podpory.",
-      },
-          {
-            image: {
-              src: "team/photo_2025-02-17_23-29-16_xovarg",
-              alt: "trainer",
-            },
-            qr: { src: "null", alt: "qr" },
-            name: "Baris Tosun",
-            number: "+421 902 220 027",
-            email: "baristosun3434@gmail.com",
-            instagram: {
-              name: "baristosunbt",
-              link: "#",
-            },
-            post: { src: "team/photo_2025-02-17_23-29-16_xovarg", alt: "post" },
-            gender: "male",
-            languageFilter: [
-              { text: "English", value: "en" },
-              { text: "Slovak", value: "sk" },
-            ],
-            description:
-              "I have been actively involved in different sports for 17 years. I have supported my 7 years of experience in bodybuilding and fitness with the internationally valid ereps level 4 personal trainer certificate, and my education in sports sciences and nutrition departments at two different universities. In addition, I am a competitive bodybuilding competitor. I have developed my knowledge and vision by working with over 200 clients in the most prestigious gyms in Dubai and Istanbul. I care about the progress of my members and make the process enjoyable and sustainable while getting maximum efficiency thanks to the plans I create completely according to the person's living standards. I am here to help you include healthy nutrition and training in your lifestyle instead of a short-term experience.",
-          },
-      {
         image: { src: "team/gh6w8tmkbhvjj0kgwhvb", alt: "trainer" },
         qr: { src: "null", alt: "qr" },
         name: "Vladimír Kerul",
@@ -2637,6 +2701,48 @@ export const trainersText: TrainersTextProps = {
         ],
         description:
           "Certifikovaný tréner 3. stupňa v kulturistike, fitness a silovom trojboji. Inštruktor bosu 1. kvalifikačného stupňa. Inštruktor TRX. Trénovaniu sa venujem 22 rokov a  z toho súťažne pripravujem pretekárov (bikini fitnes 16 rokov). Poskytujem služby v oblasti naberania svalovej hmoty, redukcii telesného tuku, tvarovania postavy. Venujem sa zostaveniu výživových a tréningových plánov pre pretekárov, ale taktiež pre klientov (premenárov, ktorí chcú schudnúť alebo naopak pribrať). Ako bývaly hráč amerického footbalu  Vienna Knights a neskôr Bratislava Monarchs prinášam do svojich tréningov veľa elementov z prípravy profesionálneho športovca. Od roku 2018 až do 2023 som zastával post reprezentačneho trénera žien asociácie WABBA Slovakia a súbežne od roku 2022 som po dlhoročnej  spolupráci s asociáciou IBFF dostal post prezidenta pre IBFF Slovakia. ",
+      },
+       {
+        image: {
+          src: "team/s4ecsmbozyrxydbfmb3t",
+          alt: "trainer",
+        },
+        qr: {
+          src: "null",
+          alt: "qr",
+        },
+        name: "Vsevolod Piddenezhnyy",
+        number: "+421 948 445 196",
+        email: "vsevolod.piddenezhnyy@gmail.com",
+        instagram: {
+          name: "vsevolod.piddenezhnyy",
+          link: "https://www.instagram.com/vsevolod.piddenezhnyy/?igsh=aWczZDk5bm5pMjN2&utm_source=qr",
+        },
+        post: {
+          src: "team/zsrnzd9h0ckxydlktets",
+          alt: "post",
+        },
+        gender: "male",
+        languageFilter: [
+          {
+            text: "English",
+            value: "en",
+          },
+          {
+            text: "Slovak",
+            value: "sk",
+          },
+          {
+            text: "Ukrainian",
+            value: "ua",
+          },
+          {
+            text: "Russian",
+            value: "ru",
+          },
+        ],
+        description:
+          " Volám sa Vsevolod (Sevo). Pomaham ľuďom dosahovať požadované vysledky už od začiatku štúdia na vysokej škole (cez 8 rokov).  Za ten čas moje služby prerástli v komplexnú starostlivosť. Kde okrem fokusu na zmenu zloženia tela, takmer s každým klientom sa zameriavame na korekciu postoja (napr.: bolesti a problemy s chrntocou, poúrazová rehabilitácia kolien) cez zmenu pohybových vzorcov, dekompenzačne cvicenia a prácu s dýchaním. Čo vedie k zlepšeniu ovládania tela ako vo fitku, tak aj v bežnom živote.  Tréningový výkon vo veľkej miere ovplyvňuje výživa, mindset a psychické zdravie, preto otázky ako strava? a ako sa dnes cítiš? sú súčasťou každého tréningu.  Okrem toho, som certifikovaným masérom, a tak zabespečujem klientom, aj kvalitnú regeneráciu.  ",
       },
       {
         image: { src: "team/aintp3zkttqwloakr761", alt: "trainer" },
@@ -2658,25 +2764,7 @@ export const trainersText: TrainersTextProps = {
         description:
           "Volám sa Vladimír Gostík a som bývalý profesionálny volejbalista so skúsenosťami v trénovaní aj športovcov. Špecializujem sa na budovanie svalov, redukciu tuku a poskytovanie výživového poradenstva. Moja tréningová filozofia je založená na komplexnom prístupe k zlepšovaniu fyzickej kondície a zdravia. Verím, že úspech spočíva v rovnováhe medzi tréningom, výživou a regeneráciou. Preto sa zameriavam na vytvorenie individuálnych tréningových plánov, ktoré sú prispôsobené špecifickým cieľom a potrebám každého klienta. Pri práci s klientmi kladiem dôraz na správne pohybové vzorce a korekciu postoja, čo pomáha zlepšovať celkovú stabilitu tela. Každý tréning je doplnený o konzultácie týkajúce sa výživy a psychického zdravia, pretože verím, že celková pohoda je kľúčom k dosiahnutiu optimálnych výsledkov. Ak hľadáš trénera, ktorý ti pomôže dosiahnuť tvoje ciele komplexne a udržateľne, som tu pre teba.",
       },
-      {
-        image: { src: "team/wxje9mt4ff0c1yljz3gs", alt: "trainer" },
-        qr: { src: "null", alt: "qr" },
-        name: "Tomaš Harničár",
-        number: "+421 910 220 593",
-        email: "tomasharnicar@gmail.com",
-        instagram: {
-          name: "tomas_fitnesscoach",
-          link: "https://www.instagram.com/tomas_harnicar/?igsh=MTdqOW54bHU2a3hl&utm_source=qr",
-        },
-        post: { src: "shop/xecjtpcqrdksgqtt22th", alt: "post" },
-        gender: "male",
-        languageFilter: [
-          { text: "English", value: "en" },
-          { text: "Slovak", value: "sk" },
-        ],
-        description:
-          "Certifikovaný tréner vo fitness a kulturistike s 19 ročnou praxou. Od športovej gymnastiky som sa v dorasteneckom veku dostal ku fitness a kulturistike, ako osobný tréner som pôsobil vo Francúzku (Monako) a vrátil som sa na Slovensko (Bratislava). Klientov trénujem takmer 16 rokov. Za tie roky som sa naučil, že veľakrát si človek musí najskôr pomôcť psychicky(duševne), až potom je jeho telo schopné napredovať i fyzicky a dosiahnuť svoj fyziologický strop. Preto nejfde iba o to ako človek vyzerá v krátkodobom horizonte, ale aký je konzistentný v tom čo robí a ako sa cíti počas celého procesu, či života. Ako vie zvládať lepšie, ale i horšie dni aj pomocou pohybu, ktorý lieči a udržiava telo i myseľ v rovnováhe. Tréningy mám rád tvrdé, ale zábavné. Na klientov sa pozerám ako na kamarátov. Snažíme sa vytvoriť pozitívny pohybový návyk ,ktorý im ostane po celý život, bez veľkých výkyvov. ",
-      },
+    
       {
         image: { src: "team/uxhnhzfmqktuyt163zda", alt: "trainer" },
         qr: { src: "null", alt: "qr" },
@@ -2769,48 +2857,7 @@ export const trainersText: TrainersTextProps = {
         description:
           "Som certifikovanou osobnou trénerkou a mojím cieľom je pomáhať ľuďom pri budovaní trvalo udržateľného vzťahu k zdravému životnému štýlu či už v rámci pohybu alebo stravy. Zameriavam sa na formovanie postavy podľa individuálnych cieľov klientok od naberania svalovej hmoty, zlepšenie kondície, redukcie tuku až po tvorbu tréningových či stravovacích plánov.  Nie som zástankyňou diét, preto sa snažím klientkam vysvetliť, ako si v strave vytvoriť balanc a zároveň sa zlepšovať po fyzickej, ale aj psychickej stránke. S mojím individuálnym prístupom a pozitívnou energiou ťa plne podporím pri dosahovaní tvojich maximálnych výkonov a budem ti oporou na tvojej ceste k vytváraniu lepšej verzie samej seba.",
       },
-      {
-        image: {
-          src: "team/s4ecsmbozyrxydbfmb3t",
-          alt: "trainer",
-        },
-        qr: {
-          src: "null",
-          alt: "qr",
-        },
-        name: "Vsevolod Piddenezhnyy",
-        number: "+421 948 445 196",
-        email: "vsevolod.piddenezhnyy@gmail.com",
-        instagram: {
-          name: "vsevolod.piddenezhnyy",
-          link: "https://www.instagram.com/vsevolod.piddenezhnyy/?igsh=aWczZDk5bm5pMjN2&utm_source=qr",
-        },
-        post: {
-          src: "team/zsrnzd9h0ckxydlktets",
-          alt: "post",
-        },
-        gender: "male",
-        languageFilter: [
-          {
-            text: "English",
-            value: "en",
-          },
-          {
-            text: "Slovak",
-            value: "sk",
-          },
-          {
-            text: "Ukrainian",
-            value: "ua",
-          },
-          {
-            text: "Russian",
-            value: "ru",
-          },
-        ],
-        description:
-          " Volám sa Vsevolod (Sevo). Pomaham ľuďom dosahovať požadované vysledky už od začiatku štúdia na vysokej škole (cez 8 rokov).  Za ten čas moje služby prerástli v komplexnú starostlivosť. Kde okrem fokusu na zmenu zloženia tela, takmer s každým klientom sa zameriavame na korekciu postoja (napr.: bolesti a problemy s chrntocou, poúrazová rehabilitácia kolien) cez zmenu pohybových vzorcov, dekompenzačne cvicenia a prácu s dýchaním. Čo vedie k zlepšeniu ovládania tela ako vo fitku, tak aj v bežnom živote.  Tréningový výkon vo veľkej miere ovplyvňuje výživa, mindset a psychické zdravie, preto otázky ako strava? a ako sa dnes cítiš? sú súčasťou každého tréningu.  Okrem toho, som certifikovaným masérom, a tak zabespečujem klientom, aj kvalitnú regeneráciu.  ",
-      },
+     
       {
         image: {
           src: "team/zrxuppwubl0244qckrxe",
@@ -2845,48 +2892,7 @@ export const trainersText: TrainersTextProps = {
         description:
           "Ako osobná trénerka, pomáham svojim klientkam si vytvoriť udržateľný životný štýl a predovšetkým návyky, ktoré im zaručia nie len krátkodobú zmenu ale hlavne udržateľné výsledky. Verím, že k úspechu vedie rovnováha medzi fyzickým tréningom, výživou, regeneráciu a mentálnym zdravím. Moje klientky inšpirujem k tomu, aby si uvedomili svoju silu a hodnotu, čím im pomáham dosiahnuť nielen estetické, ale aj zdravotné ciele. Keďže ženské telo je špecifické, vyžaduje si špecifický a individuálny prístup, preto sa  zameriavam výhradne na ženskú klientelu. Rada pomôžem aj Tebe, tak čo? Si pripravená?",
       },
-      {
-        image: {
-          src: "team/lzooavtqecq66qeshhub",
-          alt: "trainer",
-        },
-        qr: {
-          src: "null",
-          alt: "qr",
-        },
-        name: "Kateryna Okunieva",
-        number: "+421 907 596 214",
-        email: "greatekaterinaokuneva@gmail.com",
-        instagram: {
-          name: "katyshka_fitness",
-          link: "https://www.instagram.com/katyshka_fitness/?igsh=MWczNWV1ZnozemZnYQ%3D%3D",
-        },
-        post: {
-          src: "team/vias2vjwkvbjbl0h465g",
-          alt: "post",
-        },
-        gender: "female",
-        languageFilter: [
-          {
-            text: "Slovak",
-            value: "sk",
-          },
-          {
-            text: "English",
-            value: "en",
-          },
-          {
-            text: "Ukrainian",
-            value: "ua",
-          },
-          {
-            text: "Russian",
-            value: "ru",
-          },
-        ],
-        description:
-          "Volám sa Kati a som certifikovanou osobnou trénerkou. Trénovaniu sa venujem 6 rokov, počas ktorých som mala skúsenosť s prípravou na súťaž vo fitness modelingu a fitness bikiny. Dokážem každému klientovi, že každý z nás môže dosiahnuť všetko a ešte viac. Moja metóda sa zameriava na tréning pre potešenie a udržiavanie stabilného duševného stavu. Výživa predstavuje 100% úspechu, ale prostredníctvom psychológie vám ukážem, ako cítiť svoje telo a jeho potreby. Ukážem vám, ako sa o seba starať a dokážem vám, že sa na svoje odrazy v zrkadle môžete pozerať s láskou a potešením.",
-      },
+     
       {
         image: {
           src: "team/sg2rphtlklnioiyjxa1z",
