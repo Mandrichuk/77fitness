@@ -39,9 +39,6 @@ function Payment() {
               <p className="text">{point}</p>
             </div>
           ))}
-           <div className="alertContainer">
-              <p className="text">{t("alert")}</p>
-            </div>
         </div>
         <div className="imageContainer">
           <Image
