@@ -484,6 +484,9 @@
       },
       "step4": {
         "text": "Your order will be processed shortly after confirmation."
+      },
+      "step5": {
+        "text": "Your order will be processed shortly after confirmation."
       }
     },
     "ibanNumber": "SK87 1100 0000 0029 4613 8034",
