@@ -468,6 +468,9 @@
       },
       "step4": {
         "text": "Vaša objednávka bude spracovaná krátko po potvrdení."
+      },
+      "step5": {
+        "text": "Zdravím v košíku treba mať odkliknutie že zaákzník súhlasí s VOP/GDPR."
       }
     },
     "ibanNumber": "SK87 1100 0000 0029 4613 8034",

@@ -21,6 +21,9 @@ function OderIBAN() {
     {
       text: t("steps.step4.text"),
     },
+    {
+      text: t("steps.step5.text"),
+    },
   ];
 
   return (
