@@ -187,6 +187,26 @@ function Header({ locale }: HeaderProps) {
                     </div>
                   ) : null
                 )}
+                
+                    <div className="navLink" key={`123123`}>
+                      <a
+                        href={`tel:+421940735735`}
+                        className="option"
+                        onClick={() => {
+                          openToggle();
+                        }}
+                      >
+                        Zavolajte nám
+                      </a>
+                      <div className="underline" />
+                    </div>
+          
+      {/* {
+        text: "Zavolajte nám",
+        link: "tel:+421940735735",
+      }, */}
+
+          
                 {/* <div className="options">
                   {t.languages.links.map((l, index) => (
                     <Link

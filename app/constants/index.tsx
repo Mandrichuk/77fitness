@@ -778,7 +778,7 @@ export const footerText: FooterTextProps = {
         { text: "Tréneri", link: "/trainers" },
         { text: "Kontakt", link: "/contact" },
         { text: "Dokumenty", link: "/policy" },
-        { text: "Zavolajte nám", link: "tel:+421908706351" },
+        { text: "Zavolajte nám", link: "tel:+421940735735" },
       ],
     },
     shop: {
