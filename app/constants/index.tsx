@@ -1827,6 +1827,7 @@ export const PricesText: PricesTextTypes = {
           "Neobmedzený prístup do posilňovne",
           "Sauna a sprchy",
           "Často DJ a živá hudba",
+             "IONT nápoj a uterák",
           "Osobný tréner (Rezervácia nutná, za príplatok)",
         ],
         button: {
@@ -1863,6 +1864,7 @@ export const PricesText: PricesTextTypes = {
           "Sauna a sprchy",
           "Často DJ a živá hudba",
            "20% Zľava na Tovar z Baru",
+             "Proteínový Nápoj Zadarmo",
            "IONT nápoj a uterák",
           "Osobný tréner (Rezervácia nutná, za príplatok)"
         ],
