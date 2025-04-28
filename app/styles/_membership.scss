@@ -3,13 +3,13 @@
   position: relative;
   overflow: hidden;
   width: 300px;
-  height: 470px;
+  height: auto;
   background-color: color(custom-black);
   padding: 40px 30px;
   border-radius: borderRadius(mobile);
 
   &.standOut {
-    height: 530px;
+    height: auto;
     background-color: color(secondary-color);
 
     .details {
@@ -120,13 +120,13 @@
   .Membership {
     @include Flex(column, start, center);
     width: 350px;
-    height: 500px;
+    height: auto;
     background-color: color(custom-black);
     padding: 40px 30px;
     border-radius: borderRadius(mobile);
 
     &.standOut {
-      height: 560px;
+      height: auto;
       background-color: color(secondary-color);
 
       .details {
@@ -232,7 +232,7 @@
 @media (min-width: 620px) {
   .Membership {
     width: 280px;
-    height: 480px;
+    height: auto;
     background-color: color(custom-black);
     padding: 40px 30px;
     border-radius: borderRadius(mobile);
@@ -242,6 +242,7 @@
       background-color: color(secondary-color);
 
       .details {
+      
         .title {
           color: color(text-color);
           max-width: 100px;
@@ -342,18 +343,20 @@
 
 @media (min-width: 1250px) {
   .Membership {
+      @include Flex(column, start, start);
     width: 280px;
-    height: 480px;
+    height: auto;
     background-color: color(custom-black);
-    padding: 40px 30px;
+    padding: 10px 30px;
     border-radius: borderRadius(mobile);
     &.standOut {
       margin-top: 0;
-      @include Flex(column, center, center);
-      height: 560px;
+      height: 590px;
       background-color: color(secondary-color);
 
       .details {
+       @include Flex(column, start, center);
+
         .title {
           color: color(text-color);
         }

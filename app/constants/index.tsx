@@ -1844,8 +1844,9 @@ export const PricesText: PricesTextTypes = {
           "Neobmedzený prístup do posilňovne",
           "Sauna a sprchy",
           "Často DJ a živá hudba",
-          "Osobný tréner (Rezervácia nutná, za príplatok)",
-          "IONT nápoj a uterák"
+          "20% Zľava na Tovar z Baru",
+          "IONT nápoj a uterák",
+          "Osobný tréner (Rezervácia nutná, za príplatok)"
         ],
         button: {
           text: "Kúpiť online",
@@ -1861,8 +1862,9 @@ export const PricesText: PricesTextTypes = {
           "Neobmedzený prístup do posilňovne",
           "Sauna a sprchy",
           "Často DJ a živá hudba",
-          "Osobný tréner (Rezervácia nutná, za príplatok)",
-           "IONT nápoj a uterák"
+           "20% Zľava na Tovar z Baru",
+           "IONT nápoj a uterák",
+          "Osobný tréner (Rezervácia nutná, za príplatok)"
         ],
         button: {
           text: "Kúpiť online",
@@ -1878,8 +1880,10 @@ export const PricesText: PricesTextTypes = {
           "Neobmedzený prístup do posilňovne",
           "Sauna a sprchy",
           "Často DJ a živá hudba",
+           "20% Zľava na Tovar z Baru",
+           "Proteínový Nápoj Zadarmo",
+           "Inbody Zadarmo",
           "Osobný tréner (Rezervácia nutná, za príplatok)",
-           "IONT nápoj a uterák"
         ],
         button: {
           text: "Kúpiť online",

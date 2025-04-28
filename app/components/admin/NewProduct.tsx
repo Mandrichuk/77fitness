@@ -71,7 +71,7 @@ function NewProduct({ locale }: NewProductProps) {
     title_en: "",
     title_ru: "",
     title_sk: "",
-    images: [],
+    images: ["CHANGE ME"],
     newPrice: 0.01,
     oldPrice: 0.01,
     leftInStock: 0,
