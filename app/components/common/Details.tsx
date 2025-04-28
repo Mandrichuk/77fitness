@@ -47,11 +47,11 @@ function Details() {
               <div className="timedaysContainer">
                 <div className="daysContainer">
                   <p className="days">{t("entry.weekdays.days")}</p>
-                  <p className="days">{t("entry.weekend.days")}</p>
+                  <p className="days">{t("entry.weekdays.days")}</p>
                 </div>
                 <div className="timeContainer">
                   <p className="time">{t("entry.weekend.time")}</p>
-                  <p className="time">{t("entry.weekdays.time")}</p>
+                  <p className="time">{t("entry.weekend.time")}</p>
                 </div>
               </div>
             </div>
