@@ -18,6 +18,10 @@
     }
   },
   "HomePage": {
+    "News": {
+      "bgText": "Novinky",
+      "title": "Najnovšie správy"
+    },
     "Contact": {
       "title": "SÍDLO A PREVÁDZKOVATEĽ FITNESS KLUBU:",
       "sro": "77 FITNESS Cityfitness s.r.o.",
@@ -152,8 +156,11 @@
       "title": "Naši tréneri",
       "seeMore": "Nájdete si svojho trénera",
       "trainers": {
-       "trainer1": {
-          "image": { "src": "team/image-removebg-preview_7_rie7cj", "alt": "trainer" },
+        "trainer1": {
+          "image": {
+            "src": "team/image-removebg-preview_7_rie7cj",
+            "alt": "trainer"
+          },
           "qr": { "src": "null", "alt": "qr" },
           "name": "Baris Tosun",
           "number": "+421 902 220 027",

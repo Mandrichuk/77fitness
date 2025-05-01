@@ -18,6 +18,10 @@
     }
   },
   "HomePage": {
+      "News": {
+      "bgText": "News",
+      "title": "Latest News"
+    },
     "Contact": {
       "title": "HEADQUARTERS & FITNESS CLUB OPERATOR:",
       "sro": "77 FITNESS Cityfitness s.r.o.",

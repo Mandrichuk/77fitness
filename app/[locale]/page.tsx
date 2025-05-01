@@ -11,6 +11,7 @@ import Newsletter from "../components/common/Newsletter";
 import Prices from "../components/common/Prices";
 import SocialMedia from "../components/common/SocialMedia";
 import Team from "../components/home/Team";
+import News from "../components/home/News";
 import CreatedBy from "../components/common/CreatedBy";
 import Application from "../components/home/Application";
 import Details from "../components/common/Details";
@@ -32,6 +33,7 @@ function Home({ params: { locale } }: LocaleProps) {
       <Team />
       <Gallery />
       <Details />
+      <News />
       <SocialMedia />
       <Prices locale={locale} />
       <Application />
