@@ -2,6 +2,7 @@ import "./styles/globals.scss";
 import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
 import { StoreProvider } from "./store/StoreProvider";
+import Script from "next/script";
 
 const urbanist = Urbanist({ subsets: ["latin"] });
 
@@ -37,8 +38,25 @@ interface LayoutProps {
 
 export default function RootLayout({ children, params }: LayoutProps) {
   return (
-    <StoreProvider>
-      <body className={urbanist.className}>{children}</body>
-    </StoreProvider>
+    <html lang="en">
+      <head>
+        {/* Google Tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17081890215"
+          strategy="afterInteractive"
+        />
+        <Script id="google-gtag" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17081890215');
+          `}
+        </Script>
+      </head>
+      <body className={urbanist.className}>
+        <StoreProvider>{children}</StoreProvider>
+      </body>
+    </html>
   );
 }
