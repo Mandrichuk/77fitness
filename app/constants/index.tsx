@@ -1838,7 +1838,8 @@ export const PricesText: PricesTextTypes = {
       },
 
       {
-        title: "3 mesačné členstvo",
+        title: "3 + 1 mesačné členstvo",
+        standOut: "1 mesiac zadarmo",
         price: "195",
         description: "jednorazová platba",
         included: [

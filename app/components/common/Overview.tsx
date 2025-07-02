@@ -30,7 +30,7 @@ function Overview({ locale }: { locale: "en" | "ru" | "sk" }) {
         <div className="TextContainer">
           <p className="text">{t.text}</p>
           <div className="icons">
-            <div
+            {/* <div
               className="prevImageIcon icon"
               onClick={() => changeImage(false)}
             >
@@ -41,7 +41,7 @@ function Overview({ locale }: { locale: "en" | "ru" | "sk" }) {
               onClick={() => changeImage(true)}
             >
               {SVGs.blueArrow}
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="imagesContainer">
