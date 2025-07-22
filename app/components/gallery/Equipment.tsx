@@ -11,6 +11,8 @@ function Equipment() {
   const t = useTranslations("GalleryPage.Equipment");
 
   const images = [
+    { src: t("images.image5.src"), alt: t("images.image5.alt") },
+    { src: t("images.image6.src"), alt: t("images.image6.alt") },
     { src: t("images.image1.src"), alt: t("images.image1.alt") },
     { src: t("images.image2.src"), alt: t("images.image2.alt") },
     { src: t("images.image3.src"), alt: t("images.image3.alt") },

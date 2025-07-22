@@ -9,6 +9,9 @@ function Training() {
   const t = useTranslations("GalleryPage.Training");
  
   const images = [
+    { image: t("images.image7.src"), alt: t("images.image4.alt") },
+    { image: t("images.image8.src"), alt: t("images.image5.alt") },
+    { image: t("images.image9.src"), alt: t("images.image6.alt") },
     { image: t("images.image1.src"), alt: t("images.image1.alt") },
     { image: t("images.image2.src"), alt: t("images.image2.alt") },
     { image: t("images.image3.src"), alt: t("images.image3.alt") },

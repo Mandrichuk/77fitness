@@ -18,12 +18,11 @@
     }
   },
   "HomePage": {
-      "News": {
+    "News": {
       "bgText": "Новости",
-"title": "Последние новости"
-
+      "title": "Последние новости"
     },
-   "Contact": {
+    "Contact": {
       "title": "HEADQUARTERS & FITNESS CLUB OPERATOR:",
       "sro": "77 FITNESS Cityfitness s.r.o.",
       "ico": "IČO 54992443",
@@ -318,6 +317,14 @@
         "image4": {
           "src": "equipment/DSC02581-Enhanced-NR_cwqwcu",
           "alt": "image4"
+        },
+        "image5": {
+          "src": "equipment/77Fitness-2_fsxpqv",
+          "alt": "image5"
+        },
+        "image6": {
+          "src": "equipment/77Fitness-1_dyhi9k",
+          "alt": "image6"
         }
       },
       "additionalImages": {
@@ -367,6 +374,18 @@
         "image6": {
           "src": "gallery/training/r8rzvagfnmwydbee6ej2",
           "alt": "image1"
+        },
+        "image7": {
+          "src": "gallery/training/77Fitness-3_gabubd",
+          "alt": "obrázok4"
+        },
+        "image8": {
+          "src": "gallery/training/77Fitness-9_fhavyn",
+          "alt": "obrázok5"
+        },
+        "image9": {
+          "src": "gallery/training/77Fitness-19_fcuzlu",
+          "alt": "obrázok6"
         }
       },
       "button": { "text": "Больше", "link": "" }

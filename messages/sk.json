@@ -327,6 +327,14 @@
         "image4": {
           "src": "equipment/DSC02581-Enhanced-NR_cwqwcu",
           "alt": "image4"
+        },
+        "image5": {
+          "src": "equipment/77Fitness-2_fsxpqv",
+          "alt": "image5"
+        },
+        "image6": {
+          "src": "equipment/77Fitness-1_dyhi9k",
+          "alt": "image6"
         }
       },
       "additionalImages": {
@@ -345,6 +353,14 @@
         "image4": {
           "src": "equipment/DSC02613-Enhanced-NR_rudjwq",
           "alt": "image4"
+        },
+        "image5": {
+          "src": "equipment/DSC02581-Enhanced-NR_cwqwcu",
+          "alt": "image5"
+        },
+        "image6": {
+          "src": "equipment/DSC02581-Enhanced-NR_cwqwcu",
+          "alt": "image6"
         }
       },
       "button": { "text": "Zobraziť viac", "link": "" }
@@ -375,6 +391,18 @@
         },
         "image6": {
           "src": "gallery/training/r8rzvagfnmwydbee6ej2",
+          "alt": "obrázok6"
+        },
+        "image7": {
+          "src": "gallery/training/77Fitness-3_gabubd",
+          "alt": "obrázok4"
+        },
+        "image8": {
+          "src": "gallery/training/77Fitness-9_fhavyn",
+          "alt": "obrázok5"
+        },
+        "image9": {
+          "src": "gallery/training/77Fitness-19_fcuzlu",
           "alt": "obrázok6"
         }
       },
