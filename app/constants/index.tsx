@@ -285,7 +285,7 @@ export const overviewText = {
     text: "Our gym images",
     images: [
       {
-        src: "equipment/DSC02593-Enhanced-NR_t7hcf2",
+        src: "equipment/77Fitness-2_fsxpqv",
         alt: "image5",
       },
       {
@@ -330,7 +330,7 @@ export const overviewText = {
     text: "Fotky nášho fitka",
     images: [
       {
-        src: "equipment/DSC02593-Enhanced-NR_t7hcf2",
+        src: "equipment/77Fitness-1_dyhi9k",
         alt: "image5",
       },
       {
