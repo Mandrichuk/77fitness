@@ -58,7 +58,7 @@ function Introduction() {
                   imgPriority={true}
                 />
               </div>
-              <p className="locationNameText">NEW! Ivanská cesta 26, ePORT Mall</p>
+              <p className="locationNameText">SOON! Ivanská cesta 26, ePORT Mall</p>
             </div>
           </div>
 
