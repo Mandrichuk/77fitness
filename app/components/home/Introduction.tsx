@@ -8,7 +8,7 @@ import BluredCirlce from "../common/BluredCirlce";
 import Image from "../common/Image";
 
 const promotionStyles = {
-  color: "#097fd9",
+  color: "#ffffff",
   fontWeight: 600,
 };
 
@@ -38,14 +38,38 @@ function Introduction() {
             <BluredCirlce color={BluredCircleColors.blue} blurRange={"100"} />
           </div>
           <h1 className="name">{t("name")}</h1>
+
+          <div className="locationsContainer">
+            <div className="locationContainer">
+              <div className="locationImageContainer">
+                <Image
+                  image={"Vector_oh0vv8"}
+                  alt={"icon"}
+                  imgPriority={true}
+                />
+              </div>
+              <p className="locationNameText">Bajkalská 2i, OC Tehelko</p>
+            </div>
+            <div className="locationContainer">
+              <div className="locationImageContainer">
+                <Image
+                  image={"Vector_oh0vv8"}
+                  alt={"icon"}
+                  imgPriority={true}
+                />
+              </div>
+              <p className="locationNameText">NEW! Ivanská cesta 26, ePORT Mall</p>
+            </div>
+          </div>
+
           <p className="description" style={descriptionStyles}>
             {t("description")}
-            &nbsp;
-            <span className="promotion" style={promotionStyles}>
-              {t("promotion")}
-            </span>
+
             <span className="details" style={descriptionStyles}>
               {t("details")}
+            </span>
+            <span className="promotion" style={promotionStyles}>
+              {t("promotion")}
             </span>
           </p>
 

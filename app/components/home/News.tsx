@@ -17,6 +17,9 @@ function News() {
 
       <div className="imagesNews">
         <div className="image">
+            <Image image="Artboard_2_1_dyqkhx" alt="image" imgQuality={100} />
+        </div>
+        <div className="image">
             <Image image="IMG_2381_jsc66w" alt="image" imgQuality={100} />
         </div>
         <div className="image">
