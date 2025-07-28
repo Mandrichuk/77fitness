@@ -1837,25 +1837,25 @@ export const PricesText: PricesTextTypes = {
         membershipSku: "CBDC14DB23",
       },
 
-      {
-        title: "3 + 1 mesačné členstvo",
-        standOut: "1 mesiac zadarmo",
-        price: "195",
-        description: "jednorazová platba",
-        included: [
-          "Neobmedzený prístup do posilňovne",
-          "Sauna a sprchy",
-          "Často DJ a živá hudba",
-          "20% Zľava na Tovar z Baru",
-          "IONT nápoj a uterák",
-          "Osobný tréner (Rezervácia nutná, za príplatok)"
-        ],
-        button: {
-          text: "Kúpiť online",
-          link: "/shop",
-        },
-        membershipSku: "4E4BDCF832",
-      },
+      // {
+      //   title: "3 + 1 mesačné členstvo",
+      //   standOut: "1 mesiac zadarmo",
+      //   price: "195",
+      //   description: "jednorazová platba",
+      //   included: [
+      //     "Neobmedzený prístup do posilňovne",
+      //     "Sauna a sprchy",
+      //     "Často DJ a živá hudba",
+      //     "20% Zľava na Tovar z Baru",
+      //     "IONT nápoj a uterák",
+      //     "Osobný tréner (Rezervácia nutná, za príplatok)"
+      //   ],
+      //   button: {
+      //     text: "Kúpiť online",
+      //     link: "/shop",
+      //   },
+      //   membershipSku: "4E4BDCF832",
+      // },
       {
         title: "6 mesačné členstvo",
         price: "370",
