@@ -54,7 +54,7 @@ function Header({ locale }: HeaderProps) {
     setIsOpen(!isOpen);
   };
 
-  console.log(locale)
+  console.log(locale);
 
   return (
     <header className={`header ${isOpen && "open"}`}>
@@ -73,7 +73,7 @@ function Header({ locale }: HeaderProps) {
             ))}
 
             <div className="shop">
-              <div
+              {/* <div
                 id="shopContainer"
                 className="current"
                 onClick={() => openShopToggle()}
@@ -81,9 +81,10 @@ function Header({ locale }: HeaderProps) {
                 <p className="currentShop">{t.shop.title}</p>
                 <div className={`icon ${isShopOpen && "open"}`}>
                   {SVGs.arrowDown}
-                </div>
-              </div>
-              {isShopOpen && (
+                </div> */}
+              <a href="https://shop.77fitness.eu/">Obchod</a>
+            </div>
+            {/* {isShopOpen && (
                 <div data-anchor="currentShopContainer" className="options">
                   {t.shop.links.map((l, index) => {
                     console.log(`Processing link:`, l.link);
@@ -104,8 +105,8 @@ function Header({ locale }: HeaderProps) {
                     return null;
                   })}
                 </div>
-              )}
-            </div>
+              )} 
+            </div> */}
             {!clientLoginData && (
               <Link href={t.login.link} className="option login">
                 {t.login.text}
@@ -155,58 +156,17 @@ function Header({ locale }: HeaderProps) {
                     <div className="underline" />
                   </div>
                 ))}
-                {t.shop.links.map((l, index) =>
-                  l.link !== "/login" ? (
-                    <div className="navLink" key={`${l.text}-${index}`}>
-                      <Link
-                        href={`${l.link}`}
-                        className="option"
-                        onClick={() => {
-                          openToggle();
-                        }}
-                      >
-                        {l.text}
-                      </Link>
-                      <div className="underline" />
+                    <div className="navLink" >
+                      <a href="https://shop.77fitness.eu/">Obchod</a>
                     </div>
-                  ) : null
-                )}
-                {t.shop.links.map((l, index) =>
-                  !clientLoginData && l.link === "/login" ? (
-                    <div className="navLink" key={`${l.text}-${index}`}>
-                      <Link
-                        href={`${locale}/${l.link}`}
-                        className="option"
-                        onClick={() => {
-                          openToggle();
-                        }}
-                      >
-                        {l.text}
-                      </Link>
-                      <div className="underline" />
-                    </div>
-                  ) : null
-                )}
-                
-                    <div className="navLink" key={`123123`}>
-                      <a
-                        href={`tel:+421940735735`}
-                        className="option"
-                        onClick={() => {
-                          openToggle();
-                        }}
-                      >
-                        Zavolajte nám
-                      </a>
-                      <div className="underline" />
-                    </div>
-          
-      {/* {
+
+               
+
+                {/* {
         text: "Zavolajte nám",
         link: "tel:+421940735735",
       }, */}
 
-          
                 {/* <div className="options">
                   {t.languages.links.map((l, index) => (
                     <Link
