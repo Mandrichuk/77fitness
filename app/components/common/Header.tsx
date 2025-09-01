@@ -82,7 +82,7 @@ function Header({ locale }: HeaderProps) {
                 <div className={`icon ${isShopOpen && "open"}`}>
                   {SVGs.arrowDown}
                 </div> */}
-              <a href="https://shop.77fitness.eu/">Obchod</a>
+              <a href="https://77fitness.sk/shop/">Obchod</a>
             </div>
             {/* {isShopOpen && (
                 <div data-anchor="currentShopContainer" className="options">
@@ -157,7 +157,7 @@ function Header({ locale }: HeaderProps) {
                   </div>
                 ))}
                     <div className="navLink" >
-                      <a href="https://shop.77fitness.eu/">Obchod</a>
+                      <a href="https://77fitness.sk/shop">Obchod</a>
                     </div>
 
                
