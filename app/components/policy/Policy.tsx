@@ -11,7 +11,7 @@ function Policy() {
         <div className="cover">
           •{" "}
           <a
-            href="/documents/1docx.docx"
+            href="/documents/VOP.docx"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -21,7 +21,7 @@ function Policy() {
         <div className="cover">
           •{" "}
           <a
-            href="/documents/2docx.docx"
+            href="/documents/GDPR.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
