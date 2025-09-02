@@ -604,9 +604,7 @@ export const headerText: HeaderTextProps = {
     shop: {
       title: "Obchod",
       links: [
-        { text: "Obchod", link: "/shop" },
-        { text: "Košík", link: "/shop/cart" },
-        { text: "Objednávky", link: "/shop/orders" },
+        { text: "Obchod", link: "https://www.77fitness.sk/shop/" },
       ],
     },
     languages: {
@@ -731,9 +729,7 @@ export const footerText: FooterTextProps = {
     shop: {
       title: "Shop",
       links: [
-        { text: "Shop", link: "/shop" },
-        { text: "Cart", link: "/shop/cart" },
-        { text: "Orders", link: "/shop/orders" },
+        { text: "Shop", link: "https://www.77fitness.sk/shop/" },
       ],
     },
     languages: {
@@ -784,9 +780,7 @@ export const footerText: FooterTextProps = {
     shop: {
       title: "Obchod",
       links: [
-        { text: "Obchod", link: "/shop" },
-        { text: "Košík", link: "/shop/cart" },
-        { text: "Objednávky", link: "/shop/orders" },
+        { text: "Obchod", link: "https://www.77fitness.sk/shop/" },
       ],
     },
     languages: {

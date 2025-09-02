@@ -17,11 +17,11 @@ function Membership({ membership }: MembershipProps) {
       return;
     }
 
-  console.log(cart)
+    console.log(cart);
 
     dispatch(emptyCart());
     dispatch(addOneToCart(membership.membershipSku));
-    window.location.href = "/shop/cart";
+    window.location.href = "https://www.77fitness.sk/shop/";
   }
 
   return (
@@ -45,15 +45,9 @@ function Membership({ membership }: MembershipProps) {
           ))}
         </ul>
         <div className="contactButton">
-          {membership.price === "10" ? (
-            <Link className="button" href={membership.button.link}>
-              {membership.button.text}
-            </Link>
-          ) : (
-            <button onClick={addToCartMembership} className="button">
-              {membership.button.text}
-            </button>
-          )}
+          <button onClick={addToCartMembership} className="button">
+            {membership.button.text}
+          </button>
         </div>
       </div>
       {membership.standOut && (
