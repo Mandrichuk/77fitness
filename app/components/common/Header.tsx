@@ -107,11 +107,7 @@ function Header({ locale }: HeaderProps) {
                 </div>
               )} 
             </div> */}
-            {!clientLoginData && (
-              <Link href={t.login.link} className="option login">
-                {t.login.text}
-              </Link>
-            )}
+           
           </nav>
           {/* <div className="languages">
             <div

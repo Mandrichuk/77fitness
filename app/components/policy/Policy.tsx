@@ -11,11 +11,11 @@ function Policy() {
         <div className="cover">
           •{" "}
           <a
-            href="/documents/VOP.docx"
+            href="/documents/VOP.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Všeobecné obchodné podmienky
+            VOP – všeobecné
           </a>
         </div>
         <div className="cover">
@@ -25,17 +25,17 @@ function Policy() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            GDPR všeobecné
+            GDPR – všeobecné
           </a>
         </div>
         <div className="cover">
           •{" "}
           <a
-            href="/documents/3docx.docx"
+            href="/documents/PP.docx"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Prevádzkový poriadok
+            Prevádzkový poriadok 77 next level fitness
           </a>
         </div>
       </div>
